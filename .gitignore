@@ -4,7 +4,10 @@ dist/
 .cache/
 .cert/
 ollama_data/
+server/data/
 
 # Files
 .DS_Store
 .env
+credentials.json
+token.json

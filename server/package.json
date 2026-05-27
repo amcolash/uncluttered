@@ -4,12 +4,14 @@
   "type": "module",
   "main": "index.ts",
   "scripts": {
-    "start": "nodemon -e ts --exec 'node --env-file=../.env' index.ts",
-    "start:prod": "node index.ts"
+    "start": "nodemon -e ts --exec 'node --env-file=../.env' src/index.ts",
+    "start:prod": "node src/index.ts"
   },
   "dependencies": {
     "cors": "^2.8.6",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "googleapis": "^172.0.0",
+    "lowdb": "^7.0.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",

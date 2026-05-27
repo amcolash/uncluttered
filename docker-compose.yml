@@ -9,6 +9,7 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - .cert:/usr/src/app/server/.cert
+      - ./server/data:/usr/src/app/server/data
 
   ollama:
     image: ollama/ollama:latest

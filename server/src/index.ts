@@ -1,8 +1,8 @@
 import cors from 'cors';
 import express from 'express';
 
-import { db } from './db.js';
-import { startGmailSyncWorker } from './gmailSyncWorker.js';
+import { db } from './db.ts';
+import { startGmailSyncWorker } from './gmailSyncWorker.ts';
 
 const app = express();
 const port = 7001;
