@@ -5,8 +5,26 @@ services:
     container_name: uncluttered
     network_mode: host
     restart: unless-stopped
-    stop_grace_period: 5s
     env_file: ".env"
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - .cert:/usr/src/app/server/.cert
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    network_mode: host
+    restart: unless-stopped
+    env_file: ".env"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./ollama_data:/root/.ollama # Note: Changed /data to /root/.ollama where Ollama actually stores models
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        ollama serve &
+        echo "Waiting for Ollama server to start..."
+        while ! ollama list >/dev/null 2>&1; do sleep 1; done
+        echo "Pulling gemma3:270m..."
+        ollama pull gemma3:270m
+        wait

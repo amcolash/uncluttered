@@ -3,6 +3,7 @@ node_modules/
 dist/
 .cache/
 .cert/
+ollama_data/
 
 # Files
 .DS_Store
