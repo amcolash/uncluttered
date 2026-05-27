@@ -13,7 +13,7 @@
     "url": "git+https://github.com/amcolash/uncluttered.git"
   },
   "scripts": {
-    "build": "npm --prefix react/ install && CORDOVA=true npm --prefix react/ run build",
+    "build": "npm --prefix react/ install && npm --prefix react/ run build",
     "start": "concurrently 'npm --prefix react/ start' 'npm --prefix server/ start'",
     "deploy": "ssh -t nas 'export PATH=\\$PATH:/usr/local/bin && cd docker/uncluttered && git pull && docker compose up -d --build --force-recreate'",
     "lint": "oxlint",
