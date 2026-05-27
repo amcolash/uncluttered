@@ -1,0 +1,9 @@
+# Directories
+node_modules/
+dist/
+.cache/
+.cert/
+
+# Files
+.DS_Store
+.env
