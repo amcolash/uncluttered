@@ -1,0 +1,13 @@
+services:
+  server:
+    image: amcolash/uncluttered
+    build: ./
+    container_name: uncluttered
+    network_mode: host
+    restart: unless-stopped
+    stop_grace_period: 5s
+    env_file: ".env"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - .cert:/usr/src/app/server/.cert
+      - .env:/usr/src/app/.env
