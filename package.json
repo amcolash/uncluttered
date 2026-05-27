@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "npm --prefix react/ install && npm --prefix react/ run build",
-    "dev": "docker compose up -d ollama && concurrently 'npm --prefix react/ start' 'npm --prefix server/ start'",
+    "dev": "docker compose up -d ollama && docker compose up -d classifier && concurrently 'npm --prefix react/ start' 'npm --prefix server/ start'",
     "start": "concurrently 'npm --prefix react/ start' 'npm --prefix server/ start'",
     "deploy": "ssh -t nas 'export PATH=\\$PATH:/usr/local/bin && cd docker/uncluttered && git pull && docker compose up -d --build --force-recreate'",
     "lint": "oxlint",

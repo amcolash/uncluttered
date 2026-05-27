@@ -11,6 +11,15 @@ services:
       - .cert:/usr/src/app/server/.cert
       - ./server/data:/usr/src/app/server/data
 
+  classifier:
+    build: ./classifier
+    container_name: uncluttered-classifier
+    network_mode: host
+    restart: unless-stopped
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./server/data:/data
+
   ollama:
     image: ollama/ollama:latest
     container_name: ollama

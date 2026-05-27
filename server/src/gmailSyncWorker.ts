@@ -2,11 +2,12 @@ import { google } from 'googleapis';
 
 import { db } from './db.ts';
 import type { Email } from './db.ts';
+import { classifyEmail } from './emailClassifier.ts';
 import { getAuthClient } from './gmailAuth.ts';
-import { classifyEmail } from './ollamaService.ts';
 
 const SYNC_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes
-const MAX_RESULTS = 50;
+const MAX_EMAILS = 3000;
+const PAGE_SIZE = 500; // Gmail API hard cap per request
 
 async function syncEmails(): Promise<void> {
   console.log('[GmailSync] Starting sync...');
@@ -15,17 +16,26 @@ async function syncEmails(): Promise<void> {
     const auth = await getAuthClient();
     const gmail = google.gmail({ version: 'v1', auth });
 
-    // Step A: List unread inbox messages
-    const listRes = await gmail.users.messages.list({
-      userId: 'me',
-      q: 'is:unread label:INBOX',
-      maxResults: MAX_RESULTS,
-    });
+    // Step A: Page through the inbox (max 500/request) until we have MAX_EMAILS
+    // or run out of results.
+    const allMessages: { id?: string | null }[] = [];
+    let pageToken: string | undefined;
 
-    const messages = listRes.data.messages ?? [];
+    do {
+      const listRes = await gmail.users.messages.list({
+        userId: 'me',
+        q: 'label:INBOX is:unread',
+        maxResults: PAGE_SIZE,
+        pageToken,
+      });
+      allMessages.push(...(listRes.data.messages ?? []));
+      pageToken = listRes.data.nextPageToken ?? undefined;
+    } while (pageToken && allMessages.length < MAX_EMAILS);
+
+    const messages = allMessages.slice(0, MAX_EMAILS);
 
     if (messages.length === 0) {
-      console.log('[GmailSync] No unread messages found.');
+      console.log('[GmailSync] No messages found.');
       return;
     }
 
@@ -34,7 +44,7 @@ async function syncEmails(): Promise<void> {
     const newMessages = messages.filter((m) => m.id != null && !existingIds.has(m.id));
 
     if (newMessages.length === 0) {
-      console.log('[GmailSync] All unread messages already cached.');
+      console.log('[GmailSync] All messages already cached.');
       return;
     }
 
@@ -80,7 +90,7 @@ async function syncEmails(): Promise<void> {
         const snippet = detail.data.snippet ?? '';
         const threadId = detail.data.threadId ?? '';
 
-        const aiCategory = await classifyEmail(subject, snippet);
+        const { category: aiCategory, urgency: aiUrgency } = await classifyEmail(subject, snippet, sender);
 
         const email: Email = {
           id,
@@ -90,6 +100,8 @@ async function syncEmails(): Promise<void> {
           snippet,
           aiCategory,
           userOverrideCategory: null,
+          aiUrgency,
+          userOverrideUrgency: null,
           isArchived: false,
           processedAt: new Date().toISOString(),
         };
