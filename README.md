@@ -1,16 +1,3 @@
-# Simple React Template
+# Uncluttered
 
-This is a very basic react template to scaffold a new project. It includes the following tools and libraries:
-
-## Runtime
-
-- React
-- React Router
-- Tailwind CSS
-
-## Development
-
-- Vite
-- Typescript
-- Oxlint
-- Prettier
+Quickly filter through all of the clutter in your gmail inbox
