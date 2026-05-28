@@ -1,704 +1,702 @@
-{
-  "emails": [
-    {
-      "id": "a405facd03c15847",
-      "sender": "TD Bank <alerts@tdbank.com>",
-      "subject": "New login detected from Chicago, IL",
-      "snippet": "Alert: $125.50 transaction at Shell Gas on June 1. Question it? https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "cbb858ba1a2c762a",
-      "sender": "Citi Bank <alerts@citibank.com>",
-      "subject": "Deposit received",
-      "snippet": "Transfer of $125.50 to Savings Account completed successfully. Ref: TXN123",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "a0b8053be17d770c",
-      "sender": "Wells Fargo <alerts@wellsfargo.com>",
-      "subject": "Payment confirmation",
-      "snippet": "Transfer request of $2500 requires approval. Review: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "726da05743689e07",
-      "sender": "Discover <alerts@discover.com>",
-      "subject": "Security review requested",
-      "snippet": "Payment received: $50 from John Smith. Reference: TX123456789",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "0a13977448464814",
-      "sender": "Wells Fargo <alerts@wellsfargo.com>",
-      "subject": "Large transaction alert",
-      "snippet": "Your pending transaction of $45.99 was approved. Details: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "828b734495547409",
-      "sender": "Vanguard <alerts@vanguard.com>",
-      "subject": "Fraud alert: Uber",
-      "snippet": "Your account security needs attention. Review: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "959ddbc6e8403738",
-      "sender": "Stripe <alerts@stripe.com>",
-      "subject": "Unusual account activity",
-      "snippet": "Your $1000 deposit has been received and cleared. New balance: $890.23.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "7f0051e9b0caf822",
-      "sender": "Venmo <support@venmo.com>",
-      "subject": "Withdrawal alert",
-      "snippet": "Payment of $50 received from John Smith. Confirmation #TX987654321.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "03ae881e9336ba70",
-      "sender": "PayPal <service@paypal.com>",
-      "subject": "Fraud alert: Starbucks",
-      "snippet": "Your pending transaction of $45.99 was approved. Details: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "9acd6b39ae4f2cbc",
-      "sender": "Stripe <alerts@stripe.com>",
-      "subject": "Account activity alert",
-      "snippet": "New Starbucks transaction: $50. This doesn't match your usual spending.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "afb89176fabd2936",
-      "sender": "Robinhood <alerts@robinhood.com>",
-      "subject": "Identity verification needed",
-      "snippet": "Your $2500 purchase at Whole Foods has been posted to your account.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "6d75eb4ff4b09c7b",
-      "sender": "Stripe <alerts@stripe.com>",
-      "subject": "Unusual account activity",
-      "snippet": "A transaction of $125.50 was made at Whole Foods. If you don't recognize this, dispute it within 60 days. Transaction ID: TXN123",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "fdb8532e556454a4",
-      "sender": "Citi Bank <alerts@citibank.com>",
-      "subject": "Pending transaction alert",
-      "snippet": "Fraud alert: Multiple failed login attempts. Secure your account: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "0bf75b4391b7a9ff",
-      "sender": "Credit Karma <alerts@creditkarma.com>",
-      "subject": "Document verification required",
-      "snippet": "Your card was declined at Uber. Reason: Insufficient funds. Contact us: 1-800-BANK",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "c43d21669e71093d",
-      "sender": "American Express <alerts@americanexpress.com>",
-      "subject": "Identity verification needed",
-      "snippet": "Your payment of $50 has been processed successfully. Thank you for banking with us. Available balance: $5432.10",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "d0fabeace96fdff8",
-      "sender": "Coinbase <alerts@coinbase.com>",
-      "subject": "Transaction dispute submitted",
-      "snippet": "We detected a login to your account from Unknown device. If this wasn't you, change your password immediately. No action needed if this was you.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "52988223ec7871ba",
-      "sender": "Charles Schwab <alerts@schwab.com>",
-      "subject": "Fraud alert: Shell Gas",
-      "snippet": "Account balance: $5432.10. Recent transaction: Starbucks, $45.99.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "310010cba484fc7e",
-      "sender": "Bank of America <bofaalerts@bankofamerica.com>",
-      "subject": "Document verification required",
-      "snippet": "Alert: Your account was accessed from New York, NY on today at 11:45 PM. https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "e4f5ba73f4931d35",
-      "sender": "Vanguard <alerts@vanguard.com>",
-      "subject": "Account activity alert",
-      "snippet": "Fraud alert: Multiple failed login attempts. Secure your account: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "29bf96896eaff27d",
-      "sender": "Prosper <alerts@prosper.com>",
-      "subject": "Account verification needed",
-      "snippet": "Transfer request of $45.99 requires approval. Review: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "44c63ea7f1167775",
-      "sender": "Citi Bank <alerts@citibank.com>",
-      "subject": "Security alert: Review your account",
-      "snippet": "Your account balance is low: $5432.10. Link to transfer funds: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "d11c9c594fda8fcc",
-      "sender": "Crypto Exchange <alerts@crypto.com>",
-      "subject": "Transaction dispute submitted",
-      "snippet": "A transaction of $2500 was made at Shell Gas. If you don't recognize this, dispute it within 60 days. Transaction ID: TX987654321",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "6f649a51b6962d96",
-      "sender": "Investment Platform <alerts@invest.com>",
-      "subject": "Password change requested",
-      "snippet": "Fraud alert: Multiple failed login attempts. Secure your account: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "3811abad69cdbc98",
-      "sender": "PayPal <service@paypal.com>",
-      "subject": "Document verification required",
-      "snippet": "Your card was declined at Shell Gas. Reason: Address mismatch. Contact us: 1-800-BANK",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "e49e6a32f140c5b7",
-      "sender": "Discover <alerts@discover.com>",
-      "subject": "Pending transaction alert",
-      "snippet": "Unusual activity: Your account was accessed from San Francisco, CA. Action needed: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "8a915fd8cc5b6037",
-      "sender": "Capital One <alerts@capitalone.com>",
-      "subject": "Password change requested",
-      "snippet": "Deposit confirmed: $50 from Employer. Balance: $10000.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "429a342750378ced",
-      "sender": "Vanguard <alerts@vanguard.com>",
-      "subject": "Suspicious activity detected",
-      "snippet": "New login from Chicago, IL. Wasn't you? Secure your account: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "1579c5a5e2f3d94d",
-      "sender": "U.S. Bank <alerts@usbank.com>",
-      "subject": "Investment activity",
-      "snippet": "Alert: $50 transaction at Amazon on today. Question it? https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "d621c69721376c23",
-      "sender": "Charles Schwab <alerts@schwab.com>",
-      "subject": "Card declined notification",
-      "snippet": "New login from Chicago, IL. Wasn't you? Secure your account: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "6627504f17ffc006",
-      "sender": "Coinbase <alerts@coinbase.com>",
-      "subject": "Fraud alert: Starbucks",
-      "snippet": "Your account security needs attention. Review: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "ee1a7457d255c51b",
-      "sender": "PayPal <service@paypal.com>",
-      "subject": "Password change requested",
-      "snippet": "Deposit confirmed: $2500 from Employer. Balance: $10000.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "d70df161adaa46f4",
-      "sender": "Charles Schwab <alerts@schwab.com>",
-      "subject": "Investment activity",
-      "snippet": "Transaction alert: Card ending in 9012 charged $125.50 at Uber.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "bb1254979010665e",
-      "sender": "Coinbase <alerts@coinbase.com>",
-      "subject": "Tax reporting ready",
-      "snippet": "Security check: Review this login from New York, NY. If it wasn't you: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "d8e7e7b384dfa3bb",
-      "sender": "Wells Fargo <alerts@wellsfargo.com>",
-      "subject": "Password change requested",
-      "snippet": "Transaction alert: Card ending in 9012 charged $50 at Amazon.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "251abcf095bdabe2",
-      "sender": "Coinbase <alerts@coinbase.com>",
-      "subject": "Transfer completed",
-      "snippet": "Suspicious transaction detected: $50 at Uber. Approve or dispute: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "27eacf019ce88ce5",
-      "sender": "Stripe <alerts@stripe.com>",
-      "subject": "Withdrawal alert",
-      "snippet": "Fraud alert: Multiple failed login attempts. Secure your account: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "a2bd3bee17bb3676",
-      "sender": "Stripe <alerts@stripe.com>",
-      "subject": "Tax reporting ready",
-      "snippet": "Alert: $45.99 transaction at Shell Gas on today. Question it? https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "fa44ed1df568ce2c",
-      "sender": "Mint <alerts@mint.com>",
-      "subject": "Account verification needed",
-      "snippet": "We detected a login to your account from New York, NY. If this wasn't you, change your password immediately. No action needed if this was you.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "93ecf7aa7e382dce",
-      "sender": "Ally Bank <alerts@ally.com>",
-      "subject": "Investment activity",
-      "snippet": "A transaction of $50 was made at Whole Foods. If you don't recognize this, dispute it within 60 days. Transaction ID: TXN123",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "8643f587ba3df69c",
-      "sender": "Venmo <support@venmo.com>",
-      "subject": "Low balance alert",
-      "snippet": "Your account #{account} received a $2500 deposit on today.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "772886f435bab379",
-      "sender": "Fidelity <alerts@fidelity.com>",
-      "subject": "Security alert: Review your account",
-      "snippet": "Security check: Review this login from Chicago, IL. If it wasn't you: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "315584a7f667f161",
-      "sender": "PNC Bank <alerts@pnc.com>",
-      "subject": "Low balance alert",
-      "snippet": "Your pending transaction of $2500 was approved. Details: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "4cd2a8ebd2a24ff3",
-      "sender": "Wise <alerts@wise.com>",
-      "subject": "Pending transaction alert",
-      "snippet": "Unusual activity detected on your account. $45.99 withdrawal from Chicago, IL. Details: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "52e24ca922e16323",
-      "sender": "Citi Bank <alerts@citibank.com>",
-      "subject": "Overdraft alert",
-      "snippet": "Account balance: $890.23. Recent transaction: Amazon, $125.50.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "cc509e04b59addae",
-      "sender": "U.S. Bank <alerts@usbank.com>",
-      "subject": "Fraud alert: Whole Foods",
-      "snippet": "Your account balance is low: $10000. Link to transfer funds: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "bb40dc34c1ebc309",
-      "sender": "Prosper <alerts@prosper.com>",
-      "subject": "Account update notification",
-      "snippet": "Payment received: $2500 from Roommate. Reference: TX123456789",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "a1d96077782eaf0e",
-      "sender": "Stripe <alerts@stripe.com>",
-      "subject": "Document verification required",
-      "snippet": "Payment of $50 received from John Smith. Confirmation #TX123456789.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "89b3f18c211face6",
-      "sender": "Stripe <alerts@stripe.com>",
-      "subject": "Credit card payment received",
-      "snippet": "Unusual activity: Your account was accessed from Chicago, IL. Action needed: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "990833388606c35f",
-      "sender": "Bank of America <bofaalerts@bankofamerica.com>",
-      "subject": "Fraud alert: Uber",
-      "snippet": "New Shell Gas transaction: $45.99. This doesn't match your usual spending.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "e074fa98fac64d53",
-      "sender": "Charles Schwab <alerts@schwab.com>",
-      "subject": "Transaction alert - $1000",
-      "snippet": "Your account security needs attention. Review: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "6f71d5f1d0a541a2",
-      "sender": "PNC Bank <alerts@pnc.com>",
-      "subject": "Payment confirmation",
-      "snippet": "Your account balance is low: $12345.67. Link to transfer funds: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "df424134aba18f6d",
-      "sender": "TD Bank <alerts@tdbank.com>",
-      "subject": "Security review requested",
-      "snippet": "Payment received: $125.50 from Roommate. Reference: TX987654321",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "270ffbad1c05b6aa",
-      "sender": "Betterment <alerts@betterment.com>",
-      "subject": "Large transaction alert",
-      "snippet": "New login from London, UK. Wasn't you? Secure your account: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "479438f1bf854379",
-      "sender": "Ally Bank <alerts@ally.com>",
-      "subject": "Transaction alert - $2500",
-      "snippet": "Credit card payment of $50 acknowledged. Thank you!",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "75a6d11aa1c859fe",
-      "sender": "PayPal <service@paypal.com>",
-      "subject": "Low balance alert",
-      "snippet": "Credit card payment of $1000 acknowledged. Thank you!",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "506884762d277429",
-      "sender": "Investment Platform <alerts@invest.com>",
-      "subject": "Identity verification needed",
-      "snippet": "Your pending transaction of $50 was approved. Details: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "b4c771f8de22cfb1",
-      "sender": "Fidelity <alerts@fidelity.com>",
-      "subject": "Payment confirmation",
-      "snippet": "Alert: $45.99 transaction at Starbucks on today. Question it? https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "b5a202f6901e13f6",
-      "sender": "Stripe <alerts@stripe.com>",
-      "subject": "Overdraft alert",
-      "snippet": "Your card was declined at Starbucks. Reason: Address mismatch. Contact us: 1-800-BANK",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "3b9ac63c93944fb8",
-      "sender": "American Express <alerts@americanexpress.com>",
-      "subject": "Low balance alert",
-      "snippet": "Fraud alert: Multiple failed login attempts. Secure your account: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "4bdb40f6c7dcc77f",
-      "sender": "Charles Schwab <alerts@schwab.com>",
-      "subject": "Transfer completed",
-      "snippet": "Your $1000 purchase at Starbucks has been posted to your account.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "d996b51e74e6b4a5",
-      "sender": "Stripe <alerts@stripe.com>",
-      "subject": "Account activity alert",
-      "snippet": "Transaction $2500 posted: Amazon, today 2:30 PM.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "19e8035edc15d0b2",
-      "sender": "Lending Club <alerts@lendingclub.com>",
-      "subject": "Security alert: Review your account",
-      "snippet": "Transaction $1000 posted: Shell Gas, today 11:45 PM.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "04e8ea37bb5e0dc4",
-      "sender": "Citi Bank <alerts@citibank.com>",
-      "subject": "Tax reporting ready",
-      "snippet": "Fraud alert: Multiple failed login attempts. Secure your account: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "99218585d39eb9c1",
-      "sender": "Wells Fargo <alerts@wellsfargo.com>",
-      "subject": "Password change requested",
-      "snippet": "Your payment of $45.99 has been processed successfully. Thank you for banking with us. Available balance: $12345.67",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "4c1ab3e0f594ed7b",
-      "sender": "YNAB <alerts@youneedabudget.com>",
-      "subject": "Payment confirmation",
-      "snippet": "New login from London, UK. Wasn't you? Secure your account: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "14dcd2e64de04913",
-      "sender": "Fidelity <alerts@fidelity.com>",
-      "subject": "New login detected from San Francisco, CA",
-      "snippet": "Your payment of $1000 has been processed successfully. Thank you for banking with us. Available balance: $5432.10",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "a3e09eac9213b4e8",
-      "sender": "Lending Club <alerts@lendingclub.com>",
-      "subject": "Your account has been accessed",
-      "snippet": "Security check: Review this login from Chicago, IL. If it wasn't you: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "c5fc277273c3abfb",
-      "sender": "PNC Bank <alerts@pnc.com>",
-      "subject": "Transaction dispute submitted",
-      "snippet": "Transfer of $50 to Friend's Account completed successfully. Ref: TXN123",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "2ee52a7020488f54",
-      "sender": "PNC Bank <alerts@pnc.com>",
-      "subject": "New login detected from Unknown device",
-      "snippet": "Credit card payment of $2500 acknowledged. Thank you!",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "15d89cf08e0a3eed",
-      "sender": "Charles Schwab <alerts@schwab.com>",
-      "subject": "Security review requested",
-      "snippet": "Deposit confirmed: $45.99 from Roommate. Balance: $5432.10.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "4e19200667546939",
-      "sender": "Fidelity <alerts@fidelity.com>",
-      "subject": "Payment confirmation",
-      "snippet": "Transaction alert: Card ending in 5678 charged $2500 at Uber.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "879734051e23b58f",
-      "sender": "Capital One <alerts@capitalone.com>",
-      "subject": "Suspicious activity detected",
-      "snippet": "Unusual activity detected on your account. $1000 withdrawal from San Francisco, CA. Details: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "e3925d056fa12745",
-      "sender": "Crypto Exchange <alerts@crypto.com>",
-      "subject": "Payment confirmation",
-      "snippet": "Security check: Review this login from Unknown device. If it wasn't you: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "e17d5032bf618102",
-      "sender": "Fidelity <alerts@fidelity.com>",
-      "subject": "New login detected from London, UK",
-      "snippet": "We detected a login to your account from London, UK. If this wasn't you, change your password immediately. No action needed if this was you.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "3e54ced00c917c6a",
-      "sender": "Bank of America <bofaalerts@bankofamerica.com>",
-      "subject": "Large transaction alert",
-      "snippet": "Account balance: $12345.67. Recent transaction: Amazon, $125.50.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "58d26fcfd731d565",
-      "sender": "Betterment <alerts@betterment.com>",
-      "subject": "Transaction dispute submitted",
-      "snippet": "Your $125.50 deposit has been received and cleared. New balance: $10000.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "4eb593165daffbf1",
-      "sender": "Ally Bank <alerts@ally.com>",
-      "subject": "Transfer completed",
-      "snippet": "Fraud alert: Multiple failed login attempts. Secure your account: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "7305245305741f28",
-      "sender": "Coinbase <alerts@coinbase.com>",
-      "subject": "Earnings deposited",
-      "snippet": "We detected a login to your account from New York, NY. If this wasn't you, change your password immediately. No action needed if this was you.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "bda2639334d242b7",
-      "sender": "PayPal <service@paypal.com>",
-      "subject": "New login detected from Chicago, IL",
-      "snippet": "Transaction alert: Card ending in 5678 charged $45.99 at Shell Gas.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "d99f9cc614b9146f",
-      "sender": "Crypto Exchange <alerts@crypto.com>",
-      "subject": "Security alert: Review your account",
-      "snippet": "Transaction $50 posted: Starbucks, June 1 2:30 PM.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "2f791d92379a0bea",
-      "sender": "Vanguard <alerts@vanguard.com>",
-      "subject": "Pending transaction alert",
-      "snippet": "Your account balance is low: $10000. Link to transfer funds: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "df1108a26fa804ef",
-      "sender": "Bank of America <bofaalerts@bankofamerica.com>",
-      "subject": "Account verification needed",
-      "snippet": "Alert: $1000 transaction at Uber. Confirm this was you: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "634379077159cf18",
-      "sender": "Capital One <alerts@capitalone.com>",
-      "subject": "Fraud alert: Whole Foods",
-      "snippet": "Your account #{account} received a $125.50 deposit on June 1.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "67dcad5075f6f237",
-      "sender": "Capital One <alerts@capitalone.com>",
-      "subject": "Security alert: Review your account",
-      "snippet": "Your pending transaction of $1000 was approved. Details: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "4e833961ef47bf1b",
-      "sender": "Ally Bank <alerts@ally.com>",
-      "subject": "Card declined notification",
-      "snippet": "Deposit confirmed: $50 from John Smith. Balance: $12345.67.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "6a2dea25a2993246",
-      "sender": "TD Bank <alerts@tdbank.com>",
-      "subject": "Low balance alert",
-      "snippet": "Transfer of $125.50 to Friend's Account completed successfully. Ref: TX987654321",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "207085f449ee28bd",
-      "sender": "Venmo <support@venmo.com>",
-      "subject": "Security review requested",
-      "snippet": "Unusual activity detected on your account. $2500 withdrawal from San Francisco, CA. Details: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "2213ef759532a605",
-      "sender": "American Express <alerts@americanexpress.com>",
-      "subject": "Unusual account activity",
-      "snippet": "Your $45.99 deposit has been received and cleared. New balance: $890.23.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "93df8c9360671883",
-      "sender": "YNAB <alerts@youneedabudget.com>",
-      "subject": "Earnings deposited",
-      "snippet": "Alert: $2500 transaction at Uber on today. Question it? https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "f3cf472524d4cc09",
-      "sender": "Stripe <alerts@stripe.com>",
-      "subject": "Account verification needed",
-      "snippet": "A transaction of $125.50 was made at Whole Foods. If you don't recognize this, dispute it within 60 days. Transaction ID: TX987654321",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "0028d606e3bc5a35",
-      "sender": "Capital One <alerts@capitalone.com>",
-      "subject": "Low balance alert",
-      "snippet": "Account balance: $5432.10. Recent transaction: Uber, $2500.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "8b3cf9d249c6c241",
-      "sender": "Square Cash <noreply@square.com>",
-      "subject": "Tax reporting ready",
-      "snippet": "Your account #{account} received a $45.99 deposit on June 1.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "c5dd8c67baf5540d",
-      "sender": "Wells Fargo <alerts@wellsfargo.com>",
-      "subject": "Transaction dispute submitted",
-      "snippet": "Credit card payment of $1000 acknowledged. Thank you!",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "251c10817409a94b",
-      "sender": "Coinbase <alerts@coinbase.com>",
-      "subject": "Account activity alert",
-      "snippet": "Payment of $1000 received from Roommate. Confirmation #TXN123.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "cb76b2bff530453b",
-      "sender": "American Express <alerts@americanexpress.com>",
-      "subject": "Earnings deposited",
-      "snippet": "Your card was declined at Whole Foods. Reason: Card expired. Contact us: 1-800-BANK",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "042c09ce5ff08f44",
-      "sender": "Mint <alerts@mint.com>",
-      "subject": "Low balance alert",
-      "snippet": "Transfer request of $1000 requires approval. Review: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "79f7cafa3b581ab4",
-      "sender": "Capital One <alerts@capitalone.com>",
-      "subject": "Earnings deposited",
-      "snippet": "Your $2500 purchase at Uber has been posted to your account.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "fe254bf10581b4ea",
-      "sender": "Charles Schwab <alerts@schwab.com>",
-      "subject": "Fraud alert: Uber",
-      "snippet": "Alert: $125.50 transaction at Uber. Confirm this was you: https://chase.com/...",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "8cfb2fff783774da",
-      "sender": "Mint <alerts@mint.com>",
-      "subject": "Tax reporting ready",
-      "snippet": "Account balance: $10000. Recent transaction: Whole Foods, $1000.",
-      "category": "BANKING_ACCOUNT"
-    },
-    {
-      "id": "e4c7d8fa02a5e1c1",
-      "sender": "Fidelity <alerts@fidelity.com>",
-      "subject": "Fraud alert: Whole Foods",
-      "snippet": "Deposit confirmed: $1000 from John Smith. Balance: $5432.10.",
-      "category": "BANKING_ACCOUNT"
-    }
-  ]
-}
+[
+  {
+    "id": "093551966a8f5839",
+    "sender": "PayPal <service@paypal.com>",
+    "subject": "Document verification required",
+    "snippet": "Payment received: $2500 from Employer. Reference: TX123456789",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "c6394e98734b5b0d",
+    "sender": "Investment Platform <alerts@invest.com>",
+    "subject": "Security alert: Review your account",
+    "snippet": "Alert: $125.50 transaction at Shell Gas. Confirm this was you: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "5c2bb891baeeb248",
+    "sender": "Credit Union <alerts@creditunion.com>",
+    "subject": "Low balance alert",
+    "snippet": "Credit card payment of $125.50 acknowledged. Thank you!",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "de00d11edc0c5e93",
+    "sender": "American Express <alerts@americanexpress.com>",
+    "subject": "Low balance alert",
+    "snippet": "Your account #{account} received a $125.50 deposit on today.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "42549e1f4d7c5de9",
+    "sender": "American Express <alerts@americanexpress.com>",
+    "subject": "Transaction dispute submitted",
+    "snippet": "Your $45.99 purchase at Amazon has been posted to your account.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "6aa214725543095d",
+    "sender": "Wells Fargo <alerts@wellsfargo.com>",
+    "subject": "Your account has been accessed",
+    "snippet": "Large purchase alert: $1000 at Shell Gas. Confirm: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "7e601216392c526b",
+    "sender": "Wise <alerts@wise.com>",
+    "subject": "Low balance alert",
+    "snippet": "Transfer request of $1000 requires approval. Review: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "f071df28a3911c4b",
+    "sender": "Stripe <alerts@stripe.com>",
+    "subject": "Deposit received",
+    "snippet": "Account balance: $12345.67. Recent transaction: Amazon, $1000.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "18abd682d8231382",
+    "sender": "Credit Karma <alerts@creditkarma.com>",
+    "subject": "Account verification needed",
+    "snippet": "Payment received: $50 from Roommate. Reference: TX987654321",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "ad43a640fc1ff86b",
+    "sender": "Stripe <alerts@stripe.com>",
+    "subject": "Password change requested",
+    "snippet": "Alert: $125.50 transaction at Amazon. Confirm this was you: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "33a962b4e78c726f",
+    "sender": "Credit Karma <alerts@creditkarma.com>",
+    "subject": "Transfer completed",
+    "snippet": "Payment received: $45.99 from Roommate. Reference: TX123456789",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "7abb89f190e7530f",
+    "sender": "Coinbase <alerts@coinbase.com>",
+    "subject": "Withdrawal alert",
+    "snippet": "Your $2500 purchase at Shell Gas has been posted to your account.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "8d2ddfc4aee08e71",
+    "sender": "Bank of America <bofaalerts@bankofamerica.com>",
+    "subject": "Suspicious activity detected",
+    "snippet": "Payment received: $50 from John Smith. Reference: TXN123",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "32490a62f1f6db28",
+    "sender": "TD Bank <alerts@tdbank.com>",
+    "subject": "Suspicious activity detected",
+    "snippet": "Your pending transaction of $50 was approved. Details: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "72dae66692e5c6bf",
+    "sender": "Wells Fargo <alerts@wellsfargo.com>",
+    "subject": "Payment confirmation",
+    "snippet": "A transaction of $2500 was made at Shell Gas. If you don't recognize this, dispute it within 60 days. Transaction ID: TX987654321",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "0a2688764e0810ab",
+    "sender": "Chase Bank <alerts@chase.com>",
+    "subject": "Large transaction alert",
+    "snippet": "Security check: Review this login from Unknown device. If it wasn't you: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "1dd2470a6ff4f045",
+    "sender": "Ally Bank <alerts@ally.com>",
+    "subject": "Suspicious activity detected",
+    "snippet": "Alert: $2500 transaction at Uber. Confirm this was you: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "51e1361fb38698e4",
+    "sender": "Bank of America <bofaalerts@bankofamerica.com>",
+    "subject": "Document verification required",
+    "snippet": "Transfer request of $2500 requires approval. Review: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "36a9d3933ab45857",
+    "sender": "PayPal <service@paypal.com>",
+    "subject": "Fraud alert: Whole Foods",
+    "snippet": "Your $2500 deposit has been received and cleared. New balance: $890.23.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "e8112e5e26ec249a",
+    "sender": "Capital One <alerts@capitalone.com>",
+    "subject": "Security alert: Review your account",
+    "snippet": "Unusual activity detected on your account. $45.99 withdrawal from San Francisco, CA. Details: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "943ef7fe4137c58d",
+    "sender": "Crypto Exchange <alerts@crypto.com>",
+    "subject": "Earnings deposited",
+    "snippet": "Your payment of $45.99 has been processed successfully. Thank you for banking with us. Available balance: $890.23",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "fd15fa36e7dd8508",
+    "sender": "Vanguard <alerts@vanguard.com>",
+    "subject": "Account update notification",
+    "snippet": "Alert: $2500 transaction at Starbucks. Confirm this was you: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "121a2a9a85956a43",
+    "sender": "Discover <alerts@discover.com>",
+    "subject": "Transaction dispute submitted",
+    "snippet": "Alert: Your account was accessed from New York, NY on today at 2:30 PM. https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "bf28665228e05979",
+    "sender": "Robinhood <alerts@robinhood.com>",
+    "subject": "Suspicious activity detected",
+    "snippet": "Alert: Your account was accessed from Unknown device on today at 2:30 PM. https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "c29bf7f9074e005e",
+    "sender": "Square Cash <noreply@square.com>",
+    "subject": "Your account has been accessed",
+    "snippet": "Transaction $45.99 posted: Starbucks, today 11:45 PM.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "a83def13f4e9f8bb",
+    "sender": "YNAB <alerts@youneedabudget.com>",
+    "subject": "Low balance alert",
+    "snippet": "Your card was declined at Amazon. Reason: Address mismatch. Contact us: 1-800-BANK",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "e0f975d2730a9db8",
+    "sender": "Venmo <support@venmo.com>",
+    "subject": "Account balance update",
+    "snippet": "Your account security needs attention. Review: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "80857d77dddbd82f",
+    "sender": "Wise <alerts@wise.com>",
+    "subject": "Two-factor authentication needed",
+    "snippet": "Your card was declined at Whole Foods. Reason: Address mismatch. Contact us: 1-800-BANK",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "74e343b245c7ed90",
+    "sender": "U.S. Bank <alerts@usbank.com>",
+    "subject": "Low balance alert",
+    "snippet": "Transaction alert: Card ending in 1234 charged $50 at Shell Gas.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "ab4624e6009fd69f",
+    "sender": "Betterment <alerts@betterment.com>",
+    "subject": "Unusual account activity",
+    "snippet": "Security check: Review this login from London, UK. If it wasn't you: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "a1979a5b15dd1c2d",
+    "sender": "Credit Karma <alerts@creditkarma.com>",
+    "subject": "Tax reporting ready",
+    "snippet": "Unusual activity detected on your account. $1000 withdrawal from Chicago, IL. Details: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "0cc5f1af138c9004",
+    "sender": "Bank of America <bofaalerts@bankofamerica.com>",
+    "subject": "Investment activity",
+    "snippet": "Unusual activity detected on your account. $2500 withdrawal from New York, NY. Details: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "2be3a88fe4a66821",
+    "sender": "PNC Bank <alerts@pnc.com>",
+    "subject": "Account verification needed",
+    "snippet": "We detected a login to your account from Chicago, IL. If this wasn't you, change your password immediately. No action needed if this was you.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "e4853ef31e461389",
+    "sender": "Credit Union <alerts@creditunion.com>",
+    "subject": "Overdraft alert",
+    "snippet": "Alert: $50 transaction at Uber on today. Question it? https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "4886fce8e3ce70bb",
+    "sender": "TD Bank <alerts@tdbank.com>",
+    "subject": "Overdraft alert",
+    "snippet": "Alert: $125.50 transaction at Uber on today. Question it? https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "2e8ac8c5532bed95",
+    "sender": "Robinhood <alerts@robinhood.com>",
+    "subject": "Fraud alert: Shell Gas",
+    "snippet": "Transaction alert: Card ending in 5678 charged $45.99 at Shell Gas.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "047db4f978fe4f85",
+    "sender": "Credit Karma <alerts@creditkarma.com>",
+    "subject": "Tax reporting ready",
+    "snippet": "Your pending transaction of $45.99 was approved. Details: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "b70c3c7e1df0a938",
+    "sender": "Wise <alerts@wise.com>",
+    "subject": "Withdrawal alert",
+    "snippet": "Your $2500 deposit has been received and cleared. New balance: $890.23.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "8773b7b02ab87371",
+    "sender": "Citi Bank <alerts@citibank.com>",
+    "subject": "Two-factor authentication needed",
+    "snippet": "Unusual activity detected on your account. $50 withdrawal from London, UK. Details: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "3fdf0c7e1c494af6",
+    "sender": "Credit Union <alerts@creditunion.com>",
+    "subject": "Earnings deposited",
+    "snippet": "Your account #{account} received a $125.50 deposit on today.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "1f0b8b08ebc609a9",
+    "sender": "Lending Club <alerts@lendingclub.com>",
+    "subject": "Fraud alert: Amazon",
+    "snippet": "Your account balance is low: $890.23. Link to transfer funds: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "44c7544078a9a7ab",
+    "sender": "PNC Bank <alerts@pnc.com>",
+    "subject": "Account verification needed",
+    "snippet": "Your pending transaction of $50 was approved. Details: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "5915d5cef6b2c3c9",
+    "sender": "Venmo <support@venmo.com>",
+    "subject": "Account activity alert",
+    "snippet": "Your $45.99 purchase at Amazon has been posted to your account.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "6d1199703b5c29f0",
+    "sender": "TD Bank <alerts@tdbank.com>",
+    "subject": "Identity verification needed",
+    "snippet": "Account balance: $890.23. Recent transaction: Starbucks, $2500.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "9613d47e11c8d1e1",
+    "sender": "TD Bank <alerts@tdbank.com>",
+    "subject": "Card declined notification",
+    "snippet": "Alert: $1000 transaction at Starbucks. Confirm this was you: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "3d400f2e9f70c45e",
+    "sender": "Chase Bank <alerts@chase.com>",
+    "subject": "Deposit received",
+    "snippet": "Credit card payment of $125.50 acknowledged. Thank you!",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "fa4c5652e4007aa4",
+    "sender": "Chase Bank <alerts@chase.com>",
+    "subject": "Suspicious activity detected",
+    "snippet": "Credit card payment of $50 acknowledged. Thank you!",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "e112630491d5371f",
+    "sender": "Crypto Exchange <alerts@crypto.com>",
+    "subject": "Credit card payment received",
+    "snippet": "Your $45.99 deposit has been received and cleared. New balance: $10000.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "47f3fc6eeeff70e9",
+    "sender": "PayPal <service@paypal.com>",
+    "subject": "Suspicious activity detected",
+    "snippet": "We detected a login to your account from Chicago, IL. If this wasn't you, change your password immediately. No action needed if this was you.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "9331b4971a2ff6a9",
+    "sender": "Venmo <support@venmo.com>",
+    "subject": "Overdraft alert",
+    "snippet": "A transaction of $2500 was made at Shell Gas. If you don't recognize this, dispute it within 60 days. Transaction ID: TX987654321",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "c1b3c21a09b07634",
+    "sender": "Prosper <alerts@prosper.com>",
+    "subject": "Suspicious activity detected",
+    "snippet": "A transaction of $1000 was made at Whole Foods. If you don't recognize this, dispute it within 60 days. Transaction ID: TXN123",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "6254c43206dde9ef",
+    "sender": "U.S. Bank <alerts@usbank.com>",
+    "subject": "Large transaction alert",
+    "snippet": "A transaction of $45.99 was made at Starbucks. If you don't recognize this, dispute it within 60 days. Transaction ID: TXN123",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "a2ac7a0701ba255e",
+    "sender": "American Express <alerts@americanexpress.com>",
+    "subject": "Security review requested",
+    "snippet": "Large purchase alert: $50 at Uber. Confirm: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "16db821691bd47c3",
+    "sender": "Lending Club <alerts@lendingclub.com>",
+    "subject": "Document verification required",
+    "snippet": "Your account security needs attention. Review: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "0872ba5f660b34a8",
+    "sender": "Charles Schwab <alerts@schwab.com>",
+    "subject": "Account balance update",
+    "snippet": "Your $2500 deposit has been received and cleared. New balance: $12345.67.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "8ffda1ddb37b3024",
+    "sender": "Vanguard <alerts@vanguard.com>",
+    "subject": "Account balance update",
+    "snippet": "Your account balance is low: $10000. Link to transfer funds: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "b376debb301924e9",
+    "sender": "Venmo <support@venmo.com>",
+    "subject": "Deposit received",
+    "snippet": "Transfer of $2500 to Savings Account completed successfully. Ref: TX123456789",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "d9d6be953c54776c",
+    "sender": "PayPal <service@paypal.com>",
+    "subject": "Two-factor authentication needed",
+    "snippet": "Suspicious transaction detected: $1000 at Starbucks. Approve or dispute: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "776b67370beb1005",
+    "sender": "Capital One <alerts@capitalone.com>",
+    "subject": "Tax reporting ready",
+    "snippet": "New Whole Foods transaction: $2500. This doesn't match your usual spending.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "827365308196bb6a",
+    "sender": "YNAB <alerts@youneedabudget.com>",
+    "subject": "Suspicious activity detected",
+    "snippet": "Deposit confirmed: $50 from Roommate. Balance: $890.23.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "87f155bdb2a301cf",
+    "sender": "YNAB <alerts@youneedabudget.com>",
+    "subject": "Payment confirmation",
+    "snippet": "Your payment of $2500 has been processed successfully. Thank you for banking with us. Available balance: $5432.10",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "da53e8d52a865668",
+    "sender": "Investment Platform <alerts@invest.com>",
+    "subject": "Investment activity",
+    "snippet": "Credit card payment of $1000 acknowledged. Thank you!",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "392415d1d3854c05",
+    "sender": "PNC Bank <alerts@pnc.com>",
+    "subject": "Account balance update",
+    "snippet": "New login from Chicago, IL. Wasn't you? Secure your account: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "22b46bc84603bcde",
+    "sender": "PayPal <service@paypal.com>",
+    "subject": "Deposit received",
+    "snippet": "New login from San Francisco, CA. Wasn't you? Secure your account: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "39e300a58878b1b1",
+    "sender": "Wise <alerts@wise.com>",
+    "subject": "Payment confirmation",
+    "snippet": "Unusual activity detected on your account. $1000 withdrawal from San Francisco, CA. Details: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "11986b2ed993bec6",
+    "sender": "YNAB <alerts@youneedabudget.com>",
+    "subject": "Investment activity",
+    "snippet": "Unusual activity: Your account was accessed from San Francisco, CA. Action needed: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "652df9c688b6e5aa",
+    "sender": "PNC Bank <alerts@pnc.com>",
+    "subject": "Credit card payment received",
+    "snippet": "Suspicious transaction detected: $125.50 at Amazon. Approve or dispute: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "d760a3481d2504d8",
+    "sender": "PNC Bank <alerts@pnc.com>",
+    "subject": "Two-factor authentication needed",
+    "snippet": "Credit card payment of $45.99 acknowledged. Thank you!",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "331d09fa80924e94",
+    "sender": "Lending Club <alerts@lendingclub.com>",
+    "subject": "Password change requested",
+    "snippet": "Deposit confirmed: $2500 from John Smith. Balance: $12345.67.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "b6c00846b623d626",
+    "sender": "Venmo <support@venmo.com>",
+    "subject": "Low balance alert",
+    "snippet": "Your account #{account} received a $1000 deposit on today.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "8df7938196159425",
+    "sender": "PNC Bank <alerts@pnc.com>",
+    "subject": "Two-factor authentication needed",
+    "snippet": "New login from New York, NY. Wasn't you? Secure your account: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "9113187ac7035d4e",
+    "sender": "TD Bank <alerts@tdbank.com>",
+    "subject": "Tax reporting ready",
+    "snippet": "Transfer request of $50 requires approval. Review: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "462881b346527a79",
+    "sender": "Lending Club <alerts@lendingclub.com>",
+    "subject": "Account balance update",
+    "snippet": "Transfer request of $125.50 requires approval. Review: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "3f12bf36643bcbd7",
+    "sender": "Coinbase <alerts@coinbase.com>",
+    "subject": "Two-factor authentication needed",
+    "snippet": "Your $2500 deposit has been received and cleared. New balance: $10000.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "1ab6dfbfbd918557",
+    "sender": "Square Cash <noreply@square.com>",
+    "subject": "Account update notification",
+    "snippet": "Security check: Review this login from Chicago, IL. If it wasn't you: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "4791d2c825e58618",
+    "sender": "Capital One <alerts@capitalone.com>",
+    "subject": "Two-factor authentication needed",
+    "snippet": "Deposit confirmed: $50 from John Smith. Balance: $890.23.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "cd1427e37d25e2bf",
+    "sender": "Capital One <alerts@capitalone.com>",
+    "subject": "Account balance update",
+    "snippet": "Transfer request of $125.50 requires approval. Review: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "8f8a294e7a5f02a3",
+    "sender": "YNAB <alerts@youneedabudget.com>",
+    "subject": "Transaction alert - $2500",
+    "snippet": "Deposit confirmed: $2500 from Employer. Balance: $12345.67.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "9b5bbcd922c42f06",
+    "sender": "PayPal <service@paypal.com>",
+    "subject": "Security alert: Review your account",
+    "snippet": "A transaction of $125.50 was made at Uber. If you don't recognize this, dispute it within 60 days. Transaction ID: TX123456789",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "e0ddba714156771e",
+    "sender": "Fidelity <alerts@fidelity.com>",
+    "subject": "Credit card payment received",
+    "snippet": "Deposit confirmed: $45.99 from John Smith. Balance: $10000.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "bab45884f87925a9",
+    "sender": "Stripe <alerts@stripe.com>",
+    "subject": "Large transaction alert",
+    "snippet": "Your account security needs attention. Review: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "73c106c299e3b600",
+    "sender": "Venmo <support@venmo.com>",
+    "subject": "Card declined notification",
+    "snippet": "New Uber transaction: $125.50. This doesn't match your usual spending.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "6ec16c96548f053a",
+    "sender": "YNAB <alerts@youneedabudget.com>",
+    "subject": "Your account has been accessed",
+    "snippet": "Your account security needs attention. Review: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "f7cb0b7ed29720b6",
+    "sender": "PayPal <service@paypal.com>",
+    "subject": "Account update notification",
+    "snippet": "Fraud alert: Multiple failed login attempts. Secure your account: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "a386bead4c1ee6bd",
+    "sender": "Ally Bank <alerts@ally.com>",
+    "subject": "Overdraft alert",
+    "snippet": "Security check: Review this login from Unknown device. If it wasn't you: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "c4d77b95b1ee97c3",
+    "sender": "YNAB <alerts@youneedabudget.com>",
+    "subject": "Account activity alert",
+    "snippet": "Alert: $125.50 transaction at Amazon. Confirm this was you: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "5b4b1482d9e5ee7b",
+    "sender": "Wells Fargo <alerts@wellsfargo.com>",
+    "subject": "Unusual account activity",
+    "snippet": "Your $125.50 purchase at Amazon has been posted to your account.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "4f6003b27f96ec05",
+    "sender": "Crypto Exchange <alerts@crypto.com>",
+    "subject": "Pending transaction alert",
+    "snippet": "Your account #{account} received a $50 deposit on June 1.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "a0d08ad5d84a7803",
+    "sender": "Crypto Exchange <alerts@crypto.com>",
+    "subject": "Security alert: Review your account",
+    "snippet": "Deposit confirmed: $1000 from Roommate. Balance: $12345.67.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "916f4c30ea68c267",
+    "sender": "Robinhood <alerts@robinhood.com>",
+    "subject": "Credit card payment received",
+    "snippet": "We detected a login to your account from New York, NY. If this wasn't you, change your password immediately. No action needed if this was you.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "d892a96425eac861",
+    "sender": "U.S. Bank <alerts@usbank.com>",
+    "subject": "Large transaction alert",
+    "snippet": "Unusual activity: Your account was accessed from San Francisco, CA. Action needed: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "31112d7d3d154c18",
+    "sender": "Square Cash <noreply@square.com>",
+    "subject": "Account verification needed",
+    "snippet": "Your card was declined at Shell Gas. Reason: Address mismatch. Contact us: 1-800-BANK",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "4e93be3832c8bcaa",
+    "sender": "Betterment <alerts@betterment.com>",
+    "subject": "Large transaction alert",
+    "snippet": "Payment of $125.50 received from Roommate. Confirmation #TX123456789.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "e7c65831b375964c",
+    "sender": "PNC Bank <alerts@pnc.com>",
+    "subject": "Your account has been accessed",
+    "snippet": "Alert: $125.50 transaction at Whole Foods. Confirm this was you: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "b5bd41f639b7251e",
+    "sender": "U.S. Bank <alerts@usbank.com>",
+    "subject": "Card declined notification",
+    "snippet": "Large purchase alert: $45.99 at Shell Gas. Confirm: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "880c9d0d90194373",
+    "sender": "Lending Club <alerts@lendingclub.com>",
+    "subject": "Two-factor authentication needed",
+    "snippet": "Security check: Review this login from San Francisco, CA. If it wasn't you: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "5b9cfa38d5caee31",
+    "sender": "YNAB <alerts@youneedabudget.com>",
+    "subject": "Your account has been accessed",
+    "snippet": "Large purchase alert: $45.99 at Uber. Confirm: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "4e90263283e354ab",
+    "sender": "Prosper <alerts@prosper.com>",
+    "subject": "Account activity alert",
+    "snippet": "Unusual activity: Your account was accessed from London, UK. Action needed: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "e900332dda45a4dc",
+    "sender": "Mint <alerts@mint.com>",
+    "subject": "Deposit received",
+    "snippet": "New Shell Gas transaction: $125.50. This doesn't match your usual spending.",
+    "category": "BANKING_ACCOUNT"
+  },
+  {
+    "id": "cc6a03bd49f9df8b",
+    "sender": "Crypto Exchange <alerts@crypto.com>",
+    "subject": "Account verification needed",
+    "snippet": "Security check: Review this login from San Francisco, CA. If it wasn't you: https://chase.com/...",
+    "category": "BANKING_ACCOUNT"
+  }
+]

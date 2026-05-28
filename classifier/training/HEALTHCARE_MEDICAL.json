@@ -1,704 +1,702 @@
-{
-  "emails": [
-    {
-      "id": "541a9f2a33dd7553",
-      "sender": "pharmacy@prescription.com",
-      "subject": "Appointment scheduled",
-      "snippet": "Your vaccination appointment is confirmed for June 10 at 10:30 AM. Location: Building A. Questions? 555-0555",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "bf5833578dff9cec",
-      "sender": "results@genetictesting.com",
-      "subject": "Visit summary",
-      "snippet": "Your prescription for Omeprazole is ready at Walgreens. Pick up by tomorrow. Refills: 1. Questions? Call us.",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "4c117775af4cf4bb",
-      "sender": "records@healthcare-provider.org",
-      "subject": "Results available",
-      "snippet": "Lab order received: blood work. You'll receive instructions: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "9f2cc8159eee3355",
-      "sender": "results@bloodwork.com",
-      "subject": "Authorization approved",
-      "snippet": "Appointment confirmed: surgery with Dr. Smith on June 10. Prepare: bring ID",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "c54822c6591c3c1a",
-      "sender": "telemedicine@amwell.com",
-      "subject": "Appointment reminder: checkup",
-      "snippet": "Insurance claim status for CLM123456: normal. Details: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "699ff5ead6409856",
-      "sender": "billing@hospital.com",
-      "subject": "Prescription transferred",
-      "snippet": "Reminder: You have a surgery appointment on June 10 at 10:30 AM with Dr. Smith. Bring your insurance card and arrive 10 minutes early. Confirm: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "b8f10175d35b5b54",
-      "sender": "lab-results@healthcheck.com",
-      "subject": "Test results notification",
-      "snippet": "Reminder: You have a consultation appointment on tomorrow at 10:30 AM with Dr. Chen. Bring your insurance card and arrive 10 minutes early. Confirm: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "b6262ad5b55325b7",
-      "sender": "results@genetictesting.com",
-      "subject": "Results available",
-      "snippet": "Prescription transferred: Omeprazole sent to Walgreens. Ready for pickup!",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "cce9e4c30d06cd20",
-      "sender": "noreply@myhealth.org",
-      "subject": "Prescription transferred",
-      "snippet": "Refill request submitted for Omeprazole. Approval status: normal. patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "44fa5a00e0221c69",
-      "sender": "Walgreens <pharmacy@walgreens.com>",
-      "subject": "Prescription reminder",
-      "snippet": "Lab order received: blood work. You'll receive instructions: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "3425bab1ebd5d99d",
-      "sender": "records@healthcare-provider.org",
-      "subject": "Billing statement",
-      "snippet": "Insurance claim status for CLM123456: pending. Details: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "fa9c3c5040134fb7",
-      "sender": "noreply@myhealth.org",
-      "subject": "Upcoming appointment",
-      "snippet": "Your lab results are now available. Log in to view your test results from June 10. If you have questions, contact your provider. Results: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "d55a7ec7bdd97b0d",
-      "sender": "records@healthcare-provider.org",
-      "subject": "Upcoming appointment",
-      "snippet": "Medication interaction alert: Talk to your doctor. Details: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "56f2897515ef221c",
-      "sender": "results@pathway.com",
-      "subject": "Prescription ready for pickup",
-      "snippet": "New prescription from Dr. Chen: Lisinopril. Get it filled: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "465649de58d3adc4",
-      "sender": "appointments@kaiser.org",
-      "subject": "Insurance claim update",
-      "snippet": "Medication interaction alert: Talk to your doctor. Details: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "2e414a063e1c0a51",
-      "sender": "appointments@urgent-care.com",
-      "subject": "Medical record available",
-      "snippet": "Your blood work results: abnormal. Next steps: follow-up appointment. Questions? 555-0555",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "d7299c5c78bfda16",
-      "sender": "telemedicine@amwell.com",
-      "subject": "New prescription available",
-      "snippet": "Allergy information updated in your chart. Review: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "58f6dfaca6e8b806",
-      "sender": "noreply@healthyou.org",
-      "subject": "Medical appointment confirmation",
-      "snippet": "Your healthcare bill: $500.00 due tomorrow. Pay: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "d3c7ead29fede3e5",
-      "sender": "noreply@teladoc.com",
-      "subject": "Billing statement",
-      "snippet": "Prescription transferred: Atorvastatin sent to CVS Downtown. Ready for pickup!",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "31c269bdac133226",
-      "sender": "appointments@kaiser.org",
-      "subject": "Results available",
-      "snippet": "Appointment confirmed: checkup with Dr. Johnson on June 10. Prepare: fast 8 hours",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "af178a606554ecfc",
-      "sender": "psychiatry@mentalhealth.org",
-      "subject": "Referral received",
-      "snippet": "Lab order received: COVID test. You'll receive instructions: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "09e2b21de4d07f38",
-      "sender": "imaging@radiology.com",
-      "subject": "Medical appointment confirmation",
-      "snippet": "Your surgery appointment is confirmed for June 10 at 10:30 AM. Location: Suite 200. Questions? 555-0555",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "ff0087d5a1999473",
-      "sender": "records@healthcare-provider.org",
-      "subject": "Appointment video link",
-      "snippet": "Refill request submitted for Metformin. Approval status: abnormal. https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "f05046eed4cc58d4",
-      "sender": "imaging@radiology.com",
-      "subject": "Authorization approved",
-      "snippet": "Your surgery appointment is confirmed for June 10 at 2:00 PM. Location: Suite 200. Questions? 555-0555",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "9fecf2cc4a18e90a",
-      "sender": "noreply@myhealth.org",
-      "subject": "Follow-up appointment needed",
-      "snippet": "Allergy information updated in your chart. Review: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "68a9bc74bd381565",
-      "sender": "pharmacy@unitedhealth.com",
-      "subject": "Referral received",
-      "snippet": "Prescription transferred: Omeprazole sent to CVS Downtown. Ready for pickup!",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "ab4b6bf432242233",
-      "sender": "results@bloodwork.com",
-      "subject": "Appointment reminder: follow-up",
-      "snippet": "Annual physical due: Schedule now: https://kaiser.org/results. Insurance covered.",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "cad39a74fff85531",
-      "sender": "telemedicine@amwell.com",
-      "subject": "Prescription reminder",
-      "snippet": "Lab order received: COVID test. You'll receive instructions: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "1f98c0379429f687",
-      "sender": "prescriptions@pharmacy.org",
-      "subject": "Health reminder",
-      "snippet": "Lab order received: chest X-ray. You'll receive instructions: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "f4e13094de5707cc",
-      "sender": "results@pathway.com",
-      "subject": "Lab order placed",
-      "snippet": "Your healthcare bill: $150.00 due tomorrow. Pay: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "20263deae831c850",
-      "sender": "Walgreens <pharmacy@walgreens.com>",
-      "subject": "Appointment video link",
-      "snippet": "Insurance authorization approved for surgery. Details: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "9fd6f1a3157d3202",
-      "sender": "results@bloodwork.com",
-      "subject": "Health update from your provider",
-      "snippet": "Prescription transferred: Atorvastatin sent to CVS Downtown. Ready for pickup!",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "588135a4ec12c0fe",
-      "sender": "noreply@mdlive.com",
-      "subject": "Patient survey",
-      "snippet": "Follow-up appointment needed: Dr. Smith recommends vaccination visit. Schedule: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "d813362dd17c9cc6",
-      "sender": "results@labcorp.com",
-      "subject": "Upcoming appointment",
-      "snippet": "Prescription ready: Omeprazole at Rite Aid. Pick up anytime. Refills available: 3. Questions: 555-0555",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "54b571960c874683",
-      "sender": "prescriptions@pharmacy.org",
-      "subject": "Health reminder",
-      "snippet": "Refill request submitted for Omeprazole. Approval status: pending. https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "202a7ba3eb3c21a1",
-      "sender": "records@healthcare-provider.org",
-      "subject": "Results available",
-      "snippet": "Your health metrics from June 10: glucose is normal. Details: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "6cb6cc032fb55080",
-      "sender": "pharmacy@unitedhealth.com",
-      "subject": "Insurance claim update",
-      "snippet": "Prescription ready: Omeprazole at Walgreens. Pick up anytime. Refills available: 0. Questions: 555-0555",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "c4fcb26fce3d8554",
-      "sender": "billing@hospital.com",
-      "subject": "Health update from your provider",
-      "snippet": "Annual physical due: Schedule now: https://kaiser.org/results. Insurance covered.",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "42669838770a392c",
-      "sender": "Walgreens <pharmacy@walgreens.com>",
-      "subject": "Upcoming appointment",
-      "snippet": "Medication interaction alert: Talk to your doctor. Details: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "ba6dcf1ad2507bf6",
-      "sender": "appointments@mayo.org",
-      "subject": "Medical record available",
-      "snippet": "Refill request submitted for Atorvastatin. Approval status: normal. patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "eb4e27a5e03ec5a0",
-      "sender": "noreply@healthapp.com",
-      "subject": "Appointment scheduled",
-      "snippet": "Allergy information updated in your chart. Review: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "1b706837dbd63797",
-      "sender": "records@healthcare-provider.org",
-      "subject": "Urgent: Action needed",
-      "snippet": "Your healthcare bill: $500.00 due June 10. Pay: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "d6b7eb24c6cc68a2",
-      "sender": "psychiatry@mentalhealth.org",
-      "subject": "Medical record available",
-      "snippet": "Vaccine appointment reminder: Flu on June 10 at 2:00 PM. Location: Suite 200.",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "a686a1b9a03328ef",
-      "sender": "pharmacy@unitedhealth.com",
-      "subject": "Billing statement",
-      "snippet": "Medication interaction alert: Talk to your doctor. Details: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "0b27ec54afdb1aaf",
-      "sender": "noreply@questdiagnostics.com",
-      "subject": "Authorization approved",
-      "snippet": "Insurance claim status for CLM123456: normal. Details: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "5486137f665ee4b2",
-      "sender": "Rite Aid <noreply@riteaid.com>",
-      "subject": "Appointment reminder: checkup",
-      "snippet": "Your consultation appointment is confirmed for tomorrow at 10:30 AM. Location: Suite 200. Questions? 555-0555",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "787a0fb50f3b294d",
-      "sender": "billing@hospital.com",
-      "subject": "Authorization approved",
-      "snippet": "Allergy information updated in your chart. Review: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "141c1aa050d488ef",
-      "sender": "noreply@healthapp.com",
-      "subject": "Payment due: Medical bill",
-      "snippet": "Insurance claim status for CLM123456: normal. Details: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "c88bac466ac1c63b",
-      "sender": "appointments@mayo.org",
-      "subject": "Vaccine appointment",
-      "snippet": "Medication refill approved: Atorvastatin ready at Rite Aid: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "56349260406c2c60",
-      "sender": "CVS Pharmacy <cvs@cvs.com>",
-      "subject": "Insurance claim update",
-      "snippet": "Your lab results are now available. Log in to view your test results from tomorrow. If you have questions, contact your provider. Results: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "7deb562e5f6c0ca4",
-      "sender": "vaccination@publichealth.org",
-      "subject": "Health update from your provider",
-      "snippet": "Upcoming appointment: Dr. Johnson - vaccination on June 10 at 10:30 AM. Arrive early. Confirm: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "fd72fa7d79c5d2d7",
-      "sender": "noreply@questdiagnostics.com",
-      "subject": "Authorization approved",
-      "snippet": "Appointment confirmed: vaccination with Dr. Johnson on June 10. Prepare: fast 8 hours",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "7ad8ccc926be574f",
-      "sender": "records@healthcare-provider.org",
-      "subject": "Medical appointment confirmation",
-      "snippet": "Your healthcare bill: $150.00 due June 10. Pay: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "91c02e4a787e578a",
-      "sender": "noreply@questdiagnostics.com",
-      "subject": "Prescription ready for pickup",
-      "snippet": "Allergy information updated in your chart. Review: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "43a071f84ee821b0",
-      "sender": "imaging@radiology.com",
-      "subject": "Results available",
-      "snippet": "Imaging results ready: MRI. Radiologist: Dr. Davis. View: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "f89cc19a7f482089",
-      "sender": "imaging@radiology.com",
-      "subject": "Health reminder",
-      "snippet": "Refill request submitted for Lisinopril. Approval status: pending. https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "6f42028f40a6083a",
-      "sender": "appointments@mayo.org",
-      "subject": "Insurance claim update",
-      "snippet": "Prescription transferred: Metformin sent to Rite Aid. Ready for pickup!",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "eca876d64aafcb2c",
-      "sender": "records@healthcare-provider.org",
-      "subject": "Vaccine appointment",
-      "snippet": "Your health metrics from tomorrow: glucose is normal. Details: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "8b35d704c3583dd3",
-      "sender": "Rite Aid <noreply@riteaid.com>",
-      "subject": "Prescription transferred",
-      "snippet": "Your lab results are now available. Log in to view your test results from June 10. If you have questions, contact your provider. Results: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "98aff04417257345",
-      "sender": "noreply@healthyou.org",
-      "subject": "Medical record available",
-      "snippet": "Follow-up appointment needed: Dr. Smith recommends follow-up visit. Schedule: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "64e7f5c754879eef",
-      "sender": "optometry@eyecare.com",
-      "subject": "Medical appointment confirmation",
-      "snippet": "Appointment confirmed: checkup with Dr. Johnson on tomorrow. Prepare: fast 8 hours",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "c69564b2be0915a6",
-      "sender": "vaccination@publichealth.org",
-      "subject": "Prescription ready for pickup",
-      "snippet": "Lab order received: blood work. You'll receive instructions: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "e0128d4eabf33a06",
-      "sender": "CVS Pharmacy <cvs@cvs.com>",
-      "subject": "Appointment scheduled",
-      "snippet": "Visit summary available from your June 10 appointment with Dr. Chen: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "66eaafabffca9ab9",
-      "sender": "results@bloodwork.com",
-      "subject": "Billing statement",
-      "snippet": "Insurance claim status for CLM123456: abnormal. Details: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "dd74c35a58053c79",
-      "sender": "results@genetictesting.com",
-      "subject": "Telehealth visit reminder",
-      "snippet": "Prescription transferred: Metformin sent to CVS Downtown. Ready for pickup!",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "ba328d045dc0ec54",
-      "sender": "pharmacy@prescription.com",
-      "subject": "Billing statement",
-      "snippet": "Lab order received: chest X-ray. You'll receive instructions: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "cb91eb3d8197730a",
-      "sender": "results@pathway.com",
-      "subject": "Insurance claim update",
-      "snippet": "Visit summary available from your tomorrow appointment with Dr. Smith: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "e94dd70458a63b32",
-      "sender": "prescriptions@pharmacy.org",
-      "subject": "Appointment scheduled",
-      "snippet": "Telehealth visit June 10 at 10:30 AM with Dr. Johnson. Link: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "5a2a6c7844aec1bf",
-      "sender": "appointments@kaiser.org",
-      "subject": "Lab order placed",
-      "snippet": "Your lab results are now available. Log in to view your test results from tomorrow. If you have questions, contact your provider. Results: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "eb4e0b2a223e6766",
-      "sender": "dental@dentist-office.com",
-      "subject": "Health reminder",
-      "snippet": "Prescription transferred: Metformin sent to CVS Downtown. Ready for pickup!",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "12ac671535135001",
-      "sender": "imaging@radiology.com",
-      "subject": "Test results notification",
-      "snippet": "Allergy information updated in your chart. Review: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "e05b587907830ac3",
-      "sender": "CVS Pharmacy <cvs@cvs.com>",
-      "subject": "Referral received",
-      "snippet": "Insurance claim status for CLM123456: pending. Details: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "50b01f08ece42158",
-      "sender": "results@bloodwork.com",
-      "subject": "Medical record available",
-      "snippet": "Appointment confirmed: surgery with Dr. Chen on June 10. Prepare: fast 8 hours",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "df094528a59e1ad2",
-      "sender": "Walgreens <pharmacy@walgreens.com>",
-      "subject": "Test results notification",
-      "snippet": "Vaccine appointment reminder: Flu on tomorrow at 10:30 AM. Location: Suite 200.",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "3181801ce9e82cf4",
-      "sender": "appointments@kaiser.org",
-      "subject": "Test results notification",
-      "snippet": "Insurance claim status for CLM123456: pending. Details: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "02e71dc712f1180b",
-      "sender": "prescriptions@pharmacy.org",
-      "subject": "Upcoming appointment",
-      "snippet": "Follow-up appointment needed: Dr. Smith recommends consultation visit. Schedule: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "f60996fb9178128f",
-      "sender": "results@bloodwork.com",
-      "subject": "Prescription ready for pickup",
-      "snippet": "Medication interaction alert: Talk to your doctor. Details: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "55fa9ebce9b2dd69",
-      "sender": "Rite Aid <noreply@riteaid.com>",
-      "subject": "Visit summary",
-      "snippet": "Your lab results are now available. Log in to view your test results from tomorrow. If you have questions, contact your provider. Results: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "b4a91f993547d32b",
-      "sender": "results@pathway.com",
-      "subject": "Lab order placed",
-      "snippet": "Lab order received: COVID test. You'll receive instructions: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "1db20df7e2fe1fbd",
-      "sender": "appointments@kaiser.org",
-      "subject": "Medical appointment confirmation",
-      "snippet": "Your lab results are now available. Log in to view your test results from June 10. If you have questions, contact your provider. Results: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "864d1a4c0e8bf5a8",
-      "sender": "CVS Pharmacy <cvs@cvs.com>",
-      "subject": "Visit summary",
-      "snippet": "Prescription ready: Lisinopril at Walgreens. Pick up anytime. Refills available: 1. Questions: 555-0555",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "8028f692e603897f",
-      "sender": "results@genetictesting.com",
-      "subject": "Health reminder",
-      "snippet": "Annual physical due: Schedule now: https://kaiser.org/results. Insurance covered.",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "68e8242216561356",
-      "sender": "CVS Pharmacy <cvs@cvs.com>",
-      "subject": "Appointment video link",
-      "snippet": "New prescription from Dr. Chen: Lisinopril. Get it filled: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "6043821b8eef259c",
-      "sender": "appointments@therapist.com",
-      "subject": "Medication refill ready",
-      "snippet": "Your surgery appointment is confirmed for June 10 at 2:00 PM. Location: Suite 200. Questions? 555-0555",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "4bbb477bb006668f",
-      "sender": "appointments@urgent-care.com",
-      "subject": "Medical record available",
-      "snippet": "Reminder: You have a surgery appointment on tomorrow at 10:30 AM with Dr. Chen. Bring your insurance card and arrive 10 minutes early. Confirm: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "6e3a5ac16a1bd314",
-      "sender": "optometry@eyecare.com",
-      "subject": "Upcoming appointment",
-      "snippet": "Vaccination record updated: COVID-19 administered tomorrow. Certificate: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "299bcb72e7cc0bf4",
-      "sender": "dental@dentist-office.com",
-      "subject": "Telehealth visit reminder",
-      "snippet": "Insurance authorization approved for imaging. Details: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "0bb48e6fdd4479b6",
-      "sender": "telemedicine@amwell.com",
-      "subject": "Appointment cancellation",
-      "snippet": "Prescription ready: Omeprazole at Rite Aid. Pick up anytime. Refills available: 0. Questions: 555-0555",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "acfca85f64beab72",
-      "sender": "noreply@healthyou.org",
-      "subject": "Referral received",
-      "snippet": "Your healthcare bill: $500.00 due tomorrow. Pay: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "05d11873c25225ce",
-      "sender": "vaccination@publichealth.org",
-      "subject": "Urgent: Action needed",
-      "snippet": "Insurance claim status for CLM123456: abnormal. Details: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "727c647a720ae24c",
-      "sender": "noreply@healthyou.org",
-      "subject": "Insurance claim update",
-      "snippet": "Medical record request approved. Download: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "92562c8799f63618",
-      "sender": "billing@hospital.com",
-      "subject": "Authorization approved",
-      "snippet": "Your follow-up appointment is confirmed for June 10 at 10:30 AM. Location: Suite 200. Questions? 555-0555",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "a8699460a321c67f",
-      "sender": "results@genetictesting.com",
-      "subject": "Referral received",
-      "snippet": "Appointment confirmed: consultation with Dr. Smith on June 10. Prepare: fast 8 hours",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "1931558d18b48bc5",
-      "sender": "lab-results@healthcheck.com",
-      "subject": "Appointment scheduled",
-      "snippet": "Prescription transferred: Atorvastatin sent to CVS Downtown. Ready for pickup!",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "c5b2dfa6beac7dc9",
-      "sender": "imaging@radiology.com",
-      "subject": "Prescription reminder",
-      "snippet": "Vaccine appointment reminder: Flu on June 10 at 2:00 PM. Location: Building A.",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "0afbe77e1354ed27",
-      "sender": "noreply@mdlive.com",
-      "subject": "Medical appointment confirmation",
-      "snippet": "Medication interaction alert: Talk to your doctor. Details: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "4502572cf121040e",
-      "sender": "pharmacy@prescription.com",
-      "subject": "Medical record available",
-      "snippet": "Medication interaction alert: Talk to your doctor. Details: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "82d09ef131081039",
-      "sender": "appointments@kaiser.org",
-      "subject": "Referral received",
-      "snippet": "Vaccination record updated: COVID-19 administered tomorrow. Certificate: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "e57b8cf08a1dcd65",
-      "sender": "results@pathway.com",
-      "subject": "Health update from your provider",
-      "snippet": "Test results ready: blood work. Status: abnormal. View: patient.healthyou.org",
-      "category": "HEALTHCARE_MEDICAL"
-    },
-    {
-      "id": "57bffce4bd38e02c",
-      "sender": "appointments@mayo.org",
-      "subject": "New prescription available",
-      "snippet": "Reminder: You have a vaccination appointment on tomorrow at 10:30 AM with Dr. Chen. Bring your insurance card and arrive 10 minutes early. Confirm: https://kaiser.org/results",
-      "category": "HEALTHCARE_MEDICAL"
-    }
-  ]
-}
+[
+  {
+    "id": "e0ad3fc76ecdc006",
+    "sender": "noreply@healthapp.com",
+    "subject": "Authorization approved",
+    "snippet": "Medical record request approved. Download: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "3435304fb5105a08",
+    "sender": "optometry@eyecare.com",
+    "subject": "Appointment video link",
+    "snippet": "Appointment confirmed: surgery with Dr. Smith on tomorrow. Prepare: bring ID",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "c83722b206717e96",
+    "sender": "noreply@myhealth.org",
+    "subject": "Authorization approved",
+    "snippet": "Medical record request approved. Download: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "e8f2523431bf4eed",
+    "sender": "appointments@urgent-care.com",
+    "subject": "Appointment cancellation",
+    "snippet": "Your chest X-ray results: abnormal. Next steps: follow-up appointment. Questions? 555-0555",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "490e4aa1ef3efa77",
+    "sender": "noreply@mdlive.com",
+    "subject": "Patient survey",
+    "snippet": "New prescription from Dr. Smith: Omeprazole. Get it filled: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "d9ea454f32b1ad2f",
+    "sender": "Walgreens <pharmacy@walgreens.com>",
+    "subject": "Follow-up appointment needed",
+    "snippet": "New prescription from Dr. Johnson: Atorvastatin. Get it filled: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "1eaf7cdce270a8f7",
+    "sender": "lab-results@healthcheck.com",
+    "subject": "Insurance claim update",
+    "snippet": "Your healthcare bill: $150.00 due June 10. Pay: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "4b584185f5493def",
+    "sender": "optometry@eyecare.com",
+    "subject": "Test results notification",
+    "snippet": "Referral to cardiologist has been submitted. Status: pending. Details: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "a41fa712cde20370",
+    "sender": "noreply@teladoc.com",
+    "subject": "Authorization approved",
+    "snippet": "Imaging results ready: CT scan. Radiologist: Dr. Davis. View: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "35cf9801dbf272a9",
+    "sender": "optometry@eyecare.com",
+    "subject": "Prescription ready for pickup",
+    "snippet": "Annual physical due: Schedule now: patient.healthyou.org. Insurance covered.",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "4976c2e2249d585a",
+    "sender": "noreply@myhealth.org",
+    "subject": "Lab order placed",
+    "snippet": "Follow-up appointment needed: Dr. Johnson recommends checkup visit. Schedule: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "d93cd0d753105335",
+    "sender": "results@genetictesting.com",
+    "subject": "Referral received",
+    "snippet": "New prescription from Dr. Johnson: Lisinopril. Get it filled: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "074438cc0577b26d",
+    "sender": "psychiatry@mentalhealth.org",
+    "subject": "Vaccine appointment",
+    "snippet": "New prescription from Dr. Johnson: Omeprazole. Get it filled: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "8e877493b8ac239f",
+    "sender": "pharmacy@prescription.com",
+    "subject": "Health update from your provider",
+    "snippet": "New prescription from Dr. Chen: Lisinopril. Get it filled: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "7426a84b6da55264",
+    "sender": "psychiatry@mentalhealth.org",
+    "subject": "Test results notification",
+    "snippet": "Refill request submitted for Lisinopril. Approval status: normal. patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "53d660226bbdabe8",
+    "sender": "noreply@myhealth.org",
+    "subject": "Prescription ready for pickup",
+    "snippet": "Refill request submitted for Metformin. Approval status: pending. https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "3d4b235ee38de7a3",
+    "sender": "noreply@teladoc.com",
+    "subject": "Authorization approved",
+    "snippet": "Medical record request approved. Download: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "d95a2a313f4c26c6",
+    "sender": "noreply@healthapp.com",
+    "subject": "Lab order placed",
+    "snippet": "Follow-up appointment needed: Dr. Smith recommends vaccination visit. Schedule: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "5122a203e793a27f",
+    "sender": "results@genetictesting.com",
+    "subject": "Upcoming appointment",
+    "snippet": "Your health metrics from tomorrow: glucose is pending. Details: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "ad68c578dc02224e",
+    "sender": "noreply@mdlive.com",
+    "subject": "Your lab results are ready",
+    "snippet": "Medication refill approved: Atorvastatin ready at CVS Downtown: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "6d1758053c8cfff2",
+    "sender": "noreply@healthapp.com",
+    "subject": "Prescription ready for pickup",
+    "snippet": "Reminder: You have a surgery appointment on June 10 at 10:30 AM with Dr. Chen. Bring your insurance card and arrive 10 minutes early. Confirm: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "a58f0e5beb6209e1",
+    "sender": "telemedicine@amwell.com",
+    "subject": "Results available",
+    "snippet": "Refill request submitted for Lisinopril. Approval status: abnormal. https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "04f3a44d4d77aefe",
+    "sender": "results@bloodwork.com",
+    "subject": "Prescription reminder",
+    "snippet": "Follow-up appointment needed: Dr. Smith recommends checkup visit. Schedule: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "86e8f4ec199525c2",
+    "sender": "noreply@healthyou.org",
+    "subject": "Telehealth visit reminder",
+    "snippet": "Vaccine appointment reminder: COVID-19 on June 10 at 2:00 PM. Location: Suite 200.",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "3406e87b1802aafc",
+    "sender": "psychiatry@mentalhealth.org",
+    "subject": "Visit summary",
+    "snippet": "Your consultation appointment is confirmed for June 10 at 10:30 AM. Location: Building A. Questions? 555-0555",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "1759c69f45af0cb7",
+    "sender": "noreply@teladoc.com",
+    "subject": "Vaccine appointment",
+    "snippet": "Your lab results are now available. Log in to view your test results from tomorrow. If you have questions, contact your provider. Results: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "e85a9db31c17e93e",
+    "sender": "results@genetictesting.com",
+    "subject": "Referral received",
+    "snippet": "Medical record request approved. Download: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "779d8798abab77b4",
+    "sender": "noreply@teladoc.com",
+    "subject": "Upcoming appointment",
+    "snippet": "Appointment confirmed: consultation with Dr. Johnson on June 10. Prepare: bring ID",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "f2ba313d022881c7",
+    "sender": "psychiatry@mentalhealth.org",
+    "subject": "Authorization approved",
+    "snippet": "Refill request submitted for Omeprazole. Approval status: pending. patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "dcfd3bad85cf736f",
+    "sender": "noreply@mdlive.com",
+    "subject": "Appointment reminder: surgery",
+    "snippet": "Medication interaction alert: Talk to your doctor. Details: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "8e40d698a615fdae",
+    "sender": "noreply@myhealth.org",
+    "subject": "Vaccine appointment",
+    "snippet": "Medication refill approved: Metformin ready at Walgreens: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "3193068b9c02e322",
+    "sender": "noreply@healthapp.com",
+    "subject": "Visit summary",
+    "snippet": "Allergy information updated in your chart. Review: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "046cc484d5178ea9",
+    "sender": "appointments@therapist.com",
+    "subject": "Health update from your provider",
+    "snippet": "Lab order received: blood work. You'll receive instructions: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "642c5b38c2a4049a",
+    "sender": "reminders@healthsystem.org",
+    "subject": "Referral received",
+    "snippet": "Insurance claim status for CLM123456: pending. Details: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "ac3b02bf88587cd3",
+    "sender": "telemedicine@amwell.com",
+    "subject": "Telehealth visit reminder",
+    "snippet": "Appointment confirmed: consultation with Dr. Chen on June 10. Prepare: bring ID",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "e29909470d9e6261",
+    "sender": "results@bloodwork.com",
+    "subject": "Health update from your provider",
+    "snippet": "Telehealth visit June 10 at 10:30 AM with Dr. Johnson. Link: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "5f49c9d9d40c3b3d",
+    "sender": "appointments@therapist.com",
+    "subject": "Follow-up appointment needed",
+    "snippet": "Medication interaction alert: Talk to your doctor. Details: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "4ba3ed0e26e89766",
+    "sender": "billing@hospital.com",
+    "subject": "Prescription reminder",
+    "snippet": "Telehealth visit June 10 at 2:00 PM with Dr. Johnson. Link: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "b98d0171e0ecb57f",
+    "sender": "results@genetictesting.com",
+    "subject": "Medication refill ready",
+    "snippet": "Insurance authorization approved for imaging. Details: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "d33aa7e37b1128f6",
+    "sender": "pharmacy@unitedhealth.com",
+    "subject": "Payment due: Medical bill",
+    "snippet": "Test results ready: COVID test. Status: pending. View: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "4e0531a58ba2edaa",
+    "sender": "noreply@mdlive.com",
+    "subject": "Authorization approved",
+    "snippet": "Visit summary available from your June 10 appointment with Dr. Johnson: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "0ba4dd559428a6aa",
+    "sender": "noreply@questdiagnostics.com",
+    "subject": "Appointment scheduled",
+    "snippet": "Refill request submitted for Metformin. Approval status: pending. patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "b987ea7272363b57",
+    "sender": "telemedicine@amwell.com",
+    "subject": "Test results notification",
+    "snippet": "Follow-up appointment needed: Dr. Johnson recommends follow-up visit. Schedule: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "c20fd713584ce67e",
+    "sender": "appointments@urgent-care.com",
+    "subject": "Medication refill ready",
+    "snippet": "Upcoming appointment: Dr. Smith - surgery on tomorrow at 2:00 PM. Arrive early. Confirm: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "ee37841d87e39c64",
+    "sender": "noreply@teladoc.com",
+    "subject": "Billing statement",
+    "snippet": "Insurance claim status for CLM123456: normal. Details: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "f4980a1262cf8320",
+    "sender": "records@healthcare-provider.org",
+    "subject": "Vaccine appointment",
+    "snippet": "Insurance claim status for CLM123456: normal. Details: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "09a162ace272af1b",
+    "sender": "dental@dentist-office.com",
+    "subject": "Test results notification",
+    "snippet": "Telehealth visit June 10 at 10:30 AM with Dr. Chen. Link: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "e2e4b8056619f8cc",
+    "sender": "pharmacy@unitedhealth.com",
+    "subject": "Patient survey",
+    "snippet": "Prescription ready: Metformin at Walgreens. Pick up anytime. Refills available: 0. Questions: 555-0555",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "9b013b1c689bc9ba",
+    "sender": "noreply@mdlive.com",
+    "subject": "Billing statement",
+    "snippet": "Follow-up appointment needed: Dr. Johnson recommends checkup visit. Schedule: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "3b64a3ebda338253",
+    "sender": "noreply@mdlive.com",
+    "subject": "Appointment cancellation",
+    "snippet": "Medical record request approved. Download: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "b03a09290517eeef",
+    "sender": "billing@hospital.com",
+    "subject": "Health update from your provider",
+    "snippet": "Insurance claim status for CLM123456: pending. Details: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "f8f2c6e98d04740f",
+    "sender": "noreply@healthapp.com",
+    "subject": "Visit summary",
+    "snippet": "Vaccination record updated: COVID-19 administered June 10. Certificate: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "fdeab42b0ed5ba0b",
+    "sender": "noreply@healthapp.com",
+    "subject": "Telehealth visit reminder",
+    "snippet": "Imaging results ready: MRI. Radiologist: Dr. Davis. View: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "bb9deb4fadf4e0cb",
+    "sender": "appointments@mayo.org",
+    "subject": "New prescription available",
+    "snippet": "Lab order received: COVID test. You'll receive instructions: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "610a43f0a124436c",
+    "sender": "noreply@questdiagnostics.com",
+    "subject": "New prescription available",
+    "snippet": "Referral to dermatologist has been submitted. Status: pending. Details: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "2c747a4eba6151df",
+    "sender": "noreply@questdiagnostics.com",
+    "subject": "Your lab results are ready",
+    "snippet": "Refill request submitted for Omeprazole. Approval status: normal. patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "635a272099e020aa",
+    "sender": "telemedicine@amwell.com",
+    "subject": "Appointment cancellation",
+    "snippet": "Refill request submitted for Metformin. Approval status: pending. https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "f2adfb3b4ba8d71d",
+    "sender": "Rite Aid <noreply@riteaid.com>",
+    "subject": "Vaccine appointment",
+    "snippet": "Appointment confirmed: consultation with Dr. Johnson on June 10. Prepare: bring ID",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "7e745b2a82e21836",
+    "sender": "noreply@healthyou.org",
+    "subject": "Telehealth visit reminder",
+    "snippet": "Appointment confirmed: surgery with Dr. Smith on June 10. Prepare: fast 8 hours",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "681a3acc03d35c11",
+    "sender": "telemedicine@amwell.com",
+    "subject": "Insurance update",
+    "snippet": "Referral to cardiologist has been submitted. Status: abnormal. Details: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "39269c794b3424eb",
+    "sender": "pharmacy@unitedhealth.com",
+    "subject": "Upcoming appointment",
+    "snippet": "Medical record request approved. Download: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "4e1baea45c4a700d",
+    "sender": "results@bloodwork.com",
+    "subject": "Prescription ready for pickup",
+    "snippet": "Your blood work results: pending. Next steps: follow-up appointment. Questions? 555-0555",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "baa28d2e5a98aa31",
+    "sender": "lab-results@healthcheck.com",
+    "subject": "Your lab results are ready",
+    "snippet": "Vaccination record updated: Flu administered June 10. Certificate: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "cefef3aa7b3424cd",
+    "sender": "noreply@myhealth.org",
+    "subject": "Patient survey",
+    "snippet": "Medication refill approved: Metformin ready at Walgreens: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "1365807dbbe8bf39",
+    "sender": "pharmacy@prescription.com",
+    "subject": "Test results notification",
+    "snippet": "Your lab results are now available. Log in to view your test results from tomorrow. If you have questions, contact your provider. Results: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "8f7d74c8f0132681",
+    "sender": "Walgreens <pharmacy@walgreens.com>",
+    "subject": "Lab order placed",
+    "snippet": "Upcoming appointment: Dr. Smith - consultation on tomorrow at 2:00 PM. Arrive early. Confirm: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "7055ba025ef94b81",
+    "sender": "Walgreens <pharmacy@walgreens.com>",
+    "subject": "New prescription available",
+    "snippet": "Your checkup appointment is confirmed for June 10 at 2:00 PM. Location: Suite 200. Questions? 555-0555",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "35e0cc54536e00fb",
+    "sender": "lab-results@healthcheck.com",
+    "subject": "Insurance update",
+    "snippet": "Patient satisfaction survey: How was your recent visit? https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "b200cf10de52cdb0",
+    "sender": "results@genetictesting.com",
+    "subject": "Billing statement",
+    "snippet": "Follow-up appointment needed: Dr. Johnson recommends checkup visit. Schedule: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "b9e167c897a6d3e2",
+    "sender": "pharmacy@prescription.com",
+    "subject": "Vaccine appointment",
+    "snippet": "Your healthcare bill: $150.00 due tomorrow. Pay: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "40786cd13d6f874f",
+    "sender": "psychiatry@mentalhealth.org",
+    "subject": "Results available",
+    "snippet": "Prescription transferred: Metformin sent to Rite Aid. Ready for pickup!",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "99a442b814a7ab0b",
+    "sender": "Walgreens <pharmacy@walgreens.com>",
+    "subject": "Authorization approved",
+    "snippet": "Appointment confirmed: vaccination with Dr. Chen on June 10. Prepare: fast 8 hours",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "42f10891b14a0162",
+    "sender": "results@pathway.com",
+    "subject": "Follow-up appointment needed",
+    "snippet": "Your lab results are now available. Log in to view your test results from June 10. If you have questions, contact your provider. Results: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "73644f9e527a0b81",
+    "sender": "prescriptions@pharmacy.org",
+    "subject": "Appointment reminder: vaccination",
+    "snippet": "Allergy information updated in your chart. Review: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "ea54c9d41ddfd1c6",
+    "sender": "prescriptions@pharmacy.org",
+    "subject": "Results available",
+    "snippet": "Vaccine appointment reminder: COVID-19 on June 10 at 2:00 PM. Location: Building A.",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "ad0dd8d3e82310c6",
+    "sender": "noreply@mdlive.com",
+    "subject": "Test results notification",
+    "snippet": "Allergy information updated in your chart. Review: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "9059b0c6db5822ef",
+    "sender": "results@genetictesting.com",
+    "subject": "Telehealth visit reminder",
+    "snippet": "Your healthcare bill: $500.00 due tomorrow. Pay: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "639921a51148bf6f",
+    "sender": "lab-results@healthcheck.com",
+    "subject": "Prescription reminder",
+    "snippet": "Imaging results ready: MRI. Radiologist: Dr. Davis. View: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "52384eb33363cdb7",
+    "sender": "optometry@eyecare.com",
+    "subject": "Referral received",
+    "snippet": "Allergy information updated in your chart. Review: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "1f4bd0e55624207a",
+    "sender": "imaging@radiology.com",
+    "subject": "Medical record available",
+    "snippet": "Patient satisfaction survey: How was your recent visit? patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "1b13bc0ee9b88cda",
+    "sender": "results@labcorp.com",
+    "subject": "Vaccine appointment",
+    "snippet": "Your lab results are now available. Log in to view your test results from tomorrow. If you have questions, contact your provider. Results: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "0665693ce1ba93dd",
+    "sender": "noreply@healthapp.com",
+    "subject": "Referral received",
+    "snippet": "Visit summary available from your June 10 appointment with Dr. Johnson: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "eac7b49c22a36aff",
+    "sender": "results@labcorp.com",
+    "subject": "Vaccine appointment",
+    "snippet": "Patient satisfaction survey: How was your recent visit? patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "a51a2d17a4eb577d",
+    "sender": "results@genetictesting.com",
+    "subject": "Appointment scheduled",
+    "snippet": "Test results ready: blood work. Status: pending. View: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "3793c71f86782827",
+    "sender": "results@genetictesting.com",
+    "subject": "Urgent: Action needed",
+    "snippet": "Test results ready: blood work. Status: normal. View: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "b7752ffce4e83008",
+    "sender": "telemedicine@amwell.com",
+    "subject": "Follow-up appointment needed",
+    "snippet": "Refill request submitted for Metformin. Approval status: normal. patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "0ada4a2e05f33cac",
+    "sender": "CVS Pharmacy <cvs@cvs.com>",
+    "subject": "Insurance update",
+    "snippet": "Appointment confirmed: consultation with Dr. Chen on tomorrow. Prepare: fast 8 hours",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "a3dfceeee715ea24",
+    "sender": "noreply@mdlive.com",
+    "subject": "Health reminder",
+    "snippet": "New prescription from Dr. Chen: Atorvastatin. Get it filled: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "558577c4cd33093a",
+    "sender": "noreply@myhealth.org",
+    "subject": "Upcoming appointment",
+    "snippet": "Medical record request approved. Download: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "f9bde17391aac71f",
+    "sender": "noreply@myhealth.org",
+    "subject": "Medical appointment confirmation",
+    "snippet": "Your lab results are now available. Log in to view your test results from tomorrow. If you have questions, contact your provider. Results: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "eb73dd3ef92d0ea4",
+    "sender": "pharmacy@prescription.com",
+    "subject": "Test results notification",
+    "snippet": "Your vaccination appointment is confirmed for June 10 at 2:00 PM. Location: Suite 200. Questions? 555-0555",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "632b3b84cdcb87b9",
+    "sender": "lab-results@healthcheck.com",
+    "subject": "Urgent: Action needed",
+    "snippet": "Referral to dermatologist has been submitted. Status: abnormal. Details: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "61960f9d8c92ac71",
+    "sender": "noreply@questdiagnostics.com",
+    "subject": "Appointment cancellation",
+    "snippet": "Lab order received: COVID test. You'll receive instructions: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "091d316db902db3a",
+    "sender": "telemedicine@amwell.com",
+    "subject": "Referral received",
+    "snippet": "Medication interaction alert: Talk to your doctor. Details: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "ba5a74dec92c7f36",
+    "sender": "records@healthcare-provider.org",
+    "subject": "Your lab results are ready",
+    "snippet": "Medical record request approved. Download: patient.healthyou.org",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "845868997472b11d",
+    "sender": "noreply@teladoc.com",
+    "subject": "Appointment video link",
+    "snippet": "Reminder: You have a checkup appointment on June 10 at 2:00 PM with Dr. Johnson. Bring your insurance card and arrive 10 minutes early. Confirm: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "e6a83466983b8b68",
+    "sender": "noreply@mdlive.com",
+    "subject": "Insurance claim update",
+    "snippet": "Vaccination record updated: COVID-19 administered June 10. Certificate: https://kaiser.org/results",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "1ecec18103095f4d",
+    "sender": "lab-results@healthcheck.com",
+    "subject": "Prescription ready for pickup",
+    "snippet": "Your blood work results: abnormal. Next steps: prescription. Questions? 555-0555",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "e35a774cf631bcb3",
+    "sender": "billing@hospital.com",
+    "subject": "Lab order placed",
+    "snippet": "Annual physical due: Schedule now: patient.healthyou.org. Insurance covered.",
+    "category": "HEALTHCARE_MEDICAL"
+  },
+  {
+    "id": "74a09bd9553d1ac5",
+    "sender": "lab-results@healthcheck.com",
+    "subject": "Prescription ready for pickup",
+    "snippet": "Prescription ready: Omeprazole at Walgreens. Pick up anytime. Refills available: 1. Questions: 555-0555",
+    "category": "HEALTHCARE_MEDICAL"
+  }
+]

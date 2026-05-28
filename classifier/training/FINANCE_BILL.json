@@ -1,704 +1,702 @@
-{
-  "emails": [
-    {
-      "id": "7f2d30ed4dcec43b",
-      "sender": "Statement <statement@bank.com>",
-      "subject": "Bill notification: 750",
-      "snippet": "Payment reminder: gas bill of $750 is due by June 30. Pay now: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "f0fd83d930108d9d",
-      "sender": "Vendor <invoices@vendor.com>",
-      "subject": "Your gas bill is ready",
-      "snippet": "Verizon invoice #INV789012 for $1200. Due date: June 30.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "b2b93788d53fa671",
-      "sender": "Insurance <billing@insurance.com>",
-      "subject": "Invoice #INV123456",
-      "snippet": "cable charges for June 2026: $750. Payment due by July 1. Questions? 1-800-BILLING",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "1f691d63ea13a4d4",
-      "sender": "utility@edison.com",
-      "subject": "Account summary for June 2026",
-      "snippet": "Your June 2026 statement from Your Insurance Co: $1200 due on July 1. Details: https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "63fc50c0cab45f39",
-      "sender": "Loan <billing@loan.com>",
-      "subject": "cable charges for May 2026",
-      "snippet": "Billing statement from Comcast: $230.00 due on June 30. Account #ACC987654.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "2545ea21a55a7b47",
-      "sender": "Gas <billing@gas.com>",
-      "subject": "Invoice details inside",
-      "snippet": "Statement for June 2026: cable showing $89.99. Due: June 15. autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "6e73fb83cbbb5727",
-      "sender": "Consulting <billing@consulting.com>",
-      "subject": "Amount due: 199.99",
-      "snippet": "Bill notification: water charges of $750. See details: https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "e309622445534c16",
-      "sender": "Invoice <invoices@provider.com>",
-      "subject": "Invoice #INV123456",
-      "snippet": "New bill from County: $1200. Account #ACC123456. Due date: June 15.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "d3929cfed26b8298",
-      "sender": "utility@edison.com",
-      "subject": "Bill notification: 230.00",
-      "snippet": "Your charges: $199.99 from phone. Due date: June 15. Pay: https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "07b527aefe48481c",
-      "sender": "Mortgage <billing@mortgage.com>",
-      "subject": "Your bill is ready to review",
-      "snippet": "Invoice summary: Edison, $50.00. Due: June 30. View full statement: https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "cb4e6b234cc2a07a",
-      "sender": "Phone <billing@phone.com>",
-      "subject": "Your bill is ready to review",
-      "snippet": "Bill summary: electricity charges of $145.50. Due: June 30. Login to pay: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "0e250f68f0f75c13",
-      "sender": "Rent <billing@property.com>",
-      "subject": "Bill summary: cable",
-      "snippet": "Invoice #INV123456: Service Provider, $230.00. Due: July 1. Pay: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "439d9d9520c28a25",
-      "sender": "utility@edison.com",
-      "subject": "Comcast invoice",
-      "snippet": "Bill summary: phone charges of $50.00. Due: June 15. Login to pay: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "c298ca052342014d",
-      "sender": "Professional Services <invoices@professional.com>",
-      "subject": "Invoice from Gas Company",
-      "snippet": "Your charges: $230.00 from property tax. Due date: June 30. Pay: https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "5900c5293d5f7909",
-      "sender": "billing@ge.com",
-      "subject": "Monthly invoice: gas",
-      "snippet": "New bill from Verizon: $1200. Account #ACC987654. Due date: July 1.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "4ecf6661bcca1c96",
-      "sender": "billing@comcast.com",
-      "subject": "Payment is due",
-      "snippet": "Payment due: property tax bill of $50.00. Due date: June 15. Account #ACC987654.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "73325f3b307381d2",
-      "sender": "support@credit-card.com",
-      "subject": "Invoice enclosed",
-      "snippet": "Bill summary: insurance charges of $750. Due: June 30. Login to pay: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "779461f01ecea0dc",
-      "sender": "Gym <billing@gym.com>",
-      "subject": "Your gas bill is ready",
-      "snippet": "Bill details: property tax invoice for $89.99. Due date: July 1. https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "2b7d239913b68e01",
-      "sender": "Contractor <billing@contractor.com>",
-      "subject": "Invoice #INV555555",
-      "snippet": "Your phone statement is ready. Total charges: $750. Payment options: online, phone, or automatic payment. Account #ACC123456",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "b62e09e9b676a7c9",
-      "sender": "Consulting <billing@consulting.com>",
-      "subject": "Account statement",
-      "snippet": "electricity charges for May 2026: $199.99. Payment due by June 30. Questions? 1-800-BILLING",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "ba2b0fe880cff25e",
-      "sender": "Tax Services <billing@tax.com>",
-      "subject": "New charges: Edison",
-      "snippet": "Bill for June 2026: Service Provider charges of $199.99. Due by June 15. https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "9578515d5eada01a",
-      "sender": "Loan <billing@loan.com>",
-      "subject": "phone bill for May 2026",
-      "snippet": "Your mortgage statement is ready. Total charges: $199.99. Payment options: online, phone, or automatic payment. Account #ACC111111",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "b5da6e634f4e1771",
-      "sender": "Services <billing@services.com>",
-      "subject": "Account billing",
-      "snippet": "Your statement is ready: Comcast. Balance: $199.99. Due date: July 1. https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "b56dcafd8fa8b65a",
-      "sender": "Mortgage <billing@mortgage.com>",
-      "subject": "Your bill is ready to review",
-      "snippet": "Billing statement from Comcast: $89.99 due on June 30. Account #ACC111111.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "1d30be20ac556637",
-      "sender": "Invoice <invoices@provider.com>",
-      "subject": "Monthly invoice: property tax",
-      "snippet": "Your monthly statement: Edison, $750. Due: June 30. Questions? 1-800-BILLING",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "d51efc30acbf3d89",
-      "sender": "Gym <billing@gym.com>",
-      "subject": "Payment is due",
-      "snippet": "Your account charges: $89.99 from Water Department. Statement: https://bill.pay.com. Due: June 15",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "c81f752853fa64c0",
-      "sender": "Healthcare <billing@healthcare.com>",
-      "subject": "Your bill is ready to review",
-      "snippet": "Bill alert: County charges of $145.50 for May 2026. Due by June 15. View details: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "ecf5e840e40efc70",
-      "sender": "invoices@verizon.com",
-      "subject": "Gas Company invoice",
-      "snippet": "Bill details: internet invoice for $199.99. Due date: June 30. autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "cbe240322082674d",
-      "sender": "support@credit-card.com",
-      "subject": "Monthly invoice: gas",
-      "snippet": "Invoice ready: Water Department, $50.00. Due: July 1. Set up autopay: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "77ca5b01dfb01f99",
-      "sender": "billing@comcast.com",
-      "subject": "Due date: June 30",
-      "snippet": "Your property tax bill for May 2026 is now available. Amount due: $50.00. Due date: June 15. Pay online or by mail to avoid late fees.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "43c39ee4e28e5042",
-      "sender": "Mortgage <billing@mortgage.com>",
-      "subject": "Bill notification: 199.99",
-      "snippet": "Account statement ready: $89.99 charges from mortgage. Due: June 15.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "d2a2f7965e282d83",
-      "sender": "Statement <statement@bank.com>",
-      "subject": "Invoice enclosed",
-      "snippet": "Your phone account shows $1200 due. Pay now: autopay.provider.com. Due date: July 1",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "dcd4e94b5f0bff4a",
-      "sender": "Rent <billing@property.com>",
-      "subject": "Comcast invoice",
-      "snippet": "Payment reminder: electricity bill of $89.99 is due by June 30. Pay now: https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "e9b494f08c607407",
-      "sender": "Tax Services <billing@tax.com>",
-      "subject": "Invoice enclosed",
-      "snippet": "Bill notification: insurance charges of $750. See details: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "9b0894659ca40963",
-      "sender": "Healthcare <billing@healthcare.com>",
-      "subject": "Statement for your review",
-      "snippet": "Water Department invoice #INV789012 for $230.00. Due date: June 15.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "369d07bf0b45f5da",
-      "sender": "Phone <billing@phone.com>",
-      "subject": "Account summary for June 2026",
-      "snippet": "Bill notification: insurance charges of $50.00. See details: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "0d29a5cd6a08d77e",
-      "sender": "Subscription <billing@subscription.com>",
-      "subject": "New charges: Gas Company",
-      "snippet": "Your statement is ready: Comcast. Balance: $230.00. Due date: June 15. https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "2b9b894c8debe8ed",
-      "sender": "Tax Services <billing@tax.com>",
-      "subject": "Your Comcast statement",
-      "snippet": "Bill notification: electricity charges of $89.99. See details: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "a5380b62f7004ac2",
-      "sender": "Membership <billing@membership.com>",
-      "subject": "Statement for your review",
-      "snippet": "Your account charges: $750 from Water Department. Statement: autopay.provider.com. Due: June 15",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "8a2f8dabb60dd355",
-      "sender": "Loan <billing@loan.com>",
-      "subject": "Invoice #INV555555",
-      "snippet": "Statement notification: Your Insurance Co charges $89.99 for June 2026. Due: July 1.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "89492b6700bbfe4f",
-      "sender": "billing@comcast.com",
-      "subject": "property tax charges for May 2026",
-      "snippet": "Your account charges: $199.99 from Your Insurance Co. Statement: autopay.provider.com. Due: June 15",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "52d5d159c8e24c18",
-      "sender": "Electric <billing@electric.com>",
-      "subject": "Invoice enclosed",
-      "snippet": "Statement for May 2026: gas showing $89.99. Due: June 30. https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "ec45e0dfe6abc3ce",
-      "sender": "Rent <billing@property.com>",
-      "subject": "Bill summary: electricity",
-      "snippet": "Bill summary: cable charges of $89.99. Due: June 15. Login to pay: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "cc419e782c1f296b",
-      "sender": "Gym <billing@gym.com>",
-      "subject": "Invoice enclosed",
-      "snippet": "Payment reminder: electricity bill of $89.99 is due by June 30. Pay now: https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "e91d8a71c5336229",
-      "sender": "Phone <billing@phone.com>",
-      "subject": "Your bill is ready to review",
-      "snippet": "Bill details: gas invoice for $199.99. Due date: July 1. autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "943a0fe9ee036ba9",
-      "sender": "Healthcare <billing@healthcare.com>",
-      "subject": "Statement for your review",
-      "snippet": "Your gas statement is ready. Total charges: $750. Payment options: online, phone, or automatic payment. Account #ACC987654",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "eec1030771592248",
-      "sender": "Insurance <billing@insurance.com>",
-      "subject": "Your Comcast statement",
-      "snippet": "Payment due: phone bill of $145.50. Due date: June 15. Account #ACC111111.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "f1d908bbeb0fe126",
-      "sender": "Consulting <billing@consulting.com>",
-      "subject": "Gas Company invoice",
-      "snippet": "Invoice from Service Provider: $89.99 due on July 1. Itemized charges: usage charges. Login to your account to view the full statement.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "97969e9604fd755d",
-      "sender": "Invoice <invoices@provider.com>",
-      "subject": "Bank invoice",
-      "snippet": "Payment reminder: gas bill of $89.99 is due by June 15. Pay now: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "7944260fa97bc429",
-      "sender": "Mortgage <billing@mortgage.com>",
-      "subject": "Invoice enclosed",
-      "snippet": "water charges for April 2026: $89.99. Payment due by June 30. Questions? 1-800-BILLING",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "ebe7b520b0d90c9b",
-      "sender": "Electric <billing@electric.com>",
-      "subject": "Account billing",
-      "snippet": "New bill from Verizon: $1200. Account #ACC123456. Due date: June 30.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "72bff98b1764b1ea",
-      "sender": "Gym <billing@gym.com>",
-      "subject": "Account billing",
-      "snippet": "insurance charges for June 2026: $1200. Payment due by July 1. Questions? 1-800-BILLING",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "da598fde401d971c",
-      "sender": "Water <billing@water.com>",
-      "subject": "Amount due: 50.00",
-      "snippet": "Bill notification: insurance charges of $1200. See details: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "921ee2c678895359",
-      "sender": "Billing <billing@utility.com>",
-      "subject": "Bill due: County",
-      "snippet": "Bank invoice #INV123456 for $145.50. Due date: June 15.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "d00c7ffda3f861b1",
-      "sender": "Electric <billing@electric.com>",
-      "subject": "Your Verizon statement",
-      "snippet": "Statement for May 2026: electricity showing $50.00. Due: July 1. https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "38be9fe5f1e55efd",
-      "sender": "Consulting <billing@consulting.com>",
-      "subject": "insurance charges for May 2026",
-      "snippet": "Invoice summary: Service Provider, $750. Due: June 30. View full statement: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "ad9e72dc37c27759",
-      "sender": "Billing <billing@utility.com>",
-      "subject": "Payment due - 145.50",
-      "snippet": "Your phone account shows $750 due. Pay now: https://bill.pay.com. Due date: June 15",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "c31726e5f5a77af5",
-      "sender": "Electric <billing@electric.com>",
-      "subject": "Monthly invoice: phone",
-      "snippet": "Invoice #INV789012: Edison, $50.00. Due: June 15. Pay: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "2c3a1e86584f9584",
-      "sender": "billing@comcast.com",
-      "subject": "gas charges for June 2026",
-      "snippet": "Your phone account shows $1200 due. Pay now: https://bill.pay.com. Due date: July 1",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "7436feca4903a938",
-      "sender": "HOA <billing@hoa.com>",
-      "subject": "Due date: June 15",
-      "snippet": "Bill details: insurance invoice for $89.99. Due date: June 30. autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "7bd8383aeb18af3e",
-      "sender": "Vendor <invoices@vendor.com>",
-      "subject": "Bill summary: mortgage",
-      "snippet": "Invoice ready: Bank, $89.99. Due: June 30. Set up autopay: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "a8debb8aa9b50c06",
-      "sender": "Insurance <billing@insurance.com>",
-      "subject": "Invoice from Water Department",
-      "snippet": "Bill details: property tax invoice for $230.00. Due date: July 1. autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "7f907d58a2a84c55",
-      "sender": "Statement <statement@bank.com>",
-      "subject": "Invoice #INV123456",
-      "snippet": "electricity charges for April 2026: $1200. Payment due by June 15. Questions? 1-800-BILLING",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "0233420667c17443",
-      "sender": "utility@edison.com",
-      "subject": "Bill due: Edison",
-      "snippet": "Statement for June 2026: internet showing $199.99. Due: June 15. https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "a6f8fab5c88c1167",
-      "sender": "Professional Services <invoices@professional.com>",
-      "subject": "Account billing",
-      "snippet": "Billing statement from Your Insurance Co: $50.00 due on July 1. Account #ACC111111.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "9a20869dfb5b6695",
-      "sender": "Statement <statement@bank.com>",
-      "subject": "Invoice enclosed",
-      "snippet": "Account statement ready: $89.99 charges from electricity. Due: July 1.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "b25c381c94816fa0",
-      "sender": "Vendor <invoices@vendor.com>",
-      "subject": "Amount due: 1200",
-      "snippet": "Your April 2026 statement from County: $750 due on June 30. Details: https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "da70e1d222b4114d",
-      "sender": "Statement <bill@isps.com>",
-      "subject": "Statement ready: Gas Company",
-      "snippet": "Payment due: phone bill of $750. Due date: June 30. Account #ACC123456.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "a67e4c6830f788a9",
-      "sender": "Water <billing@water.com>",
-      "subject": "Monthly invoice: gas",
-      "snippet": "insurance charges for June 2026: $1200. Payment due by June 30. Questions? 1-800-BILLING",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "246546a85f6881bf",
-      "sender": "Professional Services <invoices@professional.com>",
-      "subject": "Payment is due",
-      "snippet": "Bill notification: insurance charges of $1200. See details: https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "5f75952c202fee62",
-      "sender": "Gas <billing@gas.com>",
-      "subject": "Bill summary: property tax",
-      "snippet": "Your property tax is $1200 due on June 15. Account #ACC987654. Details: https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "eb9b47e13d294f02",
-      "sender": "billing@ge.com",
-      "subject": "Account summary for April 2026",
-      "snippet": "Bill alert: Edison charges of $50.00 for June 2026. Due by June 30. View details: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "0482909d4fed7b0b",
-      "sender": "utility@edison.com",
-      "subject": "Bill notification: 1200",
-      "snippet": "Your account charges: $145.50 from Edison. Statement: https://bill.pay.com. Due: June 15",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "c46503282fcb6eb7",
-      "sender": "Insurance <billing@insurance.com>",
-      "subject": "Your water charges",
-      "snippet": "Your account charges: $750 from Bank. Statement: autopay.provider.com. Due: July 1",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "4ae9be36b9cef180",
-      "sender": "Internet <billing@internet.com>",
-      "subject": "Invoice details inside",
-      "snippet": "Billing statement from Edison: $230.00 due on June 30. Account #ACC111111.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "1bbd9cec4b9df13d",
-      "sender": "Internet <billing@internet.com>",
-      "subject": "water bill for May 2026",
-      "snippet": "Bill summary: water charges of $199.99. Due: July 1. Login to pay: https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "10635e29e36441d7",
-      "sender": "Payment <billing@company.com>",
-      "subject": "Payment due - 230.00",
-      "snippet": "Your insurance account shows $230.00 due. Pay now: https://bill.pay.com. Due date: July 1",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "e7905c56d2d9de67",
-      "sender": "Phone <billing@phone.com>",
-      "subject": "Invoice enclosed",
-      "snippet": "Your charges: $1200 from internet. Due date: June 15. Pay: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "4d74ffddeeb5e994",
-      "sender": "Phone <billing@phone.com>",
-      "subject": "Account summary for June 2026",
-      "snippet": "Invoice summary: Service Provider, $89.99. Due: June 30. View full statement: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "11f765f186f634f6",
-      "sender": "Healthcare <billing@healthcare.com>",
-      "subject": "Invoice from Your Insurance Co",
-      "snippet": "Bill notification: insurance charges of $750. See details: https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "64680c56be1e55e5",
-      "sender": "Subscription <billing@subscription.com>",
-      "subject": "Bill notification: 750",
-      "snippet": "Your charges: $145.50 from gas. Due date: July 1. Pay: autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "85dce4a47e5b9afb",
-      "sender": "Subscription <billing@subscription.com>",
-      "subject": "Account summary for May 2026",
-      "snippet": "Account statement ready: $145.50 charges from cable. Due: July 1.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "613752a1d5f2e69d",
-      "sender": "billing@ge.com",
-      "subject": "Payment reminder: Bank",
-      "snippet": "Your gas bill for May 2026 is now available. Amount due: $199.99. Due date: June 15. Pay online or by mail to avoid late fees.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "fb7c684cf1d9dbf5",
-      "sender": "Mortgage <billing@mortgage.com>",
-      "subject": "Statement for your review",
-      "snippet": "Statement for June 2026: gas showing $750. Due: June 15. autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "3d18bfe4a39378f4",
-      "sender": "support@credit-card.com",
-      "subject": "Invoice #INV789012",
-      "snippet": "Invoice from Bank: $50.00 due on June 30. Itemized charges: monthly fee. Login to your account to view the full statement.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "a4da8625adb10a04",
-      "sender": "Statement <bill@isps.com>",
-      "subject": "Statement for your review",
-      "snippet": "Bill details: cable invoice for $145.50. Due date: June 15. autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "285e94c19738adf3",
-      "sender": "Phone <billing@phone.com>",
-      "subject": "Verizon invoice",
-      "snippet": "Statement notification: Comcast charges $145.50 for April 2026. Due: June 30.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "ed5483e3a33a661d",
-      "sender": "Loan <billing@loan.com>",
-      "subject": "Bill notification: 1200",
-      "snippet": "Invoice summary: Service Provider, $750. Due: June 30. View full statement: https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "3cfc6ff022c35d74",
-      "sender": "invoices@verizon.com",
-      "subject": "Your cable charges",
-      "snippet": "Your monthly statement: Service Provider, $1200. Due: June 30. Questions? 1-800-BILLING",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "d22bba647fee61fd",
-      "sender": "Contractor <billing@contractor.com>",
-      "subject": "Payment is due",
-      "snippet": "Bill for May 2026: Your Insurance Co charges of $145.50. Due by June 15. autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "3b312022096dde54",
-      "sender": "Mortgage <billing@mortgage.com>",
-      "subject": "Monthly charges summary",
-      "snippet": "Your charges: $230.00 from mortgage. Due date: June 15. Pay: https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "0cad84285430e28a",
-      "sender": "support@credit-card.com",
-      "subject": "Invoice #INV123456",
-      "snippet": "Your monthly statement: Water Department, $145.50. Due: June 15. Questions? 1-800-BILLING",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "f81838c52f129441",
-      "sender": "Insurance <billing@insurance.com>",
-      "subject": "Monthly invoice: electricity",
-      "snippet": "Your statement is ready: Your Insurance Co. Balance: $145.50. Due date: June 15. autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "0a165cbfd7141828",
-      "sender": "Internet <billing@internet.com>",
-      "subject": "Invoice enclosed",
-      "snippet": "Bill for June 2026: Comcast charges of $145.50. Due by June 15. https://bill.pay.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "30109f90644b4e6d",
-      "sender": "billing@ge.com",
-      "subject": "Your insurance bill is ready",
-      "snippet": "Your mortgage bill for April 2026 is now available. Amount due: $89.99. Due date: July 1. Pay online or by mail to avoid late fees.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "96659f36579ab87a",
-      "sender": "Healthcare <billing@healthcare.com>",
-      "subject": "gas bill for May 2026",
-      "snippet": "insurance charges for April 2026: $50.00. Payment due by July 1. Questions? 1-800-BILLING",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "ddcc741bc75c19dd",
-      "sender": "Contractor <billing@contractor.com>",
-      "subject": "Verizon invoice",
-      "snippet": "Bill details: phone invoice for $230.00. Due date: June 30. autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "06fe0bb72ccaf6de",
-      "sender": "Rent <billing@property.com>",
-      "subject": "Invoice #INV789012",
-      "snippet": "Your statement is ready: Verizon. Balance: $89.99. Due date: June 15. autopay.provider.com",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "3a805e7b5b0c49c8",
-      "sender": "utility@edison.com",
-      "subject": "Bill due: Bank",
-      "snippet": "Invoice from County: $199.99 due on July 1. Itemized charges: usage charges. Login to your account to view the full statement.",
-      "category": "FINANCE_BILL"
-    },
-    {
-      "id": "228b785619bb1891",
-      "sender": "Services <billing@services.com>",
-      "subject": "Monthly invoice: property tax",
-      "snippet": "Your phone account shows $50.00 due. Pay now: autopay.provider.com. Due date: June 30",
-      "category": "FINANCE_BILL"
-    }
-  ]
-}
+[
+  {
+    "id": "0e8575ffd9b8c54d",
+    "sender": "invoices@verizon.com",
+    "subject": "Billing statement: insurance",
+    "snippet": "Bill notification: electricity charges of $750. See details: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "ddb11473687655d2",
+    "sender": "invoices@verizon.com",
+    "subject": "Bill for services rendered",
+    "snippet": "Statement notification: Gas Company charges $750 for April 2026. Due: June 30.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "8d7c7b2b54e06023",
+    "sender": "Professional Services <invoices@professional.com>",
+    "subject": "Verizon invoice",
+    "snippet": "Invoice #INV123456: Comcast, $89.99. Due: June 30. Pay: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "c4b2f84653b2f164",
+    "sender": "Billing <billing@utility.com>",
+    "subject": "Account statement",
+    "snippet": "Your gas account shows $750 due. Pay now: https://bill.pay.com. Due date: June 30",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "11ac141b1da5f4d2",
+    "sender": "invoices@verizon.com",
+    "subject": "Invoice #INV555555",
+    "snippet": "Your property tax bill of $230.00 is due by June 30. Pay online: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "5bb90bcb1609b42c",
+    "sender": "Contractor <billing@contractor.com>",
+    "subject": "Bill for services rendered",
+    "snippet": "Your internet statement is ready. Total charges: $1200. Payment options: online, phone, or automatic payment. Account #ACC111111",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "ea3b7dc256321161",
+    "sender": "Phone <billing@phone.com>",
+    "subject": "Bill due: Water Department",
+    "snippet": "Account statement ready: $750 charges from property tax. Due: July 1.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "3ac5eceb24d28b68",
+    "sender": "HOA <billing@hoa.com>",
+    "subject": "Amount due: 145.50",
+    "snippet": "Your April 2026 statement from Bank: $1200 due on June 15. Details: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "43f752653d9e6b69",
+    "sender": "HOA <billing@hoa.com>",
+    "subject": "cable charges for May 2026",
+    "snippet": "Your property tax bill of $1200 is due by June 30. Pay online: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "d2adb8767c892d38",
+    "sender": "Vendor <invoices@vendor.com>",
+    "subject": "Statement ready: Comcast",
+    "snippet": "Bill alert: Service Provider charges of $89.99 for May 2026. Due by June 15. View details: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "0ce5a7c3b90ee7ff",
+    "sender": "Consulting <billing@consulting.com>",
+    "subject": "Statement for your review",
+    "snippet": "Bill details: mortgage invoice for $89.99. Due date: July 1. https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "94139ce75d63f6d6",
+    "sender": "Services <billing@services.com>",
+    "subject": "water charges for April 2026",
+    "snippet": "Invoice from Verizon: $1200 due on June 30. Itemized charges: equipment rental. Login to your account to view the full statement.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "4f3a08d2019c8575",
+    "sender": "Professional Services <invoices@professional.com>",
+    "subject": "Invoice from Comcast",
+    "snippet": "Your monthly statement: Verizon, $230.00. Due: June 15. Questions? 1-800-BILLING",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "512f022efc7a975f",
+    "sender": "Mortgage <billing@mortgage.com>",
+    "subject": "County invoice",
+    "snippet": "Your water statement is ready. Total charges: $145.50. Payment options: online, phone, or automatic payment. Account #ACC987654",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "ce416b93258ddf26",
+    "sender": "utility@edison.com",
+    "subject": "Your bill is ready to review",
+    "snippet": "Your internet statement is ready. Total charges: $230.00. Payment options: online, phone, or automatic payment. Account #ACC123456",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "4bfb236e14243785",
+    "sender": "HOA <billing@hoa.com>",
+    "subject": "Statement ready: Comcast",
+    "snippet": "Your monthly statement: Bank, $145.50. Due: June 15. Questions? 1-800-BILLING",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "841474ebfbb052c8",
+    "sender": "Statement <bill@isps.com>",
+    "subject": "Due date: June 30",
+    "snippet": "water charges for April 2026: $89.99. Payment due by June 15. Questions? 1-800-BILLING",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "7a4d0d95324182e7",
+    "sender": "Electric <billing@electric.com>",
+    "subject": "Invoice #INV555555",
+    "snippet": "Your internet account shows $199.99 due. Pay now: https://bill.pay.com. Due date: July 1",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "c39374f4e1e3b315",
+    "sender": "billing@ge.com",
+    "subject": "County invoice",
+    "snippet": "Your account charges: $750 from Verizon. Statement: autopay.provider.com. Due: July 1",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "7eae9e67f334f29f",
+    "sender": "Membership <billing@membership.com>",
+    "subject": "Invoice #INV123456",
+    "snippet": "Payment due: electricity bill of $230.00. Due date: July 1. Account #ACC111111.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "770653b303a69c52",
+    "sender": "Gas <billing@gas.com>",
+    "subject": "Bill due: Your Insurance Co",
+    "snippet": "Payment due: gas bill of $199.99. Due date: June 15. Account #ACC123456.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "02fe3acc5424ed03",
+    "sender": "Professional Services <invoices@professional.com>",
+    "subject": "Payment is due",
+    "snippet": "Your internet is $230.00 due on July 1. Account #ACC987654. Details: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "95f970e59be86cba",
+    "sender": "billing@ge.com",
+    "subject": "Invoice from Water Department",
+    "snippet": "Invoice #INV123456: Bank, $50.00. Due: June 30. Pay: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "9cabdfd860fe6cb4",
+    "sender": "Mortgage <billing@mortgage.com>",
+    "subject": "Bill due: Water Department",
+    "snippet": "Your property tax account shows $89.99 due. Pay now: autopay.provider.com. Due date: June 15",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "16fa840d52f6b154",
+    "sender": "utility@edison.com",
+    "subject": "Monthly charges summary",
+    "snippet": "Bill details: internet invoice for $199.99. Due date: July 1. autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "70fd1b0fc469af87",
+    "sender": "Services <billing@services.com>",
+    "subject": "Invoice enclosed",
+    "snippet": "Your May 2026 statement from Water Department: $1200 due on July 1. Details: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "b0ff329c2638b1fc",
+    "sender": "Membership <billing@membership.com>",
+    "subject": "Bill notification: 145.50",
+    "snippet": "Bill summary: mortgage charges of $50.00. Due: June 15. Login to pay: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "e209e194d7791c94",
+    "sender": "Vendor <invoices@vendor.com>",
+    "subject": "Payment reminder: Service Provider",
+    "snippet": "Bill summary: electricity charges of $1200. Due: June 15. Login to pay: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "98001bb2bb7396c0",
+    "sender": "Billing <billing@utility.com>",
+    "subject": "Verizon monthly statement",
+    "snippet": "Statement for May 2026: electricity showing $1200. Due: July 1. autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "fa91a53b94737406",
+    "sender": "Tax Services <billing@tax.com>",
+    "subject": "Your County statement",
+    "snippet": "Your gas statement is ready. Total charges: $230.00. Payment options: online, phone, or automatic payment. Account #ACC111111",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "a3f1a3e75ef70dad",
+    "sender": "Subscription <billing@subscription.com>",
+    "subject": "Account statement",
+    "snippet": "Your electricity bill of $199.99 is due by June 30. Pay online: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "3a22d0b03e5fc822",
+    "sender": "Consulting <billing@consulting.com>",
+    "subject": "Billing statement: mortgage",
+    "snippet": "property tax charges for June 2026: $230.00. Payment due by June 15. Questions? 1-800-BILLING",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "28f059cc1f519460",
+    "sender": "Professional Services <invoices@professional.com>",
+    "subject": "Statement for your review",
+    "snippet": "Bill summary: insurance charges of $199.99. Due: June 30. Login to pay: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "4f895a5f1acbd90f",
+    "sender": "Healthcare <billing@healthcare.com>",
+    "subject": "Your phone charges",
+    "snippet": "Bill details: water invoice for $89.99. Due date: June 15. https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "47bdaee16bd66c3e",
+    "sender": "Services <billing@services.com>",
+    "subject": "Your bill is ready to review",
+    "snippet": "Billing statement from Bank: $1200 due on June 30. Account #ACC123456.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "5ebb4a4ab38b6001",
+    "sender": "Insurance <billing@insurance.com>",
+    "subject": "Statement ready: Edison",
+    "snippet": "Invoice #INV123456: Water Department, $199.99. Due: June 15. Pay: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "7861366d2b67288c",
+    "sender": "Insurance <billing@insurance.com>",
+    "subject": "Statement for your review",
+    "snippet": "Billing statement from Verizon: $145.50 due on June 15. Account #ACC111111.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "e93db19eaea32eaa",
+    "sender": "Mortgage <billing@mortgage.com>",
+    "subject": "Account billing",
+    "snippet": "Payment reminder: cable bill of $50.00 is due by June 30. Pay now: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "7a76b5c2300e3bd5",
+    "sender": "Subscription <billing@subscription.com>",
+    "subject": "Statement for your review",
+    "snippet": "Bill for June 2026: Gas Company charges of $1200. Due by June 15. https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "bba78813f9174074",
+    "sender": "Payment <billing@company.com>",
+    "subject": "Account statement",
+    "snippet": "Payment due: phone bill of $89.99. Due date: June 30. Account #ACC123456.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "e0e121c587ba41f5",
+    "sender": "Membership <billing@membership.com>",
+    "subject": "Your water charges",
+    "snippet": "Your monthly statement: Gas Company, $199.99. Due: July 1. Questions? 1-800-BILLING",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "b0d1d3b265fb5477",
+    "sender": "Professional Services <invoices@professional.com>",
+    "subject": "New charges: Gas Company",
+    "snippet": "Payment reminder: internet bill of $50.00 is due by July 1. Pay now: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "8aafc0484ce1d515",
+    "sender": "Services <billing@services.com>",
+    "subject": "Payment due - 50.00",
+    "snippet": "Gas Company invoice #INV123456 for $1200. Due date: June 30.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "4130bb89df8e642d",
+    "sender": "Billing <billing@utility.com>",
+    "subject": "Amount due: 750",
+    "snippet": "Your April 2026 statement from Comcast: $750 due on June 30. Details: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "4a4795d77bc9c885",
+    "sender": "invoices@verizon.com",
+    "subject": "Invoice #INV123456",
+    "snippet": "Statement notification: County charges $199.99 for June 2026. Due: July 1.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "7f321d0f7186c680",
+    "sender": "Loan <billing@loan.com>",
+    "subject": "Due date: June 15",
+    "snippet": "Your insurance bill of $89.99 is due by July 1. Pay online: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "fb5e41c2cc402744",
+    "sender": "Membership <billing@membership.com>",
+    "subject": "Bill for services rendered",
+    "snippet": "Invoice ready: Verizon, $750. Due: July 1. Set up autopay: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "18f7cd68376d6f2d",
+    "sender": "invoices@verizon.com",
+    "subject": "Bill summary: internet",
+    "snippet": "Your water account shows $1200 due. Pay now: https://bill.pay.com. Due date: July 1",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "16bc0b8e5f92c9cc",
+    "sender": "Statement <bill@isps.com>",
+    "subject": "Your bill is ready to review",
+    "snippet": "Payment due: internet bill of $750. Due date: June 30. Account #ACC987654.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "246b41aa35b76468",
+    "sender": "Rent <billing@property.com>",
+    "subject": "County invoice",
+    "snippet": "Bill details: gas invoice for $50.00. Due date: June 15. https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "0e5407c757c9a36e",
+    "sender": "Loan <billing@loan.com>",
+    "subject": "Statement for your review",
+    "snippet": "Your electricity is $750 due on June 15. Account #ACC123456. Details: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "b6a830be117c76ef",
+    "sender": "Services <billing@services.com>",
+    "subject": "Invoice #INV555555",
+    "snippet": "Billing statement from Your Insurance Co: $230.00 due on June 15. Account #ACC123456.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "d25ff5b7907daeec",
+    "sender": "Electric <billing@electric.com>",
+    "subject": "Payment is due",
+    "snippet": "Your April 2026 statement from Bank: $199.99 due on June 30. Details: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "5c6ff4a91fde55b4",
+    "sender": "Insurance <billing@insurance.com>",
+    "subject": "Monthly charges summary",
+    "snippet": "Your statement is ready: Edison. Balance: $50.00. Due date: July 1. https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "7122b09dc5a397f3",
+    "sender": "Vendor <invoices@vendor.com>",
+    "subject": "mortgage bill for April 2026",
+    "snippet": "Account statement ready: $145.50 charges from cable. Due: July 1.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "4f73d84efb8d6b1d",
+    "sender": "Billing <billing@utility.com>",
+    "subject": "Bill notification: 145.50",
+    "snippet": "Your phone account shows $145.50 due. Pay now: https://bill.pay.com. Due date: July 1",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "5f35a588e826e37f",
+    "sender": "Insurance <billing@insurance.com>",
+    "subject": "gas bill for April 2026",
+    "snippet": "New invoice from County: $199.99. Payment due: July 1. Questions? 1-800-BILLING",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "81456b3a8cea2495",
+    "sender": "Contractor <billing@contractor.com>",
+    "subject": "Your cable charges",
+    "snippet": "Statement for May 2026: gas showing $230.00. Due: June 30. autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "7711a9ea09293aae",
+    "sender": "Tax Services <billing@tax.com>",
+    "subject": "Account billing",
+    "snippet": "Your gas is $89.99 due on July 1. Account #ACC123456. Details: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "eebc188a4956c1d1",
+    "sender": "invoices@verizon.com",
+    "subject": "Payment is due",
+    "snippet": "Invoice ready: Comcast, $750. Due: June 15. Set up autopay: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "ca6346f19a1bd4fb",
+    "sender": "Payment <billing@company.com>",
+    "subject": "Invoice details inside",
+    "snippet": "New bill from Comcast: $199.99. Account #ACC123456. Due date: June 30.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "f5f78567b7957990",
+    "sender": "support@credit-card.com",
+    "subject": "Account summary for June 2026",
+    "snippet": "Invoice from Bank: $230.00 for phone. Due: June 30. Details: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "4de1eb78749a1ffd",
+    "sender": "Loan <billing@loan.com>",
+    "subject": "Statement ready: Comcast",
+    "snippet": "Invoice from Bank: $199.99 for insurance. Due: June 30. Details: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "36ec6710d1daab95",
+    "sender": "Statement <statement@bank.com>",
+    "subject": "Payment is due",
+    "snippet": "Your mortgage account shows $50.00 due. Pay now: https://bill.pay.com. Due date: June 30",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "4d4000b35b6b57d6",
+    "sender": "Contractor <billing@contractor.com>",
+    "subject": "phone charges for June 2026",
+    "snippet": "Your mortgage is $230.00 due on June 30. Account #ACC123456. Details: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "f173c812a9a2a508",
+    "sender": "Contractor <billing@contractor.com>",
+    "subject": "Monthly invoice: property tax",
+    "snippet": "Payment due: electricity bill of $199.99. Due date: June 15. Account #ACC123456.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "ff748b0704c29c44",
+    "sender": "billing@comcast.com",
+    "subject": "Invoice enclosed",
+    "snippet": "Invoice #INV123456: County, $750. Due: June 30. Pay: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "76d14e3eb1fea65b",
+    "sender": "HOA <billing@hoa.com>",
+    "subject": "Bill due: Comcast",
+    "snippet": "Payment reminder: phone bill of $199.99 is due by June 30. Pay now: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "763a2a2f1590e7c2",
+    "sender": "Payment <billing@company.com>",
+    "subject": "Your mortgage charges",
+    "snippet": "Statement for May 2026: insurance showing $89.99. Due: June 30. autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "ccdc96e2e62660f6",
+    "sender": "HOA <billing@hoa.com>",
+    "subject": "Statement ready: Verizon",
+    "snippet": "Invoice #INV123456: Bank, $145.50. Due: July 1. Pay: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "dd835e63b50f6ff8",
+    "sender": "utility@edison.com",
+    "subject": "Invoice details inside",
+    "snippet": "Bill details: water invoice for $89.99. Due date: July 1. autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "a49bc98f2572753f",
+    "sender": "Subscription <billing@subscription.com>",
+    "subject": "Account statement",
+    "snippet": "Bill details: internet invoice for $750. Due date: June 15. https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "5ecd5f4b9ccae501",
+    "sender": "invoices@verizon.com",
+    "subject": "Your property tax charges",
+    "snippet": "Your insurance bill of $50.00 is due by July 1. Pay online: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "86c5795a5637da7d",
+    "sender": "Rent <billing@property.com>",
+    "subject": "Statement ready: Comcast",
+    "snippet": "Bill for June 2026: Bank charges of $230.00. Due by June 15. https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "c0f599c62c9086e3",
+    "sender": "Phone <billing@phone.com>",
+    "subject": "Payment due - 230.00",
+    "snippet": "Your statement is ready: Service Provider. Balance: $50.00. Due date: June 15. https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "5c82037279d026a2",
+    "sender": "Vendor <invoices@vendor.com>",
+    "subject": "New charges: Service Provider",
+    "snippet": "Your property tax bill of $1200 is due by June 15. Pay online: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "f39653172dc6acee",
+    "sender": "Statement <statement@bank.com>",
+    "subject": "Payment reminder: Verizon",
+    "snippet": "Your statement is ready: Edison. Balance: $145.50. Due date: July 1. autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "d4a222021284bd67",
+    "sender": "Membership <billing@membership.com>",
+    "subject": "Your Comcast statement",
+    "snippet": "Your monthly statement: Edison, $89.99. Due: July 1. Questions? 1-800-BILLING",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "549df4ccfb8c34b6",
+    "sender": "support@credit-card.com",
+    "subject": "New charges: County",
+    "snippet": "Bill details: internet invoice for $750. Due date: June 30. autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "d695f140a67d8938",
+    "sender": "Membership <billing@membership.com>",
+    "subject": "Payment due - 50.00",
+    "snippet": "Invoice from Water Department: $199.99 for phone. Due: July 1. Details: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "e018740bdb25f7e7",
+    "sender": "billing@comcast.com",
+    "subject": "Due date: June 15",
+    "snippet": "Statement notification: County charges $89.99 for May 2026. Due: June 30.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "9eb7045432f449d3",
+    "sender": "Membership <billing@membership.com>",
+    "subject": "Due date: June 15",
+    "snippet": "Bill summary: electricity charges of $145.50. Due: June 30. Login to pay: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "eaee48865dfc5e2b",
+    "sender": "utility@edison.com",
+    "subject": "Statement ready: Service Provider",
+    "snippet": "Your mortgage bill of $50.00 is due by June 15. Pay online: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "4d62afb08033413f",
+    "sender": "Membership <billing@membership.com>",
+    "subject": "Bill summary: property tax",
+    "snippet": "Your account charges: $50.00 from Edison. Statement: https://bill.pay.com. Due: July 1",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "20cfb94fb15f4348",
+    "sender": "Mortgage <billing@mortgage.com>",
+    "subject": "Bill notification: 50.00",
+    "snippet": "Your monthly statement: Comcast, $50.00. Due: June 30. Questions? 1-800-BILLING",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "96e8ee87f67a8187",
+    "sender": "Water <billing@water.com>",
+    "subject": "Bank invoice",
+    "snippet": "Bill notification: electricity charges of $145.50. See details: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "20f2bab9d7706998",
+    "sender": "Water <billing@water.com>",
+    "subject": "County invoice",
+    "snippet": "Payment reminder: mortgage bill of $1200 is due by July 1. Pay now: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "715959b893ff4574",
+    "sender": "Subscription <billing@subscription.com>",
+    "subject": "phone charges for April 2026",
+    "snippet": "Invoice #INV123456: Water Department, $145.50. Due: June 15. Pay: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "c8d2cfdffa80abd7",
+    "sender": "Water <billing@water.com>",
+    "subject": "Monthly charges summary",
+    "snippet": "Your mortgage is $750 due on June 15. Account #ACC111111. Details: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "7af1c1015533190e",
+    "sender": "Vendor <invoices@vendor.com>",
+    "subject": "Account summary for April 2026",
+    "snippet": "New bill from Verizon: $50.00. Account #ACC987654. Due date: June 15.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "7c878a6c2253c2bf",
+    "sender": "Insurance <billing@insurance.com>",
+    "subject": "Water Department invoice",
+    "snippet": "Your property tax is $230.00 due on June 15. Account #ACC987654. Details: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "e5ec8184d390bc38",
+    "sender": "Statement <statement@bank.com>",
+    "subject": "Invoice details inside",
+    "snippet": "Statement for April 2026: insurance showing $145.50. Due: July 1. autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "226aa918105b31aa",
+    "sender": "Payment <billing@company.com>",
+    "subject": "Your Comcast statement",
+    "snippet": "Bill alert: Service Provider charges of $230.00 for May 2026. Due by June 30. View details: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "6cfc194bed47052f",
+    "sender": "Services <billing@services.com>",
+    "subject": "Invoice #INV789012",
+    "snippet": "Your account charges: $750 from Service Provider. Statement: https://bill.pay.com. Due: June 30",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "16efd45c11035f08",
+    "sender": "HOA <billing@hoa.com>",
+    "subject": "Payment is due",
+    "snippet": "New invoice from Comcast: $750. Payment due: July 1. Questions? 1-800-BILLING",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "56eec7f72cebdad3",
+    "sender": "Electric <billing@electric.com>",
+    "subject": "Account summary for June 2026",
+    "snippet": "Statement notification: County charges $145.50 for April 2026. Due: July 1.",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "466ec3474ed6ca2e",
+    "sender": "Membership <billing@membership.com>",
+    "subject": "Invoice #INV789012",
+    "snippet": "Payment reminder: cable bill of $145.50 is due by July 1. Pay now: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "35b3a83c6d1a5585",
+    "sender": "Gas <billing@gas.com>",
+    "subject": "Invoice enclosed",
+    "snippet": "Bill notification: phone charges of $145.50. See details: autopay.provider.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "eb8d675be6a9fa01",
+    "sender": "billing@comcast.com",
+    "subject": "Bill notification: 230.00",
+    "snippet": "Bill summary: water charges of $145.50. Due: June 30. Login to pay: https://bill.pay.com",
+    "category": "FINANCE_BILL"
+  },
+  {
+    "id": "fe42e0b88a9c67f1",
+    "sender": "Contractor <billing@contractor.com>",
+    "subject": "Account summary for April 2026",
+    "snippet": "Invoice from Verizon: $50.00 due on June 15. Itemized charges: equipment rental. Login to your account to view the full statement.",
+    "category": "FINANCE_BILL"
+  }
+]

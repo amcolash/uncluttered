@@ -2198,7 +2198,7 @@ def main():
 
         output_file = output_dir / f'{category}.json'
         with open(output_file, 'w') as f:
-            json.dump({'emails': examples}, f, indent=2)
+            json.dump(examples, f, indent=2)
         print(f"✓ {category}: 100 examples")
 
     # Generate edge cases file

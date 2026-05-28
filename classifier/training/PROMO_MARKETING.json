@@ -1,704 +1,702 @@
-{
-  "emails": [
-    {
-      "id": "e41a22e4ec4a6425",
-      "sender": "deals@ikea.com",
-      "subject": "Doorbusters this week",
-      "snippet": "Doorbuster special: furniture $19.99. In-store pickup: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "5ad0d8d024b34f61",
-      "sender": "marketing@retailer.com",
-      "subject": "50% off everything!",
-      "snippet": "VIP early access to Cyber Monday: $20 off womens: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "ac910d076ed63a82",
-      "sender": "deals@target.com",
-      "subject": "Black Friday early access",
-      "snippet": "BOGO: Buy shirt, get accessories free. Today only: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "ce0dd2fa7a6c47bd",
-      "sender": "promo@uniqlo.com",
-      "subject": "VIP early access",
-      "snippet": "Early access: VIP members get 70% through tomorrow. Shop: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "8c01d5da7df82ea1",
-      "sender": "promo@wish.com",
-      "subject": "Holiday sale starts now",
-      "snippet": "Limited edition everything: 30% off. Don't wait. https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "d47563e2e336d48e",
-      "sender": "offers@zara.com",
-      "subject": "New markdowns: home",
-      "snippet": "Online exclusive: everything for $49.99. In-store price $$49.99. Shop: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "31521402a6a69c6f",
-      "sender": "marketing@sephora.com",
-      "subject": "50% off everything!",
-      "snippet": "Flash sale alert! everything is 70% off. Limited quantities available. These deals won't last. Shop: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "090eddb06d4ce2c9",
-      "sender": "sales@nike.com",
-      "subject": "Biggest sale of the season",
-      "snippet": "Holiday gift guide: Save 70% on curated items: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "b20cd2b9b2b19dfc",
-      "sender": "sales@nike.com",
-      "subject": "New markdowns: womens",
-      "snippet": "Only 50 left at this price! clothing for $49.99. Shop: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "328c7c4158da751d",
-      "sender": "deals@aliexpress.com",
-      "subject": "50% off everything!",
-      "snippet": "Final markdown: everything now $19.99. Was $49.99: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "c5923e4591491863",
-      "sender": "marketing@retailer.com",
-      "subject": "Last chance: shoes",
-      "snippet": "Birthday month special: Extra $20 for you. Use code: WELCOME20 target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "7e2fcc4fc0dbbb17",
-      "sender": "offers@nordstrom.com",
-      "subject": "VIP early access",
-      "snippet": "Doorbuster special: furniture $19.99. In-store pickup: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "59079a0c2fce0bf4",
-      "sender": "promotional@macys.com",
-      "subject": "Flash sale: electronics",
-      "snippet": "Early access: app users get 30% through Sunday. Shop: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "1eb3ccbdef1eda0d",
-      "sender": "promotional@macys.com",
-      "subject": "Members-only offer",
-      "snippet": "Early access: app users get 70% through tomorrow. Shop: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "62108ef23697e0e8",
-      "sender": "promo@wish.com",
-      "subject": "Trending deals: clothing",
-      "snippet": "You have 24 hours to get 50% on electronics. Don't miss out: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "fdc861d24a254a85",
-      "sender": "marketing@retailer.com",
-      "subject": "Special offer inside",
-      "snippet": "Free shipping + 30% off clothing. Today only. Code: SAVE50. https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "3eb1586b12ac73d7",
-      "sender": "deals@aliexpress.com",
-      "subject": "Secret sale just launched",
-      "snippet": "Bundle and save! starter pack for $20 off. Shop: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "48964bdbe5002d74",
-      "sender": "marketing@retailer.com",
-      "subject": "New markdowns: mens",
-      "snippet": "Flash deal: everything $99.99 for 1 hour. Hurry: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "3017db7f94a701b0",
-      "sender": "deals@aliexpress.com",
-      "subject": "Secret sale just launched",
-      "snippet": "Don't miss out! Save $20 on electronics. Code: SAVE50. Offer ends Sunday. Shop now: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "e1a51c15ab667de5",
-      "sender": "promo@wish.com",
-      "subject": "50% off everything!",
-      "snippet": "Clearance: furniture reduced to $49.99. Stock up: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "1eacefd5deac99eb",
-      "sender": "deals@slickdeals.com",
-      "subject": "Stock up and save",
-      "snippet": "BOGO: Buy pants, get accessories free. Today only: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "742ab537a98a100e",
-      "sender": "marketing@sephora.com",
-      "subject": "Weekend deals just dropped",
-      "snippet": "We miss you! Here's 70% off your next purchase. Use code SAVE50 at checkout. Valid through today.",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "f6d80d50e0a35922",
-      "sender": "sales@dollartree.com",
-      "subject": "We saved you {amount}",
-      "snippet": "Online exclusive: clothing for $49.99. In-store price $$99.99. Shop: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "d0bfb8698d1a64aa",
-      "sender": "deals@aliexpress.com",
-      "subject": "Your personalized offers",
-      "snippet": "Flash deal: electronics $49.99 for 2 hours. Hurry: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "8dd028b5456a83ee",
-      "sender": "offers@nordstrom.com",
-      "subject": "Flash sale: shoes",
-      "snippet": "Online exclusive: furniture for $19.99. In-store price $$99.99. Shop: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "90731366669df068",
-      "sender": "promo@uniqlo.com",
-      "subject": "End of season clearance",
-      "snippet": "Price match guaranteed! Found it cheaper? We'll match it + 50% off. Details: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "8936b9b52ff150fe",
-      "sender": "sales@nike.com",
-      "subject": "Final sale items",
-      "snippet": "BOGO: Buy pants, get shoes free. Today only: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "1f629d2fdb9d6cb4",
-      "sender": "sales@nike.com",
-      "subject": "Today only: $20",
-      "snippet": "Don't miss out! Save 30% on everything. Code: WELCOME20. Offer ends tomorrow. Shop now: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "4e9f41703a6a9f79",
-      "sender": "promo@stacksocial.com",
-      "subject": "Time-sensitive deal: furniture",
-      "snippet": "Clearance event: Up to 70% off home. Everything must go: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "0a69c9a67dfb1476",
-      "sender": "sales@1saleaday.com",
-      "subject": "Today only: $20",
-      "snippet": "Overstock sale: womens reduced 50%. Limited inventory: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "6cf2c04147b1a922",
-      "sender": "offers@overstock.com",
-      "subject": "Weekend deals just dropped",
-      "snippet": "Birthday month special: Extra 70% for you. Use code: SUMMER30 https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "cd5eb0096a1f4fb6",
-      "sender": "deals@hm.com",
-      "subject": "Stock up and save",
-      "snippet": "Doorbuster special: everything $19.99. In-store pickup: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "c4c7ac6e47be393b",
-      "sender": "deals@store.com",
-      "subject": "Stock up and save",
-      "snippet": "Today's top deals: shirt, shoes, {item3} all on sale: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "b8fd760687a9fc01",
-      "sender": "sales@dollartree.com",
-      "subject": "Weekend deals just dropped",
-      "snippet": "Members save 70%. Join for instant access to deals: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "e13b66ce08048f12",
-      "sender": "offers@nordstrom.com",
-      "subject": "Trending deals: shoes",
-      "snippet": "We miss you! Here's 70% off your next purchase. Use code WELCOME20 at checkout. Valid through Sunday.",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "9e340dd38a23b893",
-      "sender": "deals@amazon.com",
-      "subject": "Final sale items",
-      "snippet": "Final markdown: everything now $49.99. Was $99.99: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "b0dbfd964505e277",
-      "sender": "deals@amazon.com",
-      "subject": "Limited time: BOGO on select items",
-      "snippet": "You have 72 hours to get 50% on shoes. Don't miss out: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "39b13cde685bf6a8",
-      "sender": "marketing@retailer.com",
-      "subject": "Price drop: clothing",
-      "snippet": "Members save 50%. Join for instant access to deals: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "62b4159f1cc255ba",
-      "sender": "sales@bestbuy.com",
-      "subject": "Limited time: BOGO on select items",
-      "snippet": "Online exclusive: shoes for $99.99. In-store price $$99.99. Shop: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "decf6f54a19046c7",
-      "sender": "sales@forever21.com",
-      "subject": "Weekend deals just dropped",
-      "snippet": "Your size in furniture is on sale! Save 50%: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "cb0a9891cfc59959",
-      "sender": "deals@hm.com",
-      "subject": "Clearance sale happening now",
-      "snippet": "BOGO: Buy pants, get shoes free. Today only: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "65619a4157e06111",
-      "sender": "deals@amazon.com",
-      "subject": "Black Friday early access",
-      "snippet": "Doorbuster special: furniture $9.99. In-store pickup: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "61f9075a2e283909",
-      "sender": "deals@target.com",
-      "subject": "Special offer inside",
-      "snippet": "Clearance: furniture reduced to $99.99. Stock up: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "4ad926425e45ad17",
-      "sender": "marketing@groupon.com",
-      "subject": "Get 30% now",
-      "snippet": "Overstock sale: womens reduced 50%. Limited inventory: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "017c3fdc358eefea",
-      "sender": "marketing@retailer.com",
-      "subject": "50% off everything!",
-      "snippet": "Overstock sale: womens reduced 50%. Limited inventory: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "6613b353df6d3eed",
-      "sender": "deals@slickdeals.com",
-      "subject": "Your personalized offers",
-      "snippet": "Free shipping + $20 off furniture. Today only. Code: SUMMER30. target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "d382ea8a6e7c21e6",
-      "sender": "deals@target.com",
-      "subject": "Secret sale just launched",
-      "snippet": "Your size in clothing is on sale! Save 30%: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "40ffa0d4dd29a48d",
-      "sender": "offers@woot.com",
-      "subject": "Stock up and save",
-      "snippet": "Price match guaranteed! Found it cheaper? We'll match it + 50% off. Details: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "e7e050e63a256409",
-      "sender": "sales@forever21.com",
-      "subject": "Black Friday early access",
-      "snippet": "VIP early access to Cyber Monday: 50% off home: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "4c02b08b94e4166b",
-      "sender": "deals@store.com",
-      "subject": "We saved you {amount}",
-      "snippet": "Only 50 left at this price! furniture for $19.99. Shop: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "69551e600ab76a2b",
-      "sender": "sales@1saleaday.com",
-      "subject": "Special offer inside",
-      "snippet": "Warehouse clearance: 70% off select home. While supplies last: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "085f07796f13f534",
-      "sender": "marketing@groupon.com",
-      "subject": "Special offer inside",
-      "snippet": "Only 50 left at this price! everything for $49.99. Shop: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "2d4687740ea8a2fb",
-      "sender": "offers@nordstrom.com",
-      "subject": "Black Friday early access",
-      "snippet": "Free shipping + 50% off everything. Today only. Code: SUMMER30. target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "58fd4cd6f3415d38",
-      "sender": "promo@wish.com",
-      "subject": "Your exclusive 30% off code",
-      "snippet": "You have 48 hours to get 30% on furniture. Don't miss out: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "854e55193eab0c90",
-      "sender": "offers@overstock.com",
-      "subject": "Holiday sale starts now",
-      "snippet": "Price match guaranteed! Found it cheaper? We'll match it + 50% off. Details: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "c34ce6e0bad774b8",
-      "sender": "sales@nike.com",
-      "subject": "Clearance sale happening now",
-      "snippet": "Flash deal: clothing $99.99 for 2 hours. Hurry: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "c5c8bdec4014f953",
-      "sender": "offers@overstock.com",
-      "subject": "VIP early access",
-      "snippet": "We priced matched Walmart! Save on electronics: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "e64e959d907335c7",
-      "sender": "deals@amazon.com",
-      "subject": "End of season clearance",
-      "snippet": "Clearance event: Up to 50% off womens. Everything must go: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "e90a8bf37c363f0a",
-      "sender": "sales@dollartree.com",
-      "subject": "VIP early access",
-      "snippet": "We miss you! Here's 70% off your next purchase. Use code SUMMER30 at checkout. Valid through tomorrow.",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "74c218a65ff218df",
-      "sender": "deals@shein.com",
-      "subject": "Price drop: everything",
-      "snippet": "Doorbuster special: furniture $19.99. In-store pickup: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "6a0f0af6c4c96e17",
-      "sender": "deals@ikea.com",
-      "subject": "New markdowns: womens",
-      "snippet": "Don't miss out! Save 50% on electronics. Code: SAVE50. Offer ends Sunday. Shop now: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "5d2f9e93ba55bbdb",
-      "sender": "sales@bestbuy.com",
-      "subject": "Last chance: shoes",
-      "snippet": "Holiday gift guide: Save 50% on curated items: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "9321f3314f67ae80",
-      "sender": "deals@amazon.com",
-      "subject": "Holiday sale starts now",
-      "snippet": "clothing just dropped to $19.99! That's $20 off. Grab yours: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "a454eee6b696e3d0",
-      "sender": "promo@wayfair.com",
-      "subject": "Price drop: clothing",
-      "snippet": "Doorbuster special: shoes $9.99. In-store pickup: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "4c1bf4ec2298a9ce",
-      "sender": "promo@stacksocial.com",
-      "subject": "New markdowns: mens",
-      "snippet": "Your size in shoes is on sale! Save $20: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "e2d6eebadcc2ace3",
-      "sender": "offers@woot.com",
-      "subject": "Price drop: everything",
-      "snippet": "New markdowns: mens up to 70% off: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "c894e8a1f81adaf9",
-      "sender": "deals@shein.com",
-      "subject": "Time-sensitive deal: electronics",
-      "snippet": "Today's top deals: pants, accessories, {item3} all on sale: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "b868822f2aed7f46",
-      "sender": "offers@nordstrom.com",
-      "subject": "Today only: 50%",
-      "snippet": "Bundle and save! summer essentials for 70% off. Shop: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "01725800081b5275",
-      "sender": "marketing@groupon.com",
-      "subject": "Your personalized offers",
-      "snippet": "everything just dropped to $49.99! That's $20 off. Grab yours: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "bcaf777d42fd7bba",
-      "sender": "deals@store.com",
-      "subject": "Your exclusive 50% off code",
-      "snippet": "Members save 50%. Join for instant access to deals: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "40b397cb76b1e91b",
-      "sender": "marketing@groupon.com",
-      "subject": "Stock up and save",
-      "snippet": "Today's top deals: pants, accessories, {item3} all on sale: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "943d390dc2f68ba9",
-      "sender": "offers@overstock.com",
-      "subject": "New markdowns: womens",
-      "snippet": "Doorbuster special: clothing $19.99. In-store pickup: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "0ba7330e88b5ff64",
-      "sender": "sales@bestbuy.com",
-      "subject": "Secret sale just launched",
-      "snippet": "Your size in furniture is on sale! Save 50%: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "c8e3e1128af1107f",
-      "sender": "promotional@macys.com",
-      "subject": "Stock up and save",
-      "snippet": "Lightning deals this hour: clothing 50% off. One per customer: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "37a048de3cffcd1b",
-      "sender": "deals@store.com",
-      "subject": "Limited time: BOGO on select items",
-      "snippet": "Overstock sale: home reduced 70%. Limited inventory: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "a75132cc0df9fbf4",
-      "sender": "deals@hm.com",
-      "subject": "Biggest sale of the season",
-      "snippet": "Limited edition shoes: 30% off. Don't wait. target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "85f3d9767236a778",
-      "sender": "offers@woot.com",
-      "subject": "Clearance sale happening now",
-      "snippet": "Holiday gift guide: Save 70% on curated items: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "7505c156123173cf",
-      "sender": "sales@bestbuy.com",
-      "subject": "Biggest sale of the season",
-      "snippet": "Clearance event: Up to 70% off mens. Everything must go: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "d49b9edabbda470c",
-      "sender": "promo@walmart.com",
-      "subject": "Black Friday early access",
-      "snippet": "Holiday gift guide: Save 50% on curated items: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "0c1a2354bcdeee8f",
-      "sender": "deals@amazon.com",
-      "subject": "50% off everything!",
-      "snippet": "Today's top deals: shirt, shoes, {item3} all on sale: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "c4a0888143ac1cd4",
-      "sender": "deals@costco.com",
-      "subject": "Today only: $20",
-      "snippet": "We miss you! Here's 70% off your next purchase. Use code SUMMER30 at checkout. Valid through Sunday.",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "fd16f9b77cdd47a2",
-      "sender": "marketing@groupon.com",
-      "subject": "Time-sensitive deal: furniture",
-      "snippet": "Doorbuster special: everything $19.99. In-store pickup: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "e36c67c44f622a1b",
-      "sender": "sales@1saleaday.com",
-      "subject": "Online exclusive: electronics",
-      "snippet": "clothing just dropped to $99.99! That's 30% off. Grab yours: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "5bbbdc15e714ee05",
-      "sender": "deals@ikea.com",
-      "subject": "Your exclusive $20 off code",
-      "snippet": "BOGO: Buy pants, get accessories free. Today only: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "5fd8d99e5cea89bd",
-      "sender": "sales@bestbuy.com",
-      "subject": "You saved $45.99 with these deals",
-      "snippet": "Holiday gift guide: Save 30% on curated items: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "68b9a56e90c9446c",
-      "sender": "deals@ikea.com",
-      "subject": "50% off everything!",
-      "snippet": "Lightning deals this hour: electronics 30% off. One per customer: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "87f39227d05b2468",
-      "sender": "deals@aliexpress.com",
-      "subject": "End of season clearance",
-      "snippet": "New markdowns: womens up to 70% off: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "a548be6b9bcec6fa",
-      "sender": "marketing@retailer.com",
-      "subject": "Special offer inside",
-      "snippet": "Flash deal: clothing $19.99 for 2 hours. Hurry: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "51a0458339ad5bdf",
-      "sender": "sales@1saleaday.com",
-      "subject": "Exclusive deal for you",
-      "snippet": "BOGO: Buy pants, get accessories free. Today only: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "a31f39803fde7314",
-      "sender": "sales@ebay.com",
-      "subject": "Online exclusive: clothing",
-      "snippet": "Members save 30%. Join for instant access to deals: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "6ce624797d235464",
-      "sender": "sales@1saleaday.com",
-      "subject": "Your exclusive 30% off code",
-      "snippet": "Only 10 left at this price! shoes for $99.99. Shop: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "44a249498d675963",
-      "sender": "sales@nike.com",
-      "subject": "Trending deals: shoes",
-      "snippet": "Warehouse clearance: $20 off select home. While supplies last: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "60581dc22745d147",
-      "sender": "promotional@macys.com",
-      "subject": "Your exclusive 70% off code",
-      "snippet": "Members save $20. Join for instant access to deals: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "80374f365cf2e191",
-      "sender": "deals@hm.com",
-      "subject": "Biggest sale of the season",
-      "snippet": "Limited edition electronics: 50% off. Don't wait. target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "42b814f76f3d88fd",
-      "sender": "sales@dollartree.com",
-      "subject": "Your exclusive 30% off code",
-      "snippet": "Clearance event: Up to 70% off home. Everything must go: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "ed6098bb602be74e",
-      "sender": "offers@zara.com",
-      "subject": "Members-only offer",
-      "snippet": "Clearance: clothing reduced to $49.99. Stock up: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "145cde02556eb629",
-      "sender": "marketing@retailer.com",
-      "subject": "Clearance sale happening now",
-      "snippet": "You have 72 hours to get $20 on electronics. Don't miss out: https://nike.com/shop",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "279059abb37c8235",
-      "sender": "promotional@macys.com",
-      "subject": "Secret sale just launched",
-      "snippet": "Don't miss out! Save 50% on furniture. Code: SAVE50. Offer ends tomorrow. Shop now: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "87133648b135e651",
-      "sender": "promo@uniqlo.com",
-      "subject": "We saved you {amount}",
-      "snippet": "Clearance: electronics reduced to $19.99. Stock up: target.com/deals",
-      "category": "PROMO_MARKETING"
-    },
-    {
-      "id": "3ee4042099c24f13",
-      "sender": "deals@costco.com",
-      "subject": "Biggest sale of the season",
-      "snippet": "Only 50 left at this price! shoes for $19.99. Shop: target.com/deals",
-      "category": "PROMO_MARKETING"
-    }
-  ]
-}
+[
+  {
+    "id": "fc0d0c6623bc151a",
+    "sender": "sales@ebay.com",
+    "subject": "Biggest sale of the season",
+    "snippet": "We miss you! Here's 30% off your next purchase. Use code WELCOME20 at checkout. Valid through Sunday.",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "5f549d707fe7fe87",
+    "sender": "sales@nike.com",
+    "subject": "Doorbusters this week",
+    "snippet": "Overstock sale: womens reduced 30%. Limited inventory: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "af97d60a49ed8e39",
+    "sender": "marketing@retailer.com",
+    "subject": "Exclusive deal for you",
+    "snippet": "Online exclusive: everything for $49.99. In-store price $$99.99. Shop: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "643320ed238702ad",
+    "sender": "offers@woot.com",
+    "subject": "Last chance: furniture",
+    "snippet": "Your size in electronics is on sale! Save 70%: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "06a5bf6a91b23384",
+    "sender": "deals@target.com",
+    "subject": "End of season clearance",
+    "snippet": "BOGO: Buy pants, get shoes free. Today only: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "91444cfedb1628f1",
+    "sender": "promotional@macys.com",
+    "subject": "Black Friday early access",
+    "snippet": "BOGO: Buy shirt, get accessories free. Today only: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "4feb6b3172c57d3c",
+    "sender": "promo@walmart.com",
+    "subject": "Stock up and save",
+    "snippet": "Don't miss out! Save $20 on shoes. Code: SAVE50. Offer ends Sunday. Shop now: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "faa7d9efbfccbf59",
+    "sender": "deals@slickdeals.com",
+    "subject": "Stock up and save",
+    "snippet": "BOGO: Buy shirt, get accessories free. Today only: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "a7db79a3da4dfaf0",
+    "sender": "promo@stacksocial.com",
+    "subject": "Biggest sale of the season",
+    "snippet": "Clearance: everything reduced to $19.99. Stock up: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "5857f95340e93047",
+    "sender": "promo@wish.com",
+    "subject": "Members-only offer",
+    "snippet": "VIP early access to Cyber Monday: 30% off mens: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "975a571e17ae7378",
+    "sender": "deals@costco.com",
+    "subject": "Today only: 30%",
+    "snippet": "Bundle and save! summer essentials for $20 off. Shop: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "4b11a4e572771365",
+    "sender": "sales@dollartree.com",
+    "subject": "Time-sensitive deal: electronics",
+    "snippet": "VIP early access to Black Friday: 50% off home: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "7ae7e85d6f11c18e",
+    "sender": "promo@wish.com",
+    "subject": "Trending deals: furniture",
+    "snippet": "Clearance: electronics reduced to $99.99. Stock up: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "49a10a88c7330d79",
+    "sender": "offers@nordstrom.com",
+    "subject": "Trending deals: everything",
+    "snippet": "Clearance: everything reduced to $99.99. Stock up: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "f098155fc593a12a",
+    "sender": "marketing@groupon.com",
+    "subject": "Last chance: shoes",
+    "snippet": "VIP early access to Black Friday: 30% off womens: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "f363581e145c8125",
+    "sender": "marketing@sephora.com",
+    "subject": "End of season clearance",
+    "snippet": "We miss you! Here's 70% off your next purchase. Use code SAVE50 at checkout. Valid through Sunday.",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "89cd61c203601e1c",
+    "sender": "deals@store.com",
+    "subject": "New markdowns: womens",
+    "snippet": "Doorbuster special: shoes $9.99. In-store pickup: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "18578f1e3ce83650",
+    "sender": "promo@wish.com",
+    "subject": "Biggest sale of the season",
+    "snippet": "You have 72 hours to get 70% on electronics. Don't miss out: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "1ddea0789eeb88b7",
+    "sender": "promo@wayfair.com",
+    "subject": "50% off everything!",
+    "snippet": "Only 10 left at this price! shoes for $49.99. Shop: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "2a4ab31af3cab08d",
+    "sender": "sales@nike.com",
+    "subject": "New markdowns: home",
+    "snippet": "Birthday month special: Extra 70% for you. Use code: SAVE50 target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "ee801e0c9c6d3d14",
+    "sender": "sales@1saleaday.com",
+    "subject": "Black Friday early access",
+    "snippet": "Flash deal: furniture $99.99 for 2 hours. Hurry: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "25d6187c74fab078",
+    "sender": "sales@forever21.com",
+    "subject": "Get 70% now",
+    "snippet": "Warehouse clearance: $20 off select home. While supplies last: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "227eb1e79d7f9fea",
+    "sender": "deals@amazon.com",
+    "subject": "New markdowns: mens",
+    "snippet": "Price match guaranteed! Found it cheaper? We'll match it + 50% off. Details: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "d9940b1c0bdbb398",
+    "sender": "sales@bestbuy.com",
+    "subject": "Black Friday early access",
+    "snippet": "We priced matched Walmart! Save on everything: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "daeb50d37476f6bc",
+    "sender": "marketing@homegoods.com",
+    "subject": "Biggest sale of the season",
+    "snippet": "Final markdown: everything now $19.99. Was $99.99: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "8564345a0424b274",
+    "sender": "promo@wayfair.com",
+    "subject": "Secret sale just launched",
+    "snippet": "VIP early access to Black Friday: 30% off womens: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "27b64342ae9720c8",
+    "sender": "sales@1saleaday.com",
+    "subject": "Exclusive to app users",
+    "snippet": "You have 24 hours to get 30% on shoes. Don't miss out: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "92291916951992ca",
+    "sender": "deals@amazon.com",
+    "subject": "Price drop: electronics",
+    "snippet": "New markdowns: womens up to 70% off: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "323766bc65b319dd",
+    "sender": "promo@walmart.com",
+    "subject": "End of season clearance",
+    "snippet": "Don't miss out! Save 70% on electronics. Code: SAVE50. Offer ends tomorrow. Shop now: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "3d1794392014d8ce",
+    "sender": "offers@nordstrom.com",
+    "subject": "Special offer inside",
+    "snippet": "We priced matched Amazon! Save on clothing: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "7c74ceebb1e091f2",
+    "sender": "offers@nordstrom.com",
+    "subject": "Doorbusters this week",
+    "snippet": "Overstock sale: home reduced 70%. Limited inventory: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "5350ea4d47651c73",
+    "sender": "deals@target.com",
+    "subject": "Time-sensitive deal: clothing",
+    "snippet": "Don't miss out! Save 50% on clothing. Code: SUMMER30. Offer ends today. Shop now: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "c7453dd4c8d25acb",
+    "sender": "promo@wayfair.com",
+    "subject": "Time-sensitive deal: furniture",
+    "snippet": "Overstock sale: mens reduced $20. Limited inventory: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "640213fa6ae144e1",
+    "sender": "promo@uniqlo.com",
+    "subject": "Price drop: clothing",
+    "snippet": "New markdowns: home up to 70% off: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "8c78f85690cd0666",
+    "sender": "deals@slickdeals.com",
+    "subject": "Clearance sale happening now",
+    "snippet": "Holiday gift guide: Save 50% on curated items: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "943ea2d91a0035f3",
+    "sender": "offers@gap.com",
+    "subject": "Last chance: furniture",
+    "snippet": "Overstock sale: womens reduced $20. Limited inventory: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "562e42ae11c71a17",
+    "sender": "deals@shein.com",
+    "subject": "Biggest sale of the season",
+    "snippet": "VIP early access to Black Friday: 50% off mens: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "a583bebea231fec1",
+    "sender": "promo@uniqlo.com",
+    "subject": "Special offer inside",
+    "snippet": "electronics just dropped to $19.99! That's 30% off. Grab yours: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "acb6124803afd2ea",
+    "sender": "deals@ikea.com",
+    "subject": "Exclusive to VIP members",
+    "snippet": "Bundle and save! starter pack for 70% off. Shop: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "30b191c9d7dc8b41",
+    "sender": "deals@aliexpress.com",
+    "subject": "You saved $120.00 with these deals",
+    "snippet": "Lightning deals this hour: shoes 50% off. One per customer: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "d33fe3f59ca77e34",
+    "sender": "promo@uniqlo.com",
+    "subject": "Exclusive to app users",
+    "snippet": "Limited edition everything: 30% off. Don't wait. target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "7769f1c3ec464f95",
+    "sender": "promo@uniqlo.com",
+    "subject": "Online exclusive: furniture",
+    "snippet": "We miss you! Here's 70% off your next purchase. Use code SAVE50 at checkout. Valid through today.",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "509c369d08c07710",
+    "sender": "deals@amazon.com",
+    "subject": "New markdowns: womens",
+    "snippet": "Birthday month special: Extra $20 for you. Use code: WELCOME20 target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "eb4aa6a59a201910",
+    "sender": "sales@dollartree.com",
+    "subject": "Stock up and save",
+    "snippet": "We miss you! Here's $20 off your next purchase. Use code WELCOME20 at checkout. Valid through Sunday.",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "be84210da6935a53",
+    "sender": "deals@shein.com",
+    "subject": "Holiday sale starts now",
+    "snippet": "Flash sale alert! shoes is 30% off. Limited quantities available. These deals won't last. Shop: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "cbb5b886a7a26915",
+    "sender": "sales@ebay.com",
+    "subject": "Secret sale just launched",
+    "snippet": "Overstock sale: womens reduced 50%. Limited inventory: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "38f6b344dc77cf3f",
+    "sender": "offers@woot.com",
+    "subject": "Members-only offer",
+    "snippet": "Holiday gift guide: Save 50% on curated items: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "3bad9ba4d05e4662",
+    "sender": "sales@forever21.com",
+    "subject": "VIP early access",
+    "snippet": "Members save $20. Join for instant access to deals: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "bc15a6fa7f1d3a01",
+    "sender": "promo@uniqlo.com",
+    "subject": "Exclusive to VIP members",
+    "snippet": "Lightning deals this hour: clothing 70% off. One per customer: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "d28080655b70cd3b",
+    "sender": "marketing@groupon.com",
+    "subject": "Flash sale: electronics",
+    "snippet": "Price match guaranteed! Found it cheaper? We'll match it + 70% off. Details: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "a1860adc6f72c0c0",
+    "sender": "deals@costco.com",
+    "subject": "Last chance: everything",
+    "snippet": "New markdowns: womens up to 70% off: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "8ba5071b5409722f",
+    "sender": "promo@walmart.com",
+    "subject": "Black Friday early access",
+    "snippet": "New markdowns: home up to 70% off: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "22a88800109818b7",
+    "sender": "sales@1saleaday.com",
+    "subject": "Online exclusive: clothing",
+    "snippet": "Flash sale alert! furniture is 70% off. Limited quantities available. These deals won't last. Shop: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "86cef4050d8b0d21",
+    "sender": "deals@amazon.com",
+    "subject": "Flash sale: everything",
+    "snippet": "Limited edition everything: 30% off. Don't wait. https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "7c514330b4b6dcaa",
+    "sender": "offers@nordstrom.com",
+    "subject": "Holiday sale starts now",
+    "snippet": "everything just dropped to $19.99! That's 70% off. Grab yours: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "41fc36c913652cd5",
+    "sender": "offers@gap.com",
+    "subject": "Get 70% now",
+    "snippet": "Birthday month special: Extra 70% for you. Use code: WELCOME20 target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "9641fd1a43bf5658",
+    "sender": "deals@shein.com",
+    "subject": "Secret sale just launched",
+    "snippet": "Overstock sale: womens reduced $20. Limited inventory: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "210508d7edda3349",
+    "sender": "deals@slickdeals.com",
+    "subject": "Flash sale: electronics",
+    "snippet": "Birthday month special: Extra 30% for you. Use code: WELCOME20 target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "06b5bf65595e843e",
+    "sender": "promo@walmart.com",
+    "subject": "Exclusive to app users",
+    "snippet": "Early access: app users get $20 through today. Shop: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "552d19fdf2c5d45f",
+    "sender": "deals@amazon.com",
+    "subject": "You saved $120.00 with these deals",
+    "snippet": "VIP early access to Cyber Monday: 70% off womens: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "32db820abd914aec",
+    "sender": "deals@store.com",
+    "subject": "Exclusive to VIP members",
+    "snippet": "Warehouse clearance: $20 off select home. While supplies last: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "7aa872ce5fe226f0",
+    "sender": "deals@store.com",
+    "subject": "Doorbusters this week",
+    "snippet": "Don't miss out! Save 30% on electronics. Code: SUMMER30. Offer ends Sunday. Shop now: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "40febbdefb3a761b",
+    "sender": "deals@slickdeals.com",
+    "subject": "Flash sale: clothing",
+    "snippet": "Trending right now: furniture $20 off. Join 1000 shoppers: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "9fe280761598cd6c",
+    "sender": "sales@dollartree.com",
+    "subject": "Special offer inside",
+    "snippet": "Only 5 left at this price! shoes for $49.99. Shop: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "7ba9fde6ac04c993",
+    "sender": "sales@nike.com",
+    "subject": "Stock up and save",
+    "snippet": "Trending right now: shoes $20 off. Join 500 shoppers: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "923656888283d390",
+    "sender": "deals@aliexpress.com",
+    "subject": "Today only: $20",
+    "snippet": "shoes just dropped to $49.99! That's 30% off. Grab yours: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "6c54620e44c73325",
+    "sender": "marketing@homegoods.com",
+    "subject": "Time-sensitive deal: shoes",
+    "snippet": "Today's top deals: pants, shoes, {item3} all on sale: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "a9745ec05db260ff",
+    "sender": "deals@aliexpress.com",
+    "subject": "Weekend deals just dropped",
+    "snippet": "Price match guaranteed! Found it cheaper? We'll match it + 30% off. Details: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "d7920f8a5a3652cf",
+    "sender": "offers@overstock.com",
+    "subject": "Holiday sale starts now",
+    "snippet": "Clearance event: Up to 70% off mens. Everything must go: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "d93667b2903c3709",
+    "sender": "offers@overstock.com",
+    "subject": "Biggest sale of the season",
+    "snippet": "Overstock sale: home reduced 30%. Limited inventory: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "41b8f75b3054e933",
+    "sender": "deals@ikea.com",
+    "subject": "Price drop: everything",
+    "snippet": "Today's top deals: pants, accessories, {item3} all on sale: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "87a7312f6c946d52",
+    "sender": "deals@ikea.com",
+    "subject": "Today only: $20",
+    "snippet": "VIP early access to Black Friday: $20 off home: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "0d1d477afd9cc600",
+    "sender": "promo@uniqlo.com",
+    "subject": "Your exclusive 30% off code",
+    "snippet": "VIP early access to Black Friday: $20 off home: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "a729ccce892f053b",
+    "sender": "marketing@retailer.com",
+    "subject": "Your exclusive $20 off code",
+    "snippet": "Only 10 left at this price! shoes for $99.99. Shop: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "1b3da7c949e0dbe1",
+    "sender": "offers@overstock.com",
+    "subject": "Holiday sale starts now",
+    "snippet": "Online exclusive: shoes for $19.99. In-store price $$49.99. Shop: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "42b6d3a570cca82f",
+    "sender": "offers@nordstrom.com",
+    "subject": "Flash sale: clothing",
+    "snippet": "Flash sale alert! clothing is 70% off. Limited quantities available. These deals won't last. Shop: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "e4dfd45e915f17c7",
+    "sender": "offers@overstock.com",
+    "subject": "Flash sale: shoes",
+    "snippet": "Don't miss out! Save 50% on electronics. Code: WELCOME20. Offer ends tomorrow. Shop now: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "df374e61c785df21",
+    "sender": "deals@shein.com",
+    "subject": "Biggest sale of the season",
+    "snippet": "You have 24 hours to get 50% on furniture. Don't miss out: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "b433f43a1aaec606",
+    "sender": "offers@gap.com",
+    "subject": "Trending deals: clothing",
+    "snippet": "You have 48 hours to get 30% on everything. Don't miss out: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "9f44ffc6253718f0",
+    "sender": "deals@target.com",
+    "subject": "Exclusive deal for you",
+    "snippet": "BOGO: Buy pants, get shoes free. Today only: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "2c65acb4541c190a",
+    "sender": "deals@amazon.com",
+    "subject": "Special offer inside",
+    "snippet": "Trending right now: furniture 30% off. Join 1000 shoppers: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "3c5592f8cb880459",
+    "sender": "marketing@groupon.com",
+    "subject": "Special offer inside",
+    "snippet": "We priced matched Walmart! Save on furniture: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "f0e2204f25ed8978",
+    "sender": "sales@forever21.com",
+    "subject": "Today only: 50%",
+    "snippet": "Trending right now: electronics 70% off. Join 1000 shoppers: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "c2c3c9f8996574f0",
+    "sender": "sales@nike.com",
+    "subject": "You saved $120.00 with these deals",
+    "snippet": "Members save $20. Join for instant access to deals: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "caa0adf739d33ff0",
+    "sender": "offers@zara.com",
+    "subject": "Clearance sale happening now",
+    "snippet": "VIP early access to Cyber Monday: 30% off womens: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "1faf787ea5b2577f",
+    "sender": "promo@wish.com",
+    "subject": "Your exclusive 50% off code",
+    "snippet": "shoes just dropped to $49.99! That's 30% off. Grab yours: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "4e756c9ee882e364",
+    "sender": "sales@bestbuy.com",
+    "subject": "Flash sale: clothing",
+    "snippet": "Price match guaranteed! Found it cheaper? We'll match it + 50% off. Details: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "44b366220d359463",
+    "sender": "marketing@retailer.com",
+    "subject": "Holiday sale starts now",
+    "snippet": "Overstock sale: home reduced 50%. Limited inventory: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "d99c37383b898caf",
+    "sender": "deals@costco.com",
+    "subject": "End of season clearance",
+    "snippet": "Trending right now: shoes 50% off. Join 500 shoppers: target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "dd142759e324069b",
+    "sender": "sales@dollartree.com",
+    "subject": "Holiday sale starts now",
+    "snippet": "Birthday month special: Extra 30% for you. Use code: SAVE50 target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "79115e6d62de9830",
+    "sender": "deals@slickdeals.com",
+    "subject": "Exclusive deal for you",
+    "snippet": "Free shipping + 50% off furniture. Today only. Code: WELCOME20. target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "c9086ac681dbe78b",
+    "sender": "offers@gap.com",
+    "subject": "You saved $45.99 with these deals",
+    "snippet": "Your size in furniture is on sale! Save 50%: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "4cd0aa522d131a92",
+    "sender": "promo@stacksocial.com",
+    "subject": "50% off everything!",
+    "snippet": "We miss you! Here's 50% off your next purchase. Use code WELCOME20 at checkout. Valid through Sunday.",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "bb82d0c2ed257dcb",
+    "sender": "deals@store.com",
+    "subject": "Your exclusive $20 off code",
+    "snippet": "Free shipping + 70% off everything. Today only. Code: WELCOME20. target.com/deals",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "53bcb42af24ac8ef",
+    "sender": "promo@walmart.com",
+    "subject": "Final sale items",
+    "snippet": "BOGO: Buy shirt, get accessories free. Today only: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "4ee330190272c822",
+    "sender": "deals@amazon.com",
+    "subject": "50% off everything!",
+    "snippet": "Free shipping + 70% off clothing. Today only. Code: SUMMER30. https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "5f3c408fc24dc2d3",
+    "sender": "promo@walmart.com",
+    "subject": "Stock up and save",
+    "snippet": "Online exclusive: clothing for $99.99. In-store price $$99.99. Shop: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "c5df31b164852d3c",
+    "sender": "offers@gap.com",
+    "subject": "VIP early access",
+    "snippet": "BOGO: Buy pants, get accessories free. Today only: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "6ba7933ce1d257fc",
+    "sender": "promo@wish.com",
+    "subject": "Trending deals: shoes",
+    "snippet": "Members save 70%. Join for instant access to deals: https://nike.com/shop",
+    "category": "PROMO_MARKETING"
+  },
+  {
+    "id": "68d05e8e1a902bf3",
+    "sender": "deals@amazon.com",
+    "subject": "End of season clearance",
+    "snippet": "Early access: app users get 30% through today. Shop: target.com/deals",
+    "category": "PROMO_MARKETING"
+  }
+]

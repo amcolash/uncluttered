@@ -1,704 +1,702 @@
-{
-  "emails": [
-    {
-      "id": "f500cd4c71bdbc7c",
-      "sender": "events@historymuseum.org",
-      "subject": "Workshop: Gardening Basics",
-      "snippet": "Volunteer opportunity: trail maintenance on June 10. Sign up: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "13484e76b1fd7f4e",
-      "sender": "announcements@civic.org",
-      "subject": "Community event: Block Party",
-      "snippet": "Local resource available: food pantry. Location: Central Park. Hours: 9-5 M-F. More: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "c99ff22127f88b6b",
-      "sender": "info@community-garden.org",
-      "subject": "Neighborhood connection",
-      "snippet": "Your feedback matters! City council meeting on zoning next Wednesday at 8:00 AM. Speak up: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "acbaf4dea48d0dfe",
-      "sender": "events@localarts.org",
-      "subject": "Meetup this week",
-      "snippet": "Street cleaning day June 10. Park cars by 8:00 AM. Questions: {phone}",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "3e85fe2337bb592e",
-      "sender": "info@toolshare.org",
-      "subject": "Neighborhood safety alert",
-      "snippet": "Farmers market Saturday mornings at Central Park. 15 vendors this week. Visit: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "4766e70dd64d65d1",
-      "sender": "info@toolshare.org",
-      "subject": "Community event: Block Party",
-      "snippet": "Local hero spotlight: {person} who helped 100 neighbors. Read: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "01fdda8616022991",
-      "sender": "bulletin@neighborhood.org",
-      "subject": "Street cleaning day",
-      "snippet": "Volunteer opportunity: trail maintenance on every Saturday. Sign up: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "931dfa2e1390f4c6",
-      "sender": "events@localarts.org",
-      "subject": "Neighborhood connection",
-      "snippet": "Neighborhood forum discussion: transportation. Share your thoughts: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "e3c970a7469b3ab6",
-      "sender": "neighbors@nextdoor.com",
-      "subject": "Community garden update",
-      "snippet": "New business in the neighborhood: bookstore. Check them out at 456 Oak St.",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "9824e23084ed6ccc",
-      "sender": "events@communityboard.org",
-      "subject": "Community support needed",
-      "snippet": "Neighborhood book club meets weekly at Neighborhood Square. Next book: Project Hail Mary. Join: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "e93fe6e30c85f94e",
-      "sender": "announce@localevent.org",
-      "subject": "Neighborhood Association newsletter - June 2026",
-      "snippet": "Neighborhood cleanup day: every Saturday at 8:00 AM. Meet at Neighborhood Square. Bring gloves!",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "93b6a1ec351f2908",
-      "sender": "announce@localevent.org",
-      "subject": "New local resource",
-      "snippet": "Join us for Potluck on next Wednesday at Neighborhood Square! Community members gathered last time - come make new friends. RSVP: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "386b497e1c5db1aa",
-      "sender": "info@libraryfriends.org",
-      "subject": "Community garden update",
-      "snippet": "Community fundraiser for youth center: June 10 at Central Park. Support: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "eee478067d677816",
-      "sender": "bulletin@neighborhood.org",
-      "subject": "Local event coming",
-      "snippet": "Community survey: Tell us about transportation. Fill out: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "538ca0e45e27b71d",
-      "sender": "updates@localpolitics.org",
-      "subject": "Lost and found",
-      "snippet": "Local government meeting on transportation. Advocate for park funding. Details: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "35d815bcd260d8f5",
-      "sender": "events@localarts.org",
-      "subject": "Community garden update",
-      "snippet": "Safety alert: theft reported in area. Report concerns: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "961d9c605da01621",
-      "sender": "events@localarts.org",
-      "subject": "Nextdoor post from your neighborhood",
-      "snippet": "Local government meeting on zoning. Advocate for park funding. Details: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "81693622cc19e276",
-      "sender": "info@libraryfriends.org",
-      "subject": "Local event coming",
-      "snippet": "Neighborhood social: every Saturday at Community Center. Come meet neighbors! Details: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "6dad016156f5271c",
-      "sender": "events@historymuseum.org",
-      "subject": "Neighborhood safety alert",
-      "snippet": "Local hero spotlight: {person} who helped 100 neighbors. Read: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "04344a03bc381ad4",
-      "sender": "info@community-garden.org",
-      "subject": "Neighborhood connection",
-      "snippet": "Community garden: Plot assignments June 10. Interested? nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "3072e30d29ed3347",
-      "sender": "updates@localpolitics.org",
-      "subject": "Community meeting reminder",
-      "snippet": "Community Board monthly meeting: next Wednesday at 6:00 PM. Topic: zoning. Join us: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "22f0a3cb7c5915f7",
-      "sender": "announce@neighborhood-board.org",
-      "subject": "Lost and found",
-      "snippet": "Local CSA monthly meeting: every Saturday at 8:00 AM. Topic: zoning. Join us: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "3f19e9d6321b0a8d",
-      "sender": "info@community-garden.org",
-      "subject": "Your neighbors posted",
-      "snippet": "Community class: coding starts June 10. Register: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "8bda16395ba62dd1",
-      "sender": "neighbors@nextdoor.com",
-      "subject": "Community improvement project",
-      "snippet": "Emergency preparedness workshop: June 10 at 8:00 AM. Location: Central Park. Register: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "24db2a1ac59f1131",
-      "sender": "hello@littlelibrary.org",
-      "subject": "Lost and found",
-      "snippet": "Neighborhood forum discussion: parks. Share your thoughts: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "299eac2944a999ec",
-      "sender": "announce@neighborhood-board.org",
-      "subject": "Community event: Book Club",
-      "snippet": "Community fundraiser for animal shelter: next Wednesday at 123 Main St. Support: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "68353ea6053f62a5",
-      "sender": "events@communityboard.org",
-      "subject": "Local business spotlight",
-      "snippet": "Welcome Williams family/business to our neighborhood!",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "deaa7591498b7ea2",
-      "sender": "announcements@civic.org",
-      "subject": "Community meeting reminder",
-      "snippet": "Lost black cat: wearing collar. Last seen Central Park on June 10. Contact 555-0123. Reward: $100",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "a1bcfbc1166b031d",
-      "sender": "newsletter@neighborly.org",
-      "subject": "Community garden update",
-      "snippet": "Safety alert: theft reported in area. Report concerns: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "6ac93bf9cbf5648c",
-      "sender": "updates@communitylaw.org",
-      "subject": "Neighborhood discussion",
-      "snippet": "Welcome Johnson family/business to our neighborhood!",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "e69d793a38dfac7c",
-      "sender": "hello@community-center.org",
-      "subject": "Community garden update",
-      "snippet": "Street cleaning day next Wednesday. Park cars by 8:00 AM. Questions: {phone}",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "510552b4e1f3308c",
-      "sender": "hello@littlelibrary.org",
-      "subject": "Local farmers market",
-      "snippet": "Local government meeting on parks. Advocate for zoning change. Details: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "73d150177bcfe465",
-      "sender": "hello@communitybus.org",
-      "subject": "New neighbor welcome",
-      "snippet": "Emergency preparedness workshop: June 10 at 8:00 AM. Location: Neighborhood Square. Register: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "b019b9f561dbebb9",
-      "sender": "hello@food-co-op.org",
-      "subject": "Community fundraiser",
-      "snippet": "Local CSA monthly meeting: June 10 at 8:00 AM. Topic: parks. Join us: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "3d22257265661856",
-      "sender": "info@localfarm.org",
-      "subject": "Workshop: Gardening Basics",
-      "snippet": "Local CSA monthly meeting: next Wednesday at 6:00 PM. Topic: zoning. Join us: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "dd572e713f0f728c",
-      "sender": "updates@localpolitics.org",
-      "subject": "Local business spotlight",
-      "snippet": "Community class: yoga starts next Wednesday. Register: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "073c4ea3cabfbc33",
-      "sender": "updates@communitylaw.org",
-      "subject": "Your neighbors posted",
-      "snippet": "Community fundraiser for food bank: next Wednesday at Central Park. Support: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "af3f4cbf6f8ab8ad",
-      "sender": "hello@food-co-op.org",
-      "subject": "Local business spotlight",
-      "snippet": "Emergency preparedness workshop: every Saturday at 8:00 AM. Location: Community Center. Register: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "5b6a8469e4afd789",
-      "sender": "newsletter@neighborly.org",
-      "subject": "Workshop: Cooking Class",
-      "snippet": "Local hero spotlight: {person} who helped 100 neighbors. Read: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "297edd6c73efc3cb",
-      "sender": "hello@cooperativemarket.org",
-      "subject": "Monthly gathering reminder",
-      "snippet": "Volunteer opportunity: trail maintenance on June 10. Sign up: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "e57df9bd699d6f85",
-      "sender": "info@fitnessco-op.org",
-      "subject": "Volunteer opportunity",
-      "snippet": "Community survey: Tell us about zoning. Fill out: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "c6334f631ab00c65",
-      "sender": "updates@localpolitics.org",
-      "subject": "Workshop: Gardening Basics",
-      "snippet": "Neighborhood cleanup day: every Saturday at 6:00 PM. Meet at Neighborhood Square. Bring gloves!",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "a0f07817d1c0b1db",
-      "sender": "info@libraryfriends.org",
-      "subject": "Workshop registration open",
-      "snippet": "Welcome Smith family/business to our neighborhood!",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "e1f2151a0a84d842",
-      "sender": "hello@cooperativemarket.org",
-      "subject": "Community improvement project",
-      "snippet": "Safety alert: theft reported in area. Report concerns: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "b7bc6684909916bc",
-      "sender": "hello@localcsa.org",
-      "subject": "Monthly gathering reminder",
-      "snippet": "Street cleaning day every Saturday. Park cars by 8:00 AM. Questions: {phone}",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "6bd19e7543f5a726",
-      "sender": "hello@littlelibrary.org",
-      "subject": "Monthly gathering reminder",
-      "snippet": "Local government meeting on parks. Advocate for park funding. Details: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "c911ec3ec401a178",
-      "sender": "info@community-garden.org",
-      "subject": "Event this weekend",
-      "snippet": "Lost black cat: wearing collar. Last seen Neighborhood Square on June 10. Contact 555-0123. Reward: $100",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "3020f5a70b4d3288",
-      "sender": "hello@community-center.org",
-      "subject": "Workshop registration open",
-      "snippet": "Local resource available: food pantry. Location: 123 Main St. Hours: 9-5 M-F. More: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "334f2cdb569c5887",
-      "sender": "info@fitnessco-op.org",
-      "subject": "Monthly gathering reminder",
-      "snippet": "Join us for Community Cleanup Day on every Saturday at Central Park! Community members gathered last time - come make new friends. RSVP: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "a40ec3c1dbf724a2",
-      "sender": "info@toolshare.org",
-      "subject": "Volunteer opportunity",
-      "snippet": "Welcome Smith family/business to our neighborhood!",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "8718883bd55210cf",
-      "sender": "announce@parkdistrict.org",
-      "subject": "Community improvement project",
-      "snippet": "Community fundraiser for youth center: June 10 at Neighborhood Square. Support: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "d5756e07128f8ab7",
-      "sender": "hello@localcsa.org",
-      "subject": "Community meeting reminder",
-      "snippet": "Your feedback matters! City council meeting on transportation June 10 at 8:00 AM. Speak up: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "d70503c87da70c2d",
-      "sender": "hello@communitybus.org",
-      "subject": "New neighbor welcome",
-      "snippet": "Neighborhood forum discussion: parks. Share your thoughts: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "4b323b7280d6640d",
-      "sender": "info@localfarm.org",
-      "subject": "Community meeting reminder",
-      "snippet": "Farmers market Saturday mornings at 123 Main St. 15 vendors this week. Visit: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "531533fb000a1006",
-      "sender": "hello@communitybus.org",
-      "subject": "Workshop: Woodworking 101",
-      "snippet": "Welcome Williams family/business to our neighborhood!",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "57003e7405c7848d",
-      "sender": "hello@food-co-op.org",
-      "subject": "Community garden update",
-      "snippet": "Farmers market Saturday mornings at 123 Main St. 25 vendors this week. Visit: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "dba684a17776da3a",
-      "sender": "updates@localpolitics.org",
-      "subject": "Nextdoor post from your neighborhood",
-      "snippet": "Neighborhood social: June 10 at 123 Main St. Come meet neighbors! Details: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "3c7e4c369feb0dda",
-      "sender": "hello@littlelibrary.org",
-      "subject": "Workshop registration open",
-      "snippet": "Safety alert: vandalism reported in area. Report concerns: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "49f3c4174ad9e598",
-      "sender": "info@community-garden.org",
-      "subject": "Community Board newsletter - June 2026",
-      "snippet": "Neighborhood book club meets weekly at Neighborhood Square. Next book: Project Hail Mary. Join: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "1c159579cab3f1e7",
-      "sender": "updates@schoolpta.org",
-      "subject": "Nextdoor post from your neighborhood",
-      "snippet": "Community fundraiser for food bank: next Wednesday at Community Center. Support: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "687d29bb14f72870",
-      "sender": "neighbors@nextdoor.com",
-      "subject": "Community support needed",
-      "snippet": "Emergency preparedness workshop: next Wednesday at 6:00 PM. Location: 123 Main St. Register: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "a5bc6f40ab2ca1a2",
-      "sender": "announce@neighborhood-board.org",
-      "subject": "Your neighbors posted",
-      "snippet": "Local hero spotlight: {person} who helped 100 neighbors. Read: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "019930ee2c9594c1",
-      "sender": "bulletin@neighborhood.org",
-      "subject": "Nextdoor post from your neighborhood",
-      "snippet": "Street cleaning day June 10. Park cars by 6:00 PM. Questions: {phone}",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "08f488ca5224e714",
-      "sender": "hello@coworking.space",
-      "subject": "Local farmers market",
-      "snippet": "Your CSA pickup is next Wednesday at 123 Main St. This week's box: squash, lettuce, peppers. Thank your local farmers! Share your recipes: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "eeaf61fdc34146ff",
-      "sender": "info@makersspace.org",
-      "subject": "Local opportunity: transportation",
-      "snippet": "Community class: coding starts every Saturday. Register: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "b70cf37083b34fa3",
-      "sender": "announce@neighborhood-board.org",
-      "subject": "Street cleaning day",
-      "snippet": "Volunteer opportunity: trail maintenance on June 10. Sign up: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "142944eb5e1df3f7",
-      "sender": "info@toolshare.org",
-      "subject": "Your neighbors posted",
-      "snippet": "Neighborhood book club meets weekly at 123 Main St. Next book: Project Hail Mary. Join: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "b142a99da40b26c2",
-      "sender": "members@craftguild.org",
-      "subject": "Local event coming",
-      "snippet": "Community fundraiser for youth center: next Wednesday at Neighborhood Square. Support: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "cfb2f3ea9cd53739",
-      "sender": "events@communityboard.org",
-      "subject": "Local farmers market",
-      "snippet": "Emergency preparedness workshop: June 10 at 8:00 AM. Location: Neighborhood Square. Register: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "5381674beff45300",
-      "sender": "bulletin@neighborhood.org",
-      "subject": "Community garden update",
-      "snippet": "Farmers market Saturday mornings at 123 Main St. 25 vendors this week. Visit: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "0eeeb96ec260e855",
-      "sender": "events@historymuseum.org",
-      "subject": "Community support needed",
-      "snippet": "Free resource available: food pantry at Community Center. Call {phone}",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "997b4e1a3648a9f7",
-      "sender": "hello@cooperativemarket.org",
-      "subject": "Community fundraiser",
-      "snippet": "Community garden: Plot assignments June 10. Interested? nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "03a56aacb60899d3",
-      "sender": "info@community-garden.org",
-      "subject": "Street cleaning day",
-      "snippet": "Local resource available: tutoring. Location: 123 Main St. Hours: 9-5 M-F. More: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "1cf96ea519e6357f",
-      "sender": "hello@littlelibrary.org",
-      "subject": "Neighborhood connection",
-      "snippet": "Farmers market Saturday mornings at Community Center. 15 vendors this week. Visit: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "01678306ab481bee",
-      "sender": "hello@food-co-op.org",
-      "subject": "Community garden update",
-      "snippet": "Emergency preparedness workshop: next Wednesday at 6:00 PM. Location: Central Park. Register: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "df49d45f62840372",
-      "sender": "events@localarts.org",
-      "subject": "Local news you should know",
-      "snippet": "Neighborhood social: June 10 at 123 Main St. Come meet neighbors! Details: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "9a31419269248108",
-      "sender": "updates@localpolitics.org",
-      "subject": "Community meeting reminder",
-      "snippet": "Local hero spotlight: {person} who helped 100 neighbors. Read: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "32c4eb221ee69b1b",
-      "sender": "members@craftguild.org",
-      "subject": "Community fundraiser",
-      "snippet": "Join us for Potluck on every Saturday at Community Center! Community members gathered last time - come make new friends. RSVP: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "01e1dfa6d1c39767",
-      "sender": "newsletter@neighborly.org",
-      "subject": "Local news you should know",
-      "snippet": "Community survey: Tell us about parks. Fill out: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "f9aa5322134f8bf6",
-      "sender": "neighbors@nextdoor.com",
-      "subject": "Neighborhood connection",
-      "snippet": "Safety alert: vandalism reported in area. Report concerns: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "0dbdb0bc3479be26",
-      "sender": "info@neighborhoodwatch.org",
-      "subject": "New neighbor welcome",
-      "snippet": "Petition: youth center. Signatures needed by June 10. Sign: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "43307c2376522bee",
-      "sender": "hello@littlelibrary.org",
-      "subject": "New local resource",
-      "snippet": "Community garden: Plot assignments every Saturday. Interested? nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "d2dfb90ab89b4ab5",
-      "sender": "updates@schoolpta.org",
-      "subject": "Workshop registration open",
-      "snippet": "Community garden: Plot assignments June 10. Interested? https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "0100c103d019a4d2",
-      "sender": "hello@cooperativemarket.org",
-      "subject": "Workshop registration open",
-      "snippet": "Lost golden retriever: medium-sized. Last seen Community Center on next Wednesday. Contact 555-0123. Reward: $100",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "9dc0d4ca819a8616",
-      "sender": "info@libraryfriends.org",
-      "subject": "Neighborhood safety alert",
-      "snippet": "Join us for Farmers Market on every Saturday at 123 Main St! Community members gathered last time - come make new friends. RSVP: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "704c2dc6b8c96100",
-      "sender": "members@craftguild.org",
-      "subject": "Community support needed",
-      "snippet": "Local government meeting on parks. Advocate for zoning change. Details: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "df1fdfbb4442029e",
-      "sender": "info@community-garden.org",
-      "subject": "Announcement from Community Board",
-      "snippet": "Neighborhood cleanup day: June 10 at 8:00 AM. Meet at Central Park. Bring gloves!",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "47913fbc37ae3589",
-      "sender": "hello@communitybus.org",
-      "subject": "New local resource",
-      "snippet": "Workshop: Woodworking 101 on next Wednesday. Fee: $20. Register: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "a65204a94c0d397b",
-      "sender": "info@libraryfriends.org",
-      "subject": "Monthly gathering reminder",
-      "snippet": "Neighborhood cleanup day: every Saturday at 8:00 AM. Meet at 123 Main St. Bring gloves!",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "71fd2e7f4f1edf84",
-      "sender": "info@community-garden.org",
-      "subject": "Local event coming",
-      "snippet": "Local opportunity: tutor position at bike repair. Details: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "a3e8ec4edc95d51d",
-      "sender": "hello@food-co-op.org",
-      "subject": "Neighborhood safety alert",
-      "snippet": "Community survey: Tell us about transportation. Fill out: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "d2f38d9ad0a9d8aa",
-      "sender": "hello@localcsa.org",
-      "subject": "Meetup this week",
-      "snippet": "Community fundraiser for youth center: every Saturday at Neighborhood Square. Support: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "c4f5c43b49284e84",
-      "sender": "info@volunteer-hub.org",
-      "subject": "Community resource alert",
-      "snippet": "Community meeting: transportation on next Wednesday at 8:00 AM. Location: Community Center. All welcome. Details: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "591d9d60d17ad895",
-      "sender": "hello@community-center.org",
-      "subject": "Community event: Potluck",
-      "snippet": "Emergency preparedness workshop: next Wednesday at 8:00 AM. Location: 123 Main St. Register: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "8427af3454cac6d4",
-      "sender": "info@community-garden.org",
-      "subject": "Event this weekend",
-      "snippet": "Community garden: Plot assignments next Wednesday. Interested? https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "11b013046e36c113",
-      "sender": "info@libraryfriends.org",
-      "subject": "Community garden update",
-      "snippet": "Community garden: Plot assignments every Saturday. Interested? https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "34ff8a3275094ad8",
-      "sender": "hello@community-center.org",
-      "subject": "New local resource",
-      "snippet": "Your CSA pickup is every Saturday at Neighborhood Square. This week's box: tomatoes, basil, carrots. Thank your local farmers! Share your recipes: https://eventbrite.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "663ce07a353d3a4c",
-      "sender": "info@fitnessco-op.org",
-      "subject": "New local resource",
-      "snippet": "Community fundraiser for animal shelter: every Saturday at Central Park. Support: nextdoor.com/...",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "c07b5906b08b24ac",
-      "sender": "info@libraryfriends.org",
-      "subject": "Local opportunity: transportation",
-      "snippet": "Free resource available: food pantry at 123 Main St. Call {phone}",
-      "category": "COMMUNITY_LOCAL"
-    },
-    {
-      "id": "30da7f9695054ef3",
-      "sender": "hello@cooperativemarket.org",
-      "subject": "Workshop registration open",
-      "snippet": "Street cleaning day next Wednesday. Park cars by 6:00 PM. Questions: {phone}",
-      "category": "COMMUNITY_LOCAL"
-    }
-  ]
-}
+[
+  {
+    "id": "9cbff530bd018628",
+    "sender": "members@craftguild.org",
+    "subject": "Volunteer opportunity",
+    "snippet": "Local government meeting on zoning. Advocate for park funding. Details: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "c9d594f2fe98d3e9",
+    "sender": "members@craftguild.org",
+    "subject": "Community fundraiser",
+    "snippet": "Welcome Smith family/business to our neighborhood!",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "18c26dd8f8bbdf18",
+    "sender": "newsletter@neighborly.org",
+    "subject": "Your neighbors posted",
+    "snippet": "Neighborhood forum discussion: parks. Share your thoughts: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "83b28940bf84e0b1",
+    "sender": "newsletter@neighborly.org",
+    "subject": "Community fundraiser",
+    "snippet": "Local hero spotlight: {person} who organized cleanup. Read: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "d646ea8f54bf1e01",
+    "sender": "info@libraryfriends.org",
+    "subject": "Neighborhood discussion",
+    "snippet": "Local hero spotlight: {person} who organized cleanup. Read: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "20c5fd11343121c8",
+    "sender": "announce@localevent.org",
+    "subject": "Neighborhood connection",
+    "snippet": "Lost black cat: wearing collar. Last seen Central Park on June 10. Contact 555-0123. Reward: $200",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "e0786d20cca93412",
+    "sender": "neighbors@nextdoor.com",
+    "subject": "Local event coming",
+    "snippet": "Community fundraiser for animal shelter: every Saturday at Community Center. Support: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "9a1e56b690552c56",
+    "sender": "info@neighborhoodwatch.org",
+    "subject": "Lost and found",
+    "snippet": "Community survey: Tell us about zoning. Fill out: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "d3f9ed9e5de3f3f9",
+    "sender": "info@volunteer-hub.org",
+    "subject": "Workshop: Woodworking 101",
+    "snippet": "Neighborhood book club meets weekly at Neighborhood Square. Next book: Educated. Join: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "9addc84d45f86737",
+    "sender": "info@localfarm.org",
+    "subject": "Local opportunity: transportation",
+    "snippet": "Neighborhood social: next Wednesday at Community Center. Come meet neighbors! Details: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "20392cd2533333a1",
+    "sender": "hello@communitybus.org",
+    "subject": "Neighborhood safety alert",
+    "snippet": "Local resource available: tutoring. Location: Central Park. Hours: 9-5 M-F. More: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "c49b6a9e55ce8435",
+    "sender": "info@makersspace.org",
+    "subject": "Local event coming",
+    "snippet": "Welcome Williams family/business to our neighborhood!",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "9868bff63832f4fe",
+    "sender": "info@makersspace.org",
+    "subject": "Local event coming",
+    "snippet": "Neighborhood cleanup day: every Saturday at 6:00 PM. Meet at Neighborhood Square. Bring gloves!",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "e5dd66a4a8ad53e2",
+    "sender": "hello@coworking.space",
+    "subject": "Local event coming",
+    "snippet": "Neighborhood cleanup day: every Saturday at 6:00 PM. Meet at Neighborhood Square. Bring gloves!",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "300f4c38b5fef418",
+    "sender": "newsletter@neighborly.org",
+    "subject": "Local event coming",
+    "snippet": "Neighborhood book club meets monthly at 123 Main St. Next book: Educated. Join: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "44be1241a8ba6db4",
+    "sender": "announcements@civic.org",
+    "subject": "Community fundraiser",
+    "snippet": "Local hero spotlight: {person} who helped 100 neighbors. Read: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "54b6db43be45f592",
+    "sender": "info@community-garden.org",
+    "subject": "Street cleaning day",
+    "snippet": "Neighborhood book club meets weekly at Neighborhood Square. Next book: Project Hail Mary. Join: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "0a0c387c903228aa",
+    "sender": "updates@communitylaw.org",
+    "subject": "Local event coming",
+    "snippet": "Workshop: Cooking Class on June 10. Fee: $20. Register: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "85bc0c38af9fdc60",
+    "sender": "hello@food-co-op.org",
+    "subject": "Local event coming",
+    "snippet": "Your neighbor Mike posted: \"Lost cat in the area\". Reply or vote helpful if you know something about this. Report to city",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "6dead75802633e79",
+    "sender": "hello@cooperativemarket.org",
+    "subject": "Volunteer opportunity",
+    "snippet": "Safety alert: vandalism reported in area. Report concerns: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "eac00e78d14dc2a3",
+    "sender": "hello@communitybus.org",
+    "subject": "Community event: Book Club",
+    "snippet": "Community Board monthly meeting: June 10 at 8:00 AM. Topic: parks. Join us: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "4658ae3bf7180394",
+    "sender": "hello@food-co-op.org",
+    "subject": "New neighbor welcome",
+    "snippet": "Community fundraiser for animal shelter: June 10 at Community Center. Support: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "e5c3403bf4a8281e",
+    "sender": "members@craftguild.org",
+    "subject": "Local event coming",
+    "snippet": "Local resource available: tutoring. Location: Community Center. Hours: 9-5 M-F. More: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "7015b7648d9069a9",
+    "sender": "hello@localcsa.org",
+    "subject": "Community garden update",
+    "snippet": "Local resource available: free legal aid. Location: Neighborhood Square. Hours: 9-5 M-F. More: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "fd654fff64140f97",
+    "sender": "hello@littlelibrary.org",
+    "subject": "CSA pickup reminder",
+    "snippet": "Workshop: Woodworking 101 on every Saturday. Fee: $10. Register: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "de0a035658c48ccd",
+    "sender": "info@neighborhoodwatch.org",
+    "subject": "Community meeting reminder",
+    "snippet": "Community meeting: parks on every Saturday at 8:00 AM. Location: Community Center. All welcome. Details: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "5d3f4e7375da1214",
+    "sender": "members@craftguild.org",
+    "subject": "Volunteer opportunity",
+    "snippet": "Your feedback matters! City council meeting on zoning every Saturday at 6:00 PM. Speak up: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "7276779b3cf6776a",
+    "sender": "info@localfarm.org",
+    "subject": "Nextdoor post from your neighborhood",
+    "snippet": "Your neighbor Jessica posted: \"Lost cat in the area\". Reply or vote helpful if you know something about this. Have you tried their tacos?",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "053538bf4de810aa",
+    "sender": "events@localarts.org",
+    "subject": "Neighborhood Association newsletter - June 2026",
+    "snippet": "Community class: yoga starts June 10. Register: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "72741be5a3577857",
+    "sender": "info@community-garden.org",
+    "subject": "Community meeting reminder",
+    "snippet": "Your neighbor Jessica posted: \"Great local restaurant\". Reply or vote helpful if you know something about this. Help your neighbors find it",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "430014cc2dc7bee5",
+    "sender": "info@neighborhoodwatch.org",
+    "subject": "Monthly gathering reminder",
+    "snippet": "Local resource available: tutoring. Location: Neighborhood Square. Hours: by appointment. More: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "e3b18cdd0fd6230c",
+    "sender": "events@historymuseum.org",
+    "subject": "Community garden update",
+    "snippet": "Local resource available: food pantry. Location: Central Park. Hours: by appointment. More: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "5aad321d7fc8d049",
+    "sender": "info@volunteer-hub.org",
+    "subject": "Volunteer opportunity",
+    "snippet": "Your feedback matters! City council meeting on zoning June 10 at 6:00 PM. Speak up: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "ec0d7e217255905c",
+    "sender": "members@craftguild.org",
+    "subject": "Local news you should know",
+    "snippet": "Farmers market Saturday mornings at 123 Main St. 25 vendors this week. Visit: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "f7e62a6c1b5639de",
+    "sender": "hello@community-center.org",
+    "subject": "New local resource",
+    "snippet": "Community meeting: parks on next Wednesday at 6:00 PM. Location: Community Center. All welcome. Details: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "72d7c5d10d7b3347",
+    "sender": "info@fitnessco-op.org",
+    "subject": "Announcement from Local CSA",
+    "snippet": "Local opportunity: barista position at bookstore. Details: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "3da5c1b89c0bc9aa",
+    "sender": "announce@neighborhood-board.org",
+    "subject": "Neighborhood connection",
+    "snippet": "Welcome Williams family/business to our neighborhood!",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "89803c42b65121e5",
+    "sender": "info@libraryfriends.org",
+    "subject": "New local resource",
+    "snippet": "Volunteer opportunity: community garden on June 10. Sign up: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "97e00a48e755900e",
+    "sender": "hello@cooperativemarket.org",
+    "subject": "Community event: Farmers Market",
+    "snippet": "Your CSA pickup is June 10 at 123 Main St. This week's box: tomatoes, basil, carrots. Thank your local farmers! Share your recipes: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "474a5e034b5ddc28",
+    "sender": "info@makersspace.org",
+    "subject": "Local business spotlight",
+    "snippet": "Community fundraiser for food bank: next Wednesday at 123 Main St. Support: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "432b27384009e568",
+    "sender": "info@libraryfriends.org",
+    "subject": "Local farmers market",
+    "snippet": "Welcome Williams family/business to our neighborhood!",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "e9db88501ccec198",
+    "sender": "hello@localcsa.org",
+    "subject": "Local event coming",
+    "snippet": "Petition: animal shelter. Signatures needed by June 10. Sign: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "af61c77acdde430c",
+    "sender": "info@libraryfriends.org",
+    "subject": "Lost and found",
+    "snippet": "Neighborhood book club meets weekly at 123 Main St. Next book: Educated. Join: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "16cba752ed2acacc",
+    "sender": "hello@community-center.org",
+    "subject": "Community event: Potluck",
+    "snippet": "Join us for Block Party on next Wednesday at 123 Main St! Community members gathered last time - come make new friends. RSVP: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "365a165b941272b0",
+    "sender": "hello@food-co-op.org",
+    "subject": "Community support needed",
+    "snippet": "Local government meeting on zoning. Advocate for zoning change. Details: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "028f35de26a5f7eb",
+    "sender": "members@craftguild.org",
+    "subject": "Meetup this week",
+    "snippet": "Neighborhood book club meets weekly at Community Center. Next book: Project Hail Mary. Join: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "b025a7b761c96104",
+    "sender": "hello@community-center.org",
+    "subject": "Event this weekend",
+    "snippet": "Emergency preparedness workshop: June 10 at 6:00 PM. Location: Central Park. Register: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "23bb23dad0ad9527",
+    "sender": "updates@communitylaw.org",
+    "subject": "Neighborhood discussion",
+    "snippet": "Your CSA pickup is every Saturday at Neighborhood Square. This week's box: tomatoes, basil, carrots. Thank your local farmers! Share your recipes: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "a74602892ea16e57",
+    "sender": "events@communityboard.org",
+    "subject": "Community meeting reminder",
+    "snippet": "Community improvement project needs volunteers. next Wednesday at 6:00 PM. Help: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "b8a6c9e73600ecb1",
+    "sender": "updates@localpolitics.org",
+    "subject": "Community event: Block Party",
+    "snippet": "Emergency preparedness workshop: next Wednesday at 8:00 AM. Location: Neighborhood Square. Register: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "2e9aafdf42cb618f",
+    "sender": "announce@parkdistrict.org",
+    "subject": "Local farmers market",
+    "snippet": "Neighborhood social: June 10 at 123 Main St. Come meet neighbors! Details: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "b36e1ceeab1afcd1",
+    "sender": "updates@localpolitics.org",
+    "subject": "Monthly gathering reminder",
+    "snippet": "Neighborhood cleanup day: June 10 at 8:00 AM. Meet at Neighborhood Square. Bring gloves!",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "02b788dd8683f413",
+    "sender": "announce@parkdistrict.org",
+    "subject": "Volunteer opportunity",
+    "snippet": "Safety alert: vandalism reported in area. Report concerns: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "9f861277a6a48f6a",
+    "sender": "info@community-garden.org",
+    "subject": "Your neighbors posted",
+    "snippet": "Community meeting: zoning on June 10 at 6:00 PM. Location: 123 Main St. All welcome. Details: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "265d0402780f0518",
+    "sender": "hello@littlelibrary.org",
+    "subject": "Community garden update",
+    "snippet": "Street cleaning day June 10. Park cars by 6:00 PM. Questions: {phone}",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "45d94463929fc415",
+    "sender": "info@neighborhoodwatch.org",
+    "subject": "New local resource",
+    "snippet": "Neighborhood forum discussion: zoning. Share your thoughts: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "6b17e86cb58f4a13",
+    "sender": "hello@food-co-op.org",
+    "subject": "Community fundraiser",
+    "snippet": "Your neighbor David posted: \"Lost cat in the area\". Reply or vote helpful if you know something about this. Help your neighbors find it",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "421dd0955d00a4fb",
+    "sender": "announce@localevent.org",
+    "subject": "Local event coming",
+    "snippet": "Community improvement project needs volunteers. next Wednesday at 6:00 PM. Help: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "aaafcb4f1eb213a3",
+    "sender": "neighbors@nextdoor.com",
+    "subject": "Monthly gathering reminder",
+    "snippet": "Farmers market Saturday mornings at Community Center. 15 vendors this week. Visit: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "e74a1e5f8cd84814",
+    "sender": "newsletter@neighborly.org",
+    "subject": "Community resource alert",
+    "snippet": "Community class: yoga starts next Wednesday. Register: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "5d4a5861c984d002",
+    "sender": "newsletter@neighborly.org",
+    "subject": "Community support needed",
+    "snippet": "Neighborhood social: next Wednesday at Community Center. Come meet neighbors! Details: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "f2ca6bd3d9ce3701",
+    "sender": "info@libraryfriends.org",
+    "subject": "Street cleaning day",
+    "snippet": "Neighborhood cleanup day: next Wednesday at 6:00 PM. Meet at 123 Main St. Bring gloves!",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "0b13b0e9e57d22a2",
+    "sender": "hello@coworking.space",
+    "subject": "Community support needed",
+    "snippet": "Workshop: Gardening Basics on every Saturday. Fee: $20. Register: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "5b20c4a54fce2448",
+    "sender": "announce@neighborhood-board.org",
+    "subject": "Volunteer opportunity",
+    "snippet": "Emergency preparedness workshop: every Saturday at 6:00 PM. Location: Community Center. Register: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "6c6c13376d470304",
+    "sender": "hello@localcsa.org",
+    "subject": "Community resource alert",
+    "snippet": "Local opportunity: gardener position at bookstore. Details: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "0ba28b9bdb7c7524",
+    "sender": "announcements@civic.org",
+    "subject": "Meetup this week",
+    "snippet": "Neighborhood social: June 10 at Community Center. Come meet neighbors! Details: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "426d05abbb8a623e",
+    "sender": "hello@food-co-op.org",
+    "subject": "Meetup this week",
+    "snippet": "Neighborhood cleanup day: every Saturday at 8:00 AM. Meet at 123 Main St. Bring gloves!",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "af70e78dd1406b14",
+    "sender": "info@localfarm.org",
+    "subject": "Local business spotlight",
+    "snippet": "Free resource available: tutoring at Community Center. Call {phone}",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "25dfa99d7941e6d4",
+    "sender": "announce@citycouncil.org",
+    "subject": "Street cleaning day",
+    "snippet": "Join us for Book Club on every Saturday at Central Park! Community members gathered last time - come make new friends. RSVP: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "952f751bac742fa2",
+    "sender": "announce@citycouncil.org",
+    "subject": "New neighbor welcome",
+    "snippet": "Community garden: Plot assignments every Saturday. Interested? https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "5e230d539b829381",
+    "sender": "info@localfarm.org",
+    "subject": "Monthly gathering reminder",
+    "snippet": "Free resource available: food pantry at Neighborhood Square. Call {phone}",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "25b9e28e48934a5a",
+    "sender": "announce@localevent.org",
+    "subject": "Monthly gathering reminder",
+    "snippet": "Local CSA monthly meeting: every Saturday at 6:00 PM. Topic: zoning. Join us: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "c0e1cb256b80b5bf",
+    "sender": "announce@citycouncil.org",
+    "subject": "Community fundraiser",
+    "snippet": "Local government meeting on transportation. Advocate for zoning change. Details: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "3983cc55a95b6ec3",
+    "sender": "info@neighborhoodwatch.org",
+    "subject": "New local resource",
+    "snippet": "Safety alert: vandalism reported in area. Report concerns: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "ad6f85b97efdd0a8",
+    "sender": "events@historymuseum.org",
+    "subject": "Community resource alert",
+    "snippet": "Free resource available: tutoring at Central Park. Call {phone}",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "df95c41a86b31f97",
+    "sender": "hello@localcsa.org",
+    "subject": "Neighborhood discussion",
+    "snippet": "Local resource available: tutoring. Location: Central Park. Hours: 9-5 M-F. More: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "672e1b09935fbab0",
+    "sender": "info@localfarm.org",
+    "subject": "Community resource alert",
+    "snippet": "Neighborhood forum discussion: zoning. Share your thoughts: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "5f0d9ef722047633",
+    "sender": "events@historymuseum.org",
+    "subject": "Local farmers market",
+    "snippet": "Free resource available: food pantry at 123 Main St. Call {phone}",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "65018ba3ddc6a37a",
+    "sender": "announce@neighborhood-board.org",
+    "subject": "CSA pickup reminder",
+    "snippet": "Safety alert: theft reported in area. Report concerns: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "ce10560778d1a2ad",
+    "sender": "hello@community-center.org",
+    "subject": "Community meeting reminder",
+    "snippet": "Local hero spotlight: {person} who organized cleanup. Read: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "196619149caa0d4c",
+    "sender": "hello@localcsa.org",
+    "subject": "Neighborhood connection",
+    "snippet": "Neighborhood social: every Saturday at Community Center. Come meet neighbors! Details: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "ab81e59b13e588cf",
+    "sender": "announcements@civic.org",
+    "subject": "Nextdoor post from your neighborhood",
+    "snippet": "Local hero spotlight: {person} who organized cleanup. Read: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "475ff1de22253ef5",
+    "sender": "members@craftguild.org",
+    "subject": "Street cleaning day",
+    "snippet": "Community meeting: transportation on every Saturday at 6:00 PM. Location: 123 Main St. All welcome. Details: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "3dd4cbab722c469d",
+    "sender": "announce@citycouncil.org",
+    "subject": "Workshop: Woodworking 101",
+    "snippet": "Your CSA pickup is next Wednesday at Community Center. This week's box: squash, lettuce, peppers. Thank your local farmers! Share your recipes: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "b0849f2ec0fbea42",
+    "sender": "info@toolshare.org",
+    "subject": "New local resource",
+    "snippet": "Community fundraiser for animal shelter: every Saturday at Neighborhood Square. Support: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "1db1206a2985c629",
+    "sender": "info@fitnessco-op.org",
+    "subject": "Neighborhood safety alert",
+    "snippet": "Local government meeting on parks. Advocate for park funding. Details: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "b2e7ff4f8700c7b4",
+    "sender": "hello@localcsa.org",
+    "subject": "Local event coming",
+    "snippet": "Welcome Smith family/business to our neighborhood!",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "2bc3b477c1fe88d4",
+    "sender": "announce@localevent.org",
+    "subject": "Community event: Block Party",
+    "snippet": "Your neighbor Sarah posted: \"Lost cat in the area\". Reply or vote helpful if you know something about this. Have you tried their tacos?",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "6935bb0f68cb2213",
+    "sender": "updates@schoolpta.org",
+    "subject": "Community fundraiser",
+    "snippet": "Local resource available: tutoring. Location: 123 Main St. Hours: by appointment. More: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "994ebe67b74be175",
+    "sender": "neighbors@nextdoor.com",
+    "subject": "Workshop registration open",
+    "snippet": "Emergency preparedness workshop: June 10 at 6:00 PM. Location: Community Center. Register: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "9a2ad683911d5161",
+    "sender": "events@historymuseum.org",
+    "subject": "Community resource alert",
+    "snippet": "Neighborhood forum discussion: zoning. Share your thoughts: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "96ed655a28766cb0",
+    "sender": "announce@neighborhood-board.org",
+    "subject": "Workshop registration open",
+    "snippet": "Welcome Smith family/business to our neighborhood!",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "c8e65891eb630c30",
+    "sender": "announcements@civic.org",
+    "subject": "Community support needed",
+    "snippet": "Community garden: Plot assignments June 10. Interested? https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "b26cede9f8d7c8e9",
+    "sender": "bulletin@neighborhood.org",
+    "subject": "Meetup this week",
+    "snippet": "Your feedback matters! City council meeting on parks June 10 at 8:00 AM. Speak up: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "663aad924b5ca5b1",
+    "sender": "neighbors@nextdoor.com",
+    "subject": "Event this weekend",
+    "snippet": "Petition: food bank. Signatures needed by next Wednesday. Sign: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "636e6bf04a8b9955",
+    "sender": "info@localfarm.org",
+    "subject": "CSA pickup reminder",
+    "snippet": "Lost golden retriever: medium-sized. Last seen Community Center on every Saturday. Contact 555-0123. Reward: $200",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "e88576548017bd3f",
+    "sender": "info@toolshare.org",
+    "subject": "Community Board newsletter - June 2026",
+    "snippet": "Free resource available: free legal aid at Central Park. Call {phone}",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "15c112b8f1f4714d",
+    "sender": "hello@coworking.space",
+    "subject": "Lost and found",
+    "snippet": "Community class: yoga starts June 10. Register: https://eventbrite.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "6edf7e91ef759ed8",
+    "sender": "events@localarts.org",
+    "subject": "Lost and found",
+    "snippet": "Neighborhood social: June 10 at 123 Main St. Come meet neighbors! Details: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  },
+  {
+    "id": "3f92f8b8b41d77c5",
+    "sender": "hello@food-co-op.org",
+    "subject": "Local farmers market",
+    "snippet": "Volunteer opportunity: park cleanup on every Saturday. Sign up: nextdoor.com/...",
+    "category": "COMMUNITY_LOCAL"
+  }
+]

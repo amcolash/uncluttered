@@ -1,704 +1,702 @@
-{
-  "emails": [
-    {
-      "id": "d167f11158603305",
-      "sender": "Creator Fund <payments@creatorfund.com>",
-      "subject": "Ash Ketchum published new content",
-      "snippet": "New tier unlocked on YouTube! Ash Ketchum is offering early access. View options: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "d8aa746bdc2dc548",
-      "sender": "Indie Hackers <noreply@indiehackers.com>",
-      "subject": "Supporter spotlight: Ash Ketchum",
-      "snippet": "New tier unlocked on Patreon! Jane Doe is offering exclusive perks. View options: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "21750466b36b1564",
-      "sender": "Odysee <noreply@odysee.com>",
-      "subject": "Ash Ketchum tier update",
-      "snippet": "Early access tier has exclusive perks. Become a Platinum supporter: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "d1c6f364d9c9933d",
-      "sender": "Linktree <support@linktree.com>",
-      "subject": "TechGuru just posted",
-      "snippet": "Your monthly digest from CreativeVoice: 3 new videos. Browse the latest: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "58405288a5ad8d79",
-      "sender": "substack@substack.com",
-      "subject": "Access granted: Exclusive content",
-      "snippet": "Thanks for supporting CreativeVoice on Substack! Your subscription gives you access to exclusive posts, early releases, and direct messages. See what's new: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "187b8069e51f50d7",
-      "sender": "substack@substack.com",
-      "subject": "Creator milestone: Ash Ketchum",
-      "snippet": "Ash Ketchum is doing a Q&A with supporters. Ask your questions: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "747da1040c219427",
-      "sender": "CreatorUp <support@creatorup.com>",
-      "subject": "Exclusive drop: ArtisticMind",
-      "snippet": "Jane Doe created something special this week: My Journey. Exclusive to supporters: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "81e35a3c9aab3998",
-      "sender": "Medium <noreply@medium.com>",
-      "subject": "CreativeVoice is producing new content",
-      "snippet": "This month's rewards are unlocked! Jane Doe has prepared: private Discord access. See all perks: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "e9bf14a755aacad7",
-      "sender": "YouTube <noreply@youtube.com>",
-      "subject": "Ash Ketchum answered your questions",
-      "snippet": "This month's rewards are unlocked! Ash Ketchum has prepared: private Discord access. See all perks: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "1107d47aebd8fc5f",
-      "sender": "Buzzsprout <noreply@buzzsprout.com>",
-      "subject": "You unlocked exclusive content",
-      "snippet": "ArtisticMind is offering a special free product for supporters. Redeem code: SUPPORTER20",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "f06de239272ef4bc",
-      "sender": "Indie Hackers <noreply@indiehackers.com>",
-      "subject": "Special announcement from Ash Ketchum",
-      "snippet": "TechGuru reached a milestone! Thank you supporters. Celebrate with exclusive content: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "f272231a7c84efac",
-      "sender": "Twitch <noreply@twitch.tv>",
-      "subject": "Latest from ArtisticMind",
-      "snippet": "This month's rewards are unlocked! Ash Ketchum has prepared: exclusive art prints. See all perks: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "a1891d82c6fbdf80",
-      "sender": "YouTube <noreply@youtube.com>",
-      "subject": "Supporter spotlight: ArtisticMind",
-      "snippet": "Exclusive merchandise from Ash Ketchum is now available. Shop supporter gear: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "f1346dd56b13876c",
-      "sender": "BeReal <noreply@bereal.com>",
-      "subject": "Exclusive member benefits",
-      "snippet": "New tier unlocked on Gumroad! TechGuru is offering direct messages. View options: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "f6910d8993ce7ba1",
-      "sender": "Medium <noreply@medium.com>",
-      "subject": "Latest from Jane Doe",
-      "snippet": "Ash Ketchum created something special this week: New Tutorial. Exclusive to supporters: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "d5487675e9b0597e",
-      "sender": "Substack <hello@substack.com>",
-      "subject": "Jane Doe is producing new content",
-      "snippet": "TechGuru went live with a special livestream. Catch the replay: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "e3dbefb5bfe26b56",
-      "sender": "patreon@patreon.com",
-      "subject": "Latest from TechGuru",
-      "snippet": "TechGuru reached a milestone! Thank you supporters. Celebrate with exclusive content: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "c2dd906dbcfa2097",
-      "sender": "CreatorUp <support@creatorup.com>",
-      "subject": "Special thanks to supporters",
-      "snippet": "Ash Ketchum created something special this week: Q&A Session. Exclusive to supporters: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "79cfa6f8978f6dfc",
-      "sender": "CreatorUp <support@creatorup.com>",
-      "subject": "TechGuru's latest work",
-      "snippet": "Behind the scenes with TechGuru. See how they made Q&A Session. Supporters only: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "9dff03f3aae2ffdd",
-      "sender": "Instagram <noreply@instagram.com>",
-      "subject": "Monthly recap from CreativeVoice",
-      "snippet": "Jane Doe is offering a special free product for supporters. Redeem code: THANKS30",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "c7612e7d0a58107f",
-      "sender": "BuyMeACoffee <noreply@buymeacoffee.com>",
-      "subject": "Jane Doe published new content",
-      "snippet": "Ash Ketchum created something special this week: My Journey. Exclusive to supporters: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "edaa2a3ae92e0175",
-      "sender": "Artistic Platform <noreply@artisticplatform.com>",
-      "subject": "Jane Doe went live!",
-      "snippet": "ArtisticMind went live with a special livestream. Catch the replay: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "ba9afb3d63787717",
-      "sender": "Substack <hello@substack.com>",
-      "subject": "Exclusive drop: TechGuru",
-      "snippet": "Thanks for supporting Jane Doe on Substack! Your subscription gives you access to exclusive posts, early releases, and direct messages. See what's new: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "a3a39e66536fc3ee",
-      "sender": "patreon@patreon.com",
-      "subject": "Your supporter thank you from ArtisticMind",
-      "snippet": "This month's rewards are unlocked! Ash Ketchum has prepared: monthly calls. See all perks: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "a0c33d63149aa5e5",
-      "sender": "Substack <hello@substack.com>",
-      "subject": "Ash Ketchum just posted",
-      "snippet": "Behind the scenes with Jane Doe. See how they made New Tutorial. Supporters only: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "9f1ae9cbb3c1a6e9",
-      "sender": "patreon@patreon.com",
-      "subject": "New rewards unlocked",
-      "snippet": "Supporter spotlight: You're featured in CreativeVoice's latest post! Check it out: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "921b929af65b6c35",
-      "sender": "Vimeo <noreply@vimeo.com>",
-      "subject": "Ash Ketchum's latest work",
-      "snippet": "New tier unlocked on Ko-fi! TechGuru is offering exclusive perks. View options: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "adb3d01a4aea7531",
-      "sender": "SkoolCommunity <noreply@skool.com>",
-      "subject": "Update from Ash Ketchum",
-      "snippet": "TechGuru shared a new video: \"New Tutorial\". Watch/Read now: https://patreon.com/.... They also posted in the community chat.",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "c66fdebab78b6516",
-      "sender": "Anchor <noreply@anchor.fm>",
-      "subject": "Ash Ketchum's latest work",
-      "snippet": "CreativeVoice created something special this week: Production Diary. Exclusive to supporters: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "53beac9ff5e1f36a",
-      "sender": "Minds <noreply@minds.com>",
-      "subject": "Ash Ketchum's latest work",
-      "snippet": "Jane Doe posted: \"New Tutorial\". Read the full post and see what they've been working on. Supporters can access exclusive behind-the-scenes content.",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "a82301d56a97239b",
-      "sender": "Medium <noreply@medium.com>",
-      "subject": "New rewards unlocked",
-      "snippet": "ArtisticMind created something special this week: My Journey. Exclusive to supporters: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "14321d8f3f76bc39",
-      "sender": "Creator Fund <payments@creatorfund.com>",
-      "subject": "Creator milestone: ArtisticMind",
-      "snippet": "Community vote results from Ash Ketchum. The winning topic was beginner tutorial. Exclusive content coming: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "e95942d9e6befb76",
-      "sender": "Vimeo <noreply@vimeo.com>",
-      "subject": "New rewards unlocked",
-      "snippet": "Early access tier has early access. Become a Diamond supporter: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "e5852f974026cd10",
-      "sender": "Odysee <noreply@odysee.com>",
-      "subject": "Special announcement from Ash Ketchum",
-      "snippet": "Exclusive early access: ArtisticMind's new podcast is ready. Your support makes this possible. View: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "2fb5c8b656db83b5",
-      "sender": "BuyMeACoffee <noreply@buymeacoffee.com>",
-      "subject": "Community post from Jane Doe",
-      "snippet": "ArtisticMind is doing a Q&A with supporters. Ask your questions: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "903546c2a0a8f52a",
-      "sender": "Patreon Creator <support@patreon.com>",
-      "subject": "Behind the scenes: CreativeVoice",
-      "snippet": "Ash Ketchum went live with a special livestream. Catch the replay: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "9c774167f3510fda",
-      "sender": "Vimeo <noreply@vimeo.com>",
-      "subject": "CreativeVoice monthly creations",
-      "snippet": "ArtisticMind shared a new article: \"Q&A Session\". Watch/Read now: ko-fi.com/.... They also posted in the community chat.",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "ed42792dcf11c560",
-      "sender": "Medium <noreply@medium.com>",
-      "subject": "Exclusive drop: Jane Doe",
-      "snippet": "Jane Doe is doing a Q&A with supporters. Ask your questions: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "5378028a8e644f33",
-      "sender": "TikTok <noreply@tiktok.com>",
-      "subject": "New episode: Jane Doe",
-      "snippet": "TechGuru posted: \"Q&A Session\". Read the full post and see what they've been working on. Supporters can access exclusive behind-the-scenes content.",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "062cb6ec433879a7",
-      "sender": "Instagram <noreply@instagram.com>",
-      "subject": "Support tier update available",
-      "snippet": "New tier unlocked on Substack! Ash Ketchum is offering early access. View options: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "6c0695c5acb7472b",
-      "sender": "Gumroad <noreply@gumroad.com>",
-      "subject": "ArtisticMind published new content",
-      "snippet": "Supporter spotlight: You're featured in ArtisticMind's latest post! Check it out: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "aaffdaea24ad8000",
-      "sender": "Vimeo <noreply@vimeo.com>",
-      "subject": "Update from TechGuru",
-      "snippet": "Live stream alert: CreativeVoice is going live with advanced workflow on Friday. Notify me: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "eab29b3367fb9767",
-      "sender": "Substack <hello@substack.com>",
-      "subject": "Your supporter thank you from TechGuru",
-      "snippet": "Monthly roundup from Ash Ketchum: Best moments and new announcements. Read: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "d944e0ee01d6b2f5",
-      "sender": "Patreon Creator <support@patreon.com>",
-      "subject": "Supporter spotlight: TechGuru",
-      "snippet": "Exclusive merchandise from TechGuru is now available. Shop supporter gear: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "d1dc74aa921ce475",
-      "sender": "TikTok <noreply@tiktok.com>",
-      "subject": "Special announcement from ArtisticMind",
-      "snippet": "Ash Ketchum shared 10 new videos this month. Scroll through: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "c2508e2d995240cf",
-      "sender": "Kickstarter <hello@kickstarter.com>",
-      "subject": "Early access: ArtisticMind content",
-      "snippet": "TechGuru is offering a special free product for supporters. Redeem code: THANKS30",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "c7e5e7beebf8e69d",
-      "sender": "Medium <noreply@medium.com>",
-      "subject": "ArtisticMind published new content",
-      "snippet": "Community vote results from ArtisticMind. The winning topic was beginner tutorial. Exclusive content coming: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "482667fe18b7778e",
-      "sender": "Linktree <support@linktree.com>",
-      "subject": "You're supporting TechGuru!",
-      "snippet": "Supporter appreciation post from CreativeVoice. Thank you for making this possible: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "bc0f851c9096885d",
-      "sender": "Kickstarter <hello@kickstarter.com>",
-      "subject": "Jane Doe tier update",
-      "snippet": "CreativeVoice shared a new podcast: \"My Journey\". Watch/Read now: youtube.com/.... They also posted in the community chat.",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "42f3561ea20e61bd",
-      "sender": "patreon@patreon.com",
-      "subject": "Early access: ArtisticMind content",
-      "snippet": "Your subscription supports Ash Ketchum's work on documentary. Latest update: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "1af77c64febf2c96",
-      "sender": "Ko-fi <noreply@ko-fi.com>",
-      "subject": "TechGuru is producing new content",
-      "snippet": "Exclusive merchandise from ArtisticMind is now available. Shop supporter gear: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "b22268d659bd9cf0",
-      "sender": "TikTok <noreply@tiktok.com>",
-      "subject": "Ash Ketchum just posted",
-      "snippet": "Monthly roundup from CreativeVoice: Best moments and new announcements. Read: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "72a15bb49e10762f",
-      "sender": "TikTok <noreply@tiktok.com>",
-      "subject": "New post from Jane Doe",
-      "snippet": "Early access tier has direct messages. Become a Diamond supporter: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "8aa59e976b124115",
-      "sender": "TikTok <noreply@tiktok.com>",
-      "subject": "Exclusive drop: TechGuru",
-      "snippet": "Community vote results from Jane Doe. The winning topic was beginner tutorial. Exclusive content coming: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "e8620ee58bd3ab45",
-      "sender": "Vimeo <noreply@vimeo.com>",
-      "subject": "Support tier update available",
-      "snippet": "Early access tier has direct messages. Become a Diamond supporter: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "62938dd6854dd11c",
-      "sender": "Instagram <noreply@instagram.com>",
-      "subject": "New post from Ash Ketchum",
-      "snippet": "Supporter appreciation post from TechGuru. Thank you for making this possible: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "e625f21b5ec36bb5",
-      "sender": "Spotify for Podcasters <noreply@podcastsonfacebook.com>",
-      "subject": "Behind the scenes: Jane Doe",
-      "snippet": "Supporter appreciation post from CreativeVoice. Thank you for making this possible: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "0336dd13f40cc4d8",
-      "sender": "Creator Fund <payments@creatorfund.com>",
-      "subject": "Jane Doe is producing new content",
-      "snippet": "TechGuru posted: \"My Journey\". Read the full post and see what they've been working on. Supporters can access exclusive behind-the-scenes content.",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "483fe4c324d54f35",
-      "sender": "Substack <hello@substack.com>",
-      "subject": "Jane Doe tier update",
-      "snippet": "Ash Ketchum shared 10 new videos this month. Scroll through: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "b97d5f7418252fa4",
-      "sender": "Patreon Creator <support@patreon.com>",
-      "subject": "CreativeVoice just posted",
-      "snippet": "CreativeVoice created something special this week: New Tutorial. Exclusive to supporters: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "822744dfb98dab42",
-      "sender": "YouTube <noreply@youtube.com>",
-      "subject": "Special thanks to supporters",
-      "snippet": "This month's rewards are unlocked! Ash Ketchum has prepared: monthly calls. See all perks: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "5576d26ba756bdfe",
-      "sender": "Minds <noreply@minds.com>",
-      "subject": "New rewards unlocked",
-      "snippet": "Early access tier has direct messages. Become a Gold supporter: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "6a6fd524bb96b72f",
-      "sender": "Patreon Creator <support@patreon.com>",
-      "subject": "Community post from ArtisticMind",
-      "snippet": "Your subscription supports Jane Doe's work on game. Latest update: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "f3516ca40742f2a0",
-      "sender": "Indie Hackers <noreply@indiehackers.com>",
-      "subject": "Access granted: Exclusive content",
-      "snippet": "Your monthly digest from Jane Doe: 5 blog posts. Browse the latest: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "0f3f1774b266e91d",
-      "sender": "Linktree <support@linktree.com>",
-      "subject": "Monthly recap from Jane Doe",
-      "snippet": "Behind the scenes with ArtisticMind. See how they made Creative Process. Supporters only: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "8cce428353d9cf20",
-      "sender": "Odysee <noreply@odysee.com>",
-      "subject": "You're supporting TechGuru!",
-      "snippet": "CreativeVoice is offering a special free product for supporters. Redeem code: THANKS30",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "14f7726f541e7348",
-      "sender": "YouTube <noreply@youtube.com>",
-      "subject": "Jane Doe's latest work",
-      "snippet": "Live stream alert: Jane Doe is going live with beginner tutorial on tomorrow. Notify me: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "5d388aa56864b74e",
-      "sender": "Buzzsprout <noreply@buzzsprout.com>",
-      "subject": "Ash Ketchum published new content",
-      "snippet": "Ash Ketchum posted: \"New Tutorial\". Read the full post and see what they've been working on. Supporters can access exclusive behind-the-scenes content.",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "2d593a427b3aae00",
-      "sender": "Ko-fi <noreply@ko-fi.com>",
-      "subject": "Jane Doe monthly creations",
-      "snippet": "Exclusive podcast episode from Jane Doe. Listen to: New Tutorial. Link: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "23dd54f39c87becf",
-      "sender": "Twitch <noreply@twitch.tv>",
-      "subject": "Special announcement from TechGuru",
-      "snippet": "Behind the scenes with Ash Ketchum. See how they made New Tutorial. Supporters only: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "46bb260e23805652",
-      "sender": "substack@substack.com",
-      "subject": "Exclusive member benefits",
-      "snippet": "Thanks for supporting TechGuru on Ko-fi! Your subscription gives you access to exclusive posts, early releases, and direct messages. See what's new: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "54b7e32a3ac534c8",
-      "sender": "Vimeo <noreply@vimeo.com>",
-      "subject": "Support tier update available",
-      "snippet": "Community vote results from TechGuru. The winning topic was advanced workflow. Exclusive content coming: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "63d74ba5fe6ebfe0",
-      "sender": "Instagram <noreply@instagram.com>",
-      "subject": "Early access: ArtisticMind content",
-      "snippet": "Ash Ketchum created something special this week: Production Diary. Exclusive to supporters: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "2a172a0a72569e4a",
-      "sender": "Spotify for Podcasters <noreply@podcastsonfacebook.com>",
-      "subject": "Behind the scenes: ArtisticMind",
-      "snippet": "Early access tier has exclusive perks. Become a Platinum supporter: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "f9be048906dad91b",
-      "sender": "Ko-fi <noreply@ko-fi.com>",
-      "subject": "Early access: ArtisticMind content",
-      "snippet": "Behind the scenes with Ash Ketchum. See how they made Creative Process. Supporters only: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "93a7cc40047454f1",
-      "sender": "Creator Fund <payments@creatorfund.com>",
-      "subject": "You unlocked exclusive content",
-      "snippet": "Ash Ketchum created something special this week: New Tutorial. Exclusive to supporters: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "6ee066f9b40fc004",
-      "sender": "Ko-fi <noreply@ko-fi.com>",
-      "subject": "New episode: Ash Ketchum",
-      "snippet": "This month's rewards are unlocked! Jane Doe has prepared: monthly calls. See all perks: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "58ca4b8b8a52f4ee",
-      "sender": "Ghost <noreply@ghost.org>",
-      "subject": "Community post from Ash Ketchum",
-      "snippet": "This month's rewards are unlocked! Jane Doe has prepared: monthly calls. See all perks: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "dcc498ec6051cf57",
-      "sender": "Anchor <noreply@anchor.fm>",
-      "subject": "Jane Doe monthly creations",
-      "snippet": "This month's rewards are unlocked! Ash Ketchum has prepared: exclusive art prints. See all perks: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "d1c5fe80131b6a7e",
-      "sender": "Substack <hello@substack.com>",
-      "subject": "Early access: ArtisticMind content",
-      "snippet": "Ash Ketchum went live with a special video. Catch the replay: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "04ef1590cf2f941c",
-      "sender": "Creator Fund <payments@creatorfund.com>",
-      "subject": "Special announcement from CreativeVoice",
-      "snippet": "Exclusive merchandise from ArtisticMind is now available. Shop supporter gear: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "87c056f6513b6ec7",
-      "sender": "patreon@patreon.com",
-      "subject": "Community post from CreativeVoice",
-      "snippet": "Thanks for supporting TechGuru on Ko-fi! Your subscription gives you access to exclusive posts, early releases, and direct messages. See what's new: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "475ec20558979ac0",
-      "sender": "Rumble <noreply@rumble.com>",
-      "subject": "TechGuru just posted",
-      "snippet": "Early access tier has early access. Become a Gold supporter: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "9688e6267dfa93a9",
-      "sender": "Gumroad <noreply@gumroad.com>",
-      "subject": "New rewards unlocked",
-      "snippet": "Exclusive early access: CreativeVoice's new podcast is ready. Your support makes this possible. View: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "d16c5eae69abba57",
-      "sender": "Twitch <noreply@twitch.tv>",
-      "subject": "Exclusive drop: Jane Doe",
-      "snippet": "Exclusive merchandise from ArtisticMind is now available. Shop supporter gear: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "32ecd722007bd563",
-      "sender": "Rumble <noreply@rumble.com>",
-      "subject": "New rewards unlocked",
-      "snippet": "Exclusive merchandise from CreativeVoice is now available. Shop supporter gear: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "6fb3aecaf69b6497",
-      "sender": "Twitch <noreply@twitch.tv>",
-      "subject": "Support tier update available",
-      "snippet": "Early access tier has early access. Become a Diamond supporter: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "db8eb77534f9b878",
-      "sender": "Artistic Platform <noreply@artisticplatform.com>",
-      "subject": "Update from Ash Ketchum",
-      "snippet": "TechGuru posted: \"New Tutorial\". Read the full post and see what they've been working on. Supporters can access exclusive behind-the-scenes content.",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "94d01acd2ed1ac67",
-      "sender": "Instagram <noreply@instagram.com>",
-      "subject": "Latest from Ash Ketchum",
-      "snippet": "Community vote results from Ash Ketchum. The winning topic was advanced workflow. Exclusive content coming: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "7fb6e118fa226f07",
-      "sender": "Medium <noreply@medium.com>",
-      "subject": "Ash Ketchum answered your questions",
-      "snippet": "Behind the scenes with TechGuru. See how they made Q&A Session. Supporters only: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "e8836bb3797cd062",
-      "sender": "substack@substack.com",
-      "subject": "Behind the scenes: CreativeVoice",
-      "snippet": "Early access tier has direct messages. Become a Gold supporter: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "80f4779d95fb7b47",
-      "sender": "Buzzsprout <noreply@buzzsprout.com>",
-      "subject": "Ash Ketchum monthly creations",
-      "snippet": "ArtisticMind reached a milestone! Thank you supporters. Celebrate with exclusive content: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "b9c7b2c83f4a773a",
-      "sender": "Gumroad <noreply@gumroad.com>",
-      "subject": "Access granted: Exclusive content",
-      "snippet": "Behind the scenes with ArtisticMind. See how they made Production Diary. Supporters only: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "d87f262f682d2a54",
-      "sender": "Substack <hello@substack.com>",
-      "subject": "Your monthly digest from ArtisticMind",
-      "snippet": "Supporter appreciation post from Jane Doe. Thank you for making this possible: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "19f70adee11e73b1",
-      "sender": "BuyMeACoffee <noreply@buymeacoffee.com>",
-      "subject": "New rewards unlocked",
-      "snippet": "Behind the scenes with Ash Ketchum. See how they made New Tutorial. Supporters only: youtube.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "b5a2e934eab6d17e",
-      "sender": "Buzzsprout <noreply@buzzsprout.com>",
-      "subject": "Update from Ash Ketchum",
-      "snippet": "Jane Doe created something special this week: Q&A Session. Exclusive to supporters: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "86fa182be30bf879",
-      "sender": "YouTube <noreply@youtube.com>",
-      "subject": "New post from CreativeVoice",
-      "snippet": "Exclusive interview with Jane Doe. Full version for supporters: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "423ea9d41c7dcdf4",
-      "sender": "Minds <noreply@minds.com>",
-      "subject": "Ash Ketchum just posted",
-      "snippet": "Supporter appreciation post from CreativeVoice. Thank you for making this possible: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "87ea537c85d12b2b",
-      "sender": "Anchor <noreply@anchor.fm>",
-      "subject": "TechGuru went live!",
-      "snippet": "Exclusive podcast episode from CreativeVoice. Listen to: My Journey. Link: ko-fi.com/...",
-      "category": "CREATOR_CONTENT"
-    },
-    {
-      "id": "c82ba3efa466eb73",
-      "sender": "Locals <support@locals.com>",
-      "subject": "Update from TechGuru",
-      "snippet": "Your subscription supports TechGuru's work on documentary. Latest update: https://patreon.com/...",
-      "category": "CREATOR_CONTENT"
-    }
-  ]
-}
+[
+  {
+    "id": "5eb2285040312baa",
+    "sender": "SkoolCommunity <noreply@skool.com>",
+    "subject": "Early access: Jane Doe content",
+    "snippet": "Behind the scenes with ArtisticMind. See how they made Production Diary. Supporters only: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "eef582a1505c0218",
+    "sender": "Instagram <noreply@instagram.com>",
+    "subject": "CreativeVoice is producing new content",
+    "snippet": "Exclusive early access: Ash Ketchum's new article is ready. Your support makes this possible. View: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "81aa461d78d82086",
+    "sender": "Ghost <noreply@ghost.org>",
+    "subject": "CreativeVoice published new content",
+    "snippet": "Supporter appreciation post from Ash Ketchum. Thank you for making this possible: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "a07bfd1656021f52",
+    "sender": "Minds <noreply@minds.com>",
+    "subject": "Access granted: Exclusive content",
+    "snippet": "Exclusive podcast episode from TechGuru. Listen to: Production Diary. Link: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "e939a888eb93c762",
+    "sender": "Odysee <noreply@odysee.com>",
+    "subject": "Jane Doe is producing new content",
+    "snippet": "Behind the scenes with CreativeVoice. See how they made Production Diary. Supporters only: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "277739a5a7bef139",
+    "sender": "Locals <support@locals.com>",
+    "subject": "CreativeVoice is producing new content",
+    "snippet": "Jane Doe went live with a special podcast. Catch the replay: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "e9630ce4cfdb4a19",
+    "sender": "Ghost <noreply@ghost.org>",
+    "subject": "Latest from ArtisticMind",
+    "snippet": "Jane Doe is doing a Q&A with supporters. Ask your questions: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "9480140ec73043fc",
+    "sender": "Medium <noreply@medium.com>",
+    "subject": "Early access: Jane Doe content",
+    "snippet": "Supporter appreciation post from TechGuru. Thank you for making this possible: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "850361da4258da9f",
+    "sender": "Medium <noreply@medium.com>",
+    "subject": "ArtisticMind tier update",
+    "snippet": "Live stream alert: TechGuru is going live with beginner tutorial on tomorrow. Notify me: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "927c6267b3a56e62",
+    "sender": "Substack <hello@substack.com>",
+    "subject": "Supporter spotlight: CreativeVoice",
+    "snippet": "Community vote results from Jane Doe. The winning topic was beginner tutorial. Exclusive content coming: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "02e75269bf39e31c",
+    "sender": "Gumroad <noreply@gumroad.com>",
+    "subject": "New post from TechGuru",
+    "snippet": "Exclusive podcast episode from Ash Ketchum. Listen to: My Journey. Link: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "7e79786fd0203ac2",
+    "sender": "Buzzsprout <noreply@buzzsprout.com>",
+    "subject": "Your supporter thank you from TechGuru",
+    "snippet": "Ash Ketchum posted: \"Production Diary\". Read the full post and see what they've been working on. Supporters can access exclusive behind-the-scenes content.",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "c1d1960bbae4107b",
+    "sender": "Minds <noreply@minds.com>",
+    "subject": "Your monthly digest from TechGuru",
+    "snippet": "Ash Ketchum posted: \"My Journey\". Read the full post and see what they've been working on. Supporters can access exclusive behind-the-scenes content.",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "6e8ef4c9adf0a49b",
+    "sender": "Linktree <support@linktree.com>",
+    "subject": "Exclusive drop: Jane Doe",
+    "snippet": "Live stream alert: TechGuru is going live with beginner tutorial on Friday. Notify me: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "8c506dc57d8be4fc",
+    "sender": "Vimeo <noreply@vimeo.com>",
+    "subject": "Special announcement from TechGuru",
+    "snippet": "This month's rewards are unlocked! Jane Doe has prepared: private Discord access. See all perks: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "a47d9a255c60c25e",
+    "sender": "YouTube <noreply@youtube.com>",
+    "subject": "New rewards unlocked",
+    "snippet": "Early access tier has direct messages. Become a Diamond supporter: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "216b6eea669ba7ce",
+    "sender": "YouTube <noreply@youtube.com>",
+    "subject": "New episode: CreativeVoice",
+    "snippet": "Supporter appreciation post from TechGuru. Thank you for making this possible: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "a882233ca4de9915",
+    "sender": "Odysee <noreply@odysee.com>",
+    "subject": "New rewards unlocked",
+    "snippet": "Jane Doe is offering a special free product for supporters. Redeem code: THANKS30",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "f0196423fb67110d",
+    "sender": "Ko-fi <noreply@ko-fi.com>",
+    "subject": "CreativeVoice tier update",
+    "snippet": "ArtisticMind reached a milestone! Thank you supporters. Celebrate with exclusive content: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "c09a46e04ecc735a",
+    "sender": "Rumble <noreply@rumble.com>",
+    "subject": "Exclusive member benefits",
+    "snippet": "Exclusive merchandise from TechGuru is now available. Shop supporter gear: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "02c9a165cdbd3dc7",
+    "sender": "Patreon Creator <support@patreon.com>",
+    "subject": "Content preview from CreativeVoice",
+    "snippet": "Supporter appreciation post from Ash Ketchum. Thank you for making this possible: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "d1cf2ff7df24dfcc",
+    "sender": "Instagram <noreply@instagram.com>",
+    "subject": "You're supporting ArtisticMind!",
+    "snippet": "Exclusive early access: ArtisticMind's new sketch is ready. Your support makes this possible. View: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "2532eca0b3f167dd",
+    "sender": "CreatorUp <support@creatorup.com>",
+    "subject": "Behind the scenes: TechGuru",
+    "snippet": "Ash Ketchum created something special this week: My Journey. Exclusive to supporters: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "683c448270fa6e7c",
+    "sender": "substack@substack.com",
+    "subject": "Jane Doe tier update",
+    "snippet": "Exclusive interview with Ash Ketchum. Full version for supporters: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "d5c7ea4f14af35bb",
+    "sender": "Buzzsprout <noreply@buzzsprout.com>",
+    "subject": "New rewards unlocked",
+    "snippet": "Ash Ketchum shared a new video: \"New Tutorial\". Watch/Read now: https://patreon.com/.... They also posted in the community chat.",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "523acf7ab3921ba9",
+    "sender": "Gumroad <noreply@gumroad.com>",
+    "subject": "Special thanks to supporters",
+    "snippet": "Behind the scenes with Ash Ketchum. See how they made Q&A Session. Supporters only: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "9b29eb293df53113",
+    "sender": "Rumble <noreply@rumble.com>",
+    "subject": "Monthly recap from Ash Ketchum",
+    "snippet": "TechGuru is doing a Q&A with supporters. Ask your questions: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "1ba540d9de167810",
+    "sender": "Odysee <noreply@odysee.com>",
+    "subject": "Access granted: Exclusive content",
+    "snippet": "Exclusive merchandise from ArtisticMind is now available. Shop supporter gear: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "fb19702dc5dd74cf",
+    "sender": "BitChute <noreply@bitchute.com>",
+    "subject": "CreativeVoice just posted",
+    "snippet": "ArtisticMind's latest drop is live. Available for 24 hours. Don't miss out: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "8b641316b8e21e68",
+    "sender": "CreatorUp <support@creatorup.com>",
+    "subject": "Monthly recap from CreativeVoice",
+    "snippet": "Exclusive early access: ArtisticMind's new article is ready. Your support makes this possible. View: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "62a742ba174d988f",
+    "sender": "SkoolCommunity <noreply@skool.com>",
+    "subject": "Content preview from Jane Doe",
+    "snippet": "Supporter appreciation post from TechGuru. Thank you for making this possible: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "1b63e35c8edbca98",
+    "sender": "Creator Fund <payments@creatorfund.com>",
+    "subject": "Content preview from Jane Doe",
+    "snippet": "Supporter spotlight: You're featured in CreativeVoice's latest post! Check it out: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "a4609c0bc521c875",
+    "sender": "Spotify for Podcasters <noreply@podcastsonfacebook.com>",
+    "subject": "Behind the scenes: Ash Ketchum",
+    "snippet": "Early access tier has exclusive perks. Become a Gold supporter: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "09068f77f32047c6",
+    "sender": "Rumble <noreply@rumble.com>",
+    "subject": "Jane Doe tier update",
+    "snippet": "Live stream alert: Jane Doe is going live with beginner tutorial on Friday. Notify me: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "23200a1caee7fffc",
+    "sender": "BeReal <noreply@bereal.com>",
+    "subject": "Special announcement from ArtisticMind",
+    "snippet": "Live stream alert: Jane Doe is going live with beginner tutorial on tomorrow. Notify me: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "ff3b35731691bb09",
+    "sender": "Substack <hello@substack.com>",
+    "subject": "Ash Ketchum monthly creations",
+    "snippet": "New tier unlocked on YouTube! CreativeVoice is offering exclusive perks. View options: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "fd9f5b7b89ec9472",
+    "sender": "YouTube <noreply@youtube.com>",
+    "subject": "Exclusive member benefits",
+    "snippet": "Monthly roundup from Jane Doe: Best moments and new announcements. Read: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "fe9c5eb07759d489",
+    "sender": "CreatorUp <support@creatorup.com>",
+    "subject": "TechGuru went live!",
+    "snippet": "New tier unlocked on Ko-fi! Jane Doe is offering exclusive perks. View options: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "75913ff16e7bd61e",
+    "sender": "CreatorUp <support@creatorup.com>",
+    "subject": "Monthly recap from ArtisticMind",
+    "snippet": "Early access tier has exclusive perks. Become a Platinum supporter: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "38518b98dd8d605a",
+    "sender": "Vimeo <noreply@vimeo.com>",
+    "subject": "Jane Doe just posted",
+    "snippet": "Thanks for supporting Jane Doe on Ko-fi! Your subscription gives you access to exclusive posts, early releases, and direct messages. See what's new: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "cba396da1e47ba94",
+    "sender": "BuyMeACoffee <noreply@buymeacoffee.com>",
+    "subject": "Your monthly digest from CreativeVoice",
+    "snippet": "CreativeVoice shared a new article: \"Q&A Session\". Watch/Read now: https://patreon.com/.... They also posted in the community chat.",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "32ce59995d1ee23f",
+    "sender": "Minds <noreply@minds.com>",
+    "subject": "Support tier update available",
+    "snippet": "CreativeVoice posted: \"Production Diary\". Read the full post and see what they've been working on. Supporters can access exclusive behind-the-scenes content.",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "8631cfc5d291a156",
+    "sender": "Gumroad <noreply@gumroad.com>",
+    "subject": "New post from TechGuru",
+    "snippet": "CreativeVoice shared 5 new podcasts this month. Scroll through: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "09ccae7b11e95444",
+    "sender": "YouTube <noreply@youtube.com>",
+    "subject": "Exclusive member benefits",
+    "snippet": "Monthly roundup from ArtisticMind: Best moments and new announcements. Read: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "b9915ad3d3512979",
+    "sender": "Rumble <noreply@rumble.com>",
+    "subject": "Exclusive member benefits",
+    "snippet": "CreativeVoice is doing a Q&A with supporters. Ask your questions: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "dd2ed5c7bfe355dd",
+    "sender": "substack@substack.com",
+    "subject": "Jane Doe answered your questions",
+    "snippet": "TechGuru reached a milestone! Thank you supporters. Celebrate with exclusive content: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "41d8620de3f4ea96",
+    "sender": "TikTok <noreply@tiktok.com>",
+    "subject": "Your monthly digest from Ash Ketchum",
+    "snippet": "Your monthly digest from CreativeVoice: 5 blog posts. Browse the latest: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "2bd30e8b3b031bb1",
+    "sender": "Ghost <noreply@ghost.org>",
+    "subject": "Your monthly digest from TechGuru",
+    "snippet": "Jane Doe reached a milestone! Thank you supporters. Celebrate with exclusive content: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "26be222da238d258",
+    "sender": "BuyMeACoffee <noreply@buymeacoffee.com>",
+    "subject": "Ash Ketchum monthly creations",
+    "snippet": "Monthly roundup from ArtisticMind: Best moments and new announcements. Read: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "97d6e47dce3a9ced",
+    "sender": "Medium <noreply@medium.com>",
+    "subject": "Exclusive member benefits",
+    "snippet": "ArtisticMind posted: \"Creative Process\". Read the full post and see what they've been working on. Supporters can access exclusive behind-the-scenes content.",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "ac317c90ad6a9d93",
+    "sender": "Anchor <noreply@anchor.fm>",
+    "subject": "Your supporter thank you from CreativeVoice",
+    "snippet": "Behind the scenes with TechGuru. See how they made Creative Process. Supporters only: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "4f3281751d75bc6d",
+    "sender": "BeReal <noreply@bereal.com>",
+    "subject": "Supporter spotlight: ArtisticMind",
+    "snippet": "Supporter appreciation post from TechGuru. Thank you for making this possible: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "185f84dcf14f4ebb",
+    "sender": "BuyMeACoffee <noreply@buymeacoffee.com>",
+    "subject": "Latest from Ash Ketchum",
+    "snippet": "Exclusive podcast episode from ArtisticMind. Listen to: New Tutorial. Link: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "861e41eab505b2b6",
+    "sender": "CreatorUp <support@creatorup.com>",
+    "subject": "Monthly recap from ArtisticMind",
+    "snippet": "Community vote results from ArtisticMind. The winning topic was advanced workflow. Exclusive content coming: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "dd2b4f6152ea79c7",
+    "sender": "Patreon Creator <support@patreon.com>",
+    "subject": "Content preview from Ash Ketchum",
+    "snippet": "ArtisticMind's latest drop is live. Available for 48 hours. Don't miss out: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "0a63c484517a563d",
+    "sender": "BitChute <noreply@bitchute.com>",
+    "subject": "Your supporter thank you from ArtisticMind",
+    "snippet": "Early access tier has early access. Become a Diamond supporter: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "d37b45476bc5cc04",
+    "sender": "BeReal <noreply@bereal.com>",
+    "subject": "Behind the scenes: Jane Doe",
+    "snippet": "ArtisticMind went live with a special livestream. Catch the replay: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "9b92aefc9c09f97c",
+    "sender": "Rumble <noreply@rumble.com>",
+    "subject": "Support tier update available",
+    "snippet": "Jane Doe's latest drop is live. Available for 48 hours. Don't miss out: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "616f2a6e075db6c9",
+    "sender": "Twitch <noreply@twitch.tv>",
+    "subject": "Ash Ketchum's latest work",
+    "snippet": "ArtisticMind went live with a special livestream. Catch the replay: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "0b83d9c978fe370f",
+    "sender": "Substack <hello@substack.com>",
+    "subject": "Exclusive drop: CreativeVoice",
+    "snippet": "New tier unlocked on Substack! CreativeVoice is offering early access. View options: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "08cc04a6b389eeab",
+    "sender": "Rumble <noreply@rumble.com>",
+    "subject": "TechGuru monthly creations",
+    "snippet": "Exclusive interview with Jane Doe. Full version for supporters: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "fab518d3ffa3279c",
+    "sender": "BitChute <noreply@bitchute.com>",
+    "subject": "New post from Jane Doe",
+    "snippet": "Ash Ketchum's latest drop is live. Available for 48 hours. Don't miss out: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "b40b0ba80d6c0576",
+    "sender": "Artistic Platform <noreply@artisticplatform.com>",
+    "subject": "CreativeVoice is producing new content",
+    "snippet": "Thanks for supporting ArtisticMind on Gumroad! Your subscription gives you access to exclusive posts, early releases, and direct messages. See what's new: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "c4673f820e8412c4",
+    "sender": "Minds <noreply@minds.com>",
+    "subject": "Behind the scenes: CreativeVoice",
+    "snippet": "Supporter spotlight: You're featured in Ash Ketchum's latest post! Check it out: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "16ae93047b7e96c0",
+    "sender": "CreatorUp <support@creatorup.com>",
+    "subject": "New episode: Jane Doe",
+    "snippet": "ArtisticMind created something special this week: My Journey. Exclusive to supporters: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "e418122e2b2e0057",
+    "sender": "Artistic Platform <noreply@artisticplatform.com>",
+    "subject": "Special announcement from Ash Ketchum",
+    "snippet": "Early access tier has exclusive perks. Become a Gold supporter: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "ad32dae1eb86d55d",
+    "sender": "Anchor <noreply@anchor.fm>",
+    "subject": "New rewards unlocked",
+    "snippet": "Exclusive merchandise from ArtisticMind is now available. Shop supporter gear: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "9007972320ec5a19",
+    "sender": "Minds <noreply@minds.com>",
+    "subject": "New post from Ash Ketchum",
+    "snippet": "ArtisticMind shared 5 new articles this month. Scroll through: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "911045571c313406",
+    "sender": "Ghost <noreply@ghost.org>",
+    "subject": "CreativeVoice tier update",
+    "snippet": "Supporter appreciation post from CreativeVoice. Thank you for making this possible: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "40a85365e051f4be",
+    "sender": "CreatorUp <support@creatorup.com>",
+    "subject": "ArtisticMind tier update",
+    "snippet": "Exclusive early access: TechGuru's new livestream is ready. Your support makes this possible. View: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "8ace7aaa63f3453c",
+    "sender": "Vimeo <noreply@vimeo.com>",
+    "subject": "Ash Ketchum monthly creations",
+    "snippet": "Live stream alert: ArtisticMind is going live with advanced workflow on Friday. Notify me: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "71af2b875c171355",
+    "sender": "substack@substack.com",
+    "subject": "New rewards unlocked",
+    "snippet": "Exclusive merchandise from Ash Ketchum is now available. Shop supporter gear: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "b14a537a50a2c84d",
+    "sender": "BuyMeACoffee <noreply@buymeacoffee.com>",
+    "subject": "ArtisticMind tier update",
+    "snippet": "Exclusive podcast episode from TechGuru. Listen to: Q&A Session. Link: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "1b5ba9ec43c4c56c",
+    "sender": "patreon@patreon.com",
+    "subject": "Exclusive drop: Ash Ketchum",
+    "snippet": "Jane Doe is offering a special free product for supporters. Redeem code: THANKS30",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "7d8acb9c51dd67d3",
+    "sender": "YouTube <noreply@youtube.com>",
+    "subject": "CreativeVoice's latest work",
+    "snippet": "Your monthly digest from CreativeVoice: 5 blog posts. Browse the latest: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "714a750a11370a9c",
+    "sender": "Creator Fund <payments@creatorfund.com>",
+    "subject": "Behind the scenes: CreativeVoice",
+    "snippet": "Your subscription supports TechGuru's work on game. Latest update: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "03cfb9331b1083be",
+    "sender": "Ghost <noreply@ghost.org>",
+    "subject": "Access granted: Exclusive content",
+    "snippet": "Early access tier has early access. Become a Diamond supporter: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "b316a57a5bcb07db",
+    "sender": "Odysee <noreply@odysee.com>",
+    "subject": "Ash Ketchum monthly creations",
+    "snippet": "Live stream alert: Ash Ketchum is going live with advanced workflow on Friday. Notify me: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "449ff750c44d4117",
+    "sender": "Instagram <noreply@instagram.com>",
+    "subject": "TechGuru just posted",
+    "snippet": "Supporter spotlight: You're featured in CreativeVoice's latest post! Check it out: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "476ceda7790faa88",
+    "sender": "Rumble <noreply@rumble.com>",
+    "subject": "Jane Doe published new content",
+    "snippet": "Ash Ketchum reached a milestone! Thank you supporters. Celebrate with exclusive content: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "5101cbc9a7c816e2",
+    "sender": "Minds <noreply@minds.com>",
+    "subject": "CreativeVoice is producing new content",
+    "snippet": "New tier unlocked on Gumroad! Ash Ketchum is offering exclusive perks. View options: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "19bce4d5c3573a13",
+    "sender": "Instagram <noreply@instagram.com>",
+    "subject": "Special announcement from CreativeVoice",
+    "snippet": "Exclusive merchandise from ArtisticMind is now available. Shop supporter gear: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "270b5c8a2f379aa8",
+    "sender": "Ko-fi <noreply@ko-fi.com>",
+    "subject": "New episode: Jane Doe",
+    "snippet": "Exclusive merchandise from Ash Ketchum is now available. Shop supporter gear: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "c5ccc82f4547bea3",
+    "sender": "substack@substack.com",
+    "subject": "Access granted: Exclusive content",
+    "snippet": "Community vote results from Ash Ketchum. The winning topic was advanced workflow. Exclusive content coming: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "2afdab783e63f814",
+    "sender": "Patreon Creator <support@patreon.com>",
+    "subject": "TechGuru monthly creations",
+    "snippet": "Your subscription supports Ash Ketchum's work on game. Latest update: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "0709eb931baf54ca",
+    "sender": "Artistic Platform <noreply@artisticplatform.com>",
+    "subject": "Special thanks to supporters",
+    "snippet": "This month's rewards are unlocked! Ash Ketchum has prepared: exclusive art prints. See all perks: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "d886107b08201f56",
+    "sender": "substack@substack.com",
+    "subject": "ArtisticMind went live!",
+    "snippet": "Exclusive podcast episode from Ash Ketchum. Listen to: My Journey. Link: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "83aa4d6b0af164be",
+    "sender": "Minds <noreply@minds.com>",
+    "subject": "Your supporter thank you from CreativeVoice",
+    "snippet": "Supporter appreciation post from CreativeVoice. Thank you for making this possible: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "34385a24b6f9dc3e",
+    "sender": "BitChute <noreply@bitchute.com>",
+    "subject": "Special thanks to supporters",
+    "snippet": "Jane Doe is offering a special free product for supporters. Redeem code: SUPPORTER20",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "04d9a03ce7cc4ad0",
+    "sender": "Creator Fund <payments@creatorfund.com>",
+    "subject": "ArtisticMind tier update",
+    "snippet": "Jane Doe went live with a special article. Catch the replay: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "a92a36a0671f9222",
+    "sender": "Kickstarter <hello@kickstarter.com>",
+    "subject": "Ash Ketchum just posted",
+    "snippet": "Jane Doe shared 8 new videos this month. Scroll through: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "a19e0a067848a390",
+    "sender": "YouTube <noreply@youtube.com>",
+    "subject": "Your supporter thank you from Jane Doe",
+    "snippet": "ArtisticMind is doing a Q&A with supporters. Ask your questions: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "3660b027f33dc83c",
+    "sender": "BeReal <noreply@bereal.com>",
+    "subject": "You're supporting Jane Doe!",
+    "snippet": "CreativeVoice is doing a Q&A with supporters. Ask your questions: https://patreon.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "9cbb7ad278c4e6df",
+    "sender": "Buzzsprout <noreply@buzzsprout.com>",
+    "subject": "Exclusive drop: Jane Doe",
+    "snippet": "CreativeVoice posted: \"New Tutorial\". Read the full post and see what they've been working on. Supporters can access exclusive behind-the-scenes content.",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "8f8242a555c8a367",
+    "sender": "Minds <noreply@minds.com>",
+    "subject": "New post from CreativeVoice",
+    "snippet": "Early access tier has direct messages. Become a Gold supporter: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "030c00c867a012f3",
+    "sender": "patreon@patreon.com",
+    "subject": "Creator milestone: Ash Ketchum",
+    "snippet": "Supporter appreciation post from ArtisticMind. Thank you for making this possible: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "4ac816d0368e0dba",
+    "sender": "patreon@patreon.com",
+    "subject": "Monthly recap from TechGuru",
+    "snippet": "Jane Doe created something special this week: Production Diary. Exclusive to supporters: ko-fi.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "5bfce9c7c7dfca16",
+    "sender": "Vimeo <noreply@vimeo.com>",
+    "subject": "You unlocked exclusive content",
+    "snippet": "CreativeVoice shared 8 new articles this month. Scroll through: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "d83ab6cb6622a6c3",
+    "sender": "Gumroad <noreply@gumroad.com>",
+    "subject": "Supporter spotlight: Ash Ketchum",
+    "snippet": "ArtisticMind is offering a special exclusive discount for supporters. Redeem code: THANKS30",
+    "category": "CREATOR_CONTENT"
+  },
+  {
+    "id": "3de441a5a6fb1399",
+    "sender": "Linktree <support@linktree.com>",
+    "subject": "Jane Doe answered your questions",
+    "snippet": "Exclusive early access: CreativeVoice's new sketch is ready. Your support makes this possible. View: youtube.com/...",
+    "category": "CREATOR_CONTENT"
+  }
+]

@@ -1,704 +1,702 @@
-{
-  "emails": [
-    {
-      "id": "1891842d43621a53",
-      "sender": "Okta <alerts@okta.com>",
-      "subject": "Build failed: backend-api",
-      "snippet": "Incident ongoing: AWS experiencing high latency. Status: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "dbd55f96f37300bf",
-      "sender": "Google Cloud <noreply@google.com>",
-      "subject": "Test suite failed",
-      "snippet": "You're approaching your Vercel quota. Current usage: 85%. Upgrade to avoid service interruptions. github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "d7bc6316400c3a5a",
-      "sender": "Vercel <noreply@vercel.com>",
-      "subject": "Status change: AWS",
-      "snippet": "Log retention: You're using 78 of 100 available storage.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "4a24ce70bb017145",
-      "sender": "Vercel <noreply@vercel.com>",
-      "subject": "Subscription renewal",
-      "snippet": "Cost anomaly detected: GitHub costs are 45%% higher than usual. Details: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "3d1b42db63b66c42",
-      "sender": "Auth0 <alerts@auth0.com>",
-      "subject": "Your Firebase invoice",
-      "snippet": "API maintenance window: AWS will be unavailable June 15 2:00 AM for 2 hours.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "44b96817d82a511a",
-      "sender": "Docker Hub <noreply@docker.com>",
-      "subject": "Performance alert: cpu",
-      "snippet": "Uptime alert: Firebase unavailable for 15 mins. Investigating... https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "128aa70b57e6d52a",
-      "sender": "JetBrains <noreply@jetbrains.com>",
-      "subject": "Security alert: connection timeout",
-      "snippet": "Load test alert: Heroku peaked at 95%% CPU. Scale up? heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "55928422857ef545",
-      "sender": "SonarCloud <alerts@sonarcloud.io>",
-      "subject": "Security alert: high latency",
-      "snippet": "You're approaching your Heroku quota. Current usage: 85%. Upgrade to avoid service interruptions. github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "596aa44bbfe1ccf9",
-      "sender": "Ruby Gems <alerts@rubygems.org>",
-      "subject": "GitHub: Workflow run failed",
-      "snippet": "Database backup completed successfully. Size: {size}. Retention: {retention}. Download: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "f4b32c72512ba592",
-      "sender": "Firebase <noreply@firebase.google.com>",
-      "subject": "API quota exceeded",
-      "snippet": "Error rate spike: AWS at 45%%. Details: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "003d860de3343fe5",
-      "sender": "billing@circleci.com",
-      "subject": "Build failed: my-app",
-      "snippet": "Datadog Alert: error_rate exceeded threshold. Value: 1200ms. View incident: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "08c20b304ee7731d",
-      "sender": "Stripe <alerts@stripe.com>",
-      "subject": "Infrastructure alert",
-      "snippet": "Load test alert: AWS peaked at 89%% CPU. Scale up? https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "277794f2853fafba",
-      "sender": "Google Cloud <noreply@google.com>",
-      "subject": "Error rate spike detected",
-      "snippet": "Incident ongoing: Vercel experiencing high latency. Status: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "42a5cc5001407944",
-      "sender": "Datadog <alerts@datadoghq.com>",
-      "subject": "Performance alert: error_rate",
-      "snippet": "Workflow \"lint\" failed on branch main. See the logs for details. Fix this to keep your pipeline running. Build ##4523",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "ab54840528e7484b",
-      "sender": "Okta <alerts@okta.com>",
-      "subject": "Build failed: frontend",
-      "snippet": "Security vulnerability detected: critical in openssl. Update to 3.0.1: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "af9a7a509072eb1b",
-      "sender": "PyPI <noreply@pypi.org>",
-      "subject": "Test suite failed",
-      "snippet": "Certificate for {domain} expires in 30 days. Renew now: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "616e720ded60b43f",
-      "sender": "billing@circleci.com",
-      "subject": "API quota exceeded",
-      "snippet": "Deployment offline: GitHub v3.0.1 is now live. Rollback: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "19daff55d76d3fde",
-      "sender": "GitHub Security <security@github.com>",
-      "subject": "Integrations: Action needed",
-      "snippet": "Datadog Alert: error_rate exceeded threshold. Value: 1200ms. View incident: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "8067fc34c09631f0",
-      "sender": "billing@circleci.com",
-      "subject": "Monthly billing summary",
-      "snippet": "Monthly billing summary: $5000 charged for June. Breakdown: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "e7733945f2c0101e",
-      "sender": "Ruby Gems <alerts@rubygems.org>",
-      "subject": "Security alert: high latency",
-      "snippet": "API maintenance window: Heroku will be unavailable June 15 3:30 AM UTC for 5 mins.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "88847dcc4ca3df56",
-      "sender": "Docker Hub <noreply@docker.com>",
-      "subject": "Health check alert",
-      "snippet": "Status page update: DataDog is degraded (15 mins). Impact: 1000 users.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "56ab34ea43b078af",
-      "sender": "SendGrid <noreply@sendgrid.com>",
-      "subject": "Authentication required",
-      "snippet": "API maintenance window: DataDog will be unavailable June 15 2:00 AM for 5 mins.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "a0c1371e358a8c9f",
-      "sender": "Okta <alerts@okta.com>",
-      "subject": "API maintenance window",
-      "snippet": "Uptime alert: AWS unavailable for 2 hours. Investigating... github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "0ed0764c8764c4ec",
-      "sender": "Datadog <alerts@datadoghq.com>",
-      "subject": "API quota exceeded",
-      "snippet": "Build failed on my-app. See the error: github.com/settings. Latest commits: abc123d.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "e2767fc334cdb53f",
-      "sender": "JetBrains <noreply@jetbrains.com>",
-      "subject": "Sync failed: Firebase",
-      "snippet": "Uptime alert: DataDog unavailable for 2 hours. Investigating... https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "c0b32b2f7360c7ea",
-      "sender": "JetBrains <noreply@jetbrains.com>",
-      "subject": "Error rate spike detected",
-      "snippet": "Your Heroku usage: 78 this month. Monthly limit: 1000GB. Upgrade? github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "d274dd232ad551e6",
-      "sender": "JetBrains <noreply@jetbrains.com>",
-      "subject": "Resource limit warning",
-      "snippet": "Workflow \"build\" failed on branch main. See the logs for details. Fix this to keep your pipeline running. Build ##9123",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "817ecf9b9b1af62d",
-      "sender": "Stripe <alerts@stripe.com>",
-      "subject": "Integrations: Action needed",
-      "snippet": "Error rate spike: Firebase at 45%%. Details: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "609cf8a25e64f363",
-      "sender": "Heroku <noreply@heroku.com>",
-      "subject": "Vulnerability detected: high",
-      "snippet": "API maintenance window: Vercel will be unavailable June 15 2:00 AM for 2 hours.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "08613d450bc44ccc",
-      "sender": "New Relic <alerts@newrelic.com>",
-      "subject": "API maintenance window",
-      "snippet": "Health check failed: DataDog endpoint returned online. Investigate: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "fefa834e9d9af2fe",
-      "sender": "MongoDB <alerts@mongodb.com>",
-      "subject": "Usage spike detected",
-      "snippet": "Uptime alert: AWS unavailable for 5 mins. Investigating... https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "868b7dc5d10c8da6",
-      "sender": "Twilio <alerts@twilio.com>",
-      "subject": "Status change: DataDog",
-      "snippet": "Your AWS charges are approaching your monthly budget. Current spend: $1200.50. You can set up billing alerts or update your budget threshold. View details: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "cd70a5f9d7b0117b",
-      "sender": "Docker Hub <noreply@docker.com>",
-      "subject": "Vulnerability detected: critical",
-      "snippet": "Security vulnerability detected: high in log4j. Update to 3.0.1: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "a5edfec28297c38a",
-      "sender": "Netlify <noreply@netlify.com>",
-      "subject": "Build failed: backend-api",
-      "snippet": "Load test alert: GitHub peaked at 95%% CPU. Scale up? github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "ba7024a2a99ab98a",
-      "sender": "JetBrains <noreply@jetbrains.com>",
-      "subject": "Feature deployment: beta feature",
-      "snippet": "Security vulnerability detected: high in tensorflow. Update to 3.0.1: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "247aa87bcb47f79b",
-      "sender": "billing@circleci.com",
-      "subject": "Deployment successful: Vercel",
-      "snippet": "Workflow \"build\" failed on branch develop. See the logs for details. Fix this to keep your pipeline running. Build ##4523",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "06ecb5bf85d208bd",
-      "sender": "npm <noreply@npm.com>",
-      "subject": "Build failed: my-app",
-      "snippet": "Monthly billing summary: $1200.50 charged for May. Breakdown: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "566e22ada4c2b202",
-      "sender": "GitHub <noreply@github.com>",
-      "subject": "Your DataDog invoice",
-      "snippet": "Test suite completed: 98 passed, 2 failed. Report: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "0eb7ef881e363a9c",
-      "sender": "billing@circleci.com",
-      "subject": "Resource limit warning",
-      "snippet": "DNS configuration change detected: record added. Review: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "34193a293ec0ab9b",
-      "sender": "PlanetScale <noreply@planetscale.com>",
-      "subject": "Subscription renewal",
-      "snippet": "Log retention: You're using 78 of 100 available storage.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "41b6fd4d53d1bbea",
-      "sender": "DigitalOcean <noreply@digitalocean.com>",
-      "subject": "Feature deployment: dark mode",
-      "snippet": "Your Firebase subscription will renew on June 15 for $85.00. Manage: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "5d57fd3b60a9ef26",
-      "sender": "Google Cloud <noreply@google.com>",
-      "subject": "Security alert: high latency",
-      "snippet": "GitHub: Security advisory published. Your packages may be affected: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "6fe95ddea6988eb8",
-      "sender": "Twilio <alerts@twilio.com>",
-      "subject": "Status change: Heroku",
-      "snippet": "Incident ongoing: GitHub experiencing connection timeout. Status: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "d9ea9d721c588cc6",
-      "sender": "GitHub <noreply@github.com>",
-      "subject": "Your Vercel invoice",
-      "snippet": "Datadog Alert: memory exceeded threshold. Value: 95%. View incident: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "e03bc1df8566bd3c",
-      "sender": "GitHub Security <security@github.com>",
-      "subject": "Resource limit warning",
-      "snippet": "Repository vulnerability scan: 1 issues found. Details: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "c6a727f3e15235e1",
-      "sender": "DigitalOcean <noreply@digitalocean.com>",
-      "subject": "Uptime alert: Firebase",
-      "snippet": "Incident ongoing: Firebase experiencing high latency. Status: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "8a9cb295f682ce35",
-      "sender": "PlanetScale <noreply@planetscale.com>",
-      "subject": "Usage spike detected",
-      "snippet": "API maintenance window: Vercel will be unavailable June 15 3:30 AM UTC for 15 mins.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "0fa7f940520ccff7",
-      "sender": "Heroku <noreply@heroku.com>",
-      "subject": "GitHub: Workflow run failed",
-      "snippet": "Monthly billing summary: $5000 charged for June. Breakdown: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "fcaa014e7ed3c98e",
-      "sender": "GitHub Security <security@github.com>",
-      "subject": "API maintenance window",
-      "snippet": "Health check failed: GitHub endpoint returned offline. Investigate: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "90c38966528199a4",
-      "sender": "PyPI <noreply@pypi.org>",
-      "subject": "Uptime alert: Firebase",
-      "snippet": "Your AWS charges are approaching your monthly budget. Current spend: $85.00. You can set up billing alerts or update your budget threshold. View details: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "c81d3af53b782aaa",
-      "sender": "Google Cloud <noreply@google.com>",
-      "subject": "Security alert: high latency",
-      "snippet": "Incident ongoing: AWS experiencing connection timeout. Status: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "d09a6aa38a0d6a00",
-      "sender": "Firebase <noreply@firebase.google.com>",
-      "subject": "Vulnerability detected: critical",
-      "snippet": "Status page update: Heroku is degraded (2 hours). Impact: 1000 users.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "68e5f60e9491b550",
-      "sender": "Google Cloud <noreply@google.com>",
-      "subject": "API quota exceeded",
-      "snippet": "Build failed on my-app. See the error: github.com/settings. Latest commits: abc123d.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "027001fbf2e6a412",
-      "sender": "SendGrid <noreply@sendgrid.com>",
-      "subject": "Deployment notification",
-      "snippet": "GitHub: Security advisory published. Your packages may be affected: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "ddf5ccd37f0885b9",
-      "sender": "CodeClimate <alerts@codeclimate.com>",
-      "subject": "Resource limit warning",
-      "snippet": "Your DataDog usage: 78 this month. Monthly limit: 100. Upgrade? https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "16a8ed001ef0146d",
-      "sender": "Dependabot <dependabot@github.com>",
-      "subject": "Cost anomaly detected",
-      "snippet": "Incident ongoing: GitHub experiencing high latency. Status: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "132018d853a9804a",
-      "sender": "PlanetScale <noreply@planetscale.com>",
-      "subject": "Certificate expiration warning",
-      "snippet": "Build ##7891: frontend deployed to production. Details: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "245deba13ab3688f",
-      "sender": "Snyk <alerts@snyk.io>",
-      "subject": "Vulnerability detected: medium",
-      "snippet": "Security vulnerability detected: medium in tensorflow. Update to 3.0.1: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "48a3dd0da418de66",
-      "sender": "MongoDB <alerts@mongodb.com>",
-      "subject": "Feature deployment: beta feature",
-      "snippet": "Build failed on frontend. See the error: github.com/settings. Latest commits: def456g.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "0c48b5f120cc8ebb",
-      "sender": "npm <noreply@npm.com>",
-      "subject": "Resource limit warning",
-      "snippet": "Feature flag deployed: beta feature is now active for 12%% of users.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "ed1739c80ff021ae",
-      "sender": "Heroku <noreply@heroku.com>",
-      "subject": "Deployment successful: Heroku",
-      "snippet": "Workflow \"build\" failed on branch staging. See the logs for details. Fix this to keep your pipeline running. Build ##9123",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "375522c6a84f2772",
-      "sender": "Datadog <alerts@datadoghq.com>",
-      "subject": "Health check alert",
-      "snippet": "You're approaching your GitHub quota. Current usage: 78%. Upgrade to avoid service interruptions. github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "ca8f8fa83949742e",
-      "sender": "CloudFlare <alerts@cloudflare.com>",
-      "subject": "Infrastructure alert",
-      "snippet": "Test suite completed: 120 passed, 2 failed. Report: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "68d211988a827971",
-      "sender": "CodeClimate <alerts@codeclimate.com>",
-      "subject": "API maintenance window",
-      "snippet": "Repository vulnerability scan: 12 issues found. Details: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "6c3f89b8c06acbe2",
-      "sender": "DigitalOcean <noreply@digitalocean.com>",
-      "subject": "API maintenance window",
-      "snippet": "Build ##4523: backend-api deployed to staging. Details: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "8a245c5afe766596",
-      "sender": "New Relic <alerts@newrelic.com>",
-      "subject": "Incident alert: DataDog",
-      "snippet": "Cost anomaly detected: DataDog costs are 45%% higher than usual. Details: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "73d8dabf885e4736",
-      "sender": "Heroku <noreply@heroku.com>",
-      "subject": "Uptime alert: GitHub",
-      "snippet": "API maintenance window: GitHub will be unavailable June 15 3:30 AM UTC for 2 hours.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "92deadea8de0fbce",
-      "sender": "CodeClimate <alerts@codeclimate.com>",
-      "subject": "Infrastructure alert",
-      "snippet": "Uptime alert: Vercel unavailable for 2 hours. Investigating... https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "f7d86f598ddc990b",
-      "sender": "GitHub Security <security@github.com>",
-      "subject": "API quota exceeded",
-      "snippet": "Workflow \"build\" failed on branch staging. See the logs for details. Fix this to keep your pipeline running. Build ##9123",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "05f503783aa37a2c",
-      "sender": "billing@circleci.com",
-      "subject": "Cost anomaly detected",
-      "snippet": "Database backup completed successfully. Size: {size}. Retention: {retention}. Download: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "13cb57e06f6264fe",
-      "sender": "PlanetScale <noreply@planetscale.com>",
-      "subject": "GitHub: Workflow run failed",
-      "snippet": "GitHub Actions: #9123 workflow failed at 2:00 AM. Logs: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "9705f9e9da753283",
-      "sender": "PlanetScale <noreply@planetscale.com>",
-      "subject": "Error rate spike detected",
-      "snippet": "Log retention: You're using 85 of 1000GB available storage.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "99f2ff648d76b2c7",
-      "sender": "Twilio <alerts@twilio.com>",
-      "subject": "Deployment successful: Heroku",
-      "snippet": "You're approaching your Firebase quota. Current usage: 85%. Upgrade to avoid service interruptions. heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "28251eaf1efd0b40",
-      "sender": "Maven <alerts@maven.apache.org>",
-      "subject": "API maintenance window",
-      "snippet": "Log retention: You're using 92 of 100 available storage.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "cf739d9f05fefbf6",
-      "sender": "Auth0 <alerts@auth0.com>",
-      "subject": "API quota exceeded",
-      "snippet": "Datadog Alert: response_time exceeded threshold. Value: 5 errors/sec. View incident: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "09e07d7f8e89650b",
-      "sender": "Ruby Gems <alerts@rubygems.org>",
-      "subject": "Integrations: Action needed",
-      "snippet": "Build ##4523: my-app deployed to beta. Details: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "13c1e87014b2e3fd",
-      "sender": "Auth0 <alerts@auth0.com>",
-      "subject": "API quota exceeded",
-      "snippet": "GitHub: Security advisory published. Your packages may be affected: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "23ac5a8a8bc95154",
-      "sender": "GitHub <noreply@github.com>",
-      "subject": "Subscription renewal",
-      "snippet": "Status page update: GitHub is offline (15 mins). Impact: 1000 users.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "2a4f824f768f8c92",
-      "sender": "billing@circleci.com",
-      "subject": "Usage spike detected",
-      "snippet": "API Rate limit: You have 1200 requests remaining. Reset at 11:45 PM UTC.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "fce73eb87def5ceb",
-      "sender": "Twilio <alerts@twilio.com>",
-      "subject": "Incident alert: Firebase",
-      "snippet": "Your AWS charges are approaching your monthly budget. Current spend: $85.00. You can set up billing alerts or update your budget threshold. View details: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "36c9a2d9e8b5b2f1",
-      "sender": "New Relic <alerts@newrelic.com>",
-      "subject": "AWS billing alert",
-      "snippet": "You're approaching your Vercel quota. Current usage: 92%. Upgrade to avoid service interruptions. github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "66dd27b29bea7bb1",
-      "sender": "Okta <alerts@okta.com>",
-      "subject": "Your Heroku invoice",
-      "snippet": "Deployment offline: AWS v3.0.1 is now live. Rollback: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "0167b5c7e50daf3c",
-      "sender": "GitHub <noreply@github.com>",
-      "subject": "Vulnerability detected: high",
-      "snippet": "GitHub Actions: #7891 workflow failed at 2:00 AM. Logs: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "ead272183e5922ee",
-      "sender": "GitHub <noreply@github.com>",
-      "subject": "Sync failed: Heroku",
-      "snippet": "Your AWS charges are approaching your monthly budget. Current spend: $1200.50. You can set up billing alerts or update your budget threshold. View details: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "453f8c580c73f803",
-      "sender": "Datadog <alerts@datadoghq.com>",
-      "subject": "Infrastructure alert",
-      "snippet": "Test suite completed: 120 passed, 5 failed. Report: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "47ef986fe2698d27",
-      "sender": "MongoDB <alerts@mongodb.com>",
-      "subject": "API quota exceeded",
-      "snippet": "Database backup completed successfully. Size: {size}. Retention: {retention}. Download: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "3ff3049f2af2bc38",
-      "sender": "PyPI <noreply@pypi.org>",
-      "subject": "Security alert: high latency",
-      "snippet": "Log retention: You're using 92 of 100 available storage.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "cc4c5684188fdbc7",
-      "sender": "GitHub Security <security@github.com>",
-      "subject": "Integrations: Action needed",
-      "snippet": "Error rate spike: GitHub at 12%%. Details: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "c0e9dd3cafe03529",
-      "sender": "SonarCloud <alerts@sonarcloud.io>",
-      "subject": "Status change: AWS",
-      "snippet": "Repository vulnerability scan: 1 issues found. Details: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "cf9283140b6a82ba",
-      "sender": "DigitalOcean <noreply@digitalocean.com>",
-      "subject": "Build failed: my-app",
-      "snippet": "Your GitHub subscription will renew on June 15 for $450.23. Manage: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "a543a9edce370813",
-      "sender": "New Relic <alerts@newrelic.com>",
-      "subject": "Deployment successful: GitHub",
-      "snippet": "Status page update: DataDog is degraded (2 hours). Impact: 10% of traffic.",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "076fc493ee99e8c2",
-      "sender": "Dependabot <dependabot@github.com>",
-      "subject": "API maintenance window",
-      "snippet": "Build ##4523: backend-api deployed to staging. Details: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "5e8b5dcae3c1b5b5",
-      "sender": "SendGrid <noreply@sendgrid.com>",
-      "subject": "Integrations: Action needed",
-      "snippet": "Datadog Alert: memory exceeded threshold. Value: 1200ms. View incident: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "3e52774f3a77f127",
-      "sender": "PyPI <noreply@pypi.org>",
-      "subject": "Infrastructure alert",
-      "snippet": "Test suite completed: 120 passed, 2 failed. Report: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "c4b4a392a9ce7995",
-      "sender": "Snyk <alerts@snyk.io>",
-      "subject": "Uptime alert: Heroku",
-      "snippet": "Monthly billing summary: $1200.50 charged for May. Breakdown: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "81a9c45ca468df81",
-      "sender": "Ruby Gems <alerts@rubygems.org>",
-      "subject": "Cost anomaly detected",
-      "snippet": "Database backup completed successfully. Size: {size}. Retention: {retention}. Download: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "fd9267820f212fbd",
-      "sender": "Google Cloud <noreply@google.com>",
-      "subject": "Deployment notification",
-      "snippet": "Your AWS charges are approaching your monthly budget. Current spend: $5000. You can set up billing alerts or update your budget threshold. View details: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "d669b1ae072d554a",
-      "sender": "npm <noreply@npm.com>",
-      "subject": "Usage spike detected",
-      "snippet": "Your DataDog subscription will renew on June 15 for $1200.50. Manage: github.com/settings",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "ff7b879ae7a8a19f",
-      "sender": "GitHub <noreply@github.com>",
-      "subject": "Vulnerability detected: medium",
-      "snippet": "Database backup completed successfully. Size: {size}. Retention: {retention}. Download: heroku.com/apps",
-      "category": "DEVELOPER_SERVICES"
-    },
-    {
-      "id": "f71f2e31bb9873be",
-      "sender": "Google Cloud <noreply@google.com>",
-      "subject": "API quota exceeded",
-      "snippet": "Deployment degraded: GitHub v3.0.1 is now live. Rollback: https://console.aws.amazon.com",
-      "category": "DEVELOPER_SERVICES"
-    }
-  ]
-}
+[
+  {
+    "id": "98aa753fd45a2e79",
+    "sender": "GitHub Security <security@github.com>",
+    "subject": "Certificate expiration warning",
+    "snippet": "Cost anomaly detected: AWS costs are 12%% higher than usual. Details: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "7eb9917f39a0134e",
+    "sender": "Docker Hub <noreply@docker.com>",
+    "subject": "Infrastructure alert",
+    "snippet": "Feature flag deployed: beta feature is now active for 25%% of users.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "1b4dfdb8d4570408",
+    "sender": "Ruby Gems <alerts@rubygems.org>",
+    "subject": "Status change: Firebase",
+    "snippet": "Feature flag deployed: dark mode is now active for 45%% of users.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "6350dc4b9240b529",
+    "sender": "SonarCloud <alerts@sonarcloud.io>",
+    "subject": "Build failed: my-app",
+    "snippet": "Error rate spike: Vercel at 45%%. Details: heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "d19df01f44ca32aa",
+    "sender": "PyPI <noreply@pypi.org>",
+    "subject": "Subscription renewal",
+    "snippet": "Your GitHub usage: 92 this month. Monthly limit: 1000GB. Upgrade? github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "4225fb8b3f8907af",
+    "sender": "Netlify <noreply@netlify.com>",
+    "subject": "Build failed: backend-api",
+    "snippet": "Workflow \"tests\" failed on branch develop. See the logs for details. Fix this to keep your pipeline running. Build ##7891",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "f494ac760295214e",
+    "sender": "Datadog <alerts@datadoghq.com>",
+    "subject": "Test suite failed",
+    "snippet": "Your AWS charges are approaching your monthly budget. Current spend: $5000. You can set up billing alerts or update your budget threshold. View details: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "756acbca1f830acc",
+    "sender": "Docker Hub <noreply@docker.com>",
+    "subject": "Certificate expiration warning",
+    "snippet": "Your GitHub subscription will renew on June 15 for $5000. Manage: heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "191c31056e4a84f7",
+    "sender": "CodeClimate <alerts@codeclimate.com>",
+    "subject": "Deployment notification",
+    "snippet": "Monthly billing summary: $85.00 charged for June. Breakdown: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "01b9e11076ecd7b8",
+    "sender": "Twilio <alerts@twilio.com>",
+    "subject": "Vulnerability detected: high",
+    "snippet": "GitHub: Security advisory published. Your packages may be affected: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "a8d6fd3bd9136b79",
+    "sender": "Docker Hub <noreply@docker.com>",
+    "subject": "Uptime alert: GitHub",
+    "snippet": "Uptime alert: Firebase unavailable for 15 mins. Investigating... heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "5f87a8ae0411ce13",
+    "sender": "Stripe <alerts@stripe.com>",
+    "subject": "API maintenance window",
+    "snippet": "Your Heroku subscription will renew on June 15 for $85.00. Manage: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "08a6ffbd2d8eb0f7",
+    "sender": "GitHub <noreply@github.com>",
+    "subject": "Integrations: Action needed",
+    "snippet": "Security vulnerability detected: critical in openssl. Update to 3.0.1: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "b29bffc4adc80151",
+    "sender": "Snyk <alerts@snyk.io>",
+    "subject": "Health check alert",
+    "snippet": "Database backup completed successfully. Size: {size}. Retention: {retention}. Download: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "04933d5132535adf",
+    "sender": "GitHub <noreply@github.com>",
+    "subject": "Infrastructure alert",
+    "snippet": "Billing: Your Firebase plan has 450 days remaining. Renew: heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "8525eec6c9d95790",
+    "sender": "Twilio <alerts@twilio.com>",
+    "subject": "Security alert: high latency",
+    "snippet": "Load test alert: Vercel peaked at 89%% CPU. Scale up? https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "d19b81495e40f539",
+    "sender": "Twilio <alerts@twilio.com>",
+    "subject": "Deployment notification",
+    "snippet": "Test suite completed: 120 passed, 5 failed. Report: heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "2665cfe74df829c7",
+    "sender": "Ruby Gems <alerts@rubygems.org>",
+    "subject": "Incident alert: Heroku",
+    "snippet": "Cost anomaly detected: Firebase costs are 25%% higher than usual. Details: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "5d0d6f8decadf4ad",
+    "sender": "DigitalOcean <noreply@digitalocean.com>",
+    "subject": "Incident alert: Heroku",
+    "snippet": "You're approaching your Heroku quota. Current usage: 92%. Upgrade to avoid service interruptions. https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "6170dbef3f80bcc0",
+    "sender": "SendGrid <noreply@sendgrid.com>",
+    "subject": "Build failed: frontend",
+    "snippet": "Uptime alert: Firebase unavailable for 5 mins. Investigating... github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "bfc514fda1187932",
+    "sender": "CloudFlare <alerts@cloudflare.com>",
+    "subject": "API maintenance window",
+    "snippet": "Repository vulnerability scan: 3 issues found. Details: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "2d349ff8f8e9519a",
+    "sender": "Firebase <noreply@firebase.google.com>",
+    "subject": "Vulnerability detected: high",
+    "snippet": "Security vulnerability detected: critical in log4j. Update to 2.17.0: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "3dc44426bdfecb23",
+    "sender": "Heroku <noreply@heroku.com>",
+    "subject": "Deployment notification",
+    "snippet": "Incident ongoing: DataDog experiencing connection timeout. Status: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "86fc49e710e998bd",
+    "sender": "billing@circleci.com",
+    "subject": "API quota exceeded",
+    "snippet": "Feature flag deployed: beta feature is now active for 45%% of users.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "b6d3b17165f937eb",
+    "sender": "Stripe <alerts@stripe.com>",
+    "subject": "Error rate spike detected",
+    "snippet": "Repository vulnerability scan: 1 issues found. Details: heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "ea533ed14d2764d0",
+    "sender": "Datadog <alerts@datadoghq.com>",
+    "subject": "Error rate spike detected",
+    "snippet": "Repository vulnerability scan: 3 issues found. Details: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "c9ef8b0e9ac1f440",
+    "sender": "MongoDB <alerts@mongodb.com>",
+    "subject": "Action required: Service limit approaching",
+    "snippet": "API maintenance window: Vercel will be unavailable June 15 2:00 AM for 5 mins.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "e0d74bc75aee417d",
+    "sender": "Heroku <noreply@heroku.com>",
+    "subject": "Integrations: Action needed",
+    "snippet": "Repository vulnerability scan: 1 issues found. Details: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "8a450305105af8d0",
+    "sender": "billing@circleci.com",
+    "subject": "Deployment successful: DataDog",
+    "snippet": "Build failed on backend-api. See the error: heroku.com/apps. Latest commits: abc123d.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "acbcf1207affbb7b",
+    "sender": "Stripe <alerts@stripe.com>",
+    "subject": "Action required: Service limit approaching",
+    "snippet": "Your AWS usage: 85 this month. Monthly limit: 100. Upgrade? https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "51ebc141b4118d66",
+    "sender": "Dependabot <dependabot@github.com>",
+    "subject": "Uptime alert: Vercel",
+    "snippet": "Build failed on backend-api. See the error: https://console.aws.amazon.com. Latest commits: abc123d.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "d615720305c376bf",
+    "sender": "Snyk <alerts@snyk.io>",
+    "subject": "GitHub: Workflow run failed",
+    "snippet": "Uptime alert: AWS unavailable for 15 mins. Investigating... github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "fdafab56726c353f",
+    "sender": "AWS <aws-notifications@amazon.com>",
+    "subject": "Certificate expiration warning",
+    "snippet": "Status page update: AWS is degraded (15 mins). Impact: 1000 users.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "e60127c5c09f232d",
+    "sender": "npm <noreply@npm.com>",
+    "subject": "Uptime alert: Heroku",
+    "snippet": "Log retention: You're using 85 of 100 available storage.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "26ba904dd5cabdb3",
+    "sender": "New Relic <alerts@newrelic.com>",
+    "subject": "API quota exceeded",
+    "snippet": "GitHub Actions: #4523 workflow failed at 2:00 AM. Logs: heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "aeb637c6266a6ab7",
+    "sender": "npm <noreply@npm.com>",
+    "subject": "Sync failed: GitHub",
+    "snippet": "Your GitHub usage: 92 this month. Monthly limit: 100. Upgrade? https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "7e3bbb669c4b2454",
+    "sender": "billing@circleci.com",
+    "subject": "Feature deployment: beta feature",
+    "snippet": "Your Heroku subscription will renew on June 15 for $1200.50. Manage: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "2d62b15b421344cd",
+    "sender": "billing@circleci.com",
+    "subject": "Monthly billing summary",
+    "snippet": "Build ##4523: my-app deployed to production. Details: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "b32c0f41b34cbe34",
+    "sender": "CodeClimate <alerts@codeclimate.com>",
+    "subject": "AWS billing alert",
+    "snippet": "Build failed on frontend. See the error: heroku.com/apps. Latest commits: def456g.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "9f269df1c5b60cf1",
+    "sender": "SendGrid <noreply@sendgrid.com>",
+    "subject": "Feature deployment: beta feature",
+    "snippet": "Incident ongoing: Heroku experiencing connection timeout. Status: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "d814d10e2fc7b061",
+    "sender": "PlanetScale <noreply@planetscale.com>",
+    "subject": "Feature deployment: beta feature",
+    "snippet": "Load test alert: Firebase peaked at 95%% CPU. Scale up? github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "d92ac3b84ceffce7",
+    "sender": "Auth0 <alerts@auth0.com>",
+    "subject": "Sync failed: Vercel",
+    "snippet": "Security vulnerability detected: high in tensorflow. Update to 1.5.0: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "2e94a0f8f3b78d45",
+    "sender": "Snyk <alerts@snyk.io>",
+    "subject": "Health check alert",
+    "snippet": "Cost anomaly detected: GitHub costs are 25%% higher than usual. Details: heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "37793ea1080b36ca",
+    "sender": "New Relic <alerts@newrelic.com>",
+    "subject": "Your Firebase invoice",
+    "snippet": "Test suite completed: 98 passed, 5 failed. Report: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "5215e24a555d380e",
+    "sender": "New Relic <alerts@newrelic.com>",
+    "subject": "Uptime alert: Heroku",
+    "snippet": "API maintenance window: DataDog will be unavailable June 15 2:00 AM for 5 mins.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "b50bcb8782e12515",
+    "sender": "billing@circleci.com",
+    "subject": "Database backup completed",
+    "snippet": "Load test alert: Heroku peaked at 95%% CPU. Scale up? heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "b0b4ea568dbef52c",
+    "sender": "New Relic <alerts@newrelic.com>",
+    "subject": "Security alert: connection timeout",
+    "snippet": "Feature flag deployed: beta feature is now active for 45%% of users.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "bdd01450885bcb5b",
+    "sender": "Maven <alerts@maven.apache.org>",
+    "subject": "Action required: Service limit approaching",
+    "snippet": "Your AWS charges are approaching your monthly budget. Current spend: $1200.50. You can set up billing alerts or update your budget threshold. View details: heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "54bba39b85cf6653",
+    "sender": "Okta <alerts@okta.com>",
+    "subject": "Feature deployment: beta feature",
+    "snippet": "Feature flag deployed: beta feature is now active for 25%% of users.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "3ed2a004cbb51371",
+    "sender": "PyPI <noreply@pypi.org>",
+    "subject": "Certificate expiration warning",
+    "snippet": "API Rate limit: You have 450 requests remaining. Reset at 3:00 PM.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "6d7ca1ccf256dbf6",
+    "sender": "GitHub Security <security@github.com>",
+    "subject": "API maintenance window",
+    "snippet": "Datadog Alert: cpu exceeded threshold. Value: 5 errors/sec. View incident: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "f04f2e38b62ac7d7",
+    "sender": "Maven <alerts@maven.apache.org>",
+    "subject": "Subscription renewal",
+    "snippet": "Incident ongoing: GitHub experiencing high latency. Status: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "0b8cbb8a257610e2",
+    "sender": "Vercel <noreply@vercel.com>",
+    "subject": "Subscription renewal",
+    "snippet": "Feature flag deployed: beta feature is now active for 12%% of users.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "514402ce4ce26ef5",
+    "sender": "DigitalOcean <noreply@digitalocean.com>",
+    "subject": "Cost anomaly detected",
+    "snippet": "Your AWS charges are approaching your monthly budget. Current spend: $450.23. You can set up billing alerts or update your budget threshold. View details: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "0103e927eb93cf7a",
+    "sender": "PlanetScale <noreply@planetscale.com>",
+    "subject": "Authentication required",
+    "snippet": "Security vulnerability detected: medium in tensorflow. Update to 3.0.1: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "0c304e7ccc3cde26",
+    "sender": "SonarCloud <alerts@sonarcloud.io>",
+    "subject": "Test suite failed",
+    "snippet": "Health check failed: GitHub endpoint returned online. Investigate: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "2ef40f7fc027a1f1",
+    "sender": "billing@circleci.com",
+    "subject": "Integrations: Action needed",
+    "snippet": "Cost anomaly detected: DataDog costs are 45%% higher than usual. Details: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "c3525dfde7fd8429",
+    "sender": "Heroku <noreply@heroku.com>",
+    "subject": "Sync failed: Heroku",
+    "snippet": "Test suite completed: 98 passed, 2 failed. Report: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "0adfedd9fcce4846",
+    "sender": "Twilio <alerts@twilio.com>",
+    "subject": "Monthly billing summary",
+    "snippet": "Error rate spike: Vercel at 25%%. Details: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "7fddbbdc0d7f1bda",
+    "sender": "CodeClimate <alerts@codeclimate.com>",
+    "subject": "API quota exceeded",
+    "snippet": "Build failed on backend-api. See the error: heroku.com/apps. Latest commits: def456g.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "93f5cd8f3a8f9521",
+    "sender": "Google Cloud <noreply@google.com>",
+    "subject": "Security alert: high latency",
+    "snippet": "Datadog Alert: error_rate exceeded threshold. Value: 1200ms. View incident: heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "1f006f383ed1655a",
+    "sender": "DigitalOcean <noreply@digitalocean.com>",
+    "subject": "Monthly billing summary",
+    "snippet": "Billing: Your Vercel plan has 1200 days remaining. Renew: heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "111dcf6c3e5bfb2b",
+    "sender": "CodeClimate <alerts@codeclimate.com>",
+    "subject": "Database backup completed",
+    "snippet": "Workflow \"deploy\" failed on branch staging. See the logs for details. Fix this to keep your pipeline running. Build ##7891",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "099f70af871232eb",
+    "sender": "billing@circleci.com",
+    "subject": "Deployment notification",
+    "snippet": "Build ##4523: backend-api deployed to beta. Details: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "391670b5800abb96",
+    "sender": "Twilio <alerts@twilio.com>",
+    "subject": "Incident alert: Heroku",
+    "snippet": "Status page update: Heroku is online (2 hours). Impact: 10% of traffic.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "5dd765ce11c4b4f7",
+    "sender": "CodeClimate <alerts@codeclimate.com>",
+    "subject": "Error rate spike detected",
+    "snippet": "Deployment online: Firebase v1.5.0 is now live. Rollback: heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "070ff10879a9cfe9",
+    "sender": "Okta <alerts@okta.com>",
+    "subject": "Resource limit warning",
+    "snippet": "Repository vulnerability scan: 1 issues found. Details: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "fd8394b823d9188c",
+    "sender": "MongoDB <alerts@mongodb.com>",
+    "subject": "Error rate spike detected",
+    "snippet": "Database backup completed successfully. Size: {size}. Retention: {retention}. Download: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "b1501b3e330354a2",
+    "sender": "CloudFlare <alerts@cloudflare.com>",
+    "subject": "Vulnerability detected: medium",
+    "snippet": "Health check failed: Firebase endpoint returned offline. Investigate: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "fcb8f2d38d93ff1d",
+    "sender": "SendGrid <noreply@sendgrid.com>",
+    "subject": "Authentication required",
+    "snippet": "Test suite completed: 120 passed, 0 failed. Report: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "5998418603ccfac1",
+    "sender": "MongoDB <alerts@mongodb.com>",
+    "subject": "Status change: Heroku",
+    "snippet": "Monthly billing summary: $85.00 charged for June. Breakdown: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "018772fbe36364ac",
+    "sender": "Netlify <noreply@netlify.com>",
+    "subject": "Performance alert: cpu",
+    "snippet": "You're approaching your GitHub quota. Current usage: 78%. Upgrade to avoid service interruptions. https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "dc0550dd2e9b96e1",
+    "sender": "JetBrains <noreply@jetbrains.com>",
+    "subject": "Test suite failed",
+    "snippet": "Log retention: You're using 78 of 100 available storage.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "6d16b1d59b75b60c",
+    "sender": "Maven <alerts@maven.apache.org>",
+    "subject": "Certificate expiration warning",
+    "snippet": "Build ##4523: backend-api deployed to beta. Details: heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "c7daefdf80ae9268",
+    "sender": "GitHub <noreply@github.com>",
+    "subject": "Deployment successful: AWS",
+    "snippet": "Feature flag deployed: dark mode is now active for 12%% of users.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "adbd4592aa01e7ab",
+    "sender": "Datadog <alerts@datadoghq.com>",
+    "subject": "Uptime alert: AWS",
+    "snippet": "Feature flag deployed: beta feature is now active for 45%% of users.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "0a99de6c49ad2017",
+    "sender": "Maven <alerts@maven.apache.org>",
+    "subject": "Your GitHub invoice",
+    "snippet": "You're approaching your Firebase quota. Current usage: 78%. Upgrade to avoid service interruptions. https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "b3bfe170a391d140",
+    "sender": "Okta <alerts@okta.com>",
+    "subject": "Test suite failed",
+    "snippet": "Build ##9123: backend-api deployed to production. Details: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "d29fb6c1057bb837",
+    "sender": "AWS <aws-notifications@amazon.com>",
+    "subject": "Sync failed: AWS",
+    "snippet": "Load test alert: Firebase peaked at 89%% CPU. Scale up? https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "821c73cbe0a52b62",
+    "sender": "Ruby Gems <alerts@rubygems.org>",
+    "subject": "Action required: Service limit approaching",
+    "snippet": "GitHub: Security advisory published. Your packages may be affected: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "c40c62c8d011ac7a",
+    "sender": "Netlify <noreply@netlify.com>",
+    "subject": "Test suite failed",
+    "snippet": "Load test alert: AWS peaked at 89%% CPU. Scale up? https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "87ae107ce116566f",
+    "sender": "JetBrains <noreply@jetbrains.com>",
+    "subject": "Authentication required",
+    "snippet": "Build ##7891: frontend deployed to beta. Details: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "9172a2a580737214",
+    "sender": "PlanetScale <noreply@planetscale.com>",
+    "subject": "API quota exceeded",
+    "snippet": "Health check failed: Firebase endpoint returned offline. Investigate: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "a980efa86653f145",
+    "sender": "Google Cloud <noreply@google.com>",
+    "subject": "Vulnerability detected: critical",
+    "snippet": "Certificate for {domain} expires in 14 days. Renew now: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "3de7cd2337422fd0",
+    "sender": "Firebase <noreply@firebase.google.com>",
+    "subject": "Subscription renewal",
+    "snippet": "Billing: Your GitHub plan has 5000 days remaining. Renew: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "1f02479063326a3b",
+    "sender": "JetBrains <noreply@jetbrains.com>",
+    "subject": "Deployment notification",
+    "snippet": "Your AWS charges are approaching your monthly budget. Current spend: $85.00. You can set up billing alerts or update your budget threshold. View details: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "3a6b206b40756bce",
+    "sender": "SendGrid <noreply@sendgrid.com>",
+    "subject": "Deployment successful: GitHub",
+    "snippet": "GitHub Actions: #9123 workflow failed at 2:00 AM. Logs: heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "b745c975d8136bdb",
+    "sender": "CodeClimate <alerts@codeclimate.com>",
+    "subject": "Sync failed: DataDog",
+    "snippet": "Security vulnerability detected: critical in openssl. Update to 3.0.1: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "9ded8d0712e7eabd",
+    "sender": "CodeClimate <alerts@codeclimate.com>",
+    "subject": "AWS billing alert",
+    "snippet": "Uptime alert: Heroku unavailable for 15 mins. Investigating... heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "a51cd72af37ab7f2",
+    "sender": "PyPI <noreply@pypi.org>",
+    "subject": "Uptime alert: DataDog",
+    "snippet": "Deployment offline: GitHub v1.5.0 is now live. Rollback: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "d2df456be4fee365",
+    "sender": "Firebase <noreply@firebase.google.com>",
+    "subject": "Action required: Service limit approaching",
+    "snippet": "Security vulnerability detected: medium in tensorflow. Update to 1.5.0: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "b2c79d16c8a76a4a",
+    "sender": "Heroku <noreply@heroku.com>",
+    "subject": "Performance alert: response_time",
+    "snippet": "API maintenance window: DataDog will be unavailable June 15 2:00 AM for 2 hours.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "4f373580a9055eec",
+    "sender": "SendGrid <noreply@sendgrid.com>",
+    "subject": "Security alert: connection timeout",
+    "snippet": "Datadog Alert: memory exceeded threshold. Value: 95%. View incident: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "ce54e1d6f4e07e83",
+    "sender": "Twilio <alerts@twilio.com>",
+    "subject": "Vulnerability detected: critical",
+    "snippet": "Security vulnerability detected: critical in tensorflow. Update to 2.17.0: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "75d435c68c21aabb",
+    "sender": "DigitalOcean <noreply@digitalocean.com>",
+    "subject": "Error rate spike detected",
+    "snippet": "Error rate spike: Vercel at 12%%. Details: github.com/settings",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "91ace91b20fdd9f6",
+    "sender": "GitHub <noreply@github.com>",
+    "subject": "Health check alert",
+    "snippet": "Database backup completed successfully. Size: {size}. Retention: {retention}. Download: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "54f0d82336a11c4d",
+    "sender": "Netlify <noreply@netlify.com>",
+    "subject": "Resource limit warning",
+    "snippet": "API maintenance window: AWS will be unavailable June 15 3:30 AM UTC for 5 mins.",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "e25863dd2fd974a8",
+    "sender": "CloudFlare <alerts@cloudflare.com>",
+    "subject": "Certificate expiration warning",
+    "snippet": "You're approaching your Heroku quota. Current usage: 92%. Upgrade to avoid service interruptions. heroku.com/apps",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "6de1dfa8d60e81bf",
+    "sender": "New Relic <alerts@newrelic.com>",
+    "subject": "AWS billing alert",
+    "snippet": "GitHub Actions: #4523 workflow failed at 3:30 AM UTC. Logs: https://console.aws.amazon.com",
+    "category": "DEVELOPER_SERVICES"
+  },
+  {
+    "id": "61d9f7972122e628",
+    "sender": "Maven <alerts@maven.apache.org>",
+    "subject": "Certificate expiration warning",
+    "snippet": "Build failed on backend-api. See the error: heroku.com/apps. Latest commits: abc123d.",
+    "category": "DEVELOPER_SERVICES"
+  }
+]

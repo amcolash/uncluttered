@@ -1,704 +1,702 @@
-{
-  "emails": [
-    {
-      "id": "3bc0d5a3d7a15cb0",
-      "sender": "Broadway <noreply@broadwayacrossamerica.com>",
-      "subject": "Coldplay concert tickets - August 3",
-      "snippet": "Theater entry confirmed: Sports Championship, July 4. 6 tickets. Seat info: C3. See you soon!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "3aac2f0d0132b6e6",
-      "sender": "Theater District <tickets@theaterdistrict.com>",
-      "subject": "Your Taylor Swift Concert tickets are ready",
-      "snippet": "Tickets locked in: Theater Production on July 4. 6 admissions for $1200. Arrive 30 minutes early. Questions? 555-0300",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "3fc49cd471310d50",
-      "sender": "Event Management <tickets@eventmgmt.com>",
-      "subject": "Reservation confirmed: Broadway Show",
-      "snippet": "Event entry confirmed: Broadway Show, August 3. Your confirmation code: EVT789012. Present at gate for entry.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "0eb7864eababb05a",
-      "sender": "TicketsNow <noreply@ticketsnow.com>",
-      "subject": "Ticket delivery: Comic-Con",
-      "snippet": "Reservation secure: Taylor Swift Concert on August 3. 1 attendees. Check-in begins at 7:30 PM.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "d7b0754440cc1a07",
-      "sender": "Event Management <tickets@eventmgmt.com>",
-      "subject": "Show tickets for Taylor Swift Concert",
-      "snippet": "Reservation secure: Comedy Show on July 15. 4 attendees. Check-in begins at 7:30 PM.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "5e200ad2a4aaa6e1",
-      "sender": "Live Nation <noreply@livenation.com>",
-      "subject": "Festival tickets confirmed",
-      "snippet": "Concert confirmed: Live DJ performing at AT&T Stadium on July 15. 1 tickets reserved under your name. Arrive early for the best experience!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "ece79c9c4de20e85",
-      "sender": "Sports <noreply@seatgeek.com>",
-      "subject": "Your Comedy Show access",
-      "snippet": "Your VIP passes to Theater Production are ready. Exclusive access to Downtown at Pepsi Center on August 3.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "3e6dc730615355e6",
-      "sender": "GoTickets <noreply@gotickets.com>",
-      "subject": "Concert admission: Sports Championship",
-      "snippet": "Congratulations! Your tickets to Comedy Show featuring The Weeknd are confirmed. 6 seats in section A12. September 10 at 8:00 PM.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "1954f1863c806c62",
-      "sender": "Festival <tickets@musicfestival.com>",
-      "subject": "Performance tickets: Comedy Show",
-      "snippet": "Reservation secure: Coachella Festival on June 20. 6 attendees. Check-in begins at 7:30 PM.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "bd2b161168cad583",
-      "sender": "Show Tickets <noreply@showtickets.com>",
-      "subject": "Event confirmation - Sports Championship",
-      "snippet": "Your Taylor Swift Concert tickets have been confirmed and are ready to download. Confirmation #: EVT789012. Print or show your mobile ticket at entry.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "0a9edb98ee7a797c",
-      "sender": "Premier Ticketing <support@ticketing.com>",
-      "subject": "Show tickets for Taylor Swift Concert",
-      "snippet": "Confirmed: Comedy Show on August 3. Tickets for 2. Entry at Fairgrounds. Questions? FAQ: https://tickets.com/...",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "c94eb6c88f81509b",
-      "sender": "Festival <tickets@musicfestival.com>",
-      "subject": "Show entry: Coachella Festival",
-      "snippet": "Congratulations! Your tickets to Coachella Festival featuring The Weeknd are confirmed. 1 seats in section Premium. August 3 at 8:00 PM.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "33cd9df8ef48f91d",
-      "sender": "Event Management <tickets@eventmgmt.com>",
-      "subject": "Admission confirmed: Sports Championship",
-      "snippet": "Tickets locked in: Comedy Show on July 4. 6 admissions for $1200. Arrive 30 minutes early. Questions? 555-0300",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "88c09a6433a45d1c",
-      "sender": "TicketsNow <noreply@ticketsnow.com>",
-      "subject": "Confirm your Taylor Swift Concert attendance",
-      "snippet": "Your Taylor Swift Concert tickets have been confirmed and are ready to download. Confirmation #: TIX123456. Print or show your mobile ticket at entry.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "408530b16006fcce",
-      "sender": "Sports <noreply@seatgeek.com>",
-      "subject": "Get your tickets: EDM Music Festival",
-      "snippet": "Tickets activated: Comedy Show on July 15 at AT&T Stadium. Full details: https://tickets.com/...",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "738892b000f061a3",
-      "sender": "Comedy <noreply@comedytickets.com>",
-      "subject": "Festival tickets confirmed",
-      "snippet": "Coming soon! Your Coldplay concert tickets arrive via email. Print or mobile entry accepted at Staples Center.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "d05e691d510677cb",
-      "sender": "Broadway <noreply@broadwayacrossamerica.com>",
-      "subject": "Event access: Theater Production",
-      "snippet": "Concert confirmed: Beyonce performing at Barclays Center on August 3. 2 tickets reserved under your name. Arrive early for the best experience!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "986dff4fb4a3df30",
-      "sender": "TicketsNow <noreply@ticketsnow.com>",
-      "subject": "Your U2 Concert access",
-      "snippet": "Show tickets delivered: Broadway Show, July 4. 6 admissions. Digital and printable format available.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "0a2527f4c251c112",
-      "sender": "Sports Events <noreply@ticketing.com>",
-      "subject": "Your Coachella Festival tickets are ready",
-      "snippet": "Coming soon! Your Live DJ concert tickets arrive via email. Print or mobile entry accepted at Barclays Center.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "764b2734d380ee4d",
-      "sender": "Live Nation <noreply@livenation.com>",
-      "subject": "Your tickets for Coachella Festival on September 10",
-      "snippet": "Concert confirmed: The Beatles (Tribute) performing at Madison Square Garden on August 3. 6 tickets reserved under your name. Arrive early for the best experience!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "2c8657940568ee0e",
-      "sender": "Promoter <tickets@promoter.com>",
-      "subject": "Sports event: Comic-Con",
-      "snippet": "Concert confirmed: Live DJ performing at Fiserv Forum on July 15. 4 tickets reserved under your name. Arrive early for the best experience!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "30869713ca0efebe",
-      "sender": "GoTickets <noreply@gotickets.com>",
-      "subject": "Theater tickets: Comic-Con",
-      "snippet": "Your 4 tickets for Justin Timberlake at Madison Square Garden on August 3 are confirmed. Download your tickets in the app or print them from your account. Show ID and bring your tickets for entry.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "337a441b449bd8b1",
-      "sender": "SeatGeek <noreply@seatgeek.com>",
-      "subject": "Reservation confirmed: Coachella Festival",
-      "snippet": "Tickets locked in: Taylor Swift Concert on June 20. 1 admissions for $500. Arrive 30 minutes early. Questions? 555-0300",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "3fb76e4d98177d7f",
-      "sender": "AXS <noreply@axs.com>",
-      "subject": "Festival tickets confirmed",
-      "snippet": "Your Taylor Swift Concert access passes are ready to download. Bring ID and ticket. See you at Fiserv Forum!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "7c6df4269e8f6e9d",
-      "sender": "GoTickets <noreply@gotickets.com>",
-      "subject": "Get your tickets: Coachella Festival",
-      "snippet": "Concert access confirmed. Broadway Show on June 20 with BTS. 4 seats, C3. https://tickets.com/...",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "42c47264b08d291a",
-      "sender": "Sports Events <noreply@ticketing.com>",
-      "subject": "Festival tickets confirmed",
-      "snippet": "Your Coachella Festival tickets have been confirmed and are ready to download. Confirmation #: TIX123456. Print or show your mobile ticket at entry.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "2cde24a3f139f149",
-      "sender": "Festival Central <noreply@festivalcentral.com>",
-      "subject": "Tickets dispatched: EDM Music Festival",
-      "snippet": "Thanks for purchasing! You have 2 tickets to Film Festival. Your event confirmation is ready. You can transfer your tickets or view them in the mobile app.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "30eb482eef7d0c7a",
-      "sender": "Eventbrite <hello@eventbrite.com>",
-      "subject": "The Weeknd concert tickets - July 15",
-      "snippet": "Reservation secure: Sports Championship on July 15. 1 attendees. Check-in begins at 9:00 PM.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "2739d9d70d344874",
-      "sender": "SeatGeek <noreply@seatgeek.com>",
-      "subject": "Your seat assignment: Broadway Show",
-      "snippet": "Your EDM Music Festival tickets have been confirmed and are ready to download. Confirmation #: EVT789012. Print or show your mobile ticket at entry.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "63f79c5400a55679",
-      "sender": "Theater District <tickets@theaterdistrict.com>",
-      "subject": "Ticket delivery: Taylor Swift Concert",
-      "snippet": "Happening June 20: Film Festival. Your 4 tickets confirmed. Doors open: 7:30 PM. Arrive early!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "fde5423df55e77ef",
-      "sender": "Bandsintown <noreply@bandsintown.com>",
-      "subject": "Show entry: Coachella Festival",
-      "snippet": "Your Theater Production purchase: August 3, Staples Center. 4 tickets for $500. Confirmation: TIX123456.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "90007bd083493d91",
-      "sender": "Eventbrite <hello@eventbrite.com>",
-      "subject": "Your Comedy Show reservation",
-      "snippet": "Secured: 1 tickets to Comic-Con featuring Live DJ. July 15 at 7:30 PM. Share with friends: https://tickets.com/...",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "d9a690a3ab5f31a1",
-      "sender": "StubHub <noreply@stubhub.com>",
-      "subject": "EDM Music Festival - July 15 admission",
-      "snippet": "Theater entry confirmed: U2 Concert, July 4. 2 tickets. Seat info: B5. See you soon!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "02a3ba602003f145",
-      "sender": "Premier Ticketing <support@ticketing.com>",
-      "subject": "Performance tickets: U2 Concert",
-      "snippet": "Your VIP passes to Theater Production are ready. Exclusive access to Fairgrounds at Pepsi Center on July 15.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "3845d98b49a61b2e",
-      "sender": "Sports <noreply@seatgeek.com>",
-      "subject": "Confirm your Coachella Festival attendance",
-      "snippet": "Your Sports Championship access passes are ready to download. Bring ID and ticket. See you at Fiserv Forum!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "37a7ea49ee71a2bf",
-      "sender": "Sports <noreply@seatgeek.com>",
-      "subject": "Confirm your Taylor Swift Concert attendance",
-      "snippet": "Comic-Con admission confirmed for September 10. Your 2 tickets are ready. Bring valid ID. Entry info: Fairgrounds",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "870c45db0e23fe42",
-      "sender": "Ticketmaster <noreply@ticketmaster.com>",
-      "subject": "Show entry: EDM Music Festival",
-      "snippet": "Concert confirmed: Beyonce performing at AT&T Stadium on June 20. 2 tickets reserved under your name. Arrive early for the best experience!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "9f38e00757a55ee0",
-      "sender": "Theater <bookings@theatertickets.com>",
-      "subject": "Event confirmation - U2 Concert",
-      "snippet": "Tickets activated: Comedy Show on July 15 at Hollywood Bowl. Full details: https://tickets.com/...",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "94270275de86c560",
-      "sender": "Theater District <tickets@theaterdistrict.com>",
-      "subject": "Ticket delivery: EDM Music Festival",
-      "snippet": "Congratulations! Your tickets to Sports Championship featuring BTS are confirmed. 1 seats in section C3. July 15 at 7:30 PM.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "a2133d055e27cbe8",
-      "sender": "Premier Ticketing <support@ticketing.com>",
-      "subject": "VIP access: Comic-Con",
-      "snippet": "Your Coachella Festival access passes are ready to download. Bring ID and ticket. See you at Staples Center!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "dc46deb690e9319a",
-      "sender": "GoTickets <noreply@gotickets.com>",
-      "subject": "Reservation confirmed: U2 Concert",
-      "snippet": "Your Coachella Festival tickets have been confirmed and are ready to download. Confirmation #: TIX123456. Print or show your mobile ticket at entry.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "4f4c00b2de86eed1",
-      "sender": "Event Partners <noreply@eventpartners.com>",
-      "subject": "Your seat assignment: U2 Concert",
-      "snippet": "Show tickets delivered: Comedy Show, June 20. 4 admissions. Digital and printable format available.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "e4008427b26a3c47",
-      "sender": "Theater <bookings@theatertickets.com>",
-      "subject": "Festival pass: Theater Production",
-      "snippet": "Happening June 20: Comedy Show. Your 6 tickets confirmed. Doors open: 7:30 PM. Arrive early!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "4b2a67ff5bfda7a6",
-      "sender": "tickets@livenation.com",
-      "subject": "Broadway Show - July 15 admission",
-      "snippet": "Comedy Show admission: 1 tickets purchased. Download proof of purchase. Total cost: $500.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "8e20944554ee6d4c",
-      "sender": "Event Management <tickets@eventmgmt.com>",
-      "subject": "Your seat assignment: Comic-Con",
-      "snippet": "Your Coachella Festival access passes are ready to download. Bring ID and ticket. See you at Staples Center!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "b4726d863d1c5362",
-      "sender": "Broadway <noreply@broadwayacrossamerica.com>",
-      "subject": "Sports event: Coachella Festival",
-      "snippet": "Theater entry confirmed: Taylor Swift Concert, September 10. 1 tickets. Seat info: B5. See you soon!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "8803010dd3832304",
-      "sender": "Eventbrite <hello@eventbrite.com>",
-      "subject": "Get your tickets: EDM Music Festival",
-      "snippet": "Your U2 Concert purchase: July 4, Fiserv Forum. 6 tickets for $1200. Confirmation: EVT789012.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "f702809559bde0c2",
-      "sender": "Theater <bookings@theatertickets.com>",
-      "subject": "Festival tickets confirmed",
-      "snippet": "Sports event confirmed: Film Festival on July 15. 6 seats in B5. Will call or print tickets.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "14e7ffd60215871b",
-      "sender": "Venue <ticketing@venue.com>",
-      "subject": "Comedy Show - June 20 admission",
-      "snippet": "Festival admission: Comedy Show, September 10 at Fairgrounds. Multi-day pass for 1. Details: https://tickets.com/...",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "0732b32c08d4396b",
-      "sender": "Ticket Central <noreply@ticketcentral.com>",
-      "subject": "Get your tickets: Broadway Show",
-      "snippet": "Coming soon! Your Coldplay concert tickets arrive via email. Print or mobile entry accepted at Fiserv Forum.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "8f72e6b605064324",
-      "sender": "Show Tickets <noreply@showtickets.com>",
-      "subject": "U2 Concert - September 10 admission",
-      "snippet": "Happening August 3: Taylor Swift Concert. Your 2 tickets confirmed. Doors open: 8:00 PM. Arrive early!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "d477741e7d2ed7b6",
-      "sender": "Show Tickets <noreply@showtickets.com>",
-      "subject": "Confirmation: Comedy Show x1 tickets",
-      "snippet": "Concert confirmed: Stand-up Comic performing at Barclays Center on August 3. 2 tickets reserved under your name. Arrive early for the best experience!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "90a893f3d8708409",
-      "sender": "Ticketmaster <noreply@ticketmaster.com>",
-      "subject": "Ticket delivery: Sports Championship",
-      "snippet": "Festival passes activated: 6 admissions to Comedy Show. September 10 at Venue Complex. Download the app for schedules and maps.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "c572ee937c5d9059",
-      "sender": "Festival <tickets@musicfestival.com>",
-      "subject": "Your Taylor Swift Concert access",
-      "snippet": "Event entry confirmed: Broadway Show, June 20. Your confirmation code: TIX123456. Present at gate for entry.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "cfbd1cad0eb83d1f",
-      "sender": "Show Tickets <noreply@showtickets.com>",
-      "subject": "Show entry: Taylor Swift Concert",
-      "snippet": "Theater entry confirmed: Theater Production, July 4. 1 tickets. Seat info: B5. See you soon!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "d9376d9862c49f54",
-      "sender": "Concerts <tickets@concerttickets.com>",
-      "subject": "Confirmation: Comic-Con x6 tickets",
-      "snippet": "Event entry confirmed: Film Festival, July 15. Your confirmation code: EVT789012. Present at gate for entry.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "1f2d5f8f72673ca1",
-      "sender": "GoTickets <noreply@gotickets.com>",
-      "subject": "Ticket delivery: Sports Championship",
-      "snippet": "Happening July 15: Broadway Show. Your 4 tickets confirmed. Doors open: 8:00 PM. Arrive early!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "2df192cafbf74164",
-      "sender": "Theater District <tickets@theaterdistrict.com>",
-      "subject": "Show entry: EDM Music Festival",
-      "snippet": "Your Film Festival purchase: July 4, Madison Square Garden. 6 tickets for $1200. Confirmation: EVT789012.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "11c2a73e758eeaa6",
-      "sender": "tickets@livenation.com",
-      "subject": "VIP access: Comedy Show",
-      "snippet": "All set! 6 admissions to Sports Championship at AT&T Stadium on July 15. Your digital tickets are attached. Questions? Visit our FAQ.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "eba62c8b576bfcd1",
-      "sender": "Sports <noreply@seatgeek.com>",
-      "subject": "Reservation confirmed: EDM Music Festival",
-      "snippet": "Your Sports Championship access passes are ready to download. Bring ID and ticket. See you at AT&T Stadium!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "033bab34c28c9d9d",
-      "sender": "Venue <ticketing@venue.com>",
-      "subject": "Film Festival - July 4 admission",
-      "snippet": "Festival passes activated: 2 admissions to Comedy Show. July 4 at Venue Complex. Download the app for schedules and maps.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "7cf87c13f0dbc3ae",
-      "sender": "Festival Central <noreply@festivalcentral.com>",
-      "subject": "Concert admission: Coachella Festival",
-      "snippet": "Festival admission: Sports Championship, July 4 at Fairgrounds. Multi-day pass for 6. Details: https://tickets.com/...",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "ab4c6cf5e3a950a7",
-      "sender": "Bandsintown <noreply@bandsintown.com>",
-      "subject": "The Beatles (Tribute) concert tickets - July 15",
-      "snippet": "Coming soon! Your The Weeknd concert tickets arrive via email. Print or mobile entry accepted at Pepsi Center.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "a7c0094e257c6313",
-      "sender": "Ticket Central <noreply@ticketcentral.com>",
-      "subject": "Theater tickets: Film Festival",
-      "snippet": "Congratulations! Your tickets to Broadway Show featuring Taylor Swift are confirmed. 6 seats in section C3. June 20 at 9:00 PM.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "2209af218038e178",
-      "sender": "Eventbrite <hello@eventbrite.com>",
-      "subject": "Film Festival - July 15 admission",
-      "snippet": "Your VIP passes to Comic-Con are ready. Exclusive access to Downtown at Fiserv Forum on August 3.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "328d2d0ec1cfc85b",
-      "sender": "Ticketmaster <noreply@ticketmaster.com>",
-      "subject": "Reservation confirmed: Film Festival",
-      "snippet": "Your 1 tickets for Justin Timberlake at Fiserv Forum on July 15 are confirmed. Download your tickets in the app or print them from your account. Show ID and bring your tickets for entry.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "b649b9cc53a66f21",
-      "sender": "Eventbrite <hello@eventbrite.com>",
-      "subject": "Event access: Coachella Festival",
-      "snippet": "Broadway Show admission confirmed for August 3. Your 1 tickets are ready. Bring valid ID. Entry info: Fairgrounds",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "18594d320af7d1ab",
-      "sender": "Venue <ticketing@venue.com>",
-      "subject": "Concert admission: Coachella Festival",
-      "snippet": "Sports event confirmed: Taylor Swift Concert on July 4. 4 seats in C3. Will call or print tickets.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "c891119c24a3069d",
-      "sender": "Event Partners <noreply@eventpartners.com>",
-      "subject": "Tickets dispatched: Broadway Show",
-      "snippet": "Show tickets delivered: Comedy Show, July 4. 1 admissions. Digital and printable format available.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "e658cb2ca3de7a95",
-      "sender": "Sports Events <noreply@ticketing.com>",
-      "subject": "Sports event: Coachella Festival",
-      "snippet": "Show tickets delivered: Comic-Con, June 20. 1 admissions. Digital and printable format available.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "1d9199eeb918d556",
-      "sender": "Festival <tickets@musicfestival.com>",
-      "subject": "Show entry: Taylor Swift Concert",
-      "snippet": "All set! 2 admissions to Coachella Festival at Barclays Center on July 4. Your digital tickets are attached. Questions? Visit our FAQ.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "7379cd799dff6b2f",
-      "sender": "Show Tickets <noreply@showtickets.com>",
-      "subject": "Event pass: Comic-Con",
-      "snippet": "Secured: 2 tickets to Comedy Show featuring The Weeknd. September 10 at 7:30 PM. Share with friends: https://tickets.com/...",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "6f31390e7e5d4d15",
-      "sender": "Bandsintown <noreply@bandsintown.com>",
-      "subject": "VIP access: Theater Production",
-      "snippet": "Festival passes activated: 4 admissions to Coachella Festival. August 3 at Downtown. Download the app for schedules and maps.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "a79556a35b4e7b78",
-      "sender": "Theater <bookings@theatertickets.com>",
-      "subject": "Purchase confirmation - Theater Production",
-      "snippet": "Tickets locked in: Comic-Con on September 10. 4 admissions for $1200. Arrive 30 minutes early. Questions? 555-0300",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "06ea85114b25ca5d",
-      "sender": "Theater District <tickets@theaterdistrict.com>",
-      "subject": "Your Sports Championship access",
-      "snippet": "Tickets locked in: Broadway Show on June 20. 6 admissions for $150. Arrive 30 minutes early. Questions? 555-0300",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "5c2fedd253983c59",
-      "sender": "Premier Ticketing <support@ticketing.com>",
-      "subject": "Event access: Taylor Swift Concert",
-      "snippet": "Performance tickets: Coldplay at Pepsi Center, June 20. 2 passes delivered. Download now.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "afccd5cf9aa7710f",
-      "sender": "Festival Central <noreply@festivalcentral.com>",
-      "subject": "Performance tickets: Theater Production",
-      "snippet": "Film Festival admission: 4 tickets purchased. Download proof of purchase. Total cost: $1200.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "64ea357ae2f5ca29",
-      "sender": "Bandsintown <noreply@bandsintown.com>",
-      "subject": "Tickets dispatched: Taylor Swift Concert",
-      "snippet": "Your Comedy Show tickets have been confirmed and are ready to download. Confirmation #: TIX123456. Print or show your mobile ticket at entry.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "8d2c8049434c5e6e",
-      "sender": "EventBrite <noreply@eventbrite.com>",
-      "subject": "Your Film Festival reservation",
-      "snippet": "Secure your spot: The Beatles (Tribute) at AT&T Stadium, September 10. 4 ticket(s) confirmed. Total: $500. Download tickets here: https://tickets.com/...",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "db9c316163d3ff22",
-      "sender": "Ticket Central <noreply@ticketcentral.com>",
-      "subject": "Confirmation: Theater Production x6 tickets",
-      "snippet": "Tickets activated: EDM Music Festival on September 10 at Barclays Center. Full details: https://tickets.com/...",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "b2fbb08c7dfb76a9",
-      "sender": "Festival <tickets@musicfestival.com>",
-      "subject": "Taylor Swift concert tickets - July 4",
-      "snippet": "Concert access confirmed. Comedy Show on July 15 with Coldplay. 1 seats, Premium. https://tickets.com/...",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "046db1409974e550",
-      "sender": "Theater <bookings@theatertickets.com>",
-      "subject": "Your tickets for Film Festival on September 10",
-      "snippet": "Event admission ready: Comedy Show at Fiserv Forum on July 15. 4 passes in account. Download tickets.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "0fb9f1d99c049690",
-      "sender": "Show Tickets <noreply@showtickets.com>",
-      "subject": "Admission confirmed: Film Festival",
-      "snippet": "Theater Production admission: 2 tickets purchased. Download proof of purchase. Total cost: $1200.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "4eedd7211d5bb223",
-      "sender": "Show Tickets <noreply@showtickets.com>",
-      "subject": "Show entry: Coachella Festival",
-      "snippet": "Taylor Swift Concert admission confirmed for June 20. Your 6 tickets are ready. Bring valid ID. Entry info: Fairgrounds",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "b10c7bae89e40453",
-      "sender": "AXS <noreply@axs.com>",
-      "subject": "Event access: Coachella Festival",
-      "snippet": "Theater tickets confirmed: Comedy Show on June 20 at 7:30 PM. Seats: A12. Arrive 15 minutes before curtain.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "66832021978e32cd",
-      "sender": "Venue <ticketing@venue.com>",
-      "subject": "Your Taylor Swift Concert tickets are ready",
-      "snippet": "Thanks for purchasing! You have 2 tickets to Film Festival. Your event confirmation is ready. You can transfer your tickets or view them in the mobile app.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "1839c6df3e775f66",
-      "sender": "Theater <bookings@theatertickets.com>",
-      "subject": "Event access: Comic-Con",
-      "snippet": "Tickets locked in: Sports Championship on July 4. 1 admissions for $250. Arrive 30 minutes early. Questions? 555-0300",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "30a322f063d4b18a",
-      "sender": "Eventbrite <hello@eventbrite.com>",
-      "subject": "Confirm your Comic-Con attendance",
-      "snippet": "All set! 6 admissions to EDM Music Festival at Madison Square Garden on September 10. Your digital tickets are attached. Questions? Visit our FAQ.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "8c672abd124eb996",
-      "sender": "StubHub <noreply@stubhub.com>",
-      "subject": "Your Comic-Con access",
-      "snippet": "Performance tickets: BTS at Hollywood Bowl, June 20. 1 passes delivered. Download now.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "c39cc64e555019fd",
-      "sender": "SeatGeek <noreply@seatgeek.com>",
-      "subject": "Reservation confirmed: Coachella Festival",
-      "snippet": "Secure your spot: Taylor Swift at Madison Square Garden, August 3. 4 ticket(s) confirmed. Total: $1200. Download tickets here: https://tickets.com/...",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "f10023ec3f6d3a23",
-      "sender": "Eventbrite <hello@eventbrite.com>",
-      "subject": "Show tickets for Comic-Con",
-      "snippet": "Your purchase is complete! EDM Music Festival at Barclays Center, July 4. Digital tickets are in your account. Share with friends securely.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "edcf399ba91dd2ff",
-      "sender": "Theater <bookings@theatertickets.com>",
-      "subject": "Sports event: Theater Production",
-      "snippet": "Festival admission: U2 Concert, July 15 at Fairgrounds. Multi-day pass for 1. Details: https://tickets.com/...",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "fe6202ddbc86a4b7",
-      "sender": "Venue <ticketing@venue.com>",
-      "subject": "Get your tickets: Comic-Con",
-      "snippet": "All set! 2 admissions to Comic-Con at Hollywood Bowl on August 3. Your digital tickets are attached. Questions? Visit our FAQ.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "6702bfc7de361be6",
-      "sender": "Event Partners <noreply@eventpartners.com>",
-      "subject": "VIP access: Comic-Con",
-      "snippet": "Event admission ready: EDM Music Festival at Pepsi Center on June 20. 6 passes in account. Download tickets.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "6882c282d4f36abb",
-      "sender": "Festival Central <noreply@festivalcentral.com>",
-      "subject": "VIP access: Film Festival",
-      "snippet": "Reservation secure: Taylor Swift Concert on June 20. 2 attendees. Check-in begins at 8:00 PM.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "ab7bb82573e16e70",
-      "sender": "AXS <noreply@axs.com>",
-      "subject": "Event confirmation - Broadway Show",
-      "snippet": "Happening August 3: Comedy Show. Your 6 tickets confirmed. Doors open: 7:30 PM. Arrive early!",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "7447a7d931db5216",
-      "sender": "Sports <noreply@seatgeek.com>",
-      "subject": "Your EDM Music Festival reservation",
-      "snippet": "Your 2 tickets for BTS at Barclays Center on August 3 are confirmed. Download your tickets in the app or print them from your account. Show ID and bring your tickets for entry.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "5b7b73598dfd4cba",
-      "sender": "Sports <noreply@seatgeek.com>",
-      "subject": "Entry confirmation: EDM Music Festival",
-      "snippet": "Performance tickets: Coldplay at AT&T Stadium, July 4. 1 passes delivered. Download now.",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "2c9b2d7dc003e040",
-      "sender": "Show Tickets <noreply@showtickets.com>",
-      "subject": "Theater Production - July 4 admission",
-      "snippet": "Concert access confirmed. Broadway Show on August 3 with Coldplay. 4 seats, B5. https://tickets.com/...",
-      "category": "EVENT_TICKET"
-    },
-    {
-      "id": "4c355614c75b53bb",
-      "sender": "Sports <noreply@seatgeek.com>",
-      "subject": "Theater tickets: Comic-Con",
-      "snippet": "Your EDM Music Festival tickets have been confirmed and are ready to download. Confirmation #: EVT789012. Print or show your mobile ticket at entry.",
-      "category": "EVENT_TICKET"
-    }
-  ]
-}
+[
+  {
+    "id": "524cae4b65504815",
+    "sender": "Festival Central <noreply@festivalcentral.com>",
+    "subject": "Download your Taylor Swift Concert tickets",
+    "snippet": "Thanks for purchasing! You have 4 tickets to Sports Championship. Your event confirmation is ready. You can transfer your tickets or view them in the mobile app.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "795ec09b84b67a57",
+    "sender": "Live Nation <noreply@livenation.com>",
+    "subject": "Performance tickets: Film Festival",
+    "snippet": "Secure your spot: The Beatles (Tribute) at Fiserv Forum, August 3. 6 ticket(s) confirmed. Total: $150. Download tickets here: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "0747c13f0b58c5f3",
+    "sender": "Vivid Seats <noreply@vividseats.com>",
+    "subject": "Purchase confirmation - Broadway Show",
+    "snippet": "Thanks for purchasing! You have 1 tickets to Comic-Con. Your event confirmation is ready. You can transfer your tickets or view them in the mobile app.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "f24cabffe11edfac",
+    "sender": "Festival Central <noreply@festivalcentral.com>",
+    "subject": "Performance tickets: Taylor Swift Concert",
+    "snippet": "Congratulations! Your tickets to Coachella Festival featuring Live DJ are confirmed. 1 seats in section C3. July 4 at 8:00 PM.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "08c68ff2c1d93dd2",
+    "sender": "AXS <noreply@axs.com>",
+    "subject": "Confirmation: Taylor Swift Concert x2 tickets",
+    "snippet": "Thanks for purchasing! You have 6 tickets to Theater Production. Your event confirmation is ready. You can transfer your tickets or view them in the mobile app.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "e43a3dc7606dc2ab",
+    "sender": "AXS <noreply@axs.com>",
+    "subject": "Sports event: Broadway Show",
+    "snippet": "Performance tickets: Stand-up Comic at AT&T Stadium, June 20. 2 passes delivered. Download now.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "57e47836ff428b55",
+    "sender": "StubHub <noreply@stubhub.com>",
+    "subject": "Purchase confirmation - Theater Production",
+    "snippet": "Festival passes activated: 6 admissions to Theater Production. June 20 at Downtown. Download the app for schedules and maps.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "6f009b766d06f9c1",
+    "sender": "AXS <noreply@axs.com>",
+    "subject": "Your seat assignment: Comedy Show",
+    "snippet": "Festival passes activated: 1 admissions to Coachella Festival. June 20 at Downtown. Download the app for schedules and maps.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "585b8477e328f162",
+    "sender": "Bandsintown <noreply@bandsintown.com>",
+    "subject": "VIP access: EDM Music Festival",
+    "snippet": "Your Coachella Festival purchase: September 10, Fiserv Forum. 4 tickets for $250. Confirmation: TIX123456.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "20d77752114830b4",
+    "sender": "Premier Ticketing <support@ticketing.com>",
+    "subject": "Event pass: Coachella Festival",
+    "snippet": "Theater entry confirmed: Film Festival, August 3. 2 tickets. Seat info: B5. See you soon!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "9b5ecbbe17e2a2d2",
+    "sender": "Vivid Seats <noreply@vividseats.com>",
+    "subject": "Theater tickets: Theater Production",
+    "snippet": "Tickets activated: Broadway Show on August 3 at Pepsi Center. Full details: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "5f938b8c6d689733",
+    "sender": "Festival Central <noreply@festivalcentral.com>",
+    "subject": "Performance tickets: EDM Music Festival",
+    "snippet": "Your VIP passes to Comic-Con are ready. Exclusive access to Downtown at Staples Center on August 3.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "aea437fc8231b914",
+    "sender": "TicketsNow <noreply@ticketsnow.com>",
+    "subject": "Your Theater Production tickets are ready",
+    "snippet": "Your EDM Music Festival purchase: July 4, Staples Center. 1 tickets for $500. Confirmation: EVT789012.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "4e380f259ed16eda",
+    "sender": "SeatGeek <noreply@seatgeek.com>",
+    "subject": "Confirmation: Broadway Show x4 tickets",
+    "snippet": "Your Comedy Show tickets have been confirmed and are ready to download. Confirmation #: EVT789012. Print or show your mobile ticket at entry.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "e3a9ba4d9a51932c",
+    "sender": "Premier Ticketing <support@ticketing.com>",
+    "subject": "Get your tickets: Theater Production",
+    "snippet": "Concert access confirmed. Comic-Con on June 20 with Stand-up Comic. 2 seats, C3. https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "f6c801dae1a63e08",
+    "sender": "StubHub <noreply@stubhub.com>",
+    "subject": "Festival tickets confirmed",
+    "snippet": "Your Taylor Swift Concert purchase: July 4, Hollywood Bowl. 4 tickets for $1200. Confirmation: EVT789012.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "f1ea36a9aabbddb5",
+    "sender": "Event Partners <noreply@eventpartners.com>",
+    "subject": "Festival pass: Broadway Show",
+    "snippet": "Your purchase is complete! Broadway Show at Hollywood Bowl, September 10. Digital tickets are in your account. Share with friends securely.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "99231d9b069ba157",
+    "sender": "Bandsintown <noreply@bandsintown.com>",
+    "subject": "Your U2 Concert reservation",
+    "snippet": "Your Sports Championship tickets have been confirmed and are ready to download. Confirmation #: EVT789012. Print or show your mobile ticket at entry.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "bc950ab865368f0d",
+    "sender": "Venue <ticketing@venue.com>",
+    "subject": "Reservation confirmed: Broadway Show",
+    "snippet": "Thanks for purchasing! You have 4 tickets to EDM Music Festival. Your event confirmation is ready. You can transfer your tickets or view them in the mobile app.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "8e9faa4ee1dc9260",
+    "sender": "Festival Central <noreply@festivalcentral.com>",
+    "subject": "Concert admission: EDM Music Festival",
+    "snippet": "Event entry confirmed: U2 Concert, September 10. Your confirmation code: TIX123456. Present at gate for entry.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "df627cdb805fdce3",
+    "sender": "Comedy <noreply@comedytickets.com>",
+    "subject": "Confirmation: Broadway Show x1 tickets",
+    "snippet": "Your VIP passes to U2 Concert are ready. Exclusive access to Venue Complex at Madison Square Garden on July 15.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "cf85f304aa138531",
+    "sender": "Event Partners <noreply@eventpartners.com>",
+    "subject": "VIP access: Coachella Festival",
+    "snippet": "Thanks for purchasing! You have 6 tickets to Comedy Show. Your event confirmation is ready. You can transfer your tickets or view them in the mobile app.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "46ec081b7e6370ea",
+    "sender": "Theater <bookings@theatertickets.com>",
+    "subject": "Admission confirmed: Film Festival",
+    "snippet": "Your Comedy Show access passes are ready to download. Bring ID and ticket. See you at Fiserv Forum!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "b3f546c4cf69a7df",
+    "sender": "Concerts <tickets@concerttickets.com>",
+    "subject": "Performance tickets: Comic-Con",
+    "snippet": "Your 1 tickets for Beyonce at Madison Square Garden on June 20 are confirmed. Download your tickets in the app or print them from your account. Show ID and bring your tickets for entry.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "9ed624b89b864de7",
+    "sender": "Bandsintown <noreply@bandsintown.com>",
+    "subject": "Entry confirmation: EDM Music Festival",
+    "snippet": "Your 1 tickets for Stand-up Comic at AT&T Stadium on July 15 are confirmed. Download your tickets in the app or print them from your account. Show ID and bring your tickets for entry.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "ed066b9025d44861",
+    "sender": "Live Nation <noreply@livenation.com>",
+    "subject": "Confirmation: Sports Championship x1 tickets",
+    "snippet": "Your Comedy Show purchase: July 15, Pepsi Center. 2 tickets for $250. Confirmation: TIX123456.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "87ab530660e97e20",
+    "sender": "Eventbrite <hello@eventbrite.com>",
+    "subject": "Entry confirmation: Sports Championship",
+    "snippet": "Concert confirmed: The Beatles (Tribute) performing at Madison Square Garden on July 4. 6 tickets reserved under your name. Arrive early for the best experience!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "5f7a17973ca68cee",
+    "sender": "Sports Events <noreply@ticketing.com>",
+    "subject": "Festival pass: Sports Championship",
+    "snippet": "Congratulations! Your tickets to Coachella Festival featuring Justin Timberlake are confirmed. 2 seats in section B5. August 3 at 9:00 PM.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "08aaf2ce6ec6537a",
+    "sender": "Bandsintown <noreply@bandsintown.com>",
+    "subject": "Festival tickets confirmed",
+    "snippet": "Thanks for purchasing! You have 1 tickets to Theater Production. Your event confirmation is ready. You can transfer your tickets or view them in the mobile app.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "773e2b777e40c653",
+    "sender": "StubHub <noreply@stubhub.com>",
+    "subject": "Your U2 Concert reservation",
+    "snippet": "Happening September 10: Sports Championship. Your 4 tickets confirmed. Doors open: 7:30 PM. Arrive early!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "8b9836d47feb9925",
+    "sender": "SeatGeek <noreply@seatgeek.com>",
+    "subject": "Show tickets for Comic-Con",
+    "snippet": "Tickets locked in: U2 Concert on September 10. 2 admissions for $500. Arrive 30 minutes early. Questions? 555-0300",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "b2c938e4b49378cf",
+    "sender": "Vivid Seats <noreply@vividseats.com>",
+    "subject": "Confirm your Sports Championship attendance",
+    "snippet": "Confirmed: Comedy Show on September 10. Tickets for 4. Entry at Venue Complex. Questions? FAQ: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "f8f2b7e64ae72df1",
+    "sender": "tickets@livenation.com",
+    "subject": "Purchase confirmation - Broadway Show",
+    "snippet": "Festival admission: Taylor Swift Concert, June 20 at Fairgrounds. Multi-day pass for 2. Details: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "53dbae4a9e6e458b",
+    "sender": "Festival <tickets@musicfestival.com>",
+    "subject": "Festival pass: Taylor Swift Concert",
+    "snippet": "Theater entry confirmed: EDM Music Festival, July 15. 1 tickets. Seat info: B5. See you soon!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "2eb8b6944146d9a3",
+    "sender": "Broadway <noreply@broadwayacrossamerica.com>",
+    "subject": "Confirm your EDM Music Festival attendance",
+    "snippet": "Concert confirmed: The Beatles (Tribute) performing at Staples Center on August 3. 1 tickets reserved under your name. Arrive early for the best experience!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "d222f0e807d486b3",
+    "sender": "Festival Central <noreply@festivalcentral.com>",
+    "subject": "Event pass: EDM Music Festival",
+    "snippet": "Tickets locked in: Comedy Show on July 4. 2 admissions for $250. Arrive 30 minutes early. Questions? 555-0300",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "042080369ca86e60",
+    "sender": "Venue <ticketing@venue.com>",
+    "subject": "Reservation confirmed: Taylor Swift Concert",
+    "snippet": "Sports event confirmed: Comic-Con on June 20. 4 seats in Premium. Will call or print tickets.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "1c86595ef3701360",
+    "sender": "AXS <noreply@axs.com>",
+    "subject": "Your tickets for EDM Music Festival on June 20",
+    "snippet": "Confirmed: Theater Production on August 3. Tickets for 4. Entry at Fairgrounds. Questions? FAQ: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "c79e9c717d33cdcf",
+    "sender": "Festival <tickets@musicfestival.com>",
+    "subject": "Your EDM Music Festival reservation",
+    "snippet": "Secured: 4 tickets to Sports Championship featuring Coldplay. August 3 at 7:30 PM. Share with friends: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "d40a316132a982c3",
+    "sender": "TicketsNow <noreply@ticketsnow.com>",
+    "subject": "Ticket delivery: Comic-Con",
+    "snippet": "Event entry confirmed: U2 Concert, June 20. Your confirmation code: EVT789012. Present at gate for entry.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "a9ec9868431a0290",
+    "sender": "Broadway <noreply@broadwayacrossamerica.com>",
+    "subject": "Tickets dispatched: Taylor Swift Concert",
+    "snippet": "Reservation secure: U2 Concert on July 4. 2 attendees. Check-in begins at 8:00 PM.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "c8725a5ecff0e5c5",
+    "sender": "SeatGeek <noreply@seatgeek.com>",
+    "subject": "Confirmation: Sports Championship x6 tickets",
+    "snippet": "Congratulations! Your tickets to EDM Music Festival featuring BTS are confirmed. 1 seats in section A12. June 20 at 7:30 PM.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "bbbcfc6a69f705bc",
+    "sender": "Bandsintown <noreply@bandsintown.com>",
+    "subject": "Show tickets for EDM Music Festival",
+    "snippet": "Happening July 15: U2 Concert. Your 6 tickets confirmed. Doors open: 8:00 PM. Arrive early!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "850df86fb9963253",
+    "sender": "SeatGeek <noreply@seatgeek.com>",
+    "subject": "Your tickets for Broadway Show on June 20",
+    "snippet": "Congratulations! Your tickets to Comedy Show featuring The Beatles (Tribute) are confirmed. 1 seats in section B5. July 4 at 9:00 PM.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "45cd0072b71e2b31",
+    "sender": "Venue <ticketing@venue.com>",
+    "subject": "Confirmation: Taylor Swift Concert x6 tickets",
+    "snippet": "Event admission ready: Coachella Festival at Staples Center on July 15. 4 passes in account. Download tickets.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "af85955b5c04fa27",
+    "sender": "Theater <bookings@theatertickets.com>",
+    "subject": "Tickets dispatched: U2 Concert",
+    "snippet": "Concert confirmed: Taylor Swift performing at Fiserv Forum on September 10. 6 tickets reserved under your name. Arrive early for the best experience!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "16114cdba744d889",
+    "sender": "Ticketmaster <noreply@ticketmaster.com>",
+    "subject": "Comic-Con - July 4 admission",
+    "snippet": "Concert access confirmed. Sports Championship on July 15 with Coldplay. 1 seats, C3. https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "7e03fa7aa6533ac5",
+    "sender": "SeatGeek <noreply@seatgeek.com>",
+    "subject": "Your tickets for Comedy Show on August 3",
+    "snippet": "Your VIP passes to Broadway Show are ready. Exclusive access to Fairgrounds at Madison Square Garden on July 15.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "bc540e4b7d6f546a",
+    "sender": "EventBrite <noreply@eventbrite.com>",
+    "subject": "Event pass: Theater Production",
+    "snippet": "Your Taylor Swift Concert access passes are ready to download. Bring ID and ticket. See you at Staples Center!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "4155d866361b4ca9",
+    "sender": "tickets@livenation.com",
+    "subject": "Your Film Festival tickets are ready",
+    "snippet": "Performance tickets: Coldplay at AT&T Stadium, September 10. 2 passes delivered. Download now.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "5c25c29d07425bd7",
+    "sender": "TicketsNow <noreply@ticketsnow.com>",
+    "subject": "Reservation confirmed: Sports Championship",
+    "snippet": "All set! 1 admissions to Sports Championship at Fiserv Forum on July 15. Your digital tickets are attached. Questions? Visit our FAQ.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "ad2488cacdea7793",
+    "sender": "Theater District <tickets@theaterdistrict.com>",
+    "subject": "Sports event: Film Festival",
+    "snippet": "Confirmed: EDM Music Festival on June 20. Tickets for 4. Entry at Downtown. Questions? FAQ: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "bd30880b5fe52872",
+    "sender": "Live Nation <noreply@livenation.com>",
+    "subject": "Performance tickets: Coachella Festival",
+    "snippet": "Reservation secure: Theater Production on July 4. 2 attendees. Check-in begins at 7:30 PM.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "00baa37fe5e1683a",
+    "sender": "Ticketmaster <noreply@ticketmaster.com>",
+    "subject": "Performance tickets: Comedy Show",
+    "snippet": "Show tickets delivered: Film Festival, July 4. 1 admissions. Digital and printable format available.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "2842fa9f10ce3da3",
+    "sender": "Live Nation <noreply@livenation.com>",
+    "subject": "Sports event: Sports Championship",
+    "snippet": "Secured: 6 tickets to Comedy Show featuring Justin Timberlake. September 10 at 7:30 PM. Share with friends: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "0e48d85de810148e",
+    "sender": "Ticket Central <noreply@ticketcentral.com>",
+    "subject": "Justin Timberlake concert tickets - July 4",
+    "snippet": "Theater entry confirmed: Comic-Con, August 3. 1 tickets. Seat info: C3. See you soon!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "03a42776944ffd1a",
+    "sender": "tickets@livenation.com",
+    "subject": "Download your U2 Concert tickets",
+    "snippet": "Event entry confirmed: Comedy Show, June 20. Your confirmation code: EVT789012. Present at gate for entry.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "f78d430e39d50d4a",
+    "sender": "AXS <noreply@axs.com>",
+    "subject": "Tickets secured: Film Festival",
+    "snippet": "Your U2 Concert access passes are ready to download. Bring ID and ticket. See you at Staples Center!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "2d20b80261289f83",
+    "sender": "Festival Central <noreply@festivalcentral.com>",
+    "subject": "Your seat assignment: Theater Production",
+    "snippet": "Your purchase is complete! Comedy Show at Madison Square Garden, August 3. Digital tickets are in your account. Share with friends securely.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "01254a2bb5226a08",
+    "sender": "TicketsNow <noreply@ticketsnow.com>",
+    "subject": "Concert admission: Film Festival",
+    "snippet": "Congratulations! Your tickets to U2 Concert featuring Stand-up Comic are confirmed. 1 seats in section Premium. July 4 at 9:00 PM.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "74cd328ffe60e002",
+    "sender": "Event Partners <noreply@eventpartners.com>",
+    "subject": "Your tickets for Coachella Festival on July 4",
+    "snippet": "Reservation secure: Comedy Show on July 15. 4 attendees. Check-in begins at 8:00 PM.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "31c48aaf00ff3758",
+    "sender": "TicketsNow <noreply@ticketsnow.com>",
+    "subject": "Event access: Comedy Show",
+    "snippet": "All set! 6 admissions to EDM Music Festival at Barclays Center on September 10. Your digital tickets are attached. Questions? Visit our FAQ.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "780fc85c16605a06",
+    "sender": "Eventbrite <hello@eventbrite.com>",
+    "subject": "Admission confirmed: EDM Music Festival",
+    "snippet": "Your EDM Music Festival access passes are ready to download. Bring ID and ticket. See you at Hollywood Bowl!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "2afcb2cfabb4b0a0",
+    "sender": "Event Partners <noreply@eventpartners.com>",
+    "subject": "Entry confirmation: Sports Championship",
+    "snippet": "Secure your spot: Taylor Swift at Hollywood Bowl, September 10. 6 ticket(s) confirmed. Total: $500. Download tickets here: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "30767781240019ff",
+    "sender": "EventBrite <noreply@eventbrite.com>",
+    "subject": "Event access: Coachella Festival",
+    "snippet": "Concert confirmed: BTS performing at AT&T Stadium on August 3. 6 tickets reserved under your name. Arrive early for the best experience!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "b0b66f0718d7fd71",
+    "sender": "AXS <noreply@axs.com>",
+    "subject": "Tickets dispatched: Broadway Show",
+    "snippet": "Event entry confirmed: Comic-Con, July 4. Your confirmation code: EVT789012. Present at gate for entry.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "07a0d7c2a5f12d51",
+    "sender": "Comedy <noreply@comedytickets.com>",
+    "subject": "Sports event: Broadway Show",
+    "snippet": "Concert access confirmed. Comedy Show on August 3 with Beyonce. 6 seats, Premium. https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "913901a9e0256b05",
+    "sender": "Ticket Central <noreply@ticketcentral.com>",
+    "subject": "Concert admission: EDM Music Festival",
+    "snippet": "Your Comic-Con access passes are ready to download. Bring ID and ticket. See you at AT&T Stadium!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "74930beaee6f6bc9",
+    "sender": "Sports <noreply@seatgeek.com>",
+    "subject": "Purchase confirmation - Broadway Show",
+    "snippet": "Your purchase is complete! Comedy Show at Fiserv Forum, August 3. Digital tickets are in your account. Share with friends securely.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "90e64a7c5e0ec7c3",
+    "sender": "Eventbrite <hello@eventbrite.com>",
+    "subject": "Confirmation: Film Festival x6 tickets",
+    "snippet": "Reservation secure: Film Festival on September 10. 6 attendees. Check-in begins at 7:30 PM.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "7a0c012bd73d7027",
+    "sender": "Broadway <noreply@broadwayacrossamerica.com>",
+    "subject": "Coachella Festival - June 20 admission",
+    "snippet": "Festival passes activated: 4 admissions to Broadway Show. August 3 at Venue Complex. Download the app for schedules and maps.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "c7a2838430c01559",
+    "sender": "AXS <noreply@axs.com>",
+    "subject": "Event pass: Film Festival",
+    "snippet": "Tickets locked in: Taylor Swift Concert on August 3. 6 admissions for $250. Arrive 30 minutes early. Questions? 555-0300",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "0e8535d165a86d3d",
+    "sender": "Ticketmaster <noreply@ticketmaster.com>",
+    "subject": "Event pass: Theater Production",
+    "snippet": "Tickets locked in: Comedy Show on July 4. 1 admissions for $500. Arrive 30 minutes early. Questions? 555-0300",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "b92e50b4688bcfed",
+    "sender": "Event Partners <noreply@eventpartners.com>",
+    "subject": "Event access: Comedy Show",
+    "snippet": "Congratulations! Your tickets to Taylor Swift Concert featuring BTS are confirmed. 4 seats in section A12. June 20 at 7:30 PM.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "7cd0baeac1f24912",
+    "sender": "TicketsNow <noreply@ticketsnow.com>",
+    "subject": "Ticket delivery: Comic-Con",
+    "snippet": "Theater tickets confirmed: Film Festival on June 20 at 9:00 PM. Seats: C3. Arrive 15 minutes before curtain.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "230759d4d3d59e1b",
+    "sender": "Premier Ticketing <support@ticketing.com>",
+    "subject": "Ticket delivery: Film Festival",
+    "snippet": "Secured: 1 tickets to Theater Production featuring BTS. August 3 at 7:30 PM. Share with friends: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "c25c054f10099501",
+    "sender": "Theater <bookings@theatertickets.com>",
+    "subject": "Concert admission: Sports Championship",
+    "snippet": "Secured: 1 tickets to Broadway Show featuring Justin Timberlake. September 10 at 7:30 PM. Share with friends: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "d843bd766e91e0da",
+    "sender": "Venue <ticketing@venue.com>",
+    "subject": "Admission confirmed: Theater Production",
+    "snippet": "Your Sports Championship tickets have been confirmed and are ready to download. Confirmation #: EVT789012. Print or show your mobile ticket at entry.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "c724d4a6f0daf08c",
+    "sender": "tickets@livenation.com",
+    "subject": "Your seat assignment: U2 Concert",
+    "snippet": "Show tickets delivered: Broadway Show, September 10. 4 admissions. Digital and printable format available.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "accd6e7c033ad885",
+    "sender": "Bandsintown <noreply@bandsintown.com>",
+    "subject": "Your Taylor Swift Concert tickets are ready",
+    "snippet": "Sports event confirmed: Broadway Show on July 4. 1 seats in Premium. Will call or print tickets.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "6b2945a12ff1de12",
+    "sender": "Live Nation <noreply@livenation.com>",
+    "subject": "Your Sports Championship access",
+    "snippet": "Thanks for purchasing! You have 1 tickets to Broadway Show. Your event confirmation is ready. You can transfer your tickets or view them in the mobile app.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "d1997408a5438a06",
+    "sender": "EventBrite <noreply@eventbrite.com>",
+    "subject": "Reservation confirmed: Sports Championship",
+    "snippet": "Festival admission: EDM Music Festival, September 10 at Downtown. Multi-day pass for 6. Details: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "f9d40a24d55f82ea",
+    "sender": "Comedy <noreply@comedytickets.com>",
+    "subject": "Your Taylor Swift Concert reservation",
+    "snippet": "Tickets locked in: Theater Production on July 15. 4 admissions for $250. Arrive 30 minutes early. Questions? 555-0300",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "0b0d523f6de5b726",
+    "sender": "Broadway <noreply@broadwayacrossamerica.com>",
+    "subject": "Event access: Film Festival",
+    "snippet": "U2 Concert admission confirmed for June 20. Your 2 tickets are ready. Bring valid ID. Entry info: Downtown",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "68b9f75107ab8f85",
+    "sender": "AXS <noreply@axs.com>",
+    "subject": "Festival tickets confirmed",
+    "snippet": "Concert confirmed: BTS performing at AT&T Stadium on September 10. 6 tickets reserved under your name. Arrive early for the best experience!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "8c73ce582fe1f016",
+    "sender": "Event Management <tickets@eventmgmt.com>",
+    "subject": "Your U2 Concert access",
+    "snippet": "Show tickets delivered: EDM Music Festival, July 15. 2 admissions. Digital and printable format available.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "2e34741ca0322f62",
+    "sender": "AXS <noreply@axs.com>",
+    "subject": "Your Comic-Con access",
+    "snippet": "Coming soon! Your Live DJ concert tickets arrive via email. Print or mobile entry accepted at AT&T Stadium.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "d9b0d4f8c6dbaa99",
+    "sender": "SeatGeek <noreply@seatgeek.com>",
+    "subject": "Your Comic-Con tickets are ready",
+    "snippet": "Confirmed: Broadway Show on June 20. Tickets for 6. Entry at Downtown. Questions? FAQ: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "e42d253d0769b989",
+    "sender": "Sports <noreply@seatgeek.com>",
+    "subject": "Your Film Festival tickets are ready",
+    "snippet": "Event entry confirmed: Comic-Con, June 20. Your confirmation code: TIX123456. Present at gate for entry.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "45ea2ff1b5c881d8",
+    "sender": "Theater District <tickets@theaterdistrict.com>",
+    "subject": "Your seat assignment: Comedy Show",
+    "snippet": "Festival passes activated: 6 admissions to Theater Production. July 15 at Downtown. Download the app for schedules and maps.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "6e53ff840dc4a175",
+    "sender": "Festival <tickets@musicfestival.com>",
+    "subject": "Performance tickets: EDM Music Festival",
+    "snippet": "Your purchase is complete! EDM Music Festival at Pepsi Center, July 4. Digital tickets are in your account. Share with friends securely.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "8347738feec49503",
+    "sender": "Bandsintown <noreply@bandsintown.com>",
+    "subject": "Show tickets for U2 Concert",
+    "snippet": "Concert confirmed: Justin Timberlake performing at Fiserv Forum on June 20. 6 tickets reserved under your name. Arrive early for the best experience!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "7e814ae8a20647e9",
+    "sender": "Premier Ticketing <support@ticketing.com>",
+    "subject": "Reservation confirmed: Broadway Show",
+    "snippet": "Your U2 Concert tickets have been confirmed and are ready to download. Confirmation #: TIX123456. Print or show your mobile ticket at entry.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "c5f9f01f941fdffd",
+    "sender": "StubHub <noreply@stubhub.com>",
+    "subject": "Event confirmation - Film Festival",
+    "snippet": "Tickets activated: Comedy Show on August 3 at AT&T Stadium. Full details: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "636877a515316bb4",
+    "sender": "Festival <tickets@musicfestival.com>",
+    "subject": "Performance tickets: Coachella Festival",
+    "snippet": "Secure your spot: Coldplay at Madison Square Garden, September 10. 6 ticket(s) confirmed. Total: $500. Download tickets here: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "3d896224aabc366f",
+    "sender": "tickets@livenation.com",
+    "subject": "Confirm your Taylor Swift Concert attendance",
+    "snippet": "Event admission ready: Coachella Festival at Fiserv Forum on August 3. 2 passes in account. Download tickets.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "9a240b4529c78cf4",
+    "sender": "Show Tickets <noreply@showtickets.com>",
+    "subject": "Confirmation: Sports Championship x1 tickets",
+    "snippet": "Reservation secure: Broadway Show on August 3. 1 attendees. Check-in begins at 8:00 PM.",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "622ce6c703eaaf25",
+    "sender": "Music Events <tickets@musicevents.com>",
+    "subject": "Admission confirmed: Broadway Show",
+    "snippet": "Happening August 3: Theater Production. Your 1 tickets confirmed. Doors open: 9:00 PM. Arrive early!",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "da1af4688013fa9a",
+    "sender": "Ticketmaster <noreply@ticketmaster.com>",
+    "subject": "Entry confirmation: Coachella Festival",
+    "snippet": "Tickets activated: Broadway Show on June 20 at Madison Square Garden. Full details: https://tickets.com/...",
+    "category": "EVENT_TICKET"
+  },
+  {
+    "id": "61075be31a70dbd8",
+    "sender": "AXS <noreply@axs.com>",
+    "subject": "Your Coachella Festival access",
+    "snippet": "All set! 6 admissions to Film Festival at Madison Square Garden on July 4. Your digital tickets are attached. Questions? Visit our FAQ.",
+    "category": "EVENT_TICKET"
+  }
+]

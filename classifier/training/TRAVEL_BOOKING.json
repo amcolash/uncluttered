@@ -1,704 +1,702 @@
-{
-  "emails": [
-    {
-      "id": "c9d417c8c8686739",
-      "sender": "Alaska Airlines <reservations@alaskaair.com>",
-      "subject": "Hotel reservation - Sheraton",
-      "snippet": "Trip confirmed: SW456 + Hilton. Los Angeles, June 15-22. Total: $3500. Itinerary: https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "4be9b5e35ff34fdb",
-      "sender": "Vacation Rental <booking@vacationrental.com>",
-      "subject": "Get ready: Your Cancun trip",
-      "snippet": "Your stay is booked: 10 nights at Sheraton. June 15-22. Rate: $150. Total: $650.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "ff4f03027e89e19a",
-      "sender": "Alaska Airlines <reservations@alaskaair.com>",
-      "subject": "Hotel reservation - Hyatt",
-      "snippet": "Confirmation: Mountain Lodge in Los Angeles. July 10-17, 10 nights. Code: ABC12345. Questions? booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "a3897c34a00ff47d",
-      "sender": "United Airlines <reservations@united.com>",
-      "subject": "Your accommodation is booked",
-      "snippet": "Flight DL789 to Bangkok confirmed for August 5 at 4:00 PM. Seat: 8C. Boarding pass: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "fa94b9a29963f495",
-      "sender": "Vrbo <noreply@vrbo.com>",
-      "subject": "Arrival details for Los Angeles",
-      "snippet": "Your Cancun booking is confirmed! Flights + Sheraton. June 15-22. Confirmation: XYZ67890.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "6da947db0b00047c",
-      "sender": "Budget <booking@budget.com>",
-      "subject": "Travel confirmation - July 10",
-      "snippet": "Your New York booking is confirmed! Flights + Hyatt. June 15-22. Confirmation: TRV123456.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "974b3c2f8e17ef85",
-      "sender": "Expedia <confirmation@expedia.com>",
-      "subject": "Airfare confirmation: NYC-LHR",
-      "snippet": "Reservation details: Beachfront Villa in Paris. August 5-12, 5 nights. Confirmation: TRV123456. Support: 1-800-FLIGHTS",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "2a8efbf99b0092a6",
-      "sender": "American Airlines <aa@aa.com>",
-      "subject": "Confirmation email: DEN-LAX",
-      "snippet": "Your reservation at Budget Hotel is confirmed for August 5-12. Check-in time is 3:00 PM. Download the HotelTonight app for digital check-in and 24/7 support. Confirmation code: XYZ67890",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "898e2a20b78af584",
-      "sender": "American Airlines <aa@aa.com>",
-      "subject": "Vacation booked: Los Angeles",
-      "snippet": "Your flight is booked! DL789 departs 4:00 PM on July 10. Seat: 7E. Total: $3500. https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "e6d9a85ab17ddbeb",
-      "sender": "Airbnb <noreply@airbnb.com>",
-      "subject": "Lodging confirmation: Luxury Resort",
-      "snippet": "Your stay is booked: 5 nights at Hilton. July 10-17. Rate: $150. Total: $650.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "5fdc7cd7609b039f",
-      "sender": "Expedia <confirmation@expedia.com>",
-      "subject": "Airline reservation confirmation",
-      "snippet": "Everything is set for your trip to Barcelona! You have Hyatt booked for 10 nights. Total price: $1850. Need to make changes?",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "37543877f877d711",
-      "sender": "Booking.com <noreply@booking.com>",
-      "subject": "Hotel reservation - Hyatt",
-      "snippet": "Confirmation: Boutique Inn in Paris. July 10-17, 7 nights. Code: ABC12345. Questions? https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "bf098f8cc8ba1b01",
-      "sender": "Hostelworld <booking@hostelworld.com>",
-      "subject": "Your flights are confirmed",
-      "snippet": "Flight booked: SW456 DEN-LAX on July 10. Your seat: 8C. Download boarding pass: https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "694838cfe1a26169",
-      "sender": "Vrbo <noreply@vrbo.com>",
-      "subject": "Arrival details for Barcelona",
-      "snippet": "Everything is set for your trip to Barcelona! You have Holiday Inn booked for 3 nights. Total price: $650. Need to make changes?",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "c2e146c63a353d71",
-      "sender": "Cruise Booking <booking@cruise.com>",
-      "subject": "Check-in reminder for your stay",
-      "snippet": "Your flight to Cancun is booked! SW456 departs August 5 at 4:00 PM. Seat 7E. Download your boarding pass 24 hours before departure.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "826adeafc748676a",
-      "sender": "Orbitz <booking@orbitz.com>",
-      "subject": "Airline reservation confirmation",
-      "snippet": "Flight booked: UA456 DEN-LAX on August 5. Your seat: 8C. Download boarding pass: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "9d3caa49a814acdf",
-      "sender": "Alaska Airlines <reservations@alaskaair.com>",
-      "subject": "Your Tokyo vacation is booked",
-      "snippet": "Hotel reservation complete: Holiday Inn, New York. June 15-22. Total: $1250. Questions? 1-800-FLIGHTS",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "806bdc4268f19a87",
-      "sender": "hotels@kayak.com",
-      "subject": "Trip confirmation #TRV123456",
-      "snippet": "Lodging confirmed: Downtown Loft, Los Angeles. June 15-22. Check-in: 12:00 PM. Support 24/7: 1-800-FLIGHTS",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "1ba58a6721b48d3c",
-      "sender": "Priceline <confirmation@priceline.com>",
-      "subject": "Airfare confirmation: DEN-LAX",
-      "snippet": "Your stay is booked: 3 nights at Hilton. August 5-12. Rate: $150. Total: $1250.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "a699165e938cce0a",
-      "sender": "Resort Booking <confirmation@resort.com>",
-      "subject": "Airfare confirmation: DEN-LAX",
-      "snippet": "Trip confirmed! SFO-NRT to Rome + 5 nights at Downtown Loft. See details: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "259fbd529a72e455",
-      "sender": "Cruise Booking <booking@cruise.com>",
-      "subject": "Reservation confirmed Los Angeles",
-      "snippet": "Confirmation #XYZ67890: 10 nights at Beachfront Villa in Cancun. Arrival August 5. booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "1f3c7cff092b7ff5",
-      "sender": "Booking.com <noreply@booking.com>",
-      "subject": "Airfare confirmation: SFO-NRT",
-      "snippet": "Your Los Angeles adventure awaits! Confirmation code: ABC12345. Flights on July 10. Hotel: Sheraton.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "f6d26ad06959b00a",
-      "sender": "Trivago <booking@trivago.com>",
-      "subject": "Trip itinerary enclosed",
-      "snippet": "Your Tokyo adventure awaits! Confirmation code: ABC12345. Flights on July 10. Hotel: Hyatt.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "9c36e0a40ae3288b",
-      "sender": "hotels@kayak.com",
-      "subject": "Flight ticket ready: AA123",
-      "snippet": "Your stay at Hyatt is reserved! June 15-22, 10 nights. Rate: $100/night. Total: $3500.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "0b8fbc3d29011d7e",
-      "sender": "Orbitz <booking@orbitz.com>",
-      "subject": "Get ready: Your Bangkok trip",
-      "snippet": "Flight UA456 to Tokyo confirmed. Depart: June 15 3:00 PM. Seat 7E. Total: $650.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "98790bef3b571540",
-      "sender": "United Airlines <reservations@united.com>",
-      "subject": "Flight booked: June 15",
-      "snippet": "Trip confirmed! DEN-LAX to Tokyo + 10 nights at Luxury Resort. See details: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "5a13c62f5e41f2b1",
-      "sender": "Cruise Booking <booking@cruise.com>",
-      "subject": "Lodging reserved: New York",
-      "snippet": "Flight SW456 is confirmed for June 15. Departure: 2:30 PM. Bring your ID and arrive 2 hours early for security. Seat: 8C",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "1b930de698d67511",
-      "sender": "Train Travel <booking@amtrak.com>",
-      "subject": "Trip itinerary enclosed",
-      "snippet": "Vacation locked in! Los Angeles from July 10. Flights + accommodation. See details: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "fa98a478e93d501e",
-      "sender": "Agoda <booking@agoda.com>",
-      "subject": "Flight ticket ready: AA123",
-      "snippet": "Welcome to Tokyo! Your Beachfront Villa reservation is ready for check-in. Address: 123 Beach Rd. Arrival: June 15 at 12:00 PM.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "b977b1338eac5366",
-      "sender": "Budget <booking@budget.com>",
-      "subject": "Travel confirmation - August 5",
-      "snippet": "Confirmation: Luxury Resort in New York. August 5-12, 7 nights. Code: TRV123456. Questions? booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "0ff1a329e64d1972",
-      "sender": "United Airlines <reservations@united.com>",
-      "subject": "Your flights are confirmed",
-      "snippet": "Confirmation: Mountain Lodge in Cancun. June 15-22, 3 nights. Code: XYZ67890. Questions? booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "ff002240d23a9935",
-      "sender": "Avis <reservation@avis.com>",
-      "subject": "Arrival details for Cancun",
-      "snippet": "Flight B6789 to Paris confirmed for July 10 at 3:00 PM. Seat: 12A. Boarding pass: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "dbdda8d6ecd6fba4",
-      "sender": "Expedia <confirmation@expedia.com>",
-      "subject": "Your 3 night stay confirmed",
-      "snippet": "Flight DL789 is confirmed for June 15. Departure: 3:00 PM. Bring your ID and arrive 2 hours early for security. Seat: 8C",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "a664786fe471a3aa",
-      "sender": "United Airlines <reservations@united.com>",
-      "subject": "Lodging reserved: Rome",
-      "snippet": "Your reservation at Budget Hotel is confirmed for June 15-22. Check-in time is 12:00 PM. Download the HotelTonight app for digital check-in and 24/7 support. Confirmation code: ABC12345",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "1b41dd26d8e0042b",
-      "sender": "Hotel Tonight <confirm@hoteltonight.com>",
-      "subject": "Hotel reservation - Holiday Inn",
-      "snippet": "Ready for Paris? Hotel: Holiday Inn. Dates: August 5-12. Total stay: 7 nights. Rate: $250. Confirm: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "9b7cbc5ecae33529",
-      "sender": "Booking.com <noreply@booking.com>",
-      "subject": "Confirmation email: DEN-LAX",
-      "snippet": "Flight SW456 is confirmed for June 15. Departure: 12:00 PM. Bring your ID and arrive 2 hours early for security. Seat: 1B",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "e00202bd482d15cd",
-      "sender": "Trivago <booking@trivago.com>",
-      "subject": "Trip itinerary enclosed",
-      "snippet": "Trip summary: New York from June 15. Flights + 5 nights hotel. Cost: $650. View: https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "eacdfa99e886a0c6",
-      "sender": "Travel Agency <reservations@travelagency.com>",
-      "subject": "Accommodation confirmation",
-      "snippet": "Flight booked: DL789 DEN-LAX on August 5. Your seat: 12A. Download boarding pass: https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "18543da3707b90c3",
-      "sender": "Travel Agency <reservations@travelagency.com>",
-      "subject": "Your trip to Los Angeles is booked",
-      "snippet": "Hotel reservation complete: Hyatt, Paris. July 10-17. Total: $1250. Questions? 1-800-FLIGHTS",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "d26f73f0b8935758",
-      "sender": "TripAdvisor <booking@tripadvisor.com>",
-      "subject": "Check-in reminder for your stay",
-      "snippet": "Lodging confirmed: Beachfront Villa, Bangkok. July 10-17. Check-in: 2:30 PM. Support 24/7: 1-800-FLIGHTS",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "459305040e070812",
-      "sender": "Cruise Booking <booking@cruise.com>",
-      "subject": "Airfare confirmation: SFO-NRT",
-      "snippet": "Your Tokyo vacation is locked in! Flights + hotel totaling $1250. See your complete itinerary: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "75bcd98e5ce75931",
-      "sender": "Booking.com <noreply@booking.com>",
-      "subject": "Flight ticket ready: SW456",
-      "snippet": "Confirmation: Boutique Inn in Rome. June 15-22, 5 nights. Code: XYZ67890. Questions? https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "66c73921bc050db5",
-      "sender": "Vrbo <noreply@vrbo.com>",
-      "subject": "Airfare confirmation: DEN-LAX",
-      "snippet": "Ready for Rome? Hotel: Sheraton. Dates: June 15-22. Total stay: 5 nights. Rate: $250. Confirm: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "1449b6fb974595e0",
-      "sender": "Southwest <bookings@southwest.com>",
-      "subject": "Accommodation confirmation",
-      "snippet": "Your stay is confirmed: Beachfront Villa, July 10-17. Check-in: 12:00 PM. Questions? 24/7 support available. Code: TRV123456",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "eb051b4b12cf4fc7",
-      "sender": "TripAdvisor <booking@tripadvisor.com>",
-      "subject": "Check-in reminder for your stay",
-      "snippet": "Confirmation: Downtown Loft in Los Angeles. August 5-12, 10 nights. Code: XYZ67890. Questions? booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "859e2bd7a6dd6812",
-      "sender": "Travel Agency <reservations@travelagency.com>",
-      "subject": "Your 7 night stay confirmed",
-      "snippet": "Lodging confirmed: Beachfront Villa, Paris. July 10-17. Check-in: 2:30 PM. Support 24/7: 1-800-FLIGHTS",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "ddf6e538421a8728",
-      "sender": "Resort Booking <confirmation@resort.com>",
-      "subject": "Your 10 night stay confirmed",
-      "snippet": "Booking secured: Downtown Loft, Tokyo. August 5-12 for $650. Digital keys available: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "c2043747812e17ca",
-      "sender": "Agoda <booking@agoda.com>",
-      "subject": "Flight confirmation: DEN-LAX",
-      "snippet": "Trip confirmed! NYC-LHR to Tokyo + 3 nights at Mountain Lodge. See details: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "f1c525ab07b19f66",
-      "sender": "Hostel <confirm@hostel.com>",
-      "subject": "Airfare confirmation: SFO-NRT",
-      "snippet": "Hotel reservation complete: Hyatt, Los Angeles. August 5-12. Total: $3500. Questions? 1-800-FLIGHTS",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "ef9dd4335450778d",
-      "sender": "Tour Operator <booking@touroperator.com>",
-      "subject": "Confirmation email: DEN-LAX",
-      "snippet": "Booking secured: Beachfront Villa, Paris. June 15-22 for $1850. Digital keys available: https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "5a79f11c02a51c14",
-      "sender": "Vacation Rental <booking@vacationrental.com>",
-      "subject": "Booking details: Paris",
-      "snippet": "Vacation locked in! Paris from August 5. Flights + accommodation. See details: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "c6b999fbf567e617",
-      "sender": "Priceline <confirmation@priceline.com>",
-      "subject": "Your flights are confirmed",
-      "snippet": "Reservation details: Budget Hotel in New York. July 10-17, 7 nights. Confirmation: ABC12345. Support: 1-800-FLIGHTS",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "e17ee024a45a5cc8",
-      "sender": "Resort Booking <confirmation@resort.com>",
-      "subject": "Booking details: Cancun",
-      "snippet": "Your stay at Hilton is reserved! July 10-17, 7 nights. Rate: $100/night. Total: $3500.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "2678cd71db3bb790",
-      "sender": "Resort Booking <confirmation@resort.com>",
-      "subject": "Hotel booking: Sheraton",
-      "snippet": "Welcome to Bangkok! Your Luxury Resort reservation is ready for check-in. Address: 789 Main St. Arrival: June 15 at 12:00 PM.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "f1166d02297aee56",
-      "sender": "Hostel <confirm@hostel.com>",
-      "subject": "Lodging confirmation: Beachfront Villa",
-      "snippet": "Flight SW456 to Barcelona confirmed. Depart: August 5 3:00 PM. Seat 7E. Total: $3500.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "288f83ebd87e2b30",
-      "sender": "Expedia <confirmation@expedia.com>",
-      "subject": "Vacation booked: New York",
-      "snippet": "Your Tokyo vacation is locked in! Flights + hotel totaling $1850. See your complete itinerary: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "89b61bc12e0c4af5",
-      "sender": "Southwest <bookings@southwest.com>",
-      "subject": "Your New York vacation is booked",
-      "snippet": "Flight DL789 to New York confirmed for June 15 at 2:30 PM. Seat: 12A. Boarding pass: https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "62fd8c5c3fbdbd27",
-      "sender": "Hostelworld <booking@hostelworld.com>",
-      "subject": "Reservation confirmed - Boutique Inn",
-      "snippet": "Lodging confirmed: Budget Hotel, New York. June 15-22. Check-in: 4:00 PM. Support 24/7: 1-800-FLIGHTS",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "a6cbae6bdec78e66",
-      "sender": "Alaska Airlines <reservations@alaskaair.com>",
-      "subject": "Airfare confirmation: SFO-NRT",
-      "snippet": "Ready for Tokyo? Hotel: Hilton. Dates: June 15-22. Total stay: 10 nights. Rate: $150. Confirm: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "5530ec592eaeb923",
-      "sender": "Expedia <confirmation@expedia.com>",
-      "subject": "Vacation booked: Paris",
-      "snippet": "Your Tokyo booking is confirmed! Flights + Hilton. August 5-12. Confirmation: XYZ67890.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "2d371a675d1f4802",
-      "sender": "Hostelworld <booking@hostelworld.com>",
-      "subject": "Reservation confirmed Los Angeles",
-      "snippet": "Reservation details: Beachfront Villa in Los Angeles. August 5-12, 10 nights. Confirmation: XYZ67890. Support: 1-800-FLIGHTS",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "670b8206b6c592de",
-      "sender": "Vacation Rental <booking@vacationrental.com>",
-      "subject": "Arrival details for Barcelona",
-      "snippet": "Your flight is booked! UA456 departs 4:00 PM on August 5. Seat: 14F. Total: $1850. https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "444b0be87b648404",
-      "sender": "Travel Agency <reservations@travelagency.com>",
-      "subject": "Flight ticket ready: DL789",
-      "snippet": "Flight B6789 to Cancun confirmed. Depart: June 15 2:30 PM. Seat 7E. Total: $3500.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "7c99aa6f3906f8df",
-      "sender": "Train Travel <booking@amtrak.com>",
-      "subject": "Airline reservation confirmation",
-      "snippet": "Your reservation at Budget Hotel is confirmed for July 10-17. Check-in time is 4:00 PM. Download the HotelTonight app for digital check-in and 24/7 support. Confirmation code: ABC12345",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "a856edadba10ccc0",
-      "sender": "Airbnb <noreply@airbnb.com>",
-      "subject": "Hotel booking: Marriott",
-      "snippet": "Your reservation at Downtown Loft is confirmed for August 5-12. Check-in time is 3:00 PM. Download the HotelTonight app for digital check-in and 24/7 support. Confirmation code: ABC12345",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "ea4388669ce94cbe",
-      "sender": "Vacation Rental <booking@vacationrental.com>",
-      "subject": "Vacation booked: Bangkok",
-      "snippet": "Welcome to Rome! Your Luxury Resort reservation is ready for check-in. Address: 789 Main St. Arrival: August 5 at 12:00 PM.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "a6236688bce25925",
-      "sender": "Tour Operator <booking@touroperator.com>",
-      "subject": "Flight booked: June 15",
-      "snippet": "Your flight to Paris is booked! UA456 departs June 15 at 2:30 PM. Seat 14F. Download your boarding pass 24 hours before departure.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "adbd8df01b373aad",
-      "sender": "Orbitz <booking@orbitz.com>",
-      "subject": "Flight ticket ready: SW456",
-      "snippet": "Confirmation #XYZ67890: 3 nights at Boutique Inn in Bangkok. Arrival August 5. booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "6ab408b8faa56de1",
-      "sender": "Resort Booking <confirmation@resort.com>",
-      "subject": "Your itinerary for Rome",
-      "snippet": "Your flight is booked! UA456 departs 4:00 PM on June 15. Seat: 1B. Total: $650. https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "f12be91e3bfea0b5",
-      "sender": "Southwest <bookings@southwest.com>",
-      "subject": "Vacation booked: Cancun",
-      "snippet": "Welcome to Bangkok! Your Mountain Lodge reservation is ready for check-in. Address: 123 Beach Rd. Arrival: June 15 at 4:00 PM.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "fd92671e62605422",
-      "sender": "Avis <reservation@avis.com>",
-      "subject": "Confirmation email: NYC-LHR",
-      "snippet": "Reservation details: Beachfront Villa in New York. June 15-22, 3 nights. Confirmation: TRV123456. Support: 1-800-FLIGHTS",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "56048d5e681d6db8",
-      "sender": "Tour Operator <booking@touroperator.com>",
-      "subject": "Trip confirmation #ABC12345",
-      "snippet": "Trip confirmed: DL789 + Marriott. Rome, July 10-17. Total: $1250. Itinerary: https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "13eadd99d91ad651",
-      "sender": "Avis <reservation@avis.com>",
-      "subject": "Lodging confirmation: Mountain Lodge",
-      "snippet": "Your reservation at Boutique Inn is confirmed for June 15-22. Check-in time is 2:30 PM. Download the HotelTonight app for digital check-in and 24/7 support. Confirmation code: XYZ67890",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "97ff3bc186aedab7",
-      "sender": "Hotel Tonight <confirm@hoteltonight.com>",
-      "subject": "Lodging reserved: Bangkok",
-      "snippet": "Your stay is booked: 10 nights at Hilton. July 10-17. Rate: $250. Total: $1250.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "04aefab04776908d",
-      "sender": "TripAdvisor <booking@tripadvisor.com>",
-      "subject": "Check-in ready: Marriott",
-      "snippet": "Reservation details: Budget Hotel in Cancun. July 10-17, 3 nights. Confirmation: ABC12345. Support: 1-800-FLIGHTS",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "446e9b7273bdcd79",
-      "sender": "JetBlue <reservations@jetblue.com>",
-      "subject": "Your flights are confirmed",
-      "snippet": "Flight SW456 to Paris confirmed. Depart: July 10 2:30 PM. Seat 1B. Total: $650.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "f7f840f3a2a68913",
-      "sender": "Booking.com <noreply@booking.com>",
-      "subject": "Lodging confirmation: Beachfront Villa",
-      "snippet": "Flight confirmation: DL789 on August 5. NYC-LHR route. Your seat: 7E. Total cost: $1250. https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "02e3c1885df27401",
-      "sender": "Airbnb <noreply@airbnb.com>",
-      "subject": "Hotel booking: Marriott",
-      "snippet": "Trip confirmed: AA123 + Hyatt. Bangkok, July 10-17. Total: $1250. Itinerary: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "e50f4b624ecb919c",
-      "sender": "Hostelworld <booking@hostelworld.com>",
-      "subject": "Trip itinerary enclosed",
-      "snippet": "Welcome to Rome! Your Budget Hotel reservation is ready for check-in. Address: 123 Beach Rd. Arrival: August 5 at 2:30 PM.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "973aea4bfe74e4dc",
-      "sender": "TripAdvisor <booking@tripadvisor.com>",
-      "subject": "Hotel reservation - Marriott",
-      "snippet": "Trip confirmed! SFO-NRT to Paris + 7 nights at Budget Hotel. See details: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "7afbe73c2470def8",
-      "sender": "JetBlue <reservations@jetblue.com>",
-      "subject": "Check-in ready: Hyatt",
-      "snippet": "Trip confirmed! SFO-NRT to Rome + 7 nights at Budget Hotel. See details: https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "54700ed4f7d50814",
-      "sender": "Tour Operator <booking@touroperator.com>",
-      "subject": "Hotel reservation - Hilton",
-      "snippet": "Reservation details: Budget Hotel in Cancun. July 10-17, 7 nights. Confirmation: XYZ67890. Support: 1-800-FLIGHTS",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "256d02d4f15f1ed7",
-      "sender": "Delta <flightinfo@delta.com>",
-      "subject": "Hotel reservation - Marriott",
-      "snippet": "Ready for New York? Hotel: Sheraton. Dates: August 5-12. Total stay: 7 nights. Rate: $250. Confirm: https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "781322c1ce19d909",
-      "sender": "Booking.com <noreply@booking.com>",
-      "subject": "Reservation confirmed Cancun",
-      "snippet": "Your reservation at Beachfront Villa is confirmed for August 5-12. Check-in time is 2:30 PM. Download the Airbnb app for digital check-in and 24/7 support. Confirmation code: ABC12345",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "d4aa163c5b0ccb3f",
-      "sender": "Train Travel <booking@amtrak.com>",
-      "subject": "Your trip to Los Angeles is booked",
-      "snippet": "Ready for Los Angeles? Hotel: Hyatt. Dates: July 10-17. Total stay: 10 nights. Rate: $150. Confirm: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "07ca1d5d4992b1a4",
-      "sender": "Travel Agency <reservations@travelagency.com>",
-      "subject": "Arrival details for Paris",
-      "snippet": "Your reservation at Budget Hotel is confirmed for July 10-17. Check-in time is 3:00 PM. Download the HotelTonight app for digital check-in and 24/7 support. Confirmation code: XYZ67890",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "df6284f61f1a15a5",
-      "sender": "Hotels.com <noreply@hotels.com>",
-      "subject": "Your itinerary for Tokyo",
-      "snippet": "Welcome to Los Angeles! Your Downtown Loft reservation is ready for check-in. Address: 456 Mountain Ave. Arrival: June 15 at 3:00 PM.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "bf31bf834bcc21cf",
-      "sender": "American Airlines <aa@aa.com>",
-      "subject": "Arrival details for Los Angeles",
-      "snippet": "Ready for Los Angeles? Hotel: Marriott. Dates: August 5-12. Total stay: 7 nights. Rate: $85. Confirm: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "ac96c71d298d8ef8",
-      "sender": "TripAdvisor <booking@tripadvisor.com>",
-      "subject": "Your travel details for Tokyo",
-      "snippet": "Flight DL789 to Rome confirmed. Depart: August 5 2:30 PM. Seat 14F. Total: $1250.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "109079e850c968f7",
-      "sender": "Hotels.com <noreply@hotels.com>",
-      "subject": "Flight booked: July 10",
-      "snippet": "Your Rome vacation is locked in! Flights + hotel totaling $3500. See your complete itinerary: https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "74b1051529ab6795",
-      "sender": "Cruise Booking <booking@cruise.com>",
-      "subject": "Trip confirmation #ABC12345",
-      "snippet": "Vacation locked in! Bangkok from July 10. Flights + accommodation. See details: https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "fe799a64ae0f56c7",
-      "sender": "Avis <reservation@avis.com>",
-      "subject": "Your accommodation is booked",
-      "snippet": "Confirmation: Boutique Inn in Paris. August 5-12, 7 nights. Code: TRV123456. Questions? booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "ac6908a7702fc3b5",
-      "sender": "Hotel Tonight <confirm@hoteltonight.com>",
-      "subject": "Your flights are confirmed",
-      "snippet": "Your flight to Paris is booked! DL789 departs July 10 at 12:00 PM. Seat 12A. Download your boarding pass 24 hours before departure.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "517236b3523200f2",
-      "sender": "Booking.com <noreply@booking.com>",
-      "subject": "Your flights are confirmed",
-      "snippet": "Your flight is booked! SW456 departs 2:30 PM on August 5. Seat: 14F. Total: $650. booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "db9a6f72ca001433",
-      "sender": "Agoda <booking@agoda.com>",
-      "subject": "Your flights are confirmed",
-      "snippet": "Flight SW456 to Bangkok confirmed for June 15 at 12:00 PM. Seat: 1B. Boarding pass: booking.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "209f98903c559260",
-      "sender": "Tour Operator <booking@touroperator.com>",
-      "subject": "Your Paris vacation is booked",
-      "snippet": "Everything is set for your trip to Tokyo! You have Marriott booked for 5 nights. Total price: $650. Need to make changes?",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "2031d20d945ea499",
-      "sender": "Travel Agency <reservations@travelagency.com>",
-      "subject": "Reservation confirmed Paris",
-      "snippet": "Your Barcelona vacation is locked in! Flights + hotel totaling $3500. See your complete itinerary: https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "ea47b14ad60dd699",
-      "sender": "Alaska Airlines <reservations@alaskaair.com>",
-      "subject": "Your Tokyo vacation is booked",
-      "snippet": "Flight UA456 to Bangkok confirmed for July 10 at 2:30 PM. Seat: 8C. Boarding pass: https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "5eb78ca84d5531e5",
-      "sender": "United Airlines <reservations@united.com>",
-      "subject": "Your accommodation is booked",
-      "snippet": "Your Tokyo booking is confirmed! Flights + Hilton. August 5-12. Confirmation: TRV123456.",
-      "category": "TRAVEL_BOOKING"
-    },
-    {
-      "id": "260b3068265fbc5e",
-      "sender": "Tour Operator <booking@touroperator.com>",
-      "subject": "Arrival details for Cancun",
-      "snippet": "Flight B6789 to Bangkok confirmed for July 10 at 2:30 PM. Seat: 8C. Boarding pass: https://airbnb.com/...",
-      "category": "TRAVEL_BOOKING"
-    }
-  ]
-}
+[
+  {
+    "id": "147cb8a87917247b",
+    "sender": "Vrbo <noreply@vrbo.com>",
+    "subject": "Booking confirmed: Cancun",
+    "snippet": "Trip confirmed! NYC-LHR to Paris + 10 nights at Boutique Inn. See details: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "6a3ecaa0d53748e6",
+    "sender": "Alaska Airlines <reservations@alaskaair.com>",
+    "subject": "Your trip to Tokyo is booked",
+    "snippet": "Ready for Cancun? Hotel: Marriott. Dates: June 15-22. Total stay: 5 nights. Rate: $250. Confirm: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "b81fffe736a3d5b7",
+    "sender": "Southwest <bookings@southwest.com>",
+    "subject": "Airfare confirmation: DEN-LAX",
+    "snippet": "Vacation locked in! Tokyo from June 15. Flights + accommodation. See details: https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "83b1d3dcd5b5b7f8",
+    "sender": "Car Rental <reservation@hertz.com>",
+    "subject": "Your flights are confirmed",
+    "snippet": "Your Barcelona adventure awaits! Confirmation code: XYZ67890. Flights on June 15. Hotel: Hyatt.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "fd536589d0c351fb",
+    "sender": "Southwest <bookings@southwest.com>",
+    "subject": "Your travel details for Bangkok",
+    "snippet": "Flight confirmation: DL789 on August 5. DEN-LAX route. Your seat: 12A. Total cost: $1250. booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "f45b1f01d7e4116c",
+    "sender": "Hotel Tonight <confirm@hoteltonight.com>",
+    "subject": "Hotel booking: Hilton",
+    "snippet": "Vacation locked in! Rome from July 10. Flights + accommodation. See details: https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "7719a137348b10c8",
+    "sender": "Agoda <booking@agoda.com>",
+    "subject": "Your Cancun vacation is booked",
+    "snippet": "Trip confirmed: B6789 + Hilton. New York, July 10-17. Total: $1250. Itinerary: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "17211cc1ea274f32",
+    "sender": "Vrbo <noreply@vrbo.com>",
+    "subject": "Hotel reservation - Marriott",
+    "snippet": "Confirmation #ABC12345: 3 nights at Downtown Loft in Cancun. Arrival August 5. booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "3962bf42619ff033",
+    "sender": "Vrbo <noreply@vrbo.com>",
+    "subject": "Your travel details for Rome",
+    "snippet": "Flight UA456 to Rome confirmed for July 10 at 12:00 PM. Seat: 7E. Boarding pass: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "c2c4942692097e48",
+    "sender": "Vrbo <noreply@vrbo.com>",
+    "subject": "Confirmation email: NYC-LHR",
+    "snippet": "Flight B6789 to Barcelona confirmed for June 15 at 2:30 PM. Seat: 7E. Boarding pass: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "34dffd3351264c63",
+    "sender": "Car Rental <reservation@hertz.com>",
+    "subject": "Reservation confirmed - Luxury Resort",
+    "snippet": "Hotel reservation complete: Holiday Inn, New York. June 15-22. Total: $3500. Questions? 1-800-FLIGHTS",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "802f820e18c35dfc",
+    "sender": "Airbnb <noreply@airbnb.com>",
+    "subject": "Flight booked: July 10",
+    "snippet": "Ready for Rome? Hotel: Sheraton. Dates: June 15-22. Total stay: 10 nights. Rate: $100. Confirm: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "4b5edb7459735fe0",
+    "sender": "American Airlines <aa@aa.com>",
+    "subject": "Flight booked: July 10",
+    "snippet": "Everything ready for your trip! Flights + accommodation in Barcelona. See itinerary: https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "d0a95de916b0b340",
+    "sender": "JetBlue <reservations@jetblue.com>",
+    "subject": "Airline reservation confirmation",
+    "snippet": "Trip confirmed! SFO-NRT to Paris + 5 nights at Beachfront Villa. See details: https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "3ec7e1452631e38b",
+    "sender": "Avis <reservation@avis.com>",
+    "subject": "Lodging confirmation: Budget Hotel",
+    "snippet": "Booking secured: Downtown Loft, Cancun. July 10-17 for $650. Digital keys available: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "36a69fbe7a7aa31d",
+    "sender": "United Airlines <reservations@united.com>",
+    "subject": "Your trip to Bangkok is booked",
+    "snippet": "Reservation details: Beachfront Villa in Los Angeles. July 10-17, 10 nights. Confirmation: TRV123456. Support: 1-800-FLIGHTS",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "b9b21037cea3bc73",
+    "sender": "United Airlines <reservations@united.com>",
+    "subject": "Your Bangkok vacation is booked",
+    "snippet": "Your stay is confirmed: Downtown Loft, August 5-12. Check-in: 12:00 PM. Questions? 24/7 support available. Code: ABC12345",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "e6881c9b5c51ca14",
+    "sender": "Southwest <bookings@southwest.com>",
+    "subject": "Lodging reserved: Paris",
+    "snippet": "Your flight is booked! AA123 departs 2:30 PM on July 10. Seat: 7E. Total: $1850. booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "91935a197dfead58",
+    "sender": "Budget <booking@budget.com>",
+    "subject": "Your trip to Los Angeles is booked",
+    "snippet": "Your stay at Marriott is reserved! August 5-12, 10 nights. Rate: $150/night. Total: $650.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "6a835867382dc379",
+    "sender": "Trivago <booking@trivago.com>",
+    "subject": "Your trip to Rome is booked",
+    "snippet": "Your stay at Sheraton is reserved! July 10-17, 7 nights. Rate: $100/night. Total: $650.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "0b2a18af09e06a14",
+    "sender": "TripAdvisor <booking@tripadvisor.com>",
+    "subject": "Airfare confirmation: SFO-NRT",
+    "snippet": "Your Bangkok adventure awaits! Confirmation code: ABC12345. Flights on July 10. Hotel: Hyatt.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "dd14b9a57c334dbc",
+    "sender": "Cruise Booking <booking@cruise.com>",
+    "subject": "Your 3 night stay confirmed",
+    "snippet": "Welcome to Rome! Your Budget Hotel reservation is ready for check-in. Address: 789 Main St. Arrival: June 15 at 2:30 PM.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "72be983c6f8d0d57",
+    "sender": "JetBlue <reservations@jetblue.com>",
+    "subject": "Accommodation confirmation",
+    "snippet": "Flight B6789 is confirmed for August 5. Departure: 2:30 PM. Bring your ID and arrive 2 hours early for security. Seat: 12A",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "cce704cc93d0dd15",
+    "sender": "hotels@kayak.com",
+    "subject": "Flight booked: August 5",
+    "snippet": "All set for your getaway! 10 nights at Marriott in Cancun. Total: $1850. View your reservation: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "648a68d36c81035d",
+    "sender": "Agoda <booking@agoda.com>",
+    "subject": "Trip confirmation #ABC12345",
+    "snippet": "Your stay at Hyatt is reserved! August 5-12, 7 nights. Rate: $100/night. Total: $1850.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "25b88a48c19b338b",
+    "sender": "Vacation Rental <booking@vacationrental.com>",
+    "subject": "Confirmation email: SFO-NRT",
+    "snippet": "Welcome to Paris! Your Luxury Resort reservation is ready for check-in. Address: 456 Mountain Ave. Arrival: July 10 at 2:30 PM.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "e510f3254c0805be",
+    "sender": "hotels@kayak.com",
+    "subject": "Vacation booked: Barcelona",
+    "snippet": "Your flight to Barcelona is booked! SW456 departs July 10 at 12:00 PM. Seat 8C. Download your boarding pass 24 hours before departure.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "60b1b92af6bdcbfe",
+    "sender": "Agoda <booking@agoda.com>",
+    "subject": "Your itinerary for Barcelona",
+    "snippet": "Flight confirmation: B6789 on July 10. NYC-LHR route. Your seat: 1B. Total cost: $1850. booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "8dbc1dda14dede6b",
+    "sender": "Airbnb <noreply@airbnb.com>",
+    "subject": "Hotel booking: Hyatt",
+    "snippet": "Your stay is booked: 3 nights at Holiday Inn. June 15-22. Rate: $250. Total: $3500.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "6f5aa185f999a4dd",
+    "sender": "Alaska Airlines <reservations@alaskaair.com>",
+    "subject": "Get ready: Your Bangkok trip",
+    "snippet": "Trip summary: New York from June 15. Flights + 3 nights hotel. Cost: $1850. View: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "7e6d355dfdfb8f98",
+    "sender": "United Airlines <reservations@united.com>",
+    "subject": "Check-in reminder for your stay",
+    "snippet": "Booking secured: Boutique Inn, Paris. June 15-22 for $3500. Digital keys available: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "ee8b3fb33c3e6286",
+    "sender": "Agoda <booking@agoda.com>",
+    "subject": "Flight ticket ready: UA456",
+    "snippet": "Booking secured: Luxury Resort, New York. August 5-12 for $3500. Digital keys available: https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "2081e6cc348f96d9",
+    "sender": "Car Rental <reservation@hertz.com>",
+    "subject": "Your trip to Bangkok is booked",
+    "snippet": "Your Barcelona adventure awaits! Confirmation code: ABC12345. Flights on June 15. Hotel: Hyatt.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "97efdab5a96a82e6",
+    "sender": "Hostelworld <booking@hostelworld.com>",
+    "subject": "Your itinerary for Tokyo",
+    "snippet": "Flight confirmation: B6789 on August 5. DEN-LAX route. Your seat: 14F. Total cost: $1250. https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "ffb3247f985a0884",
+    "sender": "Airbnb <noreply@airbnb.com>",
+    "subject": "Flight booked: July 10",
+    "snippet": "All set for your getaway! 7 nights at Holiday Inn in Los Angeles. Total: $1250. View your reservation: https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "4e29571e590ba390",
+    "sender": "Alaska Airlines <reservations@alaskaair.com>",
+    "subject": "Reservation confirmed - Budget Hotel",
+    "snippet": "Vacation locked in! Bangkok from August 5. Flights + accommodation. See details: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "7e2291f98edc5d61",
+    "sender": "Southwest <bookings@southwest.com>",
+    "subject": "Flight booked: August 5",
+    "snippet": "Reservation details: Budget Hotel in Tokyo. June 15-22, 3 nights. Confirmation: XYZ67890. Support: 1-800-FLIGHTS",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "705b603783ab9c6f",
+    "sender": "Cruise Booking <booking@cruise.com>",
+    "subject": "Your itinerary for Rome",
+    "snippet": "Hotel reservation complete: Hyatt, New York. July 10-17. Total: $650. Questions? 1-800-FLIGHTS",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "f582e1b2e93d08db",
+    "sender": "Expedia <confirmation@expedia.com>",
+    "subject": "Your trip to Cancun is booked",
+    "snippet": "Hotel reservation complete: Hilton, Tokyo. July 10-17. Total: $1850. Questions? 1-800-FLIGHTS",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "6f58a32d200afe94",
+    "sender": "Vrbo <noreply@vrbo.com>",
+    "subject": "Travel confirmation - June 15",
+    "snippet": "Confirmation #TRV123456: 10 nights at Mountain Lodge in Paris. Arrival July 10. booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "6c3cd87cbbb9530c",
+    "sender": "Airbnb <noreply@airbnb.com>",
+    "subject": "Trip itinerary enclosed",
+    "snippet": "Welcome to Cancun! Your Budget Hotel reservation is ready for check-in. Address: 123 Beach Rd. Arrival: August 5 at 12:00 PM.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "08500b31863da084",
+    "sender": "Cruise Booking <booking@cruise.com>",
+    "subject": "Get ready: Your Bangkok trip",
+    "snippet": "Lodging confirmed: Budget Hotel, Tokyo. July 10-17. Check-in: 4:00 PM. Support 24/7: 1-800-FLIGHTS",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "e3e9dea9b87ed1b7",
+    "sender": "Alaska Airlines <reservations@alaskaair.com>",
+    "subject": "Your accommodation is booked",
+    "snippet": "Flight booked: B6789 SFO-NRT on July 10. Your seat: 14F. Download boarding pass: https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "1fa6f738ad618375",
+    "sender": "Travel Agency <reservations@travelagency.com>",
+    "subject": "Trip itinerary enclosed",
+    "snippet": "Your stay is booked: 3 nights at Marriott. August 5-12. Rate: $250. Total: $3500.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "7a9750521785c909",
+    "sender": "TripAdvisor <booking@tripadvisor.com>",
+    "subject": "Trip itinerary enclosed",
+    "snippet": "Flight AA123 to Paris confirmed for June 15 at 4:00 PM. Seat: 1B. Boarding pass: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "f609be28fd220f33",
+    "sender": "Budget <booking@budget.com>",
+    "subject": "Confirmation email: DEN-LAX",
+    "snippet": "Booking secured: Luxury Resort, Paris. July 10-17 for $650. Digital keys available: https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "f9904749c6325d05",
+    "sender": "Hotel Tonight <confirm@hoteltonight.com>",
+    "subject": "Your trip to Bangkok is booked",
+    "snippet": "Welcome to New York! Your Budget Hotel reservation is ready for check-in. Address: 123 Beach Rd. Arrival: August 5 at 4:00 PM.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "5545a778d6c339ea",
+    "sender": "Hotels.com <noreply@hotels.com>",
+    "subject": "Airfare confirmation: NYC-LHR",
+    "snippet": "Flight DL789 to Tokyo confirmed. Depart: August 5 4:00 PM. Seat 12A. Total: $3500.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "562a838a2b3f3d23",
+    "sender": "Priceline <confirmation@priceline.com>",
+    "subject": "Accommodation confirmation",
+    "snippet": "Your New York booking is confirmed! Flights + Hyatt. August 5-12. Confirmation: ABC12345.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "6596c1b8e4713871",
+    "sender": "Cruise Booking <booking@cruise.com>",
+    "subject": "Travel confirmation - July 10",
+    "snippet": "Flight confirmation: AA123 on July 10. DEN-LAX route. Your seat: 8C. Total cost: $650. booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "6488df13a725551c",
+    "sender": "Trivago <booking@trivago.com>",
+    "subject": "Flight booked: July 10",
+    "snippet": "Ready for Tokyo? Hotel: Marriott. Dates: June 15-22. Total stay: 5 nights. Rate: $100. Confirm: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "ae5e4ff838d8b41e",
+    "sender": "Airbnb <noreply@airbnb.com>",
+    "subject": "Airfare confirmation: SFO-NRT",
+    "snippet": "Flight B6789 to Paris confirmed for August 5 at 3:00 PM. Seat: 12A. Boarding pass: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "7c294ecb63dc2f51",
+    "sender": "Hostel <confirm@hostel.com>",
+    "subject": "Your itinerary for New York",
+    "snippet": "Everything is set for your trip to New York! You have Marriott booked for 3 nights. Total price: $3500. Need to make changes?",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "02238620c9cff629",
+    "sender": "American Airlines <aa@aa.com>",
+    "subject": "Flight booked: July 10",
+    "snippet": "Everything is set for your trip to Paris! You have Holiday Inn booked for 7 nights. Total price: $1250. Need to make changes?",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "0866b1e48d0b1cbf",
+    "sender": "Vacation Rental <booking@vacationrental.com>",
+    "subject": "Get ready: Your Rome trip",
+    "snippet": "Your flight to Los Angeles is booked! B6789 departs August 5 at 4:00 PM. Seat 12A. Download your boarding pass 24 hours before departure.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "cc81f1571922bd86",
+    "sender": "Cruise Booking <booking@cruise.com>",
+    "subject": "Travel confirmation - June 15",
+    "snippet": "Your Cancun booking is confirmed! Flights + Marriott. July 10-17. Confirmation: XYZ67890.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "c97a82a7ac9afab9",
+    "sender": "Car Rental <reservation@hertz.com>",
+    "subject": "Your 10 night stay confirmed",
+    "snippet": "Ready for Tokyo? Hotel: Sheraton. Dates: August 5-12. Total stay: 5 nights. Rate: $150. Confirm: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "1e333c1f34f23f9d",
+    "sender": "Airbnb <noreply@airbnb.com>",
+    "subject": "Lodging confirmation: Boutique Inn",
+    "snippet": "Trip confirmed! SFO-NRT to New York + 7 nights at Downtown Loft. See details: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "1d5079fed95c19f4",
+    "sender": "Hostel <confirm@hostel.com>",
+    "subject": "Flight ticket ready: DL789",
+    "snippet": "Your stay at Holiday Inn is reserved! July 10-17, 10 nights. Rate: $85/night. Total: $1250.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "2220dfa95f3e4cd4",
+    "sender": "Orbitz <booking@orbitz.com>",
+    "subject": "Arrival details for Los Angeles",
+    "snippet": "Ready for Cancun? Hotel: Sheraton. Dates: June 15-22. Total stay: 7 nights. Rate: $150. Confirm: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "85daa8ea4a5aa200",
+    "sender": "Hotels.com <noreply@hotels.com>",
+    "subject": "Lodging confirmation: Mountain Lodge",
+    "snippet": "Your New York vacation is locked in! Flights + hotel totaling $1850. See your complete itinerary: https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "24f9d6431b55d10d",
+    "sender": "Agoda <booking@agoda.com>",
+    "subject": "Booking details: Paris",
+    "snippet": "Your Rome vacation is locked in! Flights + hotel totaling $3500. See your complete itinerary: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "5bee9c22d04a46df",
+    "sender": "Orbitz <booking@orbitz.com>",
+    "subject": "Reservation confirmed Paris",
+    "snippet": "Your stay at Sheraton is reserved! August 5-12, 10 nights. Rate: $150/night. Total: $650.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "0b11f8a65f2988e0",
+    "sender": "Hotels.com <noreply@hotels.com>",
+    "subject": "Vacation booked: New York",
+    "snippet": "Your flight to Rome is booked! AA123 departs August 5 at 2:30 PM. Seat 7E. Download your boarding pass 24 hours before departure.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "26317cb3f4998bb4",
+    "sender": "Tour Operator <booking@touroperator.com>",
+    "subject": "Check-in reminder for your stay",
+    "snippet": "Your flight to Paris is booked! B6789 departs August 5 at 12:00 PM. Seat 1B. Download your boarding pass 24 hours before departure.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "97899a2349ae5104",
+    "sender": "Expedia <confirmation@expedia.com>",
+    "subject": "Get ready: Your Tokyo trip",
+    "snippet": "Your New York vacation is locked in! Flights + hotel totaling $3500. See your complete itinerary: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "22cb8deec4995a5f",
+    "sender": "HomeAway <noreply@homeaway.com>",
+    "subject": "Check-in reminder for your stay",
+    "snippet": "Your Tokyo adventure awaits! Confirmation code: TRV123456. Flights on August 5. Hotel: Hilton.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "e9eab0fb83a77b89",
+    "sender": "United Airlines <reservations@united.com>",
+    "subject": "Trip itinerary enclosed",
+    "snippet": "Flight AA123 to Los Angeles confirmed for June 15 at 4:00 PM. Seat: 14F. Boarding pass: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "bdd64c5de77dcc50",
+    "sender": "United Airlines <reservations@united.com>",
+    "subject": "Booking confirmed: Tokyo",
+    "snippet": "Your flight to Cancun is booked! SW456 departs July 10 at 12:00 PM. Seat 1B. Download your boarding pass 24 hours before departure.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "f5f484a8d1fd5436",
+    "sender": "Priceline <confirmation@priceline.com>",
+    "subject": "Airfare confirmation: DEN-LAX",
+    "snippet": "All set for your getaway! 3 nights at Hilton in Paris. Total: $1850. View your reservation: https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "42af7fd417205844",
+    "sender": "Southwest <bookings@southwest.com>",
+    "subject": "Your itinerary for Los Angeles",
+    "snippet": "Flight AA123 is confirmed for August 5. Departure: 2:30 PM. Bring your ID and arrive 2 hours early for security. Seat: 1B",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "3ca8786f398a8252",
+    "sender": "TripAdvisor <booking@tripadvisor.com>",
+    "subject": "Get ready: Your Rome trip",
+    "snippet": "Ready for New York? Hotel: Holiday Inn. Dates: June 15-22. Total stay: 10 nights. Rate: $250. Confirm: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "376c58815b98fac3",
+    "sender": "Expedia <confirmation@expedia.com>",
+    "subject": "Booking details: New York",
+    "snippet": "Everything is set for your trip to Tokyo! You have Marriott booked for 10 nights. Total price: $1850. Need to make changes?",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "1fabcfe7bb1d3e5c",
+    "sender": "Agoda <booking@agoda.com>",
+    "subject": "Flight booked: June 15",
+    "snippet": "Flight confirmation: AA123 on June 15. SFO-NRT route. Your seat: 14F. Total cost: $650. https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "99acd45dee6df1f8",
+    "sender": "Vrbo <noreply@vrbo.com>",
+    "subject": "Your Los Angeles vacation is booked",
+    "snippet": "Your Paris booking is confirmed! Flights + Hyatt. June 15-22. Confirmation: ABC12345.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "547864c13b526d9e",
+    "sender": "Hostel <confirm@hostel.com>",
+    "subject": "Arrival details for Tokyo",
+    "snippet": "All set for your getaway! 5 nights at Sheraton in Tokyo. Total: $1250. View your reservation: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "9adb06d14110f54d",
+    "sender": "Avis <reservation@avis.com>",
+    "subject": "Reservation confirmed Rome",
+    "snippet": "Your reservation at Boutique Inn is confirmed for August 5-12. Check-in time is 12:00 PM. Download the Booking app for digital check-in and 24/7 support. Confirmation code: ABC12345",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "51c119a8d6b301a4",
+    "sender": "Hotels.com <noreply@hotels.com>",
+    "subject": "Your trip to Barcelona is booked",
+    "snippet": "Confirmation #ABC12345: 10 nights at Beachfront Villa in New York. Arrival August 5. booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "0f6a1e55b2d2e862",
+    "sender": "Tour Operator <booking@touroperator.com>",
+    "subject": "Flight booked: July 10",
+    "snippet": "Vacation locked in! New York from August 5. Flights + accommodation. See details: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "6f7515783c2e5149",
+    "sender": "Vrbo <noreply@vrbo.com>",
+    "subject": "Your Bangkok vacation is booked",
+    "snippet": "Your Cancun adventure awaits! Confirmation code: ABC12345. Flights on July 10. Hotel: Marriott.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "48aa2fc9f9d63f65",
+    "sender": "Hotels.com <noreply@hotels.com>",
+    "subject": "Your itinerary for Tokyo",
+    "snippet": "Flight UA456 to Barcelona confirmed. Depart: July 10 3:00 PM. Seat 14F. Total: $1250.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "b466f1309821d04a",
+    "sender": "TripAdvisor <booking@tripadvisor.com>",
+    "subject": "Booking details: Rome",
+    "snippet": "Flight confirmation: AA123 on July 10. DEN-LAX route. Your seat: 7E. Total cost: $1850. booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "b24c5223887094b9",
+    "sender": "Travel Agency <reservations@travelagency.com>",
+    "subject": "Arrival details for New York",
+    "snippet": "Confirmation #ABC12345: 10 nights at Boutique Inn in Paris. Arrival June 15. https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "c55eb11b00fd015c",
+    "sender": "Resort Booking <confirmation@resort.com>",
+    "subject": "Check-in ready: Sheraton",
+    "snippet": "Ready for Tokyo? Hotel: Marriott. Dates: July 10-17. Total stay: 3 nights. Rate: $150. Confirm: https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "9f7c6d5238a70581",
+    "sender": "TripAdvisor <booking@tripadvisor.com>",
+    "subject": "Check-in ready: Holiday Inn",
+    "snippet": "Trip confirmed! DEN-LAX to Rome + 10 nights at Mountain Lodge. See details: https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "6d7656f0be0a4cc1",
+    "sender": "JetBlue <reservations@jetblue.com>",
+    "subject": "Trip itinerary enclosed",
+    "snippet": "Your Los Angeles adventure awaits! Confirmation code: TRV123456. Flights on August 5. Hotel: Hilton.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "ec938e4ab0af3f95",
+    "sender": "Resort Booking <confirmation@resort.com>",
+    "subject": "Check-in reminder for your stay",
+    "snippet": "Ready for Los Angeles? Hotel: Hyatt. Dates: July 10-17. Total stay: 3 nights. Rate: $150. Confirm: https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "073ecb8771d2b3f3",
+    "sender": "Avis <reservation@avis.com>",
+    "subject": "Travel confirmation - August 5",
+    "snippet": "Your flight is booked! AA123 departs 2:30 PM on August 5. Seat: 12A. Total: $1250. https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "27d0cafa3cf774f2",
+    "sender": "Travel Agency <reservations@travelagency.com>",
+    "subject": "Your Bangkok vacation is booked",
+    "snippet": "Reservation details: Downtown Loft in Paris. August 5-12, 7 nights. Confirmation: XYZ67890. Support: 1-800-FLIGHTS",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "22dc019a4759e956",
+    "sender": "Tour Operator <booking@touroperator.com>",
+    "subject": "Your travel details for Cancun",
+    "snippet": "Flight SW456 to New York confirmed. Depart: August 5 12:00 PM. Seat 8C. Total: $650.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "b60959f5b418b184",
+    "sender": "Agoda <booking@agoda.com>",
+    "subject": "Vacation booked: Rome",
+    "snippet": "Your flight is booked! B6789 departs 2:30 PM on July 10. Seat: 12A. Total: $650. https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "87dbbbf87eb8b5fb",
+    "sender": "Priceline <confirmation@priceline.com>",
+    "subject": "Your itinerary for Rome",
+    "snippet": "Flight SW456 to Rome confirmed for July 10 at 2:30 PM. Seat: 7E. Boarding pass: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "45a289121f0014ed",
+    "sender": "Southwest <bookings@southwest.com>",
+    "subject": "Check-in ready: Marriott",
+    "snippet": "Confirmation #ABC12345: 10 nights at Luxury Resort in Rome. Arrival July 10. booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "70820883a40c1cd5",
+    "sender": "hotels@kayak.com",
+    "subject": "Travel confirmation - August 5",
+    "snippet": "Flight B6789 is confirmed for July 10. Departure: 12:00 PM. Bring your ID and arrive 2 hours early for security. Seat: 1B",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "5ee08afc6f5f3e65",
+    "sender": "Booking.com <noreply@booking.com>",
+    "subject": "Confirmation email: NYC-LHR",
+    "snippet": "Vacation locked in! Bangkok from June 15. Flights + accommodation. See details: https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "b3138529477f3a43",
+    "sender": "Hostel <confirm@hostel.com>",
+    "subject": "Hotel reservation - Sheraton",
+    "snippet": "Vacation locked in! Tokyo from August 5. Flights + accommodation. See details: https://airbnb.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "b271b1eeb10d210d",
+    "sender": "Vrbo <noreply@vrbo.com>",
+    "subject": "Your accommodation is booked",
+    "snippet": "Your reservation at Mountain Lodge is confirmed for August 5-12. Check-in time is 3:00 PM. Download the Booking app for digital check-in and 24/7 support. Confirmation code: ABC12345",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "901da34b5d96be50",
+    "sender": "hotels@kayak.com",
+    "subject": "Trip confirmation #TRV123456",
+    "snippet": "Your New York vacation is locked in! Flights + hotel totaling $1850. See your complete itinerary: booking.com/...",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "aa5e0248424ccc32",
+    "sender": "Vacation Rental <booking@vacationrental.com>",
+    "subject": "Trip itinerary enclosed",
+    "snippet": "Your stay is booked: 3 nights at Hyatt. June 15-22. Rate: $85. Total: $3500.",
+    "category": "TRAVEL_BOOKING"
+  },
+  {
+    "id": "c252640da762cfe6",
+    "sender": "Budget <booking@budget.com>",
+    "subject": "Your New York vacation is booked",
+    "snippet": "Your Bangkok booking is confirmed! Flights + Hilton. August 5-12. Confirmation: XYZ67890.",
+    "category": "TRAVEL_BOOKING"
+  }
+]

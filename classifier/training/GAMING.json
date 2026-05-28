@@ -1,704 +1,702 @@
-{
-  "emails": [
-    {
-      "id": "31944432915622d4",
-      "sender": "Rockstar Games <noreply@rockstargames.com>",
-      "subject": "Daily rewards waiting",
-      "snippet": "You've reached 100 wins playtime in Fortnite! Commemorative items: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "ff1b37312cde7047",
-      "sender": "Xbox <xbox-noreply@microsoft.com>",
-      "subject": "Daily rewards waiting",
-      "snippet": "Elden Ring expansion pack released! New storyline, 20 quests. Download now: $19.99.",
-      "category": "GAMING"
-    },
-    {
-      "id": "da9bc0cd1e0f439b",
-      "sender": "Nintendo <noreply@nintendo.com>",
-      "subject": "Tournament starting soon",
-      "snippet": "Sarah is now playing Valorant. Join them or queue up for a match. 3 of your friends are online right now.",
-      "category": "GAMING"
-    },
-    {
-      "id": "22932609ff7394d1",
-      "sender": "Minecraft <noreply@minecraft.net>",
-      "subject": "Special offer on Call of Duty",
-      "snippet": "Minecraft expansion pack released! New storyline, 20 quests. Download now: $29.99.",
-      "category": "GAMING"
-    },
-    {
-      "id": "dc962ff7d43d3829",
-      "sender": "Nintendo <noreply@nintendo.com>",
-      "subject": "You've earned rewards",
-      "snippet": "New patch for Minecraft: bug fixes, balance patches. Download now: 1500MB.",
-      "category": "GAMING"
-    },
-    {
-      "id": "057ccce0fba92486",
-      "sender": "Twitch <noreply@twitch.tv>",
-      "subject": "Leaderboard update",
-      "snippet": "Store update: New items available. Featured: Dragon Skin. Check out: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "c9e7e493c555ad40",
-      "sender": "Square Enix <noreply@squareenix.com>",
-      "subject": "Leaderboard update",
-      "snippet": "Claim your free copy of Fortnite now! This offer is available for the next 24 hours. It'll be added to your library permanently. Redeem now: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "834081f18640ad5e",
-      "sender": "Bethesda <noreply@bethesda.net>",
-      "subject": "New achievement unlocked!",
-      "snippet": "Seasonal rewards unlocked: skins, weapons. Claim them before July 15. Inventory: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "cad0e38ba6313a45",
-      "sender": "Game Club <noreply@gameclub.com>",
-      "subject": "New multiplayer event",
-      "snippet": "Your Cyberpunk 2077 daily rewards are ready to claim: daily chest. Log in now: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "65e794a798614ac6",
-      "sender": "Itch.io <noreply@itch.io>",
-      "subject": "DLC released: Minecraft",
-      "snippet": "You've reached 1000 hours playtime in Fortnite! Commemorative items: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "c8359f4da31ee8a8",
-      "sender": "Konami <noreply@konami.com>",
-      "subject": "Daily rewards waiting",
-      "snippet": "Multiplayer event starting: PvP Tournament. Duration: June 1-7. Win exclusive skin! Details: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "7cbfe1587dc1e302",
-      "sender": "Valve <noreply@valvesoftware.com>",
-      "subject": "Pre-order bonus unlocked",
-      "snippet": "Your League of Legends stats for this week: 120 hours played. Compare with friends: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "169ccb60a613eb70",
-      "sender": "Itch.io <noreply@itch.io>",
-      "subject": "Limited time offer",
-      "snippet": "Tournament announced: Summer Clash. Prize pool: ${prize}. Register by June 30: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "d06caef1fa003436",
-      "sender": "Twitch <noreply@twitch.tv>",
-      "subject": "New multiplayer event",
-      "snippet": "Store update: New items available. Featured: Golden Sword. Check out: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "7c26aef67b952cb2",
-      "sender": "Bethesda <noreply@bethesda.net>",
-      "subject": "New achievement unlocked!",
-      "snippet": "Store update: New items available. Featured: Dragon Skin. Check out: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "56df8202099d59ea",
-      "sender": "Xbox Game Pass <xgamepass@microsoft.com>",
-      "subject": "Update available: Among Us",
-      "snippet": "Your Valorant stats for this week: 120 hours played. Compare with friends: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "0840a578b43b1d44",
-      "sender": "Minecraft <noreply@minecraft.net>",
-      "subject": "Daily rewards waiting",
-      "snippet": "Your Call of Duty stats for this week: 45 wins, 2.5 K/D. Compare with friends: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "a8055ddbb91660f4",
-      "sender": "PlayStationNetwork <psn@playstation.net>",
-      "subject": "Leaderboard update",
-      "snippet": "Among Us expansion pack released! New storyline, 20 quests. Download now: $29.99.",
-      "category": "GAMING"
-    },
-    {
-      "id": "cf5728744685b3da",
-      "sender": "Roblox <noreply@roblox.com>",
-      "subject": "New multiplayer event",
-      "snippet": "Achievement rank up! You're now Gold in Elden Ring. Progress: 78%. View profile: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "3f69e97441b95883",
-      "sender": "CD Projekt <noreply@cdprojekt.com>",
-      "subject": "New achievement unlocked!",
-      "snippet": "Multiplayer event starting: PvP Tournament. Duration: This weekend. Win exclusive skin! Details: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "457e9c22cba00cb7",
-      "sender": "Riot Games <noreply@riotgames.com>",
-      "subject": "Leaderboard update",
-      "snippet": "Store update: New items available. Featured: Golden Sword. Check out: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "f687f9aee478a5b0",
-      "sender": "Riot Games <noreply@riotgames.com>",
-      "subject": "Your friend Mike started playing Elden Ring",
-      "snippet": "Fortnite expansion pack released! New storyline, 20 quests. Download now: $29.99.",
-      "category": "GAMING"
-    },
-    {
-      "id": "005487242425ea85",
-      "sender": "Steam <noreply@steampowered.com>",
-      "subject": "New multiplayer event",
-      "snippet": "Exclusive pre-order: League of Legends. Get bonus early access when you pre-order. Available: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "8e530d13f365a616",
-      "sender": "Valve <noreply@valvesoftware.com>",
-      "subject": "Exclusive game deal",
-      "snippet": "New season in Fortnite! Battle pass costs 14.99 and includes skins, emotes, badges. Check out the new content: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "1ec43220174b6ed5",
-      "sender": "Twitch <noreply@twitch.tv>",
-      "subject": "New achievement unlocked!",
-      "snippet": "Exclusive pre-order: Elden Ring. Get bonus exclusive cosmetic when you pre-order. Available: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "1cb3faf8ad4d3089",
-      "sender": "Game Club <noreply@gameclub.com>",
-      "subject": "Leaderboard update",
-      "snippet": "You unlocked the achievement \"First Blood\" in Minecraft! You're on a roll! Keep playing to unlock more rewards.",
-      "category": "GAMING"
-    },
-    {
-      "id": "0792806f9bbe36fd",
-      "sender": "Capcom <noreply@capcom.com>",
-      "subject": "Daily rewards waiting",
-      "snippet": "Your Minecraft stats for this week: 120 hours played. Compare with friends: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "fb5ed35c1747b151",
-      "sender": "Game Club <noreply@gameclub.com>",
-      "subject": "Battle pass ready",
-      "snippet": "Tournament announced: Summer Clash. Prize pool: ${prize}. Register by June 30: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "7b16be70b20f3472",
-      "sender": "Xbox <xbox-noreply@microsoft.com>",
-      "subject": "Pre-order bonus unlocked",
-      "snippet": "New season in Fortnite! Battle pass costs 9.99 and includes skins, emotes, badges. Check out the new content: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "f6cd3518ca770078",
-      "sender": "Xbox Game Pass <xgamepass@microsoft.com>",
-      "subject": "Special offer on Among Us",
-      "snippet": "New cosmetic available: Emote. Only 500 available. Get yours: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "73b6876bd2923123",
-      "sender": "GOG <noreply@gog.com>",
-      "subject": "Pre-order bonus unlocked",
-      "snippet": "You have 500 wins this season! Your rank: Gold 1. Keep climbing the leaderboard: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "7816609803f6d326",
-      "sender": "Discord <noreply@discord.com>",
-      "subject": "Seasonal event: League of Legends",
-      "snippet": "Flash sale: Among Us is 25% off for the next 24 hours! Price: $7.99. Buy now: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "29fb94442de8ba20",
-      "sender": "Roblox <noreply@roblox.com>",
-      "subject": "Pre-order bonus unlocked",
-      "snippet": "Sarah is now playing Valorant. Join them or queue up for a match. 7 of your friends are online right now.",
-      "category": "GAMING"
-    },
-    {
-      "id": "2a2068c4612ce24b",
-      "sender": "Activision <noreply@activision.com>",
-      "subject": "DLC released: Call of Duty",
-      "snippet": "Multiplayer event starting: PvP Tournament. Duration: June 1-7. Win exclusive skin! Details: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "d4143c633fd176d4",
-      "sender": "PlayStation Plus <psplus@sony.com>",
-      "subject": "New multiplayer event",
-      "snippet": "Your Cyberpunk 2077 stats for this week: 120 hours played. Compare with friends: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "c0d14d14425199ad",
-      "sender": "Minecraft <noreply@minecraft.net>",
-      "subject": "Game sale: Minecraft",
-      "snippet": "New cosmetic available: Emote. Only 500 available. Get yours: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "85f8489b02c9e34d",
-      "sender": "Epic Games <noreply@epicgames.com>",
-      "subject": "Battle pass ready",
-      "snippet": "You've reached 100 wins playtime in League of Legends! Commemorative items: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "6fdbcca14e5f0ef4",
-      "sender": "Rockstar Games <noreply@rockstargames.com>",
-      "subject": "Special offer on League of Legends",
-      "snippet": "Your Valorant daily rewards are ready to claim: 500 gold. Log in now: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "aa2d26231526e2e8",
-      "sender": "PlayStationNetwork <psn@playstation.net>",
-      "subject": "Friend request from Jordan",
-      "snippet": "Exclusive pre-order: Elden Ring. Get bonus early access when you pre-order. Available: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "09a1d9e72dc4825f",
-      "sender": "Twitch <noreply@twitch.tv>",
-      "subject": "Limited time offer",
-      "snippet": "Alex is now playing League of Legends. Join them or queue up for a match. 12 of your friends are online right now.",
-      "category": "GAMING"
-    },
-    {
-      "id": "ec27afd6c81c701b",
-      "sender": "Square Enix <noreply@squareenix.com>",
-      "subject": "Leaderboard update",
-      "snippet": "New cosmetic available: Emote. Only 500 available. Get yours: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "c314fb4888821749",
-      "sender": "Unity <noreply@unity.com>",
-      "subject": "Game sale: Call of Duty",
-      "snippet": "You have 150 wins this season! Your rank: Diamond 3. Keep climbing the leaderboard: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "3a6e5a6bb5d85eab",
-      "sender": "Nintendo <noreply@nintendo.com>",
-      "subject": "Update available: Elden Ring",
-      "snippet": "Multiplayer event starting: Battle Royale Event. Duration: June 1-7. Win exclusive skin! Details: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "4069560e8cdfe220",
-      "sender": "CD Projekt <noreply@cdprojekt.com>",
-      "subject": "Friend request from Alex",
-      "snippet": "Jordan is now playing Minecraft. Join them or queue up for a match. 12 of your friends are online right now.",
-      "category": "GAMING"
-    },
-    {
-      "id": "4f192b8070b28c76",
-      "sender": "Roblox <noreply@roblox.com>",
-      "subject": "Seasonal event: Elden Ring",
-      "snippet": "Your Call of Duty stats for this week: 45 wins, 2.5 K/D. Compare with friends: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "9592ac1f1e438f1c",
-      "sender": "Konami <noreply@konami.com>",
-      "subject": "DLC released: Valorant",
-      "snippet": "You have 150 wins this season! Your rank: Diamond 3. Keep climbing the leaderboard: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "70a205393b82e88a",
-      "sender": "Xbox <xbox-noreply@microsoft.com>",
-      "subject": "Daily rewards waiting",
-      "snippet": "New patch for Elden Ring: bug fixes, balance patches. Download now: 1500MB.",
-      "category": "GAMING"
-    },
-    {
-      "id": "e4287aee2af30afb",
-      "sender": "Capcom <noreply@capcom.com>",
-      "subject": "Special offer on Valorant",
-      "snippet": "New cosmetic available: Emote. Only 500 available. Get yours: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "9df0af8b93c8869a",
-      "sender": "Konami <noreply@konami.com>",
-      "subject": "Daily rewards waiting",
-      "snippet": "Your Elden Ring daily rewards are ready to claim: daily chest. Log in now: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "4f2368db0494438c",
-      "sender": "PlayStation Plus <psplus@sony.com>",
-      "subject": "Seasonal event: Valorant",
-      "snippet": "Elden Ring expansion pack released! New storyline, 20 quests. Download now: $19.99.",
-      "category": "GAMING"
-    },
-    {
-      "id": "f4aab3591c707a3a",
-      "sender": "Itch.io <noreply@itch.io>",
-      "subject": "Game sale: Call of Duty",
-      "snippet": "You've reached 100 wins playtime in Valorant! Commemorative items: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "5b5aff9b451548ce",
-      "sender": "Blizzard <noreply@blizzard.com>",
-      "subject": "Daily rewards waiting",
-      "snippet": "Mike sent you a friend request on Steam. 3 mutual friends. Accept? https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "f9ac3eb3e741077d",
-      "sender": "Bandai Namco <noreply@bandainamco.com>",
-      "subject": "Free game offer: Fortnite",
-      "snippet": "Jordan sent you a friend request on Steam. 7 mutual friends. Accept? epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "3ab90846a76103a3",
-      "sender": "Rockstar Games <noreply@rockstargames.com>",
-      "subject": "Battle pass ready",
-      "snippet": "New season in Minecraft! Battle pass costs 9.99 and includes skins, emotes, badges. Check out the new content: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "62699aae8d72dc6f",
-      "sender": "Bethesda <noreply@bethesda.net>",
-      "subject": "Special offer on League of Legends",
-      "snippet": "You have 500 wins this season! Your rank: Diamond 3. Keep climbing the leaderboard: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "0408dc092d3e4108",
-      "sender": "Capcom <noreply@capcom.com>",
-      "subject": "Daily rewards waiting",
-      "snippet": "Elden Ring expansion pack released! New storyline, 20 quests. Download now: $19.99.",
-      "category": "GAMING"
-    },
-    {
-      "id": "f5f46e843314cb72",
-      "sender": "CD Projekt <noreply@cdprojekt.com>",
-      "subject": "You've earned rewards",
-      "snippet": "Sarah is now playing Fortnite. Join them or queue up for a match. 7 of your friends are online right now.",
-      "category": "GAMING"
-    },
-    {
-      "id": "326378876bc3d537",
-      "sender": "Capcom <noreply@capcom.com>",
-      "subject": "Daily rewards waiting",
-      "snippet": "Flash sale: Among Us is 50% off for the next 24 hours! Price: $9.99. Buy now: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "f2f1e013bc793381",
-      "sender": "Ubisoft <noreply@ubisoft.com>",
-      "subject": "Your friend Alex started playing Among Us",
-      "snippet": "Your Fortnite daily rewards are ready to claim: daily chest. Log in now: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "a486acdc2d3ae392",
-      "sender": "Discord <noreply@discord.com>",
-      "subject": "Fortnite is now available",
-      "snippet": "You unlocked the achievement \"Legend\" in Among Us! You're on a roll! Keep playing to unlock more rewards.",
-      "category": "GAMING"
-    },
-    {
-      "id": "29defa448969c960",
-      "sender": "Blizzard <noreply@blizzard.com>",
-      "subject": "You've earned rewards",
-      "snippet": "Exclusive pre-order: Valorant. Get bonus early access when you pre-order. Available: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "572196743fd72c2f",
-      "sender": "Nintendo <noreply@nintendo.com>",
-      "subject": "Battle pass ready",
-      "snippet": "Flash sale: Valorant is 25% off for the next 48 hours! Price: $4.99. Buy now: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "97adf862a5467a0a",
-      "sender": "Minecraft <noreply@minecraft.net>",
-      "subject": "Friend request from Alex",
-      "snippet": "Store update: New items available. Featured: Dragon Skin. Check out: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "f514349b2fe51e67",
-      "sender": "Minecraft <noreply@minecraft.net>",
-      "subject": "New season: Call of Duty",
-      "snippet": "Jordan sent you a friend request on Steam. 7 mutual friends. Accept? epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "98bd88561a1e3990",
-      "sender": "Xbox Game Pass <xgamepass@microsoft.com>",
-      "subject": "Fortnite is now available",
-      "snippet": "Your Cyberpunk 2077 stats for this week: 45 wins, 2.5 K/D. Compare with friends: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "0dc48a892b5435c5",
-      "sender": "GOG <noreply@gog.com>",
-      "subject": "Update available: Call of Duty",
-      "snippet": "Guild/Squad activity: 12 members online. Latest news: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "b47c2b7936cd7371",
-      "sender": "Nintendo <noreply@nintendo.com>",
-      "subject": "Seasonal event: Elden Ring",
-      "snippet": "Store update: New items available. Featured: Golden Sword. Check out: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "d71247dc3e1d3bfe",
-      "sender": "Roblox <noreply@roblox.com>",
-      "subject": "Limited time offer",
-      "snippet": "Alex is now playing Fortnite. Join them or queue up for a match. 7 of your friends are online right now.",
-      "category": "GAMING"
-    },
-    {
-      "id": "79e7dd8d55771c4d",
-      "sender": "Xbox Game Pass <xgamepass@microsoft.com>",
-      "subject": "Game sale: Fortnite",
-      "snippet": "You have 500 wins this season! Your rank: Diamond 3. Keep climbing the leaderboard: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "2109a986db3c09df",
-      "sender": "Roblox <noreply@roblox.com>",
-      "subject": "Friend request from Mike",
-      "snippet": "Call of Duty expansion pack released! New storyline, 20 quests. Download now: $29.99.",
-      "category": "GAMING"
-    },
-    {
-      "id": "19b758e9f2bfff58",
-      "sender": "Riot Games <noreply@riotgames.com>",
-      "subject": "Friend request from Sarah",
-      "snippet": "Mike is now playing Minecraft. Join them or queue up for a match. 7 of your friends are online right now.",
-      "category": "GAMING"
-    },
-    {
-      "id": "75a3fdb824451032",
-      "sender": "Minecraft <noreply@minecraft.net>",
-      "subject": "Game sale: Minecraft",
-      "snippet": "Flash sale: League of Legends is 75% off for the next 48 hours! Price: $9.99. Buy now: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "dc8bcf4768281a9f",
-      "sender": "Square Enix <noreply@squareenix.com>",
-      "subject": "New season: Minecraft",
-      "snippet": "Achievement rank up! You're now Diamond in Cyberpunk 2077. Progress: 92%. View profile: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "6b845b00ee0d9894",
-      "sender": "Riot Games <noreply@riotgames.com>",
-      "subject": "Free game offer: Fortnite",
-      "snippet": "Claim your free copy of Valorant now! This offer is available for the next 24 hours. It'll be added to your library permanently. Redeem now: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "f7536b87cd3057e8",
-      "sender": "Unity <noreply@unity.com>",
-      "subject": "Leaderboard update",
-      "snippet": "You've reached 100 wins playtime in Elden Ring! Commemorative items: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "74cd5a32e22035b3",
-      "sender": "Game Club <noreply@gameclub.com>",
-      "subject": "Tournament starting soon",
-      "snippet": "New cosmetic available: Emote. Only 500 available. Get yours: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "1a729072ed92bc9c",
-      "sender": "PlayStationNetwork <psn@playstation.net>",
-      "subject": "Tournament starting soon",
-      "snippet": "Fortnite expansion pack released! New storyline, 20 quests. Download now: $29.99.",
-      "category": "GAMING"
-    },
-    {
-      "id": "5f511e5f57192ecb",
-      "sender": "Battle.net <noreply@battle.net>",
-      "subject": "Call of Duty is now available",
-      "snippet": "New patch for Elden Ring: bug fixes, balance patches. Download now: 1500MB.",
-      "category": "GAMING"
-    },
-    {
-      "id": "0a44a79520a53ba1",
-      "sender": "Blizzard <noreply@blizzard.com>",
-      "subject": "Free game offer: Minecraft",
-      "snippet": "You've reached 1000 hours playtime in Call of Duty! Commemorative items: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "d82aa2d8f327f625",
-      "sender": "Xbox Game Pass <xgamepass@microsoft.com>",
-      "subject": "Your friend Alex started playing Call of Duty",
-      "snippet": "Achievement rank up! You're now Platinum in Minecraft. Progress: 78%. View profile: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "5b4c6c2aa274b6da",
-      "sender": "Nintendo <noreply@nintendo.com>",
-      "subject": "Seasonal event: Elden Ring",
-      "snippet": "Seasonal rewards unlocked: skins, weapons. Claim them before July 15. Inventory: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "e64b80fc66675429",
-      "sender": "Konami <noreply@konami.com>",
-      "subject": "Daily rewards waiting",
-      "snippet": "New season in Elden Ring! Battle pass costs 14.99 and includes skins, emotes, badges. Check out the new content: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "18e9641ab30d4628",
-      "sender": "Nintendo <noreply@nintendo.com>",
-      "subject": "Exclusive game deal",
-      "snippet": "Mike sent you a friend request on Xbox. 12 mutual friends. Accept? epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "c69b24ce17cc7d59",
-      "sender": "Roblox <noreply@roblox.com>",
-      "subject": "Daily rewards waiting",
-      "snippet": "Exclusive pre-order: Valorant. Get bonus early access when you pre-order. Available: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "4a9c8f54eb58a6e9",
-      "sender": "Discord <noreply@discord.com>",
-      "subject": "New achievement unlocked!",
-      "snippet": "Your Elden Ring daily rewards are ready to claim: 500 gold. Log in now: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "c9a80c7b46f90d20",
-      "sender": "Valve <noreply@valvesoftware.com>",
-      "subject": "Leaderboard update",
-      "snippet": "Flash sale: Cyberpunk 2077 is 75% off for the next 48 hours! Price: $9.99. Buy now: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "57ac8f7fcf3e717c",
-      "sender": "Xbox <xbox-noreply@microsoft.com>",
-      "subject": "Seasonal event: Elden Ring",
-      "snippet": "Exclusive pre-order: Fortnite. Get bonus exclusive cosmetic when you pre-order. Available: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "87a1f7a23da4765c",
-      "sender": "CD Projekt <noreply@cdprojekt.com>",
-      "subject": "New multiplayer event",
-      "snippet": "Achievement rank up! You're now Diamond in Among Us. Progress: 92%. View profile: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "34fa577cc46ab226",
-      "sender": "Ubisoft <noreply@ubisoft.com>",
-      "subject": "Elden Ring is now available",
-      "snippet": "Seasonal rewards unlocked: emotes, charms. Claim them before June 30. Inventory: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "1864d75cc7193208",
-      "sender": "Roblox <noreply@roblox.com>",
-      "subject": "Pre-order bonus unlocked",
-      "snippet": "Among Us expansion pack released! New storyline, 20 quests. Download now: $19.99.",
-      "category": "GAMING"
-    },
-    {
-      "id": "c5eed2122331793a",
-      "sender": "GOG <noreply@gog.com>",
-      "subject": "Daily rewards waiting",
-      "snippet": "Your Call of Duty daily rewards are ready to claim: daily chest. Log in now: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "0757b1d3488c3bf7",
-      "sender": "Activision <noreply@activision.com>",
-      "subject": "Tournament starting soon",
-      "snippet": "Sarah sent you a friend request on Xbox. 12 mutual friends. Accept? https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "a70e2e4cbe93c5ae",
-      "sender": "Activision <noreply@activision.com>",
-      "subject": "Exclusive game deal",
-      "snippet": "Seasonal rewards unlocked: emotes, charms. Claim them before June 30. Inventory: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "9672ac0be2c7f6dd",
-      "sender": "Blizzard <noreply@blizzard.com>",
-      "subject": "Tournament starting soon",
-      "snippet": "You have 150 wins this season! Your rank: Gold 1. Keep climbing the leaderboard: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "e71773650a09eb9f",
-      "sender": "Minecraft <noreply@minecraft.net>",
-      "subject": "Pre-order bonus unlocked",
-      "snippet": "Your Valorant daily rewards are ready to claim: 500 gold. Log in now: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "7b10e9bfa02e2bca",
-      "sender": "Bethesda <noreply@bethesda.net>",
-      "subject": "Exclusive game deal",
-      "snippet": "Guild/Squad activity: 3 members online. Latest news: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "e21894b3083b7d2f",
-      "sender": "Activision <noreply@activision.com>",
-      "subject": "Friend request from Jordan",
-      "snippet": "New patch for Valorant: bug fixes, balance patches. Download now: 250MB.",
-      "category": "GAMING"
-    },
-    {
-      "id": "d306129a5c584d45",
-      "sender": "PlayStation Plus <psplus@sony.com>",
-      "subject": "Limited time offer",
-      "snippet": "You've reached 100 wins playtime in Valorant! Commemorative items: https://steam.com/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "0082ed838fa051eb",
-      "sender": "Blizzard <noreply@blizzard.com>",
-      "subject": "Seasonal event: Fortnite",
-      "snippet": "Your Among Us stats for this week: 45 wins, 2.5 K/D. Compare with friends: epicgames.com/store/...",
-      "category": "GAMING"
-    },
-    {
-      "id": "c5cde5669e5e6f7b",
-      "sender": "Rockstar Games <noreply@rockstargames.com>",
-      "subject": "Exclusive game deal",
-      "snippet": "Guild/Squad activity: 12 members online. Latest news: epicgames.com/store/...",
-      "category": "GAMING"
-    }
-  ]
-}
+[
+  {
+    "id": "61e4265d379e1829",
+    "sender": "Konami <noreply@konami.com>",
+    "subject": "Your friend Jordan started playing Among Us",
+    "snippet": "Your Cyberpunk 2077 daily rewards are ready to claim: 500 gold. Log in now: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "1a51d596e54d9805",
+    "sender": "Xbox Game Pass <xgamepass@microsoft.com>",
+    "subject": "DLC released: Minecraft",
+    "snippet": "Store update: New items available. Featured: Dragon Skin. Check out: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "593586f67929f680",
+    "sender": "Itch.io <noreply@itch.io>",
+    "subject": "Friend request from Alex",
+    "snippet": "Your Among Us daily rewards are ready to claim: 500 gold. Log in now: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "51820607d3030600",
+    "sender": "Rockstar Games <noreply@rockstargames.com>",
+    "subject": "You've earned rewards",
+    "snippet": "Alex is now playing Elden Ring. Join them or queue up for a match. 3 of your friends are online right now.",
+    "category": "GAMING"
+  },
+  {
+    "id": "84f062b675891969",
+    "sender": "Itch.io <noreply@itch.io>",
+    "subject": "Daily rewards waiting",
+    "snippet": "Store update: New items available. Featured: Dragon Skin. Check out: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "52b12530acf32f28",
+    "sender": "Itch.io <noreply@itch.io>",
+    "subject": "Limited time offer",
+    "snippet": "New patch for Minecraft: new map. Download now: 250MB.",
+    "category": "GAMING"
+  },
+  {
+    "id": "aef78b468f3f6d3f",
+    "sender": "Discord <noreply@discord.com>",
+    "subject": "New achievement unlocked!",
+    "snippet": "Multiplayer event starting: PvP Tournament. Duration: June 1-7. Win $1000! Details: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "6d81de4fcf1dfa88",
+    "sender": "Fortnite <noreply@fortnite.com>",
+    "subject": "Tournament starting soon",
+    "snippet": "New patch for Valorant: bug fixes, balance patches. Download now: 250MB.",
+    "category": "GAMING"
+  },
+  {
+    "id": "e53f76771bac953f",
+    "sender": "Epic Games <noreply@epicgames.com>",
+    "subject": "Daily rewards waiting",
+    "snippet": "New season in Minecraft! Battle pass costs 9.99 and includes skins, emotes, badges. Check out the new content: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "671d83389fd65e98",
+    "sender": "Xbox Game Pass <xgamepass@microsoft.com>",
+    "subject": "New season: Among Us",
+    "snippet": "New patch for League of Legends: bug fixes, balance patches. Download now: 250MB.",
+    "category": "GAMING"
+  },
+  {
+    "id": "cb34b839bb8cbf8f",
+    "sender": "Xbox Game Pass <xgamepass@microsoft.com>",
+    "subject": "Tournament starting soon",
+    "snippet": "Seasonal rewards unlocked: skins, weapons. Claim them before June 30. Inventory: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "fb7a6377d2b584cd",
+    "sender": "Battle.net <noreply@battle.net>",
+    "subject": "Friend request from Mike",
+    "snippet": "New cosmetic available: Emote. Only 500 available. Get yours: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "bede608f115afc0a",
+    "sender": "Unity <noreply@unity.com>",
+    "subject": "Seasonal event: Elden Ring",
+    "snippet": "Fortnite expansion pack released! New storyline, 20 quests. Download now: $19.99.",
+    "category": "GAMING"
+  },
+  {
+    "id": "63e33cc9234531a2",
+    "sender": "Bandai Namco <noreply@bandainamco.com>",
+    "subject": "Tournament starting soon",
+    "snippet": "Guild/Squad activity: 7 members online. Latest news: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "1887caac67c1c880",
+    "sender": "Bethesda <noreply@bethesda.net>",
+    "subject": "Daily rewards waiting",
+    "snippet": "Tournament announced: Summer Clash. Prize pool: ${prize}. Register by June 30: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "1ffae90115e233d0",
+    "sender": "Discord <noreply@discord.com>",
+    "subject": "Your friend Mike started playing Fortnite",
+    "snippet": "Achievement rank up! You're now Diamond in League of Legends. Progress: 92%. View profile: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "94e012debed563bf",
+    "sender": "Bandai Namco <noreply@bandainamco.com>",
+    "subject": "Special offer on Fortnite",
+    "snippet": "Your Elden Ring daily rewards are ready to claim: 500 gold. Log in now: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "4db94bed8603e228",
+    "sender": "Konami <noreply@konami.com>",
+    "subject": "Pre-order bonus unlocked",
+    "snippet": "Your Call of Duty daily rewards are ready to claim: daily chest. Log in now: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "affb6cc9456fbf8b",
+    "sender": "Square Enix <noreply@squareenix.com>",
+    "subject": "Update available: Valorant",
+    "snippet": "Seasonal rewards unlocked: skins, weapons. Claim them before June 30. Inventory: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "40cb5656e6f8e542",
+    "sender": "Itch.io <noreply@itch.io>",
+    "subject": "Game sale: Minecraft",
+    "snippet": "Flash sale: League of Legends is 25% off for the next 48 hours! Price: $4.99. Buy now: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "f575a195281cfa6d",
+    "sender": "Ubisoft <noreply@ubisoft.com>",
+    "subject": "Free game offer: Among Us",
+    "snippet": "New season in League of Legends! Battle pass costs 14.99 and includes skins, emotes, badges. Check out the new content: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "7657560d59e5d074",
+    "sender": "PlayStationNetwork <psn@playstation.net>",
+    "subject": "You've earned rewards",
+    "snippet": "You unlocked the achievement \"Hidden Gem\" in Fortnite! You're on a roll! Keep playing to unlock more rewards.",
+    "category": "GAMING"
+  },
+  {
+    "id": "672d482faf0408e1",
+    "sender": "Epic Games <noreply@epicgames.com>",
+    "subject": "New multiplayer event",
+    "snippet": "Exclusive pre-order: League of Legends. Get bonus exclusive cosmetic when you pre-order. Available: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "3338a098d7ea9ea8",
+    "sender": "Game Club <noreply@gameclub.com>",
+    "subject": "Game sale: Fortnite",
+    "snippet": "Multiplayer event starting: Battle Royale Event. Duration: June 1-7. Win $1000! Details: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "6759813a95f2e8a4",
+    "sender": "Game Club <noreply@gameclub.com>",
+    "subject": "New season: Elden Ring",
+    "snippet": "New season in Cyberpunk 2077! Battle pass costs 14.99 and includes skins, emotes, badges. Check out the new content: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "99fd8bc918352395",
+    "sender": "Game Club <noreply@gameclub.com>",
+    "subject": "Daily rewards waiting",
+    "snippet": "Mike sent you a friend request on Discord. 3 mutual friends. Accept? epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "ef25060f70e26b59",
+    "sender": "Xbox <xbox-noreply@microsoft.com>",
+    "subject": "Limited time offer",
+    "snippet": "Your Elden Ring stats for this week: 120 hours played. Compare with friends: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "607bbc6b34f262d5",
+    "sender": "Game Club <noreply@gameclub.com>",
+    "subject": "New season: Cyberpunk 2077",
+    "snippet": "Alex sent you a friend request on Steam. 7 mutual friends. Accept? https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "2d992ac5356ed9e9",
+    "sender": "Game Club <noreply@gameclub.com>",
+    "subject": "Leaderboard update",
+    "snippet": "Achievement rank up! You're now Platinum in Cyberpunk 2077. Progress: 92%. View profile: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "fe2210a121faeb98",
+    "sender": "Bandai Namco <noreply@bandainamco.com>",
+    "subject": "Update available: Among Us",
+    "snippet": "You've reached 100 wins playtime in Minecraft! Commemorative items: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "02d3cf29e2702110",
+    "sender": "Square Enix <noreply@squareenix.com>",
+    "subject": "Free game offer: Fortnite",
+    "snippet": "Store update: New items available. Featured: Golden Sword. Check out: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "cfd6c305607d7f1c",
+    "sender": "Rockstar Games <noreply@rockstargames.com>",
+    "subject": "Your friend Sarah started playing Call of Duty",
+    "snippet": "Claim your free copy of Cyberpunk 2077 now! This offer is available for the next 24 hours. It'll be added to your library permanently. Redeem now: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "72595564e26345ad",
+    "sender": "PlayStation Plus <psplus@sony.com>",
+    "subject": "Exclusive game deal",
+    "snippet": "Minecraft expansion pack released! New storyline, 20 quests. Download now: $19.99.",
+    "category": "GAMING"
+  },
+  {
+    "id": "0e02a313a988d70c",
+    "sender": "Discord <noreply@discord.com>",
+    "subject": "Seasonal event: Minecraft",
+    "snippet": "New season in Minecraft! Battle pass costs 9.99 and includes skins, emotes, badges. Check out the new content: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "eddd07a91b3d0ac6",
+    "sender": "PlayStationNetwork <psn@playstation.net>",
+    "subject": "New achievement unlocked!",
+    "snippet": "Guild/Squad activity: 12 members online. Latest news: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "d16c69476540a012",
+    "sender": "Xbox Game Pass <xgamepass@microsoft.com>",
+    "subject": "Daily rewards waiting",
+    "snippet": "You've reached 1000 hours playtime in Among Us! Commemorative items: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "a31ed5144dfe0ceb",
+    "sender": "Fortnite <noreply@fortnite.com>",
+    "subject": "Battle pass ready",
+    "snippet": "You have 150 wins this season! Your rank: Gold 1. Keep climbing the leaderboard: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "abc55757e3147a05",
+    "sender": "Game Club <noreply@gameclub.com>",
+    "subject": "Update available: Elden Ring",
+    "snippet": "Jordan sent you a friend request on Discord. 7 mutual friends. Accept? https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "47eb58ed3f1cf34b",
+    "sender": "Twitch <noreply@twitch.tv>",
+    "subject": "Update available: Minecraft",
+    "snippet": "Your Call of Duty stats for this week: 120 hours played. Compare with friends: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "a9c56a7d7b2d6a84",
+    "sender": "PlayStationNetwork <psn@playstation.net>",
+    "subject": "DLC released: Fortnite",
+    "snippet": "New patch for Valorant: new map. Download now: 1500MB.",
+    "category": "GAMING"
+  },
+  {
+    "id": "707e945b74c5abd9",
+    "sender": "Fortnite <noreply@fortnite.com>",
+    "subject": "Pre-order bonus unlocked",
+    "snippet": "Claim your free copy of Call of Duty now! This offer is available for the next 24 hours. It'll be added to your library permanently. Redeem now: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "4adc2339a7aab5ab",
+    "sender": "Game Club <noreply@gameclub.com>",
+    "subject": "Your friend Sarah started playing League of Legends",
+    "snippet": "Sarah sent you a friend request on Steam. 12 mutual friends. Accept? https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "44276d0abc81c201",
+    "sender": "Valve <noreply@valvesoftware.com>",
+    "subject": "Leaderboard update",
+    "snippet": "Minecraft expansion pack released! New storyline, 20 quests. Download now: $19.99.",
+    "category": "GAMING"
+  },
+  {
+    "id": "ec9860c08e8e4255",
+    "sender": "CD Projekt <noreply@cdprojekt.com>",
+    "subject": "Daily rewards waiting",
+    "snippet": "Guild/Squad activity: 7 members online. Latest news: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "56e2dcba1114064d",
+    "sender": "Steam <noreply@steampowered.com>",
+    "subject": "Exclusive game deal",
+    "snippet": "Your League of Legends stats for this week: 45 wins, 2.5 K/D. Compare with friends: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "99606f32b1c3cf97",
+    "sender": "Ubisoft <noreply@ubisoft.com>",
+    "subject": "Update available: Minecraft",
+    "snippet": "Achievement rank up! You're now Platinum in Cyberpunk 2077. Progress: 78%. View profile: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "b8ad8ef4115f9c5b",
+    "sender": "Twitch <noreply@twitch.tv>",
+    "subject": "Update available: Fortnite",
+    "snippet": "Flash sale: Minecraft is 25% off for the next 24 hours! Price: $4.99. Buy now: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "85e0c3fcbae9fcd1",
+    "sender": "Activision <noreply@activision.com>",
+    "subject": "Free game offer: Valorant",
+    "snippet": "New season in Call of Duty! Battle pass costs 9.99 and includes skins, emotes, badges. Check out the new content: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "323064e39428ba78",
+    "sender": "PlayStationNetwork <psn@playstation.net>",
+    "subject": "Free game offer: Minecraft",
+    "snippet": "Tournament announced: Summer Clash. Prize pool: ${prize}. Register by June 30: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "832182b720c63609",
+    "sender": "Bethesda <noreply@bethesda.net>",
+    "subject": "New achievement unlocked!",
+    "snippet": "You have 500 wins this season! Your rank: Diamond 3. Keep climbing the leaderboard: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "abe75ce3620fab22",
+    "sender": "Rockstar Games <noreply@rockstargames.com>",
+    "subject": "Daily rewards waiting",
+    "snippet": "Exclusive pre-order: Among Us. Get bonus exclusive cosmetic when you pre-order. Available: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "1ddea1412729035b",
+    "sender": "Xbox Game Pass <xgamepass@microsoft.com>",
+    "subject": "Your friend Sarah started playing League of Legends",
+    "snippet": "Tournament announced: Summer Clash. Prize pool: ${prize}. Register by June 30: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "5383118992c0c8a8",
+    "sender": "PlayStationNetwork <psn@playstation.net>",
+    "subject": "Tournament starting soon",
+    "snippet": "Mike sent you a friend request on Steam. 7 mutual friends. Accept? https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "bfac885f01618af4",
+    "sender": "Minecraft <noreply@minecraft.net>",
+    "subject": "You've earned rewards",
+    "snippet": "Alex sent you a friend request on Xbox. 3 mutual friends. Accept? epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "47dc92e3f197b8fe",
+    "sender": "PlayStation Plus <psplus@sony.com>",
+    "subject": "Pre-order bonus unlocked",
+    "snippet": "Seasonal rewards unlocked: emotes, charms. Claim them before June 30. Inventory: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "1a891e1729f11345",
+    "sender": "Roblox <noreply@roblox.com>",
+    "subject": "Free game offer: Elden Ring",
+    "snippet": "Store update: New items available. Featured: Golden Sword. Check out: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "fe51b524e5fb6c25",
+    "sender": "Fortnite <noreply@fortnite.com>",
+    "subject": "New achievement unlocked!",
+    "snippet": "Guild/Squad activity: 12 members online. Latest news: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "4ab2b09bd341e010",
+    "sender": "Valve <noreply@valvesoftware.com>",
+    "subject": "Pre-order bonus unlocked",
+    "snippet": "New season in Cyberpunk 2077! Battle pass costs 9.99 and includes skins, emotes, badges. Check out the new content: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "70303a4ca14600a3",
+    "sender": "CD Projekt <noreply@cdprojekt.com>",
+    "subject": "New season: Cyberpunk 2077",
+    "snippet": "Your Among Us daily rewards are ready to claim: daily chest. Log in now: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "d9e42cc5b3541bce",
+    "sender": "Unity <noreply@unity.com>",
+    "subject": "Pre-order bonus unlocked",
+    "snippet": "Flash sale: Minecraft is 50% off for the next 24 hours! Price: $7.99. Buy now: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "9b712f9dc6b60981",
+    "sender": "Battle.net <noreply@battle.net>",
+    "subject": "Your friend Mike started playing Cyberpunk 2077",
+    "snippet": "Store update: New items available. Featured: Golden Sword. Check out: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "356e7650e36c2616",
+    "sender": "Blizzard <noreply@blizzard.com>",
+    "subject": "New achievement unlocked!",
+    "snippet": "You unlocked the achievement \"Legend\" in Among Us! You're on a roll! Keep playing to unlock more rewards.",
+    "category": "GAMING"
+  },
+  {
+    "id": "6a9ea2ac6eb68a0c",
+    "sender": "Battle.net <noreply@battle.net>",
+    "subject": "Battle pass ready",
+    "snippet": "Flash sale: Among Us is 25% off for the next 24 hours! Price: $7.99. Buy now: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "58443f2df8adbc05",
+    "sender": "Twitch <noreply@twitch.tv>",
+    "subject": "Battle pass ready",
+    "snippet": "Tournament announced: Pro League. Prize pool: ${prize}. Register by June 30: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "438812eeacca4fbc",
+    "sender": "Blizzard <noreply@blizzard.com>",
+    "subject": "Call of Duty is now available",
+    "snippet": "Store update: New items available. Featured: Dragon Skin. Check out: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "657ccf50b6635857",
+    "sender": "Rockstar Games <noreply@rockstargames.com>",
+    "subject": "Daily rewards waiting",
+    "snippet": "Sarah is now playing Call of Duty. Join them or queue up for a match. 7 of your friends are online right now.",
+    "category": "GAMING"
+  },
+  {
+    "id": "3d9ba912290613bb",
+    "sender": "Valve <noreply@valvesoftware.com>",
+    "subject": "Daily rewards waiting",
+    "snippet": "Tournament announced: Pro League. Prize pool: ${prize}. Register by June 30: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "e4e575bec46bac3b",
+    "sender": "Battle.net <noreply@battle.net>",
+    "subject": "Elden Ring is now available",
+    "snippet": "Fortnite expansion pack released! New storyline, 20 quests. Download now: $19.99.",
+    "category": "GAMING"
+  },
+  {
+    "id": "c42b470e45ab2dee",
+    "sender": "Battle.net <noreply@battle.net>",
+    "subject": "Friend request from Sarah",
+    "snippet": "You unlocked the achievement \"Speed Runner\" in Among Us! You're on a roll! Keep playing to unlock more rewards.",
+    "category": "GAMING"
+  },
+  {
+    "id": "f321459119116cab",
+    "sender": "Valve <noreply@valvesoftware.com>",
+    "subject": "You've earned rewards",
+    "snippet": "Tournament announced: Summer Clash. Prize pool: ${prize}. Register by June 30: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "f7cb81537d1f8d4d",
+    "sender": "PlayStation Plus <psplus@sony.com>",
+    "subject": "Tournament starting soon",
+    "snippet": "Achievement rank up! You're now Gold in Valorant. Progress: 45%. View profile: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "88c534950a6f4604",
+    "sender": "Epic Games <noreply@epicgames.com>",
+    "subject": "Friend request from Mike",
+    "snippet": "Seasonal rewards unlocked: skins, weapons. Claim them before July 15. Inventory: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "cc16e4a6bd021ac8",
+    "sender": "Twitch <noreply@twitch.tv>",
+    "subject": "You've earned rewards",
+    "snippet": "Jordan is now playing Call of Duty. Join them or queue up for a match. 3 of your friends are online right now.",
+    "category": "GAMING"
+  },
+  {
+    "id": "a3f41d5a83c61dd3",
+    "sender": "Unity <noreply@unity.com>",
+    "subject": "Friend request from Mike",
+    "snippet": "Multiplayer event starting: PvP Tournament. Duration: June 1-7. Win $1000! Details: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "7e5f3d4df54d0df9",
+    "sender": "Twitch <noreply@twitch.tv>",
+    "subject": "New achievement unlocked!",
+    "snippet": "Claim your free copy of Call of Duty now! This offer is available for the next 24 hours. It'll be added to your library permanently. Redeem now: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "f59760032ade7408",
+    "sender": "Konami <noreply@konami.com>",
+    "subject": "Daily rewards waiting",
+    "snippet": "Seasonal rewards unlocked: emotes, charms. Claim them before June 30. Inventory: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "b187ac3599f0b195",
+    "sender": "Epic Games <noreply@epicgames.com>",
+    "subject": "Cyberpunk 2077 is now available",
+    "snippet": "Cyberpunk 2077 expansion pack released! New storyline, 20 quests. Download now: $19.99.",
+    "category": "GAMING"
+  },
+  {
+    "id": "0b8f67238de10ecd",
+    "sender": "Steam <noreply@steampowered.com>",
+    "subject": "You've earned rewards",
+    "snippet": "Tournament announced: Pro League. Prize pool: ${prize}. Register by June 30: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "056a5a1d7d0ca5ac",
+    "sender": "Activision <noreply@activision.com>",
+    "subject": "New multiplayer event",
+    "snippet": "Achievement rank up! You're now Diamond in Fortnite. Progress: 45%. View profile: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "dc5b405038ebd15c",
+    "sender": "CD Projekt <noreply@cdprojekt.com>",
+    "subject": "New multiplayer event",
+    "snippet": "Achievement rank up! You're now Platinum in Call of Duty. Progress: 45%. View profile: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "162fbac33815a8e6",
+    "sender": "PlayStationNetwork <psn@playstation.net>",
+    "subject": "Battle pass ready",
+    "snippet": "New season in Among Us! Battle pass costs 19.99 and includes skins, emotes, badges. Check out the new content: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "de5aecf93fb161a8",
+    "sender": "Itch.io <noreply@itch.io>",
+    "subject": "DLC released: Valorant",
+    "snippet": "New cosmetic available: Emote. Only 100 available. Get yours: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "c0fe1e06ba5392e5",
+    "sender": "GOG <noreply@gog.com>",
+    "subject": "Daily rewards waiting",
+    "snippet": "You unlocked the achievement \"First Blood\" in Among Us! You're on a roll! Keep playing to unlock more rewards.",
+    "category": "GAMING"
+  },
+  {
+    "id": "544b49d3d574a184",
+    "sender": "Fortnite <noreply@fortnite.com>",
+    "subject": "Limited time offer",
+    "snippet": "Store update: New items available. Featured: Dragon Skin. Check out: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "f628e87fb766518e",
+    "sender": "Square Enix <noreply@squareenix.com>",
+    "subject": "Limited time offer",
+    "snippet": "New season in Among Us! Battle pass costs 9.99 and includes skins, emotes, badges. Check out the new content: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "4fc0093a95463d5e",
+    "sender": "PlayStationNetwork <psn@playstation.net>",
+    "subject": "League of Legends is now available",
+    "snippet": "You unlocked the achievement \"Speed Runner\" in Valorant! You're on a roll! Keep playing to unlock more rewards.",
+    "category": "GAMING"
+  },
+  {
+    "id": "1b5ff54e11728c87",
+    "sender": "Blizzard <noreply@blizzard.com>",
+    "subject": "Daily rewards waiting",
+    "snippet": "Tournament announced: Pro League. Prize pool: ${prize}. Register by June 30: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "ce923ce188a12770",
+    "sender": "Ubisoft <noreply@ubisoft.com>",
+    "subject": "Limited time offer",
+    "snippet": "Store update: New items available. Featured: Golden Sword. Check out: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "6f3b33f171d1708b",
+    "sender": "Ubisoft <noreply@ubisoft.com>",
+    "subject": "Limited time offer",
+    "snippet": "Your Valorant daily rewards are ready to claim: daily chest. Log in now: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "55f5ea508659f1ed",
+    "sender": "Game Club <noreply@gameclub.com>",
+    "subject": "New season: League of Legends",
+    "snippet": "Guild/Squad activity: 7 members online. Latest news: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "a9c4c7e3eca50f70",
+    "sender": "Battle.net <noreply@battle.net>",
+    "subject": "Special offer on Cyberpunk 2077",
+    "snippet": "Your Among Us daily rewards are ready to claim: 500 gold. Log in now: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "91a61f90423ada1b",
+    "sender": "Battle.net <noreply@battle.net>",
+    "subject": "Limited time offer",
+    "snippet": "New season in Valorant! Battle pass costs 14.99 and includes skins, emotes, badges. Check out the new content: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "2e9e9eb233d8c233",
+    "sender": "Riot Games <noreply@riotgames.com>",
+    "subject": "Exclusive game deal",
+    "snippet": "New cosmetic available: Legendary Skin. Only 100 available. Get yours: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "daab925169f1709b",
+    "sender": "Square Enix <noreply@squareenix.com>",
+    "subject": "Leaderboard update",
+    "snippet": "Jordan sent you a friend request on Steam. 7 mutual friends. Accept? https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "0b77f829c79a3bf4",
+    "sender": "Bandai Namco <noreply@bandainamco.com>",
+    "subject": "Friend request from Alex",
+    "snippet": "Guild/Squad activity: 12 members online. Latest news: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "af6899885fc9161b",
+    "sender": "Capcom <noreply@capcom.com>",
+    "subject": "Special offer on Among Us",
+    "snippet": "New season in League of Legends! Battle pass costs 19.99 and includes skins, emotes, badges. Check out the new content: epicgames.com/store/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "c8929496783910b3",
+    "sender": "PlayStationNetwork <psn@playstation.net>",
+    "subject": "Game sale: Cyberpunk 2077",
+    "snippet": "Exclusive pre-order: Call of Duty. Get bonus early access when you pre-order. Available: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "f9cda7349b426e82",
+    "sender": "Xbox <xbox-noreply@microsoft.com>",
+    "subject": "Daily rewards waiting",
+    "snippet": "Among Us expansion pack released! New storyline, 20 quests. Download now: $29.99.",
+    "category": "GAMING"
+  },
+  {
+    "id": "64115e284cc3ba72",
+    "sender": "Battle.net <noreply@battle.net>",
+    "subject": "Battle pass ready",
+    "snippet": "Your Fortnite daily rewards are ready to claim: daily chest. Log in now: https://steam.com/...",
+    "category": "GAMING"
+  },
+  {
+    "id": "ddb2e9d02bd7d347",
+    "sender": "Bethesda <noreply@bethesda.net>",
+    "subject": "New achievement unlocked!",
+    "snippet": "League of Legends expansion pack released! New storyline, 20 quests. Download now: $19.99.",
+    "category": "GAMING"
+  }
+]

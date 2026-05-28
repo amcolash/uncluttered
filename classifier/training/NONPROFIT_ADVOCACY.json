@@ -1,704 +1,702 @@
-{
-  "emails": [
-    {
-      "id": "e58d0b389fe63518",
-      "sender": "action@social.org",
-      "subject": "Help climate action - Donate today",
-      "snippet": "Story: How ACLU helped Pema escape {situation}. Support more: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "15436921d82e89f7",
-      "sender": "support@cause.org",
-      "subject": "Will you stand with us?",
-      "snippet": "Join our monthly sustaining circle. For $25, you'll provide: exclusive events. Sign up: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "dfa8f1fcb9a57124",
-      "sender": "support@cause.org",
-      "subject": "Join the fight for human rights",
-      "snippet": "We're $10000 away from our climate action goal. Will you help? Donate: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "c13cbef3e8334380",
-      "sender": "donate@environmental.org",
-      "subject": "Breaking: {headline}",
-      "snippet": "Your donation helps Oxfam fight for animal welfare. Last month, we brought clean water to 1000 people. Will you renew your support? Every gift makes a difference. Donate: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "7826d7f549ae7354",
-      "sender": "support@cause.org",
-      "subject": "Thank you for your support",
-      "snippet": "Ahmed was helped by ACLU. Their story: got clean water access. Will you help more? Donate: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "7236b5e255417576",
-      "sender": "donate@nonprofit.org",
-      "subject": "Monthly update from WWF",
-      "snippet": "Meet the team fighting for human rights. Learn their stories: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "78492440a13470f3",
-      "sender": "action@social.org",
-      "subject": "Donation deadline approaching",
-      "snippet": "Young professionals group forming. Join: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "82beb6f16d6b3c4e",
-      "sender": "donate@worldwildlife.org",
-      "subject": "Success story from Syria",
-      "snippet": "Join our monthly sustaining circle. For $50, you'll provide: exclusive events. Sign up: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "e0552858807b7ebc",
-      "sender": "fundraising@aclu.org",
-      "subject": "Time-sensitive: support voting rights needed",
-      "snippet": "Employee matching program: Ask your employer to match. Set up: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "2d4e9b3c114a0ba6",
-      "sender": "help@advocacy.org",
-      "subject": "Donate to save {subject}",
-      "snippet": "Scholarship fund for low-income youth. Help us reach $50000: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "3eff991991fbc6e9",
-      "sender": "fundraising@aclu.org",
-      "subject": "Match your donation today",
-      "snippet": "Employee matching program: Ask your employer to match. Set up: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "23d0da0e3c3930e0",
-      "sender": "donate@greenpeace.org",
-      "subject": "Crisis: pipeline construction in Syria",
-      "snippet": "Our health clinic has reached 50000 people in Bangladesh. Help us expand: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "dfd5aa8b44c24a3d",
-      "sender": "support@humanrights.org",
-      "subject": "Donate to save {subject}",
-      "snippet": "Join our monthly sustaining circle. For $10, you'll provide: exclusive events. Sign up: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "dc0e3654bb0f00aa",
-      "sender": "action@amnesty.org",
-      "subject": "Monthly update from WWF",
-      "snippet": "Virtual volunteer orientation: December 31 at {time}. Register: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "61cc700ea59a1c79",
-      "sender": "support@peta.org",
-      "subject": "Donate to save {subject}",
-      "snippet": "Join our monthly sustaining circle. For $25, you'll provide: impact updates. Sign up: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "a844944d209d40a8",
-      "sender": "donate@unicef.org",
-      "subject": "Monthly update from Amnesty",
-      "snippet": "Young professionals group forming. Join: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "12ee83cbfe857310",
-      "sender": "fundraising@aclu.org",
-      "subject": "Time-sensitive: support voting rights needed",
-      "snippet": "Planned giving: Leave a legacy for human rights. Learn more: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "fdbf986759a79b8e",
-      "sender": "action@social.org",
-      "subject": "Urgent action: pipeline construction",
-      "snippet": "Corporate partnership match: Your $1 becomes $2! Donate: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "86dcc46882753ac4",
-      "sender": "support@peta.org",
-      "subject": "Breakthrough victory for climate action",
-      "snippet": "Virtual volunteer orientation: June 15 at {time}. Register: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "c10b8e8f8eabe7e3",
-      "sender": "donate@impact.org",
-      "subject": "Time-sensitive: support voting rights needed",
-      "snippet": "Thank you for caring about clean water! Here's an update on our work: We passed new legislation. The impact of supporters like you is incredible!",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "9f99e66806086e3a",
-      "sender": "donate@savethechildren.org",
-      "subject": "Greenpeace needs your voice",
-      "snippet": "Newsletter subscribers get exclusive updates. Subscribe: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "4068bf1136419902",
-      "sender": "support@justice.org",
-      "subject": "Donate to save {subject}",
-      "snippet": "1000 volunteers trained. 10000 people helped this year. Your support made it possible.",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "9b7c3e5221caebc8",
-      "sender": "donate@greenpeace.org",
-      "subject": "Thank you for your support",
-      "snippet": "Volunteer for fundraising on December 31. Sign up: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "aa0734c56a5fac64",
-      "sender": "donate@unicef.org",
-      "subject": "Breaking: {headline}",
-      "snippet": "Annual tax-deductible giving deadline: December 31. Give today: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "ec18a5d0c66c3241",
-      "sender": "donate@unicef.org",
-      "subject": "Join the fight for climate action",
-      "snippet": "Year-end giving: 60% of our budget comes from gifts like yours. Donate: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "ea745660076652fc",
-      "sender": "hello@charitywater.org",
-      "subject": "Emergency response: voting rights",
-      "snippet": "Call your representative. Urge them to support voting rights. Numbers: https://greenpeace.org/donate. Template: Please protect our environment",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "1c6a37cc5db8ec95",
-      "sender": "donate@americanredcross.org",
-      "subject": "Crisis: pipeline construction in Kenya",
-      "snippet": "Petition your representative on voting rights. Target: 50000 signatures. Sign: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "a0e4708d5c402fac",
-      "sender": "hello@aclu.org",
-      "subject": "Tax deduction deadline",
-      "snippet": "Planned giving: Leave a legacy for climate action. Learn more: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "9f7a0b3ca3467a4e",
-      "sender": "support@justice.org",
-      "subject": "Tax deduction deadline",
-      "snippet": "Employee matching program: Ask your employer to match. Set up: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "f2650f7b963bd435",
-      "sender": "hello@charitywater.org",
-      "subject": "Monthly update from Oxfam",
-      "snippet": "Newsletter subscribers get exclusive updates. Subscribe: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "5cac04d4de595c04",
-      "sender": "donate@environmental.org",
-      "subject": "Breakthrough victory for clean water",
-      "snippet": "Emergency response underway in Syria. Help: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "3345ebfd3180881b",
-      "sender": "donate@unicef.org",
-      "subject": "Donate to save {subject}",
-      "snippet": "Policy victory! We helped pass Clean Water Act. Now we need funding to enforce it: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "1dd826592ffb5bf2",
-      "sender": "support@justice.org",
-      "subject": "WWF needs your voice",
-      "snippet": "Year-end giving: 60% of our budget comes from gifts like yours. Donate: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "3668daeae6442fe3",
-      "sender": "donate@impact.org",
-      "subject": "End-of-quarter push",
-      "snippet": "Global appeal: WWF is expanding to Kenya. Support the work: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "a59ce6234a034ae9",
-      "sender": "action@movement.org",
-      "subject": "Sustaining membership available",
-      "snippet": "Ahmed was helped by Oxfam. Their story: escaped trafficking. Will you help more? Donate: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "c1488481217c32c9",
-      "sender": "action@sierra.org",
-      "subject": "Will you stand with us?",
-      "snippet": "Emergency response underway in Kenya. Help: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "923f502e939e4ac4",
-      "sender": "contribute@foundation.org",
-      "subject": "Your donation at work",
-      "snippet": "Employee matching program: Ask your employer to match. Set up: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "0ae8c861fb3d9893",
-      "sender": "donate@environmental.org",
-      "subject": "Tax deduction deadline",
-      "snippet": "Thank you for caring about human rights! Here's an update on our work: We passed new legislation. The impact of supporters like you is incredible!",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "7c66e6af448777c7",
-      "sender": "hello@charitywater.org",
-      "subject": "New campaign: climate crisis",
-      "snippet": "We reached a milestone: 1 million trees planted. Celebrate and continue the work: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "d4af74b9599e6ae9",
-      "sender": "donate@greenpeace.org",
-      "subject": "Challenge: 100000",
-      "snippet": "Double your impact! Corporate match available through June 15. Donate now: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "f27fe410da383bd7",
-      "sender": "donate@nonprofit.org",
-      "subject": "Your impact update from Amnesty",
-      "snippet": "Crisis in Syria: conflict displacing families. Your donation provides medical care. Donate immediately: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "daccee1f49935184",
-      "sender": "help@mission.org",
-      "subject": "Oxfam annual report",
-      "snippet": "This year, we trained 500 advocates. Here's what your donations accomplished: changed laws. Donate again: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "e68a243f43d62157",
-      "sender": "action@movement.org",
-      "subject": "Breakthrough victory for climate action",
-      "snippet": "Thank you for caring about clean water! Here's an update on our work: We passed new legislation. The impact of supporters like you is incredible!",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "ed000c2f0b3afab0",
-      "sender": "donate@nonprofit.org",
-      "subject": "Corporate matching available",
-      "snippet": "Planned giving: Leave a legacy for rainforest protection. Learn more: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "15e78328a615628c",
-      "sender": "fundraising@aclu.org",
-      "subject": "Donation impact report",
-      "snippet": "Planned giving: Leave a legacy for clean water. Learn more: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "b10b1f3d92ebd8ed",
-      "sender": "donate@americanredcross.org",
-      "subject": "Breaking: {headline}",
-      "snippet": "Story: How ACLU helped Pema escape {situation}. Support more: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "d32d638df42ee629",
-      "sender": "donate@unicef.org",
-      "subject": "Your donation at work",
-      "snippet": "Volunteer for event planning on December 31. Sign up: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "ea9bd2b7f6f15ff5",
-      "sender": "donate@nonprofit.org",
-      "subject": "Success story from Bangladesh",
-      "snippet": "We reached a milestone: 100000 people helped. Celebrate and continue the work: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "1046ffa75af67d9e",
-      "sender": "help@mission.org",
-      "subject": "Oxfam annual report",
-      "snippet": "We need 1,000 calls to Congress by June 15 to fight pipeline construction. Call now: 202-555-0100. Use this template: Please protect our environment",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "a613f7617bac7425",
-      "sender": "action@splcenter.org",
-      "subject": "Breakthrough victory for animal welfare",
-      "snippet": "Workplace giving campaign: Payroll deduction available. Join: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "2b118ecf14a0d75a",
-      "sender": "support@peta.org",
-      "subject": "ACLU needs your voice",
-      "snippet": "We're $5000 away from our climate action goal. Will you help? Donate: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "d8e0dce8cedbf03e",
-      "sender": "donate@nonprofit.org",
-      "subject": "Emergency response: voting rights",
-      "snippet": "Petition your representative on climate crisis. Target: 100000 signatures. Sign: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "0c3a229373c1f0f5",
-      "sender": "support@oxfam.org",
-      "subject": "Sustaining membership available",
-      "snippet": "Policy victory! We helped pass Clean Water Act. Now we need funding to enforce it: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "c2d2d2cbe122f686",
-      "sender": "action@movement.org",
-      "subject": "Donate to save {subject}",
-      "snippet": "Global appeal: Greenpeace is expanding to Syria. Support the work: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "9a2dc15b83f8aba7",
-      "sender": "help@mission.org",
-      "subject": "Time-sensitive: vote for climate bill needed",
-      "snippet": "This year, we passed 3 new laws. Here's what your donations accomplished: changed laws. Donate again: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "b513406b07db4c32",
-      "sender": "help@mission.org",
-      "subject": "Urgent action: voting rights",
-      "snippet": "Join our monthly sustaining circle. For $25, you'll provide: exclusive events. Sign up: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "c0551f8e3e3b0ebd",
-      "sender": "action@sierra.org",
-      "subject": "Breakthrough victory for human rights",
-      "snippet": "Annual tax-deductible giving deadline: June 15. Give today: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "73d316d747bbe448",
-      "sender": "action@changemakers.org",
-      "subject": "Success story from Syria",
-      "snippet": "Crisis in Bangladesh: severe drought. Your donation provides medical care. Donate immediately: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "0ba49aee19f43433",
-      "sender": "action@changemakers.org",
-      "subject": "Year-end giving opportunity",
-      "snippet": "Annual tax-deductible giving deadline: June 15. Give today: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "19238c1d21a1638a",
-      "sender": "donate@americanredcross.org",
-      "subject": "Spread awareness for animal welfare",
-      "snippet": "Global appeal: ACLU is expanding to Bangladesh. Support the work: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "101043d2c4651f23",
-      "sender": "donate@impact.org",
-      "subject": "Thank you for your support",
-      "snippet": "Our education has reached 10000 people in Bangladesh. Help us expand: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "46ea41d9deca794a",
-      "sender": "fundraising@aclu.org",
-      "subject": "Join the fight for rainforest protection",
-      "snippet": "Volunteer for fundraising on December 31. Sign up: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "aba487699eb3efd4",
-      "sender": "donate@southern-poverty.org",
-      "subject": "New campaign: voting rights",
-      "snippet": "Virtual volunteer orientation: June 15 at {time}. Register: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "b6c9f3970f5c0a6c",
-      "sender": "donate@southern-poverty.org",
-      "subject": "Will you stand with us?",
-      "snippet": "1000 volunteers trained. 10000 people helped this year. Your support made it possible.",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "fb904cf9e78ce14b",
-      "sender": "action@movement.org",
-      "subject": "New campaign: pipeline construction",
-      "snippet": "Double your impact! Corporate match available through June 15. Donate now: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "2f115064d81ca15a",
-      "sender": "donate@unicef.org",
-      "subject": "Donation impact report",
-      "snippet": "Our education has reached 10000 people in Bangladesh. Help us expand: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "26eb9510aab81057",
-      "sender": "help@mission.org",
-      "subject": "Corporate matching available",
-      "snippet": "We're $5000 away from our climate action goal. Will you help? Donate: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "35a8e7006ead5adb",
-      "sender": "action@amnesty.org",
-      "subject": "Emergency response: pipeline construction",
-      "snippet": "Join our monthly sustaining circle. For $10, you'll provide: monthly report. Sign up: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "822ee16223ac1b03",
-      "sender": "donate@southern-poverty.org",
-      "subject": "Challenge: 50000",
-      "snippet": "Crisis in Kenya: severe drought. Your donation provides shelter. Donate immediately: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "284f21ea1de7ecf4",
-      "sender": "donate@unicef.org",
-      "subject": "New campaign: pipeline construction",
-      "snippet": "Global appeal: Amnesty is expanding to Kenya. Support the work: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "5e212a4245522760",
-      "sender": "support@cause.org",
-      "subject": "Urgent action: climate crisis",
-      "snippet": "We reached a milestone: 1 million trees planted. Celebrate and continue the work: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "4849c26d26f77f20",
-      "sender": "hello@naacp.org",
-      "subject": "End-of-quarter push",
-      "snippet": "Corporate partnership match: Your $1 becomes $2! Donate: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "19eb15706a196252",
-      "sender": "hello@naacp.org",
-      "subject": "Corporate matching available",
-      "snippet": "Global appeal: Oxfam is expanding to Syria. Support the work: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "274012787768a1e4",
-      "sender": "donate@unicef.org",
-      "subject": "Sustaining membership available",
-      "snippet": "Workplace giving campaign: Payroll deduction available. Join: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "dc49ac03a9ee7f2f",
-      "sender": "donate@worldwildlife.org",
-      "subject": "Help climate action - Donate today",
-      "snippet": "Call your representative. Urge them to support voting rights. Numbers: https://greenpeace.org/donate. Template: Please protect our environment",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "da624663a31d2102",
-      "sender": "action@movement.org",
-      "subject": "New campaign: pipeline construction",
-      "snippet": "Meet the team fighting for human rights. Learn their stories: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "4112bfe9a059c9ef",
-      "sender": "support@peta.org",
-      "subject": "Tax deduction deadline",
-      "snippet": "Our education has reached 10000 people in Kenya. Help us expand: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "f664f86057d92c08",
-      "sender": "support@peta.org",
-      "subject": "Join the fight for climate action",
-      "snippet": "Petition your representative on climate crisis. Target: 100000 signatures. Sign: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "e15469f8a41e885f",
-      "sender": "hello@aclu.org",
-      "subject": "Challenge: 50000",
-      "snippet": "This year, we aided 5000 people. Here's what your donations accomplished: changed laws. Donate again: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "dca3e4b295686441",
-      "sender": "action@splcenter.org",
-      "subject": "Your donation at work",
-      "snippet": "Story: How WWF helped Maria escape {situation}. Support more: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "3f9b7fdd184a657b",
-      "sender": "hello@community-org.org",
-      "subject": "Sustaining membership available",
-      "snippet": "Scholarship fund for low-income youth. Help us reach $100000: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "fe404ed441498ae1",
-      "sender": "support@cause.org",
-      "subject": "Challenge: 100000",
-      "snippet": "Planned giving: Leave a legacy for rainforest protection. Learn more: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "e45fca3bfcee5242",
-      "sender": "support@peta.org",
-      "subject": "Breaking: {headline}",
-      "snippet": "Your donation helps ACLU fight for human rights. Last month, we protected 10,000 acres. Will you renew your support? Every gift makes a difference. Donate: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "941d8225b9ca12da",
-      "sender": "hello@charitywater.org",
-      "subject": "Time-sensitive: support voting rights needed",
-      "snippet": "Virtual volunteer orientation: June 15 at {time}. Register: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "8adc9d9dff956d9e",
-      "sender": "hello@naacp.org",
-      "subject": "Help clean water - Donate today",
-      "snippet": "We're $5000 away from our justice reform goal. Will you help? Donate: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "9548bab36554d0e5",
-      "sender": "donate@impact.org",
-      "subject": "Crisis: climate crisis in Syria",
-      "snippet": "Corporate partnership match: Your $1 becomes $2! Donate: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "65bf2b1e3b90bd76",
-      "sender": "donate@worldwildlife.org",
-      "subject": "Meet the people we're helping",
-      "snippet": "Call your representative. Urge them to vote for climate bill. Numbers: https://greenpeace.org/donate. Template: Please protect our environment",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "29f36a3d8f68cda2",
-      "sender": "hello@community-org.org",
-      "subject": "Match your donation today",
-      "snippet": "Year-end giving: 60% of our budget comes from gifts like yours. Donate: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "d880e83ae83260b6",
-      "sender": "donate@southern-poverty.org",
-      "subject": "Donation impact report",
-      "snippet": "We reached a milestone: 100000 people helped. Celebrate and continue the work: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "302f0c0d24bad730",
-      "sender": "donate@worldwildlife.org",
-      "subject": "Breakthrough victory for clean water",
-      "snippet": "Virtual volunteer orientation: December 31 at {time}. Register: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "ddb9adb514638a3a",
-      "sender": "donate@greenpeace.org",
-      "subject": "Spread awareness for animal welfare",
-      "snippet": "We need 1,000 calls to Congress by December 31 to fight pipeline construction. Call now: 202-555-0100. Use this template: Please protect our environment",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "402219add9fe4b88",
-      "sender": "action@movement.org",
-      "subject": "Sustaining membership available",
-      "snippet": "Crisis in Kenya: conflict displacing families. Your donation provides shelter. Donate immediately: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "ae43c70506e775d3",
-      "sender": "support@global-org.org",
-      "subject": "Meet the people we're helping",
-      "snippet": "Annual tax-deductible giving deadline: June 15. Give today: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "3e3074d47c144d9d",
-      "sender": "action@sierra.org",
-      "subject": "Tax deduction deadline",
-      "snippet": "Employee matching program: Ask your employer to match. Set up: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "02f9a84a58e4e02a",
-      "sender": "action@changemakers.org",
-      "subject": "Breaking: {headline}",
-      "snippet": "Scholarship fund for refugee students. Help us reach $100000: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "430938a49f98a1b6",
-      "sender": "support@humanrights.org",
-      "subject": "Crisis: voting rights in Syria",
-      "snippet": "Planned giving: Leave a legacy for clean water. Learn more: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "bb83122df9a888b1",
-      "sender": "hello@aclu.org",
-      "subject": "Monthly update from Amnesty",
-      "snippet": "We're $5000 away from our justice reform goal. Will you help? Donate: oxfam.org/support",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "1eeafe3e5ca8ca2e",
-      "sender": "donate@worldwildlife.org",
-      "subject": "Donation deadline approaching",
-      "snippet": "Planned giving: Leave a legacy for animal welfare. Learn more: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "0c736580b3e8dba5",
-      "sender": "support@peta.org",
-      "subject": "Tax deduction deadline",
-      "snippet": "500 volunteers trained. 5000 people helped this year. Your support made it possible.",
-      "category": "NONPROFIT_ADVOCACY"
-    },
-    {
-      "id": "75afb4ff60ed54b1",
-      "sender": "donate@americanredcross.org",
-      "subject": "Urgent action: voting rights",
-      "snippet": "Emergency response underway in Kenya. Help: https://greenpeace.org/donate",
-      "category": "NONPROFIT_ADVOCACY"
-    }
-  ]
-}
+[
+  {
+    "id": "0958256cd19e0d64",
+    "sender": "hello@community-org.org",
+    "subject": "Volunteer opportunity: advocacy",
+    "snippet": "1000 volunteers trained. 10000 people helped this year. Your support made it possible.",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "d19f448d7a63bd1c",
+    "sender": "action@movement.org",
+    "subject": "Donate to save {subject}",
+    "snippet": "This year, we passed 3 new laws. Here's what your donations accomplished: changed laws. Donate again: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "1d69f0888d3eacf8",
+    "sender": "contribute@foundation.org",
+    "subject": "End-of-quarter push",
+    "snippet": "Call your representative. Urge them to vote for climate bill. Numbers: https://greenpeace.org/donate. Template: Please protect our environment",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "c2d96b3cd3aaf816",
+    "sender": "action@changemakers.org",
+    "subject": "Help rainforest protection - Donate today",
+    "snippet": "Your donation helps Oxfam fight for animal welfare. Last month, we protected 10,000 acres. Will you renew your support? Every gift makes a difference. Donate: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "7573f2b09dc8c942",
+    "sender": "donate@nonprofit.org",
+    "subject": "Amnesty annual report",
+    "snippet": "We need 1,000 calls to Congress by December 31 to fight voting rights. Call now: 202-555-0100. Use this template: Please protect our environment",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "6a6bed93f6df45c3",
+    "sender": "donate@savethechildren.org",
+    "subject": "Greenpeace needs your voice",
+    "snippet": "Pema was helped by Amnesty. Their story: got clean water access. Will you help more? Donate: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "de0c1173f913d4b8",
+    "sender": "contribute@foundation.org",
+    "subject": "Success story from Kenya",
+    "snippet": "Call your representative. Urge them to support voting rights. Numbers: https://greenpeace.org/donate. Template: Please protect our environment",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "1f12cf05eac08f16",
+    "sender": "hello@naacp.org",
+    "subject": "Tax deduction deadline",
+    "snippet": "Young professionals group forming. Join: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "e8e40116da772f17",
+    "sender": "hello@community-org.org",
+    "subject": "Volunteer opportunity: event planning",
+    "snippet": "Thank you for caring about clean water! Here's an update on our work: We rescued endangered species. The impact of supporters like you is incredible!",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "1e49fed92e02a4e8",
+    "sender": "action@doctorswithoutborders.org",
+    "subject": "Challenge: 100000",
+    "snippet": "We reached a milestone: 1 million trees planted. Celebrate and continue the work: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "63b50d859c1926d7",
+    "sender": "fundraising@aclu.org",
+    "subject": "Meet the people we're helping",
+    "snippet": "Planned giving: Leave a legacy for clean water. Learn more: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "0375caf7e7549abd",
+    "sender": "support@global-org.org",
+    "subject": "Corporate matching available",
+    "snippet": "Your donation helps Greenpeace fight for rainforest protection. Last month, we freed 50 political prisoners. Will you renew your support? Every gift makes a difference. Donate: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "bfc6df17e4b5396e",
+    "sender": "action@social.org",
+    "subject": "Meet the people we're helping",
+    "snippet": "Volunteer for advocacy on June 15. Sign up: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "e575b5deb66e4546",
+    "sender": "donate@nonprofit.org",
+    "subject": "Volunteer opportunity: fundraising",
+    "snippet": "Our health clinic has reached 10000 people in Syria. Help us expand: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "9ae26c666d8ffa00",
+    "sender": "support@global-org.org",
+    "subject": "Donation impact report",
+    "snippet": "Planned giving: Leave a legacy for climate action. Learn more: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "4fa66b632ca881dc",
+    "sender": "support@cause.org",
+    "subject": "Match your donation today",
+    "snippet": "Your donation helps WWF fight for clean water. Last month, we freed 50 political prisoners. Will you renew your support? Every gift makes a difference. Donate: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "d11689e088e35d3e",
+    "sender": "donate@greenpeace.org",
+    "subject": "Your donation at work",
+    "snippet": "We need 1,000 calls to Congress by June 15 to fight pipeline construction. Call now: 202-555-0100. Use this template: Please protect our environment",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "cf4a72c4bb436f69",
+    "sender": "hello@charitywater.org",
+    "subject": "Help animal welfare - Donate today",
+    "snippet": "We're $5000 away from our justice reform goal. Will you help? Donate: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "9c8dbc1859090a44",
+    "sender": "donate@nonprofit.org",
+    "subject": "Sustaining membership available",
+    "snippet": "Thank you for caring about rainforest protection! Here's an update on our work: We passed new legislation. The impact of supporters like you is incredible!",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "150972b96414e18b",
+    "sender": "hello@naacp.org",
+    "subject": "Your donation at work",
+    "snippet": "Your donation helps Amnesty fight for rainforest protection. Last month, we brought clean water to 1000 people. Will you renew your support? Every gift makes a difference. Donate: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "e899cf3ee2eb083e",
+    "sender": "donate@environmental.org",
+    "subject": "Donation impact report",
+    "snippet": "Newsletter subscribers get exclusive updates. Subscribe: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "a942242fcb232784",
+    "sender": "support@cause.org",
+    "subject": "Success story from Kenya",
+    "snippet": "Your donation helps ACLU fight for rainforest protection. Last month, we brought clean water to 1000 people. Will you renew your support? Every gift makes a difference. Donate: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "901fb44b0b637cb2",
+    "sender": "support@global-org.org",
+    "subject": "Donate to save {subject}",
+    "snippet": "Newsletter subscribers get exclusive updates. Subscribe: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "50392bb611461335",
+    "sender": "action@splcenter.org",
+    "subject": "Spread awareness for clean water",
+    "snippet": "Emergency response underway in Syria. Help: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "0c903d4bc86ff602",
+    "sender": "hello@charitywater.org",
+    "subject": "Urgent action: voting rights",
+    "snippet": "Crisis in Kenya: severe drought. Your donation provides food and water. Donate immediately: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "e6db982f870d074d",
+    "sender": "action@social.org",
+    "subject": "Spread awareness for human rights",
+    "snippet": "Policy victory! We helped pass Clean Water Act. Now we need funding to enforce it: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "c619be14c3b0a14a",
+    "sender": "donate@nonprofit.org",
+    "subject": "Breaking: {headline}",
+    "snippet": "Scholarship fund for low-income youth. Help us reach $100000: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "991bd7f3537b78dc",
+    "sender": "action@social.org",
+    "subject": "Challenge: 100000",
+    "snippet": "Corporate partnership match: Your $1 becomes $2! Donate: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "37e96b4238b53826",
+    "sender": "donate@nonprofit.org",
+    "subject": "Tax deduction deadline",
+    "snippet": "Policy victory! We helped pass Clean Water Act. Now we need funding to enforce it: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "aed11c03e0b73ff7",
+    "sender": "support@peta.org",
+    "subject": "Your donation at work",
+    "snippet": "Join our monthly sustaining circle. For $25, you'll provide: impact updates. Sign up: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "c081b3e50fa95682",
+    "sender": "help@advocacy.org",
+    "subject": "Monthly update from WWF",
+    "snippet": "Emergency response underway in Syria. Help: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "f9f803a830b19b2b",
+    "sender": "donate@impact.org",
+    "subject": "Emergency response: pipeline construction",
+    "snippet": "Double your impact! Corporate match available through December 31. Donate now: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "52acf3ad308c18b4",
+    "sender": "hello@charitywater.org",
+    "subject": "Tax deduction deadline",
+    "snippet": "Join our monthly sustaining circle. For $25, you'll provide: monthly report. Sign up: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "bb91ebbccf451228",
+    "sender": "donate@americanredcross.org",
+    "subject": "Sustaining membership available",
+    "snippet": "Corporate partnership match: Your $1 becomes $2! Donate: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "eb1bab979f4d38c6",
+    "sender": "action@amnesty.org",
+    "subject": "Your donation at work",
+    "snippet": "Corporate partnership match: Your $1 becomes $2! Donate: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "a89feef774653a16",
+    "sender": "action@changemakers.org",
+    "subject": "Tax deduction deadline",
+    "snippet": "Policy victory! We helped pass Voting Rights Extension. Now we need funding to enforce it: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "fb9bdc299ed74b93",
+    "sender": "support@oxfam.org",
+    "subject": "Challenge: 100000",
+    "snippet": "Newsletter subscribers get exclusive updates. Subscribe: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "aba677111fb582b4",
+    "sender": "hello@charitywater.org",
+    "subject": "Success story from Syria",
+    "snippet": "Workplace giving campaign: Payroll deduction available. Join: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "0b31263ea8cb413e",
+    "sender": "donate@americanredcross.org",
+    "subject": "New campaign: voting rights",
+    "snippet": "Annual tax-deductible giving deadline: December 31. Give today: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "40854878d281afad",
+    "sender": "donate@greenpeace.org",
+    "subject": "Spread awareness for animal welfare",
+    "snippet": "500 volunteers trained. 10000 people helped this year. Your support made it possible.",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "844b3066306dd4da",
+    "sender": "help@advocacy.org",
+    "subject": "End-of-quarter push",
+    "snippet": "500 volunteers trained. 10000 people helped this year. Your support made it possible.",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "a14386a0ca5959ef",
+    "sender": "donate@savethechildren.org",
+    "subject": "Thank you for your support",
+    "snippet": "Employee matching program: Ask your employer to match. Set up: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "2fc8409d3bd71d2b",
+    "sender": "support@justice.org",
+    "subject": "Help human rights - Donate today",
+    "snippet": "We're $10000 away from our climate action goal. Will you help? Donate: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "20b1a52d0cf42f79",
+    "sender": "hello@naacp.org",
+    "subject": "Spread awareness for human rights",
+    "snippet": "Maria was helped by WWF. Their story: got clean water access. Will you help more? Donate: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "90698e86a917647a",
+    "sender": "action@movement.org",
+    "subject": "Your impact update from Greenpeace",
+    "snippet": "Our water project has reached 10000 people in Syria. Help us expand: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "0b6516e8898d5197",
+    "sender": "donate@nonprofit.org",
+    "subject": "Meet the people we're helping",
+    "snippet": "Crisis in Kenya: conflict displacing families. Your donation provides medical care. Donate immediately: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "a5ea07ade420072b",
+    "sender": "donate@greenpeace.org",
+    "subject": "Help clean water - Donate today",
+    "snippet": "Global appeal: Oxfam is expanding to Syria. Support the work: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "6952139449a4b9d2",
+    "sender": "hello@naacp.org",
+    "subject": "Sustaining membership available",
+    "snippet": "Pema was helped by ACLU. Their story: got clean water access. Will you help more? Donate: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "335c52621959dfd3",
+    "sender": "donate@environmental.org",
+    "subject": "End-of-quarter push",
+    "snippet": "Petition your representative on voting rights. Target: 100000 signatures. Sign: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "6a79c97132b6046f",
+    "sender": "donate@nonprofit.org",
+    "subject": "Help animal welfare - Donate today",
+    "snippet": "Corporate partnership match: Your $1 becomes $2! Donate: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "fe41db15d9af61bc",
+    "sender": "action@amnesty.org",
+    "subject": "Emergency response: voting rights",
+    "snippet": "Your donation helps Oxfam fight for clean water. Last month, we freed 50 political prisoners. Will you renew your support? Every gift makes a difference. Donate: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "ecea0485260d32fc",
+    "sender": "action@splcenter.org",
+    "subject": "Sustaining membership available",
+    "snippet": "Volunteer for event planning on June 15. Sign up: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "73ba8f95fd8586a2",
+    "sender": "support@cause.org",
+    "subject": "Corporate matching available",
+    "snippet": "Meet the team fighting for clean water. Learn their stories: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "e4939b59ffb9cff2",
+    "sender": "support@global-org.org",
+    "subject": "Tax deduction deadline",
+    "snippet": "We reached a milestone: 1 million trees planted. Celebrate and continue the work: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "2651f30b9e511856",
+    "sender": "donate@greenpeace.org",
+    "subject": "Year-end giving opportunity",
+    "snippet": "Scholarship fund for low-income youth. Help us reach $100000: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "1714abaff44c6a17",
+    "sender": "help@mission.org",
+    "subject": "Spread awareness for rainforest protection",
+    "snippet": "We're $10000 away from our climate action goal. Will you help? Donate: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "f462b8be54b00bb2",
+    "sender": "support@cause.org",
+    "subject": "Donation deadline approaching",
+    "snippet": "Year-end giving: 60% of our budget comes from gifts like yours. Donate: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "dd52b154888a978c",
+    "sender": "donate@savethechildren.org",
+    "subject": "Meet the people we're helping",
+    "snippet": "Double your impact! Corporate match available through December 31. Donate now: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "39929c4bb007355b",
+    "sender": "action@changemakers.org",
+    "subject": "New campaign: pipeline construction",
+    "snippet": "Emergency response underway in Syria. Help: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "84711e6587373ff1",
+    "sender": "help@mission.org",
+    "subject": "Urgent action: pipeline construction",
+    "snippet": "We're $5000 away from our justice reform goal. Will you help? Donate: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "3a414301a942ba3c",
+    "sender": "action@sierra.org",
+    "subject": "Oxfam needs your voice",
+    "snippet": "Meet the team fighting for rainforest protection. Learn their stories: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "606cbcf7b9007185",
+    "sender": "donate@impact.org",
+    "subject": "Crisis: voting rights in Kenya",
+    "snippet": "Year-end giving: 60% of our budget comes from gifts like yours. Donate: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "92ff33d8b56706c1",
+    "sender": "hello@aclu.org",
+    "subject": "Join the fight for climate action",
+    "snippet": "Volunteer for advocacy on June 15. Sign up: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "4d7b2f1c964f0cb0",
+    "sender": "donate@unicef.org",
+    "subject": "Join the fight for rainforest protection",
+    "snippet": "Employee matching program: Ask your employer to match. Set up: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "26e681fc4150aedf",
+    "sender": "action@social.org",
+    "subject": "Sustaining membership available",
+    "snippet": "This year, we aided 5000 people. Here's what your donations accomplished: trained advocates. Donate again: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "00a633f7017011c4",
+    "sender": "donate@unicef.org",
+    "subject": "Sustaining membership available",
+    "snippet": "Policy victory! We helped pass Voting Rights Extension. Now we need funding to enforce it: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "7f9418f9af550905",
+    "sender": "support@oxfam.org",
+    "subject": "Breakthrough victory for climate action",
+    "snippet": "Double your impact! Corporate match available through June 15. Donate now: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "751ad01bcef92392",
+    "sender": "action@splcenter.org",
+    "subject": "Emergency response: voting rights",
+    "snippet": "Pema was helped by Oxfam. Their story: escaped trafficking. Will you help more? Donate: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "02b888b35355a438",
+    "sender": "action@doctorswithoutborders.org",
+    "subject": "End-of-quarter push",
+    "snippet": "Crisis in Bangladesh: conflict displacing families. Your donation provides medical care. Donate immediately: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "c80c14367a4c5e8b",
+    "sender": "action@splcenter.org",
+    "subject": "Donation impact report",
+    "snippet": "Corporate partnership match: Your $1 becomes $2! Donate: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "cd85b5a51ec783f8",
+    "sender": "hello@naacp.org",
+    "subject": "Your donation at work",
+    "snippet": "Corporate partnership match: Your $1 becomes $2! Donate: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "233f06f1ec861e3a",
+    "sender": "donate@unicef.org",
+    "subject": "Crisis: voting rights in Kenya",
+    "snippet": "Petition your representative on voting rights. Target: 100000 signatures. Sign: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "f2933b9aa6e5d000",
+    "sender": "support@peta.org",
+    "subject": "Crisis: pipeline construction in Bangladesh",
+    "snippet": "Crisis in Kenya: conflict displacing families. Your donation provides food and water. Donate immediately: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "3adc846f709a1ea2",
+    "sender": "donate@southern-poverty.org",
+    "subject": "Donate to save {subject}",
+    "snippet": "Crisis in Kenya: conflict displacing families. Your donation provides medical care. Donate immediately: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "7cfbcb968282a29a",
+    "sender": "donate@unicef.org",
+    "subject": "Breaking: {headline}",
+    "snippet": "Newsletter subscribers get exclusive updates. Subscribe: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "fb17842e5a65a19c",
+    "sender": "action@changemakers.org",
+    "subject": "Breakthrough victory for climate action",
+    "snippet": "Join our monthly sustaining circle. For $10, you'll provide: exclusive events. Sign up: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "c8d52d271ba3dc86",
+    "sender": "action@amnesty.org",
+    "subject": "Sustaining membership available",
+    "snippet": "Thank you for caring about clean water! Here's an update on our work: We passed new legislation. The impact of supporters like you is incredible!",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "0a4bf65df5db2c39",
+    "sender": "donate@worldwildlife.org",
+    "subject": "Donation deadline approaching",
+    "snippet": "Crisis in Syria: conflict displacing families. Your donation provides shelter. Donate immediately: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "05f20d5ff02be16e",
+    "sender": "donate@worldwildlife.org",
+    "subject": "Emergency response: climate crisis",
+    "snippet": "We need 1,000 calls to Congress by December 31 to fight climate crisis. Call now: 202-555-0100. Use this template: Please protect our environment",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "97b6352cefc5dd87",
+    "sender": "donate@unicef.org",
+    "subject": "End-of-quarter push",
+    "snippet": "Corporate partnership match: Your $1 becomes $2! Donate: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "3cfec65ae26f5870",
+    "sender": "action@sierra.org",
+    "subject": "Donate to save {subject}",
+    "snippet": "Thank you for caring about human rights! Here's an update on our work: We passed new legislation. The impact of supporters like you is incredible!",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "e69cace9b6774d8c",
+    "sender": "hello@charitywater.org",
+    "subject": "End-of-quarter push",
+    "snippet": "This year, we aided 5000 people. Here's what your donations accomplished: trained advocates. Donate again: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "c11b6dfec80cf6e7",
+    "sender": "donate@worldwildlife.org",
+    "subject": "Meet the people we're helping",
+    "snippet": "Corporate partnership match: Your $1 becomes $2! Donate: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "7fb27da64ccc93ab",
+    "sender": "donate@greenpeace.org",
+    "subject": "Breaking: {headline}",
+    "snippet": "Volunteer for advocacy on June 15. Sign up: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "c38ae8af13c3c50c",
+    "sender": "support@humanrights.org",
+    "subject": "Donate to save {subject}",
+    "snippet": "500 volunteers trained. 10000 people helped this year. Your support made it possible.",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "f769b1d834ffa221",
+    "sender": "donate@americanredcross.org",
+    "subject": "Donate to save {subject}",
+    "snippet": "This year, we aided 5000 people. Here's what your donations accomplished: saved lives. Donate again: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "ca0574af7a5604a8",
+    "sender": "support@peta.org",
+    "subject": "Monthly update from WWF",
+    "snippet": "Meet the team fighting for human rights. Learn their stories: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "b477b70d7faa6a1d",
+    "sender": "action@doctorswithoutborders.org",
+    "subject": "New campaign: voting rights",
+    "snippet": "Annual tax-deductible giving deadline: June 15. Give today: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "b5275baef10203e2",
+    "sender": "action@sierra.org",
+    "subject": "Oxfam annual report",
+    "snippet": "Workplace giving campaign: Payroll deduction available. Join: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "0919a696d68c817a",
+    "sender": "support@peta.org",
+    "subject": "Crisis: pipeline construction in Kenya",
+    "snippet": "We reached a milestone: 100000 people helped. Celebrate and continue the work: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "73f5538688ccd1dd",
+    "sender": "help@mission.org",
+    "subject": "Volunteer opportunity: fundraising",
+    "snippet": "Our education has reached 10000 people in Syria. Help us expand: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "6504a55e7aab0bc4",
+    "sender": "action@social.org",
+    "subject": "Volunteer opportunity: advocacy",
+    "snippet": "We're $5000 away from our climate action goal. Will you help? Donate: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "be7023a04518d514",
+    "sender": "support@humanrights.org",
+    "subject": "Will you stand with us?",
+    "snippet": "We need 1,000 calls to Congress by June 15 to fight pipeline construction. Call now: 202-555-0100. Use this template: Please protect our environment",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "1cea5d53288d6ec9",
+    "sender": "help@mission.org",
+    "subject": "Challenge: 100000",
+    "snippet": "We're $5000 away from our justice reform goal. Will you help? Donate: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "9fbd8e933f3d938b",
+    "sender": "hello@charitywater.org",
+    "subject": "Success story from Kenya",
+    "snippet": "Policy victory! We helped pass Clean Water Act. Now we need funding to enforce it: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "22a40411fcaf69bd",
+    "sender": "support@peta.org",
+    "subject": "Time-sensitive: support voting rights needed",
+    "snippet": "Scholarship fund for refugee students. Help us reach $50000: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "737addabf332678f",
+    "sender": "support@oxfam.org",
+    "subject": "Year-end giving opportunity",
+    "snippet": "Young professionals group forming. Join: oxfam.org/support",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "c10539c74ce65572",
+    "sender": "donate@americanredcross.org",
+    "subject": "Tax deduction deadline",
+    "snippet": "Crisis in Syria: severe drought. Your donation provides medical care. Donate immediately: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "2e352bb473e1ca9e",
+    "sender": "contribute@foundation.org",
+    "subject": "Corporate matching available",
+    "snippet": "Year-end giving: 60% of our budget comes from gifts like yours. Donate: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  },
+  {
+    "id": "10b3e1b1885587dd",
+    "sender": "contribute@foundation.org",
+    "subject": "Breaking: {headline}",
+    "snippet": "Workplace giving campaign: Payroll deduction available. Join: https://greenpeace.org/donate",
+    "category": "NONPROFIT_ADVOCACY"
+  }
+]

@@ -1,704 +1,702 @@
-{
-  "emails": [
-    {
-      "id": "a1fd394f4f0d4402",
-      "sender": "sister.jane@gmail.com",
-      "subject": "Can't wait for wedding",
-      "snippet": "Hi! I haven't heard from you in a while. How are you doing? Would love to grab coffee or dinner soon. Let me know when you're free!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "426cdcb03232db99",
-      "sender": "sister.jane@gmail.com",
-      "subject": "Update on plans",
-      "snippet": "Been way too long. I want to actually hang out, not just text. When works for you?",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "7f89af8b0ac48e56",
-      "sender": "work.friend.sam@company.com",
-      "subject": "Reply when you get a chance",
-      "snippet": "Thinking of you and hoping all is well. Let's not let so much time pass next time. Miss you!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "b10bc28d86069594",
-      "sender": "family.friend.susan@yahoo.com",
-      "subject": "Thinking about you",
-      "snippet": "Your number came up in my phone and I realized I haven't called in ages. How are things? Miss hearing your voice!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "6419c8a2a00991fc",
-      "sender": "dance.class.friend@yahoo.com",
-      "subject": "Long time no talk",
-      "snippet": "Been a minute! How's life updates going? Tell me everything. Let's reconnect soon.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "ee0a367d9a38ce6f",
-      "sender": "roommate.jordan@protonmail.com",
-      "subject": "Update on the project",
-      "snippet": "Been a minute! How's that thing going? Tell me everything. Let's reconnect soon.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "7a4193ac975d748f",
-      "sender": "sister.jane@gmail.com",
-      "subject": "Dinner this weekend?",
-      "snippet": "Hope everything is going well with you. Life has been crazy but I'm always thinking of you.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "3abf8eb4e8a09c37",
-      "sender": "work.friend.sam@company.com",
-      "subject": "Sending love",
-      "snippet": "Can't stop thinking about that night out. We need to hang soon! When are you free?",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "397cc94fa1f302aa",
-      "sender": "uncle-mike@hotmail.com",
-      "subject": "You won't believe this",
-      "snippet": "Been a minute! How's the project going? Tell me everything. Let's reconnect soon.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "075f55e687e65bad",
-      "sender": "pen.pal@protonmail.com",
-      "subject": "Update on that thing",
-      "snippet": "Just wanted to say thanks again for helping me move. You're the best. Let's do something fun soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "a2e3415b9a43a6b5",
-      "sender": "pen.pal@protonmail.com",
-      "subject": "Happy Birthday!",
-      "snippet": "I was thinking about freshman year and it made me smile. Those were the good days! We should recreate that sometime.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "2456d0784fc2f023",
-      "sender": "work.friend.sam@company.com",
-      "subject": "I have news",
-      "snippet": "Sending a virtual hug. Hope things are looking up. Let's catch up properly soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "d846bcb50a22df4e",
-      "sender": "dad@outlook.com",
-      "subject": "Happy Holidays!",
-      "snippet": "How are your partner and the family? I want to catch up on everything. When are you free for a call?",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "2160e2312f48ff4a",
-      "sender": "grandma.j@protonmail.com",
-      "subject": "Update on plans",
-      "snippet": "I have something I want to tell you. Not anything bad, just exciting! Call me when you get a chance.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "94d33191f7a79f23",
-      "sender": "ex.colleague@gmail.com",
-      "subject": "Let me know when you're free",
-      "snippet": "Sending a virtual hug. Hope things are looking up. Let's catch up properly soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "46bc7db225efe029",
-      "sender": "sarah_doe@yahoo.com",
-      "subject": "Wanted to say hi",
-      "snippet": "I attached some photos from the trip. You've got to see the sunset we caught on the last day. Let me know what you think!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "c3140b7e5b7d2ad7",
-      "sender": "grandma.j@protonmail.com",
-      "subject": "Got a minute?",
-      "snippet": "Been a minute! How's plans going? Tell me everything. Let's reconnect soon.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "53f3ea22a9d3a813",
-      "sender": "dad@outlook.com",
-      "subject": "Update on that thing",
-      "snippet": "Your number came up in my phone and I realized I haven't called in ages. How are things? Miss hearing your voice!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "50d745ae918881e5",
-      "sender": "pen.pal@protonmail.com",
-      "subject": "Hope you're doing well",
-      "snippet": "Your number came up in my phone and I realized I haven't called in ages. How are things? Miss hearing your voice!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "18e19239d9e39134",
-      "sender": "childhood.friend.maria@hotmail.com",
-      "subject": "Dinner this weekend?",
-      "snippet": "I heard through the grapevine about your promotion. Want to talk about it? Call me!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "d96a99729f7cd0df",
-      "sender": "yoga.class.friend@yahoo.com",
-      "subject": "Been a while!",
-      "snippet": "Thinking of you and hoping all is well. Let's not let so much time pass next time. Miss you!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "138cb5c42bc1fb4e",
-      "sender": "dad@outlook.com",
-      "subject": "You won't believe this",
-      "snippet": "Saw this and thought of you. Attached! Let me know what you think. Miss chatting with you.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "909be9ab9473d1b7",
-      "sender": "pen.pal@protonmail.com",
-      "subject": "Re: plans",
-      "snippet": "Been way too long. I want to actually hang out, not just text. When works for you?",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "e74f421204ba54b3",
-      "sender": "book.club.member@gmail.com",
-      "subject": "Re: the project",
-      "snippet": "Found an old video of us from college. Brings back so many memories! Miss you, friend. We need to catch up soon.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "00ae9fdb736d5b6b",
-      "sender": "softball.teammate@gmail.com",
-      "subject": "What's new?",
-      "snippet": "Hope everything is going well with you. Life has been crazy but I'm always thinking of you.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "0f157b3058b5438f",
-      "sender": "softball.teammate@gmail.com",
-      "subject": "Update on that thing",
-      "snippet": "Random thought: I've been meaning to tell you an observation. It would have made you laugh. Let's talk soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "2a88c134cda6dcc4",
-      "sender": "dad@outlook.com",
-      "subject": "Miss you!",
-      "snippet": "I attached some photos from the trip. You've got to see the sunset we caught on the last day. Let me know what you think!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "fbbdc13cb2b81419",
-      "sender": "yoga.class.friend@yahoo.com",
-      "subject": "Quick question",
-      "snippet": "I saw something that reminded me of you and music. Made me want to reach out and see what you're up to.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "3a57d52e8573301e",
-      "sender": "college.buddy.chris@gmail.com",
-      "subject": "You won't believe this",
-      "snippet": "Just wanted to say thanks again for listening to me vent. You're the best. Let's do something fun soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "a3d4a54dbc6bbe57",
-      "sender": "roommate.jordan@protonmail.com",
-      "subject": "Been a while!",
-      "snippet": "How have you been? It feels like forever since we last talked. I've been meaning to reach out. Let's schedule something soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "e85228403400afe0",
-      "sender": "childhood.friend.maria@hotmail.com",
-      "subject": "Thinking about you",
-      "snippet": "I was looking through old photos and found ones from birthday. So many good memories! Remember when...?",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "ec461aa5e25797dc",
-      "sender": "book.club.member@gmail.com",
-      "subject": "Got a minute?",
-      "snippet": "Sending a virtual hug. Hope things are looking up. Let's catch up properly soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "27b43c7fa5b737e7",
-      "sender": "old.coworker.lisa@hotmail.com",
-      "subject": "Exciting news!",
-      "snippet": "Just a quick note to say I was thinking of you. Hope life is treating you well!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "7317b1c3a9a3e4a3",
-      "sender": "dance.class.friend@yahoo.com",
-      "subject": "Update on plans",
-      "snippet": "Still thinking about our conversation about the project. Want to grab dinner and continue talking? You in?",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "231f409b98d29fd9",
-      "sender": "cousin.tom@yahoo.com",
-      "subject": "Re: the project",
-      "snippet": "I have something I want to tell you. Not anything bad, just exciting! Call me when you get a chance.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "e21216f1bf6588ca",
-      "sender": "softball.teammate@gmail.com",
-      "subject": "Dinner this weekend?",
-      "snippet": "Sending a virtual hug. Hope things are looking up. Let's catch up properly soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "4623c2ead3c815ea",
-      "sender": "college.buddy.chris@gmail.com",
-      "subject": "Quick question",
-      "snippet": "How have you been? It feels like forever since we last talked. I've been meaning to reach out. Let's schedule something soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "8f244f0e068b788a",
-      "sender": "family.friend.susan@yahoo.com",
-      "subject": "Check out this photo!",
-      "snippet": "Still thinking about our conversation about life updates. Want to grab dinner and continue talking? You in?",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "33c1f52234859e75",
-      "sender": "dance.class.friend@yahoo.com",
-      "subject": "Quick question",
-      "snippet": "Hope everything is going well with you. Life has been crazy but I'm always thinking of you.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "7f294538df7a85fd",
-      "sender": "mom@gmail.com",
-      "subject": "Reply when you get a chance",
-      "snippet": "Thinking of you and hoping all is well. Let's not let so much time pass next time. Miss you!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "47fd91487b3251fb",
-      "sender": "friend.from.camp@gmail.com",
-      "subject": "You won't believe this",
-      "snippet": "Can't stop thinking about that night out. We need to hang soon! When are you free?",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "6ea41c7179359022",
-      "sender": "dance.class.friend@yahoo.com",
-      "subject": "Reply when you get a chance",
-      "snippet": "Attached a bunch of pictures from graduation. You would have loved it! Next time you're in town we need to hang out.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "d54ce20fee565593",
-      "sender": "college.buddy.chris@gmail.com",
-      "subject": "Update on that thing",
-      "snippet": "Random thought: I've been meaning to tell you something funny. It would have made you laugh. Let's talk soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "15b2404ceb4cb363",
-      "sender": "sister.jane@gmail.com",
-      "subject": "Been a while!",
-      "snippet": "I was looking through old photos and found ones from graduation. So many good memories! Remember when...?",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "77f4549e1f15ec2c",
-      "sender": "hiking.buddy.dave@yahoo.com",
-      "subject": "Quick question",
-      "snippet": "Attached a bunch of pictures from reunion. You would have loved it! Next time you're in town we need to hang out.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "9549bfcd1c925e8b",
-      "sender": "family.friend.susan@yahoo.com",
-      "subject": "Hope you're doing well",
-      "snippet": "Sending a virtual hug. Hope things are looking up. Let's catch up properly soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "baafbb8da228e081",
-      "sender": "yoga.class.friend@yahoo.com",
-      "subject": "Just checking in",
-      "snippet": "Been a minute! How's that thing going? Tell me everything. Let's reconnect soon.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "2d3158077744334a",
-      "sender": "partner.alex@gmail.com",
-      "subject": "Miss you!",
-      "snippet": "Sending a virtual hug. Hope things are looking up. Let's catch up properly soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "1d4332813228f585",
-      "sender": "grandma.j@protonmail.com",
-      "subject": "Sending love",
-      "snippet": "Sending a virtual hug. Hope things are looking up. Let's catch up properly soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "767b15aabb684f4e",
-      "sender": "john.smith@gmail.com",
-      "subject": "Let me know when you're free",
-      "snippet": "Your number came up in my phone and I realized I haven't called in ages. How are things? Miss hearing your voice!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "2d93b00c9ff42ae4",
-      "sender": "best.friend.alex@gmail.com",
-      "subject": "What's new?",
-      "snippet": "Thinking of you and hoping all is well. Let's not let so much time pass next time. Miss you!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "721177f1bdf880d2",
-      "sender": "dad@outlook.com",
-      "subject": "Have you seen this?",
-      "snippet": "I attached some photos from the trip. You've got to see the sunset we caught on the last day. Let me know what you think!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "6f34268bcb12ff8c",
-      "sender": "volunteer.friend@hotmail.com",
-      "subject": "Check out this photo!",
-      "snippet": "I'm doing game nights on June 20. Want to join? It would be great to see you. Let me know!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "ee03804d2db4860a",
-      "sender": "ex.colleague@gmail.com",
-      "subject": "Thinking about you",
-      "snippet": "Your number came up in my phone and I realized I haven't called in ages. How are things? Miss hearing your voice!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "ebd8f7ca880e5b88",
-      "sender": "yoga.class.friend@yahoo.com",
-      "subject": "Have you seen this?",
-      "snippet": "Just sending some love your way. Hope you're taking care of yourself. Let's talk soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "8b1d930c66b1efe7",
-      "sender": "partner.alex@gmail.com",
-      "subject": "Check out this photo!",
-      "snippet": "Just a quick note to say I was thinking of you. Hope life is treating you well!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "c3abfc142a2d5783",
-      "sender": "mom@gmail.com",
-      "subject": "Remember when...",
-      "snippet": "Can't stop thinking about spring break trip. We need to hang soon! When are you free?",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "2d55831bece0b8df",
-      "sender": "grandma.j@protonmail.com",
-      "subject": "Let's catch up",
-      "snippet": "Just a quick note to say I was thinking of you. Hope life is treating you well!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "4c8aee20e263c2d5",
-      "sender": "neighbor.bob@protonmail.com",
-      "subject": "What's new?",
-      "snippet": "Can't stop thinking about spring break trip. We need to hang soon! When are you free?",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "1032f3d80446fa24",
-      "sender": "childhood.friend.maria@hotmail.com",
-      "subject": "Been a while!",
-      "snippet": "Saw this and thought of you. Attached! Let me know what you think. Miss chatting with you.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "ca45b47a109c6c6a",
-      "sender": "college.roommate@hotmail.com",
-      "subject": "Can we talk?",
-      "snippet": "Saw this and thought of you. Attached! Let me know what you think. Miss chatting with you.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "7a9f248f1b6db308",
-      "sender": "ex.colleague@gmail.com",
-      "subject": "Thinking of you",
-      "snippet": "Thinking of you and hoping all is well. Let's not let so much time pass next time. Miss you!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "a7b9e6284883d611",
-      "sender": "roommate.jordan@protonmail.com",
-      "subject": "You won't believe this",
-      "snippet": "I heard through the grapevine about the engagement. Want to talk about it? Call me!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "ea3bdf944b7e1aa1",
-      "sender": "family.friend.susan@yahoo.com",
-      "subject": "Reply when you get a chance",
-      "snippet": "How have you been? It feels like forever since we last talked. I've been meaning to reach out. Let's schedule something soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "39262cee654bdbd4",
-      "sender": "book.club.member@gmail.com",
-      "subject": "Reply when you get a chance",
-      "snippet": "I was looking through old photos and found ones from wedding. So many good memories! Remember when...?",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "19e8ab10150484bf",
-      "sender": "dad@outlook.com",
-      "subject": "Been a while!",
-      "snippet": "Just wanted to say thanks again for helping me move. You're the best. Let's do something fun soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "57f83483902f6f04",
-      "sender": "book.club.member@gmail.com",
-      "subject": "Let me know when you're free",
-      "snippet": "Hi! I haven't heard from you in a while. How are you doing? Would love to grab coffee or dinner soon. Let me know when you're free!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "bb9dc7fb8ee6b6a4",
-      "sender": "work.friend.sam@company.com",
-      "subject": "Sending love",
-      "snippet": "Hi! I haven't heard from you in a while. How are you doing? Would love to grab coffee or dinner soon. Let me know when you're free!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "142fb2f90eed4cb9",
-      "sender": "running.group@gmail.com",
-      "subject": "Got a minute?",
-      "snippet": "Thinking of you and hoping all is well. Let's not let so much time pass next time. Miss you!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "398a00b3a3f6e2f9",
-      "sender": "yoga.class.friend@yahoo.com",
-      "subject": "What's new?",
-      "snippet": "Got some news I wanted to share with you first. Can we grab coffee/call soon? Don't want to miss you.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "b9dd7b630fdf0e7c",
-      "sender": "volunteer.friend@hotmail.com",
-      "subject": "You won't believe this",
-      "snippet": "I heard through the grapevine about your promotion. Want to talk about it? Call me!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "0246124d49c57f47",
-      "sender": "book.club.member@gmail.com",
-      "subject": "Let me know when you're free",
-      "snippet": "Hey! I know I've been bad about keeping in touch. Life's been hectic but I miss you. How have you been?",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "42684fe63401d5bd",
-      "sender": "dance.class.friend@yahoo.com",
-      "subject": "Just checking in",
-      "snippet": "Hope everything is going well with you. Life has been crazy but I'm always thinking of you.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "df8b510b627e0b1a",
-      "sender": "partner.alex@gmail.com",
-      "subject": "Update on that thing",
-      "snippet": "I'm doing hikes on June 20. Want to join? It would be great to see you. Let me know!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "ba7adae3740726aa",
-      "sender": "old.coworker.lisa@hotmail.com",
-      "subject": "Have you seen this?",
-      "snippet": "I heard through the grapevine about the engagement. Want to talk about it? Call me!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "08e7088b7185a67f",
-      "sender": "dad@outlook.com",
-      "subject": "Exciting news!",
-      "snippet": "I heard through the grapevine about your promotion. Want to talk about it? Call me!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "3d84f04d5e6c420d",
-      "sender": "friend.from.camp@gmail.com",
-      "subject": "You won't believe this",
-      "snippet": "Thinking of you and hoping all is well. Let's not let so much time pass next time. Miss you!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "0f93bb43e1fe11d7",
-      "sender": "pen.pal@protonmail.com",
-      "subject": "Can we talk?",
-      "snippet": "How have you been? It feels like forever since we last talked. I've been meaning to reach out. Let's schedule something soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "cc691fc4b161dc37",
-      "sender": "uncle-mike@hotmail.com",
-      "subject": "Just checking in",
-      "snippet": "Sending a virtual hug. Hope things are looking up. Let's catch up properly soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "bacd1df08da13fee",
-      "sender": "running.group@gmail.com",
-      "subject": "I have news",
-      "snippet": "I attached some photos from the trip. You've got to see the sunset we caught on the last day. Let me know what you think!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "a6e7a85358bcf8cf",
-      "sender": "softball.teammate@gmail.com",
-      "subject": "Hope you're doing well",
-      "snippet": "I attached some photos from the trip. You've got to see the sunset we caught on the last day. Let me know what you think!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "ff60f690a7cbc65e",
-      "sender": "book.club.member@gmail.com",
-      "subject": "Let me know when you're free",
-      "snippet": "I attached some photos from the trip. You've got to see the sunset we caught on the last day. Let me know what you think!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "50a53998ad9e6e55",
-      "sender": "volunteer.friend@hotmail.com",
-      "subject": "Can we talk?",
-      "snippet": "Just sending some love your way. Hope you're taking care of yourself. Let's talk soon!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "8eade92a2aaf8254",
-      "sender": "pen.pal@protonmail.com",
-      "subject": "Thinking of you",
-      "snippet": "Hi! I haven't heard from you in a while. How are you doing? Would love to grab coffee or dinner soon. Let me know when you're free!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "a135bf390a5df90b",
-      "sender": "dance.class.friend@yahoo.com",
-      "subject": "Let's catch up",
-      "snippet": "I was looking through old photos and found ones from wedding. So many good memories! Remember when...?",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "1a0dc044b21ffaea",
-      "sender": "best.friend.alex@gmail.com",
-      "subject": "Thanks for everything",
-      "snippet": "Found an old video of us from college. Brings back so many memories! Miss you, friend. We need to catch up soon.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "e724b9854aa57fc7",
-      "sender": "sarah_doe@yahoo.com",
-      "subject": "Long time no talk",
-      "snippet": "You've been on my mind. Just wanted to check in and see how you're really doing. Missing our hikes.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "89876205d72d5989",
-      "sender": "sarah_doe@yahoo.com",
-      "subject": "Thinking about you",
-      "snippet": "Attached a bunch of pictures from reunion. You would have loved it! Next time you're in town we need to hang out.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "173931e751ffda07",
-      "sender": "college.buddy.chris@gmail.com",
-      "subject": "Long time no talk",
-      "snippet": "I was looking through old photos and found ones from wedding. So many good memories! Remember when...?",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "cd23baafd3f4dd60",
-      "sender": "mom@gmail.com",
-      "subject": "Let me know when you're free",
-      "snippet": "I heard through the grapevine about your promotion. Want to talk about it? Call me!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "fb9b4e8ced4238dd",
-      "sender": "book.club.member@gmail.com",
-      "subject": "How are you?",
-      "snippet": "Hi! I haven't heard from you in a while. How are you doing? Would love to grab coffee or dinner soon. Let me know when you're free!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "5936d2043c380465",
-      "sender": "family.friend.susan@yahoo.com",
-      "subject": "Re: that thing",
-      "snippet": "I heard through the grapevine about the engagement. Want to talk about it? Call me!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "802052b85b7a9a8a",
-      "sender": "old.coworker.lisa@hotmail.com",
-      "subject": "Long time no talk",
-      "snippet": "Just a quick note to say I was thinking of you. Hope life is treating you well!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "07559b94a55946ef",
-      "sender": "neighbor.bob@protonmail.com",
-      "subject": "Can't wait for birthday",
-      "snippet": "Been a minute! How's that thing going? Tell me everything. Let's reconnect soon.",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "430d34ec1216a091",
-      "sender": "partner.alex@gmail.com",
-      "subject": "Thinking of you",
-      "snippet": "I'm doing hikes on June 20. Want to join? It would be great to see you. Let me know!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "81be9cccf9fbc7e0",
-      "sender": "book.club.member@gmail.com",
-      "subject": "Exciting news!",
-      "snippet": "Your number came up in my phone and I realized I haven't called in ages. How are things? Miss hearing your voice!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "0dffae1150eb95ea",
-      "sender": "sister.jane@gmail.com",
-      "subject": "What's new?",
-      "snippet": "I heard through the grapevine about your promotion. Want to talk about it? Call me!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "c7511c541c0aecca",
-      "sender": "grandma.j@protonmail.com",
-      "subject": "What's new?",
-      "snippet": "I attached some photos from the trip. You've got to see the sunset we caught on the last day. Let me know what you think!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "4cc5e544ceb23a54",
-      "sender": "old.coworker.lisa@hotmail.com",
-      "subject": "Dinner this weekend?",
-      "snippet": "I heard through the grapevine about the engagement. Want to talk about it? Call me!",
-      "category": "PERSONAL"
-    },
-    {
-      "id": "b42939628f631522",
-      "sender": "hiking.buddy.dave@yahoo.com",
-      "subject": "Been a while!",
-      "snippet": "I attached some photos from the trip. You've got to see the sunset we caught on the last day. Let me know what you think!",
-      "category": "PERSONAL"
-    }
-  ]
-}
+[
+  {
+    "id": "7b4258f432202fe2",
+    "sender": "volunteer.friend@hotmail.com",
+    "subject": "Have you seen this?",
+    "snippet": "Been a minute! How's that thing going? Tell me everything. Let's reconnect soon.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "acf17f08f1b3a493",
+    "sender": "best.friend.alex@gmail.com",
+    "subject": "Been a while!",
+    "snippet": "I'm so glad we reconnected. Can't wait to see you in person. Let's plan something!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "5a437cfe9b9c5759",
+    "sender": "old.coworker.lisa@hotmail.com",
+    "subject": "Let me know when you're free",
+    "snippet": "Can't stop thinking about that night out. We need to hang soon! When are you free?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "a25a0608b3ac10c2",
+    "sender": "cousin.tom@yahoo.com",
+    "subject": "Miss our game nights",
+    "snippet": "Been way too long. I want to actually hang out, not just text. When works for you?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "d114fff4a58efd5b",
+    "sender": "ex.colleague@gmail.com",
+    "subject": "Long time no talk",
+    "snippet": "Still thinking about our conversation about the project. Want to grab dinner and continue talking? You in?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "fe9e74d9bd06362f",
+    "sender": "childhood.friend.maria@hotmail.com",
+    "subject": "Hope you're doing well",
+    "snippet": "Been way too long. I want to actually hang out, not just text. When works for you?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "b397f3b399d4971c",
+    "sender": "partner.alex@gmail.com",
+    "subject": "Hope you're doing well",
+    "snippet": "Can't stop thinking about spring break trip. We need to hang soon! When are you free?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "c93c6f078a8aea85",
+    "sender": "book.club.member@gmail.com",
+    "subject": "Update on plans",
+    "snippet": "I'm so glad we reconnected. Can't wait to see you in person. Let's plan something!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "62c186eda5e6a2d7",
+    "sender": "running.group@gmail.com",
+    "subject": "Happy Holidays!",
+    "snippet": "Random thought: I've been meaning to tell you an observation. It would have made you laugh. Let's talk soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "11d97e687ff6d4d2",
+    "sender": "pen.pal@protonmail.com",
+    "subject": "Hope you're doing well",
+    "snippet": "How are Mom and the family? I want to catch up on everything. When are you free for a call?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "51a4b4bc6b940c55",
+    "sender": "partner.alex@gmail.com",
+    "subject": "Update on that thing",
+    "snippet": "Just wanted to say thanks again for listening to me vent. You're the best. Let's do something fun soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "ca2b5e4c298839cd",
+    "sender": "running.group@gmail.com",
+    "subject": "Got a minute?",
+    "snippet": "Just a quick note to say I was thinking of you. Hope life is treating you well!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "032adc8ff11f2ff8",
+    "sender": "friend.from.camp@gmail.com",
+    "subject": "Can't wait for graduation",
+    "snippet": "Thinking of you and hoping all is well. Let's not let so much time pass next time. Miss you!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "3404b3d24d3c728a",
+    "sender": "dance.class.friend@yahoo.com",
+    "subject": "Let's catch up",
+    "snippet": "Just a quick note to say I was thinking of you. Hope life is treating you well!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "2f57c63f169e3187",
+    "sender": "softball.teammate@gmail.com",
+    "subject": "What's new?",
+    "snippet": "I heard through the grapevine about the engagement. Want to talk about it? Call me!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "9ab6ca509d6772f8",
+    "sender": "dad@outlook.com",
+    "subject": "Quick question",
+    "snippet": "I'm doing coffee dates on next weekend. Want to join? It would be great to see you. Let me know!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "d308aa197741059d",
+    "sender": "partner.alex@gmail.com",
+    "subject": "Reply when you get a chance",
+    "snippet": "Attached a bunch of pictures from birthday. You would have loved it! Next time you're in town we need to hang out.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "c8bbd819458c169f",
+    "sender": "pen.pal@protonmail.com",
+    "subject": "Exciting news!",
+    "snippet": "How are Mom and the family? I want to catch up on everything. When are you free for a call?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "235aada8d1d72445",
+    "sender": "ex.colleague@gmail.com",
+    "subject": "Miss you!",
+    "snippet": "I attached some photos from the trip. You've got to see the sunset we caught on the last day. Let me know what you think!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "54d67fcacc9e7ef1",
+    "sender": "dad@outlook.com",
+    "subject": "Sending love",
+    "snippet": "Sending a virtual hug. Hope things are looking up. Let's catch up properly soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "eba6545d54f23f35",
+    "sender": "pen.pal@protonmail.com",
+    "subject": "I have news",
+    "snippet": "Just sending some love your way. Hope you're taking care of yourself. Let's talk soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "3cddce19e4506de6",
+    "sender": "uncle-mike@hotmail.com",
+    "subject": "Can't wait for birthday",
+    "snippet": "Still thinking about our conversation about that thing. Want to grab dinner and continue talking? You in?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "e32225daa2f30d30",
+    "sender": "friend.of.friend.kate@yahoo.com",
+    "subject": "Let's catch up",
+    "snippet": "How have you been? It feels like forever since we last talked. I've been meaning to reach out. Let's schedule something soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "f0e134aab22560fb",
+    "sender": "book.club.member@gmail.com",
+    "subject": "Dinner this weekend?",
+    "snippet": "I'm so glad we reconnected. Can't wait to see you in person. Let's plan something!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "afd384510ad0b1cf",
+    "sender": "cousin.tom@yahoo.com",
+    "subject": "Been a while!",
+    "snippet": "Thinking of you and hoping all is well. Let's not let so much time pass next time. Miss you!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "005b77d326ef2846",
+    "sender": "college.buddy.chris@gmail.com",
+    "subject": "Remember when...",
+    "snippet": "I was looking through old photos and found ones from reunion. So many good memories! Remember when...?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "8d70f234f29ad7dc",
+    "sender": "hiking.buddy.dave@yahoo.com",
+    "subject": "Have you seen this?",
+    "snippet": "Just sending some love your way. Hope you're taking care of yourself. Let's talk soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "da1c7e8cb3815f5b",
+    "sender": "grandma.j@protonmail.com",
+    "subject": "What's new?",
+    "snippet": "I attached some photos from the trip. You've got to see the sunset we caught on the last day. Let me know what you think!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "eb48cdc0c2f4e033",
+    "sender": "yoga.class.friend@yahoo.com",
+    "subject": "Dinner this weekend?",
+    "snippet": "Random thought: I've been meaning to tell you something funny. It would have made you laugh. Let's talk soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "a0860c2442021026",
+    "sender": "mom@gmail.com",
+    "subject": "Just checking in",
+    "snippet": "I attached some photos from the trip. You've got to see the sunset we caught on the last day. Let me know what you think!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "3d5be829623fa2d1",
+    "sender": "friend.from.camp@gmail.com",
+    "subject": "How are you?",
+    "snippet": "I heard through the grapevine about the engagement. Want to talk about it? Call me!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "d1fa5a65cf8f9899",
+    "sender": "friend.of.friend.kate@yahoo.com",
+    "subject": "Dinner this weekend?",
+    "snippet": "How have you been? It feels like forever since we last talked. I've been meaning to reach out. Let's schedule something soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "3b9186f7b5179f6b",
+    "sender": "neighbor.bob@protonmail.com",
+    "subject": "Long time no talk",
+    "snippet": "Attached a bunch of pictures from graduation. You would have loved it! Next time you're in town we need to hang out.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "9fc76396157ec58b",
+    "sender": "softball.teammate@gmail.com",
+    "subject": "Got a minute?",
+    "snippet": "Just sending some love your way. Hope you're taking care of yourself. Let's talk soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "1dda9494362f62aa",
+    "sender": "neighbor.bob@protonmail.com",
+    "subject": "Let me know when you're free",
+    "snippet": "Been a minute! How's the project going? Tell me everything. Let's reconnect soon.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "9297036963106dd6",
+    "sender": "book.club.member@gmail.com",
+    "subject": "Miss you!",
+    "snippet": "How are the kids and the family? I want to catch up on everything. When are you free for a call?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "d167d71b99c97b75",
+    "sender": "work.friend.sam@company.com",
+    "subject": "Long time no talk",
+    "snippet": "I saw something that reminded me of you and travel. Made me want to reach out and see what you're up to.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "54e57a4bdc319764",
+    "sender": "sister.jane@gmail.com",
+    "subject": "Update on life updates",
+    "snippet": "Just wanted to say thanks again for listening to me vent. You're the best. Let's do something fun soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "f73a93c255cf5801",
+    "sender": "sarah_doe@yahoo.com",
+    "subject": "Can we talk?",
+    "snippet": "I attached some photos from the trip. You've got to see the sunset we caught on the last day. Let me know what you think!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "58a6ad13c673002b",
+    "sender": "john.smith@gmail.com",
+    "subject": "Let me know when you're free",
+    "snippet": "Just sending some love your way. Hope you're taking care of yourself. Let's talk soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "bafac196113ed7fd",
+    "sender": "pen.pal@protonmail.com",
+    "subject": "How are you?",
+    "snippet": "I saw something that reminded me of you and travel. Made me want to reach out and see what you're up to.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "de02eae36261e497",
+    "sender": "hiking.buddy.dave@yahoo.com",
+    "subject": "Long time no talk",
+    "snippet": "Can't stop thinking about spring break trip. We need to hang soon! When are you free?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "b6479e0749703e19",
+    "sender": "volunteer.friend@hotmail.com",
+    "subject": "Miss our hikes",
+    "snippet": "You've been on my mind. Just wanted to check in and see how you're really doing. Missing our coffee dates.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "c81f70cee692edc4",
+    "sender": "mom@gmail.com",
+    "subject": "Re: that thing",
+    "snippet": "Attached a bunch of pictures from graduation. You would have loved it! Next time you're in town we need to hang out.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "21e3f57e4383ee80",
+    "sender": "roommate.jordan@protonmail.com",
+    "subject": "Long time no talk",
+    "snippet": "I attached some photos from the trip. You've got to see the sunset we caught on the last day. Let me know what you think!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "7dd2fb5889ef67b3",
+    "sender": "old.coworker.lisa@hotmail.com",
+    "subject": "How are you?",
+    "snippet": "Attached a bunch of pictures from graduation. You would have loved it! Next time you're in town we need to hang out.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "f6cda6959a3c7bbe",
+    "sender": "college.buddy.chris@gmail.com",
+    "subject": "Long time no talk",
+    "snippet": "I was thinking about freshman year and it made me smile. Those were the good days! We should recreate that sometime.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "fa2381ef168bc29b",
+    "sender": "ex.colleague@gmail.com",
+    "subject": "How are you?",
+    "snippet": "Random thought: I've been meaning to tell you an observation. It would have made you laugh. Let's talk soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "b3d9ba4ed15bbe6e",
+    "sender": "cousin.tom@yahoo.com",
+    "subject": "Let's catch up",
+    "snippet": "Got some news I wanted to share with you first. Can we grab coffee/call soon? Don't want to miss you.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "f478cc8f60d2a03a",
+    "sender": "dance.class.friend@yahoo.com",
+    "subject": "Reply when you get a chance",
+    "snippet": "Hey! I know I've been bad about keeping in touch. Life's been hectic but I miss you. How have you been?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "800f757b5aeec511",
+    "sender": "uncle-mike@hotmail.com",
+    "subject": "Dinner this weekend?",
+    "snippet": "Hope everything is going well with you. Life has been crazy but I'm always thinking of you.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "f13591c40dae2434",
+    "sender": "book.club.member@gmail.com",
+    "subject": "Thinking about you",
+    "snippet": "Just sending some love your way. Hope you're taking care of yourself. Let's talk soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "2d2f626180a39b67",
+    "sender": "uncle-mike@hotmail.com",
+    "subject": "Sending love",
+    "snippet": "Just sending some love your way. Hope you're taking care of yourself. Let's talk soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "5de645edd4cfc98c",
+    "sender": "yoga.class.friend@yahoo.com",
+    "subject": "Update on the project",
+    "snippet": "I'm coming to LA on June 20. Can we meet up? Would love to see you and catch up properly.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "a5200a7a1bf77ffb",
+    "sender": "neighbor.bob@protonmail.com",
+    "subject": "Reply when you get a chance",
+    "snippet": "Just wanted to say thanks again for helping me move. You're the best. Let's do something fun soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "b6356adddaf01789",
+    "sender": "book.club.member@gmail.com",
+    "subject": "Reply when you get a chance",
+    "snippet": "Hey! I know I've been bad about keeping in touch. Life's been hectic but I miss you. How have you been?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "d9e5ed2a8c2eaba1",
+    "sender": "work.friend.sam@company.com",
+    "subject": "What's new?",
+    "snippet": "You've been on my mind. Just wanted to check in and see how you're really doing. Missing our game nights.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "499f9b996dbcb98c",
+    "sender": "college.buddy.chris@gmail.com",
+    "subject": "Let's catch up",
+    "snippet": "How are Mom and the family? I want to catch up on everything. When are you free for a call?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "8b9e24fd5ecd4a18",
+    "sender": "sister.jane@gmail.com",
+    "subject": "Update on that thing",
+    "snippet": "How are your partner and the family? I want to catch up on everything. When are you free for a call?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "29d0ca3336485a73",
+    "sender": "uncle-mike@hotmail.com",
+    "subject": "Just checking in",
+    "snippet": "I'm so glad we reconnected. Can't wait to see you in person. Let's plan something!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "2387fcd22fe89c63",
+    "sender": "partner.alex@gmail.com",
+    "subject": "Thanks for everything",
+    "snippet": "I'm coming to hometown on next weekend. Can we meet up? Would love to see you and catch up properly.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "e3286df1ec3cdd6f",
+    "sender": "travel.buddy.emma@gmail.com",
+    "subject": "Miss you!",
+    "snippet": "Hi! I haven't heard from you in a while. How are you doing? Would love to grab coffee or dinner soon. Let me know when you're free!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "ea2754fe409d6028",
+    "sender": "mom@gmail.com",
+    "subject": "What's new?",
+    "snippet": "Hi! I haven't heard from you in a while. How are you doing? Would love to grab coffee or dinner soon. Let me know when you're free!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "82d18be97d6e6e54",
+    "sender": "family.friend.susan@yahoo.com",
+    "subject": "Can we talk?",
+    "snippet": "Your number came up in my phone and I realized I haven't called in ages. How are things? Miss hearing your voice!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "f3f90c348aa928aa",
+    "sender": "sister.jane@gmail.com",
+    "subject": "What's new?",
+    "snippet": "Hi! I haven't heard from you in a while. How are you doing? Would love to grab coffee or dinner soon. Let me know when you're free!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "79fa3516dd09dae4",
+    "sender": "john.smith@gmail.com",
+    "subject": "Happy Anniversary!",
+    "snippet": "Just sending some love your way. Hope you're taking care of yourself. Let's talk soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "d8658ab420a3ae76",
+    "sender": "dance.class.friend@yahoo.com",
+    "subject": "I have news",
+    "snippet": "I was thinking about that road trip and it made me smile. Those were the good days! We should recreate that sometime.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "f961eef7784d688e",
+    "sender": "dad@outlook.com",
+    "subject": "Thinking of you",
+    "snippet": "You've been on my mind. Just wanted to check in and see how you're really doing. Missing our game nights.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "a3d10ffff2a68962",
+    "sender": "childhood.friend.maria@hotmail.com",
+    "subject": "What's new?",
+    "snippet": "Still thinking about our conversation about that thing. Want to grab dinner and continue talking? You in?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "f6716f42e68a8a1c",
+    "sender": "yoga.class.friend@yahoo.com",
+    "subject": "What's new?",
+    "snippet": "You've been on my mind. Just wanted to check in and see how you're really doing. Missing our coffee dates.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "75b33ca1aa097230",
+    "sender": "sarah_doe@yahoo.com",
+    "subject": "Sending love",
+    "snippet": "Can't stop thinking about spring break trip. We need to hang soon! When are you free?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "8a333e9719610057",
+    "sender": "work.friend.sam@company.com",
+    "subject": "Exciting news!",
+    "snippet": "Sending a virtual hug. Hope things are looking up. Let's catch up properly soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "5ec0e54df0b5daaf",
+    "sender": "childhood.friend.maria@hotmail.com",
+    "subject": "Reply when you get a chance",
+    "snippet": "Hope everything is going well with you. Life has been crazy but I'm always thinking of you.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "33c1ebdd45a3b7dd",
+    "sender": "dance.class.friend@yahoo.com",
+    "subject": "Miss you!",
+    "snippet": "How are Mom and the family? I want to catch up on everything. When are you free for a call?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "bd213c707ba971a3",
+    "sender": "old.coworker.lisa@hotmail.com",
+    "subject": "Remember when...",
+    "snippet": "Hey! I know I've been bad about keeping in touch. Life's been hectic but I miss you. How have you been?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "689c710c1895a02c",
+    "sender": "neighbor.bob@protonmail.com",
+    "subject": "Got a minute?",
+    "snippet": "I'm so glad we reconnected. Can't wait to see you in person. Let's plan something!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "1466560562de1e3e",
+    "sender": "friend.of.friend.kate@yahoo.com",
+    "subject": "Sending love",
+    "snippet": "I heard through the grapevine about the engagement. Want to talk about it? Call me!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "e019ba9cc97b45b9",
+    "sender": "friend.of.friend.kate@yahoo.com",
+    "subject": "Dinner this weekend?",
+    "snippet": "Thinking of you and hoping all is well. Let's not let so much time pass next time. Miss you!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "483a8ed6e67c857c",
+    "sender": "book.club.member@gmail.com",
+    "subject": "Remember when...",
+    "snippet": "Just a quick note to say I was thinking of you. Hope life is treating you well!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "dac367d5ac818968",
+    "sender": "grandma.j@protonmail.com",
+    "subject": "Remember when...",
+    "snippet": "Still thinking about our conversation about life updates. Want to grab dinner and continue talking? You in?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "255de297e558e24e",
+    "sender": "cousin.tom@yahoo.com",
+    "subject": "Just checking in",
+    "snippet": "I have something I want to tell you. Not anything bad, just exciting! Call me when you get a chance.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "b2762a10ab1984ae",
+    "sender": "grandma.j@protonmail.com",
+    "subject": "Let me know when you're free",
+    "snippet": "I saw something that reminded me of you and travel. Made me want to reach out and see what you're up to.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "a1e4daf466e87aed",
+    "sender": "softball.teammate@gmail.com",
+    "subject": "Miss our game nights",
+    "snippet": "I'm so glad we reconnected. Can't wait to see you in person. Let's plan something!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "83a316f00994d423",
+    "sender": "dance.class.friend@yahoo.com",
+    "subject": "What's new?",
+    "snippet": "I heard through the grapevine about your promotion. Want to talk about it? Call me!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "f18ed85009aa58a4",
+    "sender": "grandma.j@protonmail.com",
+    "subject": "Happy Holidays!",
+    "snippet": "Got some news I wanted to share with you first. Can we grab coffee/call soon? Don't want to miss you.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "5e8d62f58404bea6",
+    "sender": "childhood.friend.maria@hotmail.com",
+    "subject": "Quick question",
+    "snippet": "Found an old video of us from college. Brings back so many memories! Miss you, friend. We need to catch up soon.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "0e1f80a6e52cd4d2",
+    "sender": "childhood.friend.maria@hotmail.com",
+    "subject": "Sending love",
+    "snippet": "Just wanted to say thanks again for helping me move. You're the best. Let's do something fun soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "a8fe0d3bf79c3559",
+    "sender": "mom@gmail.com",
+    "subject": "Hope you're doing well",
+    "snippet": "Thinking of you and hoping all is well. Let's not let so much time pass next time. Miss you!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "a6e284d883dc6319",
+    "sender": "work.friend.sam@company.com",
+    "subject": "Remember when...",
+    "snippet": "How have you been? It feels like forever since we last talked. I've been meaning to reach out. Let's schedule something soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "1e7dc532be7f1a50",
+    "sender": "travel.buddy.emma@gmail.com",
+    "subject": "Let me know when you're free",
+    "snippet": "Just a quick note to say I was thinking of you. Hope life is treating you well!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "0697df6bae97b0c6",
+    "sender": "friend.from.camp@gmail.com",
+    "subject": "Sending love",
+    "snippet": "How are your partner and the family? I want to catch up on everything. When are you free for a call?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "5f0ce19b912b5d92",
+    "sender": "family.friend.susan@yahoo.com",
+    "subject": "Got a minute?",
+    "snippet": "I saw something that reminded me of you and travel. Made me want to reach out and see what you're up to.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "4f28304314e25b04",
+    "sender": "cousin.tom@yahoo.com",
+    "subject": "I have news",
+    "snippet": "Sending a virtual hug. Hope things are looking up. Let's catch up properly soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "d3aaea0804968918",
+    "sender": "friend.of.friend.kate@yahoo.com",
+    "subject": "Been a while!",
+    "snippet": "Just sending some love your way. Hope you're taking care of yourself. Let's talk soon!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "9a37862cc39f2436",
+    "sender": "childhood.friend.maria@hotmail.com",
+    "subject": "Can we talk?",
+    "snippet": "Your number came up in my phone and I realized I haven't called in ages. How are things? Miss hearing your voice!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "91d23e9414f0771d",
+    "sender": "running.group@gmail.com",
+    "subject": "Thinking about you",
+    "snippet": "I was looking through old photos and found ones from wedding. So many good memories! Remember when...?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "e7645affcfa812ff",
+    "sender": "pen.pal@protonmail.com",
+    "subject": "Wanted to say hi",
+    "snippet": "Been way too long. I want to actually hang out, not just text. When works for you?",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "e2e4a31ce317a6da",
+    "sender": "family.friend.susan@yahoo.com",
+    "subject": "Update on that thing",
+    "snippet": "Hi! I haven't heard from you in a while. How are you doing? Would love to grab coffee or dinner soon. Let me know when you're free!",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "9dc1c74963c072f5",
+    "sender": "uncle-mike@hotmail.com",
+    "subject": "How are you?",
+    "snippet": "I'm coming to LA on June 20. Can we meet up? Would love to see you and catch up properly.",
+    "category": "PERSONAL"
+  },
+  {
+    "id": "60bb0190aaded705",
+    "sender": "cousin.tom@yahoo.com",
+    "subject": "Have you seen this?",
+    "snippet": "How are your partner and the family? I want to catch up on everything. When are you free for a call?",
+    "category": "PERSONAL"
+  }
+]
