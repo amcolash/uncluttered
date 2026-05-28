@@ -54,7 +54,7 @@ export function SwipeCard({ onSwipe, index, className, children }: SwipeCardProp
   return (
     <motion.div
       className={twMerge(
-        'user-select-none flex aspect-3/5 max-h-[70vh] max-w-[60vw] origin-bottom rounded-lg bg-slate-800 p-1 text-neutral-200 shadow-lg shadow-slate-800/50 transition-all duration-75 hover:cursor-grab active:cursor-grabbing',
+        'user-select-none flex h-128 w-104 origin-bottom rounded-lg bg-slate-800 p-1 text-neutral-200 shadow-lg shadow-slate-800/50 transition-all duration-75 hover:cursor-grab active:cursor-grabbing',
         className
       )}
       ref={scope}

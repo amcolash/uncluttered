@@ -54,6 +54,16 @@ app.get('/api/categories', (_req, res) => {
 });
 
 /**
+ * Returns only categories that are actively assigned to at least one email
+ * (via aiCategory or userOverrideCategory).
+ */
+app.get('/api/categories/active', (_req, res) => {
+  const usedKeys = new Set(db.data.emails.flatMap((e) => [e.userOverrideCategory ?? e.aiCategory]));
+  const active = db.data.categories.filter((c) => usedKeys.has(c.key));
+  res.json(active);
+});
+
+/**
  * Locally archives an email (hides it from the feed).
  * Does NOT mutate the live Gmail account.
  */
@@ -150,6 +160,31 @@ app.post('/api/classify', async (req, res) => {
   } catch (err) {
     res.status(503).json({ error: 'Classifier service unavailable', detail: String(err) });
   }
+});
+
+/**
+ * Validates or invalidates the AI category for an email.
+ * validated: true  = swipe right (confirmed correct)
+ * validated: false = swipe left (marked wrong)
+ * validated: null  = undo (reset to unreviewed)
+ */
+app.post('/api/emails/:id/validate', async (req, res) => {
+  const { validated } = req.body as { validated?: boolean | null };
+
+  if (validated !== null && typeof validated !== 'boolean') {
+    res.status(400).json({ error: '"validated" must be a boolean or null' });
+    return;
+  }
+
+  const email = db.data.emails.find((e) => e.id === req.params.id);
+  if (!email) {
+    res.status(404).json({ error: 'Email not found' });
+    return;
+  }
+
+  email.validated = validated;
+  await db.write();
+  res.json({ success: true });
 });
 
 /** Reclassifies a single email and returns the updated object. */

@@ -21,6 +21,7 @@ export interface Email {
   userOverrideCategory: string | null;
   isArchived: boolean;
   processedAt: string;
+  validated: boolean | null;
 }
 
 interface DbSchema {
@@ -93,3 +94,13 @@ for (const cat of defaultData.categories) {
 }
 
 if (migrated) await db.write();
+
+// Forward migration: set validated: null on emails that predate this field.
+let emailsMigrated = false;
+for (const email of db.data.emails) {
+  if (email.validated === undefined) {
+    email.validated = null;
+    emailsMigrated = true;
+  }
+}
+if (emailsMigrated) await db.write();
