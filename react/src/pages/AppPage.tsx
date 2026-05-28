@@ -1,6 +1,8 @@
 import { type ReactNode, useEffect, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
+import { CategorySidebar } from 'components/CategorySidebar';
+import { Menu } from 'components/Menu';
 import { CardStack, SwipeCard } from 'components/SwipeCard';
 import { Badge } from 'components/ui/Badge';
 import { Button } from 'components/ui/Button';
@@ -16,61 +18,6 @@ function EmailCard({ email }: { email: Email }) {
       <Badge variant="outline" className="mt-2 w-fit p-2">
         {email.userOverrideCategory ?? email.aiCategory}
       </Badge>
-    </div>
-  );
-}
-
-function Menu({ children }: { children: ReactNode }) {
-  const breakpoint = useBreakpoint();
-  const [visible, setVisible] = useState(breakpoint !== 'sm' && breakpoint !== 'md');
-
-  useEffect(() => {
-    if (breakpoint === 'sm' || breakpoint === 'md') setVisible(false);
-    else setVisible(true);
-  }, [breakpoint]);
-
-  return (
-    <div className="relative inset-0 z-10 max-md:absolute">
-      <Button
-        variant="secondary"
-        size="sm"
-        onClick={() => setVisible((v) => !v)}
-        className="absolute top-4 left-4 z-10"
-      >
-        {visible ? <FaTimes /> : <FaBars />}
-      </Button>
-      {visible && children}
-    </div>
-  );
-}
-
-function CategorySidebar({
-  categories,
-  current,
-  categorize,
-}: {
-  categories: { key: string; description: string }[];
-  current?: Email;
-  categorize: (id: string, category: string) => void;
-}) {
-  return (
-    <div className="flex h-screen w-80 flex-col gap-3 overflow-y-auto border-r border-slate-700 bg-slate-900 p-4">
-      <h2 className="mb-3 ml-14 text-sm font-semibold tracking-wide text-slate-400 uppercase">Categories</h2>
-      {categories
-        .sort((a, b) => a.key.localeCompare(b.key))
-        .map((c) => (
-          <Button
-            key={c.key}
-            variant="secondary"
-            size="sm"
-            disabled={!current}
-            onClick={() => current && categorize(current.id, c.key)}
-            className="w-full justify-start truncate text-left"
-            title={c.description}
-          >
-            {c.key}
-          </Button>
-        ))}
     </div>
   );
 }
