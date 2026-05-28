@@ -1,12 +1,11 @@
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 import { CardStack, SwipeCard } from 'components/SwipeCard';
 import { Badge } from 'components/ui/Badge';
 import { Button } from 'components/ui/Button';
 import { type Email, useEmails } from 'hooks/useEmails';
 
-function Email({ email }: { email: Email }) {
+function EmailCard({ email }: { email: Email }) {
   return (
     <div className="flex h-full flex-col gap-3 overflow-hidden rounded-lg">
       <p className="truncate text-lg font-semibold text-slate-300">{email.sender}</p>
@@ -20,14 +19,8 @@ function Email({ email }: { email: Email }) {
 }
 
 export function AppPage() {
-  const { emails, validate, undo, canUndo } = useEmails();
-
-  const [categories, setCategories] = useState<{ key: string; description: string }[]>([]);
-  useEffect(() => {
-    fetch('http://localhost:7001/api/categories/active')
-      .then((r) => r.json())
-      .then(setCategories);
-  }, []);
+  const { emails, categories, confirm, defer, categorize, undo, canUndo } = useEmails();
+  const current = emails[0];
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
@@ -39,14 +32,9 @@ export function AppPage() {
   }, [undo]);
 
   return (
-    <div className="absolute inset-0 flex flex-col items-center justify-center gap-12 bg-slate-800 p-6">
-      <h1 className="text-center text-2xl font-bold text-white">Verify Categorization ({emails.length})</h1>
-
-      {/* <Button onClick={() => {}}>Retrain model</Button>
-      <Button onClick={() => {}}>Reclassify Preview</Button> */}
-
-      <div className="absolute inset-0 right-auto flex w-64 shrink-0 flex-col gap-2 overflow-y-auto border-r border-slate-700 p-4">
-        <h2 className="mb-2 text-sm font-semibold tracking-wide text-slate-400 uppercase">Categories</h2>
+    <div className="flex justify-center gap-20">
+      <div className="flex h-screen w-80 flex-col gap-3 overflow-y-auto border-r border-slate-700 bg-slate-900/30 p-4">
+        <h2 className="mb-3 text-sm font-semibold tracking-wide text-slate-400 uppercase">Categories</h2>
         {categories
           .sort((a, b) => a.key.localeCompare(b.key))
           .map((c) => (
@@ -54,8 +42,9 @@ export function AppPage() {
               key={c.key}
               variant="secondary"
               size="sm"
-              disabled
-              className="w-full cursor-auto justify-start text-left"
+              disabled={!current}
+              onClick={() => current && categorize(current.id, c.key)}
+              className="w-full justify-start truncate text-left"
               title={c.description}
             >
               {c.key}
@@ -63,31 +52,35 @@ export function AppPage() {
           ))}
       </div>
 
-      <Button onClick={undo} disabled={!canUndo}>
-        Undo
-      </Button>
+      <div className="flex flex-1 flex-col items-center justify-center gap-20 p-8">
+        <div className="grid w-full max-w-4xl gap-4">
+          <h1 className="text-2xl font-bold text-white">Review emails</h1>
+          <p className="text-sm text-slate-400">
+            Swipe right to confirm, swipe left to defer to the end of the pile. Use a category button to re-categorize.
+          </p>
 
-      {emails.length > 0 ? (
-        <CardStack>
-          {emails.map((email, i) => (
-            <SwipeCard
-              key={email.id}
-              onSwipe={(dir) => validate(email.id, dir === 'right')}
-              index={i}
-              className="border border-slate-900 bg-slate-700 p-4"
-            >
-              <Email email={email} />
-            </SwipeCard>
-          ))}
-        </CardStack>
-      ) : (
-        <p className="text-lg text-white">
-          No more emails to verify!{' '}
-          <Link to="/categorize" className="text-indigo-400 underline hover:text-indigo-300">
-            Re-categorize →
-          </Link>
-        </p>
-      )}
+          <Button variant="secondary" size="sm" onClick={undo} disabled={!canUndo}>
+            Undo
+          </Button>
+        </div>
+
+        {current ? (
+          <CardStack>
+            {emails.slice(0, 5).map((email, i) => (
+              <SwipeCard
+                key={email.id}
+                onSwipe={(dir) => (dir === 'right' ? confirm(email.id) : defer(email.id))}
+                index={i}
+                className="border border-slate-900 bg-slate-700 p-4"
+              >
+                <EmailCard email={email} />
+              </SwipeCard>
+            ))}
+          </CardStack>
+        ) : (
+          <p className="text-lg text-white">All done — no more emails to review.</p>
+        )}
+      </div>
     </div>
   );
 }
