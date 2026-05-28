@@ -1,0 +1,704 @@
+{
+  "emails": [
+    {
+      "id": "c52dabd35fcd961a",
+      "sender": "Microsoft <noreply@microsoft.com>",
+      "subject": "Subscription preferences",
+      "snippet": "Subscription overview: Active services, renewal dates, and more: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "dacb23686c560e71",
+      "sender": "Salesforce <noreply@salesforce.com>",
+      "subject": "Billing statement available",
+      "snippet": "Your Spotify trial ends July 15. Subscribe now to keep access: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "a896337020db451e",
+      "sender": "Paramount+ <noreply@paramountplus.com>",
+      "subject": "Service renewal coming up",
+      "snippet": "Payment #PAY123456 received for Netflix. Amount: $99.00.",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "faac75a2edf17a66",
+      "sender": "Wix <noreply@wix.com>",
+      "subject": "Service renewal coming up",
+      "snippet": "Thank you for 24 months of Dropbox! Keep enjoying: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "39350d0be67acaa7",
+      "sender": "HubSpot <noreply@hubspot.com>",
+      "subject": "Subscription trial ending",
+      "snippet": "Plan change confirmed: Dropbox. Effective: June 28. Manage: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "f7b6b9ca80aa460c",
+      "sender": "Paramount+ <noreply@paramountplus.com>",
+      "subject": "Subscription renewal reminder",
+      "snippet": "Your Netflix payment failed. Update payment method: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "0f77762a57a8d708",
+      "sender": "Disney+ <noreply@disneyplus.com>",
+      "subject": "Free trial expires June 28",
+      "snippet": "Thank you for your Spotify subscription. Renewal on July 15. Confirm: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "0435515815c155fd",
+      "sender": "Spotify <noreply@spotify.com>",
+      "subject": "Payment received - Slack",
+      "snippet": "Your Netflix Premium plan will renew on June 28 for $12.99. See details: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "0b7a3c0bcff9d8bc",
+      "sender": "Grammarly <noreply@grammarly.com>",
+      "subject": "Billing update - Netflix",
+      "snippet": "Thank you for your Dropbox subscription. Renewal on July 15. Confirm: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "4d6530ee012fe38e",
+      "sender": "Netflix <noreply@netflix.com>",
+      "subject": "Plan upgrade suggestion",
+      "snippet": "Subscription overview: Active services, renewal dates, and more: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "d2f8af8aca52a6e9",
+      "sender": "Asana <noreply@asana.com>",
+      "subject": "Better plan available",
+      "snippet": "Your Spotify tier: Platinum. Upgrade available: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "364b43f0b4d4c1d6",
+      "sender": "Hulu <noreply@hulu.com>",
+      "subject": "Manage your Dropbox plan",
+      "snippet": "Your Microsoft 365 subscription is active. Next renewal date: June 28. You have unlimited streaming. Upgrade anytime: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "da0bebb9a019056b",
+      "sender": "Monday.com <noreply@monday.com>",
+      "subject": "Adobe plan upgrade available",
+      "snippet": "Thank you for 24 months of Microsoft 365! Keep enjoying: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "8ccaa0c2bb11b524",
+      "sender": "Notion <noreply@notion.so>",
+      "subject": "Save with annual billing",
+      "snippet": "Subscription confirmed: Spotify Professional plan. Next renewal: July 15. Manage: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "ea9a349ed8ce6b2b",
+      "sender": "Salesforce <noreply@salesforce.com>",
+      "subject": "Billing statement available",
+      "snippet": "Upgrade to Spotify Professional! More features for $15.99/month. Upgrade: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "24e30c901547d14b",
+      "sender": "Grammarly <noreply@grammarly.com>",
+      "subject": "Annual plan savings",
+      "snippet": "Payment #PAY123456 received for Slack. Amount: $15.99.",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "22580b2f3358f05c",
+      "sender": "Adobe <noreply@adobe.com>",
+      "subject": "Your Microsoft 365 subscription",
+      "snippet": "Your Adobe subscription has been renewed. Billing date: June 28. Amount charged: $99.00. Thank you for being a subscriber! Manage your account: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "984ecb180b856daf",
+      "sender": "Slack <noreply@slack.com>",
+      "subject": "Subscription management",
+      "snippet": "Plan change confirmed: Slack. Effective: June 28. Manage: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "b3f34eb27396d683",
+      "sender": "iCloud <noreply@apple.com>",
+      "subject": "Subscription renewal reminder",
+      "snippet": "Your Slack Standard plan will renew on July 15 for $19.99. See details: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "189fa49def08d0dc",
+      "sender": "Hulu <noreply@hulu.com>",
+      "subject": "Subscription preferences",
+      "snippet": "Thank you for your Adobe subscription. Renewal on July 15. Confirm: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "14864e760d813e7c",
+      "sender": "YouTube Premium <noreply@youtube.com>",
+      "subject": "Your Adobe subscription",
+      "snippet": "Your Microsoft 365 subscription has been renewed. Billing date: July 15. Amount charged: $12.99. Thank you for being a subscriber! Manage your account: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "1e175f1378d3e78d",
+      "sender": "Adobe <noreply@adobe.com>",
+      "subject": "Better plan available",
+      "snippet": "Subscription overview: Active services, renewal dates, and more: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "81dcdaed0b25bd84",
+      "sender": "Adobe <noreply@adobe.com>",
+      "subject": "Adobe plan upgrade available",
+      "snippet": "Subscription update: Your new plan starts July 15. Details: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "354553f6791c25a3",
+      "sender": "Netflix <noreply@netflix.com>",
+      "subject": "Payment method update needed",
+      "snippet": "Special offer: free premium month for Spotify subscribers. Claim: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "776fa7fac179d321",
+      "sender": "Paramount+ <noreply@paramountplus.com>",
+      "subject": "Billing update - Netflix",
+      "snippet": "Discount applied: Save 25% on Netflix. Thank you: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "f5e0b10f12f8f9a6",
+      "sender": "Hulu <noreply@hulu.com>",
+      "subject": "Your Adobe subscription",
+      "snippet": "Payment options: Update how you pay for Netflix: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "d2aa1e1be2ed630c",
+      "sender": "Zoom <noreply@zoom.us>",
+      "subject": "Service renewal coming up",
+      "snippet": "Thank you for your Slack subscription. Renewal on June 28. Confirm: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "7a9d9461c776fe61",
+      "sender": "Squarespace <noreply@squarespace.com>",
+      "subject": "Slack account information",
+      "snippet": "Your Dropbox payment failed. Update payment method: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "c0848ff0615c9d7a",
+      "sender": "YouTube Premium <noreply@youtube.com>",
+      "subject": "Save with annual billing",
+      "snippet": "Manage your Spotify subscription: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "bffcd2b9e5eff5ad",
+      "sender": "Paramount+ <noreply@paramountplus.com>",
+      "subject": "Your Slack plan",
+      "snippet": "Plan change confirmed: Slack. Effective: June 28. Manage: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "80710eff137df232",
+      "sender": "HubSpot <noreply@hubspot.com>",
+      "subject": "Subscription management",
+      "snippet": "Free trial ending soon: Netflix. Trial ends July 15. Continue subscription: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "13232bcb71fb9da2",
+      "sender": "Squarespace <noreply@squarespace.com>",
+      "subject": "Payment method update needed",
+      "snippet": "Invoice #INV-98765: Dropbox charged $15.99. Receipt: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "00beb336bd38bc53",
+      "sender": "Salesforce <noreply@salesforce.com>",
+      "subject": "Renew your Microsoft 365 membership",
+      "snippet": "Upgrade to Slack Premium Plus! More features for $19.99/month. Upgrade: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "260b35d70ce07cb4",
+      "sender": "Audible <noreply@audible.com>",
+      "subject": "Renew your Spotify membership",
+      "snippet": "Payment #PAY123456 received for Netflix. Amount: $15.99.",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "f19f71ffa7241896",
+      "sender": "Wix <noreply@wix.com>",
+      "subject": "Better plan available",
+      "snippet": "New plan available: Dropbox Family. Details: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "7c477743081c5299",
+      "sender": "1Password <noreply@1password.com>",
+      "subject": "Annual plan savings",
+      "snippet": "Your Adobe payment method needs updating. Action required: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "9742cb5e19f97897",
+      "sender": "YouTube Premium <noreply@youtube.com>",
+      "subject": "Free trial expires July 15",
+      "snippet": "Your Netflix payment failed. Update payment method: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "5825ced960589457",
+      "sender": "Microsoft <noreply@microsoft.com>",
+      "subject": "Account billing summary",
+      "snippet": "Your Dropbox account will expire June 28. Renew to continue: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "867bfbdeabd34645",
+      "sender": "Slack <noreply@slack.com>",
+      "subject": "Subscription status update",
+      "snippet": "Your Netflix trial ends June 28. Subscribe now to keep access: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "793cd31ddfa8f3d0",
+      "sender": "Slack <noreply@slack.com>",
+      "subject": "Subscription status update",
+      "snippet": "Your Slack trial ends July 15. Subscribe now to keep access: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "5418bf9834c4a764",
+      "sender": "Amazon Prime <noreply@primevideo.com>",
+      "subject": "Subscription management",
+      "snippet": "Invoice #INV-2024-123: Dropbox charged $15.99. Receipt: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "6d19da4faabe6cb7",
+      "sender": "Spotify <noreply@spotify.com>",
+      "subject": "Plan upgrade suggestion",
+      "snippet": "Payment #PAY123456 received for Netflix. Amount: $12.99.",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "dd75c1afd47e6e2f",
+      "sender": "Monday.com <noreply@monday.com>",
+      "subject": "Manage your Adobe plan",
+      "snippet": "New plan available: Netflix Family. Details: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "0b25589f5ab10e5d",
+      "sender": "YouTube Premium <noreply@youtube.com>",
+      "subject": "Payment confirmation",
+      "snippet": "Cancel anytime: Your Slack subscription can be cancelled: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "0075eed3238d29be",
+      "sender": "Paramount+ <noreply@paramountplus.com>",
+      "subject": "Service renewal coming up",
+      "snippet": "Subscription update: Your new plan starts July 15. Details: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "1a8d9d538ca4003c",
+      "sender": "HBO <noreply@hbo.com>",
+      "subject": "Subscription renewal reminder",
+      "snippet": "Annual billing available! Save 25% with yearly plan. Switch now: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "4675252701273456",
+      "sender": "Spotify <noreply@spotify.com>",
+      "subject": "Payment method update needed",
+      "snippet": "Subscription overview: Active services, renewal dates, and more: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "fb1f562dc8ef6db6",
+      "sender": "iCloud <noreply@apple.com>",
+      "subject": "Your Microsoft 365 plan",
+      "snippet": "Free trial ending soon: Dropbox. Trial ends July 15. Continue subscription: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "e1d8a99bcfb043e8",
+      "sender": "Dropbox <noreply@dropbox.com>",
+      "subject": "Billing statement available",
+      "snippet": "Invoice #INV-98765: Microsoft 365 charged $19.99. Receipt: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "92302e7fa530e265",
+      "sender": "Mailchimp <noreply@mailchimp.com>",
+      "subject": "Manage your Adobe plan",
+      "snippet": "Manage your Adobe subscription: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "10e9d8946d9866df",
+      "sender": "HubSpot <noreply@hubspot.com>",
+      "subject": "Better plan available",
+      "snippet": "Your Netflix payment failed. Update payment method: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "4126bc0ae43c1fd4",
+      "sender": "Amazon Prime <noreply@primevideo.com>",
+      "subject": "Dropbox account information",
+      "snippet": "Your Netflix subscription is active. Next renewal date: July 15. You have unlimited music. Upgrade anytime: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "5f584d446c2bed35",
+      "sender": "Monday.com <noreply@monday.com>",
+      "subject": "Billing update - Microsoft 365",
+      "snippet": "Billing summary for June 2026: Total charged: $19.99. Breakdown: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "b90080aa29d82b9d",
+      "sender": "Asana <noreply@asana.com>",
+      "subject": "Your Spotify plan",
+      "snippet": "Subscription overview: Active services, renewal dates, and more: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "6794fed8880d764b",
+      "sender": "Microsoft <noreply@microsoft.com>",
+      "subject": "Billing update - Microsoft 365",
+      "snippet": "Your Dropbox trial ends June 28. Subscribe now to keep access: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "973e93c5344f8ec4",
+      "sender": "LastPass <noreply@lastpass.com>",
+      "subject": "Your charges this billing period",
+      "snippet": "Your Spotify payment failed. Update payment method: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "d9c1af39f43a946d",
+      "sender": "Monday.com <noreply@monday.com>",
+      "subject": "Free trial expires June 28",
+      "snippet": "Manage your Netflix subscription: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "31e9e4a73a279ba2",
+      "sender": "HBO <noreply@hbo.com>",
+      "subject": "Subscription trial ending",
+      "snippet": "Update your Adobe billing information. Last charge: $12.99. Payment method expires soon. Update now: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "65fe6cfec1e6d4f1",
+      "sender": "Paramount+ <noreply@paramountplus.com>",
+      "subject": "Invoice for Dropbox",
+      "snippet": "Annual billing available! Save 30% with yearly plan. Switch now: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "7103e248f3b919db",
+      "sender": "Expensify <noreply@expensify.com>",
+      "subject": "Plan upgrade suggestion",
+      "snippet": "Billing cycle begins July 15 for Netflix. Amount: $19.99.",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "1d914087540e95b3",
+      "sender": "Hulu <noreply@hulu.com>",
+      "subject": "Next billing date approaching",
+      "snippet": "Renew your Dropbox membership: spotify.com/account. Your benefits: offline downloads",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "160eed9ddebde436",
+      "sender": "Mailchimp <noreply@mailchimp.com>",
+      "subject": "Subscription trial ending",
+      "snippet": "Your Netflix tier: Premium. Upgrade available: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "747c212d7b6c4e28",
+      "sender": "Figma <noreply@figma.com>",
+      "subject": "Account billing summary",
+      "snippet": "Subscription confirmed: Slack Basic plan. Next renewal: July 15. Manage: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "eb6a561aef38dbf7",
+      "sender": "Hulu <noreply@hulu.com>",
+      "subject": "Manage your Dropbox plan",
+      "snippet": "Thank you for 12 months of Netflix! Keep enjoying: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "f6b661bd19af0aa3",
+      "sender": "Dropbox <noreply@dropbox.com>",
+      "subject": "Subscription renewal reminder",
+      "snippet": "Your Dropbox payment failed. Update payment method: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "edc670120b964127",
+      "sender": "HubSpot <noreply@hubspot.com>",
+      "subject": "Billing update - Dropbox",
+      "snippet": "Free trial ending soon: Adobe. Trial ends June 28. Continue subscription: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "a537c70b5942966e",
+      "sender": "Audible <noreply@audible.com>",
+      "subject": "Membership renewal",
+      "snippet": "Cancel anytime: Your Slack subscription can be cancelled: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "95892d6b716e4201",
+      "sender": "Amazon Prime <noreply@primevideo.com>",
+      "subject": "Save with annual billing",
+      "snippet": "Cancel anytime: Your Netflix subscription can be cancelled: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "b66f0e81a0d1d3bd",
+      "sender": "1Password <noreply@1password.com>",
+      "subject": "Spotify account information",
+      "snippet": "Invoice #INV-2024-123: Microsoft 365 charged $12.99. Receipt: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "31b6bbc519286b17",
+      "sender": "Paramount+ <noreply@paramountplus.com>",
+      "subject": "Payment confirmation",
+      "snippet": "Your Slack Standard plan will renew on July 15 for $19.99. See details: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "28397f36e0f090f0",
+      "sender": "Monday.com <noreply@monday.com>",
+      "subject": "Billing statement available",
+      "snippet": "Update your Spotify billing information. Last charge: $15.99. Payment method expires soon. Update now: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "3ee5a3fff4b46875",
+      "sender": "Netflix <noreply@netflix.com>",
+      "subject": "Service renewal coming up",
+      "snippet": "Payment #PAY123456 received for Microsoft 365. Amount: $15.99.",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "c867a200be59a06a",
+      "sender": "Mailchimp <noreply@mailchimp.com>",
+      "subject": "Renew your Slack membership",
+      "snippet": "Invoice #INV-98765: Microsoft 365 charged $15.99. Receipt: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "22d9e8da5541f311",
+      "sender": "HBO <noreply@hbo.com>",
+      "subject": "Your charges this billing period",
+      "snippet": "New plan available: Netflix Team. Details: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "c8b3e57be711c8d8",
+      "sender": "Apple TV+ <noreply@tv.apple.com>",
+      "subject": "Free trial expires July 15",
+      "snippet": "Upgrade to Adobe Premium Plus! More features for $15.99/month. Upgrade: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "d407ce3c142fdb05",
+      "sender": "Zoom <noreply@zoom.us>",
+      "subject": "Membership renewal",
+      "snippet": "Discount applied: Save 15% on Dropbox. Thank you: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "158f83598944da29",
+      "sender": "Adobe <noreply@adobe.com>",
+      "subject": "Account billing summary",
+      "snippet": "Payment #PAY123456 received for Slack. Amount: $19.99.",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "20d045723c43425b",
+      "sender": "Paramount+ <noreply@paramountplus.com>",
+      "subject": "Netflix plan upgrade available",
+      "snippet": "Your Netflix account will expire July 15. Renew to continue: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "12b725d596cbf8b8",
+      "sender": "LastPass <noreply@lastpass.com>",
+      "subject": "Subscription trial ending",
+      "snippet": "Your Adobe Basic plan will renew on June 28 for $99.00. See details: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "c4432b0af436bd75",
+      "sender": "Spotify <noreply@spotify.com>",
+      "subject": "Renew your Dropbox membership",
+      "snippet": "Billing cycle begins June 28 for Adobe. Amount: $99.00.",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "3bd185f8a5825be9",
+      "sender": "Squarespace <noreply@squarespace.com>",
+      "subject": "Spotify plan upgrade available",
+      "snippet": "Upgrade to Microsoft 365 Professional! More features for $19.99/month. Upgrade: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "7e14cce27147a520",
+      "sender": "Expensify <noreply@expensify.com>",
+      "subject": "Payment method update needed",
+      "snippet": "New plan available: Dropbox Family. Details: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "944afc42c67a07ae",
+      "sender": "Zoom <noreply@zoom.us>",
+      "subject": "Subscription confirmation",
+      "snippet": "Your Microsoft 365 account will expire July 15. Renew to continue: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "65aa7a6483edcae3",
+      "sender": "Dropbox <noreply@dropbox.com>",
+      "subject": "Your Microsoft 365 plan",
+      "snippet": "Billing cycle begins July 15 for Spotify. Amount: $99.00.",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "fd727edf35b96d8d",
+      "sender": "Asana <noreply@asana.com>",
+      "subject": "Service renewal coming up",
+      "snippet": "Invoice #INV-98765: Spotify charged $12.99. Receipt: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "f12c3c5544ba7f4d",
+      "sender": "Canva <noreply@canva.com>",
+      "subject": "Invoice for Spotify",
+      "snippet": "Annual billing available! Save 30% with yearly plan. Switch now: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "d4906360f3ff3729",
+      "sender": "Salesforce <noreply@salesforce.com>",
+      "subject": "Subscription status update",
+      "snippet": "Plan change confirmed: Adobe. Effective: July 15. Manage: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "2012b6fa1a965434",
+      "sender": "Adobe <noreply@adobe.com>",
+      "subject": "Subscription preferences",
+      "snippet": "Thank you for 12 months of Slack! Keep enjoying: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "e3932484c6b059a1",
+      "sender": "Paramount+ <noreply@paramountplus.com>",
+      "subject": "Billing cycle reminder",
+      "snippet": "Your Adobe account will expire July 15. Renew to continue: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "ea23cd7a23288b50",
+      "sender": "Canva <noreply@canva.com>",
+      "subject": "Next billing date approaching",
+      "snippet": "Subscription update: Your new plan starts July 15. Details: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "b99fb34f12116213",
+      "sender": "Notion <noreply@notion.so>",
+      "subject": "Subscription management",
+      "snippet": "Discount applied: Save 25% on Slack. Thank you: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "b69e18f14df0aa0f",
+      "sender": "Asana <noreply@asana.com>",
+      "subject": "Subscription management",
+      "snippet": "Billing cycle begins June 28 for Dropbox. Amount: $15.99.",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "f74d36e5861d0421",
+      "sender": "Wix <noreply@wix.com>",
+      "subject": "Better plan available",
+      "snippet": "Payment options: Update how you pay for Netflix: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "917a170559eac58a",
+      "sender": "Microsoft <noreply@microsoft.com>",
+      "subject": "Payment received - Slack",
+      "snippet": "Plan change confirmed: Slack. Effective: July 15. Manage: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "e6e1f8d968ed4dd3",
+      "sender": "Hulu <noreply@hulu.com>",
+      "subject": "Subscription preferences",
+      "snippet": "Discount applied: Save 25% on Spotify. Thank you: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "f59c14318d0c6492",
+      "sender": "Notion <noreply@notion.so>",
+      "subject": "Microsoft 365 account information",
+      "snippet": "Plan change confirmed: Netflix. Effective: July 15. Manage: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "bfc577e6d777c1c8",
+      "sender": "Netflix <noreply@netflix.com>",
+      "subject": "Invoice #INV-2024-123",
+      "snippet": "Update your Spotify billing information. Last charge: $15.99. Payment method expires soon. Update now: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "8d44f250f764f02a",
+      "sender": "iCloud <noreply@apple.com>",
+      "subject": "Renew your Slack membership",
+      "snippet": "Billing cycle begins June 28 for Spotify. Amount: $99.00.",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "53a17ebf27dec705",
+      "sender": "HubSpot <noreply@hubspot.com>",
+      "subject": "Payment method update needed",
+      "snippet": "Billing summary for last month: Total charged: $15.99. Breakdown: spotify.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "08ce42224507d1ef",
+      "sender": "Dropbox <noreply@dropbox.com>",
+      "subject": "Billing update - Microsoft 365",
+      "snippet": "Your Slack subscription is active. Next renewal date: June 28. You have unlimited storage. Upgrade anytime: https://netflix.com/account",
+      "category": "SUBSCRIPTION_SERVICE"
+    }
+  ]
+}

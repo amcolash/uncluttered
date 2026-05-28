@@ -1,0 +1,220 @@
+{
+  "emails": [
+    {
+      "id": "8472339981d924fa",
+      "sender": "sister.jane@gmail.com",
+      "subject": "Long time no talk",
+      "snippet": "Thinking of you and hoping all is well. Let's not let so much time pass next time. Miss you!",
+      "category": "PERSONAL",
+      "note": "Could also be RECRUITER"
+    },
+    {
+      "id": "c1331952cec642f5",
+      "sender": "roommate.jordan@protonmail.com",
+      "subject": "Sending love",
+      "snippet": "Just sending some love your way. Hope you're taking care of yourself. Let's talk soon!",
+      "category": "PERSONAL",
+      "note": "Could also be RECRUITER"
+    },
+    {
+      "id": "85e460d41519b00f",
+      "sender": "college.roommate@hotmail.com",
+      "subject": "Remember when...",
+      "snippet": "Found an old video of us from college. Brings back so many memories! Miss you, friend. We need to catch up soon.",
+      "category": "PERSONAL",
+      "note": "Could also be RECRUITER"
+    },
+    {
+      "id": "4b396785d37883e5",
+      "sender": "updates@nextbigfuture.com",
+      "subject": "Your essential read",
+      "snippet": "5 must-read stories this week. Top: Major AI breakthrough. Also: Interview with CEO. Read all: https://techcrunch.com/...",
+      "category": "NEWSLETTER",
+      "note": "Could also be PROMO_MARKETING"
+    },
+    {
+      "id": "e975e4eaf1e8cd51",
+      "sender": "newsletter@dev.to",
+      "subject": "Your essential read",
+      "snippet": "This week in politics: Major AI breakthrough. Also: Interview with CEO, Market analysis, Emerging trends. Subscribe: substack.com/...",
+      "category": "NEWSLETTER",
+      "note": "Could also be PROMO_MARKETING"
+    },
+    {
+      "id": "0c3e17515be79965",
+      "sender": "hello@newsletter.ai",
+      "subject": "Top stories this week",
+      "snippet": "Breaking: New startup funding. What it means: the implications. Full story: https://techcrunch.com/...",
+      "category": "NEWSLETTER",
+      "note": "Could also be PROMO_MARKETING"
+    },
+    {
+      "id": "d7cbd197dc801278",
+      "sender": "Yoga Studio <schedule@yogastudio.com>",
+      "subject": "eye exam appointment confirmation",
+      "snippet": "Reminder that you have a yoga class appointment on next Tuesday at 9:30 AM. Reschedule if needed: https://calendly.com/...",
+      "category": "APPOINTMENT_REMINDER",
+      "note": "Could also be EVENT_TICKET"
+    },
+    {
+      "id": "2c69c4dbb6fee9fd",
+      "sender": "Mindbody <noreply@mindbodyonline.com>",
+      "subject": "Confirm your checkup appointment",
+      "snippet": "Your wellness appointment at Clinic B is June 5 at 10:15 AM. Arrive a few minutes early for check-in.",
+      "category": "APPOINTMENT_REMINDER",
+      "note": "Could also be EVENT_TICKET"
+    },
+    {
+      "id": "e7846a4e3e6db756",
+      "sender": "Dermatology Office <appointments@dermatologyoffice.com>",
+      "subject": "Your wellness appointment: physical therapy",
+      "snippet": "Your wellness appointment at 123 Main St is tomorrow at 1:00 PM. Arrive a few minutes early for check-in.",
+      "category": "APPOINTMENT_REMINDER",
+      "note": "Could also be EVENT_TICKET"
+    },
+    {
+      "id": "1dcf09fa5a3108d2",
+      "sender": "Doordash Driver <driver@doordash.com>",
+      "subject": "Your food is on the way!",
+      "snippet": "Your order #12345 from Olive Garden will arrive by 35-40 min. Total cost: $42.00. Questions? https://doordash.com/track",
+      "category": "FOOD_ORDER",
+      "note": "Could also be SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "aca33ebf768434d3",
+      "sender": "Sushi House <noreply@sushihouse.com>",
+      "subject": "Food prep started",
+      "snippet": "Confirmation: Pizza Hut order for $15.75. Items: pad thai, wings. Ready by 25 min.",
+      "category": "FOOD_ORDER",
+      "note": "Could also be SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "be08ad6134cc7047",
+      "sender": "Sushi House <noreply@sushihouse.com>",
+      "subject": "Delivery status changed",
+      "snippet": "Your delivery from Sushi Palace is on its way! Track your order: https://doordash.com/track. Arrives by 20-30 min.",
+      "category": "FOOD_ORDER",
+      "note": "Could also be SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "c7cc5c875d7638bc",
+      "sender": "Water <billing@water.com>",
+      "subject": "Your electricity charges",
+      "snippet": "Your insurance account shows $1200 due. Pay now: https://bill.pay.com. Due date: June 30",
+      "category": "FINANCE_BILL",
+      "note": "Could also be SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "1dcb6d74936e41e5",
+      "sender": "Loan <billing@loan.com>",
+      "subject": "Account summary for April 2026",
+      "snippet": "Your monthly statement: Service Provider, $750. Due: June 15. Questions? 1-800-BILLING",
+      "category": "FINANCE_BILL",
+      "note": "Could also be SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "4a9fcf19516691f3",
+      "sender": "Tax Services <billing@tax.com>",
+      "subject": "Verizon monthly statement",
+      "snippet": "Your charges: $199.99 from cable. Due date: June 30. Pay: https://bill.pay.com",
+      "category": "FINANCE_BILL",
+      "note": "Could also be SUBSCRIPTION_SERVICE"
+    },
+    {
+      "id": "1c740fbb1b766e93",
+      "sender": "noreply@service.io",
+      "subject": "Database replication lag",
+      "snippet": "API error spike: 50 errors in last 5 minutes. Details: https://alert.io/...",
+      "category": "SYSTEM_ALERT",
+      "note": "Could also be DEVELOPER_SERVICES"
+    },
+    {
+      "id": "85572ad81b5fbd81",
+      "sender": "OWASP <scan@owaspzap.com>",
+      "subject": "Memory usage critical",
+      "snippet": "API error spike: 145 errors in last 5 minutes. Details: https://alert.io/...",
+      "category": "SYSTEM_ALERT",
+      "note": "Could also be DEVELOPER_SERVICES"
+    },
+    {
+      "id": "b7ce039ab02bcd78",
+      "sender": "hello@startup.io",
+      "subject": "Urgent action needed",
+      "snippet": "Unusual login attempt detected. Secure your account: https://alert.io/...",
+      "category": "SYSTEM_ALERT",
+      "note": "Could also be DEVELOPER_SERVICES"
+    },
+    {
+      "id": "cccc4f96e82eb502",
+      "sender": "Prosper <alerts@prosper.com>",
+      "subject": "Password change requested",
+      "snippet": "Your $45.99 purchase at Shell Gas has been posted to your account.",
+      "category": "BANKING_ACCOUNT",
+      "note": "Could also be FINANCE_BILL"
+    },
+    {
+      "id": "1a3701d0e56b2522",
+      "sender": "Vanguard <alerts@vanguard.com>",
+      "subject": "Account update notification",
+      "snippet": "Unusual activity: Your account was accessed from Chicago, IL. Action needed: https://chase.com/...",
+      "category": "BANKING_ACCOUNT",
+      "note": "Could also be FINANCE_BILL"
+    },
+    {
+      "id": "68b2b36846187e19",
+      "sender": "Vanguard <alerts@vanguard.com>",
+      "subject": "Investment activity",
+      "snippet": "Your account #{account} received a $2500 deposit on today.",
+      "category": "BANKING_ACCOUNT",
+      "note": "Could also be FINANCE_BILL"
+    },
+    {
+      "id": "ff0ce8847222a3d2",
+      "sender": "hello@cooperativemarket.org",
+      "subject": "Community resource alert",
+      "snippet": "Neighborhood cleanup day: every Saturday at 8:00 AM. Meet at Community Center. Bring gloves!",
+      "category": "COMMUNITY_LOCAL",
+      "note": "Could also be NONPROFIT_ADVOCACY"
+    },
+    {
+      "id": "8fd13501aa0b3e82",
+      "sender": "events@communityboard.org",
+      "subject": "Community meeting reminder",
+      "snippet": "Volunteer opportunity: trail maintenance on next Wednesday. Sign up: nextdoor.com/...",
+      "category": "COMMUNITY_LOCAL",
+      "note": "Could also be NONPROFIT_ADVOCACY"
+    },
+    {
+      "id": "04a6851f97511240",
+      "sender": "hello@cooperativemarket.org",
+      "subject": "Nextdoor post from your neighborhood",
+      "snippet": "New business in the neighborhood: bookstore. Check them out at 456 Oak St.",
+      "category": "COMMUNITY_LOCAL",
+      "note": "Could also be NONPROFIT_ADVOCACY"
+    },
+    {
+      "id": "ff9ad5ed4ca2120a",
+      "sender": "Southwest <bookings@southwest.com>",
+      "subject": "Booking details: Barcelona",
+      "snippet": "Trip confirmed! SFO-NRT to Bangkok + 5 nights at Mountain Lodge. See details: booking.com/...",
+      "category": "TRAVEL_BOOKING",
+      "note": "Could also be ORDER_SHIPPING"
+    },
+    {
+      "id": "41bedeb449d03262",
+      "sender": "Vrbo <noreply@vrbo.com>",
+      "subject": "Your trip to Barcelona is booked",
+      "snippet": "Everything is set for your trip to Cancun! You have Sheraton booked for 3 nights. Total price: $1850. Need to make changes?",
+      "category": "TRAVEL_BOOKING",
+      "note": "Could also be ORDER_SHIPPING"
+    },
+    {
+      "id": "120c95c8a9502f0c",
+      "sender": "Avis <reservation@avis.com>",
+      "subject": "Booking confirmed: Bangkok",
+      "snippet": "Confirmation: Beachfront Villa in Cancun. June 15-22, 7 nights. Code: TRV123456. Questions? booking.com/...",
+      "category": "TRAVEL_BOOKING",
+      "note": "Could also be ORDER_SHIPPING"
+    }
+  ]
+}

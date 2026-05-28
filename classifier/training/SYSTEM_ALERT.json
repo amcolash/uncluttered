@@ -1,0 +1,704 @@
+{
+  "emails": [
+    {
+      "id": "870bac88bf355e98",
+      "sender": "auto-reply@service.com",
+      "subject": "Performance degradation alert",
+      "snippet": "Disk usage on {server}: 45%% full. Cleanup or expand: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "d0e8835eb417a6c1",
+      "sender": "support@unknown-app.com",
+      "subject": "New security vulnerability detected",
+      "snippet": "Encryption key expires in 14 days. Rotate: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "07dfcf0dbb39b89d",
+      "sender": "support@unfamiliar-app.io",
+      "subject": "Account notice",
+      "snippet": "Unauthorized API calls detected: 12 from 198.51.100.89. Review: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "6a0772c7c208a131",
+      "sender": "OWASP <scan@owaspzap.com>",
+      "subject": "Important account",
+      "snippet": "New device detected on your account. Was this you? Review: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "0d880663f95b04a6",
+      "sender": "alerts@new-service.app",
+      "subject": "Important update",
+      "snippet": "Action required: Confirm your email address. Click: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "4831e45f2669b11a",
+      "sender": "noreply@unclear-sender.io",
+      "subject": "System alert",
+      "snippet": "Important security update available. Apply now: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "719013a2f4790581",
+      "sender": "Zabbix <alerts@zabbix.com>",
+      "subject": "Intrusion attempt blocked",
+      "snippet": "A critical vulnerability (CVE-2024-5678) was found in openssl. Update immediately to 1.5.0. Details: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "f7a4824d3f409319",
+      "sender": "UptimeRobot <noreply@uptimerobot.com>",
+      "subject": "Service notification",
+      "snippet": "Important update to our terms. Review and accept: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "3df2570a69e4e692",
+      "sender": "Grafana <alerting@grafana.com>",
+      "subject": "Traffic anomaly detected",
+      "snippet": "Your data needs to be verified. Please update: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "167732aeaed96565",
+      "sender": "Fortinet <alerts@fortinet.com>",
+      "subject": "Action required",
+      "snippet": "Important update to our terms. Review and accept: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "fb95f13515550104",
+      "sender": "Splunk <alerts@splunk.com>",
+      "subject": "Security alert: Unusual login",
+      "snippet": "Permission denied: admin attempted access to /admin. Logs: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "c92411d48216ea2a",
+      "sender": "Sentry <alert@sentry.io>",
+      "subject": "Unauthorized access attempt",
+      "snippet": "File integrity monitoring alert: /etc/config was modified. Verify: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "f00ec1d991f4cc6f",
+      "sender": "OWASP <scan@owaspzap.com>",
+      "subject": "DDoS attack prevented",
+      "snippet": "Unusual login attempt detected. Secure your account: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "13a557f6016cb693",
+      "sender": "PagerDuty <incidents@pagerduty.com>",
+      "subject": "License expiration warning",
+      "snippet": "Your data needs to be verified. Please update: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "b3414dfd84bb1a89",
+      "sender": "Sumo Logic <alerts@sumologic.com>",
+      "subject": "Access control breach",
+      "snippet": "Encryption key expires in 7 days. Rotate: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "8e236958aed6548e",
+      "sender": "CloudFlare <security@cloudflare.com>",
+      "subject": "Action needed on your account",
+      "snippet": "Pending: review needs your attention. Review: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "667c0ac35e43f8bf",
+      "sender": "Cloudflare Security <alerts@cloudflare.com>",
+      "subject": "Account notice",
+      "snippet": "Disk usage on {server}: 85%% full. Cleanup or expand: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "70fde2eb7aeabc24",
+      "sender": "admin@domain.com",
+      "subject": "CPU overload: platform",
+      "snippet": "System maintenance scheduled: soon. Details: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "1d760926a41710f6",
+      "sender": "team@obscure.net",
+      "subject": "Urgent action needed",
+      "snippet": "A new login to your account was detected from Nigeria at 2:30 AM UTC. IP: 192.0.2.1. If this wasn't you, enable two-factor authentication immediately.",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "db4458fdde33fc70",
+      "sender": "Grafana <alerting@grafana.com>",
+      "subject": "License expiration warning",
+      "snippet": "File integrity monitoring alert: /app/secret.key was modified. Verify: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "fc6ac167393fec68",
+      "sender": "support@unfamiliar-app.io",
+      "subject": "Important notification",
+      "snippet": "Important: Your confirmation needs attention. Please log in to your account to proceed. Response needed by June 30.",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "8e8dc492e80eda0a",
+      "sender": "Sumo Logic <alerts@sumologic.com>",
+      "subject": "Critical incident: API",
+      "snippet": "Network connectivity lost to Russia for 2 hours. Status: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "029f402dc657f082",
+      "sender": "OWASP <scan@owaspzap.com>",
+      "subject": "Verify request",
+      "snippet": "Please confirm: email address. Confirm: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "9b3bdd0bc3001640",
+      "sender": "hello@startup.io",
+      "subject": "Action needed on your account",
+      "snippet": "Request for permission change: Approve or deny? https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "96f847f8b5bfb095",
+      "sender": "Snyk Security <alerts@snyk.io>",
+      "subject": "Third-party component vulnerability",
+      "snippet": "There has been an update to your account. Please review the changes in your dashboard. If you didn't make this change, contact support immediately.",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "995892f823098380",
+      "sender": "Zabbix <alerts@zabbix.com>",
+      "subject": "Intrusion attempt blocked",
+      "snippet": "Unusual login from Singapore at 3:15 AM. Not you? Secure now: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "a67da3ed3cc3f760",
+      "sender": "noreply@product.app",
+      "subject": "Configuration change alert",
+      "snippet": "A new login to your account was detected from China at 2:30 AM UTC. IP: 203.0.113.45. If this wasn't you, enable two-factor authentication immediately.",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "e5c65c6c0a35dff5",
+      "sender": "Grafana <alerting@grafana.com>",
+      "subject": "System check alert",
+      "snippet": "Unusual login from Nigeria at 3:15 AM. Not you? Secure now: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "8adb975493b0eeb0",
+      "sender": "noreply@mysterious.io",
+      "subject": "Malware detected",
+      "snippet": "Disk usage on {server}: 12%% full. Cleanup or expand: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "e353958d9d726707",
+      "sender": "Google Cloud <cloudops@google.com>",
+      "subject": "Update required",
+      "snippet": "Suspicious process detected: suspicious.bin on {server}. Quarantine: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "f9f6eef0b442c040",
+      "sender": "hello@startup.io",
+      "subject": "Traffic anomaly detected",
+      "snippet": "Unusual login from China at 11:45 PM UTC. Not you? Secure now: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "17d6a2cc23e1c94e",
+      "sender": "noreply@unknown.com",
+      "subject": "Security alert: Unusual login",
+      "snippet": "New security update available for {software}. Install: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "a9c86c72dbaf73c0",
+      "sender": "help@generic-service.com",
+      "subject": "Security alert: Unusual login",
+      "snippet": "Important for your account: security. Act: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "37051762f007d33d",
+      "sender": "UptimeRobot <noreply@uptimerobot.com>",
+      "subject": "License expiration warning",
+      "snippet": "Your subscription status needs updating. Take action: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "3b43e863a36bc97a",
+      "sender": "Google Cloud <cloudops@google.com>",
+      "subject": "Important notification",
+      "snippet": "Permission denied: user@company.com attempted access to /config. Logs: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "0c3d7916852af93e",
+      "sender": "Dynatrace <alerts@dynatrace.com>",
+      "subject": "Security notice",
+      "snippet": "Your data needs to be verified. Please update: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "80dae9af44fe346f",
+      "sender": "alerts@datadog.com",
+      "subject": "Service notification",
+      "snippet": "Configuration drift detected: firewall rule added. Reconcile: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "375a0ff8c5bc37ec",
+      "sender": "help@generic-service.com",
+      "subject": "Pending action",
+      "snippet": "Configuration drift detected: firewall rule added. Reconcile: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "5df47832a6648ad0",
+      "sender": "noreply@unknown.com",
+      "subject": "System check alert",
+      "snippet": "Action required: Confirm your email address. Click: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "59a6a4157a1a7fe9",
+      "sender": "Splunk <alerts@splunk.com>",
+      "subject": "Database replication lag",
+      "snippet": "Performance alert: application response time 800ms (threshold: 90%ms).",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "2b0d075b46268820",
+      "sender": "CloudFlare <security@cloudflare.com>",
+      "subject": "Disk space low: {server}",
+      "snippet": "New device detected on your account. Was this you? Review: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "deaf0a24ca3d9162",
+      "sender": "Rapid7 <alerts@rapid7.com>",
+      "subject": "New verification available",
+      "snippet": "We noticed unusual activity on your account. Verify it was you: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "9b5a5873243a5def",
+      "sender": "help@generic-service.com",
+      "subject": "Notification for you",
+      "snippet": "We need to verify your identity for security. Verify now: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "0b43a8edeb6a5f72",
+      "sender": "contact@business.co",
+      "subject": "API error rate spike",
+      "snippet": "License expires in 7 days. Renew: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "1595796f6e108685",
+      "sender": "support@unfamiliar.net",
+      "subject": "Encryption key rotation due",
+      "snippet": "Important: Your verification needs attention. Please log in to your account to proceed. Response needed by soon.",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "ce5cfb54d87f5ffc",
+      "sender": "noreply@unknown.com",
+      "subject": "Disk space low: {server}",
+      "snippet": "Important security update available. Apply now: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "396a4a8edcc312d3",
+      "sender": "noreply@app.net",
+      "subject": "License expiration warning",
+      "snippet": "Service Database returned error rate of 85%% at 11:45 PM UTC. Investigating: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "f3d3211e8089546d",
+      "sender": "Microsoft Azure <azure@microsoft.com>",
+      "subject": "Encryption key rotation due",
+      "snippet": "Your account access is restricted. Resolve now: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "30cf722d9b87d11d",
+      "sender": "Sentry <alert@sentry.io>",
+      "subject": "Check your account",
+      "snippet": "File integrity monitoring alert: /app/secret.key was modified. Verify: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "8c785e25a9cf4565",
+      "sender": "team@obscure.net",
+      "subject": "DDoS attack prevented",
+      "snippet": "Disk usage on {server}: 12%% full. Cleanup or expand: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "ffb2f4e4e666ba65",
+      "sender": "Cloudflare Security <alerts@cloudflare.com>",
+      "subject": "Server downtime detected",
+      "snippet": "New activity on your account: login from new device. Review: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "5577e520a9cf5d38",
+      "sender": "noreply@app.net",
+      "subject": "Backup failed: application",
+      "snippet": "Unauthorized API calls detected: 3 from 198.51.100.89. Review: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "544bd8e3f6a9ae4e",
+      "sender": "support@unknown-app.com",
+      "subject": "File integrity violation",
+      "snippet": "Action required: Confirm your email address. Click: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "4fe3deb4c0e1136a",
+      "sender": "Sumo Logic <alerts@sumologic.com>",
+      "subject": "Database replication lag",
+      "snippet": "New device detected on your account. Was this you? Review: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "1765c15841b14148",
+      "sender": "notify@website.app",
+      "subject": "Service notification",
+      "snippet": "Disk usage on {server}: 45%% full. Cleanup or expand: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "4c4f82f604aeedd8",
+      "sender": "noreply@product.app",
+      "subject": "Alert: suspicious activity",
+      "snippet": "API error spike: 230 errors in last 5 minutes. Details: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "7a674750e98b1a1b",
+      "sender": "noreply@mystery-service.com",
+      "subject": "Important account",
+      "snippet": "This is an automated notification. Your account has been accessed. For security, we recommend updating your password. Action link: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "85c0d65c50b3b495",
+      "sender": "admin@unclear-domain.org",
+      "subject": "Unauthorized access attempt",
+      "snippet": "Multiple failed login attempts detected. Location: Nigeria. Secure account: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "cc975d84ef9b7a87",
+      "sender": "hello@vague-company.net",
+      "subject": "Memory usage critical",
+      "snippet": "Service application returned error rate of 12%% at 3:15 AM. Investigating: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "6c99a626ffb332db",
+      "sender": "Fortinet <alerts@fortinet.com>",
+      "subject": "Alert: suspicious activity",
+      "snippet": "We need to verify your identity for security. Verify now: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "67d1d919acf9d542",
+      "sender": "Snyk Security <alerts@snyk.io>",
+      "subject": "Malware detected",
+      "snippet": "Your account access is restricted. Resolve now: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "6561122b78ddabff",
+      "sender": "Prometheus <alert@prometheus.io>",
+      "subject": "Encryption key rotation due",
+      "snippet": "Account security alert: unusual activity. Response: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "1fe19230b3be0676",
+      "sender": "help@generic-service.com",
+      "subject": "Your account update",
+      "snippet": "Performance alert: Database response time 2500ms (threshold: 85%ms).",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "ec8fad432a3cb071",
+      "sender": "Rapid7 <alerts@rapid7.com>",
+      "subject": "Alert: suspicious activity",
+      "snippet": "Traffic spike: 85%% above baseline. Likely cause: bot activity. https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "376e08563177b258",
+      "sender": "hello@vague-company.net",
+      "subject": "License expiration warning",
+      "snippet": "Third-party library symfony has 3 vulnerabilities. Update: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "4cd43a613556f2b0",
+      "sender": "Snyk Security <alerts@snyk.io>",
+      "subject": "Check your account",
+      "snippet": "SSL certificate for api.example.com has 14 days remaining. Renew now: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "11188567d296a3c6",
+      "sender": "Fortinet <alerts@fortinet.com>",
+      "subject": "Action required",
+      "snippet": "Service update notification: system upgrade. Learn more: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "06f804742e3dcf22",
+      "sender": "Sentry <alert@sentry.io>",
+      "subject": "Certificate expiration alert",
+      "snippet": "Account security alert: failed login. Response: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "067333d1cee1b7ba",
+      "sender": "contact@business.co",
+      "subject": "Action required",
+      "snippet": "Configuration drift detected: IP whitelist updated. Reconcile: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "205e54c29dd239ab",
+      "sender": "Pingdom <alerts@pingdom.com>",
+      "subject": "Verify your identity",
+      "snippet": "Network connectivity lost to Nigeria for 15 mins. Status: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "6e76c32e9c7090d4",
+      "sender": "contact@business.co",
+      "subject": "Update available",
+      "snippet": "Unusual login attempt detected. Secure your account: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "89c837b4552eb096",
+      "sender": "Grafana <alerting@grafana.com>",
+      "subject": "Account activity",
+      "snippet": "Certificate for api.example.com expires in 7 days. Renew: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "4a888b37652390cb",
+      "sender": "Sentry <alert@sentry.io>",
+      "subject": "Verify request",
+      "snippet": "Encryption key expires in 30 days. Rotate: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "c70de86c1fa7d69e",
+      "sender": "hello@company.biz",
+      "subject": "New verification available",
+      "snippet": "File integrity monitoring alert: /app/secret.key was modified. Verify: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "30711b709c587d9f",
+      "sender": "noreply@product.app",
+      "subject": "Account alert",
+      "snippet": "Your account has been updated. Review changes: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "a1040e1ca8fe35bc",
+      "sender": "Splunk <alerts@splunk.com>",
+      "subject": "Permission denied: /database",
+      "snippet": "Firewall rule violation detected from 203.0.113.45. Action: logged. Details: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "3be1136d36a713d1",
+      "sender": "contact@website.org",
+      "subject": "Account confirmation",
+      "snippet": "DDoS mitigation activated. 1M requests blocked. Duration: 15 mins.",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "600429c059620244",
+      "sender": "Prometheus <alert@prometheus.io>",
+      "subject": "Action needed on your account",
+      "snippet": "Your account needs verification. Complete: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "82fc60ab37582b33",
+      "sender": "security-alerts@github.com",
+      "subject": "Please review",
+      "snippet": "New security update available for {software}. Install: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "489075eb780941dd",
+      "sender": "Sentry <alert@sentry.io>",
+      "subject": "Intrusion attempt blocked",
+      "snippet": "This is an automated notification. Your account has been accessed. For security, we recommend updating your password. Action link: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "73121e16c7300af2",
+      "sender": "alerts@datadog.com",
+      "subject": "Your account update",
+      "snippet": "Service service health check failed. Status: lagging. Investigating: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "6159b6b15ec94d6a",
+      "sender": "team@obscure.net",
+      "subject": "Server downtime detected",
+      "snippet": "Your data needs to be verified. Please update: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "4985817c87e6beb0",
+      "sender": "PagerDuty <incidents@pagerduty.com>",
+      "subject": "Action required",
+      "snippet": "A critical vulnerability (CVE-2023-9999) was found in tensorflow. Update immediately to 2.17.0. Details: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "8f51874ade84f29b",
+      "sender": "Qualys <alerts@qualys.com>",
+      "subject": "Message from API",
+      "snippet": "Permission denied: user@company.com attempted access to /config. Logs: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "d5898bbf71aa7add",
+      "sender": "contact@website.org",
+      "subject": "Verify your identity",
+      "snippet": "New security update available for {software}. Install: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "aeef6960de7d24b1",
+      "sender": "contact@business.co",
+      "subject": "Urgent action needed",
+      "snippet": "Your Database notification: update pending. Details: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "4c78fb18aa3040aa",
+      "sender": "noreply@app.net",
+      "subject": "Network connectivity lost",
+      "snippet": "Disk usage on {server}: 45%% full. Cleanup or expand: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "fb4beb5fc83dcafb",
+      "sender": "no-reply@unidentified.io",
+      "subject": "Request confirmation",
+      "snippet": "Service Database returned error rate of 45%% at 2:30 AM UTC. Investigating: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "a6e345350e7b29f0",
+      "sender": "team@obscure.net",
+      "subject": "Message from system",
+      "snippet": "Third-party library symfony has 3 vulnerabilities. Update: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "a78bd607f62aed62",
+      "sender": "security-alerts@github.com",
+      "subject": "Third-party component vulnerability",
+      "snippet": "This requires your immediate attention: account change. Action: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "6210912e89c5882c",
+      "sender": "noreply@mysterious.io",
+      "subject": "Network connectivity lost",
+      "snippet": "System maintenance scheduled: June 30. Details: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "64cb252664711b42",
+      "sender": "Cloudflare Security <alerts@cloudflare.com>",
+      "subject": "Urgent action needed",
+      "snippet": "Your data needs to be verified. Please update: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "d6f5812952f1c614",
+      "sender": "info@new-platform.org",
+      "subject": "New verification available",
+      "snippet": "Service API health check failed. Status: failed. Investigating: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "fcc20463ed9b7f78",
+      "sender": "PagerDuty <noreply@pagerduty.com>",
+      "subject": "Service restart required",
+      "snippet": "Your system notification: update pending. Details: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "ecc7b3af237d875f",
+      "sender": "notify@website.app",
+      "subject": "Your account update",
+      "snippet": "Account security alert: failed login. Response: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "d259df5c6ef4298a",
+      "sender": "hello@vague-company.net",
+      "subject": "Security notice",
+      "snippet": "Multiple failed login attempts detected. Location: Unknown. Secure account: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "b80f856869af347b",
+      "sender": "noreply@github.com",
+      "subject": "Request confirmation",
+      "snippet": "Important update to our terms. Review and accept: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "db0e4409f9cbe23a",
+      "sender": "Microsoft Azure <azure@microsoft.com>",
+      "subject": "Confirm your account",
+      "snippet": "Server prod-01 is down. Last heartbeat: 5 minutes ago. Check logs for errors. https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "ed3304360bf03d3c",
+      "sender": "Microsoft Azure <azure@microsoft.com>",
+      "subject": "System alert",
+      "snippet": "This is an automated notification. Your account has been accessed. For security, we recommend updating your password. Action link: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    },
+    {
+      "id": "6477a5d2bafade9f",
+      "sender": "Prometheus <alert@prometheus.io>",
+      "subject": "License expiration warning",
+      "snippet": "SSL certificate for example.com has 7 days remaining. Renew now: https://alert.io/...",
+      "category": "SYSTEM_ALERT"
+    }
+  ]
+}

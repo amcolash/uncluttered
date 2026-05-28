@@ -1,0 +1,704 @@
+{
+  "emails": [
+    {
+      "id": "9aec9b48c2f21deb",
+      "sender": "Food <noreply@foodapp.com>",
+      "subject": "Olive Garden order confirmation",
+      "snippet": "Your delivery from Wendy's is on its way! Track your order: https://doordash.com/track. Arrives by 50 min.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "afaed44ce7f71a77",
+      "sender": "Toast <noreply@toast.com>",
+      "subject": "Your lunch is ready",
+      "snippet": "Delivery update: Your Subway order left the restaurant. Driver James will be there in 15.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "1b3bd733c4fe8d19",
+      "sender": "Grubhub <noreply@grubhub.com>",
+      "subject": "Order status: {status}",
+      "snippet": "On the way! Maria has your Local Ramen delivery. Arriving in 35. Your total: $15.75.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "6067980b2bdb10f8",
+      "sender": "Cafe Orders <confirm@cafe.com>",
+      "subject": "Your order 24601",
+      "snippet": "Pickup alert! Your Thai Kitchen order is ready now at by the door. Pick it up before 35-40 min. Order: 24601",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "414fa9680e2e6fe7",
+      "sender": "Doordash Driver <driver@doordash.com>",
+      "subject": "Order confirmed and cooking",
+      "snippet": "Order ready for pickup at Olive Garden! Head over when convenient. We've packaged everything to stay hot and fresh. Order #: 67890",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "6ac38ca1f5e2d93c",
+      "sender": "Seamless <noreply@seamless.com>",
+      "subject": "Driver arriving soon",
+      "snippet": "Final ETA: Your food from Panda Express arrives in approximately 8 minutes. Order total: $28.99",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "b93c7ca3dcd06a1d",
+      "sender": "Caviar <noreply@caviar.com>",
+      "subject": "Driver arriving soon",
+      "snippet": "Panera Bread is getting your food ready now. Items: sushi roll, fries, soup. Leave gate unlocked for delivery.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "dbcd4b4d9d652b46",
+      "sender": "Postmates <noreply@postmates.com>",
+      "subject": "Order accepted by restaurant",
+      "snippet": "We're preparing your order from Chick-fil-A. burrito, soup - coming right up! Estimated delivery: 50 min",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "848eb7383ede7073",
+      "sender": "Waitr <noreply@waitrapp.com>",
+      "subject": "Driver arriving soon",
+      "snippet": "Order status: Your Five Guys meal is being cooked to order. Estimated delivery: 35 minutes.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "b1d51d4555cc3b17",
+      "sender": "Delivery <orders@deliveryservice.com>",
+      "subject": "Pickup notification - McDonald's",
+      "snippet": "Driver is picking up your order from Panera Bread. ETA to your location: 25 minutes.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "db3c7d5f87313eb5",
+      "sender": "Sushi House <noreply@sushihouse.com>",
+      "subject": "Track your delivery",
+      "snippet": "Pickup alert! Your McDonald's order is ready now at at Main St entrance. Pick it up before 20-30 min. Order: 67890",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "e94a83e5cda39d2a",
+      "sender": "DoorDash <noreply@doordash.com>",
+      "subject": "Delivery status update",
+      "snippet": "Your food from Taco Bell is being packed for delivery. Expected arrival: 35-40 min. Total: $8.99",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "aefcf0e01944d1da",
+      "sender": "Cafe Orders <confirm@cafe.com>",
+      "subject": "Restaurant confirmed your order",
+      "snippet": "Driver is picking up your order from Thai Kitchen. ETA to your location: 15 minutes.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "1fcb67c5781ac5ad",
+      "sender": "restaurants@local.com",
+      "subject": "Delivery status update",
+      "snippet": "We've got your order! Chick-fil-A is preparing your sushi roll, fries, and sauce. See you in 8!",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "b0f8cbb8fab07359",
+      "sender": "Grubhub <noreply@grubhub.com>",
+      "subject": "Your meal is being prepared",
+      "snippet": "Great! Panera Bread confirmed your order. Your food will be ready in about 8 minutes. Driver will pick it up shortly.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "ac8d6dbb1a8365e2",
+      "sender": "Restaurant <orders@restaurant.com>",
+      "subject": "Delivery arriving in 20",
+      "snippet": "Great! Taco Bell confirmed your order. Your food will be ready in about 15 minutes. Driver will pick it up shortly.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "38736725c254fc55",
+      "sender": "Food Delivery <noreply@fooddelivery.com>",
+      "subject": "Food order update",
+      "snippet": "Your pad thai, soup, and soup from Panda Express are ready! Pickup or delivery available. Order #67890",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "0281e4f2b4c1fab0",
+      "sender": "Restaurant Management <noreply@restmgmt.com>",
+      "subject": "Restaurant confirmed your order",
+      "snippet": "Your order from Wendy's is confirmed! Estimated delivery: 20-30 min. Track your order live in the app. Order total: $42.00",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "8e441f8158ee911c",
+      "sender": "Restaurant Management <noreply@restmgmt.com>",
+      "subject": "Order received: In-N-Out",
+      "snippet": "Your Five Guys delivery arrived at your building. Go get your delicious pad thai and fries!",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "c90819f37628b068",
+      "sender": "Waitr <noreply@waitrapp.com>",
+      "subject": "Panera Bread order confirmation",
+      "snippet": "Driver is picking up your order from Panera Bread. ETA to your location: 25 minutes.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "ea8157d3a774662b",
+      "sender": "Doordash Driver <driver@doordash.com>",
+      "subject": "Your food is on the way!",
+      "snippet": "Pickup alert! Your Taco Bell order is ready now at at Main St entrance. Pick it up before 35-40 min. Order: 12345",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "96928625ee4350f8",
+      "sender": "Restaurant <orders@restaurant.com>",
+      "subject": "Order status: {status}",
+      "snippet": "Your In-N-Out delivery arrived at your building. Go get your delicious fried rice and soup!",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "723cdd10a6bf219d",
+      "sender": "Toast <noreply@toast.com>",
+      "subject": "Order update: Out for delivery",
+      "snippet": "Delivery update: Your Pizza Hut order left the restaurant. Driver Maria will be there in 20.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "85cad3384ebf3ca0",
+      "sender": "Local Delivery <confirm@localdelivery.com>",
+      "subject": "Your food is on the way!",
+      "snippet": "We're preparing your order from Thai Kitchen. salad, soup - coming right up! Estimated delivery: 50 min",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "44b385784a280819",
+      "sender": "Food Delivery <noreply@fooddelivery.com>",
+      "subject": "Order status: {status}",
+      "snippet": "Order ready for pickup at Panda Express! Head over when convenient. We've packaged everything to stay hot and fresh. Order #: 24601",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "c65c978c3847f4a3",
+      "sender": "Thai Restaurant <orders@thairest.com>",
+      "subject": "Restaurant preparing your food",
+      "snippet": "Driver Maria is on the way with your Taco Bell order. Arriving in 8 minutes. Your pad thai and more.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "89f16afb36e6a47b",
+      "sender": "Postmates <noreply@postmates.com>",
+      "subject": "Order update: Out for delivery",
+      "snippet": "Your order from McDonald's is on the way! Driver James is 20 minutes away. Track in real-time: https://doordash.com/track",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "049afd7e8f7031ce",
+      "sender": "Caviar <noreply@caviar.com>",
+      "subject": "Order 55555 from Thai Kitchen",
+      "snippet": "Final ETA: Your food from Panera Bread arrives in approximately 8 minutes. Order total: $12.50",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "e583de35c7cd73d0",
+      "sender": "Restaurant Management <noreply@restmgmt.com>",
+      "subject": "Your Olive Garden delivery is here",
+      "snippet": "Final ETA: Your food from Olive Garden arrives in approximately 35 minutes. Order total: $42.00",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "ac808c80dbd8d9df",
+      "sender": "Grubhub <noreply@grubhub.com>",
+      "subject": "Your order is ready",
+      "snippet": "Great choice! Your order from Olive Garden totals $34.21. Will arrive by 25 min. Confirm delivery: https://doordash.com/track",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "73faebe99a2987bc",
+      "sender": "Uber Eats <noreply@ubereats.com>",
+      "subject": "Your lunch is ready",
+      "snippet": "Chipotle accepted your order! Prep time: 20 minutes. Your total: $42.00. Questions? Call them: 555-0400",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "2a6cc1497876b174",
+      "sender": "Sushi House <noreply@sushihouse.com>",
+      "subject": "Restaurant confirmed your order",
+      "snippet": "Ready soon! Wendy's is preparing your salad and quesadilla. Delivery ETA: 50 min.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "806e610105a8df5b",
+      "sender": "Delivery <orders@deliveryservice.com>",
+      "subject": "Driver on the way - In-N-Out",
+      "snippet": "Your Taco Bell order is official. Items confirmed: burrito, wings. Will be delivered by 35-40 min.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "d4a7e36d356f429c",
+      "sender": "Instacart <noreply@instacart.com>",
+      "subject": "Order confirmed and cooking",
+      "snippet": "Heads up! Your delivery from Panda Express will arrive by 10-15 min. Total: $42.00. See your items: https://doordash.com/track",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "1e0f208ec815e1dd",
+      "sender": "Toast <noreply@toast.com>",
+      "subject": "Your food is on the way!",
+      "snippet": "Your burrito, quesadilla, and sides from Pizza Hut are ready! Pickup or delivery available. Order #12345",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "ec766b0a5ac6396e",
+      "sender": "Pizza Place <orders@pizzaplace.com>",
+      "subject": "Your lunch is ready",
+      "snippet": "Your Subway order is official. Items confirmed: fried rice, quesadilla. Will be delivered by 10-15 min.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "789c4062f073f91c",
+      "sender": "Grubhub <noreply@grubhub.com>",
+      "subject": "Your meal is being prepared",
+      "snippet": "Delivery update: Your Panera Bread order left the restaurant. Driver John will be there in 25.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "b28af244fd74734f",
+      "sender": "Instacart <noreply@instacart.com>",
+      "subject": "Delivery status changed",
+      "snippet": "Your sushi roll, fries, and dessert from Local Ramen are ready! Pickup or delivery available. Order #67890",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "ec41c976a50e11b2",
+      "sender": "Toast <noreply@toast.com>",
+      "subject": "Order status: {status}",
+      "snippet": "Great! Pizza Hut confirmed your order. Your food will be ready in about 20 minutes. Driver will pick it up shortly.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "582c465c4d798b6f",
+      "sender": "Order Status <tracking@fooddelivery.com>",
+      "subject": "Delivery status changed",
+      "snippet": "Order status: Your Taco Bell meal is being cooked to order. Estimated delivery: 8 minutes.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "b448f4231cb11e67",
+      "sender": "Food Delivery <noreply@fooddelivery.com>",
+      "subject": "Delivery arriving in 35",
+      "snippet": "Confirmation: Five Guys order for $34.21. Items: salad, fries. Ready by 20-30 min.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "7a6b0c7c6ed56811",
+      "sender": "Order Status <tracking@fooddelivery.com>",
+      "subject": "Delivery arriving in 20",
+      "snippet": "Sushi Palace is excited to serve you! Your order 67890 is in the kitchen now.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "222fc40a1250ea04",
+      "sender": "Delivery <orders@deliveryservice.com>",
+      "subject": "Your order is ready",
+      "snippet": "Final ETA: Your food from Thai Kitchen arrives in approximately 25 minutes. Order total: $8.99",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "c1993cc43dcc4818",
+      "sender": "Amazon Fresh <noreply@amazonfresh.com>",
+      "subject": "Order update: Out for delivery",
+      "snippet": "Your Five Guys order is official. Items confirmed: burrito, salad. Will be delivered by 25 min.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "2311c57eddd7b332",
+      "sender": "Local Delivery <confirm@localdelivery.com>",
+      "subject": "Food order update",
+      "snippet": "Your order #67890 from Thai Kitchen will arrive by 10-15 min. Total cost: $12.50. Questions? tracking.foodapp.com",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "20e0976d99a956cb",
+      "sender": "Taco Truck <noreply@tacotruck.com>",
+      "subject": "Your lunch is ready",
+      "snippet": "Heads up! Your delivery from Local Ramen will arrive by 25 min. Total: $12.50. See your items: https://doordash.com/track",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "f8e1b6419cdb5c74",
+      "sender": "Pickup Ready <notification@restaurant.com>",
+      "subject": "Your order 67890",
+      "snippet": "Your order from Panda Express is confirmed! Estimated delivery: 35-40 min. Track your order live in the app. Order total: $34.21",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "defb635e5bf7738d",
+      "sender": "Waitr <noreply@waitrapp.com>",
+      "subject": "Restaurant preparing your food",
+      "snippet": "Great! Wendy's confirmed your order. Your food will be ready in about 15 minutes. Driver will pick it up shortly.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "0514786fa2d4a666",
+      "sender": "Eat24 <noreply@eat24.com>",
+      "subject": "Your meal is being prepared",
+      "snippet": "On a roll! Sushi Palace is cooking your order 67890. Delivery by 50 min. Total: $34.21",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "c7f88c6ac2458675",
+      "sender": "Grubhub <noreply@grubhub.com>",
+      "subject": "Delivery ETA: 15",
+      "snippet": "On the way! Maria has your Wendy's delivery. Arriving in 25. Your total: $8.99.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "b2f53e8075d04948",
+      "sender": "Bagel Shop <orders@bagelshop.com>",
+      "subject": "Your lunch is ready",
+      "snippet": "Great! Sushi Palace confirmed your order. Your food will be ready in about 8 minutes. Driver will pick it up shortly.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "915dd1d7264e39d2",
+      "sender": "Toast <noreply@toast.com>",
+      "subject": "Order update: Out for delivery",
+      "snippet": "Your fried rice, quesadilla, and sauce are being prepared. Driver will arrive in about 25 minutes. Have your door unlocked if possible.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "36c871924ff9f968",
+      "sender": "Amazon Fresh <noreply@amazonfresh.com>",
+      "subject": "Dinner delivery en route",
+      "snippet": "We're preparing your order from Five Guys. burrito, quesadilla - coming right up! Estimated delivery: 20-30 min",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "22505d7bc8802ce9",
+      "sender": "Quick Eats <orders@quickeats.com>",
+      "subject": "Food prep started",
+      "snippet": "Your order from Chipotle is on the way! Driver John is 25 minutes away. Track in real-time: tracking.foodapp.com",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "d1edc2c9f82661e1",
+      "sender": "Postmates <noreply@postmates.com>",
+      "subject": "Your food is on the way!",
+      "snippet": "Pickup alert! Your Pizza Hut order is ready now at near lobby. Pick it up before 25 min. Order: 12345",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "0da570d081b34ebd",
+      "sender": "Toast <noreply@toast.com>",
+      "subject": "Delivery status update",
+      "snippet": "Your order from Subway is on the way! Driver James is 35 minutes away. Track in real-time: tracking.foodapp.com",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "52d03483247c442b",
+      "sender": "Restaurant <orders@restaurant.com>",
+      "subject": "Driver on the way - Olive Garden",
+      "snippet": "Ready soon! Chick-fil-A is preparing your pizza and quesadilla. Delivery ETA: 10-15 min.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "6b89728907867e2f",
+      "sender": "Pizza Place <orders@pizzaplace.com>",
+      "subject": "Order update: Out for delivery",
+      "snippet": "We've got your order! Panera Bread is preparing your pizza, soup, and soup. See you in 20!",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "fab789e6777a37df",
+      "sender": "Delivery <orders@deliveryservice.com>",
+      "subject": "Order received: Sushi Palace",
+      "snippet": "Your order #12345 from Chick-fil-A will arrive by 20-30 min. Total cost: $12.50. Questions? tracking.foodapp.com",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "7a53d5916465f645",
+      "sender": "Uber Eats <noreply@ubereats.com>",
+      "subject": "New order confirmation",
+      "snippet": "Your burrito, spring roll, and sides from Taco Bell are ready! Pickup or delivery available. Order #12345",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "1872b944a0a348fb",
+      "sender": "Pizza Place <orders@pizzaplace.com>",
+      "subject": "Order received: Subway",
+      "snippet": "Order status: Your Panera Bread meal is being cooked to order. Estimated delivery: 20 minutes.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "e75e3790fb9d5ad5",
+      "sender": "Order Status <tracking@fooddelivery.com>",
+      "subject": "Dinner delivery en route",
+      "snippet": "Your Taco Bell delivery arrived at your building. Go get your delicious salad and appetizer!",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "a6bcac61537bcfd2",
+      "sender": "DoorDash <noreply@doordash.com>",
+      "subject": "Delivery arriving in 8",
+      "snippet": "Driver is picking up your order from Five Guys. ETA to your location: 35 minutes.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "d3363064a9794fa6",
+      "sender": "Eat24 <noreply@eat24.com>",
+      "subject": "Delivery ETA: 15",
+      "snippet": "On a roll! In-N-Out is cooking your order 55555. Delivery by 25 min. Total: $15.75",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "26d9981d8c68b043",
+      "sender": "Cafe Orders <confirm@cafe.com>",
+      "subject": "Delivery arriving in 25",
+      "snippet": "Pickup alert! Your McDonald's order is ready now at at Main St entrance. Pick it up before 20-30 min. Order: 55555",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "794278109ff3d3b6",
+      "sender": "Instacart <noreply@instacart.com>",
+      "subject": "Order accepted by restaurant",
+      "snippet": "Great! Five Guys confirmed your order. Your food will be ready in about 35 minutes. Driver will pick it up shortly.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "c116ffbae236a299",
+      "sender": "Pizza Place <orders@pizzaplace.com>",
+      "subject": "Driver on the way - Taco Bell",
+      "snippet": "Your order from Local Ramen is on the way! Driver John is 15 minutes away. Track in real-time: https://doordash.com/track",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "7397f26ad5cf2e92",
+      "sender": "Sushi House <noreply@sushihouse.com>",
+      "subject": "Delivery arriving in 20",
+      "snippet": "Ready soon! Taco Bell is preparing your sushi roll and quesadilla. Delivery ETA: 35-40 min.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "6a5e09a7ebd6a6df",
+      "sender": "Cafe Orders <confirm@cafe.com>",
+      "subject": "Delivery arriving in 8",
+      "snippet": "Five Guys accepted your order! Prep time: 20 minutes. Your total: $28.99. Questions? Call them: 555-0400",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "74f41d4532bb923b",
+      "sender": "Cafe Orders <confirm@cafe.com>",
+      "subject": "Your order 67890",
+      "snippet": "Your Chick-fil-A delivery arrived at your building. Go get your delicious burger and salad!",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "0773434da624ba83",
+      "sender": "Food Delivery <noreply@fooddelivery.com>",
+      "subject": "Food order update",
+      "snippet": "Your order from Pizza Hut is confirmed! Estimated delivery: 25 min. Track your order live in the app. Order total: $28.99",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "fe21502d8c9c5df6",
+      "sender": "Postmates <noreply@postmates.com>",
+      "subject": "Pickup notification - Five Guys",
+      "snippet": "Driver is picking up your order from Thai Kitchen. ETA to your location: 8 minutes.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "2f2c841e57adc32c",
+      "sender": "DoorDash <noreply@doordash.com>",
+      "subject": "Order 24601 from Five Guys",
+      "snippet": "Your In-N-Out order is official. Items confirmed: burrito, soup. Will be delivered by 35-40 min.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "cafb7abcd05002bc",
+      "sender": "Quick Eats <orders@quickeats.com>",
+      "subject": "Your Panda Express is ready",
+      "snippet": "Confirmation: Pizza Hut order for $28.99. Items: fried rice, fries. Ready by 50 min.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "569862b5a6953715",
+      "sender": "Bagel Shop <orders@bagelshop.com>",
+      "subject": "Your Chick-fil-A delivery is here",
+      "snippet": "Local Ramen accepted your order! Prep time: 15 minutes. Your total: $34.21. Questions? Call them: 555-0400",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "15a092ffb910d9a2",
+      "sender": "Delivery <orders@deliveryservice.com>",
+      "subject": "Dinner delivery en route",
+      "snippet": "Your pad thai, salad, and dessert from Pizza Hut are ready! Pickup or delivery available. Order #12345",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "5580b4e359ed0a25",
+      "sender": "Caviar <noreply@caviar.com>",
+      "subject": "Your order 67890",
+      "snippet": "Pickup alert! Your Subway order is ready now at near lobby. Pick it up before 20-30 min. Order: 55555",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "18f75e1d080e2f60",
+      "sender": "Toast <noreply@toast.com>",
+      "subject": "Restaurant preparing your food",
+      "snippet": "Driver Alex is on the way with your Local Ramen order. Arriving in 35 minutes. Your burrito and more.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "e80e820ec3f05327",
+      "sender": "Caviar <noreply@caviar.com>",
+      "subject": "Order accepted by restaurant",
+      "snippet": "Your pad thai, fries, and sides are being prepared. Driver will arrive in about 25 minutes. Have your door unlocked if possible.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "c74f0a4a82a2ce33",
+      "sender": "Sandwich Store <confirm@sandwichstore.com>",
+      "subject": "Order received: Pizza Hut",
+      "snippet": "Your delivery from Panda Express is on its way! Track your order: https://doordash.com/track. Arrives by 20-30 min.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "9a126d56573e7687",
+      "sender": "Sandwich Store <confirm@sandwichstore.com>",
+      "subject": "Your food is on the way!",
+      "snippet": "Chick-fil-A accepted your order! Prep time: 35 minutes. Your total: $8.99. Questions? Call them: 555-0400",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "df988597868afe31",
+      "sender": "Bagel Shop <orders@bagelshop.com>",
+      "subject": "Delivery status update",
+      "snippet": "Your Thai Kitchen delivery arrived at your building. Go get your delicious sushi roll and soup!",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "cf383c54bc9ab135",
+      "sender": "Bagel Shop <orders@bagelshop.com>",
+      "subject": "Delivery status update",
+      "snippet": "Your Chick-fil-A order is confirmed and cooking. ETA: 25 min. Items: burrito, quesadilla, fries, napkins.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "ebd9be6a8b7e763c",
+      "sender": "Seamless <noreply@seamless.com>",
+      "subject": "Driver on the way - Thai Kitchen",
+      "snippet": "On the way! Maria has your Wendy's delivery. Arriving in 35. Your total: $34.21.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "99f057982e430fe9",
+      "sender": "restaurants@local.com",
+      "subject": "Delivery status update",
+      "snippet": "We're preparing your order from Sushi Palace. sushi roll, spring roll - coming right up! Estimated delivery: 25 min",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "ef7345a5b2b5f8b6",
+      "sender": "Taco Truck <noreply@tacotruck.com>",
+      "subject": "Dinner delivery en route",
+      "snippet": "Heads up! Your delivery from Wendy's will arrive by 35-40 min. Total: $34.21. See your items: tracking.foodapp.com",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "ba34c1bef09a6f21",
+      "sender": "Sandwich Store <confirm@sandwichstore.com>",
+      "subject": "Your meal is being prepared",
+      "snippet": "Your delivery from In-N-Out is on its way! Track your order: https://doordash.com/track. Arrives by 10-15 min.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "78f0764ca16c91d5",
+      "sender": "Order Confirmation <support@ordering.com>",
+      "subject": "Restaurant preparing your food",
+      "snippet": "Final ETA: Your food from Chick-fil-A arrives in approximately 20 minutes. Order total: $34.21",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "2a5d40d11dc64bdf",
+      "sender": "Waitr <noreply@waitrapp.com>",
+      "subject": "Your McDonald's order",
+      "snippet": "Final ETA: Your food from In-N-Out arrives in approximately 15 minutes. Order total: $15.75",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "8ce57b573f2646f8",
+      "sender": "Sandwich Store <confirm@sandwichstore.com>",
+      "subject": "Food order update",
+      "snippet": "Subway accepted your order! Prep time: 8 minutes. Your total: $8.99. Questions? Call them: 555-0400",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "c61ce15baba5cde9",
+      "sender": "Amazon Fresh <noreply@amazonfresh.com>",
+      "subject": "Your order is ready",
+      "snippet": "Your order from Chipotle is confirmed! Estimated delivery: 50 min. Track your order live in the app. Order total: $8.99",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "48eb598c2fad16f4",
+      "sender": "Food Delivery <noreply@fooddelivery.com>",
+      "subject": "Delivery arriving in 35",
+      "snippet": "Driver is picking up your order from Wendy's. ETA to your location: 20 minutes.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "d43dc256fc30f2de",
+      "sender": "Eat24 <noreply@eat24.com>",
+      "subject": "Dinner delivery en route",
+      "snippet": "On the way! James has your Taco Bell delivery. Arriving in 35. Your total: $12.50.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "a4474734902ade7f",
+      "sender": "Pickup Ready <notification@restaurant.com>",
+      "subject": "Restaurant confirmed your order",
+      "snippet": "Sushi Palace accepted your order! Prep time: 8 minutes. Your total: $28.99. Questions? Call them: 555-0400",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "977248c52ba94001",
+      "sender": "Quick Eats <orders@quickeats.com>",
+      "subject": "Track your delivery",
+      "snippet": "Local Ramen is excited to serve you! Your order 12345 is in the kitchen now.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "c6c2dc8bbd1f042b",
+      "sender": "Food Delivery <noreply@fooddelivery.com>",
+      "subject": "Order 24601 from Thai Kitchen",
+      "snippet": "On a roll! Sushi Palace is cooking your order 67890. Delivery by 35-40 min. Total: $34.21",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "d34580d4d5c7edaf",
+      "sender": "Order Status <tracking@fooddelivery.com>",
+      "subject": "Track your delivery",
+      "snippet": "Your delivery from Chipotle is on its way! Track your order: https://doordash.com/track. Arrives by 35-40 min.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "e3a30196d7b65851",
+      "sender": "Instacart <noreply@instacart.com>",
+      "subject": "Order received: In-N-Out",
+      "snippet": "Great choice! Your order from Thai Kitchen totals $28.99. Will arrive by 25 min. Confirm delivery: https://doordash.com/track",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "ab05b426f9394f5e",
+      "sender": "restaurants@local.com",
+      "subject": "Driver arriving soon",
+      "snippet": "Great! McDonald's confirmed your order. Your food will be ready in about 8 minutes. Driver will pick it up shortly.",
+      "category": "FOOD_ORDER"
+    },
+    {
+      "id": "261e905242f32a73",
+      "sender": "Order Confirmation <support@ordering.com>",
+      "subject": "Order 24601 from Panda Express",
+      "snippet": "Your order from Thai Kitchen is confirmed! Estimated delivery: 35-40 min. Track your order live in the app. Order total: $42.00",
+      "category": "FOOD_ORDER"
+    }
+  ]
+}

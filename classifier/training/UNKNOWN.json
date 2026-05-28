@@ -1,0 +1,704 @@
+{
+  "emails": [
+    {
+      "id": "c5c8854590082ea2",
+      "sender": "admin@unclear-domain.org",
+      "subject": "Important update",
+      "snippet": "Your application notification: something changed. Details: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "55aae40356e57be8",
+      "sender": "auto-reply@service.com",
+      "subject": "Urgent action needed",
+      "snippet": "Your data needs to be verified. Please update: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "15235dcae54dcabf",
+      "sender": "info@new-platform.org",
+      "subject": "Update available",
+      "snippet": "Account security alert: unusual activity. Response: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "bc7334204a4f1438",
+      "sender": "contact@ambiguous.com",
+      "subject": "Account activity",
+      "snippet": "Important security update available. Apply now: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "0bfaea333f5d251b",
+      "sender": "support@unknown-app.com",
+      "subject": "Message from application",
+      "snippet": "New device detected on your account. Was this you? Review: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "f4e6cbbb1b7a0009",
+      "sender": "hello@vague-company.net",
+      "subject": "Verify request",
+      "snippet": "There has been an update to your account. Please review the changes in your dashboard. If you didn't make this change, contact support immediately.",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "74768c65dfec5d3f",
+      "sender": "alerts@new-service.app",
+      "subject": "Account activity",
+      "snippet": "Your application notification: something changed. Details: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "d0566b4387bd3a86",
+      "sender": "noreply@app.net",
+      "subject": "Security notice",
+      "snippet": "Important: Your settings requires review. verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "7a16a8d53452b0d3",
+      "sender": "system@application.io",
+      "subject": "Important message",
+      "snippet": "We noticed unusual activity on your account. Verify it was you: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "d232be7fcd25f08c",
+      "sender": "help@generic-service.com",
+      "subject": "Important message",
+      "snippet": "Action required: Confirm your email address. Click: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "6a6b175fccf3af5b",
+      "sender": "help@generic-service.com",
+      "subject": "Request confirmation",
+      "snippet": "Verify your verification to continue using our service: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "492ed0200744bfbb",
+      "sender": "support@unfamiliar.net",
+      "subject": "Account notice",
+      "snippet": "Service update notification: system upgrade. Learn more: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "963e4892b3ddc7f3",
+      "sender": "admin@unclear-domain.org",
+      "subject": "Verify request",
+      "snippet": "We need to verify your identity for security. Verify now: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "70cfd0cce1d3923d",
+      "sender": "info@unrecognized-domain.org",
+      "subject": "Action required",
+      "snippet": "Unusual login attempt detected. Secure your account: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "9ad7a94371ade1dc",
+      "sender": "hello@company.biz",
+      "subject": "Account alert",
+      "snippet": "New device detected on your account. Was this you? Review: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "cb40ac72c6293d83",
+      "sender": "team@obscure.net",
+      "subject": "Request confirmation",
+      "snippet": "Your platform notification: update pending. Details: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "feaf503d57f138ba",
+      "sender": "info@unrecognized-domain.org",
+      "subject": "Confirm your account",
+      "snippet": "New activity on your account: login from new device. Review: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "46c87c05476195e4",
+      "sender": "notify@website.app",
+      "subject": "Pending action",
+      "snippet": "This is an automated notification. Your account has been accessed. For security, we recommend updating your password. Action link: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "e5b97fc706223215",
+      "sender": "admin@domain.com",
+      "subject": "Verify your identity",
+      "snippet": "Important update to our terms. Review and accept: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "7179eced5a70185f",
+      "sender": "alerts@new-service.app",
+      "subject": "Important security",
+      "snippet": "Request for data access: Approve or deny? verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "be4b3d2b60b31524",
+      "sender": "noreply@unknown.com",
+      "subject": "System alert",
+      "snippet": "Important security update available. Apply now: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "a2421e9e54794b29",
+      "sender": "team@obscure.net",
+      "subject": "Account alert",
+      "snippet": "Verify your update to continue using our service: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "c36862c95252e378",
+      "sender": "auto-reply@service.com",
+      "subject": "System alert",
+      "snippet": "Important for your account: security. Act: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "6ba7466e04237698",
+      "sender": "contact@ambiguous.com",
+      "subject": "Pending action",
+      "snippet": "Important security update available. Apply now: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "56f76b1ac4a096ab",
+      "sender": "support@unfamiliar.net",
+      "subject": "Account activity",
+      "snippet": "Important: Your profile requires review. https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "ca4e4646c25e2024",
+      "sender": "admin@domain.com",
+      "subject": "Confirm your account",
+      "snippet": "Your account needs verification. Complete: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "92550fe3428a3af2",
+      "sender": "contact@business.co",
+      "subject": "Account activity",
+      "snippet": "Please confirm: phone number. Confirm: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "d993998838b460bc",
+      "sender": "notification@platform.com",
+      "subject": "New confirmation available",
+      "snippet": "Unusual login attempt detected. Secure your account: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "0007900951663e0d",
+      "sender": "info@new-platform.org",
+      "subject": "Update required",
+      "snippet": "Important: Your update needs attention. Please log in to your account to proceed. Response needed by June 30.",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "1e44ae31583a1e0f",
+      "sender": "contact@ambiguous.com",
+      "subject": "System alert",
+      "snippet": "Verify your security to continue using our service: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "56a2b6baf496d9c2",
+      "sender": "hello@company.biz",
+      "subject": "Please review",
+      "snippet": "Your application notification: something changed. Details: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "1a08cc2b65b037e6",
+      "sender": "hello@vague-company.net",
+      "subject": "Action required",
+      "snippet": "We need to verify your identity for security. Verify now: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "3d9731115c47d6ee",
+      "sender": "alerts@new-service.app",
+      "subject": "Important account",
+      "snippet": "Your system notification: something changed. Details: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "9ed3bae12029e519",
+      "sender": "contact@ambiguous.com",
+      "subject": "Please review",
+      "snippet": "Pending: approval needs your attention. Review: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "9e534df5747ba8ca",
+      "sender": "noreply@product.app",
+      "subject": "Check your account",
+      "snippet": "Important security update available. Apply now: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "1ad19a01a2394613",
+      "sender": "contact@website.org",
+      "subject": "Account confirmation",
+      "snippet": "Important security update available. Apply now: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "d95d40b1b8839e39",
+      "sender": "contact@business.co",
+      "subject": "Urgent action needed",
+      "snippet": "Please confirm: phone number. Confirm: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "30b5ada3e5758dd8",
+      "sender": "notification@platform.com",
+      "subject": "Account confirmation",
+      "snippet": "We noticed unusual activity on your account. Verify it was you: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "ada5cffbca78a3e0",
+      "sender": "notification@platform.com",
+      "subject": "Action required",
+      "snippet": "We need to verify your identity for security. Verify now: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "b1bb6d080630b426",
+      "sender": "contact@website.org",
+      "subject": "Important notification",
+      "snippet": "System maintenance scheduled: immediately. Details: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "15d1df60f2c8fe41",
+      "sender": "help@generic-service.com",
+      "subject": "Message from system",
+      "snippet": "New activity on your account: login from new device. Review: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "16838ea8dfbdfc2a",
+      "sender": "hello@startup.io",
+      "subject": "Important update",
+      "snippet": "We need to verify your identity for security. Verify now: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "d282d0108874ca90",
+      "sender": "support@unfamiliar-app.io",
+      "subject": "Update available",
+      "snippet": "This is an automated notification. Your account has been accessed. For security, we recommend updating your password. Action link: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "4a853284e1342738",
+      "sender": "no-reply@generic-service.io",
+      "subject": "Your account update",
+      "snippet": "Important for your account: security. Act: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "8c36272ebf81d9cc",
+      "sender": "noreply@mysterious.io",
+      "subject": "Action needed on your account",
+      "snippet": "Verify your confirmation to continue using our service: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "b766e48bedf978f3",
+      "sender": "noreply@mysterious.io",
+      "subject": "Action needed on your account",
+      "snippet": "Important security update available. Apply now: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "c4aceaeb2e268c92",
+      "sender": "noreply@app.net",
+      "subject": "Important message",
+      "snippet": "This requires your immediate attention: new login. Action: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "76cce180a4590796",
+      "sender": "support@unfamiliar-app.io",
+      "subject": "Notification for you",
+      "snippet": "Your system notification: something changed. Details: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "573521356ded8e0d",
+      "sender": "noreply@unclear-sender.io",
+      "subject": "Information needed",
+      "snippet": "We noticed unusual activity on your account. Verify it was you: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "2b2e3c2200de37eb",
+      "sender": "notify@website.app",
+      "subject": "Action required",
+      "snippet": "New device detected on your account. Was this you? Review: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "71993ff92cd46673",
+      "sender": "notify@website.app",
+      "subject": "New activity detected",
+      "snippet": "Request for permission change: Approve or deny? verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "25ff2bbc2385ba8c",
+      "sender": "info@new-platform.org",
+      "subject": "Alert: unauthorized access",
+      "snippet": "Your account has been updated. Review changes: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "072d7b06916e71f7",
+      "sender": "help@generic-service.com",
+      "subject": "Information needed",
+      "snippet": "This requires your immediate attention: new login. Action: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "3eb98f1f89853604",
+      "sender": "info@unrecognized-domain.org",
+      "subject": "Notification for you",
+      "snippet": "There has been an update to your account. Please review the changes in your dashboard. If you didn't make this change, contact support immediately.",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "40f86ffdff34aed8",
+      "sender": "notifications@unknown.app",
+      "subject": "Alert: unauthorized access",
+      "snippet": "Verify your security to continue using our service: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "9d7e204130b0b35f",
+      "sender": "no-reply@unidentified.io",
+      "subject": "Important security",
+      "snippet": "We detected unusual pattern. Verify: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "9a1590f862c94ebd",
+      "sender": "auto-reply@service.com",
+      "subject": "Account confirmation",
+      "snippet": "Request for permission change: Approve or deny? verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "c3dccee8fd35ada1",
+      "sender": "system@application.io",
+      "subject": "Action required",
+      "snippet": "Important update to our terms. Review and accept: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "e3bfbe5905bb1461",
+      "sender": "notify@website.app",
+      "subject": "Account alert",
+      "snippet": "Account maintenance: security upgrade. Details: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "55bee694f05cf05b",
+      "sender": "hello@company.biz",
+      "subject": "Action required",
+      "snippet": "Pending: review needs your attention. Review: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "728c2f9071d79a81",
+      "sender": "system@application.io",
+      "subject": "Account confirmation",
+      "snippet": "Important for your account: compliance. Act: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "953003e1d721c724",
+      "sender": "system@application.io",
+      "subject": "New activity detected",
+      "snippet": "Please confirm: phone number. Confirm: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "ff7502b75e66ffd8",
+      "sender": "admin@domain.com",
+      "subject": "Account activity",
+      "snippet": "This requires your immediate attention: account change. Action: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "b785435fe231b02d",
+      "sender": "hello@startup.io",
+      "subject": "Check your account",
+      "snippet": "Important: Your profile requires review. verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "8a39fe7cb240089f",
+      "sender": "noreply@mysterious.io",
+      "subject": "Account alert",
+      "snippet": "Please confirm: email address. Confirm: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "551664e344fb6ddc",
+      "sender": "noreply@mystery-service.com",
+      "subject": "Please review",
+      "snippet": "Important: Your settings requires review. verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "82874da69eb0e211",
+      "sender": "contact@ambiguous.com",
+      "subject": "Notification for you",
+      "snippet": "Important: Your update needs attention. Please log in to your account to proceed. Response needed by soon.",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "0a2ac75f0d96bae0",
+      "sender": "auto-reply@service.com",
+      "subject": "Urgent action needed",
+      "snippet": "Unusual login attempt detected. Secure your account: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "d5dd42dd42050226",
+      "sender": "notify@website.app",
+      "subject": "New activity detected",
+      "snippet": "Your data needs to be verified. Please update: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "843208bd704b048b",
+      "sender": "contact@website.org",
+      "subject": "Notification for you",
+      "snippet": "Your subscription status needs updating. Take action: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "2f2084aa8813cb71",
+      "sender": "notify@website.app",
+      "subject": "Action needed on your account",
+      "snippet": "Your account information has been modified. If you didn't do this, secure it: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "2b3ae45f6a736d32",
+      "sender": "alerts@new-service.app",
+      "subject": "Account notice",
+      "snippet": "New activity on your account: password reset. Review: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "448d4bf332af51b6",
+      "sender": "info@unrecognized-domain.org",
+      "subject": "Verify request",
+      "snippet": "Service update notification: system upgrade. Learn more: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "8a103d304b1c27af",
+      "sender": "notify@website.app",
+      "subject": "Update required",
+      "snippet": "We need to verify your identity for security. Verify now: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "8b60d3a3490cfdab",
+      "sender": "admin@domain.com",
+      "subject": "Important notification",
+      "snippet": "Account security alert: failed login. Response: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "d48e88f81eb20cd6",
+      "sender": "noreply@unknown.com",
+      "subject": "Verify request",
+      "snippet": "Important security update available. Apply now: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "b90618cca6c7d2b4",
+      "sender": "contact@website.org",
+      "subject": "Verify request",
+      "snippet": "New activity on your account: login from new device. Review: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "71608868d4ff64a7",
+      "sender": "noreply@mystery-service.com",
+      "subject": "Action required",
+      "snippet": "Your account information has been modified. If you didn't do this, secure it: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "79d76c5e4672472d",
+      "sender": "contact@ambiguous.com",
+      "subject": "Action needed on your account",
+      "snippet": "Your subscription status needs updating. Take action: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "bc32309b8aefb205",
+      "sender": "no-reply@unidentified.io",
+      "subject": "Verify your identity",
+      "snippet": "New activity on your account: login from new device. Review: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "c657f7479180d39a",
+      "sender": "notification@platform.com",
+      "subject": "Information needed",
+      "snippet": "Important update to our terms. Review and accept: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "e71d7c36f9edba78",
+      "sender": "noreply@unclear-sender.io",
+      "subject": "Verify request",
+      "snippet": "This requires your immediate attention: new login. Action: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "ef54d86c2f341c7f",
+      "sender": "notifications@unknown.app",
+      "subject": "Your account update",
+      "snippet": "Your account needs verification. Complete: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "c75e8399ef6b385a",
+      "sender": "system@application.io",
+      "subject": "Service notification",
+      "snippet": "Pending: review needs your attention. Review: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "a8b9f0d071d56d48",
+      "sender": "hello@vague-company.net",
+      "subject": "Please review",
+      "snippet": "This requires your immediate attention: new login. Action: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "21e9e591f753f5e7",
+      "sender": "no-reply@generic-service.io",
+      "subject": "Verify your identity",
+      "snippet": "Request for permission change: Approve or deny? https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "f2dad56b698299fd",
+      "sender": "noreply@product.app",
+      "subject": "Action needed on your account",
+      "snippet": "Your service notification: something changed. Details: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "8b95f04ccb93ee5a",
+      "sender": "noreply@mystery-service.com",
+      "subject": "Action required",
+      "snippet": "Important: Your update needs attention. Please log in to your account to proceed. Response needed by immediately.",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "e08c31a76fa0202b",
+      "sender": "notifications@unknown.app",
+      "subject": "Verify your identity",
+      "snippet": "Your service notification: something changed. Details: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "f4f8da070ca3622f",
+      "sender": "help@generic-service.com",
+      "subject": "Account alert",
+      "snippet": "There has been an update to your account. Please review the changes in your dashboard. If you didn't make this change, contact support immediately.",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "79aafc2bee1d8d30",
+      "sender": "notification@platform.com",
+      "subject": "Information needed",
+      "snippet": "New device detected on your account. Was this you? Review: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "28de3699eb15c607",
+      "sender": "noreply@unknown.com",
+      "subject": "New activity detected",
+      "snippet": "Verify your verification to continue using our service: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "6db73c701b0097c2",
+      "sender": "noreply@unknown.com",
+      "subject": "Security notice",
+      "snippet": "Important: Your settings requires review. https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "5027a9683a420f9a",
+      "sender": "team@obscure.net",
+      "subject": "Security notice",
+      "snippet": "Please confirm: email address. Confirm: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "ee993be16a8078d5",
+      "sender": "hello@vague-company.net",
+      "subject": "Security notice",
+      "snippet": "Your subscription status needs updating. Take action: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "199234b173861a70",
+      "sender": "system@application.io",
+      "subject": "System alert",
+      "snippet": "Action required: Confirm your email address. Click: https://account.example.com",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "9fefc5189ff03954",
+      "sender": "noreply@service.io",
+      "subject": "Confirm your account",
+      "snippet": "We need to verify your identity for security. Verify now: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "666e908d19f09e6e",
+      "sender": "hello@company.biz",
+      "subject": "New activity detected",
+      "snippet": "Action required: Confirm your email address. Click: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "fc11cbaf45d2faff",
+      "sender": "notification@platform.com",
+      "subject": "Update available",
+      "snippet": "We noticed unusual activity on your account. Verify it was you: verify.service.app",
+      "category": "UNKNOWN"
+    },
+    {
+      "id": "e0c384974752c23d",
+      "sender": "noreply@service.io",
+      "subject": "Confirm your account",
+      "snippet": "Account maintenance: security upgrade. Details: verify.service.app",
+      "category": "UNKNOWN"
+    }
+  ]
+}

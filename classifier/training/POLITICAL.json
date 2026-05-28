@@ -1,0 +1,704 @@
+{
+  "emails": [
+    {
+      "id": "0cdd2a16bfe062d7",
+      "sender": "volunteer@election.org",
+      "subject": "Are you ready for July 15?",
+      "snippet": "Poll shows Sarah Johnson leading. Help us maintain momentum. Donate: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "4345a34ed33e0b24",
+      "sender": "coalition@movement.org",
+      "subject": "Help us reach 100000",
+      "snippet": "Call your representative TODAY to support Voting Rights Act. Template message: I urge you to support this bill. Phone numbers: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "8daebafb0218d5b0",
+      "sender": "info@trump2024.com",
+      "subject": "Urgent: Vote June 4",
+      "snippet": "Election day logistics. Voting starts at 8:00 AM. Find your polling place: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "390a732780b3c5b4",
+      "sender": "contact@greenparty.org",
+      "subject": "We're 10 days from the election",
+      "snippet": "Your donation will fund: field operations. Help us build momentum: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "773e672b94c19ff3",
+      "sender": "action@moveon.org",
+      "subject": "Join the movement for democracy",
+      "snippet": "Voter suppression alert in your district. Know your rights: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "2fdcd8c826d5f0c2",
+      "sender": "join@coalition.org",
+      "subject": "We're 3 days from the election",
+      "snippet": "Call your representative TODAY to support Voting Rights Act. Template message: I urge you to support this bill. Phone numbers: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "35238456c6846702",
+      "sender": "support@indivisible.org",
+      "subject": "Take action: Call Congress",
+      "snippet": "Voting rights are under attack. Fight back by donating: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "b080d90a7909ece5",
+      "sender": "fundraise@campaign.org",
+      "subject": "Thank you for standing with us",
+      "snippet": "Voting rights are under attack. Fight back by donating: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "c8080c3b8b5731fb",
+      "sender": "grassroots@activism.org",
+      "subject": "Join the movement for education",
+      "snippet": "Voter registration deadline: July 15. Make sure you're registered to vote. Check status: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "79cba3711a18c353",
+      "sender": "engagement@party.org",
+      "subject": "Election day is coming",
+      "snippet": "Victory! Sarah Johnson won with 75% of the vote. Thank you for your support!",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "d8dd4f2863c94000",
+      "sender": "fundraising@GOP.org",
+      "subject": "Canvass this weekend",
+      "snippet": "Registration closes July 15. Don't be left out. Register now: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "c2c36a6c2f6834c1",
+      "sender": "fundraiser@campaign.org",
+      "subject": "Take action: Call Congress",
+      "snippet": "Voter suppression alert in key swing state. Know your rights: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "ea9aa02901ff25d4",
+      "sender": "operations@campaign.org",
+      "subject": "Sarah Johnson is counting on you",
+      "snippet": "We're building a movement to support Jane Smith. With your donation, we can reach more voters. Every dollar helps us fight for climate action. Donate now: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "4e30ef157436d5b8",
+      "sender": "hello@libertymovement.org",
+      "subject": "Take action: Call Congress",
+      "snippet": "We're building a movement to support John Brown. With your donation, we can reach more voters. Every dollar helps us fight for healthcare. Donate now: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "dc86e5d9bb30ffcd",
+      "sender": "coalition@movement.org",
+      "subject": "Take action: Call Congress",
+      "snippet": "Last day of early voting! Head to your district and vote. Bring a friend!",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "8c843cb9867036ce",
+      "sender": "advocacy@democracy.org",
+      "subject": "Make calls for Jane Smith",
+      "snippet": "We're organizing in your district. Come to our event on July 15. RSVP: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "bd4bfd39cb37fc20",
+      "sender": "advocacy@democracy.org",
+      "subject": "Voter registration deadline",
+      "snippet": "We're organizing in key swing state. Come to our event on June 4. RSVP: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "0ffefe8297f7d5e7",
+      "sender": "info@trump2024.com",
+      "subject": "Breaking news from the campaign",
+      "snippet": "Election day logistics. Voting starts at 8:00 AM. Find your polling place: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "d54d75c91e03786f",
+      "sender": "volunteer@election.org",
+      "subject": "Your voice matters: climate action",
+      "snippet": "Campaign announcement: John Brown is running for Senator. Support them: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "2607876af1704ffd",
+      "sender": "volunteer@berniesanders.com",
+      "subject": "Help us reach 500000",
+      "snippet": "Last day of early voting! Head to key swing state and vote. Bring a friend!",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "299b5a177a5b6a06",
+      "sender": "team@joebiden.com",
+      "subject": "Make calls for Sarah Johnson",
+      "snippet": "John Brown just won another endorsement. This is huge for education! Share: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "b5724216bf3e0ab9",
+      "sender": "civic@voting.org",
+      "subject": "Grassroots movement update",
+      "snippet": "Voter registration deadline: June 4. Make sure you're registered to vote. Check status: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "1ce8b36453993408",
+      "sender": "fundraising@GOP.org",
+      "subject": "Are you ready for July 15?",
+      "snippet": "We have 30 days until election day. Can you donate $5 to help us reach 1000 more voters?",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "2ff358cac1199b3d",
+      "sender": "fundraise@campaign.org",
+      "subject": "Voter registration deadline",
+      "snippet": "Voting rights are under attack. Fight back by donating: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "363d7c1f6bb038aa",
+      "sender": "grassroots@activism.org",
+      "subject": "Are you ready for Election Day?",
+      "snippet": "Breaking: Major endorsement. Here's what it means for climate action. Read analysis: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "c7c8edd1c10f0823",
+      "sender": "action@progressive.org",
+      "subject": "Election protection alert",
+      "snippet": "Voter suppression alert in key swing state. Know your rights: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "512ed20b58f05d06",
+      "sender": "civic@voting.org",
+      "subject": "Volunteer spotlight: {person}",
+      "snippet": "Voter registration deadline: July 15. Make sure you're registered to vote. Check status: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "2f38b120dee9e7af",
+      "sender": "mobilize@grassroots.org",
+      "subject": "Are you ready for Election Day?",
+      "snippet": "Victory! Jane Smith won with 25% of the vote. Thank you for your support!",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "3e437afb06617b06",
+      "sender": "community@organizers.org",
+      "subject": "Campaign announcement",
+      "snippet": "Voter suppression alert in your district. Know your rights: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "8cbe1fb125d1bcaf",
+      "sender": "join@coalition.org",
+      "subject": "Your voice matters: democracy",
+      "snippet": "We have 10 days until election day. Can you donate $5 to help us reach 1000 more voters?",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "67e4ecc17e019b10",
+      "sender": "advocacy@democracy.org",
+      "subject": "Make calls for John Brown",
+      "snippet": "Call your representative TODAY to support Voting Rights Act. Template message: I urge you to support this bill. Phone numbers: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "17086fd999073f8b",
+      "sender": "donate@republicans.org",
+      "subject": "Join the movement for climate action",
+      "snippet": "Voter suppression alert in key swing state. Know your rights: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "d49d61698da97942",
+      "sender": "info@trump2024.com",
+      "subject": "Urgent: Vote June 4",
+      "snippet": "Election protection: Help monitor polls on election day. Volunteer: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "3f53432b2e6f6104",
+      "sender": "campaign@democrats.org",
+      "subject": "Early voting starts July 15",
+      "snippet": "Voter registration deadline: June 4. Make sure you're registered to vote. Check status: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "8e5fbf134eced2fe",
+      "sender": "civic@voting.org",
+      "subject": "Volunteer spotlight: {person}",
+      "snippet": "Post-election analysis: Here's what we learned. Read the report: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "4a50507093a3ae6d",
+      "sender": "join@coalition.org",
+      "subject": "Get involved today",
+      "snippet": "John Brown just released a new plan. This is huge for democracy! Share: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "86a7d83ba051ab72",
+      "sender": "action@moveon.org",
+      "subject": "We're 10 days from the election",
+      "snippet": "Can you make calls for Sarah Johnson? Training provided. Sign up: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "1f94b693d014b353",
+      "sender": "hello@libertymovement.org",
+      "subject": "Election day is coming",
+      "snippet": "Election day logistics. Voting starts at 7:00 PM. Find your polling place: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "48aa6768bcfe6570",
+      "sender": "grassroots@activism.org",
+      "subject": "Voter registration deadline",
+      "snippet": "Registration closes June 4. Don't be left out. Register now: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "df4d608a846d92be",
+      "sender": "action@moveon.org",
+      "subject": "Join local organizing",
+      "snippet": "Voter suppression alert in your district. Know your rights: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "4adc60883478ae7c",
+      "sender": "advocacy@democracy.org",
+      "subject": "Your voice matters: climate action",
+      "snippet": "Jane Smith is on the ballot for Governor. Vote June 4. Everything is on the line. Donate: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "3f31e7d99b70105d",
+      "sender": "community@organizers.org",
+      "subject": "Sarah Johnson needs your help",
+      "snippet": "Poll shows Jane Smith leading. Help us maintain momentum. Donate: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "b9941b70061c4586",
+      "sender": "outreach@political.org",
+      "subject": "John Brown needs your help",
+      "snippet": "Voter suppression alert in your district. Know your rights: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "50d4dc02f81d454d",
+      "sender": "action@moveon.org",
+      "subject": "Early voting starts July 15",
+      "snippet": "Early voting has started in your state. Vote now: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "81629faa36288395",
+      "sender": "engagement@party.org",
+      "subject": "Volunteer spotlight: {person}",
+      "snippet": "Call your representative TODAY to support Voting Rights Act. Template message: I urge you to support this bill. Phone numbers: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "b19be7401a3a6940",
+      "sender": "community@organizers.org",
+      "subject": "Your voice matters: climate action",
+      "snippet": "Thank you for your $100 donation! Together we're building a future where everyone has healthcare.",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "42459a8b9c28e37c",
+      "sender": "support@indivisible.org",
+      "subject": "Together we can win",
+      "snippet": "Voting rights are under attack. Fight back by donating: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "8e01e15dc8d353a4",
+      "sender": "fundraise@campaign.org",
+      "subject": "Urgent: Vote Election Day",
+      "snippet": "Voter registration deadline: Election Day. Make sure you're registered to vote. Check status: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "31db9e98d71bf9d5",
+      "sender": "advocacy@democracy.org",
+      "subject": "Last chance to vote early",
+      "snippet": "We're building a movement to support Sarah Johnson. With your donation, we can reach more voters. Every dollar helps us fight for democracy. Donate now: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "388bd9dee3236cea",
+      "sender": "info@trump2024.com",
+      "subject": "Canvass this weekend",
+      "snippet": "Voter registration deadline: June 4. Make sure you're registered to vote. Check status: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "a8729b9488df505a",
+      "sender": "fundraise@campaign.org",
+      "subject": "Election day is coming",
+      "snippet": "Voter guide for June 4. See all candidates and measures: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "b0c3ab3d2f909adb",
+      "sender": "hello@libertymovement.org",
+      "subject": "Thank you for standing with us",
+      "snippet": "Victory! Sarah Johnson won with 75% of the vote. Thank you for your support!",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "dbde4104ce64b706",
+      "sender": "volunteer@election.org",
+      "subject": "Grassroots movement update",
+      "snippet": "Poll shows John Brown leading. Help us maintain momentum. Donate: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "731e1c2366b63b39",
+      "sender": "support@indivisible.org",
+      "subject": "Sarah Johnson is counting on you",
+      "snippet": "Post-election analysis: Here's what we learned. Read the report: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "4c331b4b69688cc7",
+      "sender": "volunteer@movement.org",
+      "subject": "Grassroots movement update",
+      "snippet": "Thank you for your $5 donation! Together we're building a future where everyone has healthcare.",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "46bac4bb83ce463a",
+      "sender": "grassroots@activism.org",
+      "subject": "Your voice matters: democracy",
+      "snippet": "What are you willing to fight for this election? Get involved: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "7dfdb31d654da707",
+      "sender": "volunteer@berniesanders.com",
+      "subject": "Campaign announcement",
+      "snippet": "Registration closes July 15. Don't be left out. Register now: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "0308c66db7c63819",
+      "sender": "support@indivisible.org",
+      "subject": "Are you ready for Election Day?",
+      "snippet": "Early voting starts June 4! Make sure you're registered and vote for Sarah Johnson. Find your polling location: https://democrats.org/.... Bring ID!",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "077d0b278a52c712",
+      "sender": "join@coalition.org",
+      "subject": "Are you ready for July 15?",
+      "snippet": "Breaking: Major endorsement. Here's what it means for healthcare. Read analysis: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "d08a51a68a1f2204",
+      "sender": "contact@greenparty.org",
+      "subject": "Campaign announcement",
+      "snippet": "Voting rights are under attack. Fight back by donating: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "bace84b0990223d5",
+      "sender": "grassroots@activism.org",
+      "subject": "Urgent: Vote July 15",
+      "snippet": "Join our canvassing team this weekend. Help us reach 1000 households. RSVP: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "a412c37a8eea140c",
+      "sender": "outreach@political.org",
+      "subject": "Election day is coming",
+      "snippet": "Can you make calls for Sarah Johnson? Training provided. Sign up: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "94e524ff0b0f1a36",
+      "sender": "contact@greenparty.org",
+      "subject": "Campaign announcement",
+      "snippet": "We have 10 days until election day. Can you donate $100 to help us reach 10000 more voters?",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "a92683c485cad887",
+      "sender": "volunteer@berniesanders.com",
+      "subject": "Help us reach 500000",
+      "snippet": "Last day of early voting! Head to key swing state and vote. Bring a friend!",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "e9bb050fa7d8cc9f",
+      "sender": "victory@campaign.org",
+      "subject": "Mobilization effort: healthcare",
+      "snippet": "Voting rights are under attack. Fight back by donating: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "321585f9241a405e",
+      "sender": "civic@voting.org",
+      "subject": "Election protection alert",
+      "snippet": "Voter suppression alert in key swing state. Know your rights: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "2f2f6805b092d09e",
+      "sender": "contact@politician.org",
+      "subject": "Together we can win",
+      "snippet": "Post-election analysis: Here's what we learned. Read the report: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "7aa8d849bc995369",
+      "sender": "volunteer@movement.org",
+      "subject": "Your voice matters: climate action",
+      "snippet": "Voter intimidation reported in key swing state. Report incidents: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "fbaeca95e1136b35",
+      "sender": "info@trump2024.com",
+      "subject": "Early voting starts Election Day",
+      "snippet": "Close race: Sarah Johnson is leading by 5 points points. Every vote counts. Vote: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "85c1db86bbfe0e65",
+      "sender": "operations@campaign.org",
+      "subject": "Election day is coming",
+      "snippet": "Voter suppression alert in key swing state. Know your rights: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "8390c40d66cde5e7",
+      "sender": "grassroots@activism.org",
+      "subject": "Canvass this weekend",
+      "snippet": "Voter registration deadline: Election Day. Make sure you're registered to vote. Check status: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "840cfe1ab0249d6a",
+      "sender": "campaign@candidate.org",
+      "subject": "Sarah Johnson needs your help",
+      "snippet": "Campaign announcement: John Brown is running for Senator. Support them: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "e08a507cbb66da36",
+      "sender": "civic@voting.org",
+      "subject": "Early voting starts July 15",
+      "snippet": "Voter intimidation reported in key swing state. Report incidents: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "91d5196e5875800b",
+      "sender": "support@indivisible.org",
+      "subject": "Together we can win",
+      "snippet": "We're organizing in key swing state. Come to our event on Election Day. RSVP: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "d6536876833e75e8",
+      "sender": "info@trump2024.com",
+      "subject": "Volunteer spotlight: {person}",
+      "snippet": "We're organizing in key swing state. Come to our event on July 15. RSVP: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "6603b9658bbcc412",
+      "sender": "action@progressive.org",
+      "subject": "Stand up for {issue}",
+      "snippet": "Can you make calls for Jane Smith? Training provided. Sign up: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "eec72db000340a99",
+      "sender": "support@political-party.org",
+      "subject": "Breaking news from the campaign",
+      "snippet": "Registration closes July 15. Don't be left out. Register now: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "9af241edf2411e71",
+      "sender": "volunteer@movement.org",
+      "subject": "Join the movement for healthcare",
+      "snippet": "We're 75% of the way to our fundraising goal. Help us reach $50000. Donate: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "b8e11640d6f7eece",
+      "sender": "operations@campaign.org",
+      "subject": "Political action alert",
+      "snippet": "Early voting has started in your state. Vote now: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "48e5aac383c548aa",
+      "sender": "victory@campaign.org",
+      "subject": "Early voting starts Election Day",
+      "snippet": "Election day logistics. Voting starts at 7:00 PM. Find your polling place: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "1c18626e26191ae9",
+      "sender": "outreach@political.org",
+      "subject": "Campaign announcement",
+      "snippet": "Breaking: Major endorsement. Here's what it means for democracy. Read analysis: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "9a12a9c1b62f6748",
+      "sender": "fundraising@GOP.org",
+      "subject": "Election day is coming",
+      "snippet": "Voter intimidation reported in key swing state. Report incidents: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "3424896d38bf0d79",
+      "sender": "action@progressive.org",
+      "subject": "Make calls for Jane Smith",
+      "snippet": "Victory! Sarah Johnson won with 50% of the vote. Thank you for your support!",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "0c34efbef68e5a7f",
+      "sender": "hello@libertymovement.org",
+      "subject": "Voter registration deadline",
+      "snippet": "Breaking: Opponent makes gaffe. Here's what it means for climate action. Read analysis: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "6e4f7eb068e34992",
+      "sender": "fundraising@GOP.org",
+      "subject": "Join the movement for democracy",
+      "snippet": "We're organizing in your district. Come to our event on Election Day. RSVP: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "35b93c82c3af9583",
+      "sender": "grassroots@activism.org",
+      "subject": "Thank you for standing with us",
+      "snippet": "Early voting starts July 15! Make sure you're registered and vote for John Brown. Find your polling location: vote.org. Bring ID!",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "ab746841674c7c28",
+      "sender": "victory@campaign.org",
+      "subject": "John Brown is counting on you",
+      "snippet": "Voter registration deadline: July 15. Make sure you're registered to vote. Check status: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "1a851a68bda81f8c",
+      "sender": "support@political-party.org",
+      "subject": "Political action alert",
+      "snippet": "Call your representative TODAY to support Voting Rights Act. Template message: I urge you to support this bill. Phone numbers: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "88109d4b27cfc976",
+      "sender": "support@indivisible.org",
+      "subject": "Grassroots movement update",
+      "snippet": "We're building a movement to support John Brown. With your donation, we can reach more voters. Every dollar helps us fight for healthcare. Donate now: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "9adcff87dbb0d9c4",
+      "sender": "fundraise@campaign.org",
+      "subject": "Voter registration deadline",
+      "snippet": "Your donation will fund: ads. Help us build momentum: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "51f7bcad7798816a",
+      "sender": "victory@campaign.org",
+      "subject": "Your donation goes directly to voter outreach",
+      "snippet": "Post-election analysis: Here's what we learned. Read the report: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "1f8cf84b0533daba",
+      "sender": "donate@republicans.org",
+      "subject": "Campaign announcement",
+      "snippet": "Sarah Johnson just released a new plan. This is huge for education! Share: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "44de3d84c3612572",
+      "sender": "volunteer@movement.org",
+      "subject": "Political action alert",
+      "snippet": "We're building a movement to support Jane Smith. With your donation, we can reach more voters. Every dollar helps us fight for education. Donate now: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "2075a1511bf9cf2e",
+      "sender": "contact@politician.org",
+      "subject": "Volunteer spotlight: {person}",
+      "snippet": "We're 75% of the way to our fundraising goal. Help us reach $500000. Donate: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "3b32fe1a74f896fa",
+      "sender": "support@political-party.org",
+      "subject": "Help us reach 100000",
+      "snippet": "Voter intimidation reported in key swing state. Report incidents: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "f277e1be0e7909cd",
+      "sender": "fundraise@campaign.org",
+      "subject": "Take action: Call Congress",
+      "snippet": "Breaking: Opponent makes gaffe. Here's what it means for climate action. Read analysis: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "6ff6c7d958a709be",
+      "sender": "civic@voting.org",
+      "subject": "Together we can win",
+      "snippet": "We have 10 days until election day. Can you donate $5 to help us reach 5000 more voters?",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "ded67f2f1020f155",
+      "sender": "volunteer@movement.org",
+      "subject": "Take action: Call Congress",
+      "snippet": "What are you willing to fight for this election? Get involved: vote.org",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "fa1f3e06051a4822",
+      "sender": "civic@voting.org",
+      "subject": "Can you contribute $5?",
+      "snippet": "Sarah Johnson is on the ballot for Governor. Vote Election Day. Everything is on the line. Donate: https://democrats.org/...",
+      "category": "POLITICAL"
+    },
+    {
+      "id": "87e88a5157c8f317",
+      "sender": "support@political-party.org",
+      "subject": "Donate to support Jane Smith",
+      "snippet": "Election day logistics. Voting starts at 7:00 PM. Find your polling place: vote.org",
+      "category": "POLITICAL"
+    }
+  ]
+}

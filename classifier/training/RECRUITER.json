@@ -1,0 +1,704 @@
+{
+  "emails": [
+    {
+      "id": "f9284ef727daca27",
+      "sender": "John Smith <recruiting@techtalent.com>",
+      "subject": "Sr. Software Engineer - fully remote opportunity",
+      "snippet": "I think you'd be perfect for this Full-Stack Developer opportunity. Let's connect and see if it's a good fit.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "4414354ca3ef0a95",
+      "sender": "Christopher Davis <cdavis@executivesearch.net>",
+      "subject": "Your background in backend development impressed us",
+      "snippet": "I've been following your work and I think you'd be perfect for our Machine Learning Engineer opening. This is a leadership opportunity with significant growth potential. Available to chat?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "241ce4b666d10262",
+      "sender": "Jessica White <jwhite@searchpartners.com>",
+      "subject": "Opportunity that matches your background",
+      "snippet": "Would you be open to exploring a VP Engineering opportunity at a late-stage startup with significant funding and growth trajectory?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "ff9eb303a6a0e8d3",
+      "sender": "Lauren Clark <lclark@recruiterplus.io>",
+      "subject": "Open position at Meta for VP Engineering",
+      "snippet": "I represent several companies looking for Software Engineers with your background. Happy to discuss what's out there for you.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "0064b45624562586",
+      "sender": "John Smith <recruiting@techtalent.com>",
+      "subject": "Interested in a UX Designer role?",
+      "snippet": "Saw your profile on LinkedIn - impressive work on backend development! We have an ideal Data Scientist opportunity that might interest you.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "84d07006438ae73c",
+      "sender": "talent@heidrick.com",
+      "subject": "Potential match for your background",
+      "snippet": "Your experience with AI/ML is exactly what we need for our Technical Lead opening. When are you available to chat?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "fac6197070b52f96",
+      "sender": "Ryan Mitchell <rmitchell@executivesearch.net>",
+      "subject": "Your background in product strategy impressed us",
+      "snippet": "Our client, a Fortune 500 Amazon, is expanding their fintech team and your background is exactly what they're looking for. Compensation is competitive.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "e1e62d88f8d02fae",
+      "sender": "David Park <d.park@executivesearch.net>",
+      "subject": "Your profile caught our attention",
+      "snippet": "Your background matches our ideal candidate profile for our Data Scientist opening. I'd love to schedule a brief intro call.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "1db2ca4289f7b45d",
+      "sender": "Lauren Clark <lclark@recruiterplus.io>",
+      "subject": "Recommended for this Product Manager position",
+      "snippet": "Quick opportunity - my Google client is looking for a Machine Learning Engineer to lead their cloud architecture initiatives. Would you be open to a conversation?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "23e3254eebfac2ce",
+      "sender": "Rachel Evans <revans@talentbridge.io>",
+      "subject": "Confidential opportunity for Technical Lead",
+      "snippet": "Would you be open to exploring a VP Engineering opportunity at a late-stage startup with significant funding and growth trajectory?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "316582a9cbb1938e",
+      "sender": "Matthew Jones <mjones@techtalent.com>",
+      "subject": "Professional opportunity alert",
+      "snippet": "I saw your recent work in system design - impressive! We're hiring UX Designers who can make an immediate impact.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "0318ec8ae5b26f53",
+      "sender": "Rachel Evans <revans@talentbridge.io>",
+      "subject": "We'd love to chat about your career",
+      "snippet": "We're looking for an experienced Solutions Architect to join our growing team. Based on your background, you seem like an ideal match. Are you currently open to new opportunities?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "a62b8c8615a3b452",
+      "sender": "Daniel Harris <dharris@searchfirm.com>",
+      "subject": "We'd love to chat about your career",
+      "snippet": "Your background matches our ideal candidate profile for our Data Scientist opening. I'd love to schedule a brief intro call.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "fad0be8de3d41197",
+      "sender": "Christopher Davis <cdavis@executivesearch.net>",
+      "subject": "Your background in AI/ML impressed us",
+      "snippet": "My team is expanding and we're looking for experienced Software Engineers like yourself. Interested in exploring?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "743e222331fa1cf8",
+      "sender": "Lisa Chen <lisa@techrecruiting.io>",
+      "subject": "Fast-growing company needs UX Designer",
+      "snippet": "I saw your recent work in system design - impressive! We're hiring DevOps Engineers who can make an immediate impact.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "973c81ae7e310166",
+      "sender": "Ryan Mitchell <rmitchell@executivesearch.net>",
+      "subject": "Fast-growing company needs Technical Lead",
+      "snippet": "We're building an elite team of UX Designers and your expertise in cybersecurity would be a tremendous addition. Interested?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "b3fb55860be669d0",
+      "sender": "Jane Doe <jane@recruiterplus.io>",
+      "subject": "Referral bonus available - Machine Learning Engineer role",
+      "snippet": "I came across your resume and I was impressed by your track record in cybersecurity. We have an exciting Technical Lead opportunity for someone like you.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "eeb96b3e07927935",
+      "sender": "Amanda Garcia <agarcia@searchpartners.com>",
+      "subject": "Quick question about your background",
+      "snippet": "Your experience with JavaScript is exactly what we need for our DevOps Engineer opening. When are you available to chat?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "1567c44cb972b01d",
+      "sender": "talent@heidrick.com",
+      "subject": "Leadership position - Apple",
+      "snippet": "Based on your experience, I think you'd be a great cultural fit for our team. We're growing and looking for Software Engineers who are passionate about cybersecurity.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "306e38112fd26912",
+      "sender": "John Smith <recruiting@techtalent.com>",
+      "subject": "Exclusive opportunity matching your profile",
+      "snippet": "Your background is exactly what our client needs. Let's talk about a unique Full-Stack Developer opportunity.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "d73f04c9fe8e68b2",
+      "sender": "David Park <d.park@executivesearch.net>",
+      "subject": "Perfect fit: UX Designer at growing Meta",
+      "snippet": "Hi - we're actively recruiting for Data Scientists and I think your background in Python would be valuable. Do you have 20 minutes for a quick conversation?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "caf073a4a67d5bb9",
+      "sender": "Daniel Harris <dharris@searchfirm.com>",
+      "subject": "Open position at Tesla for Solutions Architect",
+      "snippet": "I represent several companies looking for Full-Stack Developers with your background. Happy to discuss what's out there for you.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "a6ab9aa6203aa586",
+      "sender": "Christopher Davis <cdavis@executivesearch.net>",
+      "subject": "Referral bonus available - Technical Lead role",
+      "snippet": "Quick opportunity - my startup client is looking for a VP Engineering to lead their product strategy initiatives. Would you be open to a conversation?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "a9297dc6f6e5a90f",
+      "sender": "talent@heidrick.com",
+      "subject": "Exciting opportunity for Technical Lead",
+      "snippet": "I'm recruiting for a Solutions Architect position and your profile is a strong match. Are you open to conversation?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "e1665d5fc1dedeea",
+      "sender": "Michael Thompson <mthompson@talentscout.io>",
+      "subject": "Perfect fit: Solutions Architect at growing startup",
+      "snippet": "Quick note - we have a Product Manager role that aligns perfectly with your skillset and career goals. Would you be interested in learning more?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "268d7f060405c290",
+      "sender": "Christopher Davis <cdavis@executivesearch.net>",
+      "subject": "Checking in - DevOps Engineer opportunity",
+      "snippet": "I came across your resume and I was impressed by your track record in team leadership. We have an exciting UX Designer opportunity for someone like you.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "a0dbad817271c85b",
+      "sender": "Ryan Mitchell <rmitchell@executivesearch.net>",
+      "subject": "Checking in - Full-Stack Developer opportunity",
+      "snippet": "We're building an elite team of Machine Learning Engineers and your expertise in product strategy would be a tremendous addition. Interested?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "ca007a8f358495b7",
+      "sender": "Michael Thompson <mthompson@talentscout.io>",
+      "subject": "Potential match for your background",
+      "snippet": "I saw your recent work in cloud architecture - impressive! We're hiring Machine Learning Engineers who can make an immediate impact.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "10a9d51f081563f3",
+      "sender": "Christopher Davis <cdavis@executivesearch.net>",
+      "subject": "Your profile caught our attention",
+      "snippet": "My team is expanding and we're looking for experienced Solutions Architects like yourself. Interested in exploring?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "e1bb622dfc04e94d",
+      "sender": "James Wilson <james@techtalent.com>",
+      "subject": "Quick question about your background",
+      "snippet": "We're looking for an experienced Machine Learning Engineer to join our growing team. Based on your background, you seem like an ideal match. Are you currently open to new opportunities?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "9576c77895b4f085",
+      "sender": "Kevin Anderson <kanderson@kforce.com>",
+      "subject": "Leadership position - Apple",
+      "snippet": "Your recent projects in cloud architecture demonstrate the exact expertise we need. I'd love to discuss a unique Software Engineer opportunity we have.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "7eb0377e316144f7",
+      "sender": "Michael Thompson <mthompson@talentscout.io>",
+      "subject": "Professional opportunity alert",
+      "snippet": "We're looking for an experienced Software Engineer to join our growing team. Based on your background, you seem like an ideal match. Are you currently open to new opportunities?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "e21094b207e000e2",
+      "sender": "Megan Lewis <mlewis@talentbridge.io>",
+      "subject": "Passive candidate inquiry - Technical Lead",
+      "snippet": "Hi there, I came across your profile and thought you'd be a great fit for our Data Scientist position. The role offers competitive compensation and growth opportunities. Would you be open to a quick call?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "629ec468ea05f005",
+      "sender": "Sarah Chen <search@executive.com>",
+      "subject": "Perfect fit: Software Engineer at growing Apple",
+      "snippet": "Are you happy in your current role? We have an incredible Product Manager opportunity I'd like to discuss with you.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "fd1054a4cf10600b",
+      "sender": "Christopher Davis <cdavis@executivesearch.net>",
+      "subject": "UX Designer position at Meta",
+      "snippet": "Based on your experience, I think you'd be a great cultural fit for our team. We're growing and looking for Data Scientists who are passionate about team leadership.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "1455eb80a699b5c0",
+      "sender": "Marcus Johnson <mjohnson@talentbridge.io>",
+      "subject": "Would you be open to a conversation?",
+      "snippet": "I'm reaching out because we have an urgent need for a Full-Stack Developer with your exact background. This role offers equity, flexibility, and great compensation.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "c5f5934051a7b5ef",
+      "sender": "Matthew Jones <mjones@techtalent.com>",
+      "subject": "Let's talk about your next role",
+      "snippet": "Your background matches our ideal candidate profile for our Software Engineer opening. I'd love to schedule a brief intro call.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "7fbc6d9b3a0778bc",
+      "sender": "Robert Martinez <r.martinez@kforce.com>",
+      "subject": "Competitive offer for experienced Solutions Architect",
+      "snippet": "Quick note - we have a Technical Lead role that aligns perfectly with your skillset and career goals. Would you be interested in learning more?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "227779010646eda6",
+      "sender": "Patricia Brown <pbrown@recruiterplus.io>",
+      "subject": "Quick question about your background",
+      "snippet": "Your recent projects in AI/ML demonstrate the exact expertise we need. I'd love to discuss a unique Product Manager opportunity we have.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "ca13590ea0602811",
+      "sender": "Amanda Garcia <agarcia@searchpartners.com>",
+      "subject": "Checking in - UX Designer opportunity",
+      "snippet": "I came across your resume and I was impressed by your track record in product strategy. We have an exciting Full-Stack Developer opportunity for someone like you.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "68efaf2081d733f0",
+      "sender": "David Park <d.park@executivesearch.net>",
+      "subject": "Exciting opportunity for Technical Lead",
+      "snippet": "I noticed you've been in the team leadership space - perfect! We have an ideal UX Designer role with significant growth potential.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "07791a17f617bf17",
+      "sender": "Christopher Davis <cdavis@executivesearch.net>",
+      "subject": "Your expertise in cloud architecture is exactly what we need",
+      "snippet": "We're building an elite team of Data Scientists and your expertise in fintech would be a tremendous addition. Interested?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "9fe16f01100ff3a7",
+      "sender": "Heather Walker <hwalker@techrecruiting.io>",
+      "subject": "Sr. Full-Stack Developer - fully remote opportunity",
+      "snippet": "I saw your recent work in cloud architecture - impressive! We're hiring UX Designers who can make an immediate impact.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "7a071519832e5f05",
+      "sender": "Matthew Jones <mjones@techtalent.com>",
+      "subject": "Data Scientist position at Meta",
+      "snippet": "Your background is exactly what our client needs. Let's talk about a unique DevOps Engineer opportunity.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "b39aa249c39efe3e",
+      "sender": "Rachel Evans <revans@talentbridge.io>",
+      "subject": "Confidential opportunity for VP Engineering",
+      "snippet": "Your experience with system design is exactly what we need for our VP Engineering opening. When are you available to chat?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "df7c800bad064de0",
+      "sender": "Emma Wilson <e.wilson@searchfirm.com>",
+      "subject": "We'd love to chat about your career",
+      "snippet": "Your background matches our ideal candidate profile for our Technical Lead opening. I'd love to schedule a brief intro call.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "30becc7479f680c8",
+      "sender": "LinkedIn Recruiter <recruiter@linkedin.com>",
+      "subject": "Sr. VP Engineering - fully remote opportunity",
+      "snippet": "I'm recruiting for a Data Scientist position and your profile is a strong match. Are you open to conversation?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "3f8d894fbfe5e07a",
+      "sender": "Amanda Garcia <agarcia@searchpartners.com>",
+      "subject": "Referral bonus available - VP Engineering role",
+      "snippet": "Quick recruitment inquiry - do you know any great Technical Leads? And are you open to new opportunities yourself?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "810f421308baaa3b",
+      "sender": "Jennifer Lee <jlee@heidrick.com>",
+      "subject": "Stripe is hiring Solutions Architects",
+      "snippet": "Quick opportunity - my enterprise client is looking for a Software Engineer to lead their backend development initiatives. Would you be open to a conversation?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "2a5bd91b50981be4",
+      "sender": "Megan Lewis <mlewis@talentbridge.io>",
+      "subject": "Exclusive opportunity matching your profile",
+      "snippet": "Hi - we're actively recruiting for Software Engineers and I think your background in team leadership would be valuable. Do you have 20 minutes for a quick conversation?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "2c594a1afad57449",
+      "sender": "Emma Wilson <e.wilson@searchfirm.com>",
+      "subject": "Sr. Data Scientist - fully remote opportunity",
+      "snippet": "I represent several companies looking for Solutions Architects with your background. Happy to discuss what's out there for you.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "daf848addbefe061",
+      "sender": "talent@heidrick.com",
+      "subject": "Exciting opportunity for Technical Lead",
+      "snippet": "Hi John, I came across your profile and thought you'd be a great fit for our UX Designer position. The role offers competitive compensation and growth opportunities. Would you be open to a quick call?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "aaa0768788af3ebe",
+      "sender": "LinkedIn Recruiter <recruiter@linkedin.com>",
+      "subject": "Passive candidate inquiry - Data Scientist",
+      "snippet": "My team is expanding and we're looking for experienced Software Engineers like yourself. Interested in exploring?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "92ed3ab0299d76e0",
+      "sender": "Matthew Jones <mjones@techtalent.com>",
+      "subject": "Career progression opportunity",
+      "snippet": "Your experience in cloud architecture caught our attention. We have an exciting Solutions Architect role at a fast-growing company in New York. Let me know if you're interested!",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "d51e0499509c9df5",
+      "sender": "Ryan Mitchell <rmitchell@executivesearch.net>",
+      "subject": "Checking in - UX Designer opportunity",
+      "snippet": "Hi Sarah, I came across your profile and thought you'd be a great fit for our Full-Stack Developer position. The role offers competitive compensation and growth opportunities. Would you be open to a quick call?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "0714b8481b98d099",
+      "sender": "Michael Thompson <mthompson@talentscout.io>",
+      "subject": "Opportunity that matches your background",
+      "snippet": "Our client, a Fortune 500 Microsoft, is expanding their fintech team and your background is exactly what they're looking for. Compensation is competitive.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "b421fe8d867a3cc4",
+      "sender": "Jennifer Lee <jlee@heidrick.com>",
+      "subject": "Perfect fit: Machine Learning Engineer at growing Meta",
+      "snippet": "We're building an elite team of Product Managers and your expertise in Python would be a tremendous addition. Interested?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "b9dce9e8c30c2019",
+      "sender": "Megan Lewis <mlewis@talentbridge.io>",
+      "subject": "Referral bonus available - Full-Stack Developer role",
+      "snippet": "Your recent projects in cloud architecture demonstrate the exact expertise we need. I'd love to discuss a unique VP Engineering opportunity we have.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "db906fac9efce1d1",
+      "sender": "recruiting@kforce.com",
+      "subject": "Sr. Technical Lead - fully remote opportunity",
+      "snippet": "Are you happy in your current role? We have an incredible DevOps Engineer opportunity I'd like to discuss with you.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "db6e58a379707d61",
+      "sender": "John Smith <recruiting@techtalent.com>",
+      "subject": "Your profile caught our attention",
+      "snippet": "Quick opportunity - my Microsoft client is looking for a VP Engineering to lead their cloud architecture initiatives. Would you be open to a conversation?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "0c61bac2516a2c4f",
+      "sender": "Jennifer Lee <jlee@heidrick.com>",
+      "subject": "Sr. Solutions Architect - fully remote opportunity",
+      "snippet": "I think you'd be perfect for this Product Manager opportunity. Let's connect and see if it's a good fit.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "c6a98987df26d100",
+      "sender": "Susan Taylor <staylor@heidrick.com>",
+      "subject": "Your expertise in fintech is exactly what we need",
+      "snippet": "We've identified you as a top candidate for our Technical Lead position. The role offers unlimited PTO and a competitive package.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "5f45758d68a84ade",
+      "sender": "Nicole Martin <nmartin@techrecruiting.io>",
+      "subject": "Solutions Architect position at Tesla",
+      "snippet": "Would you be open to exploring a Full-Stack Developer opportunity at a late-stage startup with significant funding and growth trajectory?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "7c4964af251f869b",
+      "sender": "Brian Thomas <bthomas@talentscout.io>",
+      "subject": "Exclusive opportunity matching your profile",
+      "snippet": "Hi John, I came across your profile and thought you'd be a great fit for our Solutions Architect position. The role offers competitive compensation and growth opportunities. Would you be open to a quick call?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "1b6605ae63716898",
+      "sender": "Jennifer Lee <jlee@heidrick.com>",
+      "subject": "Competitive offer for experienced UX Designer",
+      "snippet": "Would you be open to hearing about a Machine Learning Engineer position that offers 100% remote flexibility and top-tier compensation?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "102113e8a49e41a8",
+      "sender": "Jennifer Lee <jlee@heidrick.com>",
+      "subject": "Let's talk about your next role",
+      "snippet": "My team is expanding and we're looking for experienced Data Scientists like yourself. Interested in exploring?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "9f7ba5cd3561a14a",
+      "sender": "Emma Wilson <e.wilson@searchfirm.com>",
+      "subject": "Exclusive opportunity matching your profile",
+      "snippet": "I represent a rapidly growing Apple that's looking to expand their team leadership capabilities. Your profile stood out as someone who could make an impact.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "36e5fa292d2d038a",
+      "sender": "Emma Wilson <e.wilson@searchfirm.com>",
+      "subject": "Microsoft is hiring Data Scientists",
+      "snippet": "Would you be open to hearing about a Solutions Architect position that offers 100% remote flexibility and top-tier compensation?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "faef46433e8ff2c9",
+      "sender": "talent@heidrick.com",
+      "subject": "Would you be open to a conversation?",
+      "snippet": "Your experience in product strategy caught our attention. We have an exciting Product Manager role at a fast-growing company in Denver. Let me know if you're interested!",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "3e3d2a446b63ab65",
+      "sender": "Michael Thompson <mthompson@talentscout.io>",
+      "subject": "Perfect fit: UX Designer at growing Stripe",
+      "snippet": "Hi Sarah, I came across your profile and thought you'd be a great fit for our Technical Lead position. The role offers competitive compensation and growth opportunities. Would you be open to a quick call?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "89e4fd247b6dd3ad",
+      "sender": "Nicole Martin <nmartin@techrecruiting.io>",
+      "subject": "Would you be open to a conversation?",
+      "snippet": "Your background matches our ideal candidate profile for our Product Manager opening. I'd love to schedule a brief intro call.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "decc23c8c75cec5d",
+      "sender": "Daniel Harris <dharris@searchfirm.com>",
+      "subject": "High-growth startup looking for Full-Stack Developer",
+      "snippet": "Our client, a Fortune 500 Stripe, is expanding their product strategy team and your background is exactly what they're looking for. Compensation is competitive.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "c5d0c1751b102c0c",
+      "sender": "Brian Thomas <bthomas@talentscout.io>",
+      "subject": "Perfect fit: UX Designer at growing Google",
+      "snippet": "Are you open to new opportunities? We have a senior Data Scientist position that pays $120k-150k and is fully remote.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "e38f78fdc35060dc",
+      "sender": "Patricia Brown <pbrown@recruiterplus.io>",
+      "subject": "Career progression opportunity",
+      "snippet": "I represent several companies looking for Technical Leads with your background. Happy to discuss what's out there for you.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "262be6c1c1af9be7",
+      "sender": "Lisa Chen <lisa@techrecruiting.io>",
+      "subject": "Fast-growing company needs UX Designer",
+      "snippet": "Your experience in team leadership caught our attention. We have an exciting Data Scientist role at a fast-growing company in Seattle. Let me know if you're interested!",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "71c094d1b5553f8d",
+      "sender": "David Park <d.park@executivesearch.net>",
+      "subject": "Confidential opportunity for Data Scientist",
+      "snippet": "Saw your profile on LinkedIn - impressive work on cloud architecture! We have an ideal Product Manager opportunity that might interest you.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "055da525c7433400",
+      "sender": "Rachel Evans <revans@talentbridge.io>",
+      "subject": "Potential match for your background",
+      "snippet": "Would you be open to exploring a Solutions Architect opportunity at a late-stage startup with significant funding and growth trajectory?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "1fa95519208df21f",
+      "sender": "recruiting@kforce.com",
+      "subject": "Career progression opportunity",
+      "snippet": "Hi - we're actively recruiting for Software Engineers and I think your background in fintech would be valuable. Do you have 20 minutes for a quick conversation?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "a0682966c8167372",
+      "sender": "Jason Robinson <jrobinson@searchfirm.com>",
+      "subject": "Your background in product strategy impressed us",
+      "snippet": "Your background is exactly what our client needs. Let's talk about a unique Product Manager opportunity.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "17e144838fa3f28a",
+      "sender": "Daniel Harris <dharris@searchfirm.com>",
+      "subject": "Professional opportunity alert",
+      "snippet": "Our client, a Fortune 500 Meta, is expanding their AI/ML team and your background is exactly what they're looking for. Compensation is competitive.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "ce77a295d951cd2c",
+      "sender": "Marcus Johnson <mjohnson@talentbridge.io>",
+      "subject": "Passive candidate inquiry - Software Engineer",
+      "snippet": "I've been following your work and I think you'd be perfect for our Solutions Architect opening. This is a leadership opportunity with significant growth potential. Available to chat?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "0fa59a49704b8ab7",
+      "sender": "Christopher Davis <cdavis@executivesearch.net>",
+      "subject": "Your profile caught our attention",
+      "snippet": "I'm reaching out because we have an urgent need for a VP Engineering with your exact background. This role offers equity, flexibility, and great compensation.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "ce005642b6e7ae5c",
+      "sender": "Marcus Johnson <mjohnson@talentbridge.io>",
+      "subject": "Professional opportunity alert",
+      "snippet": "I came across your resume and I was impressed by your track record in Python. We have an exciting Data Scientist opportunity for someone like you.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "f080b6cd521cd835",
+      "sender": "Daniel Harris <dharris@searchfirm.com>",
+      "subject": "Exciting opportunity for Machine Learning Engineer",
+      "snippet": "Quick recruitment inquiry - do you know any great VP Engineerings? And are you open to new opportunities yourself?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "def17ace1f2419f0",
+      "sender": "Ryan Mitchell <rmitchell@executivesearch.net>",
+      "subject": "Let's talk about your next role",
+      "snippet": "I've been following your work and I think you'd be perfect for our DevOps Engineer opening. This is a leadership opportunity with significant growth potential. Available to chat?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "0088f57c99663b6e",
+      "sender": "James Wilson <james@techtalent.com>",
+      "subject": "Exciting opportunity for Technical Lead",
+      "snippet": "Your recent projects in fintech demonstrate the exact expertise we need. I'd love to discuss a unique Solutions Architect opportunity we have.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "7d5b74fc210a555c",
+      "sender": "Emma Wilson <e.wilson@searchfirm.com>",
+      "subject": "Let's explore a Technical Lead opportunity",
+      "snippet": "Your background matches our ideal candidate profile for our Software Engineer opening. I'd love to schedule a brief intro call.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "01d0aa173b27537f",
+      "sender": "Heather Walker <hwalker@techrecruiting.io>",
+      "subject": "Your profile caught our attention",
+      "snippet": "Saw your profile on LinkedIn - impressive work on cybersecurity! We have an ideal Machine Learning Engineer opportunity that might interest you.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "a56cd199a13591cf",
+      "sender": "Lauren Clark <lclark@recruiterplus.io>",
+      "subject": "Exciting opportunity for Data Scientist",
+      "snippet": "Your background matches our ideal candidate profile for our Solutions Architect opening. I'd love to schedule a brief intro call.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "38640d06cd3dbc0a",
+      "sender": "Susan Taylor <staylor@heidrick.com>",
+      "subject": "Let's talk about your next role",
+      "snippet": "I've been following your work and I think you'd be perfect for our Software Engineer opening. This is a leadership opportunity with significant growth potential. Available to chat?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "f209d9bd81690206",
+      "sender": "Megan Lewis <mlewis@talentbridge.io>",
+      "subject": "Exclusive opportunity matching your profile",
+      "snippet": "I've been following your work and I think you'd be perfect for our UX Designer opening. This is a leadership opportunity with significant growth potential. Available to chat?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "6f2ff4e71eae3b2e",
+      "sender": "Daniel Harris <dharris@searchfirm.com>",
+      "subject": "Your expertise in system design is exactly what we need",
+      "snippet": "Quick note - we have a Machine Learning Engineer role that aligns perfectly with your skillset and career goals. Would you be interested in learning more?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "e72df81e4ff0c5a2",
+      "sender": "Lisa Chen <lisa@techrecruiting.io>",
+      "subject": "Referral bonus available - Full-Stack Developer role",
+      "snippet": "Quick opportunity - my Tesla client is looking for a Software Engineer to lead their cybersecurity initiatives. Would you be open to a conversation?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "8aaa56808846a1b7",
+      "sender": "Ryan Mitchell <rmitchell@executivesearch.net>",
+      "subject": "Career progression opportunity",
+      "snippet": "Your experience in fintech caught our attention. We have an exciting Full-Stack Developer role at a fast-growing company in Denver. Let me know if you're interested!",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "f22e42094e239608",
+      "sender": "Megan Lewis <mlewis@talentbridge.io>",
+      "subject": "Checking in - VP Engineering opportunity",
+      "snippet": "I represent several companies looking for DevOps Engineers with your background. Happy to discuss what's out there for you.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "dd582e48b3c94c7f",
+      "sender": "Rachel Evans <revans@talentbridge.io>",
+      "subject": "Open position at Meta for DevOps Engineer",
+      "snippet": "We've identified you as a top candidate for our Solutions Architect position. The role offers signing bonus and a competitive package.",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "19e4317f01288aaf",
+      "sender": "Ryan Mitchell <rmitchell@executivesearch.net>",
+      "subject": "Potential match for your background",
+      "snippet": "We're building an elite team of Data Scientists and your expertise in system design would be a tremendous addition. Interested?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "d38084b65cf7f3e7",
+      "sender": "recruiting@kforce.com",
+      "subject": "Let's talk about your next role",
+      "snippet": "Would you be open to hearing about a Machine Learning Engineer position that offers 100% remote flexibility and top-tier compensation?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "545ebc0ee7b6d6d5",
+      "sender": "Michael Thompson <mthompson@talentscout.io>",
+      "subject": "Confidential opportunity for Technical Lead",
+      "snippet": "I'm recruiting for a Solutions Architect position and your profile is a strong match. Are you open to conversation?",
+      "category": "RECRUITER"
+    },
+    {
+      "id": "fbe099970636d9be",
+      "sender": "Megan Lewis <mlewis@talentbridge.io>",
+      "subject": "Referral bonus available - Solutions Architect role",
+      "snippet": "I represent a rapidly growing Figma that's looking to expand their system design capabilities. Your profile stood out as someone who could make an impact.",
+      "category": "RECRUITER"
+    }
+  ]
+}

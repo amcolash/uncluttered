@@ -1,0 +1,704 @@
+{
+  "emails": [
+    {
+      "id": "4c4330d1d9e4400c",
+      "sender": "Online Retailer <shipping@retailer.com>",
+      "subject": "Your item shipped from Walmart",
+      "snippet": "Your Newegg order is being processed. Tracking FDX123456. Expected delivery: June 2. amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "82d6e6aeedbdd573",
+      "sender": "USPS <notifications@usps.com>",
+      "subject": "Tracking: shoes delivery",
+      "snippet": "Your shoes is on the way! Tracking number: USPS9876543. Expected delivery: in 2 days. View detailed tracking in your account.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "c6479b9611137831",
+      "sender": "Shipment <tracking@shipping.com>",
+      "subject": "On its way to you: shoes",
+      "snippet": "Shipment departure: Your laptop left the distribution center. Arriving by Friday.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "a2e16a35c8db9fed",
+      "sender": "Retail Store <orders@retailstore.com>",
+      "subject": "Out for delivery today",
+      "snippet": "Transit update: Your order ORD456789 is on the way. Tracking: TRK98765. Arrives June 5",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "20d45cdef807d970",
+      "sender": "USPS <notifications@usps.com>",
+      "subject": "In transit: charger",
+      "snippet": "Package alert: Your laptop is out for delivery in at your door. Should arrive by 9AM-1PM.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "080b36e41397dffa",
+      "sender": "OnTrac <tracking@ontrac.com>",
+      "subject": "Your order departed warehouse",
+      "snippet": "Package departed warehouse! Your headphones arriving June 4. Track: https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "96757df9e744404c",
+      "sender": "OnTrac <tracking@ontrac.com>",
+      "subject": "Your item is in transit",
+      "snippet": "Shipment alert: Your charger departed the warehouse on June 5. Arriving by June 6. Tracking: FDX123456",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "3a89f7d545e9d21a",
+      "sender": "In Transit <alerts@transit.com>",
+      "subject": "Your order from Apple is on the way",
+      "snippet": "Package update: Your headphones left the warehouse and is heading to at your door. Arrives: June 6",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "962aee947450909f",
+      "sender": "Warehouse <shipping@warehouse.com>",
+      "subject": "Your order from Amazon is on the way",
+      "snippet": "Your shoes is on the move! Departing from warehouse. Expected arrival: June 4. amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "6094707d9ec98690",
+      "sender": "Shipment Notice <noreply@shipment.com>",
+      "subject": "Delivery today - Order 123-456",
+      "snippet": "Package alert: Your headphones is out for delivery in at lobby. Should arrive by 2PM-6PM.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "c8d88d20de88fcf0",
+      "sender": "Order Tracker <noreply@tracker.com>",
+      "subject": "Delivery window: 2PM-6PM",
+      "snippet": "Your order is on the way! Package ORD456789 will arrive June 5. Track it: https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "3d11916a3134b4ca",
+      "sender": "Retail Store <orders@retailstore.com>",
+      "subject": "Shipment update: phone",
+      "snippet": "Package shipped from Amazon! Tracking: TRK98765. Your book will arrive June 5.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "edee5ffcd683817a",
+      "sender": "USPS <notifications@usps.com>",
+      "subject": "Your package is out for delivery",
+      "snippet": "Order confirmation: book shipped. Expected arrival: June 5. Tracking: 1Z999AA10123456784",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "58b4b4e4b2f19ae6",
+      "sender": "Order Tracker <noreply@tracker.com>",
+      "subject": "Your order departed warehouse",
+      "snippet": "On the way! Your shoes from Best Buy is shipping. Arrives: by Friday. Track: amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "921017dc45704a60",
+      "sender": "LaserShip <tracking@lasership.com>",
+      "subject": "Package in transit: Order 123-456",
+      "snippet": "Order confirmation: phone shipped. Expected arrival: in 2 days. Tracking: TRK98765",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "8780a1a8aa931a73",
+      "sender": "Shipment Notice <noreply@shipment.com>",
+      "subject": "Your charger is on the way",
+      "snippet": "Package delivered! Your shoes was left at your door on tomorrow. If you didn't receive it, let us know.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "7d9e070c0411d916",
+      "sender": "Order Tracker <noreply@tracker.com>",
+      "subject": "Shipment notification for order 123-456",
+      "snippet": "Your item shipped! laptop from Newegg. Tracking number: 1234567890. See details: amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "cbd87570766aa0cb",
+      "sender": "Target <order@target.com>",
+      "subject": "Your order departed warehouse",
+      "snippet": "Order shipped! Your headphones left the warehouse on in 2 days. Delivery: June 3. Details: amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "6d985ceb23c828a9",
+      "sender": "shipping@bestbuy.com",
+      "subject": "Delivery scheduled: June 5",
+      "snippet": "Shipment update for order 345-678: Your shoes is in transit. Arrives June 2.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "618e388d729a329b",
+      "sender": "Adorama <shipping@adorama.com>",
+      "subject": "Order update: shoes shipped",
+      "snippet": "Shipment update for order 345-678: Your MacBook Pro is in transit. Arrives June 2.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "8fe797a2f6feff91",
+      "sender": "B&H Photo <shipping@bhphotovideo.com>",
+      "subject": "Out for delivery today",
+      "snippet": "Good news! Your charger shipped from Walmart. Expected arrival: tomorrow. Track your package: https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "522c7bfd5f1daa4b",
+      "sender": "Shipment <tracking@shipping.com>",
+      "subject": "Shipment confirmation: ORD456789",
+      "snippet": "Your Newegg order is being processed. Tracking 1Z999AA10123456784. Expected delivery: in 2 days. https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "e95da46ac83fa24a",
+      "sender": "eBay <shipment@ebay.com>",
+      "subject": "Your item in distribution",
+      "snippet": "Your order shipped! charger is on the way to you. Tracking: 1Z999AA10123456784. amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "1469d50015201164",
+      "sender": "DHL <tracking@dhl.com>",
+      "subject": "Shipment notification for order 345-678",
+      "snippet": "Your item shipped! cables from Apple. Tracking number: FDX123456. See details: https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "c40f87a2599c71eb",
+      "sender": "Target <order@target.com>",
+      "subject": "Package tracking: 1Z999AA10123456784",
+      "snippet": "On the way! Your headphones from Apple is shipping. Arrives: June 4. Track: https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "ed290589274f6c5d",
+      "sender": "Gift Delivery <shipment@giftdelivery.com>",
+      "subject": "Package status update",
+      "snippet": "Shipment status: Your phone left the warehouse. Arriving by June 3. Carrier: DHL",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "47e425e84531a943",
+      "sender": "Newegg <shipment@newegg.com>",
+      "subject": "Carrier pickup confirmed",
+      "snippet": "Shipment status: Your charger left the warehouse. Arriving by by Friday. Carrier: Amazon",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "ea2235b70324a794",
+      "sender": "LaserShip <tracking@lasership.com>",
+      "subject": "Package tracking: 1234567890",
+      "snippet": "Order in motion! phone is heading your way. Tracking 1234567890. Arrives by June 5.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "f268d8c8d1576333",
+      "sender": "Etsy <shipping@etsy.com>",
+      "subject": "Delivery window: 8AM-12PM",
+      "snippet": "On the way! Your monitor from Amazon is shipping. Arrives: June 4. Track: https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "a1801e8ba38c1e91",
+      "sender": "eBay <shipment@ebay.com>",
+      "subject": "Your item shipped from Best Buy",
+      "snippet": "Your package from Target is in transit. Order #ORD456789. Tracking: TRK98765. See your order details: amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "7d78af8954c7f004",
+      "sender": "Shipment <tracking@shipping.com>",
+      "subject": "Tracking update for order AMZ987654",
+      "snippet": "Order confirmation: charger shipped. Expected arrival: in 2 days. Tracking: 1Z999AA10123456784",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "0ab0efcc6694ce82",
+      "sender": "UPS <shipinfo@ups.com>",
+      "subject": "Package tracking: 1Z999AA10123456784",
+      "snippet": "Your charger is currently at our distribution center. Will be delivered by June 4. Tracking #: 1234567890",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "847542337a93acd8",
+      "sender": "eBay <shipment@ebay.com>",
+      "subject": "Order update: monitor shipped",
+      "snippet": "Great! Your order 123-456 shipped from Best Buy. Get tracking info: amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "0b6d1b0044356b66",
+      "sender": "Amazon <order-update@amazon.com>",
+      "subject": "Out for delivery today",
+      "snippet": "Your Newegg order is being processed. Tracking 1Z999AA10123456784. Expected delivery: tomorrow. https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "4c22fcbf6d948a00",
+      "sender": "In Transit <alerts@transit.com>",
+      "subject": "Shipment picked up",
+      "snippet": "Order shipped! Your monitor left the warehouse on June 2. Delivery: June 4. Details: amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "647d00ae20605516",
+      "sender": "DHL <tracking@dhl.com>",
+      "subject": "Tracking: MacBook Pro delivery",
+      "snippet": "Your keyboard is currently at our distribution center. Will be delivered by June 4. Tracking #: USPS9876543",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "5821e88b8c873f2c",
+      "sender": "Shipment <tracking@shipping.com>",
+      "subject": "Delivery status: phone",
+      "snippet": "Great news! Your order is out for delivery today. Driver will arrive between 2PM-6PM. You can track the package in real-time.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "43fed0f95abede86",
+      "sender": "Walmart <shipping@walmart.com>",
+      "subject": "Your MacBook Pro is on the way",
+      "snippet": "Package shipped from Target! Tracking: FDX123456. Your headphones will arrive June 5.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "108123c138992687",
+      "sender": "B&H Photo <shipping@bhphotovideo.com>",
+      "subject": "Shipment confirmation: 123-456",
+      "snippet": "Package is in transit from Apple. Your laptop will arrive by June 2. Tracking: 1Z999AA10123456784",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "ab107209853ccb81",
+      "sender": "Logistics <tracking@logistics.com>",
+      "subject": "Order update: monitor shipped",
+      "snippet": "Package alert: Your keyboard is out for delivery in at lobby. Should arrive by 2PM-6PM.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "07533c051a56164b",
+      "sender": "Newegg <shipment@newegg.com>",
+      "subject": "Shipment notification for order 345-678",
+      "snippet": "Order in motion! laptop is heading your way. Tracking TRK98765. Arrives by in 2 days.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "774d8ef2372babca",
+      "sender": "OnTrac <tracking@ontrac.com>",
+      "subject": "Your package left the facility",
+      "snippet": "Great news! Your order is out for delivery today. Driver will arrive between 9AM-1PM. You can track the package in real-time.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "54303f350220c4fd",
+      "sender": "Gift Delivery <shipment@giftdelivery.com>",
+      "subject": "Delivery window: 1PM-5PM",
+      "snippet": "Package alert: Your MacBook Pro is out for delivery in at lobby. Should arrive by 8AM-12PM.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "cb0e86712e4a9f59",
+      "sender": "Shipment <tracking@shipping.com>",
+      "subject": "On its way to you: keyboard",
+      "snippet": "Order in motion! MacBook Pro is heading your way. Tracking USPS9876543. Arrives by tomorrow.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "55f98d60bb611663",
+      "sender": "Warehouse <shipping@warehouse.com>",
+      "subject": "Your package is out for delivery",
+      "snippet": "Order confirmation: charger shipped. Expected arrival: in 2 days. Tracking: 1234567890",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "924b77579ec382fa",
+      "sender": "Shipment <tracking@shipping.com>",
+      "subject": "Delivery window: 1PM-5PM",
+      "snippet": "Shipment alert: Your book departed the warehouse on June 5. Arriving by by Friday. Tracking: USPS9876543",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "b943d010085e7c2c",
+      "sender": "DHL <tracking@dhl.com>",
+      "subject": "Your package is out for delivery",
+      "snippet": "Great! Your order AMZ987654 shipped from Walmart. Get tracking info: amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "c45374a83a95b0f3",
+      "sender": "Walmart <shipping@walmart.com>",
+      "subject": "Your keyboard is on the way",
+      "snippet": "Great news! Your order is out for delivery today. Driver will arrive between 1PM-5PM. You can track the package in real-time.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "fc06afb25bb5e9c8",
+      "sender": "In Transit <alerts@transit.com>",
+      "subject": "Your item in distribution",
+      "snippet": "Order ORD456789 has shipped. Your phone is in transit. View tracking: amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "874b49a2328c2459",
+      "sender": "DHL <tracking@dhl.com>",
+      "subject": "In transit: shoes",
+      "snippet": "Package is in transit from Best Buy. Your laptop will arrive by June 2. Tracking: TRK98765",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "885d0d0af7256154",
+      "sender": "Etsy <shipping@etsy.com>",
+      "subject": "Your package left the facility",
+      "snippet": "Transit update: Your order ORD456789 is on the way. Tracking: 1234567890. Arrives tomorrow",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "31cfd7c98bffc1e3",
+      "sender": "LaserShip <tracking@lasership.com>",
+      "subject": "Shipment update: monitor",
+      "snippet": "Package update: Your laptop left the warehouse and is heading to at your door. Arrives: June 6",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "dc0360219e182844",
+      "sender": "DHL <tracking@dhl.com>",
+      "subject": "On its way to you: shoes",
+      "snippet": "Your Apple order is being processed. Tracking FDX123456. Expected delivery: June 5. amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "b9cb1b41f75d5586",
+      "sender": "Target <order@target.com>",
+      "subject": "Package status update",
+      "snippet": "Your phone is on the way! Tracking number: 1Z999AA10123456784. Expected delivery: in 2 days. View detailed tracking in your account.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "62176ea38190bc8a",
+      "sender": "Online Retailer <shipping@retailer.com>",
+      "subject": "Your item is in transit",
+      "snippet": "Order confirmation: shoes shipped. Expected arrival: in 2 days. Tracking: 1Z999AA10123456784",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "c141223a2967d024",
+      "sender": "USPS <notifications@usps.com>",
+      "subject": "Order update: headphones shipped",
+      "snippet": "Your charger is on the move! Departing from warehouse. Expected arrival: June 6. https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "0079b2f717d498f2",
+      "sender": "FedEx <delivery@fedex.com>",
+      "subject": "Out for delivery today",
+      "snippet": "Order confirmation: phone shipped. Expected arrival: June 5. Tracking: TRK98765",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "62ea08b9b9540921",
+      "sender": "Retail Store <orders@retailstore.com>",
+      "subject": "Shipment picked up",
+      "snippet": "Package alert: Your phone is out for delivery in at your door. Should arrive by 8AM-12PM.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "864af888e0155031",
+      "sender": "Newegg <shipment@newegg.com>",
+      "subject": "Your keyboard is on the way",
+      "snippet": "Package is in transit from Newegg. Your keyboard will arrive by June 2. Tracking: FDX123456",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "ddbdb5dc57f0dc31",
+      "sender": "In Transit <alerts@transit.com>",
+      "subject": "Package status update",
+      "snippet": "Package alert: Your headphones is out for delivery in at your door. Should arrive by 9AM-1PM.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "93ee7434d0a290ff",
+      "sender": "Etsy <shipping@etsy.com>",
+      "subject": "Local delivery partner picked up package",
+      "snippet": "Order 789-012 has shipped. Your phone is in transit. View tracking: https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "74a8bbd073b7bd08",
+      "sender": "Adorama <shipping@adorama.com>",
+      "subject": "Delivery window: 1PM-5PM",
+      "snippet": "Shipment alert: Your headphones departed the warehouse on tomorrow. Arriving by June 3. Tracking: FDX123456",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "4e87a2c7f6de61ea",
+      "sender": "Etsy <shipping@etsy.com>",
+      "subject": "Your item in distribution",
+      "snippet": "Your charger is headed to you! Order shipped in 2 days. Tracking: 1Z999AA10123456784.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "7b68b4967f71ae7e",
+      "sender": "LaserShip <tracking@lasership.com>",
+      "subject": "Your package is out for delivery",
+      "snippet": "Your charger is headed to you! Order shipped in 2 days. Tracking: USPS9876543.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "e82620b7a485f1c4",
+      "sender": "Order Tracker <noreply@tracker.com>",
+      "subject": "Your package left the facility",
+      "snippet": "Your order shipped! cables is on the way to you. Tracking: USPS9876543. amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "219aa07ad12f75ea",
+      "sender": "Shipment <tracking@shipping.com>",
+      "subject": "Tracking update for order ORD456789",
+      "snippet": "Your package from Best Buy is in transit. Order #345-678. Tracking: 1Z999AA10123456784. See your order details: https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "e344a87e594e8a16",
+      "sender": "eBay <shipment@ebay.com>",
+      "subject": "Your item shipped from Amazon",
+      "snippet": "Package alert: Your phone is out for delivery in at your door. Should arrive by 2PM-6PM.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "5d7417f7f0f2fd88",
+      "sender": "Amazon <order-update@amazon.com>",
+      "subject": "Tracking update for order 789-012",
+      "snippet": "Package is in transit from Best Buy. Your book will arrive by June 5. Tracking: USPS9876543",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "912fac0ec33eac1e",
+      "sender": "Walmart <shipping@walmart.com>",
+      "subject": "Shipment confirmation: AMZ987654",
+      "snippet": "Your phone is in transit! Carrier: USPS. Tracking: FDX123456. Arrives: June 2",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "978d62e01b89fddc",
+      "sender": "Logistics <tracking@logistics.com>",
+      "subject": "Package delivered to by mailbox",
+      "snippet": "Package update: Your headphones left the warehouse and is heading to by mailbox. Arrives: June 6",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "5f06980ea609c0eb",
+      "sender": "Gift Delivery <shipment@giftdelivery.com>",
+      "subject": "Your item in distribution",
+      "snippet": "Your Target order is being processed. Tracking TRK98765. Expected delivery: June 5. amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "82fe2a47da293f86",
+      "sender": "Walmart <shipping@walmart.com>",
+      "subject": "Order update: phone shipped",
+      "snippet": "Shipment status: Your monitor left the warehouse. Arriving by June 3. Carrier: DHL",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "b9dc1a86b92bbc53",
+      "sender": "Newegg <shipment@newegg.com>",
+      "subject": "Shipment notification for order 123-456",
+      "snippet": "Your order shipped! headphones is on the way to you. Tracking: 1234567890. https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "462f1aa0cf1c5f15",
+      "sender": "Shipment <tracking@shipping.com>",
+      "subject": "Local delivery partner picked up package",
+      "snippet": "Package delivered! Your cables was left with neighbor on in 2 days. If you didn't receive it, let us know.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "77609f609a1916dc",
+      "sender": "Newegg <shipment@newegg.com>",
+      "subject": "Your order from Newegg is on the way",
+      "snippet": "Package alert: Your monitor is out for delivery in with neighbor. Should arrive by 2PM-6PM.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "30e79e1aa59e2ebc",
+      "sender": "Amazon <order-update@amazon.com>",
+      "subject": "Delivery status: laptop",
+      "snippet": "Shipment confirmed! Your monitor will arrive by June 6. Order details: amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "c820d93c24545802",
+      "sender": "Amazon <order-update@amazon.com>",
+      "subject": "Order update: phone shipped",
+      "snippet": "Good news! Your monitor shipped from Amazon. Expected arrival: June 5. Track your package: https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "7ecc4c55b0aa40c9",
+      "sender": "Target <order@target.com>",
+      "subject": "Your package is out for delivery",
+      "snippet": "On the way! Your keyboard from Amazon is shipping. Arrives: June 6. Track: https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "4328e52b1422b6ef",
+      "sender": "Shipment <tracking@shipping.com>",
+      "subject": "Delivery window: 2PM-6PM",
+      "snippet": "Your Walmart order is being processed. Tracking USPS9876543. Expected delivery: in 2 days. https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "aefad839c1709f1c",
+      "sender": "Logistics <tracking@logistics.com>",
+      "subject": "Delivery status: headphones",
+      "snippet": "Order 123-456 has shipped. Your headphones is in transit. View tracking: amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "0cfa904458adc40d",
+      "sender": "Warehouse <shipping@warehouse.com>",
+      "subject": "Delivery window: 9AM-1PM",
+      "snippet": "Order 345-678 has shipped. Your cables is in transit. View tracking: amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "e8a266257f2eac0d",
+      "sender": "Shipment <tracking@shipping.com>",
+      "subject": "Your order departed warehouse",
+      "snippet": "Your headphones is in transit! Carrier: Amazon. Tracking: 1234567890. Arrives: in 2 days",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "fb373978189f2392",
+      "sender": "Warehouse <shipping@warehouse.com>",
+      "subject": "Shipment picked up",
+      "snippet": "Your shoes is currently at our distribution center. Will be delivered by June 4. Tracking #: USPS9876543",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "742ce0480d2d81c7",
+      "sender": "Order Tracker <noreply@tracker.com>",
+      "subject": "Delivery scheduled: June 5",
+      "snippet": "Shipment update for order AMZ987654: Your headphones is in transit. Arrives June 5.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "cc90d33a7041550a",
+      "sender": "shipping@bestbuy.com",
+      "subject": "Your package is out for delivery",
+      "snippet": "Order confirmation: charger shipped. Expected arrival: in 2 days. Tracking: FDX123456",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "b4454544672bf725",
+      "sender": "Target <order@target.com>",
+      "subject": "Your item is in transit",
+      "snippet": "Shipment status: Your keyboard left the warehouse. Arriving by June 6. Carrier: USPS",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "4916fbf72fc35dce",
+      "sender": "Shipment Notice <noreply@shipment.com>",
+      "subject": "Carrier pickup confirmed",
+      "snippet": "Order in motion! keyboard is heading your way. Tracking USPS9876543. Arrives by tomorrow.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "e325a7c13890066c",
+      "sender": "Target <order@target.com>",
+      "subject": "Delivery window: 8AM-12PM",
+      "snippet": "Shipment confirmed! Your cables will arrive by by Friday. Order details: https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "4271bc12afcb1508",
+      "sender": "Adorama <shipping@adorama.com>",
+      "subject": "Your item is in transit",
+      "snippet": "Order confirmation: laptop shipped. Expected arrival: in 2 days. Tracking: 1Z999AA10123456784",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "21c81dba6cf4df08",
+      "sender": "Retail Store <orders@retailstore.com>",
+      "subject": "Delivery window: 9AM-1PM",
+      "snippet": "Great news! Your order is out for delivery today. Driver will arrive between 2PM-6PM. You can track the package in real-time.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "9de59000fea90893",
+      "sender": "Order Tracker <noreply@tracker.com>",
+      "subject": "Delivery window: 9AM-1PM",
+      "snippet": "Shipment departure: Your monitor left the distribution center. Arriving June 6.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "02c78c2a8bd1e8d3",
+      "sender": "In Transit <alerts@transit.com>",
+      "subject": "Your order from Apple is on the way",
+      "snippet": "Your cables is headed to you! Order shipped June 5. Tracking: 1Z999AA10123456784.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "b777449727cafb2f",
+      "sender": "Shipment <tracking@shipping.com>",
+      "subject": "Package delivered to by mailbox",
+      "snippet": "Your book is currently at our distribution center. Will be delivered by by Friday. Tracking #: 1234567890",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "10db1717fb7808f8",
+      "sender": "Online Retailer <shipping@retailer.com>",
+      "subject": "Shipment notification for order 123-456",
+      "snippet": "Package alert: Your laptop is out for delivery in with neighbor. Should arrive by 1PM-5PM.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "7fad0b2cf99b31f3",
+      "sender": "Newegg <shipment@newegg.com>",
+      "subject": "Delivery scheduled: tomorrow",
+      "snippet": "Your order shipped! MacBook Pro is on the way to you. Tracking: TRK98765. https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "cc00ec869552e11f",
+      "sender": "In Transit <alerts@transit.com>",
+      "subject": "Package status update",
+      "snippet": "Your MacBook Pro is on the move! Departing from warehouse. Expected arrival: June 4. amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "30ce1cc8617813cb",
+      "sender": "Newegg <shipment@newegg.com>",
+      "subject": "Package delivered to by mailbox",
+      "snippet": "Package alert: Your book is out for delivery in at lobby. Should arrive by 2PM-6PM.",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "f06aab4432ec8559",
+      "sender": "Shipment <tracking@shipping.com>",
+      "subject": "Package tracking: USPS9876543",
+      "snippet": "Shipment alert: Your charger departed the warehouse on June 2. Arriving by June 4. Tracking: USPS9876543",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "7fc89e16ef4cf843",
+      "sender": "Shipment <tracking@shipping.com>",
+      "subject": "Delivery window: 1PM-5PM",
+      "snippet": "Good news! Your phone shipped from Newegg. Expected arrival: in 2 days. Track your package: https://track.shipping.com",
+      "category": "ORDER_SHIPPING"
+    },
+    {
+      "id": "f9e8a63da0041cbf",
+      "sender": "Delivery Status <update@shipping.com>",
+      "subject": "In transit: charger",
+      "snippet": "Your order shipped! shoes is on the way to you. Tracking: 1Z999AA10123456784. amazon.com/order",
+      "category": "ORDER_SHIPPING"
+    }
+  ]
+}

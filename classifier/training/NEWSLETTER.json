@@ -1,0 +1,704 @@
+{
+  "emails": [
+    {
+      "id": "9b4a85e56928937c",
+      "sender": "news@medium.com",
+      "subject": "What you need to know",
+      "snippet": "What you need to know about startup funding: Major AI breakthrough. Expert breakdown: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "f09618973990363d",
+      "sender": "newsletter@theguardian.com",
+      "subject": "Top stories this week",
+      "snippet": "Unmissable this week: New startup funding. Deeply important: Interview with CEO. Don't skip: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "59f6d1268479b827",
+      "sender": "hello@newsletter.ai",
+      "subject": "Daily update: Web3",
+      "snippet": "Top stories today: Major AI breakthrough. Plus: Interview with CEO. What caught our editors' eyes. Subscribe for more: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "c4fe8f4ad782cf0b",
+      "sender": "hello@wired.com",
+      "subject": "Axios newsletter",
+      "snippet": "Daily update on Crypto market: Major AI breakthrough. Latest developments: latest developments. Full coverage: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "d479f514b02f0d26",
+      "sender": "daily@nyt.com",
+      "subject": "Breaking down Crypto market",
+      "snippet": "End of week recap: New startup funding. The story behind it: why it matters. Details: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "d16931a08e91cc07",
+      "sender": "hello@vox.com",
+      "subject": "Trending now: startup funding",
+      "snippet": "Your weekly digest: 10 stories on AI regulation. Top read: New startup funding. See all: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "3727c9d65d46c8b3",
+      "sender": "newsletter@theguardian.com",
+      "subject": "Latest from finance",
+      "snippet": "The month in 10 stories: New startup funding, Interview with CEO, Market analysis. Full digest: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "f059fcfc734804de",
+      "sender": "updates@hackernews.com",
+      "subject": "Editors' picks",
+      "snippet": "Weekend reading: 10 stories worth your time. Start with New startup funding. More: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "8cfca2af91188720",
+      "sender": "updates@hackernews.com",
+      "subject": "Morning Brew newsletter",
+      "snippet": "Opinion: Major AI breakthrough. Plus hard news: Interview with CEO. Unpack it all: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "6ec023074ac88caa",
+      "sender": "newsletter@techcrunch.com",
+      "subject": "Latest from tech",
+      "snippet": "This week in politics: Major AI breakthrough. Also: Interview with CEO, Market analysis, Emerging trends. Subscribe: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "be5a6adc0a0ba4df",
+      "sender": "hello@wired.com",
+      "subject": "Morning briefing",
+      "snippet": "Top stories today: Major AI breakthrough. Plus: Interview with CEO. What caught our editors' eyes. Subscribe for more: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "a340c95fe38c7ef5",
+      "sender": "news@medium.com",
+      "subject": "The Verge newsletter",
+      "snippet": "This week: Major AI breakthrough. Also in this issue: Interview with CEO, Market analysis. Read the full newsletter: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "3421bf5be569ddd7",
+      "sender": "newsletter@substack.com",
+      "subject": "What you need to know",
+      "snippet": "Breaking: New startup funding. What it means: what this means. Full story: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "0d0261512f21e1b3",
+      "sender": "updates@bbc.com",
+      "subject": "The unmissable stories",
+      "snippet": "The week in 5 stories: New startup funding, Interview with CEO, Market analysis. Full digest: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "8af328b635bc2611",
+      "sender": "updates@cnet.com",
+      "subject": "Inside this week's issue",
+      "snippet": "Unmissable this week: New startup funding. Deeply important: Interview with CEO. Don't skip: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "db0f480e3d8710e1",
+      "sender": "hello@axios.com",
+      "subject": "Latest from science",
+      "snippet": "This week in finance: New startup funding. Also: Interview with CEO, Market analysis, Emerging trends. Subscribe: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "dacaf9b254d3f522",
+      "sender": "news@medium.com",
+      "subject": "The unmissable stories",
+      "snippet": "This week in tech: New startup funding. Also: Interview with CEO, Market analysis, Emerging trends. Subscribe: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "33f59a909be5b798",
+      "sender": "updates@cnet.com",
+      "subject": "This week's must-read",
+      "snippet": "This week in tech: New startup funding. Also: Interview with CEO, Market analysis, Emerging trends. Subscribe: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "7d0af5d6d6aa2e00",
+      "sender": "daily@ft.com",
+      "subject": "The unmissable stories",
+      "snippet": "In case you missed it: Major AI breakthrough. Why it matters: here's the backstory. Full story: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "25a2a6b0e38ada8f",
+      "sender": "daily@wsj.com",
+      "subject": "Tech news roundup",
+      "snippet": "Must-read: Major AI breakthrough. This changes everything. Full story: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "fdab076451cee78c",
+      "sender": "daily@morning-brew.com",
+      "subject": "Morning briefing",
+      "snippet": "End of week recap: New startup funding. The story behind it: why it matters. Details: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "7bff3b0fe798a5ee",
+      "sender": "updates@hackernews.com",
+      "subject": "Weekly analysis: AI regulation",
+      "snippet": "Morning Brew newsletter: Major AI breakthrough. We dive deep into startup funding. Read now: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "6790c4f7eedc1ee6",
+      "sender": "daily@wsj.com",
+      "subject": "What you need to know",
+      "snippet": "News you can use: New startup funding. Actionable insights: Interview with CEO. Read: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "269e4ec7cfa16f54",
+      "sender": "updates@stratechery.com",
+      "subject": "Morning briefing",
+      "snippet": "What's new in politics: Major AI breakthrough. Implications: the implications. Deep dive: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "4a69f584ed907b37",
+      "sender": "newsletter@slate.com",
+      "subject": "The unmissable stories",
+      "snippet": "Essential for anyone interested in tech layoffs: Major AI breakthrough. Also read: Interview with CEO. Subscribe: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "20d81f978a5dc4f4",
+      "sender": "newsletter@techcrunch.com",
+      "subject": "Weekly analysis: Crypto market",
+      "snippet": "3 must-read stories this week. Top: Major AI breakthrough. Also: Interview with CEO. Read all: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "606d62039c6e8c83",
+      "sender": "hello@axios.com",
+      "subject": "Noteworthy this week",
+      "snippet": "In case you missed it: New startup funding. Why it matters: here's the backstory. Full story: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "8c5ed7999e2b24f0",
+      "sender": "newsletter@npr.org",
+      "subject": "Daily digest: startup funding",
+      "snippet": "5 must-read stories this week. Top: New startup funding. Also: Interview with CEO. Read all: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "df84a74a92c2d52f",
+      "sender": "hello@economist.com",
+      "subject": "The week ahead",
+      "snippet": "This week: New startup funding. Also in this issue: Interview with CEO, Market analysis. Read the full newsletter: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "51427eb36bc22f47",
+      "sender": "hello@axios.com",
+      "subject": "Top stories this week",
+      "snippet": "Breaking: New startup funding. What it means: what this means. Full story: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "dc9dcf657e2617c1",
+      "sender": "newsletter@reddit.com",
+      "subject": "The unmissable stories",
+      "snippet": "Daily update on AI regulation: New startup funding. Latest developments: latest developments. Full coverage: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "85eb22c52283a372",
+      "sender": "daily@morning-brew.com",
+      "subject": "The week ahead",
+      "snippet": "Deep dive: New startup funding. Expert analysis on Web3. Read the full piece: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "ed061a65bfb997c1",
+      "sender": "updates@nextbigfuture.com",
+      "subject": "Editors' picks",
+      "snippet": "Top stories today: New startup funding. Plus: Interview with CEO. What caught our editors' eyes. Subscribe for more: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "94b6ddb0819a02b9",
+      "sender": "newsletter@substack.com",
+      "subject": "This week's must-read",
+      "snippet": "What's new in finance: Major AI breakthrough. Implications: the implications. Deep dive: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "69b20cdba4162ae8",
+      "sender": "updates@cnet.com",
+      "subject": "End of week recap",
+      "snippet": "This week: Major AI breakthrough. Also in this issue: Interview with CEO, Market analysis. Read the full newsletter: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "f0a7d1bfdfaca157",
+      "sender": "newsletter@dev.to",
+      "subject": "Weekly analysis: Web3",
+      "snippet": "Your weekly digest: 3 stories on Crypto market. Top read: New startup funding. See all: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "c7d521ccabb6d168",
+      "sender": "updates@stratechery.com",
+      "subject": "Your curated news",
+      "snippet": "This week: Major AI breakthrough. Also in this issue: Interview with CEO, Market analysis. Read the full newsletter: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "5679029a1218ba91",
+      "sender": "hello@axios.com",
+      "subject": "Best of the week",
+      "snippet": "Deep dive: Major AI breakthrough. Expert analysis on Crypto market. Read the full piece: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "cd04936e59cba61e",
+      "sender": "updates@nextbigfuture.com",
+      "subject": "Your weekly roundup",
+      "snippet": "Essential for anyone interested in startup funding: New startup funding. Also read: Interview with CEO. Subscribe: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "c4cccc02e32d26ee",
+      "sender": "hello@wired.com",
+      "subject": "The Verge newsletter",
+      "snippet": "The big picture on Crypto market: New startup funding. Zoom out with: Interview with CEO. Understand: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "031bd13c08b6d06d",
+      "sender": "newsletter@thehindu.com",
+      "subject": "Your weekly roundup",
+      "snippet": "This week in tech: New startup funding. Also: Interview with CEO, Market analysis, Emerging trends. Subscribe: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "ce4a6071a2bc14ca",
+      "sender": "daily@ft.com",
+      "subject": "Latest from politics",
+      "snippet": "Unmissable this week: Major AI breakthrough. Deeply important: Interview with CEO. Don't skip: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "bdbc227ffcaf689f",
+      "sender": "from@theverge.com",
+      "subject": "Noteworthy this week",
+      "snippet": "What's trending Monday: New startup funding. Also rising: Interview with CEO, Market analysis. See more: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "cef7a86d8ae6b159",
+      "sender": "newsletter@substack.com",
+      "subject": "Weekend reading",
+      "snippet": "News you can use: New startup funding. Actionable insights: Interview with CEO. Read: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "a6476a43f09f612f",
+      "sender": "daily@forbes.com",
+      "subject": "What you need to know",
+      "snippet": "5 must-read stories this week. Top: New startup funding. Also: Interview with CEO. Read all: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "343d01d8c1d81788",
+      "sender": "daily@deccan.com",
+      "subject": "Weekend reading",
+      "snippet": "Making sense of Web3: Major AI breakthrough. Analysis: Interview with CEO. Full context: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "2590d97bd8688d47",
+      "sender": "updates@politico.com",
+      "subject": "Your digest is ready",
+      "snippet": "What's trending Monday: Major AI breakthrough. Also rising: Interview with CEO, Market analysis. See more: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "9fee62b26d409b5f",
+      "sender": "hello@economist.com",
+      "subject": "Morning Brew newsletter",
+      "snippet": "Deep dive: Major AI breakthrough. Expert analysis on startup funding. Read the full piece: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "7b5cbbbad7c295f0",
+      "sender": "daily@deccan.com",
+      "subject": "This week in tech: Crypto market",
+      "snippet": "Top stories today: Major AI breakthrough. Plus: Interview with CEO. What caught our editors' eyes. Subscribe for more: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "5f6f92cfb508e6f9",
+      "sender": "newsletter@reddit.com",
+      "subject": "This week in tech: Crypto market",
+      "snippet": "Weekend reading: 10 stories worth your time. Start with New startup funding. More: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "c109dc64945d6b95",
+      "sender": "updates@cnet.com",
+      "subject": "Latest from tech",
+      "snippet": "Deep dive: New startup funding. Expert analysis on Crypto market. Read the full piece: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "f00151ad46454576",
+      "sender": "updates@cnet.com",
+      "subject": "The week ahead",
+      "snippet": "Crypto market this week: New startup funding. What else happened: Interview with CEO, Market analysis. Catch up: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "caea0c32987556bf",
+      "sender": "daily@forbes.com",
+      "subject": "The Verge newsletter",
+      "snippet": "Your Friday reading list: Major AI breakthrough. Also: Interview with CEO, Market analysis. Read now: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "2b0e4a5cc6294d9b",
+      "sender": "daily@wsj.com",
+      "subject": "Weekly analysis: Web3",
+      "snippet": "Your opinion is needed: Major AI breakthrough. But first, read this: Interview with CEO. More: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "9a51c0dbef179d6e",
+      "sender": "newsletter@techcrunch.com",
+      "subject": "In case you missed it",
+      "snippet": "Your Friday reading list: Major AI breakthrough. Also: Interview with CEO, Market analysis. Read now: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "984230bce7892532",
+      "sender": "hello@businessinsider.com",
+      "subject": "In case you missed it",
+      "snippet": "Your daily digest: 5 stories on startup funding. Top read: New startup funding. See all: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "2cd0d34715ceffcc",
+      "sender": "updates@bbc.com",
+      "subject": "Inside this week's issue",
+      "snippet": "Making sense of Crypto market: New startup funding. Analysis: Interview with CEO. Full context: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "e72ac96872cd6fa9",
+      "sender": "updates@politico.com",
+      "subject": "What's trending",
+      "snippet": "Your Monday reading list: Major AI breakthrough. Also: Interview with CEO, Market analysis. Read now: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "87a0a96a63d55e5b",
+      "sender": "daily@ft.com",
+      "subject": "Latest from finance",
+      "snippet": "Weekend reading: 3 stories worth your time. Start with New startup funding. More: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "af5da96197bd04d4",
+      "sender": "newsletter@npr.org",
+      "subject": "Top stories this week",
+      "snippet": "Deep dive: Major AI breakthrough. Expert analysis on AI regulation. Read the full piece: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "9e96d15c85076ae8",
+      "sender": "hello@economist.com",
+      "subject": "Wired newsletter",
+      "snippet": "TechCrunch newsletter: Major AI breakthrough. We dive deep into Web3. Read now: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "418baa62bdb6da17",
+      "sender": "updates@cnet.com",
+      "subject": "In case you missed it",
+      "snippet": "Curated by experts: New startup funding. Expert take: according to experts. Read analysis: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "a1ee86747e43632d",
+      "sender": "newsletter@reddit.com",
+      "subject": "This week in tech: Web3",
+      "snippet": "In case you missed it: New startup funding. Why it matters: here's the backstory. Full story: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "93d155c813e859f3",
+      "sender": "news@medium.com",
+      "subject": "Weekly analysis: AI regulation",
+      "snippet": "Daily update on AI regulation: New startup funding. Latest developments: latest developments. Full coverage: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "ee61a11148aed201",
+      "sender": "hello@businessinsider.com",
+      "subject": "Today's essential news",
+      "snippet": "What's trending Friday: New startup funding. Also rising: Interview with CEO, Market analysis. See more: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "b89752f71c177fdf",
+      "sender": "newsletter@slate.com",
+      "subject": "Editors' picks",
+      "snippet": "Opinion: New startup funding. Plus hard news: Interview with CEO. Unpack it all: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "b26827a063fe9cdd",
+      "sender": "hello@newsletter.ai",
+      "subject": "Today's essential news",
+      "snippet": "Top stories today: New startup funding. Plus: Interview with CEO. What caught our editors' eyes. Subscribe for more: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "3598f11b58d214ab",
+      "sender": "newsletter@theguardian.com",
+      "subject": "Your curated news",
+      "snippet": "The week in 10 stories: Major AI breakthrough, Interview with CEO, Market analysis. Full digest: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "9cdb0b8a73d4249b",
+      "sender": "updates@bbc.com",
+      "subject": "Your curated news",
+      "snippet": "The big picture on AI regulation: New startup funding. Zoom out with: Interview with CEO. Understand: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "541e57ee04735fa8",
+      "sender": "newsletter@techcrunch.com",
+      "subject": "Weekly analysis: startup funding",
+      "snippet": "Essential for anyone interested in AI regulation: New startup funding. Also read: Interview with CEO. Subscribe: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "c998251ca3cebb07",
+      "sender": "from@theverge.com",
+      "subject": "Today's essential news",
+      "snippet": "Breaking: New startup funding. What it means: what this means. Full story: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "9f0aaf691614933d",
+      "sender": "updates@bbc.com",
+      "subject": "Editors' picks",
+      "snippet": "Your daily digest: 5 stories on tech layoffs. Top read: Major AI breakthrough. See all: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "449d39446c8b23a8",
+      "sender": "updates@politico.com",
+      "subject": "Your digest is ready",
+      "snippet": "Weekend reading: 10 stories worth your time. Start with New startup funding. More: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "25b580230d8b5d1d",
+      "sender": "daily@morning-brew.com",
+      "subject": "Daily digest: AI regulation",
+      "snippet": "Must-read: New startup funding. This changes everything. Full story: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "507f2bb1011e581d",
+      "sender": "hello@wired.com",
+      "subject": "Your weekly roundup",
+      "snippet": "Essential reading for engineers: New startup funding. The latest on Web3: Interview with CEO. Full analysis: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "7c4113287159e870",
+      "sender": "newsletter@substack.com",
+      "subject": "This week's must-read",
+      "snippet": "Morning Brew newsletter: Major AI breakthrough. We dive deep into Crypto market. Read now: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "f7868d20b2161e86",
+      "sender": "newsletter@reddit.com",
+      "subject": "Daily digest: AI regulation",
+      "snippet": "Must-read: Major AI breakthrough. This changes everything. Full story: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "ef72df98d96eec55",
+      "sender": "daily@nyt.com",
+      "subject": "Editors' picks",
+      "snippet": "Breaking: Major AI breakthrough. What it means: what this means. Full story: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "d244e849a877b617",
+      "sender": "hello@medium.com",
+      "subject": "In case you missed it",
+      "snippet": "Unmissable this week: New startup funding. Deeply important: Interview with CEO. Don't skip: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "edc2403683ced08d",
+      "sender": "hello@vox.com",
+      "subject": "Your digest is ready",
+      "snippet": "What's new in tech: New startup funding. Implications: the implications. Deep dive: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "b89bfd537184bc6c",
+      "sender": "news@medium.com",
+      "subject": "Your daily briefing",
+      "snippet": "Essential for anyone interested in Web3: New startup funding. Also read: Interview with CEO. Subscribe: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "219c98e4f7f585e4",
+      "sender": "newsletter@reddit.com",
+      "subject": "Noteworthy this week",
+      "snippet": "Your Friday reading list: Major AI breakthrough. Also: Interview with CEO, Market analysis. Read now: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "3251a741d2adec09",
+      "sender": "newsletter@npr.org",
+      "subject": "This week in tech: AI regulation",
+      "snippet": "Unmissable this week: New startup funding. Deeply important: Interview with CEO. Don't skip: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "38657ba5947a5ca6",
+      "sender": "updates@bbc.com",
+      "subject": "The week ahead",
+      "snippet": "Editors' picks: Major AI breakthrough, Interview with CEO, Market analysis. This is essential reading for founders. Subscribe: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "7defb8cf6a77e309",
+      "sender": "newsletter@theguardian.com",
+      "subject": "Your digest is ready",
+      "snippet": "Breaking: New startup funding. What it means: what this means. Full story: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "06fa6b0698682fb9",
+      "sender": "hello@businessinsider.com",
+      "subject": "Tech news roundup",
+      "snippet": "What you need to know about AI regulation: New startup funding. Expert breakdown: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "b46f44cf14e17d8b",
+      "sender": "newsletter@npr.org",
+      "subject": "This week in tech: startup funding",
+      "snippet": "Morning Brew newsletter: New startup funding. We dive deep into AI regulation. Read now: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "2c4daa28c733ca8f",
+      "sender": "newsletter@theguardian.com",
+      "subject": "Trending now: AI regulation",
+      "snippet": "startup funding this week: Major AI breakthrough. What else happened: Interview with CEO, Market analysis. Catch up: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "6a3077d9a3c74d4c",
+      "sender": "hello@wired.com",
+      "subject": "What you need to know",
+      "snippet": "This week in tech: New startup funding. Also: Interview with CEO, Market analysis, Emerging trends. Subscribe: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "61f0cde745b2e55c",
+      "sender": "newsletter@substack.com",
+      "subject": "Your daily briefing",
+      "snippet": "Breaking: New startup funding. What it means: the implications. Full story: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "85c833220ee38ef8",
+      "sender": "hello@vox.com",
+      "subject": "Your daily briefing",
+      "snippet": "The big picture on tech layoffs: Major AI breakthrough. Zoom out with: Interview with CEO. Understand: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "6b2347f5dbea6aa2",
+      "sender": "hello@axios.com",
+      "subject": "Trending now: AI regulation",
+      "snippet": "Your opinion is needed: Major AI breakthrough. But first, read this: Interview with CEO. More: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "e8b4c990b6a46505",
+      "sender": "newsletter@thehindu.com",
+      "subject": "Daily update: AI regulation",
+      "snippet": "Axios newsletter: Major AI breakthrough. We dive deep into startup funding. Read now: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "eded9b3ce6b344d4",
+      "sender": "daily@wsj.com",
+      "subject": "This week in tech: Crypto market",
+      "snippet": "Daily update on AI regulation: Major AI breakthrough. Latest developments: latest developments. Full coverage: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "b517460aa2d7685f",
+      "sender": "newsletter@techcrunch.com",
+      "subject": "Best of the week",
+      "snippet": "10 must-read stories this week. Top: New startup funding. Also: Interview with CEO. Read all: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "8e107af277a3322b",
+      "sender": "newsletter@substack.com",
+      "subject": "Your essential read",
+      "snippet": "AI regulation this week: Major AI breakthrough. What else happened: Interview with CEO, Market analysis. Catch up: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "d0415436f6e7e773",
+      "sender": "updates@cnet.com",
+      "subject": "Daily digest: Crypto market",
+      "snippet": "Must-read: New startup funding. This changes everything. Full story: https://techcrunch.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "d016a4cae945a442",
+      "sender": "newsletter@slate.com",
+      "subject": "This week in tech: Web3",
+      "snippet": "What's new in politics: New startup funding. Implications: the implications. Deep dive: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "4ca21ed335605e07",
+      "sender": "news@medium.com",
+      "subject": "Tech news roundup",
+      "snippet": "Morning briefing: Everything you need to know today. Start with New startup funding. Full brief: substack.com/...",
+      "category": "NEWSLETTER"
+    },
+    {
+      "id": "4cb22478c83b0b57",
+      "sender": "newsletter@thehindu.com",
+      "subject": "Latest from politics",
+      "snippet": "TechCrunch newsletter: New startup funding. We dive deep into tech layoffs. Read now: substack.com/...",
+      "category": "NEWSLETTER"
+    }
+  ]
+}

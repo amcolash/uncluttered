@@ -1,0 +1,704 @@
+{
+  "emails": [
+    {
+      "id": "f2b4511a4fb4458a",
+      "sender": "Acuity Scheduling <reminder@acuityscheduling.com>",
+      "subject": "Mike's consultation - tomorrow at 1:00 PM",
+      "snippet": "Almost here! Your yoga class with Jordan is June 5 at 9:30 AM. Bring your membership card.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "747ed340422144de",
+      "sender": "Yoga Studio <schedule@yogastudio.com>",
+      "subject": "Final reminder: gym session today",
+      "snippet": "Studio A reminder: Your consultation is tomorrow at 1:00 PM. Questions? 555-0200",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "522f41f91ed56255",
+      "sender": "Hair Salon <confirm@hairsalon.com>",
+      "subject": "Class confirmation for next Tuesday",
+      "snippet": "Excited for your gym session? Your appointment is June 5 at 6:00 PM. Questions? Call 555-0200",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "a7510ef4e1640360",
+      "sender": "Calendly <noreply@calendly.com>",
+      "subject": "Class confirmation for June 5",
+      "snippet": "Get ready! Your checkup class with Mike starts in 1 hour. Class code: APT456. See you soon!",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "228fc9326fe8ec00",
+      "sender": "Therapy Network <reminders@therapynetwork.com>",
+      "subject": "Happening soon: Your checkup June 5",
+      "snippet": "Save this code ABC123 - you'll need it for your haircut appointment on tomorrow.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "341defd3834af208",
+      "sender": "Yoga Studio <schedule@yogastudio.com>",
+      "subject": "Reminder: Your appointment tomorrow at 2:00 PM",
+      "snippet": "This is a reminder about your consultation appointment on tomorrow at 9:30 AM. Please arrive 5-10 minutes early. You can reschedule at any time through your account.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "6d4843398876d41d",
+      "sender": "Physical Therapy <noreply@physicaltherapyplus.com>",
+      "subject": "Confirm your therapy appointment",
+      "snippet": "Reminder that you have a therapy appointment on tomorrow at 6:00 PM. Reschedule if needed: confirm.appointment.com",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "5faefd9af8e3f24d",
+      "sender": "Acuity Scheduling <reminder@acuityscheduling.com>",
+      "subject": "Countdown: haircut in 24 hours",
+      "snippet": "Center Plaza reminder: Your yoga class is next Tuesday at 7:00 PM. Questions? 555-0100",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "4e71195d56f6b61b",
+      "sender": "Haircut Reminder <no-reply@barbershop-app.com>",
+      "subject": "Last chance to confirm consultation appointment",
+      "snippet": "Almost here! Your physical therapy with Alex is next Tuesday at 10:15 AM. Bring your membership card.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "78076f057bb8f032",
+      "sender": "Premier Massage <bookings@premiermassage.com>",
+      "subject": "Get ready for your yoga class",
+      "snippet": "Reminder to join Jennifer for dentist on next Tuesday. Spots are limited!",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "f6d858176b1fc7ec",
+      "sender": "ClassPass <noreply@classpass.com>",
+      "subject": "Appointment reminder - physical therapy",
+      "snippet": "Excited for your haircut? It's coming up on Monday at 6:00 PM. Confirm now: https://calendly.com/...",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "38c00f760e800186",
+      "sender": "Physical Therapy <noreply@physicaltherapyplus.com>",
+      "subject": "Time to prepare for your physical therapy",
+      "snippet": "Your wellness routine continues! Appointment yoga class is June 5 at 3:30 PM.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "4d82ba5f66b490e3",
+      "sender": "Eye Care Associates <reminders@eyecare.com>",
+      "subject": "Scheduled: eye exam with Sarah",
+      "snippet": "Mike is looking forward to your consultation session on June 5! No refunds after 24 hours notice.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "f9c2486080ba1b94",
+      "sender": "Haircut Reminder <no-reply@barbershop-app.com>",
+      "subject": "Mike's haircut - Friday at 6:00 PM",
+      "snippet": "Excited for your therapy? It's coming up on Friday at 1:00 PM. Confirm now: confirm.appointment.com",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "3e1188300b03812c",
+      "sender": "Wellness Center <booking@wellnesscenter.org>",
+      "subject": "haircut appointment confirmation",
+      "snippet": "Heads up: physical therapy appointment tomorrow with Sarah. Still planning to attend?",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "4df73f4900243f18",
+      "sender": "Premier Massage <bookings@premiermassage.com>",
+      "subject": "Mike's therapy - next Tuesday at 2:00 PM",
+      "snippet": "Sarah is looking forward to your therapy session on Monday! No refunds after 24 hours notice.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "a46ccb15f1307235",
+      "sender": "Setmore Reminders <noreply@setmore.com>",
+      "subject": "Final reminder: eye exam today",
+      "snippet": "Your haircut with Alex is coming up on June 5 at 10:15 AM. Reply CONFIRM to confirm or CANCEL to reschedule.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "1173142c67e80006",
+      "sender": "Zocdoc <appointments@zocdoc.com>",
+      "subject": "Reminder: Your appointment tomorrow at 7:00 PM",
+      "snippet": "Upcoming dentist: Monday, 7:00 PM at Downtown. Confirm your attendance now.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "4bf56edf91be3696",
+      "sender": "Calendly <noreply@calendly.com>",
+      "subject": "Time to prepare for your eye exam",
+      "snippet": "Just a friendly reminder about your yoga class this Friday at 7:00 PM with Sarah.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "6bf69246e904502a",
+      "sender": "Premier Massage <bookings@premiermassage.com>",
+      "subject": "Your haircut class starts in 1 hour",
+      "snippet": "Just a friendly reminder about your massage this Monday at 3:30 PM with Jennifer.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "b087e4e5daf993d1",
+      "sender": "Fitness First <appointment@fitnessfirst.com>",
+      "subject": "Your spot is reserved: physical therapy tomorrow",
+      "snippet": "Get prepared for your dentist with Alex on June 5. Bring [required items] if applicable.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "59ff29674c20257e",
+      "sender": "ClassPass <noreply@classpass.com>",
+      "subject": "Reminder: Your appointment tomorrow at 1:00 PM",
+      "snippet": "Your wellness routine continues! Appointment massage is June 5 at 7:00 PM.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "c3c311ef0a7dcf57",
+      "sender": "Zocdoc <appointments@zocdoc.com>",
+      "subject": "Your consultation appointment is next Tuesday",
+      "snippet": "Sarah is looking forward to your massage session on June 5! No refunds after 24 hours notice.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "51f7d054ae79536d",
+      "sender": "Yoga Studio <schedule@yogastudio.com>",
+      "subject": "Happening soon: Your eye exam Friday",
+      "snippet": "Studio A reminder: Your gym session is June 5 at 10:15 AM. Questions? 555-0200",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "0618beeb91b6027f",
+      "sender": "Practice <appointments@practice-clinic.com>",
+      "subject": "Your spot is reserved: checkup next Tuesday",
+      "snippet": "Your physical therapy is scheduled for Friday. See your confirmation details: https://calendly.com/...",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "75f5720fdc342f49",
+      "sender": "Scheduling <scheduler@droffice.com>",
+      "subject": "Upcoming: yoga class appointment",
+      "snippet": "Get prepared for your massage with David on Friday. Bring [required items] if applicable.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "25d0f5422e149ecf",
+      "sender": "Practice <appointments@practice-clinic.com>",
+      "subject": "Appointment alert: eye exam",
+      "snippet": "Your haircut session is confirmed for tomorrow at 10:15 AM. Location: Downtown. If you need to cancel, please do so at least 2 hours in advance.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "0783919a66062e70",
+      "sender": "Wellness Center <booking@wellnesscenter.org>",
+      "subject": "David's dentist - next Tuesday at 3:30 PM",
+      "snippet": "Get prepared for your yoga class with Jennifer on tomorrow. Bring [required items] if applicable.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "d74b01cd8e2b6520",
+      "sender": "Acuity <noreply@acuityscheduling.com>",
+      "subject": "Confirm your consultation appointment",
+      "snippet": "Get ready! Your consultation class with Sarah starts in 1 hour. Class code: APT456. See you soon!",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "7be64736d92ea068",
+      "sender": "City Dental <appointments@citydental.com>",
+      "subject": "Reminder: Your appointment tomorrow at 3:30 PM",
+      "snippet": "Almost here! Your dentist with Sarah is June 5 at 1:00 PM. Bring your membership card.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "707ccfd1247131ae",
+      "sender": "Therapy Network <reminders@therapynetwork.com>",
+      "subject": "Don't forget - checkup in 2 hours",
+      "snippet": "Your reservation for physical therapy on Monday is confirmed. Please arrive by 10:15 AM.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "873be3e18c2cbb83",
+      "sender": "Therapy Clinic <scheduler@therapyclinic.org>",
+      "subject": "Class confirmation for next Tuesday",
+      "snippet": "Just a friendly reminder about your consultation this Tuesday at 3:30 PM with Sarah.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "ed1313453b4e5ac3",
+      "sender": "ClassPass <noreply@classpass.com>",
+      "subject": "Don't forget - checkup in 1 hours",
+      "snippet": "Class alert: Your checkup with David is tomorrow at 6:00 PM. Are you still coming?",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "7df07e422abb7d4c",
+      "sender": "Therapy Clinic <scheduler@therapyclinic.org>",
+      "subject": "yoga class appointment next Thursday",
+      "snippet": "Excited for your dentist? It's coming up on Monday at 10:15 AM. Confirm now: https://calendly.com/...",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "cb0a6af1835cc366",
+      "sender": "Haircut Reminder <no-reply@barbershop-app.com>",
+      "subject": "Class confirmation for Monday",
+      "snippet": "Your gym session session is confirmed for tomorrow at 3:30 PM. Location: 123 Main St. If you need to cancel, please do so at least 2 hours in advance.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "2c4e6b0e590e3e8b",
+      "sender": "Counseling Services <scheduler@counselingservices.org>",
+      "subject": "Confirm your therapy appointment",
+      "snippet": "Your eye exam with Alex is coming up on Friday at 9:30 AM. Reply CONFIRM to confirm or CANCEL to reschedule.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "7b6fc1d5d39ece3d",
+      "sender": "Therapy Clinic <scheduler@therapyclinic.org>",
+      "subject": "Get ready for your haircut",
+      "snippet": "We can't wait to see you for your consultation appointment on Monday! Bring your insurance card and be prepared to arrive 10 minutes early.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "2cc4cdd8c4c7093d",
+      "sender": "Haircut Reminder <no-reply@barbershop-app.com>",
+      "subject": "Happening soon: Your dentist Friday",
+      "snippet": "Get ready! Your gym session class with David starts in 1 hour. Class code: SES789. See you soon!",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "e61265639336cbcc",
+      "sender": "ClassPass <noreply@classpass.com>",
+      "subject": "Appointment reminder - checkup",
+      "snippet": "This is a reminder about your consultation appointment on tomorrow at 3:30 PM. Please arrive 5-10 minutes early. You can reschedule at any time through your account.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "bb9fe7c9bd84e7c8",
+      "sender": "Mindbody <noreply@mindbodyonline.com>",
+      "subject": "yoga class appointment confirmation",
+      "snippet": "Time to confirm your checkup appointment for Friday at 2:00 PM. Tap to confirm: https://calendly.com/...",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "2b0dfa9e9c39ce2d",
+      "sender": "Yoga Studio <schedule@yogastudio.com>",
+      "subject": "Reminder: physical therapy session Monday at 7:00 PM",
+      "snippet": "Save this code XYZ789 - you'll need it for your dentist appointment on Friday.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "9a43bc268b25da73",
+      "sender": "Setmore Reminders <noreply@setmore.com>",
+      "subject": "Coming up: gym session with Jennifer",
+      "snippet": "Your therapist is ready for your haircut session on Friday at 1:00 PM. See you soon!",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "9af05d9d51151129",
+      "sender": "Scheduling <scheduler@droffice.com>",
+      "subject": "Confirm your consultation appointment",
+      "snippet": "Your checkup is starting soon! Last reminder: June 5 at 3:30 PM with Jennifer.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "1672aeb1d387b9c3",
+      "sender": "City Dental <appointments@citydental.com>",
+      "subject": "Time to prepare for your consultation",
+      "snippet": "This is a reminder about your eye exam appointment on Monday at 10:15 AM. Please arrive 5-10 minutes early. You can reschedule at any time through your account.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "0decb177ff45d39c",
+      "sender": "Haircut Reminder <no-reply@barbershop-app.com>",
+      "subject": "Reminder: Your appointment tomorrow at 6:00 PM",
+      "snippet": "Heads up: dentist appointment tomorrow with Jennifer. Still planning to attend?",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "7cbfe0d6e6b0e493",
+      "sender": "Therapy Clinic <scheduler@therapyclinic.org>",
+      "subject": "Get ready for your haircut",
+      "snippet": "Don't miss your massage appointment on next Tuesday. Confirm your spot now if you haven't already.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "ece2df83f7b57caa",
+      "sender": "Medical Associates <reminders@medicalassoc.com>",
+      "subject": "Session reminder: gym session",
+      "snippet": "This is a reminder about your therapy appointment on June 5 at 9:30 AM. Please arrive 5-10 minutes early. You can reschedule at any time through your account.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "a9b458d763af6fed",
+      "sender": "Therapy Network <reminders@therapynetwork.com>",
+      "subject": "Get ready for your checkup",
+      "snippet": "Heads up: haircut appointment tomorrow with Jordan. Still planning to attend?",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "7a67ea973f546921",
+      "sender": "Premier Massage <bookings@premiermassage.com>",
+      "subject": "Reminder: Your appointment tomorrow at 6:00 PM",
+      "snippet": "Your checkup session is confirmed for tomorrow at 6:00 PM. Location: Downtown. If you need to cancel, please do so at least 2 hours in advance.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "c903dac59ffcb092",
+      "sender": "Yoga Studio <schedule@yogastudio.com>",
+      "subject": "Scheduled: eye exam with Alex",
+      "snippet": "Downtown reminder: Your haircut is Friday at 1:00 PM. Questions? 555-0200",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "219f49b78e3cb790",
+      "sender": "Square Appointments <noreply@squareup.com>",
+      "subject": "Scheduled: therapy with Jordan",
+      "snippet": "We can't wait to see you for your gym session appointment on next Tuesday! Bring your insurance card and be prepared to arrive 10 minutes early.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "0db16faf66c062dd",
+      "sender": "Hair Salon <confirm@hairsalon.com>",
+      "subject": "Don't forget - therapy in 1 hours",
+      "snippet": "Get prepared for your massage with Alex on next Tuesday. Bring [required items] if applicable.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "b6f7d4d978cb6d4e",
+      "sender": "Premier Massage <bookings@premiermassage.com>",
+      "subject": "Confirm your therapy appointment",
+      "snippet": "Get ready! Your haircut class with Jordan starts in 1 hour. Class code: SES789. See you soon!",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "80333db922e0349e",
+      "sender": "Mindbody <noreply@mindbodyonline.com>",
+      "subject": "Your spot reserved for massage",
+      "snippet": "Excited for your physical therapy? Your appointment is tomorrow at 10:15 AM. Questions? Call 555-0200",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "0b6b89140672aa6c",
+      "sender": "Medical Associates <reminders@medicalassoc.com>",
+      "subject": "Reservation confirmed: physical therapy",
+      "snippet": "Alex is looking forward to your yoga class session on next Tuesday! No refunds after 24 hours notice.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "6a752697a3b48168",
+      "sender": "Scheduling <scheduler@droffice.com>",
+      "subject": "Time to prepare for your haircut",
+      "snippet": "Your appointment is ready! physical therapy on June 5 at 1:00 PM with Jennifer.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "146dc6a1beaf4bf4",
+      "sender": "Zocdoc <appointments@zocdoc.com>",
+      "subject": "Last chance to confirm gym session appointment",
+      "snippet": "Reminder that you have a eye exam appointment on tomorrow at 3:30 PM. Reschedule if needed: https://calendly.com/...",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "ff8977473ef5aa20",
+      "sender": "Calendly <noreply@calendly.com>",
+      "subject": "Your wellness appointment: checkup",
+      "snippet": "Your wellness appointment at Center Plaza is tomorrow at 1:00 PM. Arrive a few minutes early for check-in.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "f05a0a3d672e191a",
+      "sender": "Physical Therapy <noreply@physicaltherapyplus.com>",
+      "subject": "Upcoming: therapy appointment",
+      "snippet": "Get ready! Your haircut class with Mike starts in 1 hour. Class code: ABC123. See you soon!",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "a491f070b116d52b",
+      "sender": "Vagaro <reminders@vagaro.com>",
+      "subject": "Last chance to confirm consultation appointment",
+      "snippet": "Don't miss your haircut appointment on tomorrow. Confirm your spot now if you haven't already.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "4564862c11cbad81",
+      "sender": "Medical Associates <reminders@medicalassoc.com>",
+      "subject": "Get ready for your eye exam",
+      "snippet": "Upcoming gym session: tomorrow, 2:00 PM at 123 Main St. Confirm your attendance now.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "d05a4893262747ba",
+      "sender": "Vagaro <reminders@vagaro.com>",
+      "subject": "Session reminder: checkup",
+      "snippet": "Upcoming massage: next Tuesday, 9:30 AM at 123 Main St. Confirm your attendance now.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "25db43ae15312867",
+      "sender": "Setmore Reminders <noreply@setmore.com>",
+      "subject": "Your consultation class starts in 1 hour",
+      "snippet": "Upcoming massage: tomorrow, 3:30 PM at Downtown. Confirm your attendance now.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "7d255e8199a54034",
+      "sender": "Dr. Sarah Chen <reminder@drsarahchen.com>",
+      "subject": "Last chance to confirm yoga class appointment",
+      "snippet": "Save this code ABC123 - you'll need it for your dentist appointment on June 5.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "f6f047e86d2f2b1a",
+      "sender": "Haircut Reminder <no-reply@barbershop-app.com>",
+      "subject": "Arrive early for your massage",
+      "snippet": "Reminder that you have a yoga class appointment on Friday at 1:00 PM. Reschedule if needed: confirm.appointment.com",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "b0cce9193d0bad66",
+      "sender": "Therapy Network <reminders@therapynetwork.com>",
+      "subject": "Heads up - therapy tomorrow",
+      "snippet": "Reminder to join Alex for checkup on tomorrow. Spots are limited!",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "fdc5bf4ce8acdc49",
+      "sender": "Practice <appointments@practice-clinic.com>",
+      "subject": "Reservation confirmed: physical therapy",
+      "snippet": "Reminder that you have a therapy appointment on next Tuesday at 3:30 PM. Reschedule if needed: confirm.appointment.com",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "e4c3d398e179a4d2",
+      "sender": "Calendly <noreply@calendly.com>",
+      "subject": "Upcoming: massage appointment",
+      "snippet": "Heads up: therapy appointment tomorrow with Jordan. Still planning to attend?",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "dc3e6442f6bfa0e9",
+      "sender": "Therapy Clinic <scheduler@therapyclinic.org>",
+      "subject": "Time to prepare for your therapy",
+      "snippet": "This is a reminder about your consultation appointment on Monday at 10:15 AM. Please arrive 5-10 minutes early. You can reschedule at any time through your account.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "9b53074841f398c2",
+      "sender": "Scheduling <scheduler@droffice.com>",
+      "subject": "Your physical therapy appointment is tomorrow",
+      "snippet": "Your wellness routine continues! Appointment dentist is Monday at 2:00 PM.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "74c87313f0593c3f",
+      "sender": "Wellness Center <booking@wellnesscenter.org>",
+      "subject": "Session reminder: dentist",
+      "snippet": "Reminder: Don't forget your yoga class appointment tomorrow at 7:00 PM with Sarah. Location: Downtown",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "4b8933201b3abcb2",
+      "sender": "Haircut Reminder <no-reply@barbershop-app.com>",
+      "subject": "Arrive early for your checkup",
+      "snippet": "Almost here! Your checkup with Jennifer is Monday at 7:00 PM. Bring your membership card.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "75596dedf8b5e8ab",
+      "sender": "Physical Therapy <noreply@physicaltherapyplus.com>",
+      "subject": "Class confirmation for Monday",
+      "snippet": "Your massage with Jordan is coming up on June 5 at 6:00 PM. Reply CONFIRM to confirm or CANCEL to reschedule.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "32d7282b892c431d",
+      "sender": "ClassPass <confirmation@classpass.com>",
+      "subject": "Don't forget - eye exam in 12 hours",
+      "snippet": "Alex is looking forward to your physical therapy session on Friday! No refunds after 24 hours notice.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "cbd41a4a55d58090",
+      "sender": "Mindbody <noreply@mindbodyonline.com>",
+      "subject": "Alex's eye exam - tomorrow at 2:00 PM",
+      "snippet": "Your dentist appointment is set for Monday. Confirmation #: XYZ789",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "d65705d21eb49521",
+      "sender": "Wellness Center <booking@wellnesscenter.org>",
+      "subject": "Happening soon: Your dentist tomorrow",
+      "snippet": "Your therapist is ready for your gym session session on tomorrow at 3:30 PM. See you soon!",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "3ff6ee8e4c39952e",
+      "sender": "Fitness First <appointment@fitnessfirst.com>",
+      "subject": "Last chance to confirm dentist appointment",
+      "snippet": "Excited for your yoga class? Your appointment is tomorrow at 1:00 PM. Questions? Call 555-0100",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "9c630cf0d167e267",
+      "sender": "Dermatology Office <appointments@dermatologyoffice.com>",
+      "subject": "Appointment alert: therapy",
+      "snippet": "Almost here! Your haircut with David is Monday at 7:00 PM. Bring your membership card.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "69d6e35c1da79b63",
+      "sender": "Medical Associates <reminders@medicalassoc.com>",
+      "subject": "Reservation confirmed: consultation",
+      "snippet": "Get ready! Your therapy class with Mike starts in 1 hour. Class code: XYZ789. See you soon!",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "a3933ba31d5b2f66",
+      "sender": "Vagaro <reminders@vagaro.com>",
+      "subject": "Arrive early for your haircut",
+      "snippet": "Your wellness appointment at 123 Main St is Monday at 9:30 AM. Arrive a few minutes early for check-in.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "1ff84e268910a313",
+      "sender": "Dermatology Office <appointments@dermatologyoffice.com>",
+      "subject": "Session reminder: dentist",
+      "snippet": "Mike is looking forward to your haircut session on June 5! No refunds after 24 hours notice.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "e28fd5677e834a71",
+      "sender": "ClassPass <confirmation@classpass.com>",
+      "subject": "Heads up - consultation tomorrow",
+      "snippet": "Save this code APT456 - you'll need it for your gym session appointment on next Tuesday.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "e07e45c0690e9dff",
+      "sender": "ClassPass <confirmation@classpass.com>",
+      "subject": "Upcoming: physical therapy appointment",
+      "snippet": "Your checkup is starting soon! Last reminder: Monday at 10:15 AM with Sarah.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "ed75f559664db782",
+      "sender": "appointments@peloton.com",
+      "subject": "Reminder: Your appointment tomorrow at 2:00 PM",
+      "snippet": "Downtown reminder: Your eye exam is Monday at 10:15 AM. Questions? 555-0200",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "e8a1379237b1724b",
+      "sender": "Therapy Clinic <scheduler@therapyclinic.org>",
+      "subject": "Appointment reminder - massage",
+      "snippet": "Reminder that you have a yoga class appointment on June 5 at 7:00 PM. Reschedule if needed: confirm.appointment.com",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "bae1e17a134cf7f6",
+      "sender": "Premier Massage <bookings@premiermassage.com>",
+      "subject": "Arrive early for your checkup",
+      "snippet": "Time to confirm your haircut appointment for tomorrow at 6:00 PM. Tap to confirm: confirm.appointment.com",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "78063e61eb73b21b",
+      "sender": "Acuity <noreply@acuityscheduling.com>",
+      "subject": "Reminder to show up to massage",
+      "snippet": "Just a friendly reminder about your checkup this Monday at 9:30 AM with Mike.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "28d35e68a4c0c033",
+      "sender": "Zocdoc <appointments@zocdoc.com>",
+      "subject": "Scheduled: checkup with Sarah",
+      "snippet": "Your appointment is ready! checkup on June 5 at 6:00 PM with Alex.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "e6eece87994eb07c",
+      "sender": "Eye Care Associates <reminders@eyecare.com>",
+      "subject": "Final reminder: physical therapy today",
+      "snippet": "Get prepared for your dentist with Jennifer on next Tuesday. Bring [required items] if applicable.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "bedb02d4da4161ff",
+      "sender": "Vagaro <reminders@vagaro.com>",
+      "subject": "Reminder: Your appointment tomorrow at 7:00 PM",
+      "snippet": "Excited for your consultation? It's coming up on next Tuesday at 1:00 PM. Confirm now: https://calendly.com/...",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "7badc4222cec80cf",
+      "sender": "Medical Associates <reminders@medicalassoc.com>",
+      "subject": "Your gym session appointment is Monday",
+      "snippet": "Don't miss your eye exam appointment on tomorrow. Confirm your spot now if you haven't already.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "a3464299eb835c0a",
+      "sender": "ClassPass <confirmation@classpass.com>",
+      "subject": "Coming up: dentist with Alex",
+      "snippet": "123 Main St reminder: Your dentist is tomorrow at 7:00 PM. Questions? 555-0100",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "793eaa4c0d1976dd",
+      "sender": "Fitness First <appointment@fitnessfirst.com>",
+      "subject": "Confirm your physical therapy appointment",
+      "snippet": "Jennifer is looking forward to your haircut session on June 5! No refunds after 24 hours notice.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "4995623a0fdb51b8",
+      "sender": "Counseling Services <scheduler@counselingservices.org>",
+      "subject": "Reservation confirmed: checkup",
+      "snippet": "Reminder to join Jordan for haircut on Friday. Spots are limited!",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "5020bbc136f46399",
+      "sender": "Dr. Sarah Chen <reminder@drsarahchen.com>",
+      "subject": "Session reminder: eye exam",
+      "snippet": "Excited for your consultation? It's coming up on June 5 at 6:00 PM. Confirm now: confirm.appointment.com",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "b2fc964dda2a3de0",
+      "sender": "Vagaro <reminders@vagaro.com>",
+      "subject": "Your spot reserved for dentist",
+      "snippet": "Just a friendly reminder about your dentist this Tuesday at 9:30 AM with Jordan.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "7217dd0963f244ba",
+      "sender": "Haircut Reminder <no-reply@barbershop-app.com>",
+      "subject": "Your spot is reserved: therapy Friday",
+      "snippet": "We can't wait to see you for your yoga class appointment on June 5! Bring your insurance card and be prepared to arrive 10 minutes early.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "560e9c93f2f4a1ea",
+      "sender": "ClassPass <confirmation@classpass.com>",
+      "subject": "Your spot is reserved: yoga class Friday",
+      "snippet": "Get prepared for your gym session with Jordan on Friday. Bring [required items] if applicable.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "22eeb2ed27ba7aca",
+      "sender": "Dr. Sarah Chen <reminder@drsarahchen.com>",
+      "subject": "Reminder: Your appointment tomorrow at 9:30 AM",
+      "snippet": "Almost here! Your consultation with Alex is next Tuesday at 9:30 AM. Bring your membership card.",
+      "category": "APPOINTMENT_REMINDER"
+    },
+    {
+      "id": "cf07b4c2ab484f88",
+      "sender": "Dr. Sarah Chen <reminder@drsarahchen.com>",
+      "subject": "Reminder: therapy session June 5 at 9:30 AM",
+      "snippet": "Your consultation is starting soon! Last reminder: June 5 at 3:30 PM with Jordan.",
+      "category": "APPOINTMENT_REMINDER"
+    }
+  ]
+}
