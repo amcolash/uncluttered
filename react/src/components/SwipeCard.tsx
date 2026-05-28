@@ -1,6 +1,6 @@
 import { motion, useAnimate, useMotionValue, useTransform } from 'motion/react';
 import { type ReactNode, useEffect } from 'react';
-import { FaCheck, FaQuestion, FaTimes } from 'react-icons/fa';
+import { FaCheck, FaTimes } from 'react-icons/fa';
 import { twMerge } from 'tailwind-merge';
 
 type SwipeCardProps = {
@@ -54,7 +54,9 @@ export function SwipeCard({ onSwipe, index, className, children }: SwipeCardProp
   return (
     <motion.div
       className={twMerge(
-        'user-select-none flex h-128 w-104 origin-bottom rounded-lg bg-slate-800 p-1 text-neutral-200 shadow-lg shadow-slate-800/50 transition-all duration-75 hover:cursor-grab active:cursor-grabbing',
+        'user-select-none flex origin-bottom rounded-lg bg-slate-800 p-1 text-neutral-200 shadow-lg shadow-slate-800/50 transition-all duration-75 hover:cursor-grab active:cursor-grabbing',
+        // 'h-128 w-104',
+        'aspect-3/5 max-h-[60vh] w-[80vw] max-w-md',
         className
       )}
       ref={scope}
