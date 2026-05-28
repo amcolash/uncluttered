@@ -1,15 +1,21 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { FaArchive, FaTrash } from 'react-icons/fa';
+import { formatCategory } from 'utilities/util';
 
 import { CategorySidebar } from 'components/CategorySidebar';
 import { EmailBundle } from 'components/EmailBundle';
 import { Menu } from 'components/Menu';
 import { Nav } from 'components/Nav';
+import { Button } from 'components/ui/Button';
 import { useEmails } from 'hooks/useEmails';
 
 export function InboxPage() {
   const [filter, setFilter] = useState<string>();
 
   const { categories: rawCategories, emails } = useEmails(false);
+  const visibleEmails = emails
+    .filter((email) => !filter || email.userOverrideCategory === filter || email.aiCategory === filter)
+    .slice(0, 20);
 
   const categoryCount = emails.reduce(
     (acc, email) => {
@@ -24,6 +30,12 @@ export function InboxPage() {
     .map((c) => ({ ...c, label: `(${categoryCount[c.key] || 0}) ${c.label}` }))
     .sort((a, b) => a.urgency - b.urgency);
 
+  useEffect(() => {
+    if (!filter && categories.length > 0) {
+      setFilter(categories[0].key);
+    }
+  }, [filter, categories]);
+
   return (
     <div className="flex justify-center gap-8">
       <Menu>
@@ -32,15 +44,37 @@ export function InboxPage() {
 
       <Nav />
 
-      <div className="flex max-w-screen flex-1 flex-col items-center gap-20 p-8">
-        <h1 className="mt-8 text-2xl font-bold text-white">Inbox</h1>
+      <div className="flex max-w-screen flex-1 flex-col items-center gap-12 p-8">
+        <h1 className="mt-8 text-2xl font-bold text-white">
+          {filter ? `${formatCategory(filter)} (${categoryCount[filter] || 0})` : 'All Emails'}
+        </h1>
+
+        <div className="flex w-full max-w-4xl gap-4">
+          <Button
+            variant="success"
+            size="lg"
+            className="w-full"
+            onClick={() => {
+              //archive(visibleEmails)
+            }}
+          >
+            <FaArchive className="text-slate-300 shadow-md shadow-slate-800/30" />
+          </Button>
+
+          <Button
+            variant="danger"
+            size="lg"
+            className="w-full"
+            onClick={() => {
+              //deleteEmails(visibleEmails)
+            }}
+          >
+            <FaTrash className="text-slate-300 shadow-md shadow-slate-800/30" />
+          </Button>
+        </div>
 
         {emails.length > 0 ? (
-          <EmailBundle
-            emails={emails
-              .filter((email) => !filter || email.userOverrideCategory === filter || email.aiCategory === filter)
-              .slice(0, 20)}
-          />
+          <EmailBundle emails={visibleEmails} />
         ) : (
           <p className="text-center text-lg text-white">
             <span>All done — no more emails to review.</span>

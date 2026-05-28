@@ -3,7 +3,7 @@ import { twMerge } from 'tailwind-merge';
 
 import { Spinner } from './Spinner';
 
-type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'danger';
+type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'danger' | 'warning' | 'success';
 type ButtonSize = 'sm' | 'md' | 'lg';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -14,9 +14,13 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary: 'bg-indigo-600 text-white enabled:hover:bg-indigo-500 enabled:active:bg-indigo-700',
-  secondary: 'bg-slate-700 text-slate-100 enabled:hover:bg-slate-600 enabled:active:bg-slate-800 border border-slate-600',
-  ghost: 'bg-transparent text-slate-300 enabled:hover:bg-slate-700 enabled:hover:text-white enabled:active:bg-slate-800',
+  secondary:
+    'bg-slate-700 text-slate-100 enabled:hover:bg-slate-600 enabled:active:bg-slate-800 border border-slate-600',
+  ghost:
+    'bg-transparent text-slate-300 enabled:hover:bg-slate-700 enabled:hover:text-white enabled:active:bg-slate-800',
   danger: 'bg-red-600 text-white enabled:hover:bg-red-500 enabled:active:bg-red-700',
+  warning: 'bg-amber-500 text-slate-800 enabled:hover:bg-amber-400 enabled:active:bg-amber-600',
+  success: 'bg-green-600 text-white enabled:hover:bg-green-500 enabled:active:bg-green-700',
 };
 
 const sizeClasses: Record<ButtonSize, string> = {

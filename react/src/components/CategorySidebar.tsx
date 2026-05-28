@@ -25,7 +25,10 @@ export function CategorySidebar({
             size="sm"
             disabled={!enabled}
             onClick={() => enabled && onClick(c.key)}
-            className={twMerge('w-full justify-start truncate text-left', active === c.key && 'brightness-75')}
+            className={twMerge(
+              'w-full justify-start truncate text-left',
+              active === c.key && 'ring-2 ring-cyan-500 ring-offset-2 ring-offset-slate-800'
+            )}
             title={c.description}
           >
             {c.label}
