@@ -1,5 +1,9 @@
 import { Suspense, lazy } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+
+import { InboxPage } from 'pages/InboxPage';
+
+import { Spinner } from './ui/Spinner';
 
 const CategorizePage = lazy(async () => ({ default: (await import('pages/CategorizePage')).CategorizePage }));
 const ComponentPage = lazy(async () => ({ default: (await import('pages/ComponentPage')).ComponentPage }));
@@ -7,10 +11,19 @@ const ComponentPage = lazy(async () => ({ default: (await import('pages/Componen
 export function Router() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<span>Loading...</span>}>
+      <Suspense
+        fallback={
+          <div className="absolute inset-0 flex items-center justify-center">
+            <Spinner size="xl" className="text-slate-300" />
+          </div>
+        }
+      >
         <Routes>
           <Route path="/ui" element={<ComponentPage />} />
-          <Route path="*" element={<CategorizePage />} />
+          <Route path="/categorize" element={<CategorizePage />} />
+          <Route path="/inbox" element={<InboxPage />} />
+
+          <Route path="*" element={<Navigate to="/categorize" replace />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

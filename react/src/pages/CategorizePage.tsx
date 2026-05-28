@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 
 import { CategorySidebar } from 'components/CategorySidebar';
 import { Menu } from 'components/Menu';
+import { Nav } from 'components/Nav';
 import { CardStack, SwipeCard } from 'components/SwipeCard';
 import { Badge } from 'components/ui/Badge';
 import { Button } from 'components/ui/Button';
@@ -67,6 +68,8 @@ export function CategorizePage() {
       <Menu>
         <CategorySidebar categories={categories} current={current} categorize={categorize} />
       </Menu>
+
+      <Nav />
 
       <div className="flex flex-1 flex-col items-center gap-20 p-8">
         <div className="grid w-full max-w-4xl gap-4">

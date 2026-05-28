@@ -13,7 +13,7 @@ export function CategorySidebar({
 }) {
   return (
     <div className="flex h-screen w-56 flex-col gap-3 overflow-y-auto border-r border-slate-700 bg-slate-900 p-4">
-      <h2 className="mb-3 ml-14 text-sm font-semibold tracking-wide text-slate-400 uppercase">Categories</h2>
+      <h2 className="mt-1.5 mb-3 ml-14 text-sm font-semibold tracking-wide text-slate-400 uppercase">Categories</h2>
       {categories
         .sort((a, b) => a.key.localeCompare(b.key))
         .map((c) => (

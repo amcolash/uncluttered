@@ -1,6 +1,6 @@
 import { twMerge } from 'tailwind-merge';
 
-type SpinnerSize = 'sm' | 'md' | 'lg';
+type SpinnerSize = 'sm' | 'md' | 'lg' | 'xl';
 
 interface SpinnerProps {
   size?: SpinnerSize;
@@ -11,6 +11,7 @@ const sizeClasses: Record<SpinnerSize, string> = {
   sm: 'size-3.5',
   md: 'size-5',
   lg: 'size-7',
+  xl: 'size-12',
 };
 
 export function Spinner({ size = 'md', className }: SpinnerProps) {
