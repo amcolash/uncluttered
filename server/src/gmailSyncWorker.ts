@@ -90,7 +90,7 @@ async function syncEmails(): Promise<void> {
         const snippet = detail.data.snippet ?? '';
         const threadId = detail.data.threadId ?? '';
 
-        const { category: aiCategory, urgency: aiUrgency } = await classifyEmail(subject, snippet, sender);
+        const { category: aiCategory } = await classifyEmail(subject, snippet, sender);
 
         const email: Email = {
           id,
@@ -100,8 +100,6 @@ async function syncEmails(): Promise<void> {
           snippet,
           aiCategory,
           userOverrideCategory: null,
-          aiUrgency,
-          userOverrideUrgency: null,
           isArchived: false,
           processedAt: new Date().toISOString(),
         };

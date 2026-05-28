@@ -299,7 +299,7 @@ export const DEFAULT_URGENCY: Record<string, number> = {
  * Rule-based fallback classifier — no external dependencies, sub-millisecond.
  * Used when the ML service is unavailable or hasn't been trained yet.
  */
-function classifyEmailRules(subject: string, snippet: string, sender: string): string {
+export function classifyEmailRules(subject: string, snippet: string, sender: string): string {
   const { localPart, domain } = parseSender(sender);
   const isAutomated = RE_AUTOMATED_LOCAL.test(localPart);
   const hasBulkFooter = RE_BULK_SNIPPET.test(snippet);

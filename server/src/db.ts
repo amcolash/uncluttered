@@ -3,8 +3,6 @@ import { fileURLToPath } from 'node:url';
 
 import { JSONFilePreset } from 'lowdb/node';
 
-import { DEFAULT_URGENCY } from './emailClassifier.ts';
-
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DB_PATH = path.join(__dirname, '../data/db.json');
 
@@ -21,8 +19,6 @@ export interface Email {
   snippet: string;
   aiCategory: string;
   userOverrideCategory: string | null;
-  aiUrgency: number;
-  userOverrideUrgency: number | null;
   isArchived: boolean;
   processedAt: string;
 }
@@ -93,19 +89,6 @@ for (const cat of defaultData.categories) {
     db.data.categories.push(cat);
     migrated = true;
     console.log(`[DB] Added new category: ${cat.key}`);
-  }
-}
-
-// Forward migration: add urgency fields to emails that pre-date this feature.
-for (const email of db.data.emails) {
-  const raw = email as unknown as Record<string, unknown>;
-  if (raw['aiUrgency'] === undefined) {
-    email.aiUrgency = DEFAULT_URGENCY[email.userOverrideCategory ?? email.aiCategory] ?? 3;
-    migrated = true;
-  }
-  if (raw['userOverrideUrgency'] === undefined) {
-    email.userOverrideUrgency = null;
-    migrated = true;
   }
 }
 

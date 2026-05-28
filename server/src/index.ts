@@ -2,7 +2,7 @@ import cors from 'cors';
 import express from 'express';
 
 import { db } from './db.ts';
-import { DEFAULT_URGENCY, classifyEmail } from './emailClassifier.ts';
+import { classifyEmail } from './emailClassifier.ts';
 import { startGmailSyncWorker } from './gmailSyncWorker.ts';
 
 const app = express();
@@ -10,6 +10,35 @@ const port = 7001;
 
 app.use(cors());
 app.use(express.json());
+
+// ── Auto-retrain state ───────────────────────────────────────────────────────
+
+const AUTO_RETRAIN_THRESHOLD = 5;
+let sessionOverrideCount = 0;
+
+async function triggerRetrain() {
+  const examples = db.data.emails
+    .filter((e) => e.userOverrideCategory ?? e.aiCategory)
+    .map((e) => ({
+      subject: e.subject,
+      snippet: e.snippet,
+      sender: e.sender,
+      category: (e.userOverrideCategory ?? e.aiCategory) as string,
+    }));
+
+  try {
+    const response = await fetch('http://localhost:7002/train', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ examples }),
+      signal: AbortSignal.timeout(30_000),
+    });
+    const result = (await response.json()) as Record<string, unknown>;
+    console.log('[Auto-retrain] Complete:', result);
+  } catch (err) {
+    console.error('[Auto-retrain] Failed:', err);
+  }
+}
 
 // ── Email endpoints ─────────────────────────────────────────────────────────
 
@@ -42,27 +71,20 @@ app.post('/api/emails/:id/archive', async (req, res) => {
 });
 
 /**
- * Manually overrides the AI-assigned category and/or urgency for an email.
- * Validates category against the stored category keys; urgency must be 1-5.
+ * Manually overrides the AI-assigned category for an email.
+ * Validates the value against the stored category keys.
  */
 app.post('/api/emails/:id/override', async (req, res) => {
-  const { category, urgency } = req.body as { category?: string; urgency?: number };
+  const { category } = req.body as { category?: string };
 
-  if (category === undefined && urgency === undefined) {
-    res.status(400).json({ error: 'At least one of "category" or "urgency" is required' });
+  if (!category) {
+    res.status(400).json({ error: '"category" is required in the request body' });
     return;
   }
 
-  if (category !== undefined) {
-    const validKeys = db.data.categories.map((c) => c.key);
-    if (!validKeys.includes(category)) {
-      res.status(400).json({ error: 'Invalid category', validCategories: validKeys });
-      return;
-    }
-  }
-
-  if (urgency !== undefined && (!Number.isInteger(urgency) || urgency < 1 || urgency > 5)) {
-    res.status(400).json({ error: '"urgency" must be an integer between 1 and 5' });
+  const validKeys = db.data.categories.map((c) => c.key);
+  if (!validKeys.includes(category)) {
+    res.status(400).json({ error: 'Invalid category', validCategories: validKeys });
     return;
   }
 
@@ -72,9 +94,16 @@ app.post('/api/emails/:id/override', async (req, res) => {
     return;
   }
 
-  if (category !== undefined) email.userOverrideCategory = category;
-  if (urgency !== undefined) email.userOverrideUrgency = urgency;
+  email.userOverrideCategory = category;
   await db.write();
+
+  sessionOverrideCount++;
+  if (sessionOverrideCount >= AUTO_RETRAIN_THRESHOLD) {
+    sessionOverrideCount = 0;
+    console.log(`[Auto-retrain] ${AUTO_RETRAIN_THRESHOLD} overrides reached — retraining in background…`);
+    triggerRetrain();
+  }
+
   res.json({ success: true });
 });
 
@@ -89,14 +118,14 @@ app.get('/api/emails/reclassify/preview', async (_req, res) => {
 
   const results = await Promise.all(
     targets.map(async (email) => {
-      const { category, urgency, confidence } = await classifyEmail(email.subject, email.snippet, email.sender);
+      const { category, confidence } = await classifyEmail(email.subject, email.snippet, email.sender);
       return {
         id: email.id,
         sender: email.sender,
         subject: email.subject,
         snippet: email.snippet,
-        current: { category: email.aiCategory, urgency: email.aiUrgency },
-        proposed: { category, urgency, confidence },
+        current: { category: email.aiCategory },
+        proposed: { category, confidence },
         changed: category !== email.aiCategory,
       };
     })
@@ -132,9 +161,8 @@ app.post('/api/emails/:id/reclassify', async (req, res) => {
     return;
   }
 
-  const { category, urgency } = await classifyEmail(email.subject, email.snippet, email.sender);
+  const { category } = await classifyEmail(email.subject, email.snippet, email.sender);
   email.aiCategory = category;
-  email.aiUrgency = urgency;
   await db.write();
   res.json(email);
 });
@@ -147,9 +175,8 @@ app.post('/api/emails/reclassify', async (_req, res) => {
   const targets = db.data.emails.filter((e) => e.userOverrideCategory === null);
 
   for (const email of targets) {
-    const { category, urgency } = await classifyEmail(email.subject, email.snippet, email.sender);
+    const { category } = await classifyEmail(email.subject, email.snippet, email.sender);
     email.aiCategory = category;
-    email.aiUrgency = urgency;
   }
 
   await db.write();
@@ -165,27 +192,9 @@ app.post('/api/emails/reclassify', async (_req, res) => {
  * Call this after accumulating overrides to improve the model.
  */
 app.post('/api/retrain', async (_req, res) => {
-  const examples = db.data.emails
-    .filter((e) => e.userOverrideCategory ?? e.aiCategory)
-    .map((e) => ({
-      subject: e.subject,
-      snippet: e.snippet,
-      sender: e.sender,
-      category: (e.userOverrideCategory ?? e.aiCategory) as string,
-      urgency:
-        e.userOverrideUrgency ?? e.aiUrgency ?? DEFAULT_URGENCY[e.userOverrideCategory ?? e.aiCategory ?? ''] ?? 3,
-    }));
-
   try {
-    const response = await fetch('http://localhost:7002/train', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ examples }),
-      signal: AbortSignal.timeout(30_000),
-    });
-
-    const result = await response.json();
-    res.json(result);
+    await triggerRetrain();
+    res.json({ success: true });
   } catch (err) {
     res.status(503).json({ error: 'Classifier service unavailable', detail: String(err) });
   }
