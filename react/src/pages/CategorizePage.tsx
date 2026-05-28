@@ -31,7 +31,7 @@ export function CategorizePage() {
       <div className="flex flex-1 flex-col items-center justify-center gap-6 p-8">
         <div className="flex w-full max-w-xl items-center justify-between">
           <h1 className="text-2xl font-bold text-white">
-            Re-categorize <span className="text-slate-400 text-lg font-normal">({emails.length} remaining)</span>
+            Re-categorize <span className="text-lg font-normal text-slate-400">({emails.length} remaining)</span>
           </h1>
           <Button variant="secondary" size="sm" onClick={undo} disabled={!canUndo}>
             Undo

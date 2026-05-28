@@ -292,12 +292,7 @@ const SENDER_RULES: SenderRule[] = [
   { subject: 'You have a ridwell pickup', category: 'APPOINTMENT_REMINDER' },
 ];
 
-function matchesSenderRule(
-  sender: string,
-  subject: string,
-  snippet: string,
-  rule: SenderRule
-): boolean {
+function matchesSenderRule(sender: string, subject: string, snippet: string, rule: SenderRule): boolean {
   const has = (field: string, term: string) => field.toLowerCase().includes(term.toLowerCase());
   if (rule.sender !== undefined && !has(sender, rule.sender)) return false;
   if (rule.subject !== undefined && !has(subject, rule.subject)) return false;

@@ -45,17 +45,22 @@ export function AppPage() {
       {/* <Button onClick={() => {}}>Retrain model</Button>
       <Button onClick={() => {}}>Reclassify Preview</Button> */}
 
-      <div className="absolute inset-4 right-auto overflow-y-auto rounded-lg bg-slate-700 p-6 shadow-lg">
-        <h2 className="mb-4 text-lg font-semibold text-white">Active Categories</h2>
-        <div className="flex flex-col gap-2">
-          {categories
-            .sort((a, b) => a.key.localeCompare(b.key))
-            .map((c) => (
-              <Badge key={c.key} variant="outline" className="p-2">
-                {c.key}
-              </Badge>
-            ))}
-        </div>
+      <div className="absolute inset-0 right-auto flex w-64 shrink-0 flex-col gap-2 overflow-y-auto border-r border-slate-700 p-4">
+        <h2 className="mb-2 text-sm font-semibold tracking-wide text-slate-400 uppercase">Categories</h2>
+        {categories
+          .sort((a, b) => a.key.localeCompare(b.key))
+          .map((c) => (
+            <Button
+              key={c.key}
+              variant="secondary"
+              size="sm"
+              disabled
+              className="w-full cursor-auto justify-start text-left"
+              title={c.description}
+            >
+              {c.key}
+            </Button>
+          ))}
       </div>
 
       <Button onClick={undo} disabled={!canUndo}>

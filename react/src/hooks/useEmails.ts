@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-
 import { SIMILARITY_THRESHOLD, levenshteinSimilarity } from 'utilities/levenshtein';
 
 export interface Category {

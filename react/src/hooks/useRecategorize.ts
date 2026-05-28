@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
+import { SIMILARITY_THRESHOLD, levenshteinSimilarity } from 'utilities/levenshtein';
 
 import type { Category, Email } from 'hooks/useEmails';
-import { SIMILARITY_THRESHOLD, levenshteinSimilarity } from 'utilities/levenshtein';
 
 const API = 'http://localhost:7001';
 
@@ -38,9 +38,7 @@ export function useRecategorize() {
 
     setEmails((prev) => prev.filter((e) => e.id !== id && !similar.some((s) => s.id === e.id)));
 
-    await Promise.all(
-      [id, ...similar.map((e) => e.id)].map((eid) => postCategorize(eid, category, true))
-    );
+    await Promise.all([id, ...similar.map((e) => e.id)].map((eid) => postCategorize(eid, category, true)));
   }
 
   async function undo() {
