@@ -81,7 +81,6 @@ class Example(BaseModel):
     snippet: str
     sender: str
     category: str
-    urgency: int
 
 
 class TrainRequest(BaseModel):
@@ -98,20 +97,13 @@ def health() -> dict:
 @app.post("/classify")
 def classify(req: ClassifyRequest) -> dict:
     if cat_model is None:
-        return {"category": None, "urgency": None, "confidence": 0.0, "ready": False}
+        return {"category": None, "confidence": 0.0, "ready": False}
 
     text = build_text(req.subject, req.snippet, req.sender)
     proba = cat_model.predict_proba([text])[0]
     idx = int(proba.argmax())
-    category = cat_model.classes_[idx]
-
-    urgency: int | None = None
-    if urg_model is not None:
-        urgency = int(urg_model.predict([text])[0])
-
     return {
-        "category":   category,
-        "urgency":    urgency,
+        "category":   cat_model.classes_[idx],
         "confidence": round(float(proba[idx]), 4),
         "ready":      True,
     }
@@ -135,9 +127,8 @@ def train(req: TrainRequest) -> dict:
             "examples": len(examples),
         }
 
-    texts          = [build_text(e.subject, e.snippet, e.sender) for e in examples]
-    cat_labels     = [e.category for e in examples]
-    urgency_labels = [e.urgency  for e in examples]
+    texts      = [build_text(e.subject, e.snippet, e.sender) for e in examples]
+    cat_labels = [e.category for e in examples]
 
     def make_pipeline(clf_kwargs: dict) -> Pipeline:
         return Pipeline([
@@ -156,14 +147,11 @@ def train(req: TrainRequest) -> dict:
     cat_pipeline = make_pipeline({"C": 5.0})
     cat_pipeline.fit(texts, cat_labels)
 
-    urg_pipeline = make_pipeline({"C": 0.5})
-    urg_pipeline.fit(texts, urgency_labels)
-
-    joblib.dump({"cat": cat_pipeline, "urg": urg_pipeline}, MODEL_PATH)
+    joblib.dump({"cat": cat_pipeline}, MODEL_PATH)
 
     global cat_model, urg_model
     cat_model = cat_pipeline
-    urg_model = urg_pipeline
+    urg_model = None
 
     dist = dict(Counter(cat_labels))
     print(f"[Classifier] Trained on {len(texts)} examples across {len(dist)} classes.")
