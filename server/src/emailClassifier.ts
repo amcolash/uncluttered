@@ -454,6 +454,52 @@ export function classifyEmailRules(subject: string, snippet: string, sender: str
   return categories;
 }
 
+interface MlCandidate {
+  category: string;
+  confidence: number;
+}
+
+function normalizeMlCandidates(data: unknown): MlCandidate[] {
+  if (!data || typeof data !== 'object') return [];
+  const asAny = data as Record<string, unknown>;
+
+  const candidates: MlCandidate[] = [];
+  if (Array.isArray(asAny.categories)) {
+    for (const item of asAny.categories) {
+      if (
+        item &&
+        typeof item === 'object' &&
+        typeof (item as any).category === 'string' &&
+        typeof (item as any).confidence === 'number'
+      ) {
+        candidates.push({
+          category: (item as any).category,
+          confidence: (item as any).confidence,
+        });
+      }
+    }
+  }
+
+  if (typeof asAny.category === 'string' && typeof asAny.confidence === 'number') {
+    const existing = candidates.find((candidate) => candidate.category === asAny.category);
+    if (!existing) {
+      candidates.push({ category: asAny.category, confidence: asAny.confidence });
+    }
+  }
+
+  return candidates.sort((a, b) => b.confidence - a.confidence);
+}
+
+function selectSuggestions(candidates: MlCandidate[], exclude: string[]): MlCandidate[] {
+  return candidates
+    .filter((candidate) => !exclude.includes(candidate.category) && candidate.confidence > 0.2)
+    .slice(0, 3);
+}
+
+function selectRuleSuggestions(categories: string[], exclude: string[]): string[] {
+  return categories.filter((category) => !exclude.includes(category)).slice(0, 3);
+}
+
 /**
  * Classifies an email using the ML service when available, falling back to the
  * rule-based classifier when the service is unreachable or not yet trained.
@@ -462,8 +508,18 @@ export async function classifyEmail(
   subject: string,
   snippet: string,
   sender: string
-): Promise<{ category: string; urgency: number; confidence?: number }> {
+): Promise<{
+  category: string;
+  urgency: number;
+  confidence?: number;
+  mlSuggestions?: MlCandidate[];
+  ruleSuggestions?: string[];
+}> {
+  const ruleCategories = classifyEmailRules(subject, snippet, sender);
+  let primaryCategory = ruleCategories[0];
   let confidence = -1;
+  let mlCandidates: MlCandidate[] = [];
+  let earliestUrgency = DEFAULT_URGENCY[primaryCategory] ?? 3;
 
   try {
     const res = await fetch(`${CLASSIFIER_URL}/classify`, {
@@ -475,26 +531,36 @@ export async function classifyEmail(
 
     if (res.ok) {
       const data = (await res.json()) as {
-        category: string | null;
-        urgency: number | null;
-        confidence: number;
-        ready: boolean;
+        categories?: unknown;
+        category?: string;
+        confidence?: number;
+        urgency?: number;
+        ready?: boolean;
       };
-      confidence = data.confidence;
-      if (data.ready && data.category && data.confidence >= CLASSIFIER_MIN_CONFIDENCE) {
-        return {
-          category: data.category,
-          urgency: data.urgency ?? DEFAULT_URGENCY[data.category] ?? 3,
-          confidence: data.confidence,
-        };
+      mlCandidates = normalizeMlCandidates(data);
+      const bestMl = mlCandidates[0];
+      if (bestMl) {
+        confidence = bestMl.confidence;
+      }
+
+      const mlUrgency = typeof data?.urgency === 'number' ? data.urgency : undefined;
+      if (bestMl && data?.ready && bestMl.confidence >= CLASSIFIER_MIN_CONFIDENCE) {
+        primaryCategory = bestMl.category;
+        earliestUrgency = mlUrgency ?? DEFAULT_URGENCY[primaryCategory] ?? 3;
       }
     }
   } catch {
     // Service unavailable — fall through to rule-based fallback.
   }
 
-  const categories = classifyEmailRules(subject, snippet, sender);
-  const category = categories[0];
+  const ruleSuggestions = selectRuleSuggestions(ruleCategories, [primaryCategory, 'UNKNOWN']);
+  const mlSuggestions = selectSuggestions(mlCandidates, [primaryCategory, 'UNKNOWN']);
 
-  return { category, urgency: DEFAULT_URGENCY[category] ?? 3, confidence };
+  return {
+    category: primaryCategory,
+    urgency: earliestUrgency,
+    confidence: confidence >= 0 ? confidence : undefined,
+    mlSuggestions: mlSuggestions.length > 0 ? mlSuggestions : undefined,
+    ruleSuggestions: ruleSuggestions.length > 0 ? ruleSuggestions : undefined,
+  };
 }

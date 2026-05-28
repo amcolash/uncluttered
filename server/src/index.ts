@@ -194,8 +194,8 @@ app.post('/api/classify', async (req, res) => {
   }
 
   try {
-    const { category, urgency } = await classifyEmail(subject, snippet, sender);
-    res.json({ category, urgency });
+    const result = await classifyEmail(subject, snippet, sender);
+    res.json(result);
   } catch (err) {
     res.status(503).json({ error: 'Classifier service unavailable', detail: String(err) });
   }
