@@ -1,1 +1,7 @@
 @import 'tailwindcss';
+
+@layer base {
+  html {
+    @apply scrollbar-thin scrollbar-thumb-slate-500 scrollbar-track-slate-700;
+  }
+}

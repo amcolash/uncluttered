@@ -75,6 +75,10 @@ const defaultData: DbSchema = {
     { key: 'NEWSLETTER', description: 'Long-form regular reading updates and tech summaries' },
     { key: 'SUBSCRIPTION_SERVICE', description: 'ISP, utility, and recurring subscription service management emails' },
     { key: 'PROMO_MARKETING', description: 'Product offers, corporate promotional sales, and ads' },
+    {
+      key: 'HEALTHCARE_MEDICAL',
+      description: 'Medical appointment reminders, test results, and healthcare provider communications',
+    },
     { key: 'UNKNOWN', description: 'Fallback bucket for anything ambiguous' },
   ],
   emails: [],

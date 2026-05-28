@@ -134,8 +134,6 @@ const COMMUNITY_DOMAINS = [
   'aurelian.com',
   'wahbexchange.org',
   'ridwell.com',
-  'climatepledgearena.com',
-  'fullcircle.com',
   'beehiiv.com',
 ];
 const SUBSCRIPTION_DOMAINS = [
@@ -147,6 +145,7 @@ const SUBSCRIPTION_DOMAINS = [
   'spectrum.net',
   'verizon.com',
   't-mobile.com',
+  'nakedwines.com',
 ];
 const RECRUITER_DOMAINS = [
   'linkedin.com',
@@ -192,6 +191,7 @@ const EVENT_TICKET_DOMAINS = [
   'dice.fm',
   'eventbrite.com',
   'stubhub.com',
+  'climatepledgearena.com',
 ];
 const FOOD_ORDER_DOMAINS = [
   'messaging.squareup.com',
@@ -200,7 +200,10 @@ const FOOD_ORDER_DOMAINS = [
   'ubereats.com',
   'grubhub.com',
   'postmates.com',
+  'toasttab.com',
+  'fullcircle.com',
 ];
+const FINANCE_DOMAINS = ['zillow.com', 'splitwise.com'];
 const DEVELOPER_DOMAINS = ['c2.synology.com'];
 
 // ── Subject / snippet patterns ────────────────────────────────────────────────
@@ -259,6 +262,49 @@ const RE_BULK_SNIPPET =
 const RE_AUTOMATED_LOCAL =
   /^(no[\s._-]?reply|noreply|do[\s._-]?not[\s._-]?reply|donotreply|automated?|notifications?|mailer[\s._-]?daemon|bounce|postmaster|hello|support|team|info|news|newsletter|marketing|updates?|alerts?|digest|promo|offers?|deals?|savings?)$/i;
 
+// ── Named sender rules ────────────────────────────────────────────────────────
+// Checked before all domain/regex logic. Use these for senders that need a
+// specific category that the generic rules would get wrong — e.g. a display
+// name with no known domain, or a specific address that overrides its domain.
+
+interface SenderRule {
+  /** Case-insensitive substring match against the full sender string */
+  sender?: string;
+  /** Case-insensitive substring match against subject */
+  subject?: string;
+  /** Case-insensitive substring match against snippet */
+  snippet?: string;
+  category: string;
+}
+
+const SENDER_RULES: SenderRule[] = [
+  // GitHub issue/PR notifications are developer activity, not system alerts
+  { sender: 'notifications@github.com', category: 'DEVELOPER_SERVICES' },
+  // Healthcare providers & invoices
+  { sender: 'Team Headway', subject: 'invoice', category: 'HEALTHCARE_MEDICAL' },
+  { sender: 'Urban Dental Group', category: 'HEALTHCARE_MEDICAL' },
+  // Creator / wellness newsletters identified by display name only
+  { sender: 'Plane Wellness', category: 'CREATOR_CONTENT' },
+  // Event senders identified by display name only
+  { sender: 'CascadiaJS', category: 'EVENT_TICKET' },
+  // Ridwell-specific overrides (ridwell.com sits in COMMUNITY_DOMAINS)
+  { sender: 'help@ridwell.com', category: 'SUBSCRIPTION_SERVICE' },
+  { subject: 'You have a ridwell pickup', category: 'APPOINTMENT_REMINDER' },
+];
+
+function matchesSenderRule(
+  sender: string,
+  subject: string,
+  snippet: string,
+  rule: SenderRule
+): boolean {
+  const has = (field: string, term: string) => field.toLowerCase().includes(term.toLowerCase());
+  if (rule.sender !== undefined && !has(sender, rule.sender)) return false;
+  if (rule.subject !== undefined && !has(subject, rule.subject)) return false;
+  if (rule.snippet !== undefined && !has(snippet, rule.snippet)) return false;
+  return true;
+}
+
 // ── Classifier ────────────────────────────────────────────────────────────────
 
 const CLASSIFIER_URL = process.env.CLASSIFIER_URL ?? 'http://localhost:7002';
@@ -281,6 +327,7 @@ export const DEFAULT_URGENCY: Record<string, number> = {
   TRAVEL_BOOKING: 2,
   BANKING_ACCOUNT: 1,
   FINANCE_BILL: 2,
+  HEALTHCARE_MEDICAL: 2,
   DEVELOPER_SERVICES: 3,
   SYSTEM_ALERT: 2,
   GAMING: 4,
@@ -300,6 +347,11 @@ export const DEFAULT_URGENCY: Record<string, number> = {
  * Used when the ML service is unavailable or hasn't been trained yet.
  */
 export function classifyEmailRules(subject: string, snippet: string, sender: string): string {
+  // 0. Named sender rules — highest-priority overrides (checked before all domain logic)
+  for (const rule of SENDER_RULES) {
+    if (matchesSenderRule(sender, subject, snippet, rule)) return rule.category;
+  }
+
   const { localPart, domain } = parseSender(sender);
   const isAutomated = RE_AUTOMATED_LOCAL.test(localPart);
   const hasBulkFooter = RE_BULK_SNIPPET.test(snippet);
@@ -341,7 +393,7 @@ export function classifyEmailRules(subject: string, snippet: string, sender: str
 
   // 6. FINANCE_BILL — invoices / bills due (checked after banking so bank receipts
   //    don't accidentally land here)
-  if (RE_FINANCE_SUBJ.test(subject)) {
+  if (domainIs(domain, ...FINANCE_DOMAINS) || RE_FINANCE_SUBJ.test(subject)) {
     return 'FINANCE_BILL';
   }
 

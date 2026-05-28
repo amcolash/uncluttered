@@ -120,6 +120,45 @@ app.post('/api/emails/:id/override', async (req, res) => {
 // ── Reclassify endpoints ─────────────────────────────────────────────────────
 
 /**
+ * Sets userOverrideCategory and validated in one call.
+ * category: string = assign a new category; null = clear the override.
+ * validated: true | false | null
+ * Increments the retrain counter when a real category is assigned.
+ */
+app.post('/api/emails/:id/categorize', async (req, res) => {
+  const { category, validated } = req.body as { category?: string | null; validated?: boolean | null };
+
+  if (category !== null && category !== undefined) {
+    const validKeys = db.data.categories.map((c) => c.key);
+    if (!validKeys.includes(category)) {
+      res.status(400).json({ error: 'Invalid category', validCategories: validKeys });
+      return;
+    }
+  }
+
+  const email = db.data.emails.find((e) => e.id === req.params.id);
+  if (!email) {
+    res.status(404).json({ error: 'Email not found' });
+    return;
+  }
+
+  if (category !== undefined) email.userOverrideCategory = category;
+  if (validated !== undefined) email.validated = validated ?? null;
+  await db.write();
+
+  if (category) {
+    sessionOverrideCount++;
+    if (sessionOverrideCount >= AUTO_RETRAIN_THRESHOLD) {
+      sessionOverrideCount = 0;
+      console.log(`[Auto-retrain] ${AUTO_RETRAIN_THRESHOLD} overrides reached — retraining in background…`);
+      triggerRetrain();
+    }
+  }
+
+  res.json({ success: true });
+});
+
+/**
  * Dry-run reclassification — runs the classifier on every non-overridden email
  * and returns a diff of current vs proposed results. Nothing is written to db.
  */

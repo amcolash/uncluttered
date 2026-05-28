@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+import { SIMILARITY_THRESHOLD, levenshteinSimilarity } from 'utilities/levenshtein';
+
 export interface Category {
   key: string;
   description: string;
@@ -35,12 +37,22 @@ export function useEmails() {
   async function validate(id: string, validated: boolean) {
     const email = emails.find((e) => e.id === id);
     if (email) setHistory((prev) => [...prev, email]);
-    setEmails((prev) => prev.filter((e) => e.id !== id));
-    await fetch(`${API}/api/emails/${id}/validate`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ validated }),
-    });
+
+    const similar = emails.filter(
+      (e) => e.id !== id && levenshteinSimilarity(email?.subject ?? '', e.subject) >= SIMILARITY_THRESHOLD
+    );
+
+    setEmails((prev) => prev.filter((e) => e.id !== id && !similar.some((s) => s.id === e.id)));
+
+    await Promise.all(
+      [id, ...similar.map((e) => e.id)].map((eid) =>
+        fetch(`${API}/api/emails/${eid}/validate`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ validated }),
+        })
+      )
+    );
   }
 
   async function undo() {
