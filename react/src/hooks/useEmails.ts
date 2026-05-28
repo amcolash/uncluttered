@@ -9,11 +9,14 @@ export interface Category {
 
 export interface Email {
   id: string;
+  threadId: string;
   sender: string;
   subject: string;
   snippet: string;
   aiCategory: string;
   userOverrideCategory: string | null;
+  isArchived: boolean;
+  processedAt: string;
   validated: boolean | null;
 }
 

@@ -22,9 +22,9 @@ export function Nav() {
               )}
             >
               {active ? (
-                <span className="block p-2">{link.icon}</span>
+                <span className="block p-3">{link.icon}</span>
               ) : (
-                <a href={link.url} className="block p-2">
+                <a href={link.url} className="block p-3">
                   {link.icon}
                 </a>
               )}
