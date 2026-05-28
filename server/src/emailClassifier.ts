@@ -341,10 +341,12 @@ export const DEFAULT_URGENCY: Record<string, number> = {
  * Rule-based fallback classifier — no external dependencies, sub-millisecond.
  * Used when the ML service is unavailable or hasn't been trained yet.
  */
-export function classifyEmailRules(subject: string, snippet: string, sender: string): string {
+export function classifyEmailRules(subject: string, snippet: string, sender: string): string[] {
+  const categories = [];
+
   // 0. Named sender rules — highest-priority overrides (checked before all domain logic)
   for (const rule of SENDER_RULES) {
-    if (matchesSenderRule(sender, subject, snippet, rule)) return rule.category;
+    if (matchesSenderRule(sender, subject, snippet, rule)) categories.push(rule.category);
   }
 
   const { localPart, domain } = parseSender(sender);
@@ -353,101 +355,103 @@ export function classifyEmailRules(subject: string, snippet: string, sender: str
 
   // 1. RECRUITER — ATS platforms or subject keywords
   if (domainIs(domain, ...RECRUITER_DOMAINS) || RE_RECRUITER_SUBJ.test(subject)) {
-    return 'RECRUITER';
+    categories.push('RECRUITER');
   }
 
   // 2. APPOINTMENT_REMINDER — scheduling platforms or clear appointment language
   if (domainIs(domain, ...APPOINTMENT_DOMAINS) || RE_APPOINTMENT_SUBJ.test(subject)) {
-    return 'APPOINTMENT_REMINDER';
+    categories.push('APPOINTMENT_REMINDER');
   }
 
   // 3. EVENT_TICKET — ticketing platforms or ticket-confirmation language
   if (domainIs(domain, ...EVENT_TICKET_DOMAINS) || RE_EVENT_TICKET_SUBJ.test(subject)) {
-    return 'EVENT_TICKET';
+    categories.push('EVENT_TICKET');
   }
 
   // 4. FOOD_ORDER — restaurant order platforms or food pickup confirmation
   if (domainIs(domain, ...FOOD_ORDER_DOMAINS) || RE_FOOD_ORDER_SUBJ.test(subject)) {
-    return 'FOOD_ORDER';
+    categories.push('FOOD_ORDER');
   }
 
   // 5. ORDER_SHIPPING — e-commerce / shipping platforms or order-status language
   if (domainIs(domain, ...ORDER_DOMAINS) || RE_ORDER_SUBJ.test(subject)) {
-    return 'ORDER_SHIPPING';
+    categories.push('ORDER_SHIPPING');
   }
 
   // 4. TRAVEL_BOOKING — airline / accommodation domains or travel language
   if (domainIs(domain, ...TRAVEL_DOMAINS) || RE_TRAVEL_SUBJ.test(subject)) {
-    return 'TRAVEL_BOOKING';
+    categories.push('TRAVEL_BOOKING');
   }
 
   // 5. BANKING_ACCOUNT — bank / fintech domains or account-activity language
   if (domainIs(domain, ...BANKING_DOMAINS) || RE_BANKING_SUBJ.test(subject)) {
-    return 'BANKING_ACCOUNT';
+    categories.push('BANKING_ACCOUNT');
   }
 
   // 6. FINANCE_BILL — invoices / bills due (checked after banking so bank receipts
   //    don't accidentally land here)
   if (domainIs(domain, ...FINANCE_DOMAINS) || RE_FINANCE_SUBJ.test(subject)) {
-    return 'FINANCE_BILL';
+    categories.push('FINANCE_BILL');
   }
 
   // 7. DEVELOPER_SERVICES — cloud platform and developer tool notices
   if (domainIs(domain, ...DEVELOPER_DOMAINS) || RE_DEV_SUBJ.test(subject)) {
-    return 'DEVELOPER_SERVICES';
+    categories.push('DEVELOPER_SERVICES');
   }
 
   // 8. SYSTEM_ALERT — devops / hosting domains or security / CI keywords
   if (domainIs(domain, ...SYSTEM_DOMAINS) || RE_SYSTEM_SUBJ.test(subject)) {
-    return 'SYSTEM_ALERT';
+    categories.push('SYSTEM_ALERT');
   }
 
   // 8. GAMING — gaming platform domains or free-game language
   if (domainIs(domain, ...GAMING_DOMAINS) || RE_GAMING_SUBJ.test(subject)) {
-    return 'GAMING';
+    categories.push('GAMING');
   }
 
   // 9. CREATOR_CONTENT — creator / patron platforms
   if (domainIs(domain, ...CREATOR_DOMAINS)) {
-    return 'CREATOR_CONTENT';
+    categories.push('CREATOR_CONTENT');
   }
 
   // 10. POLITICAL — campaign / election domains or electoral keywords
   if (domainIs(domain, ...POLITICAL_DOMAINS) || RE_POLITICAL_SUBJ.test(subject)) {
-    return 'POLITICAL';
+    categories.push('POLITICAL');
   }
 
   // 11. NONPROFIT_ADVOCACY — known nonprofit / donation platforms or fundraising language
   if (domainIs(domain, ...NONPROFIT_DOMAINS) || RE_NONPROFIT_SUBJ.test(subject)) {
-    return 'NONPROFIT_ADVOCACY';
+    categories.push('NONPROFIT_ADVOCACY');
   }
 
   // 12. COMMUNITY_LOCAL — local orgs, CSA farms, community venues
   if (domainIs(domain, ...COMMUNITY_DOMAINS)) {
-    return 'COMMUNITY_LOCAL';
+    categories.push('COMMUNITY_LOCAL');
   }
 
   // 13. PERSONAL — from a personal email provider with no bulk signals
   if (!isAutomated && !hasBulkFooter && PERSONAL_DOMAINS.has(domain)) {
-    return 'PERSONAL';
+    categories.push('PERSONAL');
   }
 
   // 14. NEWSLETTER — editorial digest language or newsletter-specific platforms
   if (RE_NEWSLETTER_SUBJ.test(subject) || domainIs(domain, ...NEWSLETTER_DOMAINS)) {
-    return 'NEWSLETTER';
+    categories.push('NEWSLETTER');
   }
 
   // 15. SUBSCRIPTION_SERVICE — ISP / utility service management
   if (domainIs(domain, ...SUBSCRIPTION_DOMAINS) || RE_SUBSCRIPTION_SUBJ.test(subject)) {
-    return 'SUBSCRIPTION_SERVICE';
+    categories.push('SUBSCRIPTION_SERVICE');
   }
 
   // 16. PROMO_MARKETING — automated sender, bulk footer, or promotional language
   if (isAutomated || hasBulkFooter || RE_PROMO_SUBJ.test(subject)) {
-    return 'PROMO_MARKETING';
+    categories.push('PROMO_MARKETING');
   }
 
-  return 'UNKNOWN';
+  categories.push('UNKNOWN');
+
+  return categories;
 }
 
 /**
@@ -489,6 +493,8 @@ export async function classifyEmail(
     // Service unavailable — fall through to rule-based fallback.
   }
 
-  const category = classifyEmailRules(subject, snippet, sender);
+  const categories = classifyEmailRules(subject, snippet, sender);
+  const category = categories[0];
+
   return { category, urgency: DEFAULT_URGENCY[category] ?? 3, confidence };
 }
