@@ -1,7 +1,6 @@
 import { Suspense, lazy } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-const AppPage = lazy(async () => ({ default: (await import('pages/AppPage')).AppPage }));
 const CategorizePage = lazy(async () => ({ default: (await import('pages/CategorizePage')).CategorizePage }));
 const ComponentPage = lazy(async () => ({ default: (await import('pages/ComponentPage')).ComponentPage }));
 
@@ -10,9 +9,8 @@ export function Router() {
     <BrowserRouter>
       <Suspense fallback={<span>Loading...</span>}>
         <Routes>
-          <Route path="/categorize" element={<CategorizePage />} />
           <Route path="/ui" element={<ComponentPage />} />
-          <Route path="*" element={<AppPage />} />
+          <Route path="*" element={<CategorizePage />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
