@@ -1,5 +1,6 @@
 // Rule-based email classifier — no external dependencies, sub-millisecond per
 // email. Patterns are checked in priority order; first match wins.
+import { defaultUrgency } from './categories.ts';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -308,36 +309,6 @@ const CLASSIFIER_URL = process.env.CLASSIFIER_URL ?? 'http://localhost:7002';
 const CLASSIFIER_MIN_CONFIDENCE = parseFloat(process.env.CLASSIFIER_MIN_CONFIDENCE ?? '0.40');
 
 /**
- * Default urgency level per category.
- * 1 = read this now  2 = read soon
- * 3 = get to it this week  4 = low priority
- * 5 = maybe read someday
- */
-export const DEFAULT_URGENCY: Record<string, number> = {
-  RECRUITER: 3,
-  APPOINTMENT_REMINDER: 1,
-  EVENT_TICKET: 2,
-  FOOD_ORDER: 1,
-  ORDER_SHIPPING: 3,
-  TRAVEL_BOOKING: 2,
-  BANKING_ACCOUNT: 1,
-  FINANCE_BILL: 2,
-  HEALTHCARE_MEDICAL: 2,
-  DEVELOPER_SERVICES: 3,
-  SYSTEM_ALERT: 2,
-  GAMING: 4,
-  CREATOR_CONTENT: 4,
-  POLITICAL: 5,
-  NONPROFIT_ADVOCACY: 4,
-  COMMUNITY_LOCAL: 3,
-  PERSONAL: 1,
-  NEWSLETTER: 5,
-  SUBSCRIPTION_SERVICE: 4,
-  PROMO_MARKETING: 5,
-  UNKNOWN: 3,
-};
-
-/**
  * Rule-based fallback classifier — no external dependencies, sub-millisecond.
  * Used when the ML service is unavailable or hasn't been trained yet.
  */
@@ -519,7 +490,7 @@ export async function classifyEmail(
   let primaryCategory = ruleCategories[0];
   let confidence = -1;
   let mlCandidates: MlCandidate[] = [];
-  let earliestUrgency = DEFAULT_URGENCY[primaryCategory] ?? 3;
+  let earliestUrgency = defaultUrgency[primaryCategory] ?? 3;
 
   try {
     const res = await fetch(`${CLASSIFIER_URL}/classify`, {
@@ -546,7 +517,7 @@ export async function classifyEmail(
       const mlUrgency = typeof data?.urgency === 'number' ? data.urgency : undefined;
       if (bestMl && data?.ready && bestMl.confidence >= CLASSIFIER_MIN_CONFIDENCE) {
         primaryCategory = bestMl.category;
-        earliestUrgency = mlUrgency ?? DEFAULT_URGENCY[primaryCategory] ?? 3;
+        earliestUrgency = mlUrgency ?? defaultUrgency[primaryCategory] ?? 3;
       }
     }
   } catch {

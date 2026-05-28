@@ -1,6 +1,7 @@
 export interface Category {
   key: string;
   description: string;
+  urgency: number;
 }
 
 export interface Email {
