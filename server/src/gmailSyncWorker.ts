@@ -1,7 +1,7 @@
 import { google } from 'googleapis';
 
 import { db } from './db.ts';
-import type { Email } from './db.ts';
+import type { Email } from './dbTypes.ts';
 import { classifyEmail } from './emailClassifier.ts';
 import { getAuthClient } from './gmailAuth.ts';
 
@@ -102,6 +102,7 @@ async function syncEmails(): Promise<void> {
           userOverrideCategory: null,
           isArchived: false,
           processedAt: new Date().toISOString(),
+          validated: false,
         };
 
         db.data.emails.push(email);

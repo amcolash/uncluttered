@@ -3,31 +3,11 @@ import { fileURLToPath } from 'node:url';
 
 import { JSONFilePreset } from 'lowdb/node';
 
+import type { DbSchema } from './dbTypes.ts';
+import { runMigrations } from './migrations.ts';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DB_PATH = path.join(__dirname, '../data/db.json');
-
-export interface Category {
-  key: string;
-  description: string;
-}
-
-export interface Email {
-  id: string;
-  threadId: string;
-  sender: string;
-  subject: string;
-  snippet: string;
-  aiCategory: string;
-  userOverrideCategory: string | null;
-  isArchived: boolean;
-  processedAt: string;
-  validated: boolean | null;
-}
-
-interface DbSchema {
-  categories: Category[];
-  emails: Email[];
-}
 
 const defaultData: DbSchema = {
   categories: [
@@ -85,26 +65,4 @@ const defaultData: DbSchema = {
 };
 
 export const db = await JSONFilePreset<DbSchema>(DB_PATH, defaultData);
-
-// Forward migration: add any categories present in the defaults but missing
-// from an existing db.json (e.g. when new categories are introduced).
-let migrated = false;
-for (const cat of defaultData.categories) {
-  if (!db.data.categories.some((c) => c.key === cat.key)) {
-    db.data.categories.push(cat);
-    migrated = true;
-    console.log(`[DB] Added new category: ${cat.key}`);
-  }
-}
-
-if (migrated) await db.write();
-
-// Forward migration: set validated: null on emails that predate this field.
-let emailsMigrated = false;
-for (const email of db.data.emails) {
-  if (email.validated === undefined) {
-    email.validated = null;
-    emailsMigrated = true;
-  }
-}
-if (emailsMigrated) await db.write();
+await runMigrations(db, defaultData);

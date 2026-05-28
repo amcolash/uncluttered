@@ -126,7 +126,7 @@ app.post('/api/emails/:id/override', async (req, res) => {
  * Increments the retrain counter when a real category is assigned.
  */
 app.post('/api/emails/:id/categorize', async (req, res) => {
-  const { category, validated } = req.body as { category?: string | null; validated?: boolean | null };
+  const { category, validated } = req.body as { category?: string | null; validated: boolean };
 
   if (category !== null && category !== undefined) {
     const validKeys = db.data.categories.map((c) => c.key);
@@ -143,7 +143,7 @@ app.post('/api/emails/:id/categorize', async (req, res) => {
   }
 
   if (category !== undefined) email.userOverrideCategory = category;
-  if (validated !== undefined) email.validated = validated ?? null;
+  email.validated = validated || false;
   await db.write();
 
   if (category) {
@@ -208,10 +208,10 @@ app.post('/api/classify', async (req, res) => {
  * validated: null  = undo (reset to unreviewed)
  */
 app.post('/api/emails/:id/validate', async (req, res) => {
-  const { validated } = req.body as { validated?: boolean | null };
+  const { validated } = req.body as { validated: boolean };
 
-  if (validated !== null && typeof validated !== 'boolean') {
-    res.status(400).json({ error: '"validated" must be a boolean or null' });
+  if (typeof validated !== 'boolean') {
+    res.status(400).json({ error: '"validated" must be a boolean=' });
     return;
   }
 
