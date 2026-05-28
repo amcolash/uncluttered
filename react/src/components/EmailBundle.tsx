@@ -6,7 +6,7 @@ export function EmailBundle({ emails }: { emails: Email[] }) {
       {emails.map((email) => (
         <div key={email.id} className="break-inside-avoid rounded-lg bg-slate-700 p-4">
           <p className="line-clamp-1 text-sm font-semibold break-all text-white">{email.sender}</p>
-          <p className="line-clamp-1 text-sm break-all text-slate-400">{email.subject}</p>
+          <p className="line-clamp-2 h-10 text-sm break-all text-slate-400">{email.subject}</p>
         </div>
       ))}
     </div>

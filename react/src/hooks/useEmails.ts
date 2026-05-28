@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import { SIMILARITY_THRESHOLD, levenshteinSimilarity } from 'utilities/levenshtein';
-import { API } from 'utilities/util';
+import { API, formatCategory } from 'utilities/util';
 
 export interface Category {
   key: string;
   description: string;
+  label: string;
+  urgency: number;
 }
 
 export interface Email {
@@ -33,7 +35,7 @@ async function postCategorize(id: string, category: string | null, validated: bo
   });
 }
 
-export function useEmails() {
+export function useEmails(filterValidated: boolean) {
   const [emails, setEmails] = useState<Email[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
   const [history, setHistory] = useState<HistoryEntry[]>([]);
@@ -41,12 +43,16 @@ export function useEmails() {
   useEffect(() => {
     fetch(`${API}/api/emails`)
       .then((r) => r.json())
-      .then((all: Email[]) => setEmails(all.filter((e) => e.validated !== true)));
+      .then((all: Email[]) => setEmails(all.filter((e) => !filterValidated || e.validated !== true)));
 
     fetch(`${API}/api/categories`)
       .then((r) => r.json())
-      .then(setCategories);
-  }, []);
+      .then((categories) =>
+        setCategories(
+          categories.map((c: { key: string; description: string }) => ({ ...c, label: formatCategory(c.key) }))
+        )
+      );
+  }, [filterValidated]);
 
   async function confirm(id: string) {
     const email = emails.find((e) => e.id === id);

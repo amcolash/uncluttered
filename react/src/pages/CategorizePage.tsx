@@ -10,7 +10,7 @@ import { useEmails } from 'hooks/useEmails';
 import { useSuggestions } from 'hooks/useSuggestions';
 
 export function CategorizePage() {
-  const { emails, categories, confirm, defer, categorize, undo, canUndo } = useEmails();
+  const { emails, categories, confirm, defer, categorize, undo, canUndo } = useEmails(true);
   const current = emails[0];
   const suggestions = useSuggestions(current);
 
@@ -26,7 +26,11 @@ export function CategorizePage() {
   return (
     <div className="flex justify-center gap-8">
       <Menu>
-        <CategorySidebar categories={categories} current={current} categorize={categorize} />
+        <CategorySidebar
+          categories={categories}
+          enabled={current !== undefined}
+          onClick={(category) => current && categorize(current.id, category)}
+        />
       </Menu>
 
       <Nav />
