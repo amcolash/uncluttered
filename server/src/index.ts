@@ -158,6 +158,37 @@ app.post('/api/emails/:id/categorize', async (req, res) => {
   res.json({ success: true });
 });
 
+// Run classification on all non-validated emails. Write to db
+app.post('/api/emails/reclassify', async (_req, res) => {
+  const targets = db.data.emails.filter((e) => !e.validated);
+
+  const results = await Promise.all(
+    targets.map(async (email) => {
+      const { category, confidence } = await classifyEmail(email.subject, email.snippet, email.sender);
+      return {
+        id: email.id,
+        sender: email.sender,
+        subject: email.subject,
+        snippet: email.snippet,
+        current: { category: email.aiCategory },
+        proposed: { category, confidence },
+        changed: category !== email.aiCategory,
+      };
+    })
+  );
+
+  results.forEach((r) => {
+    const email = db.data.emails.find((e) => e.id === r.id);
+    if (email && r.changed) {
+      email.aiCategory = r.proposed.category;
+    }
+  });
+  await db.write();
+
+  const changed = results.filter((r) => r.changed).length;
+  res.json({ total: results.length, changed, results: results.filter((r) => r.changed) });
+});
+
 /**
  * Dry-run reclassification — runs the classifier on every non-overridden email
  * and returns a diff of current vs proposed results. Nothing is written to db.
