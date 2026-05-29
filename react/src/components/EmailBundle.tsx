@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { FaArchive, FaQuestion, FaTrash } from 'react-icons/fa';
+import { FaArchive, FaQuestion, FaStar, FaTrash } from 'react-icons/fa';
+import { twMerge } from 'tailwind-merge';
 
 import type { Email, EmailActions } from 'hooks/useEmails';
 
@@ -25,16 +26,34 @@ function EmailCard({ email, actions }: { email: Email; actions: EmailActions }) 
     <>
       <div className="group relative">
         <Button
-          className="grid h-28 w-full cursor-auto break-inside-avoid justify-start rounded-lg bg-slate-700 p-4 text-left"
+          className="grid h-28 w-full cursor-auto break-inside-avoid justify-start rounded-lg bg-slate-700 p-4 text-left transition-all group-hover:brightness-50"
           onClick={() => setModal(true)}
           variant="ghost"
         >
-          <p className="line-clamp-1 text-sm font-semibold break-all text-white">{email.sender}</p>
-          <p className="mb-2 text-xs text-slate-400">{new Date(email.date).toLocaleString()}</p>
-          <p className="line-clamp-2 text-sm break-all text-slate-400">{email.subject}</p>
+          <p className="group-hover:blur-px line-clamp-1 text-sm font-semibold break-all text-white">{email.sender}</p>
+          <p className="group-hover:blur-px mb-2 text-xs text-slate-400">{new Date(email.date).toLocaleString()}</p>
+          <p className="group-hover:blur-px line-clamp-2 text-sm break-all text-slate-400">{email.subject}</p>
         </Button>
 
         {/* TODO: Figure out mobile - likely swipes */}
+
+        <Button
+          variant="primary"
+          size="sm"
+          className="absolute top-2 right-2 size-6 p-1 opacity-0 transition-opacity group-hover:opacity-100"
+          onClick={() => actions.markImportant(email.id, !email.important)}
+        >
+          <FaStar className={twMerge(iconClasses, email.important && 'text-yellow-400')} />
+        </Button>
+
+        {email.important && (
+          <FaStar
+            className={twMerge(
+              iconClasses,
+              'pointer-events-none absolute top-3.5 right-3.5 size-3 text-yellow-400 opacity-100'
+            )}
+          />
+        )}
 
         <div className="pointer-events-none absolute right-2 bottom-2 left-2 flex gap-2 opacity-0 transition-opacity group-hover:opacity-100">
           <Button
@@ -48,27 +67,11 @@ function EmailCard({ email, actions }: { email: Email; actions: EmailActions }) 
 
           <div className="flex-1"></div>
 
-          <Button
-            variant="success"
-            size="sm"
-            className="size-6 p-1"
-            onClick={() => {
-              actions.archive(email.id);
-              setModal(false);
-            }}
-          >
+          <Button variant="success" size="sm" className="size-6 p-1" onClick={() => actions.archive(email.id)}>
             <FaArchive className={iconClasses} />
           </Button>
 
-          <Button
-            variant="danger"
-            size="sm"
-            className="size-6 p-1"
-            onClick={() => {
-              actions.trash(email.id);
-              setModal(false);
-            }}
-          >
+          <Button variant="danger" size="sm" className="size-6 p-1" onClick={() => actions.trash(email.id)}>
             <FaTrash className={iconClasses} />
           </Button>
         </div>

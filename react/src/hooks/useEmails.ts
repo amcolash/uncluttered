@@ -20,7 +20,8 @@ export interface Email {
   isArchived: boolean;
   processedAt: string;
   date: string;
-  validated: boolean | null;
+  validated: boolean;
+  important: boolean;
 }
 
 type HistoryEntry = {
@@ -35,6 +36,7 @@ export type EmailActions = {
   undo: () => Promise<void>;
   archive: (id: string) => Promise<void>;
   trash: (id: string) => Promise<void>;
+  markImportant: (id: string, important: boolean) => Promise<void>;
   batchArchive: (ids: string[]) => Promise<void>;
   batchTrash: (ids: string[]) => Promise<void>;
 };
@@ -164,6 +166,16 @@ export function useEmails(filterValidated: boolean): {
     setEmails((prev) => prev.filter((e) => e.id !== id));
   }
 
+  async function markImportant(id: string, important: boolean) {
+    await fetch(`${API}/api/emails/${id}/important`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ important }),
+    });
+
+    setEmails((prev) => prev.map((e) => (e.id === id ? { ...e, important } : e)));
+  }
+
   async function batchArchive(ids: string[]) {
     setEmails((prev) => prev.filter((e) => !ids.includes(e.id)));
 
@@ -207,6 +219,7 @@ export function useEmails(filterValidated: boolean): {
       undo,
       archive,
       trash,
+      markImportant,
       batchArchive,
       batchTrash,
     },

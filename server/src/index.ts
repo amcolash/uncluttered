@@ -218,6 +218,18 @@ app.post('/api/emails/batch/delete', async (req, res) => {
   }
 });
 
+app.post('/api/emails/:id/important', async (req, res) => {
+  const email = db.data.emails.find((e) => e.id === req.params.id);
+  if (!email) {
+    res.status(404).json({ error: 'Email not found' });
+    return;
+  }
+
+  email.important = true;
+  await db.write();
+  res.json({ success: true });
+});
+
 // ── Category endpoints ───────────────────────────────────────────────────────
 
 /** Returns the current list of allowed categories. */

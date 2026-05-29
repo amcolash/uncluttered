@@ -58,7 +58,7 @@ export function InboxPage() {
             size="lg"
             className="w-full"
             onClick={() => {
-              actions.batchArchive(visibleEmails.map((email) => email.id));
+              actions.batchArchive(visibleEmails.filter((e) => !e.important).map((email) => email.id));
             }}
           >
             <FaArchive className="text-slate-300 drop-shadow-lg drop-shadow-slate-800/50" />
@@ -69,7 +69,7 @@ export function InboxPage() {
             size="lg"
             className="w-full"
             onClick={() => {
-              actions.batchTrash(visibleEmails.map((email) => email.id));
+              actions.batchTrash(visibleEmails.filter((e) => !e.important).map((email) => email.id));
             }}
           >
             <FaTrash className="text-slate-300 drop-shadow-lg drop-shadow-slate-800/50" />

@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+@theme {
+  --blur-px: 1px;
+}
+
 @layer base {
   html {
     @apply scrollbar-thin scrollbar-thumb-slate-500 scrollbar-track-slate-700 bg-slate-800;

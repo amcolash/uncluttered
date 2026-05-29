@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { FaArchive, FaExternalLinkAlt, FaTimes, FaTrash } from 'react-icons/fa';
+import { FaArchive, FaExternalLinkAlt, FaQuestion, FaStar, FaTimes, FaTrash } from 'react-icons/fa';
+import { twMerge } from 'tailwind-merge';
 import { API } from 'utilities/util';
 
 import type { Email, EmailActions } from 'hooks/useEmails';
@@ -23,8 +24,16 @@ export function EmailModal({ email, onClose, actions }: { email: Email; onClose:
   useEffect(() => {
     document.body.style.overflow = 'hidden';
 
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+
     return () => {
       document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
     };
   });
 
@@ -39,9 +48,17 @@ export function EmailModal({ email, onClose, actions }: { email: Email; onClose:
         <div className="flex flex-wrap-reverse justify-end gap-4">
           <p className="line-clamp-1 text-lg font-semibold break-all text-white">{email.sender}</p>
           <div className="flex-1"></div>
-          <div className="flex gap-2">
+          <div className="flex gap-3">
             {actions && (
               <>
+                <Button variant="primary" onClick={() => actions.markImportant(email.id, !email.important)}>
+                  <FaStar className={twMerge(iconClasses, email.important && 'text-yellow-400')} />
+                </Button>
+
+                <Button variant="warning" onClick={() => actions.categorize(email.id, 'UNKNOWN')}>
+                  <FaQuestion className={iconClasses} />
+                </Button>
+
                 <Button variant="success" onClick={() => actions.archive(email.id)}>
                   <FaArchive className={iconClasses} />
                 </Button>
@@ -52,12 +69,13 @@ export function EmailModal({ email, onClose, actions }: { email: Email; onClose:
               </>
             )}
 
+            <div className="m-2"></div>
+
             <a href={`https://mail.google.com/mail/u/0/#inbox/${email.id}`} target="_blank" rel="noopener noreferrer">
               <Button variant="secondary" role="none">
                 <FaExternalLinkAlt />
               </Button>
             </a>
-
             <Button variant="secondary" onClick={onClose}>
               <FaTimes />
             </Button>
