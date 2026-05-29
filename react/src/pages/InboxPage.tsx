@@ -12,14 +12,14 @@ import { useEmails } from 'hooks/useEmails';
 export function InboxPage() {
   const [filter, setFilter] = useState<string>();
 
-  const { categories: rawCategories, emails } = useEmails(false);
+  const { categories: rawCategories, emails, categorize } = useEmails(false);
   const visibleEmails = emails
-    .filter((email) => !filter || email.userOverrideCategory === filter || email.aiCategory === filter)
+    .filter((email) => !filter || (email.userOverrideCategory || email.aiCategory) === filter)
     .slice(0, 20);
 
   const categoryCount = emails.reduce(
     (acc, email) => {
-      const cat = email.userOverrideCategory || email.aiCategory || 'uncategorized';
+      const cat = email.userOverrideCategory || email.aiCategory || 'UNKNOWN';
       acc[cat] = (acc[cat] || 0) + 1;
       return acc;
     },
@@ -74,7 +74,7 @@ export function InboxPage() {
         </div>
 
         {emails.length > 0 ? (
-          <EmailBundle emails={visibleEmails} />
+          <EmailBundle emails={visibleEmails} skip={(id) => categorize(id, 'UNKNOWN')} />
         ) : (
           <p className="text-center text-lg text-white">
             <span>All done — no more emails to review.</span>
