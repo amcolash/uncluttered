@@ -16,4 +16,6 @@ export async function runMigrations(db: Low<DbSchema>, defaultData: DbSchema): P
     }
   }
   if (categoriesMigrated) await db.write();
+
+  console.log('[DB] Migrations complete.');
 }

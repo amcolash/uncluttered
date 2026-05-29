@@ -217,6 +217,7 @@ async function syncEmails(): Promise<void> {
           date: new Date(parseInt(detail.data.internalDate ?? getHeader('Date') ?? '0')).toISOString(),
           processedAt: new Date().toISOString(),
           validated: false,
+          important: false,
         };
 
         db.data.emails.push(email);

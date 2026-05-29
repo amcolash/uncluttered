@@ -84,6 +84,8 @@ async function batchProcessEmails(
   operation: (gmail: gmail_v1.Gmail, email: Email) => Promise<void>,
   operationName: string
 ) {
+  console.log(`[Batch ${operationName}] Processing ${ids.length} emails...`);
+
   if (!Array.isArray(ids) || ids.length === 0) {
     throw new Error('ids must be a non-empty array');
   }

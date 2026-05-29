@@ -16,6 +16,7 @@ export interface Email {
   date: string;
   processedAt: string;
   validated: boolean;
+  important: boolean;
 }
 
 export interface DbSchema {
