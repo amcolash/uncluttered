@@ -17,7 +17,8 @@ export function InboxPage() {
   const { categories: rawCategories, emails, actions } = useEmails(false);
   const visibleEmails = emails
     .filter((email) => !filter || (email.userOverrideCategory || email.aiCategory) === filter)
-    .slice(0, breakpoint === 'sm' ? 10 : breakpoint === 'md' || breakpoint === 'lg' ? 20 : 21);
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, breakpoint === 'sm' ? 10 : breakpoint === 'md' || breakpoint === 'lg' ? 14 : 15);
 
   const categoryCount = emails.reduce(
     (acc, email) => {
@@ -57,10 +58,10 @@ export function InboxPage() {
             size="lg"
             className="w-full"
             onClick={() => {
-              visibleEmails.forEach((email) => actions.archive(email.id));
+              actions.batchArchive(visibleEmails.map((email) => email.id));
             }}
           >
-            <FaArchive className="text-slate-300 shadow-md shadow-slate-800/30" />
+            <FaArchive className="text-slate-300 drop-shadow-lg drop-shadow-slate-800/50" />
           </Button>
 
           <Button
@@ -68,10 +69,10 @@ export function InboxPage() {
             size="lg"
             className="w-full"
             onClick={() => {
-              visibleEmails.forEach((email) => actions.trash(email.id));
+              actions.batchTrash(visibleEmails.map((email) => email.id));
             }}
           >
-            <FaTrash className="text-slate-300 shadow-md shadow-slate-800/30" />
+            <FaTrash className="text-slate-300 drop-shadow-lg drop-shadow-slate-800/50" />
           </Button>
         </div>
 

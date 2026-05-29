@@ -44,7 +44,9 @@ async function triggerRetrain() {
 
 async function archiveEmail(gmail: gmail_v1.Gmail, email: Email) {
   try {
-    gmail.users.messages.modify({
+    console.log(`[Archive] ${email.subject} (${email.id})`);
+
+    await gmail.users.messages.modify({
       userId: 'me',
       id: email.id,
       requestBody: {
@@ -62,6 +64,8 @@ async function archiveEmail(gmail: gmail_v1.Gmail, email: Email) {
 
 async function deleteEmail(gmail: gmail_v1.Gmail, email: Email) {
   try {
+    console.log(`[Delete] ${email.subject} (${email.id})`);
+
     await gmail.users.messages.trash({
       userId: 'me',
       id: email.id,
@@ -73,6 +77,37 @@ async function deleteEmail(gmail: gmail_v1.Gmail, email: Email) {
     console.error(`[Delete] Failed to delete email ${email.id}:`, err);
     return;
   }
+}
+
+async function batchProcessEmails(
+  ids: string[],
+  operation: (gmail: gmail_v1.Gmail, email: Email) => Promise<void>,
+  operationName: string
+) {
+  if (!Array.isArray(ids) || ids.length === 0) {
+    throw new Error('ids must be a non-empty array');
+  }
+
+  const gmail = await getGmailApi();
+  const results = { success: [] as string[], failed: [] as { id: string; error: string }[] };
+
+  for (const id of ids) {
+    const email = db.data.emails.find((e) => e.id === id);
+    if (!email) {
+      results.failed.push({ id, error: 'Email not found' });
+      continue;
+    }
+
+    try {
+      console.log(`[${operationName}] ${email.subject} (${email.id})`);
+      await operation(gmail, email);
+      results.success.push(id);
+    } catch (err) {
+      results.failed.push({ id, error: String(err) });
+    }
+  }
+
+  return results;
 }
 
 // ── Email endpoints ─────────────────────────────────────────────────────────
@@ -94,16 +129,20 @@ app.get('/api/emails/:id', async (req, res) => {
 
     const parts = data.data.payload?.parts || [];
 
-    const text = parts
-      .filter((p) => p.mimeType === 'text/plain' && p.body?.data)
-      .map((p) => Buffer.from(p.body!.data!, 'base64').toString('utf-8'))
-      .join('\n');
-    const html = parts
+    let html = parts
       .filter((p) => p.mimeType === 'text/html' && p.body?.data)
       .map((p) => Buffer.from(p.body!.data!, 'base64').toString('utf-8'))
       .join('\n');
 
-    res.json({ text, html });
+    if (html.length === 0) {
+      html = data.data.payload?.body?.data ? Buffer.from(data.data.payload.body.data, 'base64').toString('utf-8') : '';
+    }
+
+    if (html.length === 0) {
+      console.warn(`[Get Email] Warning: email ${req.params.id} has no HTML content`);
+    }
+
+    res.json({ html, raw: data.data });
   } catch (err) {
     console.error(`[Get Email] Failed to fetch email ${req.params.id}:`, err);
     res.status(503).json({ error: 'Failed to fetch email details' });
@@ -115,35 +154,67 @@ app.get('/api/emails/:id', async (req, res) => {
  * "Archiving" is simply removing the 'INBOX' label from the message.
  */
 app.post('/api/emails/:id/archive', async (req, res) => {
-  const email = db.data.emails.find((e) => e.id === req.params.id);
-
-  if (!email) {
-    res.status(404).json({ error: 'Email not found' });
-    return;
+  try {
+    const results = await batchProcessEmails([req.params.id], archiveEmail, 'Archive');
+    if (results.failed.length > 0) {
+      res.status(404).json({ error: results.failed[0].error });
+      return;
+    }
+    res.json({ success: true });
+  } catch (err) {
+    res.status(500).json({ error: String(err) });
   }
-
-  console.log(`[Archive] ${email.subject} (${email.id})`);
-
-  const gmail = await getGmailApi();
-  await archiveEmail(gmail, email);
-
-  res.json({ success: true });
 });
 
 app.delete('/api/emails/:id', async (req, res) => {
-  const email = db.data.emails.find((e) => e.id === req.params.id);
+  try {
+    const results = await batchProcessEmails([req.params.id], deleteEmail, 'Delete');
+    if (results.failed.length > 0) {
+      res.status(404).json({ error: results.failed[0].error });
+      return;
+    }
+    res.json({ success: true });
+  } catch (err) {
+    res.status(500).json({ error: String(err) });
+  }
+});
 
-  if (!email) {
-    res.status(404).json({ error: 'Email not found' });
+/**
+ * Batch archive multiple emails - accepts an array of email IDs
+ */
+app.post('/api/emails/batch/archive', async (req, res) => {
+  const { ids } = req.body as { ids?: string[] };
+
+  if (!Array.isArray(ids) || ids.length === 0) {
+    res.status(400).json({ error: 'ids must be a non-empty array' });
     return;
   }
 
-  console.log(`[Delete] ${email.subject} (${email.id})`);
+  try {
+    const results = await batchProcessEmails(ids, archiveEmail, 'Archive');
+    res.json(results);
+  } catch (err) {
+    res.status(500).json({ error: String(err) });
+  }
+});
 
-  const gmail = await getGmailApi();
-  await deleteEmail(gmail, email);
+/**
+ * Batch delete multiple emails - accepts an array of email IDs
+ */
+app.post('/api/emails/batch/delete', async (req, res) => {
+  const { ids } = req.body as { ids?: string[] };
 
-  res.json({ success: true });
+  if (!Array.isArray(ids) || ids.length === 0) {
+    res.status(400).json({ error: 'ids must be a non-empty array' });
+    return;
+  }
+
+  try {
+    const results = await batchProcessEmails(ids, deleteEmail, 'Delete');
+    res.json(results);
+  } catch (err) {
+    res.status(500).json({ error: String(err) });
+  }
 });
 
 // ── Category endpoints ───────────────────────────────────────────────────────

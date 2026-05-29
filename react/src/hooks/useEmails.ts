@@ -35,6 +35,8 @@ export type EmailActions = {
   undo: () => Promise<void>;
   archive: (id: string) => Promise<void>;
   trash: (id: string) => Promise<void>;
+  batchArchive: (ids: string[]) => Promise<void>;
+  batchTrash: (ids: string[]) => Promise<void>;
 };
 
 async function postCategorize(id: string, category: string | null, validated: boolean | null) {
@@ -155,6 +157,26 @@ export function useEmails(filterValidated: boolean): {
     setEmails((prev) => prev.filter((e) => e.id !== id));
   }
 
+  async function batchArchive(ids: string[]) {
+    await fetch('/api/emails/batch/archive', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ids }),
+    });
+
+    setEmails((prev) => prev.filter((e) => !ids.includes(e.id)));
+  }
+
+  async function batchTrash(ids: string[]) {
+    await fetch('/api/emails/batch/trash', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ids }),
+    });
+
+    setEmails((prev) => prev.filter((e) => !ids.includes(e.id)));
+  }
+
   return {
     emails,
     categories,
@@ -166,6 +188,8 @@ export function useEmails(filterValidated: boolean): {
       undo,
       archive,
       trash,
+      batchArchive,
+      batchTrash,
     },
   };
 }

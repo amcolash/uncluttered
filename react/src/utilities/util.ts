@@ -1,4 +1,5 @@
-export const API = 'http://localhost:7001';
+const PORT = 7001;
+export const API = `${window.location.origin.replace(`:${window.location.port}`, `:${PORT}`)}`;
 
 export function formatCategory(key: string) {
   return key

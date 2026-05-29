@@ -16,6 +16,8 @@ export function EmailBundle({ emails, actions }: { emails: Email[]; actions: Ema
   );
 }
 
+const iconClasses = 'pointer-events-auto text-slate-300 drop-shadow drop-shadow-slate-800/40';
+
 function EmailCard({ email, actions }: { email: Email; actions: EmailActions }) {
   const [modal, setModal] = useState(false);
 
@@ -23,8 +25,9 @@ function EmailCard({ email, actions }: { email: Email; actions: EmailActions }) 
     <>
       <div className="group relative">
         <Button
-          className="grid h-28 w-full break-inside-avoid justify-start rounded-lg bg-slate-700 p-4"
+          className="grid h-28 w-full cursor-auto break-inside-avoid justify-start rounded-lg bg-slate-700 p-4 text-left"
           onClick={() => setModal(true)}
+          variant="ghost"
         >
           <p className="line-clamp-1 text-sm font-semibold break-all text-white">{email.sender}</p>
           <p className="mb-2 text-xs text-slate-400">{new Date(email.date).toLocaleString()}</p>
@@ -40,22 +43,38 @@ function EmailCard({ email, actions }: { email: Email; actions: EmailActions }) 
             className="size-6 p-1"
             onClick={() => actions.categorize(email.id, 'UNKNOWN')}
           >
-            <FaQuestion className="pointer-events-auto text-slate-700" />
+            <FaQuestion className={iconClasses} />
           </Button>
 
           <div className="flex-1"></div>
 
-          <Button variant="success" size="sm" className="size-6 p-1" onClick={() => actions.archive(email.id)}>
-            <FaArchive className="pointer-events-auto text-slate-700" />
+          <Button
+            variant="success"
+            size="sm"
+            className="size-6 p-1"
+            onClick={() => {
+              actions.archive(email.id);
+              setModal(false);
+            }}
+          >
+            <FaArchive className={iconClasses} />
           </Button>
 
-          <Button variant="danger" size="sm" className="size-6 p-1" onClick={() => actions.trash(email.id)}>
-            <FaTrash className="pointer-events-auto text-slate-700" />
+          <Button
+            variant="danger"
+            size="sm"
+            className="size-6 p-1"
+            onClick={() => {
+              actions.trash(email.id);
+              setModal(false);
+            }}
+          >
+            <FaTrash className={iconClasses} />
           </Button>
         </div>
       </div>
 
-      {modal && <EmailModal email={email} onClose={() => setModal(false)} />}
+      {modal && <EmailModal email={email} actions={actions} onClose={() => setModal(false)} />}
     </>
   );
 }

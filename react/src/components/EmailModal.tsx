@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { FaExternalLinkAlt, FaLink, FaTimes } from 'react-icons/fa';
+import { FaArchive, FaExternalLinkAlt, FaTimes, FaTrash } from 'react-icons/fa';
 import { API } from 'utilities/util';
 
-import type { Email } from 'hooks/useEmails';
+import type { Email, EmailActions } from 'hooks/useEmails';
 
 import { Button } from './ui/Button';
 
-export function EmailModal({ email, onClose }: { email: Email; onClose: () => void }) {
+const iconClasses = 'pointer-events-auto text-slate-300 drop-shadow drop-shadow-slate-800/40';
+
+export function EmailModal({ email, onClose, actions }: { email: Email; onClose: () => void; actions?: EmailActions }) {
   const [data, setData] = useState<{ html: string }>({ html: '' });
 
   useEffect(() => {
@@ -33,27 +35,39 @@ export function EmailModal({ email, onClose }: { email: Email; onClose: () => vo
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="relative max-h-[80vh] w-full max-w-4xl overflow-y-auto rounded-lg bg-slate-800 p-6">
-        <p className="line-clamp-1 text-lg font-semibold break-all text-white">{email.sender}</p>
+      <div className="relative flex h-screen w-screen flex-col gap-1 overflow-y-auto bg-slate-800 p-6 sm:h-[80vh] sm:max-w-[min(90vw,56rem)] sm:rounded-lg">
+        <div className="flex flex-wrap-reverse justify-end gap-4">
+          <p className="line-clamp-1 text-lg font-semibold break-all text-white">{email.sender}</p>
+          <div className="flex-1"></div>
+          <div className="flex gap-2">
+            {actions && (
+              <>
+                <Button variant="success" onClick={() => actions.archive(email.id)}>
+                  <FaArchive className={iconClasses} />
+                </Button>
+
+                <Button variant="danger" onClick={() => actions.trash(email.id)}>
+                  <FaTrash className={iconClasses} />
+                </Button>
+              </>
+            )}
+
+            <a href={`https://mail.google.com/mail/u/0/#inbox/${email.id}`} target="_blank" rel="noopener noreferrer">
+              <Button variant="secondary" role="none">
+                <FaExternalLinkAlt />
+              </Button>
+            </a>
+
+            <Button variant="secondary" onClick={onClose}>
+              <FaTimes />
+            </Button>
+          </div>
+        </div>
+
         <p className="mb-2 text-slate-400">{new Date(email.date).toLocaleString()}</p>
         <p className="line-clamp-2 break-all text-slate-400">{email.subject}</p>
 
-        <div
-          className="mt-6 overflow-auto rounded-lg bg-slate-100 p-4"
-          dangerouslySetInnerHTML={{ __html: data.html }}
-        ></div>
-
-        <div className="absolute top-4 right-4 flex gap-2">
-          <a href={`https://mail.google.com/mail/u/0/#inbox/${email.id}`} target="_blank" rel="noopener noreferrer">
-            <Button variant="secondary" role="none">
-              <FaExternalLinkAlt />
-            </Button>
-          </a>
-
-          <Button variant="secondary" onClick={onClose}>
-            <FaTimes />
-          </Button>
-        </div>
+        <iframe className="mt-6 flex-1 overflow-auto rounded-lg bg-slate-100 p-4" srcDoc={data.html}></iframe>
       </div>
     </div>,
     document.body
