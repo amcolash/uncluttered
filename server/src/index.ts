@@ -313,6 +313,11 @@ app.post('/api/retrain', async (_req, res) => {
 
 startGmailSyncWorker();
 
+setTimeout(() => {
+  console.log('Re-training model on startup with existing data…');
+  triggerRetrain();
+}, 10_000);
+
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });

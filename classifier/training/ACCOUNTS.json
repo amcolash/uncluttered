@@ -1,0 +1,702 @@
+[
+  {
+    "id": "04b57c07ecc37de8",
+    "sender": "Discord Security <noreply@discordapp.com>",
+    "subject": "New login from London, UK",
+    "snippet": "Someone tried to sign into your Microsoft from New York, USA. If it wasn't you: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "22556f264de59b96",
+    "sender": "Airbnb Account <security@airbnb.com>",
+    "subject": "Reset your password",
+    "snippet": "Confirm this password change by clicking the link below or entering code 456789: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "d82a84e792ec7571",
+    "sender": "Google Cloud <security-noreply@google.com>",
+    "subject": "Phone number verification",
+    "snippet": "Multiple failed login attempts on your account. Secure it now: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "63744190580ce7f9",
+    "sender": "Okta <okta-noreply@okta.com>",
+    "subject": "Reset your password",
+    "snippet": "Someone tried to sign into your LinkedIn from New York, USA. If it wasn't you: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "b1d18739cff85cfd",
+    "sender": "Heroku Account <security@heroku.com>",
+    "subject": "Account setup step 3",
+    "snippet": "Confirm this password change by clicking the link below or entering code 456789: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "f5e1073b7d962e19",
+    "sender": "Microsoft Account <account-security-noreply@microsoft.com>",
+    "subject": "Account locked for security",
+    "snippet": "Your Slack account has been locked due to suspicious activity. Unlock: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "163f7c05b33c374f",
+    "sender": "Auth0 <noreply@auth0.com>",
+    "subject": "Your verification code is 456789",
+    "snippet": "Your backup phone number for Slack has been verified.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "90102bfbb3e69ba4",
+    "sender": "Auth0 <noreply@auth0.com>",
+    "subject": "Confirm your email address",
+    "snippet": "Enter this code to verify your email: 654321. It expires in 24 hours.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "6c0a40d86dd47c6e",
+    "sender": "Box Account <security@box.com>",
+    "subject": "Your verification code is 789012",
+    "snippet": "Multiple failed login attempts on your account. Secure it now: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "898458d22a68960c",
+    "sender": "PayPal Account <security@paypal.com>",
+    "subject": "Account setup step final",
+    "snippet": "Your account password was changed successfully. If you didn't make this change: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "67e1bf43055eeac0",
+    "sender": "Spotify Account <noreply@spotify.com>",
+    "subject": "Unusual account activity detected",
+    "snippet": "Enter this code to verify your email: 654321. It expires in 1 hour.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "0c46cf8ce8f4240a",
+    "sender": "Twitter Security <security@twitter.com>",
+    "subject": "Password change confirmation",
+    "snippet": "Your Amazon backup codes can be used if you lose access to your phone. Save: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "b37788da6cb46229",
+    "sender": "Meta Account <noreply@facebookmail.com>",
+    "subject": "Welcome to GitHub!",
+    "snippet": "Your one-time code: 012345. Use this to complete your login.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "f0161ba2a5145b3b",
+    "sender": "Uber Account <noreply@uber.com>",
+    "subject": "Complete your Amazon account setup",
+    "snippet": "Your one-time code: 789012. Use this to complete your login.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "100c28057c715017",
+    "sender": "Okta <okta-noreply@okta.com>",
+    "subject": "Finish setting up your account",
+    "snippet": "Your identity has been verified on Microsoft. Next step: final (verify-email.service.com)",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "616074304ca58610",
+    "sender": "LinkedIn <security-noreply@linkedin.com>",
+    "subject": "Update your security settings",
+    "snippet": "Account recovery email verified. You can now reset your password: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "bdff34622f54c5e5",
+    "sender": "GitLab <security@gitlab.com>",
+    "subject": "Recovery codes generated",
+    "snippet": "Your account recovery has been initiated. Confirm recovery email: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "aba8e8247c2de32c",
+    "sender": "Microsoft Account <account-security-noreply@microsoft.com>",
+    "subject": "Someone tried to access your account",
+    "snippet": "Your security code for Microsoft is: 456789. This is valid for 15 minutes only.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "d155377784f7c083",
+    "sender": "Twitter Security <security@twitter.com>",
+    "subject": "Security code for Google",
+    "snippet": "Your Slack account is now fully set up and ready to use!",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "792306c70f7ef064",
+    "sender": "PayPal Account <security@paypal.com>",
+    "subject": "Reset your password",
+    "snippet": "Password requirements changed for LinkedIn. Update your password: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "688175c5c5c7f10b",
+    "sender": "Slack Security <security@slack.com>",
+    "subject": "Unusual account activity detected",
+    "snippet": "Your GitHub account has been locked due to suspicious activity. Unlock: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "d0625398ad3fee8f",
+    "sender": "Uber Account <noreply@uber.com>",
+    "subject": "Complete your LinkedIn account setup",
+    "snippet": "Two-step verification code: 012345. Don't share with anyone.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "a7b9dcc53f224c5b",
+    "sender": "Google Account <noreply@google.com>",
+    "subject": "Verify your LinkedIn account",
+    "snippet": "MFA disabled on your LinkedIn account. If this wasn't you: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "ff73f4a0728eefb5",
+    "sender": "Google Cloud <security-noreply@google.com>",
+    "subject": "Your verification code is 123456",
+    "snippet": "Welcome to LinkedIn! Complete your account setup to continue: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "57e23926edb1950b",
+    "sender": "Asana <security@asana.com>",
+    "subject": "Complete your GitHub account setup",
+    "snippet": "Account verification incomplete. Finish setup to access Microsoft: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "2a5190cb89621f18",
+    "sender": "Okta <okta-noreply@okta.com>",
+    "subject": "New login from unknown location",
+    "snippet": "Your Microsoft account has been created! Confirm your email to get started: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "856c69763ab85792",
+    "sender": "Google Account <noreply@google.com>",
+    "subject": "MFA code: 012345",
+    "snippet": "Two-step verification code: 012345. Don't share with anyone.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "60de072ca112d3ac",
+    "sender": "Apple ID <noreply@id.apple.com>",
+    "subject": "Recovery codes generated",
+    "snippet": "Your security code for LinkedIn is: 123456. This is valid for 10 minutes only.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "bbd5e784c8c09314",
+    "sender": "GitHub <security@github.com>",
+    "subject": "Email verification for Microsoft",
+    "snippet": "Multiple failed login attempts on your account. Secure it now: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "cf1fe612c0a972c9",
+    "sender": "AWS Security <security@amazon.com>",
+    "subject": "Complete your Google account setup",
+    "snippet": "Your backup phone number for Uber has been verified.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "3267bd126d99c5ae",
+    "sender": "Meta Account <noreply@facebookmail.com>",
+    "subject": "Complete your Google account setup",
+    "snippet": "Passkey added to your Microsoft account. Manage security: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "6b878a1a79f1f6b3",
+    "sender": "Okta <okta-noreply@okta.com>",
+    "subject": "Your one-time passcode",
+    "snippet": "New login detected on your Uber account from Chrome browser in unknown location. Approve: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "8f3c7261c5f05749",
+    "sender": "Amazon Security <security@amazon.com>",
+    "subject": "Security code for Uber",
+    "snippet": "Passkey added to your Microsoft account. Manage security: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "6625db05a26892c4",
+    "sender": "AWS Security <security@amazon.com>",
+    "subject": "Backup codes for LinkedIn",
+    "snippet": "Confirm this password change by clicking the link below or entering code 456789: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "5539998957574cbd",
+    "sender": "GitLab <security@gitlab.com>",
+    "subject": "Your one-time passcode",
+    "snippet": "MFA disabled on your Dropbox account. If this wasn't you: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "b069b9dba56b5623",
+    "sender": "Meta Account <noreply@facebookmail.com>",
+    "subject": "Account locked for security",
+    "snippet": "Someone requested to reset your Uber password. If it wasn't you, confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "a2be30a41713603a",
+    "sender": "Adobe Account <account@adobe.com>",
+    "subject": "Account locked for security",
+    "snippet": "Account recovery email verified. You can now reset your password: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "1541cf57f95832cd",
+    "sender": "PayPal Account <security@paypal.com>",
+    "subject": "Your one-time passcode",
+    "snippet": "Your account recovery has been initiated. Confirm recovery email: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "ffd1d96303851961",
+    "sender": "Heroku Account <security@heroku.com>",
+    "subject": "Account recovery code",
+    "snippet": "Multiple failed login attempts on your account. Secure it now: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "93122eb35bc602de",
+    "sender": "Stripe Account <security@stripe.com>",
+    "subject": "Account created successfully",
+    "snippet": "Your two-factor authentication code is: 789012. Never share this code.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "31f63b5d8dc7e8b9",
+    "sender": "Auth0 <noreply@auth0.com>",
+    "subject": "Account locked for security",
+    "snippet": "Enter this code to verify your email: 654321. It expires in 1 hour.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "62cf89ce346eacbd",
+    "sender": "Netflix <security@netflix.com>",
+    "subject": "Someone tried to access your account",
+    "snippet": "Password requirements changed for Dropbox. Update your password: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "7ae47a0fa70ca1fb",
+    "sender": "GitHub <security@github.com>",
+    "subject": "Password reset request for Google",
+    "snippet": "Your identity has been verified on Dropbox. Next step: final (verify-email.service.com)",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "e6b6a6701fe76a67",
+    "sender": "GitHub <security@github.com>",
+    "subject": "Update your security settings",
+    "snippet": "New login detected on your Slack account from Chrome browser in Berlin, Germany. Approve: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "0eaac74987f8814d",
+    "sender": "Asana <security@asana.com>",
+    "subject": "Account setup step 1",
+    "snippet": "Your verification code is: 789012. Don't share this with anyone. Valid for 15 minutes.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "1b746abae263d98e",
+    "sender": "Twitter Security <security@twitter.com>",
+    "subject": "Update your security settings",
+    "snippet": "Your account password was changed successfully. If you didn't make this change: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "721dca701d5d6c91",
+    "sender": "Box Account <security@box.com>",
+    "subject": "Confirm your email address",
+    "snippet": "Your verification code is: 456789. Don't share this with anyone. Valid for 1 hour.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "46a0849a2ed9a457",
+    "sender": "Atlassian Account <security@atlassian.net>",
+    "subject": "Phone number verification",
+    "snippet": "Password requirements changed for GitHub. Update your password: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "1f118844d2f9dc3b",
+    "sender": "Twitter Security <security@twitter.com>",
+    "subject": "Two-factor authentication code",
+    "snippet": "We detected a login to your account from unknown location. If this was you, no action needed. If not: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "ee350e517c803a00",
+    "sender": "GitLab <security@gitlab.com>",
+    "subject": "Account setup step 3",
+    "snippet": "Passkey added to your Dropbox account. Manage security: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "761682366959f435",
+    "sender": "LinkedIn <security-noreply@linkedin.com>",
+    "subject": "Account setup step 3",
+    "snippet": "Your Google account has been locked due to suspicious activity. Unlock: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "a07052f6ab78ee40",
+    "sender": "LinkedIn <security-noreply@linkedin.com>",
+    "subject": "Update your security settings",
+    "snippet": "Your Slack backup codes can be used if you lose access to your phone. Save: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "82862f7a1982c692",
+    "sender": "Spotify Account <noreply@spotify.com>",
+    "subject": "Security code for Microsoft",
+    "snippet": "Your backup phone number for LinkedIn has been verified.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "dbd8b0b8da9801d2",
+    "sender": "Figma <security@figma.com>",
+    "subject": "Update your security settings",
+    "snippet": "Account verification incomplete. Finish setup to access Amazon: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "97a05278a82f4b5a",
+    "sender": "Amazon Security <security@amazon.com>",
+    "subject": "Password reset request for Amazon",
+    "snippet": "Confirm this password change by clicking the link below or entering code 654321: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "76c283acd0be67f6",
+    "sender": "Apple ID <noreply@id.apple.com>",
+    "subject": "Unusual account activity detected",
+    "snippet": "Two-step verification code: 654321. Don't share with anyone.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "818b36a2ebd7c3e9",
+    "sender": "Discord Security <noreply@discordapp.com>",
+    "subject": "Confirm your new password",
+    "snippet": "Your GitHub account has been created! Confirm your email to get started: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "e983d3daed6dd8da",
+    "sender": "AWS Security <security@amazon.com>",
+    "subject": "Update your security settings",
+    "snippet": "Your verification code is: 012345. Don't share this with anyone. Valid for 15 minutes.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "20543aba3ab01463",
+    "sender": "Auth0 <noreply@auth0.com>",
+    "subject": "Two-factor authentication code",
+    "snippet": "Welcome to Slack! Complete your account setup to continue: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "a75c815b4d94ff54",
+    "sender": "Spotify Account <noreply@spotify.com>",
+    "subject": "New login from Sydney, Australia",
+    "snippet": "Your GitHub account is now fully set up and ready to use!",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "377455d3d8a49180",
+    "sender": "Airbnb Account <security@airbnb.com>",
+    "subject": "Account locked for security",
+    "snippet": "Multiple failed login attempts on your account. Secure it now: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "89854183c5a1e103",
+    "sender": "Google Account <noreply@google.com>",
+    "subject": "Recovery codes generated",
+    "snippet": "Account verification incomplete. Finish setup to access Google: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "9f3e1f4ef29d90f8",
+    "sender": "Adobe Account <account@adobe.com>",
+    "subject": "Email verification for Google",
+    "snippet": "Account recovery email verified. You can now reset your password: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "2ec080727390637d",
+    "sender": "AWS Security <security@amazon.com>",
+    "subject": "Verify your Dropbox account",
+    "snippet": "Welcome to Microsoft! Complete your account setup to continue: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "3e7c9073a32d1d10",
+    "sender": "Telegram Account <noreply@telegram.org>",
+    "subject": "Password change confirmation",
+    "snippet": "Account recovery email verified. You can now reset your password: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "d8088669773d98cc",
+    "sender": "AWS Security <security@amazon.com>",
+    "subject": "Account locked for security",
+    "snippet": "Email verification required to activate your Uber account. Verify: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "adba8e4b26faaef9",
+    "sender": "Google Account <noreply@google.com>",
+    "subject": "Account created successfully",
+    "snippet": "Your identity has been verified on Amazon. Next step: 2 (confirm.account.com)",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "c63fb248bb426b7e",
+    "sender": "GitHub <security@github.com>",
+    "subject": "Unusual account activity detected",
+    "snippet": "Someone tried to sign into your Microsoft from New York, USA. If it wasn't you: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "8d8d37fbdfa2db87",
+    "sender": "Microsoft Account <account-security-noreply@microsoft.com>",
+    "subject": "Password reset request for Amazon",
+    "snippet": "Your backup phone number for LinkedIn has been verified.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "a72706c0738a375c",
+    "sender": "Netflix <security@netflix.com>",
+    "subject": "Verify your Amazon account",
+    "snippet": "Your account password was changed successfully. If you didn't make this change: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "97a6dcb64844fcf1",
+    "sender": "GitHub <security@github.com>",
+    "subject": "Security code for Microsoft",
+    "snippet": "Email verification required to activate your Microsoft account. Verify: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "ef968e3020ef33a8",
+    "sender": "Slack Security <security@slack.com>",
+    "subject": "Account created successfully",
+    "snippet": "Your account password was changed successfully. If you didn't make this change: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "d044fba21b7fcd90",
+    "sender": "Heroku Account <security@heroku.com>",
+    "subject": "New login from Sydney, Australia",
+    "snippet": "Your Microsoft account has been locked due to suspicious activity. Unlock: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "be04938389c3f6ca",
+    "sender": "Notion Account <security@notion.so>",
+    "subject": "One more step to secure your account",
+    "snippet": "Your verification code is: 654321. Don't share this with anyone. Valid for 15 minutes.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "8e951bd2ce235bd3",
+    "sender": "Telegram Account <noreply@telegram.org>",
+    "subject": "Password reset request for Amazon",
+    "snippet": "Two-step verification code: 456789. Don't share with anyone.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "0b6908906bc82e5c",
+    "sender": "Asana <security@asana.com>",
+    "subject": "Finish setting up your account",
+    "snippet": "Your two-factor authentication code is: 123456. Never share this code.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "9fcbe2547d70b62e",
+    "sender": "Netflix <security@netflix.com>",
+    "subject": "Account setup step final",
+    "snippet": "Someone requested to reset your Microsoft password. If it wasn't you, https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "fd47bcf435e2cc93",
+    "sender": "GitLab <security@gitlab.com>",
+    "subject": "Confirm your new password",
+    "snippet": "New login detected on your LinkedIn account from Chrome browser in unknown location. Approve: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "3f3347d36b3a34dc",
+    "sender": "GitHub <security@github.com>",
+    "subject": "Someone tried to access your account",
+    "snippet": "MFA disabled on your Dropbox account. If this wasn't you: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "64d4daa205d64f40",
+    "sender": "Dropbox <security@dropbox.com>",
+    "subject": "Two-factor authentication code",
+    "snippet": "Your security code for Google is: 012345. This is valid for 10 minutes only.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "c34f92512916ecb9",
+    "sender": "PayPal Account <security@paypal.com>",
+    "subject": "Complete your Slack account setup",
+    "snippet": "Password requirements changed for GitHub. Update your password: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "a71d0c10b9efb2e5",
+    "sender": "GitHub <security@github.com>",
+    "subject": "Your GitHub account is ready",
+    "snippet": "Welcome to Slack! Complete your account setup to continue: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "e142fd583718e2f9",
+    "sender": "Auth0 <noreply@auth0.com>",
+    "subject": "Your Dropbox account is ready",
+    "snippet": "Two-step verification code: 123456. Don't share with anyone.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "4950dc1574fcc361",
+    "sender": "Amazon Security <security@amazon.com>",
+    "subject": "Email verification for Slack",
+    "snippet": "MFA disabled on your Dropbox account. If this wasn't you: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "902c86eeee0575a5",
+    "sender": "Apple ID <noreply@id.apple.com>",
+    "subject": "Account setup step final",
+    "snippet": "Enter this code to verify your email: 789012. It expires in 24 hours.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "ac98496234519a84",
+    "sender": "GitHub <security@github.com>",
+    "subject": "Update your security settings",
+    "snippet": "Your identity has been verified on Dropbox. Next step: 2 (https://account.service.com/reset)",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "e8b36634fce0c754",
+    "sender": "AWS Security <security@amazon.com>",
+    "subject": "Email verification for Google",
+    "snippet": "Someone tried to sign into your GitHub from Berlin, Germany. If it wasn't you: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "6c6696a51d2cf0cf",
+    "sender": "Airbnb Account <security@airbnb.com>",
+    "subject": "One more step to secure your account",
+    "snippet": "Account verification incomplete. Finish setup to access LinkedIn: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "4d94e3e65914ebd7",
+    "sender": "Stripe Account <security@stripe.com>",
+    "subject": "Welcome to Google!",
+    "snippet": "MFA disabled on your Microsoft account. If this wasn't you: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "cbd34158cdba175d",
+    "sender": "Amazon Security <security@amazon.com>",
+    "subject": "Update your security settings",
+    "snippet": "Account verification incomplete. Finish setup to access GitHub: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "7f3aa830459babbb",
+    "sender": "Discord Security <noreply@discordapp.com>",
+    "subject": "Update your security settings",
+    "snippet": "Enter this code to verify your email: 012345. It expires in 15 minutes.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "47b1d078863f5b14",
+    "sender": "Amazon Security <security@amazon.com>",
+    "subject": "Reset your password",
+    "snippet": "Your LinkedIn backup codes can be used if you lose access to your phone. Save: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "b44932c12b0c0ef8",
+    "sender": "Spotify Account <noreply@spotify.com>",
+    "subject": "Reset your password",
+    "snippet": "Account verification incomplete. Finish setup to access Dropbox: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "36b493d02abeef86",
+    "sender": "LinkedIn <security-noreply@linkedin.com>",
+    "subject": "Confirm your new password",
+    "snippet": "New login detected on your Dropbox account from Android phone in Tokyo, Japan. Approve: confirm.account.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "7b9371a2f2d72124",
+    "sender": "Notion Account <security@notion.so>",
+    "subject": "Someone tried to access your account",
+    "snippet": "Your backup phone number for Slack has been verified.",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "3089df104b34dbe5",
+    "sender": "Slack Security <security@slack.com>",
+    "subject": "Update your security settings",
+    "snippet": "Email verification required to activate your Dropbox account. Verify: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "26517979de1c97d7",
+    "sender": "Atlassian Account <security@atlassian.net>",
+    "subject": "Email verification for Uber",
+    "snippet": "Passkey added to your Google account. Manage security: https://account.service.com/reset",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "866c91e668c01ffe",
+    "sender": "Telegram Account <noreply@telegram.org>",
+    "subject": "Account setup step 2",
+    "snippet": "Your account password was changed successfully. If you didn't make this change: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "9841cb339409feda",
+    "sender": "Box Account <security@box.com>",
+    "subject": "Password reset request for Microsoft",
+    "snippet": "Your Uber account has been created! Confirm your email to get started: verify-email.service.com",
+    "category": "ACCOUNTS"
+  },
+  {
+    "id": "4f39468213724e36",
+    "sender": "Twitter Security <security@twitter.com>",
+    "subject": "MFA code: 012345",
+    "snippet": "MFA disabled on your Slack account. If this wasn't you: verify-email.service.com",
+    "category": "ACCOUNTS"
+  }
+]

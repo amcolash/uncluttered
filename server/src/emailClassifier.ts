@@ -206,6 +206,36 @@ const FOOD_ORDER_DOMAINS = [
 ];
 const FINANCE_DOMAINS = ['zillow.com', 'splitwise.com'];
 const DEVELOPER_DOMAINS = ['c2.synology.com'];
+const ACCOUNTS_DOMAINS = [
+  'google.com',
+  'microsoft.com',
+  'apple.com',
+  'github.com',
+  'amazon.com',
+  'meta.com',
+  'twitter.com',
+  'linkedin.com',
+  'slack.com',
+  'dropbox.com',
+  'adobe.com',
+  'netflix.com',
+  'spotify.com',
+  'discord.com',
+  'telegram.org',
+  'uber.com',
+  'airbnb.com',
+  'paypal.com',
+  'stripe.com',
+  'auth0.com',
+  'okta.com',
+  'box.com',
+  'figma.com',
+  'notion.so',
+  'asana.com',
+  'atlassian.net',
+  'gitlab.com',
+  'heroku.com',
+];
 
 // ── Subject / snippet patterns ────────────────────────────────────────────────
 
@@ -238,6 +268,9 @@ const RE_DEV_SUBJ =
 
 const RE_SYSTEM_SUBJ =
   /\b(security\s+alert|new\s+sign[\s-]?in|new\s+device\s+sign|suspicious\s+activit|login\s+(attempt|from\s+new)|password\s+(reset|changed|updated)|two[\s-]?factor|2fa\b|mfa\s+(code|request)|verification\s+code|build\s+(failed|passed|succeeded|error)|deployment\s+(failed|succeeded|complete)|server\s+(error|alert|down|outage)|pull\s+request|merged\s+into|release\s+v?\d|pipeline\s+(failed|passed)|usage[\s-]based\s+billing|billing\s+(update|change|alert)|account\s+(suspended|locked|disabled)|action\s+required\s*:)\b/i;
+
+const RE_ACCOUNTS_SUBJ =
+  /\b(reset\s+your\s+password|password\s+reset\s+request|verify\s+your\s+.*\s+account|complete\s+your\s+.*\s+account\s+setup|confirm\s+your\s+(email|identity)|verification\s+code|your\s+verification\s+code\s+is|new\s+login\s+(from|detected)|account\s+created|welcome\s+to|confirm\s+your\s+(new\s+)?password|two[\s-]?factor\s+authentication|mfa\s+code|security\s+code|one[\s-]?time\s+passcode|password\s+change\s+confirmation|account\s+recovery|email\s+verification|unusual\s+account\s+activit|account\s+(locked|suspended)\s+for\s+security|someone\s+tried\s+to\s+access|recovery\s+(codes?|method)|new\s+device\s+login|sign[\s-]?in\s+from\s+(new|unknown))\b/i;
 
 const RE_GAMING_SUBJ =
   /\b(free\s+(items?\s+added|game\s+claim|games?\s+this\s+week)|items?\s+added\s+to\s+your\s+(library|account)|your\s+epic\s+games\s+receipt|claim\s+your\s+free\s+game|game\s+(update|patch)|weekly\s+free\s+game)\b/i;
@@ -357,6 +390,11 @@ export function classifyEmailRules(subject: string, snippet: string, sender: str
   // 5. BANKING_ACCOUNT — bank / fintech domains or account-activity language
   if (domainIs(domain, ...BANKING_DOMAINS) || RE_BANKING_SUBJ.test(subject)) {
     categories.push('BANKING_ACCOUNT');
+  }
+
+  // 5b. ACCOUNTS — account security / authentication domains or password/MFA language
+  if (domainIs(domain, ...ACCOUNTS_DOMAINS) || RE_ACCOUNTS_SUBJ.test(subject)) {
+    categories.push('ACCOUNTS');
   }
 
   // 6. FINANCE_BILL — invoices / bills due (checked after banking so bank receipts

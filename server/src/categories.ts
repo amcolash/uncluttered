@@ -48,6 +48,7 @@ const partialCategories: Omit<Category, 'urgency'>[] = [
     key: 'HEALTHCARE_MEDICAL',
     description: 'Medical appointment reminders, test results, and healthcare provider communications',
   },
+  { key: 'ACCOUNTS', description: 'Account creation, password resets, and security notifications' },
   { key: 'UNKNOWN', description: 'Fallback bucket for anything ambiguous' },
 ];
 
@@ -78,6 +79,7 @@ export const defaultUrgency: Record<string, number> = {
   NEWSLETTER: 5,
   SUBSCRIPTION_SERVICE: 4,
   PROMO_MARKETING: 5,
+  ACCOUNTS: 2,
   UNKNOWN: 3,
 };
 
