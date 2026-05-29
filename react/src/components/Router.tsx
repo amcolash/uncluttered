@@ -23,7 +23,7 @@ export function Router() {
           <Route path="/categorize" element={<CategorizePage />} />
           <Route path="/inbox" element={<InboxPage />} />
 
-          <Route path="*" element={<Navigate to="/categorize" replace />} />
+          <Route path="*" element={<Navigate to="/inbox" replace />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

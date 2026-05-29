@@ -83,19 +83,31 @@ app.get('/api/emails', (_req, res) => {
   res.json(emails);
 });
 
-/** Returns the current list of allowed categories. */
-app.get('/api/categories', (_req, res) => {
-  res.json(db.data.categories);
-});
+app.get('/api/emails/:id', async (req, res) => {
+  try {
+    const gmail = await getGmailApi();
+    const data = await gmail.users.messages.get({
+      userId: 'me',
+      id: req.params.id,
+      format: 'full',
+    });
 
-/**
- * Returns only categories that are actively assigned to at least one email
- * (via aiCategory or userOverrideCategory).
- */
-app.get('/api/categories/active', (_req, res) => {
-  const usedKeys = new Set(db.data.emails.flatMap((e) => [e.userOverrideCategory ?? e.aiCategory]));
-  const active = db.data.categories.filter((c) => usedKeys.has(c.key));
-  res.json(active);
+    const parts = data.data.payload?.parts || [];
+
+    const text = parts
+      .filter((p) => p.mimeType === 'text/plain' && p.body?.data)
+      .map((p) => Buffer.from(p.body!.data!, 'base64').toString('utf-8'))
+      .join('\n');
+    const html = parts
+      .filter((p) => p.mimeType === 'text/html' && p.body?.data)
+      .map((p) => Buffer.from(p.body!.data!, 'base64').toString('utf-8'))
+      .join('\n');
+
+    res.json({ text, html });
+  } catch (err) {
+    console.error(`[Get Email] Failed to fetch email ${req.params.id}:`, err);
+    res.status(503).json({ error: 'Failed to fetch email details' });
+  }
 });
 
 /**
@@ -132,6 +144,23 @@ app.delete('/api/emails/:id', async (req, res) => {
   await deleteEmail(gmail, email);
 
   res.json({ success: true });
+});
+
+// ── Category endpoints ───────────────────────────────────────────────────────
+
+/** Returns the current list of allowed categories. */
+app.get('/api/categories', (_req, res) => {
+  res.json(db.data.categories);
+});
+
+/**
+ * Returns only categories that are actively assigned to at least one email
+ * (via aiCategory or userOverrideCategory).
+ */
+app.get('/api/categories/active', (_req, res) => {
+  const usedKeys = new Set(db.data.emails.flatMap((e) => [e.userOverrideCategory ?? e.aiCategory]));
+  const active = db.data.categories.filter((c) => usedKeys.has(c.key));
+  res.json(active);
 });
 
 // ── Reclassify endpoints ─────────────────────────────────────────────────────

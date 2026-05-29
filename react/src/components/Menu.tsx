@@ -15,7 +15,7 @@ export function Menu({ children }: { children: ReactNode }) {
   }, [breakpoint]);
 
   return (
-    <div className="relative top-0 left-0 z-10 max-md:absolute">
+    <div className="sticky top-0 left-0 z-10 h-screen max-md:absolute">
       <Button
         variant="secondary"
         size="sm"
