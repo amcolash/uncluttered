@@ -14,6 +14,43 @@ export async function getGmailApi() {
   return google.gmail({ version: 'v1', auth });
 }
 
+async function fetchMissingData(): Promise<void> {
+  const gmail = await getGmailApi();
+
+  const dateResults = [];
+  for (const email of db.data.emails) {
+    if (!email.date || email.date === '1970-01-01T00:00:00.000Z') {
+      console.log(`[GmailSync] Fetching date for message ${email.id}...`);
+
+      const promise = gmail.users.messages
+        .get({
+          userId: 'me',
+          id: email.id,
+          format: 'metadata',
+          metadataHeaders: ['Date'],
+        })
+        .then((response) => {
+          const headers = response.data.payload?.headers ?? [];
+          const dateHeader = headers.find((h) => h.name?.toLowerCase() === 'date');
+
+          email.date = new Date(parseInt(response.data.internalDate ?? dateHeader?.value ?? '0')).toISOString();
+          console.log(`[GmailSync] Updated date for message ${email.id}: ${email.date}`);
+        })
+        .catch((err) => {
+          console.error(`[GmailSync] Failed to fetch date for message ${email.id}:`, err);
+        });
+
+      dateResults.push(promise);
+    }
+  }
+
+  if (dateResults.length > 0) {
+    console.log(`[GmailSync] Fetching dates for ${dateResults.length} message(s) in parallel...`);
+    await Promise.allSettled(dateResults);
+    await db.write();
+  }
+}
+
 async function syncEmails(): Promise<void> {
   console.log('[GmailSync] Starting sync...');
 
@@ -116,7 +153,15 @@ async function syncEmails(): Promise<void> {
       await db.write();
     }
 
-    // Step D: Fetch all metadata headers in parallel — lightweight network I/O,
+    // Step D: For any messages missing dates, fetch those in parallel before classification
+    await fetchMissingData();
+
+    if (newMessages.length === 0 && missingCount === 0) {
+      console.log('[GmailSync] All messages already cached.');
+      return;
+    }
+
+    // Step E: Fetch all metadata headers in parallel — lightweight network I/O,
     // safe to parallelize. Failed individual fetches are filtered out rather than
     // aborting the whole batch.
     console.log(`[GmailSync] Fetching metadata for ${newMessages.length} new message(s) in parallel...`);
@@ -129,17 +174,12 @@ async function syncEmails(): Promise<void> {
             userId: 'me',
             id: msg.id!,
             format: 'metadata',
-            metadataHeaders: ['From', 'Subject'],
+            metadataHeaders: ['From', 'Subject', 'Date'],
           })
         )
     );
 
-    if (newMessages.length === 0 && missingCount === 0) {
-      console.log('[GmailSync] All messages already cached.');
-      return;
-    }
-
-    // Step D: Classify each message sequentially with ML model to avoid saturating
+    // Step F: Classify each message sequentially with ML model to avoid saturating
     // the 2-core NAS, then push all results into Lowdb and do a single write.
     let saved = 0;
 
@@ -174,6 +214,7 @@ async function syncEmails(): Promise<void> {
           aiCategory,
           userOverrideCategory: null,
           status: 'inbox',
+          date: new Date(parseInt(detail.data.internalDate ?? getHeader('Date') ?? '0')).toISOString(),
           processedAt: new Date().toISOString(),
           validated: false,
         };
