@@ -27,6 +27,15 @@ type HistoryEntry = {
   previous: Email[];
 };
 
+export type EmailActions = {
+  confirm: (id: string) => Promise<void>;
+  defer: (id: string) => Promise<void>;
+  categorize: (id: string, category: string) => Promise<void>;
+  undo: () => Promise<void>;
+  archive: (id: string) => Promise<void>;
+  trash: (id: string) => Promise<void>;
+};
+
 async function postCategorize(id: string, category: string | null, validated: boolean | null) {
   await fetch(`${API}/api/emails/${id}/categorize`, {
     method: 'POST',
@@ -35,7 +44,12 @@ async function postCategorize(id: string, category: string | null, validated: bo
   });
 }
 
-export function useEmails(filterValidated: boolean) {
+export function useEmails(filterValidated: boolean): {
+  emails: Email[];
+  categories: Category[];
+  canUndo: boolean;
+  actions: EmailActions;
+} {
   const [emails, setEmails] = useState<Email[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
   const [history, setHistory] = useState<HistoryEntry[]>([]);
@@ -124,13 +138,33 @@ export function useEmails(filterValidated: boolean) {
     );
   }
 
+  async function archive(id: string) {
+    await fetch(`${API}/api/emails/${id}/archive`, {
+      method: 'POST',
+    });
+
+    setEmails((prev) => prev.filter((e) => e.id !== id));
+  }
+
+  async function trash(id: string) {
+    await fetch(`${API}/api/emails/${id}`, {
+      method: 'DELETE',
+    });
+
+    setEmails((prev) => prev.filter((e) => e.id !== id));
+  }
+
   return {
     emails,
     categories,
-    confirm,
-    defer,
-    categorize,
-    undo,
     canUndo: history.length > 0,
+    actions: {
+      confirm,
+      defer,
+      categorize,
+      undo,
+      archive,
+      trash,
+    },
   };
 }

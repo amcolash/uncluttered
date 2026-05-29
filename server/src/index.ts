@@ -1,9 +1,11 @@
 import cors from 'cors';
 import express from 'express';
+import { gmail_v1 } from 'googleapis';
 
 import { db } from './db.ts';
+import type { Email } from './dbTypes.ts';
 import { classifyEmail } from './emailClassifier.ts';
-import { startGmailSyncWorker } from './gmailSyncWorker.ts';
+import { getGmailApi, startGmailSyncWorker } from './gmailSyncWorker.ts';
 
 const app = express();
 const port = 7001;
@@ -40,6 +42,44 @@ async function triggerRetrain() {
   }
 }
 
+const DRY_RUN = true;
+async function archiveEmail(gmail: gmail_v1.Gmail, email: Email) {
+  if (!DRY_RUN) {
+    try {
+      gmail.users.messages.modify({
+        userId: 'me',
+        id: email.id,
+        requestBody: {
+          removeLabelIds: ['INBOX'],
+        },
+      });
+
+      email.status = 'archived';
+      await db.write();
+    } catch (err) {
+      console.error(`[Archive] Failed to archive email ${email.id}:`, err);
+      return;
+    }
+  }
+}
+
+async function deleteEmail(gmail: gmail_v1.Gmail, email: Email) {
+  if (!DRY_RUN) {
+    try {
+      await gmail.users.messages.trash({
+        userId: 'me',
+        id: email.id,
+      });
+
+      email.status = 'deleted';
+      await db.write();
+    } catch (err) {
+      console.error(`[Delete] Failed to delete email ${email.id}:`, err);
+      return;
+    }
+  }
+}
+
 // ── Email endpoints ─────────────────────────────────────────────────────────
 
 /** Returns all non-archived emails (the main triage feed). */
@@ -64,8 +104,8 @@ app.get('/api/categories/active', (_req, res) => {
 });
 
 /**
- * Locally archives an email (hides it from the feed).
- * Does NOT mutate the live Gmail account.
+ * Archives an email - both in local db and via gmail api.
+ * "Archiving" is simply removing the 'INBOX' label from the message.
  */
 app.post('/api/emails/:id/archive', async (req, res) => {
   const email = db.data.emails.find((e) => e.id === req.params.id);
@@ -75,8 +115,27 @@ app.post('/api/emails/:id/archive', async (req, res) => {
     return;
   }
 
-  email.status = 'archived';
-  await db.write();
+  console.log(`[Archive] ${email.subject} (${email.id})`);
+
+  const gmail = await getGmailApi();
+  await archiveEmail(gmail, email);
+
+  res.json({ success: true });
+});
+
+app.delete('/api/emails/:id', async (req, res) => {
+  const email = db.data.emails.find((e) => e.id === req.params.id);
+
+  if (!email) {
+    res.status(404).json({ error: 'Email not found' });
+    return;
+  }
+
+  console.log(`[Delete] ${email.subject} (${email.id})`);
+
+  const gmail = await getGmailApi();
+  await deleteEmail(gmail, email);
+
   res.json({ success: true });
 });
 

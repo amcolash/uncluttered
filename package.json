@@ -17,7 +17,8 @@
     "start": "concurrently 'npm --prefix react/ start' 'npm --prefix server/ start' 'docker compose up --build classifier'",
     "deploy": "ssh -t nas 'export PATH=\\$PATH:/usr/local/bin && cd docker/uncluttered && git pull && docker compose up -d --build --force-recreate'",
     "lint": "oxlint",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "typecheck": "npm --prefix react/ run typecheck && npm --prefix server/ run typecheck"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^6.0.2",

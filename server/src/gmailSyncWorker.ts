@@ -9,12 +9,16 @@ const SYNC_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes
 const MAX_EMAILS = 3000;
 const PAGE_SIZE = 500; // Gmail API hard cap per request
 
+export async function getGmailApi() {
+  const auth = await getAuthClient();
+  return google.gmail({ version: 'v1', auth });
+}
+
 async function syncEmails(): Promise<void> {
   console.log('[GmailSync] Starting sync...');
 
   try {
-    const auth = await getAuthClient();
-    const gmail = google.gmail({ version: 'v1', auth });
+    const gmail = await getGmailApi();
 
     // Step A: Page through the inbox (max 500/request) until we have MAX_EMAILS
     // or run out of results.
@@ -24,7 +28,7 @@ async function syncEmails(): Promise<void> {
     do {
       const listRes = await gmail.users.messages.list({
         userId: 'me',
-        q: 'label:INBOX is:unread',
+        q: 'label:INBOX',
         maxResults: PAGE_SIZE,
         pageToken,
       });
@@ -61,6 +65,8 @@ async function syncEmails(): Promise<void> {
       for (const id of missingIds) {
         const email = db.data.emails.find((e) => e.id === id);
         if (email && email.status === 'inbox') {
+          console.log(`[GmailSync] Fetching status for missing message ${id}...`);
+
           const promise = gmail.users.messages
             .get({ userId: 'me', id })
             .then((response) => ({ id, status: 'fulfilled', data: response.data }) as MessageResult)
@@ -75,7 +81,10 @@ async function syncEmails(): Promise<void> {
 
       results.forEach((result) => {
         const email = db.data.emails.find((e) => e.id === result.id);
-        if (!email) return;
+        if (!email) {
+          console.error(`[GmailSync] Unexpectedly could not find email with ID ${result.id} in local DB.`);
+          return;
+        }
 
         if (result.status === 'fulfilled') {
           const labels = result.data.labelIds ?? [];

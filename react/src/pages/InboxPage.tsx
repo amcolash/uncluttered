@@ -12,7 +12,7 @@ import { useEmails } from 'hooks/useEmails';
 export function InboxPage() {
   const [filter, setFilter] = useState<string>();
 
-  const { categories: rawCategories, emails, categorize } = useEmails(false);
+  const { categories: rawCategories, emails, actions } = useEmails(false);
   const visibleEmails = emails
     .filter((email) => !filter || (email.userOverrideCategory || email.aiCategory) === filter)
     .slice(0, 20);
@@ -55,7 +55,7 @@ export function InboxPage() {
             size="lg"
             className="w-full"
             onClick={() => {
-              //archive(visibleEmails)
+              visibleEmails.forEach((email) => actions.archive(email.id));
             }}
           >
             <FaArchive className="text-slate-300 shadow-md shadow-slate-800/30" />
@@ -66,7 +66,7 @@ export function InboxPage() {
             size="lg"
             className="w-full"
             onClick={() => {
-              //deleteEmails(visibleEmails)
+              visibleEmails.forEach((email) => actions.trash(email.id));
             }}
           >
             <FaTrash className="text-slate-300 shadow-md shadow-slate-800/30" />
@@ -74,7 +74,7 @@ export function InboxPage() {
         </div>
 
         {emails.length > 0 ? (
-          <EmailBundle emails={visibleEmails} skip={(id) => categorize(id, 'UNKNOWN')} />
+          <EmailBundle emails={visibleEmails} actions={actions} />
         ) : (
           <p className="text-center text-lg text-white">
             <span>All done — no more emails to review.</span>
