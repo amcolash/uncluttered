@@ -1,3 +1,5 @@
+import { formatCategory } from 'utilities/util';
+
 import type { Email } from 'hooks/useEmails';
 import type { Suggestion } from 'hooks/useSuggestions';
 
@@ -33,7 +35,7 @@ export function EmailCard({
                 className="p-2"
                 onClick={categorize ? () => categorize(email.id, suggestion.key) : undefined}
               >
-                {suggestion.key}
+                {formatCategory(suggestion.key)}
                 {suggestion.confidence !== undefined ? ` · ${Math.round(suggestion.confidence * 100)}%` : ''}
               </Button>
             ))}

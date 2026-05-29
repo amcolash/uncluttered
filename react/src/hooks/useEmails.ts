@@ -43,7 +43,13 @@ export function useEmails(filterValidated: boolean) {
   useEffect(() => {
     fetch(`${API}/api/emails`)
       .then((r) => r.json())
-      .then((all: Email[]) => setEmails(all.filter((e) => !filterValidated || e.validated !== true)));
+      .then((all: Email[]) =>
+        setEmails(
+          all.filter(
+            (e) => !filterValidated || e.validated !== true || (e.userOverrideCategory || e.aiCategory) === 'UNKNOWN'
+          )
+        )
+      );
 
     fetch(`${API}/api/categories`)
       .then((r) => r.json())

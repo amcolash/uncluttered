@@ -12,7 +12,7 @@ export interface Email {
   snippet: string;
   aiCategory: string;
   userOverrideCategory: string | null;
-  isArchived: boolean;
+  status: 'inbox' | 'archived' | 'deleted';
   processedAt: string;
   validated: boolean;
 }
