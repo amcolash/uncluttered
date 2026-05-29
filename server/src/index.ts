@@ -42,41 +42,36 @@ async function triggerRetrain() {
   }
 }
 
-const DRY_RUN = true;
 async function archiveEmail(gmail: gmail_v1.Gmail, email: Email) {
-  if (!DRY_RUN) {
-    try {
-      gmail.users.messages.modify({
-        userId: 'me',
-        id: email.id,
-        requestBody: {
-          removeLabelIds: ['INBOX'],
-        },
-      });
+  try {
+    gmail.users.messages.modify({
+      userId: 'me',
+      id: email.id,
+      requestBody: {
+        removeLabelIds: ['INBOX'],
+      },
+    });
 
-      email.status = 'archived';
-      await db.write();
-    } catch (err) {
-      console.error(`[Archive] Failed to archive email ${email.id}:`, err);
-      return;
-    }
+    email.status = 'archived';
+    await db.write();
+  } catch (err) {
+    console.error(`[Archive] Failed to archive email ${email.id}:`, err);
+    return;
   }
 }
 
 async function deleteEmail(gmail: gmail_v1.Gmail, email: Email) {
-  if (!DRY_RUN) {
-    try {
-      await gmail.users.messages.trash({
-        userId: 'me',
-        id: email.id,
-      });
+  try {
+    await gmail.users.messages.trash({
+      userId: 'me',
+      id: email.id,
+    });
 
-      email.status = 'deleted';
-      await db.write();
-    } catch (err) {
-      console.error(`[Delete] Failed to delete email ${email.id}:`, err);
-      return;
-    }
+    email.status = 'deleted';
+    await db.write();
+  } catch (err) {
+    console.error(`[Delete] Failed to delete email ${email.id}:`, err);
+    return;
   }
 }
 

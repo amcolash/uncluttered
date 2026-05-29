@@ -15,7 +15,7 @@ const TOKEN_PATH = path.join(__dirname, '../data/token.json');
 // http://localhost:3003/oauth2callback
 const OAUTH_CALLBACK_PORT = 3003;
 
-const SCOPES = ['https://www.googleapis.com/auth/gmail.readonly'];
+const SCOPES = ['https://www.googleapis.com/auth/gmail.modify'];
 
 interface CredentialsFile {
   installed?: { client_id: string; client_secret: string; redirect_uris: string[] };

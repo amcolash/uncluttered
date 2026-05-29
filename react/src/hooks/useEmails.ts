@@ -19,6 +19,7 @@ export interface Email {
   userOverrideCategory: string | null;
   isArchived: boolean;
   processedAt: string;
+  date: string;
   validated: boolean | null;
 }
 

@@ -16,8 +16,9 @@ export function EmailBundle({ emails, actions }: { emails: Email[]; actions: Ema
 
 function EmailCard({ email, actions }: { email: Email; actions: EmailActions }) {
   return (
-    <div className="group relative h-24 break-inside-avoid rounded-lg bg-slate-700 p-4">
+    <div className="group relative h-28 break-inside-avoid rounded-lg bg-slate-700 p-4">
       <p className="line-clamp-1 text-sm font-semibold break-all text-white">{email.sender}</p>
+      <p className="mb-2 text-xs text-slate-400">{new Date(email.date).toLocaleString()}</p>
       <p className="line-clamp-2 text-sm break-all text-slate-400">{email.subject}</p>
 
       {/* TODO: Figure out mobile - likely swipes */}

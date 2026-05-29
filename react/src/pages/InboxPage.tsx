@@ -7,15 +7,17 @@ import { EmailBundle } from 'components/EmailBundle';
 import { Menu } from 'components/Menu';
 import { Nav } from 'components/Nav';
 import { Button } from 'components/ui/Button';
+import { useBreakpoint } from 'hooks/useBreakpoint';
 import { useEmails } from 'hooks/useEmails';
 
 export function InboxPage() {
   const [filter, setFilter] = useState<string>();
+  const breakpoint = useBreakpoint();
 
   const { categories: rawCategories, emails, actions } = useEmails(false);
   const visibleEmails = emails
     .filter((email) => !filter || (email.userOverrideCategory || email.aiCategory) === filter)
-    .slice(0, 20);
+    .slice(0, breakpoint === 'sm' ? 10 : breakpoint === 'md' || breakpoint === 'lg' ? 20 : 21);
 
   const categoryCount = emails.reduce(
     (acc, email) => {
@@ -49,7 +51,7 @@ export function InboxPage() {
           {filter ? `${formatCategory(filter)} (${categoryCount[filter] || 0})` : 'All Emails'}
         </h1>
 
-        <div className="flex w-full max-w-4xl gap-4">
+        <div className="sticky top-0 z-10 flex w-full max-w-4xl gap-4 rounded-lg bg-slate-800 p-4">
           <Button
             variant="success"
             size="lg"
