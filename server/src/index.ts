@@ -99,7 +99,6 @@ async function batchProcessEmails(
     }
 
     try {
-      console.log(`[${operationName}] ${email.subject} (${email.id})`);
       await operation(gmail, email);
       results.success.push(id);
     } catch (err) {

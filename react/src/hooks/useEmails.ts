@@ -57,7 +57,7 @@ export function useEmails(filterValidated: boolean): {
   const [categories, setCategories] = useState<Category[]>([]);
   const [history, setHistory] = useState<HistoryEntry[]>([]);
 
-  useEffect(() => {
+  async function fetchEmails() {
     fetch(`${API}/api/emails`)
       .then((r) => r.json())
       .then((all: Email[]) =>
@@ -67,7 +67,9 @@ export function useEmails(filterValidated: boolean): {
           )
         )
       );
+  }
 
+  async function fetchCategories() {
     fetch(`${API}/api/categories`)
       .then((r) => r.json())
       .then((categories) =>
@@ -75,7 +77,12 @@ export function useEmails(filterValidated: boolean): {
           categories.map((c: { key: string; description: string }) => ({ ...c, label: formatCategory(c.key) }))
         )
       );
-  }, [filterValidated]);
+  }
+
+  useEffect(() => {
+    fetchEmails();
+    fetchCategories();
+  }, []);
 
   async function confirm(id: string) {
     const email = emails.find((e) => e.id === id);
@@ -158,23 +165,35 @@ export function useEmails(filterValidated: boolean): {
   }
 
   async function batchArchive(ids: string[]) {
-    await fetch('/api/emails/batch/archive', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ ids }),
-    });
-
     setEmails((prev) => prev.filter((e) => !ids.includes(e.id)));
+
+    try {
+      await fetch(`${API}/api/emails/batch/archive`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ids }),
+      });
+    } catch (error) {
+      // If the request fails, refetch emails to ensure UI consistency
+      console.error('Batch archive failed:', error);
+      fetchEmails();
+    }
   }
 
   async function batchTrash(ids: string[]) {
-    await fetch('/api/emails/batch/trash', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ ids }),
-    });
-
     setEmails((prev) => prev.filter((e) => !ids.includes(e.id)));
+
+    try {
+      await fetch(`${API}/api/emails/batch/delete`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ids }),
+      });
+    } catch (error) {
+      // If the request fails, refetch emails to ensure UI consistency
+      console.error('Batch trash failed:', error);
+      fetchEmails();
+    }
   }
 
   return {
