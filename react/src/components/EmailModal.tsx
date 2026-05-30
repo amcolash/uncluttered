@@ -7,8 +7,10 @@ import { API } from 'utilities/util';
 import type { Email, EmailActions } from 'hooks/useEmails';
 
 import { Button } from './ui/Button';
+import { Spinner } from './ui/Spinner';
 
 const iconClasses = 'pointer-events-auto text-slate-300 drop-shadow drop-shadow-slate-800/40';
+const containerClass = 'mt-6 flex-1 overflow-auto rounded-lg bg-slate-100 p-4';
 
 export function EmailModal({ email, onClose, actions }: { email: Email; onClose: () => void; actions?: EmailActions }) {
   const [data, setData] = useState<{ html: string }>({ html: '' });
@@ -85,7 +87,12 @@ export function EmailModal({ email, onClose, actions }: { email: Email; onClose:
         <p className="mb-2 text-slate-400">{new Date(email.date).toLocaleString()}</p>
         <p className="line-clamp-2 break-all text-slate-400">{email.subject}</p>
 
-        <iframe className="mt-6 flex-1 overflow-auto rounded-lg bg-slate-100 p-4" srcDoc={data.html}></iframe>
+        {data.html && <iframe className={containerClass} srcDoc={data.html}></iframe>}
+        {!data.html && (
+          <div className={twMerge(containerClass, 'flex items-center justify-center')}>
+            <Spinner size="xl" />
+          </div>
+        )}
       </div>
     </div>,
     document.body

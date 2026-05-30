@@ -12,11 +12,13 @@
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "googleapis": "^172.0.0",
-    "lowdb": "^7.0.1"
+    "lowdb": "^7.0.1",
+    "mailparser": "^3.9.9"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
+    "@types/mailparser": "^3.4.6",
     "@types/node": "^25.9.1",
     "nodemon": "^3.1.14",
     "typescript": "^6.0.3"

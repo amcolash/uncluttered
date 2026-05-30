@@ -1,6 +1,7 @@
 import cors from 'cors';
 import express from 'express';
 import { gmail_v1 } from 'googleapis';
+import { simpleParser } from 'mailparser';
 
 import { db } from './db.ts';
 import type { Email } from './dbTypes.ts';
@@ -122,28 +123,17 @@ app.get('/api/emails', (_req, res) => {
 app.get('/api/emails/:id', async (req, res) => {
   try {
     const gmail = await getGmailApi();
-    const data = await gmail.users.messages.get({
+    const response = await gmail.users.messages.get({
       userId: 'me',
       id: req.params.id,
-      format: 'full',
+      format: 'raw',
     });
 
-    const parts = data.data.payload?.parts || [];
+    // Gmail uses base64url encoding, so decode it to a standard buffer
+    const rawEmailBuffer = Buffer.from(response.data.raw!, 'base64url');
+    const email = await simpleParser(rawEmailBuffer);
 
-    let html = parts
-      .filter((p) => p.mimeType === 'text/html' && p.body?.data)
-      .map((p) => Buffer.from(p.body!.data!, 'base64').toString('utf-8'))
-      .join('\n');
-
-    if (html.length === 0) {
-      html = data.data.payload?.body?.data ? Buffer.from(data.data.payload.body.data, 'base64').toString('utf-8') : '';
-    }
-
-    if (html.length === 0) {
-      console.warn(`[Get Email] Warning: email ${req.params.id} has no HTML content`);
-    }
-
-    res.json({ html, raw: data.data });
+    res.json({ html: email.html || email.textAsHtml });
   } catch (err) {
     console.error(`[Get Email] Failed to fetch email ${req.params.id}:`, err);
     res.status(503).json({ error: 'Failed to fetch email details' });
