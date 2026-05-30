@@ -27,7 +27,7 @@ export function CategorizePage() {
     <div className="flex justify-center gap-8">
       <Menu>
         <CategorySidebar
-          categories={categories}
+          categories={categories.sort((a, b) => a.key.localeCompare(b.key))}
           enabled={current !== undefined}
           onClick={(category) => current && actions.categorize(current.id, category)}
         />

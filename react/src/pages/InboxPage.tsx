@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
 import { FaArchive, FaTrash } from 'react-icons/fa';
+import { useSearchParams } from 'react-router-dom';
 import { formatCategory } from 'utilities/util';
 
 import { CategorySidebar } from 'components/CategorySidebar';
@@ -11,14 +11,10 @@ import { useBreakpoint } from 'hooks/useBreakpoint';
 import { useEmails } from 'hooks/useEmails';
 
 export function InboxPage() {
-  const [filter, setFilter] = useState<string>();
   const breakpoint = useBreakpoint();
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const { categories: rawCategories, emails, actions } = useEmails(false);
-  const visibleEmails = emails
-    .filter((email) => !filter || (email.userOverrideCategory || email.aiCategory) === filter)
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    .slice(0, breakpoint === 'sm' ? 10 : breakpoint === 'md' || breakpoint === 'lg' ? 14 : 15);
 
   const categoryCount = emails.reduce(
     (acc, email) => {
@@ -33,16 +29,25 @@ export function InboxPage() {
     .map((c) => ({ ...c, label: `(${categoryCount[c.key] || 0}) ${c.label}` }))
     .sort((a, b) => a.urgency - b.urgency);
 
-  useEffect(() => {
-    if (!filter && categories.length > 0) {
-      setFilter(categories[0].key);
-    }
-  }, [filter, categories]);
+  const defaultCategory = categories[0]?.key || 'PERSONAL';
+  const urlCategory = searchParams.get('category');
+  const validCategory = urlCategory && categories?.find((c) => c.key === urlCategory);
+
+  const filter = validCategory ? urlCategory : defaultCategory;
+
+  const visibleEmails = emails
+    .filter((email) => !filter || (email.userOverrideCategory || email.aiCategory) === filter)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, breakpoint === 'sm' ? 10 : breakpoint === 'md' || breakpoint === 'lg' ? 14 : 15);
 
   return (
     <div className="flex justify-center gap-8">
       <Menu>
-        <CategorySidebar categories={categories} active={filter} onClick={(category) => setFilter(category)} />
+        <CategorySidebar
+          categories={categories}
+          active={filter}
+          onClick={(category) => setSearchParams({ category })}
+        />
       </Menu>
 
       <Nav />
