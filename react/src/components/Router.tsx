@@ -21,9 +21,9 @@ export function Router() {
         <Routes>
           <Route path="/ui" element={<ComponentPage />} />
           <Route path="/categorize" element={<CategorizePage />} />
-          <Route path="/inbox" element={<InboxPage />} />
 
-          <Route path="*" element={<Navigate to="/inbox" replace />} />
+          <Route index element={<InboxPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>
     </BrowserRouter>

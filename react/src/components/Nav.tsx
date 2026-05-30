@@ -3,7 +3,7 @@ import { twMerge } from 'tailwind-merge';
 
 const links = [
   { name: 'Categorize', url: '/categorize', icon: <FaTags /> },
-  { name: 'Inbox', url: '/inbox', icon: <FaMailBulk /> },
+  { name: 'Inbox', url: '/', icon: <FaMailBulk /> },
 ];
 
 export function Nav() {
