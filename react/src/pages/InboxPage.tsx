@@ -52,7 +52,7 @@ export function InboxPage() {
           {filter ? `${formatCategory(filter)} (${categoryCount[filter] || 0})` : 'All Emails'}
         </h1>
 
-        <div className="sticky top-0 z-10 flex w-full max-w-4xl gap-4 rounded-lg bg-slate-800 p-4">
+        <div className="sticky top-0 z-10 flex w-full max-w-4xl gap-4 bg-slate-800 py-4">
           <Button
             variant="success"
             size="lg"
@@ -77,7 +77,7 @@ export function InboxPage() {
         </div>
 
         {emails.length > 0 ? (
-          <EmailBundle emails={visibleEmails} actions={actions} />
+          <EmailBundle emails={visibleEmails} actions={actions} layoutKey={filter} />
         ) : (
           <p className="text-center text-lg text-white">
             <span>All done — no more emails to review.</span>
