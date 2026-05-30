@@ -85,18 +85,41 @@ async function syncEmails(): Promise<void> {
     const newMessages = messages.filter((m) => m.id != null && !existingIds.has(m.id));
 
     // Step C: Update status of cached messages that are missing from Inbox results
+    // or that were previously deleted/archived but now appear in Inbox (untrashed)
     const missingIds = existingIds.size > 0 ? [...existingIds].filter((id) => !messages.some((m) => m.id === id)) : [];
+    const gmailIds = new Set(messages.map((m) => m.id));
+
+    // Check for emails that were deleted/archived but are now back in INBOX (untrashed)
+    const restoredIds = [...existingIds].filter((id) => {
+      const email = db.data.emails.find((e) => e.id === id);
+      return email && email.status !== 'inbox' && gmailIds.has(id);
+    });
+
     const missingCount = missingIds
       .map((id) => db.data.emails.find((e) => e.id === id))
       .filter((e) => e?.status === 'inbox').length;
 
-    if (missingCount > 0) {
-      console.warn(`[GmailSync] Warning: ${missingCount} cached message(s) not found in Gmail API results.`);
+    if (missingCount > 0 || restoredIds.length > 0) {
+      if (missingCount > 0) {
+        console.warn(`[GmailSync] Warning: ${missingCount} cached message(s) not found in Gmail API results.`);
+      }
+      if (restoredIds.length > 0) {
+        // For restored emails, simply update their status back to 'inbox'
+        restoredIds.forEach((id) => {
+          const email = db.data.emails.find((e) => e.id === id);
+          if (email) {
+            console.log(`[GmailSync] Message ${id} restored to inbox (was: ${email.status}).`);
+            email.status = 'inbox';
+          }
+        });
+
+        console.log(`[GmailSync] Restored ${restoredIds.length} message(s) back in INBOX.`);
+      }
 
       type MessageResult =
         | { id: string; status: 'fulfilled'; data: gmail_v1.Schema$Message }
         | { id: string; status: 'rejected'; error: any };
-      const missingPromises: Promise<MessageResult>[] = [];
+      const checkPromises: Promise<MessageResult>[] = [];
 
       // Wrap the promises to return the ID alongside the result/error
       for (const id of missingIds) {
@@ -109,12 +132,12 @@ async function syncEmails(): Promise<void> {
             .then((response) => ({ id, status: 'fulfilled', data: response.data }) as MessageResult)
             .catch((error) => ({ id, status: 'rejected', error }) as MessageResult);
 
-          missingPromises.push(promise);
+          checkPromises.push(promise);
         }
       }
 
-      // Use Promise.all to fetch metadata in parallel
-      const results = await Promise.all(missingPromises);
+      // Use Promise.all to fetch metadata in parallel for missing emails
+      const results = await Promise.all(checkPromises);
 
       results.forEach((result) => {
         const email = db.data.emails.find((e) => e.id === result.id);

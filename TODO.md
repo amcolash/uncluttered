@@ -2,19 +2,16 @@
 
 ## Data
 
-- [x] Generate ~100 emails per category w/ sender, subject, snippet, expected category
-- [x] Train model on both user data and new data
-- [x] Add date to each email
-- [x] Add "ACCOUNTS" category
+- [ ] Investigate if less generated data can be used for similar accuracy (50 examples generated per category?)
+- [ ] Less aggressive ML retrain - maybe stop it since it already retrains after a few categorizations
 
 ## Server
 
-- [x] Set up API endpoints for archive, delete
-- [x] Make sure there is a dry run option for both before messing with my emails
-- [x] Make sure that email state is synced every time (goes to archive/out of inbox)
+- [ ] Investigate ML perf on NAS, possibly train on laptop and deploy model to NAS if too slow
 
 ## UI
 
-- [x] Hook up api calls to backend - pass in current set of visible emails
-- [x] Skip button sets category to "UNKNOWN"
-- [ ] Sort emails by date received
+- [ ] Add "important" filter (category-ish) to inbox page
+- [ ] Keyboard shortcuts for various operations (in batch and modal for single email)
+- [ ] Swipe actions for mobile (archive, important, delete)
+- [ ] Consider ways to improve suggestions from the UI side

@@ -27,7 +27,7 @@ export function EmailCard({
         <p className="text-md line-clamp-2 font-bold text-white">{email.subject}</p>
         <p className="line-clamp-4 text-slate-400">{email.snippet}</p>
         <Badge variant="outline" className="mt-2 w-fit p-2">
-          {email.userOverrideCategory ?? email.aiCategory}
+          {formatCategory(email.userOverrideCategory ?? email.aiCategory)}
         </Badge>
 
         {suggestions && suggestions.length > 0 ? (
