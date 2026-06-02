@@ -16,7 +16,7 @@ app.use(express.json());
 
 // ── Auto-retrain state ───────────────────────────────────────────────────────
 
-const AUTO_RETRAIN_THRESHOLD = 5;
+const AUTO_RETRAIN_THRESHOLD = 20;
 let sessionOverrideCount = 0;
 
 async function triggerRetrain() {
@@ -416,10 +416,11 @@ app.post('/api/retrain', async (_req, res) => {
 
 startGmailSyncWorker();
 
+// Retrain model a little after startup
 setTimeout(() => {
   console.log('Re-training model on startup with existing data…');
   triggerRetrain();
-}, 10_000);
+}, 30_000);
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);

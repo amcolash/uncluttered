@@ -14,6 +14,8 @@ export function CategorizePage() {
   const current = emails[0];
   const suggestions = useSuggestions(current);
 
+  const emailStack = emails.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 5);
+
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === 'ArrowUp') actions.undo();
@@ -30,6 +32,7 @@ export function CategorizePage() {
           categories={categories.sort((a, b) => a.key.localeCompare(b.key))}
           enabled={current !== undefined}
           onClick={(category) => current && actions.categorize(current.id, category)}
+          active={current?.userOverrideCategory || current?.aiCategory}
         />
       </Menu>
 
@@ -51,23 +54,28 @@ export function CategorizePage() {
 
         {current ? (
           <CardStack>
-            {emails
-              .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-              .slice(0, 5)
-              .map((email, i) => (
-                <SwipeCard
-                  key={email.id + Math.random()}
-                  onSwipe={(dir) => (dir === 'right' ? actions.confirm(email.id) : actions.defer(email.id))}
-                  index={i}
-                  className="border border-slate-900 bg-slate-700 p-4"
-                >
-                  <EmailCard
-                    email={email}
-                    suggestions={email.id === current?.id ? suggestions : []}
-                    categorize={actions.categorize}
-                  />
-                </SwipeCard>
-              ))}
+            {emailStack.map((email, i) => (
+              <SwipeCard
+                key={email.id + Math.random()}
+                onSwipe={(dir) => {
+                  if (document.activeElement) (document.activeElement as HTMLElement).blur();
+
+                  if (dir === 'right') {
+                    actions.confirm(email.id);
+                  } else {
+                    actions.defer(email.id);
+                  }
+                }}
+                index={i}
+                className="border border-slate-900 bg-slate-700 p-4"
+              >
+                <EmailCard
+                  email={email}
+                  suggestions={email.id === current?.id ? suggestions : []}
+                  categorize={actions.categorize}
+                />
+              </SwipeCard>
+            ))}
           </CardStack>
         ) : (
           <p className="text-center text-lg text-white">

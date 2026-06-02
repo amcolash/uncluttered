@@ -26,7 +26,7 @@ export function EmailCard({
         <p className="-mt-2 mb-2 text-xs text-slate-400">{new Date(email.date).toLocaleString()}</p>
         <p className="text-md line-clamp-2 font-bold text-white">{email.subject}</p>
         <p className="line-clamp-4 text-slate-400">{email.snippet}</p>
-        <Badge variant="outline" className="mt-2 w-fit p-2">
+        <Badge variant="primary" className="mt-2 w-fit p-2">
           {formatCategory(email.userOverrideCategory ?? email.aiCategory)}
         </Badge>
 
