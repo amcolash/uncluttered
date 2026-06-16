@@ -51,7 +51,7 @@ async function fetchMissingData(): Promise<void> {
   }
 }
 
-async function syncEmails(): Promise<void> {
+export async function syncEmails(): Promise<void> {
   console.log('[GmailSync] Starting sync...');
 
   try {

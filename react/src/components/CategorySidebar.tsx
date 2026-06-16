@@ -1,4 +1,7 @@
+import { useState } from 'react';
+import { FaSync } from 'react-icons/fa';
 import { twMerge } from 'tailwind-merge';
+import { API } from 'utilities/util';
 
 import { Button } from './ui/Button';
 
@@ -13,9 +16,31 @@ export function CategorySidebar({
   active?: string;
   enabled?: boolean;
 }) {
+  const [syncing, setSyncing] = useState(false);
+
   return (
     <div className="flex h-screen w-56 flex-col gap-3 overflow-y-auto border-r border-slate-700 bg-slate-900 p-4">
-      <h2 className="mt-1.5 mb-3 ml-14 text-sm font-semibold tracking-wide text-slate-400">Categories</h2>
+      <div className="flex gap-6">
+        <h2 className="mt-1.5 mb-3 ml-14 text-sm font-semibold tracking-wide text-slate-400">Categories</h2>
+        <Button
+          variant="secondary"
+          size="sm"
+          onClick={async () => {
+            setSyncing(true);
+            try {
+              await fetch(`${API}/api/emails/sync`, { method: 'POST' });
+              window.location.reload();
+            } catch (err) {
+              console.error(err);
+            } finally {
+              setSyncing(false);
+            }
+          }}
+          disabled={syncing}
+        >
+          <FaSync className={syncing ? 'animate-spin' : ''} />
+        </Button>
+      </div>
       {categories.map((c) => (
         <Button
           key={c.key}

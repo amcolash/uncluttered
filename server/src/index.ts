@@ -7,6 +7,7 @@ import { db } from './db.ts';
 import type { Email } from './dbTypes.ts';
 import { classifyEmail } from './emailClassifier.ts';
 import { authorizeWithCode, checkAuthStatus } from './gmailAuth.ts';
+import { getGmailApi, startGmailSyncWorker, syncEmails } from './gmailSyncWorker.ts';
 
 const app = express();
 const port = 7001;
@@ -140,6 +141,7 @@ app.get('/oauth2callback', async (req, res) => {
 
   try {
     await authorizeWithCode(code);
+    await syncEmails();
   } catch (err) {
     console.error('[Auth] Failed to authorize with code:', err);
   } finally {
@@ -203,6 +205,17 @@ app.delete('/api/emails/:id', async (req, res) => {
     res.json({ success: true });
   } catch (err) {
     res.status(500).json({ error: String(err) });
+  }
+});
+
+/** Sync emails */
+app.post('/api/emails/sync', async (req, res) => {
+  try {
+    await syncEmails();
+    res.send(200);
+  } catch (err) {
+    console.error(err);
+    res.send(500).json({ error: String(err) });
   }
 });
 
@@ -456,7 +469,7 @@ startGmailSyncWorker();
 setTimeout(() => {
   console.log('Re-training model on startup with existing data…');
   triggerRetrain();
-}, 30_000);
+}, 10_000);
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
