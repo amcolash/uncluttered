@@ -6,7 +6,7 @@ import { simpleParser } from 'mailparser';
 import { db } from './db.ts';
 import type { Email } from './dbTypes.ts';
 import { classifyEmail } from './emailClassifier.ts';
-import { getGmailApi, startGmailSyncWorker } from './gmailSyncWorker.ts';
+import { authorizeWithCode, checkAuthStatus } from './gmailAuth.ts';
 
 const app = express();
 const port = 7001;
@@ -111,6 +111,42 @@ async function batchProcessEmails(
 
   return results;
 }
+
+// ── Auth endpoints ──────────────────────────────────────────────────────────
+
+app.get('/api/auth/status', async (_req, res) => {
+  try {
+    const status = await checkAuthStatus();
+    res.json(status);
+  } catch (err) {
+    console.error('[Auth] Failed to check status:', err);
+    res.status(500).json({ error: String(err) });
+  }
+});
+
+app.get('/oauth2callback', async (req, res) => {
+  const code = req.query.code as string;
+  const error = req.query.error as string;
+
+  if (error) {
+    res.status(400).send(`Authorization denied: ${error}`);
+    return;
+  }
+
+  if (!code) {
+    res.status(400).send('No authorization code received.');
+    return;
+  }
+
+  try {
+    await authorizeWithCode(code);
+  } catch (err) {
+    console.error('[Auth] Failed to authorize with code:', err);
+  } finally {
+    // go back to the app after authorization, regardless of outcome
+    res.redirect('http://localhost:5173');
+  }
+});
 
 // ── Email endpoints ─────────────────────────────────────────────────────────
 
