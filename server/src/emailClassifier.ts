@@ -113,6 +113,26 @@ const GAMING_DOMAINS = [
   'itch.io',
 ];
 const CREATOR_DOMAINS = ['patreon.com', 'ko-fi.com', 'memberful.com', 'substack.com'];
+const SOCIAL_MEDIA_DOMAINS = [
+  'facebookmail.com',
+  'facebook.com',
+  'instagram.com',
+  'twitter.com',
+  'x.com',
+  'threads.net',
+  'tiktok.com',
+  'pinterest.com',
+  'reddit.com',
+  'redditmail.com',
+  'bsky.app',
+  'blueskyweb.xyz',
+  'mastodon.social',
+  'snapchat.com',
+  'tumblr.com',
+  'nextdoor.com',
+  'youtube.com',
+  'glassdoor.com',
+];
 const POLITICAL_DOMAINS = ['democraticgovernors.org', 'electionservicescorp.com', 'winred.com', 'ngpvan.com'];
 const NONPROFIT_DOMAINS = [
   'defenders.org',
@@ -287,6 +307,9 @@ const RE_NEWSLETTER_SUBJ =
 const RE_SUBSCRIPTION_SUBJ =
   /\b(automatic\s+payment\s+(is\s+)?(coming\s+up|scheduled|processed)|autopay\s+(scheduled|confirmed)|your\s+(subscription|plan|service)\s+(receipt|update|renewal|is\s+active)|billing\s+cycle|service\s+(update|change|confirmation)|plan\s+(update|change|confirmed|selection))\b/i;
 
+const RE_SOCIAL_MEDIA_SUBJ =
+  /\b(tagged\s+you|mentioned\s+you|sent\s+you\s+a\s+message|new\s+(follower|connection|friend\s+request|notification)|liked\s+your|commented\s+on|replied\s+to\s+your|shared\s+a\s+post|started\s+following\s+you|invitation\s+to\s+connect|people\s+you\s+may\s+know|view\s+(post|profile|tweet)|on\s+(twitter|x|linkedin|facebook|instagram|reddit|tiktok|threads)|your\s+daily\s+reddit|popular\s+on\s+r\/|top\s+posts\s+in\s+r\/|weekly\s+digest\s+from\s+reddit|post\s+from\s+r\/)\b/i;
+
 const RE_PROMO_SUBJ =
   /(\d+\s*%\s*off|free\s+shipping|\bsale\b|discount|promo(tion)?\b|\boffer\b|\bdeal\b|coupon|\bsavings?\b|save\s+\$|limited[\s-]time|flash\s+sale|exclusive\s+(offer|deal|access|invite|savings?)|earn\s+(points|rewards|miles|cash\s*back)|refer\s+a\s+friend|don'?t\s+miss|last\s+chance|\bhurry\b|shop\s+now|buy\s+now|free\s+trial|you'?re\s+invited|membership\s+(update|news|perk|benefit)|reward\s+points?|claim\s+(your|now)|act\s+now|ends?\s+soon)/i;
 
@@ -451,6 +474,11 @@ export function classifyEmailRules(subject: string, snippet: string, sender: str
   // 15. SUBSCRIPTION_SERVICE — ISP / utility service management
   if (domainIs(domain, ...SUBSCRIPTION_DOMAINS) || RE_SUBSCRIPTION_SUBJ.test(subject)) {
     categories.push('SUBSCRIPTION_SERVICE');
+  }
+
+  // 15b. SOCIAL_MEDIA — social network notifications, follows, mentions, community updates
+  if (domainIs(domain, ...SOCIAL_MEDIA_DOMAINS) || RE_SOCIAL_MEDIA_SUBJ.test(subject)) {
+    categories.push('SOCIAL_MEDIA');
   }
 
   // 16. PROMO_MARKETING — automated sender, bulk footer, or promotional language
