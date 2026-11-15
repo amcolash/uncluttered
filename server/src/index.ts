@@ -298,9 +298,10 @@ app.post('/api/emails/:id/important', async (req, res) => {
     return;
   }
 
-  email.important = true;
+  const { important } = req.body as { important?: boolean };
+  email.important = important !== undefined ? Boolean(important) : !email.important;
   await db.write();
-  res.json({ success: true });
+  res.json({ success: true, important: email.important });
 });
 
 // ── Category endpoints ───────────────────────────────────────────────────────

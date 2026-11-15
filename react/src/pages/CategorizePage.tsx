@@ -11,10 +11,9 @@ import { useSuggestions } from 'hooks/useSuggestions';
 
 export function CategorizePage() {
   const { emails, categories, canUndo, actions } = useEmails(true);
-  const current = emails[0];
+  const emailStack = emails.slice(0, 5);
+  const current = emailStack[0];
   const suggestions = useSuggestions(current);
-
-  const emailStack = emails.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 5);
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
@@ -56,7 +55,7 @@ export function CategorizePage() {
           <CardStack>
             {emailStack.map((email, i) => (
               <SwipeCard
-                key={email.id + Math.random()}
+                key={email.id}
                 onSwipe={(dir) => {
                   if (document.activeElement) (document.activeElement as HTMLElement).blur();
 

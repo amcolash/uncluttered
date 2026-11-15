@@ -29,14 +29,19 @@ export function InboxPage() {
     .map((c) => ({ ...c, label: `(${categoryCount[c.key] || 0}) ${c.label}` }))
     .sort((a, b) => a.urgency - b.urgency);
 
-  const defaultCategory = categories[0]?.key || 'PERSONAL';
   const urlCategory = searchParams.get('category');
+  const importantCount = emails.filter((e) => e.important).length;
+  const isImportantFilter = urlCategory === 'IMPORTANT' && importantCount > 0;
+
+  const defaultCategory = categories[0]?.key || 'PERSONAL';
   const validCategory = urlCategory && categories?.find((c) => c.key === urlCategory);
 
-  const filter = validCategory ? urlCategory : defaultCategory;
+  const filter = isImportantFilter ? 'IMPORTANT' : validCategory ? urlCategory : defaultCategory;
 
   const visibleEmails = emails
-    .filter((email) => !filter || (email.userOverrideCategory || email.aiCategory) === filter)
+    .filter((email) =>
+      filter === 'IMPORTANT' ? email.important : !filter || (email.userOverrideCategory || email.aiCategory) === filter
+    )
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, breakpoint === 'sm' ? 10 : breakpoint === 'md' || breakpoint === 'lg' ? 14 : 15);
 
@@ -46,6 +51,7 @@ export function InboxPage() {
         <CategorySidebar
           categories={categories}
           active={filter}
+          importantCount={importantCount}
           onClick={(category) => setSearchParams({ category })}
         />
       </Menu>
@@ -54,7 +60,11 @@ export function InboxPage() {
 
       <div className="flex max-w-screen flex-1 flex-col items-center gap-12 p-8">
         <h1 className="mt-8 text-2xl font-bold text-white">
-          {filter ? `${formatCategory(filter)} (${categoryCount[filter] || 0})` : 'All Emails'}
+          {filter === 'IMPORTANT'
+            ? `Important (${importantCount})`
+            : filter
+              ? `${formatCategory(filter)} (${categoryCount[filter] || 0})`
+              : 'All Emails'}
         </h1>
 
         <div className="sticky top-0 z-10 flex w-full max-w-4xl gap-4 bg-slate-800 py-4">

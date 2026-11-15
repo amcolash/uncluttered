@@ -62,15 +62,19 @@ export function useEmails(filterValidated: boolean): {
   const [history, setHistory] = useState<HistoryEntry[]>([]);
 
   async function fetchEmails() {
-    fetch(`${API}/api/emails`)
-      .then((r) => r.json())
-      .then((all: Email[]) =>
-        setEmails(
-          all.filter(
-            (e) => !filterValidated || e.validated !== true || (e.userOverrideCategory || e.aiCategory) === 'UNKNOWN'
-          )
+    try {
+      const res = await fetch(`${API}/api/emails`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const all: Email[] = await res.json();
+      const filtered = all
+        .filter(
+          (e) => !filterValidated || e.validated !== true || (e.userOverrideCategory || e.aiCategory) === 'UNKNOWN'
         )
-      );
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+      setEmails(filtered);
+    } catch (err) {
+      console.error('Failed to fetch emails:', err);
+    }
   }
 
   async function fetchCategories() {
@@ -153,33 +157,51 @@ export function useEmails(filterValidated: boolean): {
   }
 
   async function archive(id: string) {
-    if (!DRY_RUN) {
-      await fetch(`${API}/api/emails/${id}/archive`, {
-        method: 'POST',
-      });
-    }
-
     setEmails((prev) => prev.filter((e) => e.id !== id));
+
+    try {
+      if (!DRY_RUN) {
+        const res = await fetch(`${API}/api/emails/${id}/archive`, {
+          method: 'POST',
+        });
+        if (!res.ok) throw new Error(`Archive failed with status ${res.status}`);
+      }
+    } catch (err) {
+      console.error('Archive failed:', err);
+      fetchEmails();
+    }
   }
 
   async function trash(id: string) {
-    if (!DRY_RUN) {
-      await fetch(`${API}/api/emails/${id}`, {
-        method: 'DELETE',
-      });
-    }
-
     setEmails((prev) => prev.filter((e) => e.id !== id));
+
+    try {
+      if (!DRY_RUN) {
+        const res = await fetch(`${API}/api/emails/${id}`, {
+          method: 'DELETE',
+        });
+        if (!res.ok) throw new Error(`Trash failed with status ${res.status}`);
+      }
+    } catch (err) {
+      console.error('Trash failed:', err);
+      fetchEmails();
+    }
   }
 
   async function markImportant(id: string, important: boolean) {
-    await fetch(`${API}/api/emails/${id}/important`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ important }),
-    });
-
     setEmails((prev) => prev.map((e) => (e.id === id ? { ...e, important } : e)));
+
+    try {
+      const res = await fetch(`${API}/api/emails/${id}/important`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ important }),
+      });
+      if (!res.ok) throw new Error(`Mark important failed with status ${res.status}`);
+    } catch (err) {
+      console.error('Mark important failed:', err);
+      fetchEmails();
+    }
   }
 
   async function batchArchive(ids: string[]) {
@@ -187,11 +209,12 @@ export function useEmails(filterValidated: boolean): {
 
     try {
       if (!DRY_RUN) {
-        await fetch(`${API}/api/emails/batch/archive`, {
+        const res = await fetch(`${API}/api/emails/batch/archive`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ ids }),
         });
+        if (!res.ok) throw new Error(`Batch archive failed with status ${res.status}`);
       }
     } catch (error) {
       // If the request fails, refetch emails to ensure UI consistency
@@ -205,11 +228,12 @@ export function useEmails(filterValidated: boolean): {
 
     try {
       if (!DRY_RUN) {
-        await fetch(`${API}/api/emails/batch/delete`, {
+        const res = await fetch(`${API}/api/emails/batch/delete`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ ids }),
         });
+        if (!res.ok) throw new Error(`Batch trash failed with status ${res.status}`);
       }
     } catch (error) {
       // If the request fails, refetch emails to ensure UI consistency

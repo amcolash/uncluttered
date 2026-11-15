@@ -1,5 +1,5 @@
 import { motion, useAnimate, useMotionValue, useTransform } from 'motion/react';
-import { type ReactNode, useEffect } from 'react';
+import { type ReactNode, useEffect, useRef } from 'react';
 import { FaCheck, FaTimes } from 'react-icons/fa';
 import { twMerge } from 'tailwind-merge';
 
@@ -33,13 +33,22 @@ export function SwipeCard({ onSwipe, index, className, children }: SwipeCardProp
   const checkOpacity = useTransform(x, [INTERACT_THRESHOLD * 0.8, INTERACT_THRESHOLD], [0, 1]);
   const skipOpacity = useTransform(x, [-INTERACT_THRESHOLD, -INTERACT_THRESHOLD * 0.8], [1, 0]);
 
+  const isHandlingRef = useRef(false);
+
   // Handle keyboard interactions
   useEffect(() => {
     const keydown = async (e: KeyboardEvent) => {
+      const activeTag = (document.activeElement?.tagName || '').toLowerCase();
+      if (['input', 'textarea'].includes(activeTag)) return;
+
+      if (isHandlingRef.current) return;
+
       if (e.key === 'ArrowRight') {
+        isHandlingRef.current = true;
         await animate(scope.current, { x: TRANSFORM_THRESHOLD }, { duration: 0.2 });
         onSwipe('right');
       } else if (e.key === 'ArrowLeft') {
+        isHandlingRef.current = true;
         await animate(scope.current, { x: -TRANSFORM_THRESHOLD }, { duration: 0.2 });
         onSwipe('left');
       }

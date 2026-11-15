@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaSync } from 'react-icons/fa';
+import { FaStar, FaSync } from 'react-icons/fa';
 import { twMerge } from 'tailwind-merge';
 import { API } from 'utilities/util';
 
@@ -10,11 +10,13 @@ export function CategorySidebar({
   onClick,
   active,
   enabled = true,
+  importantCount,
 }: {
   categories: { key: string; label: string; description: string }[];
   onClick: (category: string) => void;
   active?: string;
   enabled?: boolean;
+  importantCount?: number;
 }) {
   const [syncing, setSyncing] = useState(false);
 
@@ -41,6 +43,24 @@ export function CategorySidebar({
           <FaSync className={syncing ? 'animate-spin' : ''} />
         </Button>
       </div>
+
+      {importantCount !== undefined && importantCount > 0 && (
+        <Button
+          variant="secondary"
+          size="sm"
+          disabled={!enabled}
+          onClick={() => enabled && onClick('IMPORTANT')}
+          className={twMerge(
+            'w-full justify-start truncate border-yellow-500/40 text-left text-yellow-300 hover:text-yellow-200',
+            active === 'IMPORTANT' && 'bg-slate-800 ring-2 ring-yellow-400 ring-offset-2 ring-offset-slate-800'
+          )}
+          title="Important emails"
+        >
+          <FaStar className="shrink-0 text-yellow-400" />
+          <span>({importantCount}) Important</span>
+        </Button>
+      )}
+
       {categories.map((c) => (
         <Button
           key={c.key}
