@@ -30,7 +30,7 @@ export function Input({ label, error, hint, startIcon, endIcon, className, id, .
             'focus:ring-2 focus:ring-offset-1 focus:ring-offset-slate-900 focus:outline-none',
             error
               ? 'border-red-500 focus:ring-red-500'
-              : 'border-slate-600 enabled:hover:border-slate-500 focus:border-transparent focus:ring-indigo-500',
+              : 'border-slate-600 focus:border-transparent focus:ring-indigo-500 enabled:hover:border-slate-500',
             !!startIcon && 'pl-9',
             !!endIcon && 'pr-9',
             'disabled:cursor-not-allowed disabled:opacity-50',

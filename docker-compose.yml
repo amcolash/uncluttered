@@ -5,7 +5,7 @@ services:
     container_name: uncluttered
     network_mode: host
     restart: unless-stopped
-    env_file: ".env"
+    env_file: '.env'
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - .cert:/usr/src/app/server/.cert
