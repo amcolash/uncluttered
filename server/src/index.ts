@@ -6,7 +6,7 @@ import { simpleParser } from 'mailparser';
 import { db } from './db.ts';
 import type { Email } from './dbTypes.ts';
 import { classifyEmail } from './emailClassifier.ts';
-import { authorizeWithCode, checkAuthStatus } from './gmailAuth.ts';
+import { authorizeWithCode, checkAuthStatus, resetAuth } from './gmailAuth.ts';
 import { getGmailApi, startGmailSyncWorker, syncEmails } from './gmailSyncWorker.ts';
 
 const app = express();
@@ -125,28 +125,41 @@ app.get('/api/auth/status', async (_req, res) => {
   }
 });
 
+app.post('/api/auth/reset', async (_req, res) => {
+  try {
+    const result = await resetAuth();
+    res.json(result);
+  } catch (err) {
+    console.error('[Auth] Failed to reset auth:', err);
+    res.status(500).json({ error: String(err) });
+  }
+});
+
 app.get('/oauth2callback', async (req, res) => {
   const code = req.query.code as string;
   const error = req.query.error as string;
 
   if (error) {
-    res.status(400).send(`Authorization denied: ${error}`);
+    console.error('[Auth] Authorization denied by user or Google:', error);
+    res.redirect(`http://localhost:5173/?auth=error&message=${encodeURIComponent(`Authorization denied: ${error}`)}`);
     return;
   }
 
   if (!code) {
-    res.status(400).send('No authorization code received.');
+    res.redirect(`http://localhost:5173/?auth=error&message=${encodeURIComponent('No authorization code received.')}`);
     return;
   }
 
   try {
     await authorizeWithCode(code);
-    await syncEmails();
-  } catch (err) {
+    // Run sync in the background so redirect responds immediately without browser timeout
+    syncEmails().catch((err) => console.error('[GmailSync] Post-auth sync failed:', err));
+    res.redirect('http://localhost:5173/?auth=success');
+  } catch (err: any) {
     console.error('[Auth] Failed to authorize with code:', err);
-  } finally {
-    // go back to the app after authorization, regardless of outcome
-    res.redirect('http://localhost:5173');
+    res.redirect(
+      `http://localhost:5173/?auth=error&message=${encodeURIComponent(err?.message || 'Authorization failed')}`
+    );
   }
 });
 

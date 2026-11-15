@@ -60,18 +60,61 @@ async function getOAuthClientInstance(): Promise<OAuth2Client> {
   return oAuth2ClientInstance;
 }
 
+function createAuthUrl(client: OAuth2Client): string {
+  return client.generateAuthUrl({
+    access_type: 'offline',
+    scope: SCOPES,
+    prompt: 'consent',
+  });
+}
+
+export async function resetAuth(): Promise<{ success: boolean; url: string }> {
+  console.log('[GmailAuth] Resetting authentication state...');
+  try {
+    await fs.rm(TOKEN_PATH, { force: true });
+  } catch (err) {
+    console.warn('[GmailAuth] Could not delete token file:', err);
+  }
+
+  oAuth2ClientInstance = null;
+  cachedAuthUrl = null;
+  authUrlExpiresAt = 0;
+
+  const client = await getOAuthClientInstance();
+  cachedAuthUrl = createAuthUrl(client);
+  authUrlExpiresAt = Date.now() + 1000 * 60 * 60;
+
+  return { success: true, url: cachedAuthUrl };
+}
+
 export async function authorizeWithCode(code: string): Promise<void> {
   const client = await getOAuthClientInstance();
   const { tokens } = await client.getToken(code);
-  client.setCredentials(tokens);
-  await fs.writeFile(TOKEN_PATH, JSON.stringify(tokens, null, 2));
+
+  let existing: Record<string, unknown> = {};
+  try {
+    const raw = await fs.readFile(TOKEN_PATH, 'utf-8');
+    existing = JSON.parse(raw);
+  } catch {
+    // Missing or corrupt file
+  }
+
+  const mergedTokens = { ...existing, ...tokens };
+  client.setCredentials(mergedTokens);
+  await fs.writeFile(TOKEN_PATH, JSON.stringify(mergedTokens, null, 2));
   console.log(`[GmailAuth] Token saved to ${TOKEN_PATH}`);
+
+  cachedAuthUrl = null;
+  authUrlExpiresAt = 0;
 }
 
 async function verifyToken(client: OAuth2Client): Promise<boolean> {
   try {
     const tokenRaw = await fs.readFile(TOKEN_PATH, 'utf-8');
     const token = JSON.parse(tokenRaw) as Record<string, unknown>;
+    if (!token || (!token.access_token && !token.refresh_token)) {
+      return false;
+    }
     client.setCredentials(token);
   } catch {
     // Missing file, bad JSON, etc.
@@ -82,11 +125,8 @@ async function verifyToken(client: OAuth2Client): Promise<boolean> {
     await client.getAccessToken();
     return true;
   } catch (err: any) {
-    if (err.message && err.message.includes('invalid_grant')) {
-      return false;
-    }
-    // Let other errors (e.g. network timeout) bubble up so we don't trigger re-auth erroneously
-    throw err;
+    console.warn('[GmailAuth] Token verification failed:', err.message || err);
+    return false;
   }
 }
 
@@ -96,11 +136,7 @@ export async function checkAuthStatus(): Promise<{ tokenValid: boolean; url?: st
 
   if (!isValid) {
     if (!cachedAuthUrl || Date.now() > authUrlExpiresAt) {
-      cachedAuthUrl = client.generateAuthUrl({
-        access_type: 'offline',
-        scope: SCOPES,
-        prompt: 'consent',
-      });
+      cachedAuthUrl = createAuthUrl(client);
       authUrlExpiresAt = Date.now() + 1000 * 60 * 60; // Cache for 1 hour
     }
     return { tokenValid: false, url: cachedAuthUrl };

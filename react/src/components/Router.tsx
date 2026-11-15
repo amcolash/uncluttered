@@ -19,10 +19,14 @@ function LoadingSpinner() {
 }
 
 export function Router() {
-  const { status, loading } = useAuthStatus();
+  const { status, loading, error, isResetting, checkStatus, resetAuth } = useAuthStatus();
 
-  if (loading) return <LoadingSpinner />;
-  if (!status?.tokenValid) return <GoogleAuth url={status?.url} />;
+  if (loading && !status && !error) return <LoadingSpinner />;
+  if (!status?.tokenValid) {
+    return (
+      <GoogleAuth url={status?.url} error={error} isResetting={isResetting} onReset={resetAuth} onCheck={checkStatus} />
+    );
+  }
 
   return (
     <BrowserRouter>
