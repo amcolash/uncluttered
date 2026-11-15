@@ -1,0 +1,702 @@
+[
+  {
+    "id": "1940d92d65d5db5d",
+    "sender": "Twitter <info@twitter.com>",
+    "subject": "Your photo is trending on TikTok",
+    "snippet": "James Wilson invited you to join \"Software Architects\". See what members are sharing: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "97d7a4eda1c5f709",
+    "sender": "LinkedIn Network <network-updates@linkedin.com>",
+    "subject": "Emma Watson mentioned you in a update",
+    "snippet": "Hot discussion in Tech Leaders Group: \"AI development\". Read opinions and reply: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "8331193b60888d23",
+    "sender": "Twitter Notifications <notify@twitter.com>",
+    "subject": "Michael Chen accepted your connection request",
+    "snippet": "Your connection Tom Miller shared an update: \"Celebrating 3 years at the team.\". Like or comment: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "ca258ea6d395e3ad",
+    "sender": "LinkedIn <messages-noreply@linkedin.com>",
+    "subject": "Congratulate Lisa Ray on starting a new position",
+    "snippet": "Chris Evans accepted your invitation to connect. Send a message to say hello: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "cf4e125b57818159",
+    "sender": "Instagram <notifications@instagram.com>",
+    "subject": "Highlights from your network this week",
+    "snippet": "Someone with the title Founder & Angel Investor viewed your profile on TikTok. See viewers: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "1d8c8abb57fd37d1",
+    "sender": "Pinterest <updates@pinterest.com>",
+    "subject": "Alex Johnson liked your thread",
+    "snippet": "New message from @curious_coder: \"Hey, loved your latest post!\". Continue chat: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "b012016ca3abf922",
+    "sender": "Facebook <notification@facebookmail.com>",
+    "subject": "Michael Chen endorsed you for React",
+    "snippet": "People you may know: connect with Michael Chen and others at Microsoft: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "844f2003f9ae7463",
+    "sender": "Substack Notes <notes@substack.com>",
+    "subject": "James Wilson invited you to join Remote Tech Workers",
+    "snippet": "Catch up on what people in your network shared today on Pinterest: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "683a38dc863ff198",
+    "sender": "Discord <noreply@discord.com>",
+    "subject": "James Wilson published a new post",
+    "snippet": "Sarah Connor and 42 others started following you on X. Check their profiles: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "e367f5ada520dd0b",
+    "sender": "Instagram <notifications@instagram.com>",
+    "subject": "Priya Patel posted for the first time in a while",
+    "snippet": "Someone with the title Product Designer viewed your profile on Facebook. See viewers: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "e6ce231db64bd189",
+    "sender": "Facebook <notification@facebookmail.com>",
+    "subject": "Sarah Connor posted for the first time in a while",
+    "snippet": "Sarah Connor reposted your comment: \"Excited to share our open source milestone today!\". View stats: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "c2ad1a5fd8b566fb",
+    "sender": "TikTok <notification@tiktok.com>",
+    "subject": "Highlights from your network this week",
+    "snippet": "Activity update: 3 people interacted with your thread in the last week: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "510cf0749ea1fcd6",
+    "sender": "Medium <noreply@medium.com>",
+    "subject": "Emma Watson tagged you in a update",
+    "snippet": "Sarah Connor accepted your invitation to connect. Send a message to say hello: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "c6b7229cf20fff66",
+    "sender": "LinkedIn Notifications <notifications-noreply@linkedin.com>",
+    "subject": "David Kim liked your post",
+    "snippet": "Alex Johnson shared a photo: \"What is your favorite modern dev setup?\". View full post on Twitter: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "f1a6b51289d99315",
+    "sender": "LinkedIn Notifications <notifications-noreply@linkedin.com>",
+    "subject": "Top posts in Entrepreneurs Network for you",
+    "snippet": "Activity update: 5 people interacted with your thread in the last week: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "d77ab644d65021a3",
+    "sender": "LinkedIn Updates <updates-noreply@linkedin.com>",
+    "subject": "New activity in AI & Machine Learning Club",
+    "snippet": "Priya Patel liked your thread \"Lessons learned scaling our backend architecture...\". View interaction: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "eb2b7ea53e0e51f5",
+    "sender": "Instagram <notifications@instagram.com>",
+    "subject": "Congratulate Lisa Ray on starting a new position",
+    "snippet": "You appeared in 9 search results this week. See who is looking for your skills: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "5bff6bb4f02601d8",
+    "sender": "Threads <notification@threads.net>",
+    "subject": "Tom Miller accepted your connection request",
+    "snippet": "Alex Johnson (Engineering Director) would like to connect with you on X. View profile: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "947ee0ddc5b9587b",
+    "sender": "Instagram <no-reply@mail.instagram.com>",
+    "subject": "Highlights from your network this week",
+    "snippet": "Tom Miller accepted your invitation to connect. Send a message to say hello: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "1d021695a9ac0924",
+    "sender": "LinkedIn Notifications <notifications-noreply@linkedin.com>",
+    "subject": "Sarah Connor tagged you in a video",
+    "snippet": "You appeared in 14 search results this week. See who is looking for your skills: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "c8ab15bfef3d32b7",
+    "sender": "Nextdoor <reply@nextdoor.com>",
+    "subject": "Priya Patel endorsed you for Machine Learning",
+    "snippet": "New message from @dev_guru: \"Quick question about your tech stack...\". Continue chat: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "09ba824a3876db34",
+    "sender": "X Notifications <notify@x.com>",
+    "subject": "You have 14 new notifications on Instagram",
+    "snippet": "Here are the top stories and discussions from r/programming curated for you: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "c746298709e4560c",
+    "sender": "LinkedIn Notifications <notifications-noreply@linkedin.com>",
+    "subject": "People you may know on Bluesky",
+    "snippet": "Your connection Sarah Connor shared an update: \"Celebrating 3 years at the team.\". Like or comment: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "cac4e1f821eac6c7",
+    "sender": "X <info@x.com>",
+    "subject": "You have 9 new notifications on Bluesky",
+    "snippet": "Activity update: 28 people interacted with your thread in the last 24 hours: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "4f22bbcffeb47fa8",
+    "sender": "Instagram <notifications@instagram.com>",
+    "subject": "Emma Watson commented on your post",
+    "snippet": "James Wilson (Founder & Angel Investor) would like to connect with you on Instagram. View profile: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "71f094d904bf3a35",
+    "sender": "LinkedIn Network <network-updates@linkedin.com>",
+    "subject": "David Kim liked your photo",
+    "snippet": "Chris Evans accepted your invitation to connect. Send a message to say hello: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "4e5290c222b73ff3",
+    "sender": "LinkedIn Network <network-updates@linkedin.com>",
+    "subject": "Sarah Connor accepted your connection request",
+    "snippet": "Catch up on what people in your network shared today on TikTok: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "1fb109b0ffacde17",
+    "sender": "Mastodon <notifications@mastodon.social>",
+    "subject": "Priya Patel replied to your comment",
+    "snippet": "Your connection Michael Chen shared an update: \"Thrilled to announce my new project!\". Like or comment: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "81c54b3056b2e097",
+    "sender": "Facebook <notification@facebookmail.com>",
+    "subject": "Sarah Connor commented on your thread",
+    "snippet": "Congratulate Emma Watson on their new role as Staff Software Engineer at Vercel! Send congratulations: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "1df734cca386bbaf",
+    "sender": "Pinterest <updates@pinterest.com>",
+    "subject": "Alex Johnson endorsed you for Machine Learning",
+    "snippet": "Hi there, Michael Chen sent you a direct message: \"Are you going to the conference this fall?\". Reply on LinkedIn: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "265fee8a4d0da5c8",
+    "sender": "Reddit <noreply@redditmail.com>",
+    "subject": "Trending on Threads: Remote work tips",
+    "snippet": "Hot discussion in Frontend Developers: \"Open source projects\". Read opinions and reply: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "528729f861f6cf73",
+    "sender": "Twitter Notifications <notify@twitter.com>",
+    "subject": "See what's happening on Twitter today",
+    "snippet": "Weekly update: 5 new updates and notifications waiting for you on Facebook: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "6e7903c2c80e6d12",
+    "sender": "Facebook <notification@facebookmail.com>",
+    "subject": "Weekly digest: Top posts in Frontend Developers",
+    "snippet": "Jessica Taylor and 5 others started following you on Pinterest. Check their profiles: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "796de856533b3cf4",
+    "sender": "Tumblr <no-reply@tumblr.com>",
+    "subject": "Jessica Taylor mentioned you in a post",
+    "snippet": "Your connection Sarah Connor shared an update: \"Celebrating 3 years at the team.\". Like or comment: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "74d75ebe563dae16",
+    "sender": "LinkedIn <messages-noreply@linkedin.com>",
+    "subject": "Catch up on discussions in Remote Tech Workers",
+    "snippet": "Emma Watson reposted your story: \"Excited to share our open source milestone today!\". View stats: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "cd1681df6be226d2",
+    "sender": "Threads <notification@threads.net>",
+    "subject": "Weekly digest: Top posts in Tech Leaders Group",
+    "snippet": "New reply to your comment in Tech Leaders Group: \"Great insight, hadn't thought about it that way.\". Read response: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "ab9348fd4e98ed77",
+    "sender": "Reddit Digest <digest@redditmail.com>",
+    "subject": "Highlights from your network this week",
+    "snippet": "Michael Chen voted on your poll \"Remote, hybrid, or in-office?\". See latest poll results: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "c87b7181866585c2",
+    "sender": "X Notifications <notify@x.com>",
+    "subject": "New activity in Software Architects",
+    "snippet": "Here are the top stories and discussions from Designers Guild curated for you: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "86a2fc67d8637c43",
+    "sender": "LinkedIn Network <network-updates@linkedin.com>",
+    "subject": "Catch up on discussions in Software Architects",
+    "snippet": "Someone with the title Engineering Director viewed your profile on Nextdoor. See viewers: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "859054e51bcf1cf1",
+    "sender": "Discord <noreply@discord.com>",
+    "subject": "Tom Miller sent you a message",
+    "snippet": "Lisa Ray (Senior Engineer at Tech Co) would like to connect with you on Threads. View profile: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "8bfb3be630abd9a9",
+    "sender": "Instagram <notifications@instagram.com>",
+    "subject": "Emma Watson commented on your comment",
+    "snippet": "Discover new posts from people you follow, including Tom Miller and others on Pinterest: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "7e963f3791a2d590",
+    "sender": "Bluesky <notifications@bsky.app>",
+    "subject": "Top posts in r/technology for you",
+    "snippet": "Marcus Brown accepted your invitation to connect. Send a message to say hello: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "a28f068885f3e89f",
+    "sender": "Goodreads <no-reply@mail.goodreads.com>",
+    "subject": "Jessica Taylor posted for the first time in a while",
+    "snippet": "Trending in r/programming: \"Web frameworks in 2026\". Join the discussion with other members: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "4d4f5d12c63f9f84",
+    "sender": "Discord <noreply@discord.com>",
+    "subject": "Don't miss these updates from your network",
+    "snippet": "Marcus Brown tagged you in a story on Discord. Tap to view: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "cad4a654040a2935",
+    "sender": "Substack Notes <notes@substack.com>",
+    "subject": "Tom Miller voted on your poll",
+    "snippet": "New message from @code_ninja: \"Quick question about your tech stack...\". Continue chat: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "5a862882f556243e",
+    "sender": "Goodreads <no-reply@mail.goodreads.com>",
+    "subject": "Congratulate Jessica Taylor on starting a new position",
+    "snippet": "Michael Chen and 9 others started following you on Reddit. Check their profiles: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "fbef175356ae712b",
+    "sender": "Goodreads <no-reply@mail.goodreads.com>",
+    "subject": "Trending on Twitter: Open source projects",
+    "snippet": "Weekly update: 28 new updates and notifications waiting for you on Threads: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "2f9b030fdca63da2",
+    "sender": "Facebook Events <events@facebookmail.com>",
+    "subject": "Jessica Taylor reacted to your post",
+    "snippet": "Catch up on what people in your network shared today on Reddit: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "8a90690029fc8747",
+    "sender": "Medium <noreply@medium.com>",
+    "subject": "Weekly digest: Top posts in r/technology",
+    "snippet": "New reply to your comment in Designers Guild: \"Could you share an example?\". Read response: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "6062db1bd976f049",
+    "sender": "X <info@x.com>",
+    "subject": "David Kim published a new post",
+    "snippet": "Jessica Taylor reacted to your message with \ud83d\udca1. Open Twitter to reply: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "c52e616dd75014c6",
+    "sender": "X <info@x.com>",
+    "subject": "Your photo is trending on TikTok",
+    "snippet": "Emma Watson commented: \"Could you share an example?\". Join the conversation: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "9811b99dbd4d85d3",
+    "sender": "TikTok <notification@tiktok.com>",
+    "subject": "New follower alert: Chris Evans",
+    "snippet": "Congratulate Alex Johnson on their new role as Director of Product at GitHub! Send congratulations: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "b4a2a463fe512ee7",
+    "sender": "Nextdoor <reply@nextdoor.com>",
+    "subject": "Lisa Ray commented on your video",
+    "snippet": "Sarah Connor endorsed your skill in React. Thank them on X: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "c950df04944f86cc",
+    "sender": "Twitch <no-reply@twitch.tv>",
+    "subject": "You appeared in 9 searches this week",
+    "snippet": "Michael Chen tagged you in a story on X. Tap to view: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "99de7f95e2f2c5f7",
+    "sender": "LinkedIn <invitations@linkedin.com>",
+    "subject": "Jessica Taylor commented on your thread",
+    "snippet": "Congratulate Jessica Taylor on their new role as Head of Design at GitHub! Send congratulations: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "e937a7deb8eefe96",
+    "sender": "Facebook Events <events@facebookmail.com>",
+    "subject": "Chris Evans replied to your comment",
+    "snippet": "Priya Patel reacted to your message with \ud83d\ude80. Open Reddit to reply: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "b343865c1ed7448c",
+    "sender": "LinkedIn Network <network-updates@linkedin.com>",
+    "subject": "Top posts in r/technology for you",
+    "snippet": "Tom Miller (Engineering Director) would like to connect with you on Reddit. View profile: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "1c17d798950d57c5",
+    "sender": "Goodreads <no-reply@mail.goodreads.com>",
+    "subject": "Chris Evans accepted your connection request",
+    "snippet": "Priya Patel reposted your comment: \"Lessons learned scaling our backend architecture...\". View stats: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "85aee889e38c333f",
+    "sender": "Instagram <no-reply@mail.instagram.com>",
+    "subject": "Your video is trending on Threads",
+    "snippet": "Here are the top stories and discussions from Tech Leaders Group curated for you: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "9d044c80a034c9f6",
+    "sender": "YouTube Notifications <noreply@youtube.com>",
+    "subject": "You appeared in 9 searches this week",
+    "snippet": "Activity update: 28 people interacted with your story in the last few days: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "77b812dc75775f1f",
+    "sender": "LinkedIn Notifications <notifications-noreply@linkedin.com>",
+    "subject": "New follower alert: Tom Miller",
+    "snippet": "Weekly update: 3 new updates and notifications waiting for you on Bluesky: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "92bc66fc0606a491",
+    "sender": "Instagram <no-reply@mail.instagram.com>",
+    "subject": "Tom Miller mentioned you in a post",
+    "snippet": "New message from @design_lead: \"Hey, loved your latest post!\". Continue chat: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "b842280c0d42ee62",
+    "sender": "Facebook <notification@facebookmail.com>",
+    "subject": "Chris Evans voted on your poll",
+    "snippet": "Tom Miller voted on your poll \"Favorite cloud provider?\". See latest poll results: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "258e6452d40f72d8",
+    "sender": "TikTok <notification@tiktok.com>",
+    "subject": "Top posts in Designers Guild for you",
+    "snippet": "Sarah Connor shared a photo: \"What is your favorite modern dev setup?\". View full post on X: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "35dedc880b0781fd",
+    "sender": "Pinterest <updates@pinterest.com>",
+    "subject": "David Kim mentioned you in a comment",
+    "snippet": "Sarah Connor accepted your invitation to connect. Send a message to say hello: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "0060242e287d812e",
+    "sender": "Mastodon <notifications@mastodon.social>",
+    "subject": "Priya Patel shared a new comment",
+    "snippet": "Congratulate Priya Patel on their new role as Head of Design at Stripe! Send congratulations: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "46b3d85d38d7f345",
+    "sender": "Tumblr <no-reply@tumblr.com>",
+    "subject": "Emma Watson wants to connect with you",
+    "snippet": "Alex Johnson shared a photo: \"Excited to share our open source milestone today!\". View full post on Discord: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "fb2d6914b31635b3",
+    "sender": "LinkedIn <invitations@linkedin.com>",
+    "subject": "Michael Chen voted on your poll",
+    "snippet": "James Wilson liked your comment \"Excited to share our open source milestone today!\". View interaction: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "1e78127e79ea33ae",
+    "sender": "Twitch <no-reply@twitch.tv>",
+    "subject": "Emma Watson replied to your comment",
+    "snippet": "Catch up on what people in your network shared today on Discord: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "2e17f83fbdc35a23",
+    "sender": "X Notifications <notify@x.com>",
+    "subject": "Lisa Ray reacted to your post",
+    "snippet": "New reply to your comment in Frontend Developers: \"Totally agree with this approach!\". Read response: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "4ce90fec0385ad5b",
+    "sender": "Substack Notes <notes@substack.com>",
+    "subject": "Jessica Taylor sent you a message",
+    "snippet": "Catch up on what people in your network shared today on Discord: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "e552e11c4de0434a",
+    "sender": "Threads <notification@threads.net>",
+    "subject": "Alex Johnson commented on your thread",
+    "snippet": "People you may know: connect with James Wilson and others at Microsoft: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "8b8e8bc6e61a0d71",
+    "sender": "Reddit <noreply@redditmail.com>",
+    "subject": "Catch up on discussions in Software Architects",
+    "snippet": "Emma Watson reposted your photo: \"What is your favorite modern dev setup?\". View stats: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "7e4f818fda99f85d",
+    "sender": "Twitter <info@twitter.com>",
+    "subject": "David Kim liked your story",
+    "snippet": "Hi Jordan, James Wilson sent you a direct message: \"Quick question about your tech stack...\". Reply on Discord: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "b2437d8e27200ab4",
+    "sender": "LinkedIn Notifications <notifications-noreply@linkedin.com>",
+    "subject": "Catch up on discussions in Python Enthusiasts",
+    "snippet": "Catch up on what people in your network shared today on TikTok: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "a67dce4b1a1e6fd6",
+    "sender": "Twitter Notifications <notify@twitter.com>",
+    "subject": "Marcus Brown reacted to your post",
+    "snippet": "Discover new posts from people you follow, including Jessica Taylor and others on Twitter: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "3067c3033bea639a",
+    "sender": "Pinterest <highlights@pinterest.com>",
+    "subject": "Congratulate Sarah Connor on starting a new position",
+    "snippet": "Tom Miller reacted to your message with \ud83d\ude80. Open Facebook to reply: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "1e24349e578a5af1",
+    "sender": "Reddit Digest <digest@redditmail.com>",
+    "subject": "People you may know on Instagram",
+    "snippet": "Priya Patel reposted your comment: \"What is your favorite modern dev setup?\". View stats: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "4aceaa60f9ad558d",
+    "sender": "Pinterest <updates@pinterest.com>",
+    "subject": "James Wilson published a new post",
+    "snippet": "Congratulate Tom Miller on their new role as VP of Engineering at Meta! Send congratulations: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "bc8679875cf92f8f",
+    "sender": "Goodreads <no-reply@mail.goodreads.com>",
+    "subject": "David Kim voted on your poll",
+    "snippet": "Michael Chen requested to join your group \"Software Architects\". Approve or deny: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "ee3df16dc2504ee8",
+    "sender": "Discord <noreply@discord.com>",
+    "subject": "Marcus Brown published a new post",
+    "snippet": "Here are the top stories and discussions from r/programming curated for you: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "1b5383560a83b77b",
+    "sender": "X <info@x.com>",
+    "subject": "Top posts in Tech Leaders Group for you",
+    "snippet": "James Wilson reacted to your message with \ud83d\udc4d. Open Instagram to reply: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "3e19f26f84394e74",
+    "sender": "Twitch <no-reply@twitch.tv>",
+    "subject": "Congratulate James Wilson on starting a new position",
+    "snippet": "Your connection Marcus Brown shared an update: \"Celebrating 3 years at the team.\". Like or comment: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "e0f68146e230d777",
+    "sender": "TikTok <notification@tiktok.com>",
+    "subject": "Tom Miller started following you",
+    "snippet": "Trending in r/technology: \"Career advice\". Join the discussion with other members: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "3dcbf69783c713c3",
+    "sender": "Mastodon <notifications@mastodon.social>",
+    "subject": "Emma Watson wants to connect with you",
+    "snippet": "Tom Miller requested to join your group \"Software Architects\". Approve or deny: https://instagram.com/p/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "f2fa9f48fdba9b46",
+    "sender": "TikTok <notification@tiktok.com>",
+    "subject": "Marcus Brown posted for the first time in a while",
+    "snippet": "You have 42 pending invitations waiting on Reddit. Review them now: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "112b45923f13d128",
+    "sender": "TikTok <notification@tiktok.com>",
+    "subject": "Trending on LinkedIn: Web frameworks in 2026",
+    "snippet": "Priya Patel (Engineering Director) would like to connect with you on Reddit. View profile: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "9095a56606e0ccf9",
+    "sender": "X <info@x.com>",
+    "subject": "Your story is trending on Pinterest",
+    "snippet": "Tom Miller liked your post \"Lessons learned scaling our backend architecture...\". View interaction: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "86e6fad6b53094b6",
+    "sender": "Nextdoor <reply@nextdoor.com>",
+    "subject": "Michael Chen accepted your connection request",
+    "snippet": "Lisa Ray accepted your invitation to connect. Send a message to say hello: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "0f5a5eb9f69b6632",
+    "sender": "TikTok <notification@tiktok.com>",
+    "subject": "People you may know on Threads",
+    "snippet": "New reply to your comment in Designers Guild: \"Could you share an example?\". Read response: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "e87ec42871d1f6ba",
+    "sender": "Substack Notes <notes@substack.com>",
+    "subject": "Jessica Taylor voted on your poll",
+    "snippet": "People you may know: connect with James Wilson and others at Figma: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "fb200ffc31530e01",
+    "sender": "X Notifications <notify@x.com>",
+    "subject": "Highlights from your network this week",
+    "snippet": "Here are the top stories and discussions from Designers Guild curated for you: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "08319b48c8188fe3",
+    "sender": "TikTok <notification@tiktok.com>",
+    "subject": "Trending on Reddit: Remote work tips",
+    "snippet": "David Kim endorsed your skill in Machine Learning. Thank them on TikTok: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "3319505a3fe1c6bf",
+    "sender": "Pinterest <updates@pinterest.com>",
+    "subject": "James Wilson started following you",
+    "snippet": "Emma Watson reacted to your message with \ud83d\udd25. Open Bluesky to reply: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "bb218dff6ce7beb6",
+    "sender": "Nextdoor <reply@nextdoor.com>",
+    "subject": "Lisa Ray mentioned you in a thread",
+    "snippet": "Trending in Tech Leaders Group: \"Open source projects\". Join the discussion with other members: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "d7d2a05259e67ffe",
+    "sender": "LinkedIn Notifications <notifications-noreply@linkedin.com>",
+    "subject": "James Wilson liked your update",
+    "snippet": "Tom Miller endorsed your skill in TypeScript. Thank them on Facebook: https://threads.net/@...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "d39ea1381376d51b",
+    "sender": "LinkedIn Updates <updates-noreply@linkedin.com>",
+    "subject": "New activity in Python Enthusiasts",
+    "snippet": "Congratulate Sarah Connor on their new role as Product Lead at Meta! Send congratulations: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "9c43a33e5b420a63",
+    "sender": "Facebook Events <events@facebookmail.com>",
+    "subject": "Lisa Ray posted for the first time in a while",
+    "snippet": "David Kim and 3 others started following you on Discord. Check their profiles: https://x.com/notifications",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "3bee5ff9c01d27bc",
+    "sender": "LinkedIn Notifications <notifications-noreply@linkedin.com>",
+    "subject": "Chris Evans started following you",
+    "snippet": "Michael Chen shared a photo: \"Excited to share our open source milestone today!\". View full post on TikTok: https://reddit.com/r/...",
+    "category": "SOCIAL_MEDIA"
+  },
+  {
+    "id": "813c0024d46deaf9",
+    "sender": "TikTok <notification@tiktok.com>",
+    "subject": "Top posts in Tech Leaders Group for you",
+    "snippet": "Michael Chen and 14 others started following you on Bluesky. Check their profiles: https://linkedin.com/feed/update/...",
+    "category": "SOCIAL_MEDIA"
+  }
+]

@@ -2252,6 +2252,128 @@ CATEGORIES = {
         ],
         'vars': {'service': ['Google', 'Microsoft', 'Amazon', 'GitHub', 'Slack', 'LinkedIn', 'Dropbox', 'Uber'], 'code': ['123456', '654321', '789012', '456789', '012345'], 'link': ['https://account.service.com/reset', 'verify-email.service.com', 'confirm.account.com'], 'location': ['New York, USA', 'London, UK', 'Tokyo, Japan', 'Sydney, Australia', 'Berlin, Germany', 'unknown location'], 'expiry': ['15 minutes', '1 hour', '24 hours', '10 minutes'], 'device': ['iPhone', 'Android phone', 'Windows PC', 'Mac', 'Chrome browser'], 'step': ['1', '2', '3', 'final']}
     },
+    'SOCIAL_MEDIA': {
+        'senders': [
+            'LinkedIn <messages-noreply@linkedin.com>',
+            'LinkedIn <invitations@linkedin.com>',
+            'LinkedIn Notifications <notifications-noreply@linkedin.com>',
+            'LinkedIn Updates <updates-noreply@linkedin.com>',
+            'LinkedIn Network <network-updates@linkedin.com>',
+            'X Notifications <notify@x.com>',
+            'X <info@x.com>',
+            'Twitter Notifications <notify@twitter.com>',
+            'Twitter <info@twitter.com>',
+            'Reddit <noreply@redditmail.com>',
+            'Reddit Digest <digest@redditmail.com>',
+            'Instagram <notifications@instagram.com>',
+            'Instagram <no-reply@mail.instagram.com>',
+            'Facebook <notification@facebookmail.com>',
+            'Facebook Events <events@facebookmail.com>',
+            'Threads <notification@threads.net>',
+            'TikTok <notification@tiktok.com>',
+            'Pinterest <highlights@pinterest.com>',
+            'Pinterest <updates@pinterest.com>',
+            'Bluesky <notifications@bsky.app>',
+            'Mastodon <notifications@mastodon.social>',
+            'Discord <noreply@discord.com>',
+            'Nextdoor <reply@nextdoor.com>',
+            'YouTube Notifications <noreply@youtube.com>',
+            'Medium <noreply@medium.com>',
+            'Tumblr <no-reply@tumblr.com>',
+            'Goodreads <no-reply@mail.goodreads.com>',
+            'Strava <no-reply@strava.com>',
+            'Twitch <no-reply@twitch.tv>',
+            'Substack Notes <notes@substack.com>',
+        ],
+        'subject_templates': [
+            '{name} sent you a message',
+            '{name} wants to connect with you',
+            'You have {count} new notifications on {platform}',
+            '{name} mentioned you in a {content_type}',
+            '{name} liked your {content_type}',
+            '{name} started following you',
+            '{name} replied to your comment',
+            'See what\'s happening on {platform} today',
+            'Trending on {platform}: {topic}',
+            'Weekly digest: Top posts in {community}',
+            '{name} invited you to join {group}',
+            '{name} shared a new {content_type}',
+            'You appeared in {count} searches this week',
+            'Congratulate {name} on starting a new position',
+            '{name} commented on your {content_type}',
+            'New activity in {group}',
+            'People you may know on {platform}',
+            '{name} tagged you in a {content_type}',
+            'Your {content_type} is trending on {platform}',
+            'Top posts in {community} for you',
+            '{name} reacted to your post',
+            '{name} posted for the first time in a while',
+            'Don\'t miss these updates from your network',
+            'Catch up on discussions in {group}',
+            '{name} endorsed you for {skill}',
+            'New follower alert: {name}',
+            '{name} published a new post',
+            '{name} accepted your connection request',
+            'Highlights from your network this week',
+            '{name} voted on your poll',
+        ],
+        'snippet_templates': [
+            'Hi {user}, {name} sent you a direct message: "{message_preview}". Reply on {platform}: {link}',
+            '{name} ({headline}) would like to connect with you on {platform}. View profile: {link}',
+            '{name} liked your {content_type} "{post_preview}". View interaction: {link}',
+            '{name} commented: "{comment_preview}". Join the conversation: {link}',
+            '@{handle} mentioned you in a {content_type}: "{mention_preview}". See the post: {link}',
+            '{name} and {count} others started following you on {platform}. Check their profiles: {link}',
+            'You appeared in {count} search results this week. See who is looking for your skills: {link}',
+            'Congratulate {name} on their new role as {role} at {company}! Send congratulations: {link}',
+            'Trending in {community}: "{topic}". Join the discussion with other members: {link}',
+            '{name} tagged you in a {content_type} on {platform}. Tap to view: {link}',
+            'New reply to your comment in {community}: "{comment_preview}". Read response: {link}',
+            '{name} invited you to join "{group}". See what members are sharing: {link}',
+            '{name} endorsed your skill in {skill}. Thank them on {platform}: {link}',
+            'Here are the top stories and discussions from {community} curated for you: {link}',
+            '{name} reposted your {content_type}: "{post_preview}". View stats: {link}',
+            'Catch up on what people in your network shared today on {platform}: {link}',
+            'Weekly update: {count} new updates and notifications waiting for you on {platform}: {link}',
+            '{name} accepted your invitation to connect. Send a message to say hello: {link}',
+            'Your connection {name} shared an update: "{update_preview}". Like or comment: {link}',
+            '{name} reacted to your message with {emoji}. Open {platform} to reply: {link}',
+            'Discover new posts from people you follow, including {name} and others on {platform}: {link}',
+            'Someone with the title {headline} viewed your profile on {platform}. See viewers: {link}',
+            '{name} shared a photo: "{post_preview}". View full post on {platform}: {link}',
+            'Activity update: {count} people interacted with your {content_type} in the last {time_frame}: {link}',
+            '{name} voted on your poll "{poll_question}". See latest poll results: {link}',
+            'You have {count} pending invitations waiting on {platform}. Review them now: {link}',
+            'New message from @{handle}: "{message_preview}". Continue chat: {link}',
+            '{name} requested to join your group "{group}". Approve or deny: {link}',
+            'People you may know: connect with {name} and others at {company}: {link}',
+            'Hot discussion in {community}: "{topic}". Read opinions and reply: {link}',
+        ],
+        'vars': {
+            'platform': ['LinkedIn', 'Twitter', 'X', 'Reddit', 'Instagram', 'Facebook', 'Threads', 'Bluesky', 'TikTok', 'Pinterest', 'Nextdoor', 'Discord'],
+            'name': ['Alex Johnson', 'Sarah Connor', 'Michael Chen', 'David Kim', 'Priya Patel', 'Marcus Brown', 'Emma Watson', 'James Wilson', 'Lisa Ray', 'Tom Miller', 'Jessica Taylor', 'Chris Evans'],
+            'user': ['Alex', 'there', 'friend', 'Member', 'Taylor', 'Jordan'],
+            'handle': ['tech_enthusiast', 'dev_guru', 'code_ninja', 'design_lead', 'curious_coder', 'startup_founder', 'web_builder', 'data_geek'],
+            'content_type': ['post', 'thread', 'photo', 'update', 'video', 'story', 'comment'],
+            'topic': ['AI development', 'Remote work tips', 'Web frameworks in 2026', 'Open source projects', 'Career advice', 'Tech industry trends'],
+            'community': ['r/programming', 'r/technology', 'Tech Leaders Group', 'Frontend Developers', 'Designers Guild', 'Entrepreneurs Network'],
+            'group': ['Python Enthusiasts', 'Software Architects', 'Tech Startups & Founders', 'Remote Tech Workers', 'AI & Machine Learning Club'],
+            'role': ['Staff Software Engineer', 'Product Lead', 'VP of Engineering', 'Director of Product', 'Founder & CEO', 'Head of Design'],
+            'company': ['Stripe', 'Google', 'Meta', 'OpenAI', 'Vercel', 'Microsoft', 'GitHub', 'Figma'],
+            'skill': ['TypeScript', 'Machine Learning', 'Cloud Architecture', 'React', 'Product Management', 'Python', 'UI/UX Design'],
+            'count': ['3', '5', '9', '14', '28', '42'],
+            'link': ['https://linkedin.com/feed/update/...', 'https://x.com/notifications', 'https://reddit.com/r/...', 'https://instagram.com/p/...', 'https://threads.net/@...'],
+            'message_preview': ['Hey, loved your latest post!', 'Are you going to the conference this fall?', 'Thanks for connecting!', 'Quick question about your tech stack...'],
+            'post_preview': ['Excited to share our open source milestone today!', 'Lessons learned scaling our backend architecture...', 'What is your favorite modern dev setup?'],
+            'comment_preview': ['Totally agree with this approach!', 'Great insight, hadn\'t thought about it that way.', 'Could you share an example?'],
+            'mention_preview': ['Check out this discussion with...', 'Hat tip to the team for building this!', 'Thoughts on this approach?'],
+            'time_frame': ['24 hours', 'few days', 'week'],
+            'emoji': ['👍', '❤️', '🔥', '🎉', '🚀', '💡'],
+            'poll_question': ['What is your primary programming language?', 'Remote, hybrid, or in-office?', 'Favorite cloud provider?'],
+            'update_preview': ['Thrilled to announce my new project!', 'Celebrating 3 years at the team.', 'Just published thoughts on modern tooling.'],
+            'headline': ['Senior Engineer at Tech Co', 'Product Designer', 'Founder & Angel Investor', 'Engineering Director']
+        }
+    },
 }
 
 def generate_id():
@@ -2284,7 +2406,7 @@ def generate_examples(category, config, count=100):
     return examples
 
 def main():
-    output_dir = Path('/home/amcolash/Github/uncluttered/classifier/training')
+    output_dir = Path(__file__).parent.resolve()
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Generate main training files
@@ -2315,6 +2437,10 @@ def main():
         ('BANKING_ACCOUNT', 'FINANCE_BILL'),  # Bank alert vs bill notice
         ('COMMUNITY_LOCAL', 'NONPROFIT_ADVOCACY'),  # Local group vs advocacy org
         ('TRAVEL_BOOKING', 'ORDER_SHIPPING'),  # Travel reservation vs package tracking
+        ('SOCIAL_MEDIA', 'PERSONAL'),  # Social direct message vs personal email
+        ('SOCIAL_MEDIA', 'RECRUITER'),  # LinkedIn connection/InMail vs recruiter reachout
+        ('SOCIAL_MEDIA', 'CREATOR_CONTENT'),  # Platform notification vs creator update
+        ('SOCIAL_MEDIA', 'COMMUNITY_LOCAL'),  # Neighborhood network vs local community
     ]
 
     for cat1, cat2 in ambiguous_pairs:
