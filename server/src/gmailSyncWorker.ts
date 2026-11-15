@@ -8,6 +8,134 @@ import { getAuthClient } from './gmailAuth.ts';
 const SYNC_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes
 const MAX_EMAILS = 3000;
 const PAGE_SIZE = 500; // Gmail API hard cap per request
+const BATCH_CONCURRENCY = 5;
+const BATCH_CHUNK_SIZE = 25;
+const MAX_NEW_EMAILS_PER_SYNC = 500;
+const DELAY_BETWEEN_BATCHES_MS = 250;
+
+let isSyncRunning = false;
+let rateLimitPausedUntil = 0;
+
+export function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+export function isRateLimitError(err: any): boolean {
+  const status = err?.status ?? err?.code ?? err?.response?.status;
+  if (status === 429) return true;
+  if (status === 403) {
+    const msg = (err?.message || err?.cause?.message || err?.response?.data?.error?.message || '').toLowerCase();
+    const reason = (err?.response?.data?.error?.errors?.[0]?.reason || '').toLowerCase();
+    if (
+      msg.includes('quota exceeded') ||
+      msg.includes('rate limit') ||
+      msg.includes('user rate') ||
+      msg.includes('units per minute') ||
+      reason.includes('ratelimit') ||
+      reason.includes('quota') ||
+      reason.includes('rate_limit')
+    ) {
+      return true;
+    }
+  }
+  return false;
+}
+
+export async function waitForRateLimitPause(): Promise<void> {
+  const now = Date.now();
+  if (rateLimitPausedUntil > now) {
+    const waitMs = rateLimitPausedUntil - now;
+    console.warn(`[GmailSync] Rate limit active. Pausing requests for ${(waitMs / 1000).toFixed(1)}s...`);
+    await sleep(waitMs);
+  }
+}
+
+export function pauseForRateLimit(durationMs = 30_000) {
+  const newUntil = Date.now() + durationMs;
+  if (newUntil > rateLimitPausedUntil) {
+    rateLimitPausedUntil = newUntil;
+    console.warn(`[GmailSync] Rate limit hit. Pausing all Gmail requests for ${(durationMs / 1000).toFixed(1)}s.`);
+  }
+}
+
+export async function callWithRetry<T>(
+  operation: () => Promise<T>,
+  context: string,
+  maxRetries = 5,
+  initialDelayMs = 2000
+): Promise<T> {
+  let attempt = 0;
+  let delay = initialDelayMs;
+
+  while (true) {
+    await waitForRateLimitPause();
+
+    try {
+      return await operation();
+    } catch (err: any) {
+      attempt++;
+
+      if (isRateLimitError(err)) {
+        pauseForRateLimit(Math.max(delay * 2, 30_000));
+        if (attempt <= maxRetries) {
+          const jitter = Math.random() * 1000;
+          const waitTime = delay + jitter;
+          console.warn(
+            `[GmailSync] Rate limited on ${context}. Retry ${attempt}/${maxRetries} after ${(waitTime / 1000).toFixed(1)}s...`
+          );
+          await sleep(waitTime);
+          delay = Math.min(delay * 2, 60_000);
+          continue;
+        }
+      }
+
+      // Check for transient 5xx errors
+      const status = err?.status ?? err?.code ?? err?.response?.status;
+      if (typeof status === 'number' && status >= 500 && status < 600 && attempt <= maxRetries) {
+        const waitTime = delay + Math.random() * 500;
+        console.warn(
+          `[GmailSync] Server error (${status}) on ${context}. Retry ${attempt}/${maxRetries} after ${(waitTime / 1000).toFixed(1)}s...`
+        );
+        await sleep(waitTime);
+        delay = Math.min(delay * 2, 30_000);
+        continue;
+      }
+
+      throw err;
+    }
+  }
+}
+
+function parseEmailDate(internalDate?: string | null, dateHeader?: string | null): string {
+  if (internalDate && !isNaN(Number(internalDate)) && Number(internalDate) > 0) {
+    return new Date(Number(internalDate)).toISOString();
+  }
+  if (dateHeader) {
+    const parsed = Date.parse(dateHeader);
+    if (!isNaN(parsed) && parsed > 0) {
+      return new Date(parsed).toISOString();
+    }
+  }
+  return new Date().toISOString();
+}
+
+async function processInBatches<T, R>(
+  items: T[],
+  batchSize: number,
+  fn: (item: T) => Promise<R>,
+  delayBetweenBatchesMs = DELAY_BETWEEN_BATCHES_MS
+): Promise<R[]> {
+  const results: R[] = [];
+  for (let i = 0; i < items.length; i += batchSize) {
+    const batch = items.slice(i, i + batchSize);
+    const batchResults = await Promise.all(batch.map(fn));
+    results.push(...batchResults);
+    if (i + batchSize < items.length && delayBetweenBatchesMs > 0) {
+      await sleep(delayBetweenBatchesMs);
+    }
+  }
+  return results;
+}
 
 export async function getGmailApi() {
   const auth = await getAuthClient();
@@ -17,41 +145,43 @@ export async function getGmailApi() {
 async function fetchMissingData(): Promise<void> {
   const gmail = await getGmailApi();
 
-  const dateResults = [];
-  for (const email of db.data.emails) {
-    if (!email.date || email.date === '1970-01-01T00:00:00.000Z') {
-      console.log(`[GmailSync] Fetching date for message ${email.id}...`);
+  const missingEmails = db.data.emails.filter((email) => !email.date || email.date === '1970-01-01T00:00:00.000Z');
 
-      const promise = gmail.users.messages
-        .get({
-          userId: 'me',
-          id: email.id,
-          format: 'metadata',
-          metadataHeaders: ['Date'],
-        })
-        .then((response) => {
-          const headers = response.data.payload?.headers ?? [];
-          const dateHeader = headers.find((h) => h.name?.toLowerCase() === 'date');
+  if (missingEmails.length === 0) return;
 
-          email.date = new Date(parseInt(response.data.internalDate ?? dateHeader?.value ?? '0')).toISOString();
-          console.log(`[GmailSync] Updated date for message ${email.id}: ${email.date}`);
-        })
-        .catch((err) => {
-          console.error(`[GmailSync] Failed to fetch date for message ${email.id}:`, err);
-        });
+  console.log(`[GmailSync] Fetching dates for ${missingEmails.length} message(s)...`);
 
-      dateResults.push(promise);
+  await processInBatches(missingEmails, BATCH_CONCURRENCY, async (email) => {
+    try {
+      const response = await callWithRetry(
+        () =>
+          gmail.users.messages.get({
+            userId: 'me',
+            id: email.id,
+            format: 'metadata',
+            metadataHeaders: ['Date'],
+          }),
+        `fetchDate(${email.id})`
+      );
+      const headers = response.data.payload?.headers ?? [];
+      const dateHeader = headers.find((h) => h.name?.toLowerCase() === 'date');
+      email.date = parseEmailDate(response.data.internalDate, dateHeader?.value);
+      console.log(`[GmailSync] Updated date for message ${email.id}: ${email.date}`);
+    } catch (err: any) {
+      console.error(`[GmailSync] Failed to fetch date for message ${email.id}:`, err?.message || err);
     }
-  }
+  });
 
-  if (dateResults.length > 0) {
-    console.log(`[GmailSync] Fetching dates for ${dateResults.length} message(s) in parallel...`);
-    await Promise.allSettled(dateResults);
-    await db.write();
-  }
+  await db.write();
 }
 
 export async function syncEmails(): Promise<void> {
+  if (isSyncRunning) {
+    console.log('[GmailSync] Sync already in progress, skipping duplicate run.');
+    return;
+  }
+
+  isSyncRunning = true;
   console.log('[GmailSync] Starting sync...');
 
   try {
@@ -63,14 +193,21 @@ export async function syncEmails(): Promise<void> {
     let pageToken: string | undefined;
 
     do {
-      const listRes = await gmail.users.messages.list({
-        userId: 'me',
-        q: 'label:INBOX',
-        maxResults: PAGE_SIZE,
-        pageToken,
-      });
+      const listRes = await callWithRetry(
+        () =>
+          gmail.users.messages.list({
+            userId: 'me',
+            q: 'label:INBOX',
+            maxResults: PAGE_SIZE,
+            pageToken,
+          }),
+        'listInboxMessages'
+      );
       allMessages.push(...(listRes.data.messages ?? []));
       pageToken = listRes.data.nextPageToken ?? undefined;
+      if (pageToken) {
+        await sleep(300);
+      }
     } while (pageToken && allMessages.length < MAX_EMAILS);
 
     const messages = allMessages.slice(0, MAX_EMAILS);
@@ -95,14 +232,16 @@ export async function syncEmails(): Promise<void> {
       return email && email.status !== 'inbox' && gmailIds.has(id);
     });
 
-    const missingCount = missingIds
-      .map((id) => db.data.emails.find((e) => e.id === id))
-      .filter((e) => e?.status === 'inbox').length;
+    const activeMissingIds = missingIds.filter((id) => {
+      const email = db.data.emails.find((e) => e.id === id);
+      return email && email.status === 'inbox';
+    });
 
-    if (missingCount > 0 || restoredIds.length > 0) {
-      if (missingCount > 0) {
-        console.warn(`[GmailSync] Warning: ${missingCount} cached message(s) not found in Gmail API results.`);
+    if (activeMissingIds.length > 0 || restoredIds.length > 0) {
+      if (activeMissingIds.length > 0) {
+        console.log(`[GmailSync] Checking status for ${activeMissingIds.length} missing message(s)...`);
       }
+
       if (restoredIds.length > 0) {
         // For restored emails, simply update their status back to 'inbox'
         restoredIds.forEach((id) => {
@@ -119,25 +258,18 @@ export async function syncEmails(): Promise<void> {
       type MessageResult =
         | { id: string; status: 'fulfilled'; data: gmail_v1.Schema$Message }
         | { id: string; status: 'rejected'; error: any };
-      const checkPromises: Promise<MessageResult>[] = [];
 
-      // Wrap the promises to return the ID alongside the result/error
-      for (const id of missingIds) {
-        const email = db.data.emails.find((e) => e.id === id);
-        if (email && email.status === 'inbox') {
-          console.log(`[GmailSync] Fetching status for missing message ${id}...`);
-
-          const promise = gmail.users.messages
-            .get({ userId: 'me', id })
-            .then((response) => ({ id, status: 'fulfilled', data: response.data }) as MessageResult)
-            .catch((error) => ({ id, status: 'rejected', error }) as MessageResult);
-
-          checkPromises.push(promise);
+      const results: MessageResult[] = await processInBatches(activeMissingIds, BATCH_CONCURRENCY, async (id) => {
+        try {
+          const response = await callWithRetry(
+            () => gmail.users.messages.get({ userId: 'me', id }),
+            `checkStatus(${id})`
+          );
+          return { id, status: 'fulfilled' as const, data: response.data };
+        } catch (error) {
+          return { id, status: 'rejected' as const, error };
         }
-      }
-
-      // Use Promise.all to fetch metadata in parallel for missing emails
-      const results = await Promise.all(checkPromises);
+      });
 
       results.forEach((result) => {
         const email = db.data.emails.find((e) => e.id === result.id);
@@ -158,17 +290,14 @@ export async function syncEmails(): Promise<void> {
           }
         } else {
           // Handle the error case and explicitly check for a 404
-          const err = result.error;
-
-          // Google API errors usually expose the status code on err.code or err.response.status
-          const statusCode = err.code || err.status || (err.response && err.response.status);
+          const err: any = result.error;
+          const statusCode = err?.code || err?.status || err?.response?.status;
 
           if (statusCode === 404) {
             email.status = 'deleted';
             console.log(`[GmailSync] Message ${result.id} marked as deleted (404).`);
           } else {
-            // Do NOT change the DB status if it's a 500, 429, or network error
-            console.error(`[GmailSync] Failed to fetch missing message ${result.id}:`, err.message);
+            console.error(`[GmailSync] Failed to fetch missing message ${result.id}:`, err?.message || err);
           }
         }
       });
@@ -176,89 +305,125 @@ export async function syncEmails(): Promise<void> {
       await db.write();
     }
 
-    // Step D: For any messages missing dates, fetch those in parallel before classification
+    // Step D: For any messages missing dates, fetch those before classification
     await fetchMissingData();
 
-    if (newMessages.length === 0 && missingCount === 0) {
+    if (newMessages.length === 0) {
       console.log('[GmailSync] All messages already cached.');
       return;
     }
 
-    // Step E: Fetch all metadata headers in parallel — lightweight network I/O,
-    // safe to parallelize. Failed individual fetches are filtered out rather than
-    // aborting the whole batch.
-    console.log(`[GmailSync] Fetching metadata for ${newMessages.length} new message(s) in parallel...`);
+    const messagesToProcess = newMessages.slice(0, MAX_NEW_EMAILS_PER_SYNC);
+    if (newMessages.length > MAX_NEW_EMAILS_PER_SYNC) {
+      console.log(
+        `[GmailSync] ${newMessages.length} new messages found. Processing first ${MAX_NEW_EMAILS_PER_SYNC} in this run; remaining will sync in subsequent cycles.`
+      );
+    }
 
-    const metadataResults = await Promise.allSettled(
-      newMessages
-        .filter((m) => m.id != null)
-        .map((msg) =>
-          gmail.users.messages.get({
-            userId: 'me',
-            id: msg.id!,
-            format: 'metadata',
-            metadataHeaders: ['From', 'Subject', 'Date'],
-          })
-        )
+    console.log(
+      `[GmailSync] Fetching & classifying ${messagesToProcess.length} new message(s) in paced batches of ${BATCH_CHUNK_SIZE}...`
     );
 
-    // Step F: Classify each message sequentially with ML model to avoid saturating
-    // the 2-core NAS, then push all results into Lowdb and do a single write.
-    let saved = 0;
+    let totalSaved = 0;
 
-    for (const result of metadataResults) {
-      if (result.status === 'rejected') {
-        console.error('[GmailSync] Failed to fetch message metadata:', result.reason);
-        continue;
+    for (let i = 0; i < messagesToProcess.length; i += BATCH_CHUNK_SIZE) {
+      const chunk = messagesToProcess.slice(i, i + BATCH_CHUNK_SIZE);
+      const batchNum = Math.floor(i / BATCH_CHUNK_SIZE) + 1;
+      const totalBatches = Math.ceil(messagesToProcess.length / BATCH_CHUNK_SIZE);
+
+      console.log(`[GmailSync] Fetching metadata for batch ${batchNum}/${totalBatches} (${chunk.length} emails)...`);
+
+      const metadataResults = await processInBatches(
+        chunk,
+        BATCH_CONCURRENCY,
+        async (msg) => {
+          try {
+            const res = await callWithRetry(
+              () =>
+                gmail.users.messages.get({
+                  userId: 'me',
+                  id: msg.id!,
+                  format: 'metadata',
+                  metadataHeaders: ['From', 'Subject', 'Date'],
+                }),
+              `metadata(${msg.id})`
+            );
+            return { status: 'fulfilled' as const, value: res };
+          } catch (err) {
+            return { status: 'rejected' as const, reason: err };
+          }
+        },
+        50
+      );
+
+      let chunkSaved = 0;
+
+      for (const result of metadataResults) {
+        if (result.status === 'rejected') {
+          console.error(
+            '[GmailSync] Failed to fetch message metadata:',
+            (result.reason as any)?.message || result.reason
+          );
+          continue;
+        }
+
+        const detail = result.value;
+        const id = detail.data.id;
+        if (!id) continue;
+
+        try {
+          const headers = detail.data.payload?.headers ?? [];
+          const getHeader = (name: string): string =>
+            headers.find((h) => h.name?.toLowerCase() === name.toLowerCase())?.value ?? '';
+
+          const sender = getHeader('From');
+          const subject = getHeader('Subject');
+          const snippet = detail.data.snippet ?? '';
+          const threadId = detail.data.threadId ?? '';
+
+          const { category: aiCategory } = await classifyEmail(subject, snippet, sender);
+
+          const email: Email = {
+            id,
+            threadId,
+            sender,
+            subject,
+            snippet,
+            aiCategory,
+            userOverrideCategory: null,
+            status: 'inbox',
+            date: parseEmailDate(detail.data.internalDate, getHeader('Date')),
+            processedAt: new Date().toISOString(),
+            validated: false,
+            important: false,
+          };
+
+          db.data.emails.push(email);
+          chunkSaved++;
+          totalSaved++;
+          console.log(
+            `[GmailSync] Classified [${totalSaved}/${messagesToProcess.length}]: "${subject}" → ${aiCategory}`
+          );
+        } catch (err) {
+          console.error(`[GmailSync] Failed to classify message ${id}:`, err);
+        }
       }
 
-      const detail = result.value;
-      const id = detail.data.id;
-      if (!id) continue;
+      if (chunkSaved > 0) {
+        await db.write();
+        console.log(`[GmailSync] Saved batch ${batchNum}/${totalBatches} (${chunkSaved} emails written to DB).`);
+      }
 
-      try {
-        const headers = detail.data.payload?.headers ?? [];
-        const getHeader = (name: string): string =>
-          headers.find((h) => h.name?.toLowerCase() === name.toLowerCase())?.value ?? '';
-
-        const sender = getHeader('From');
-        const subject = getHeader('Subject');
-        const snippet = detail.data.snippet ?? '';
-        const threadId = detail.data.threadId ?? '';
-
-        const { category: aiCategory } = await classifyEmail(subject, snippet, sender);
-
-        const email: Email = {
-          id,
-          threadId,
-          sender,
-          subject,
-          snippet,
-          aiCategory,
-          userOverrideCategory: null,
-          status: 'inbox',
-          date: new Date(parseInt(detail.data.internalDate ?? getHeader('Date') ?? '0')).toISOString(),
-          processedAt: new Date().toISOString(),
-          validated: false,
-          important: false,
-        };
-
-        db.data.emails.push(email);
-        saved++;
-        console.log(`[GmailSync] Classified: "${subject}" → ${aiCategory}`);
-      } catch (err) {
-        console.error(`[GmailSync] Failed to classify message ${id}:`, err);
+      if (i + BATCH_CHUNK_SIZE < messagesToProcess.length) {
+        await sleep(DELAY_BETWEEN_BATCHES_MS);
       }
     }
 
-    if (saved > 0) {
-      await db.write();
-      console.log(`[GmailSync] Sync complete — saved ${saved} message(s).`);
-    } else {
-      console.log('[GmailSync] Sync complete — no new messages saved.');
-    }
-  } catch (err) {
-    console.error('[GmailSync] Sync error:', err);
+    console.log(`[GmailSync] Sync complete — saved ${totalSaved} new message(s).`);
+  } catch (err: any) {
+    console.error('[GmailSync] Sync error:', err?.message || err);
+  } finally {
+    isSyncRunning = false;
   }
 }
 

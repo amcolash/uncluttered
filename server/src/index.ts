@@ -7,7 +7,7 @@ import { db } from './db.ts';
 import type { Email } from './dbTypes.ts';
 import { classifyEmail } from './emailClassifier.ts';
 import { authorizeWithCode, checkAuthStatus, resetAuth } from './gmailAuth.ts';
-import { getGmailApi, startGmailSyncWorker, syncEmails } from './gmailSyncWorker.ts';
+import { callWithRetry, getGmailApi, startGmailSyncWorker, syncEmails } from './gmailSyncWorker.ts';
 
 const app = express();
 const port = 7001;
@@ -48,19 +48,23 @@ async function archiveEmail(gmail: gmail_v1.Gmail, email: Email) {
   try {
     console.log(`[Archive] ${email.subject} (${email.id})`);
 
-    await gmail.users.messages.modify({
-      userId: 'me',
-      id: email.id,
-      requestBody: {
-        removeLabelIds: ['INBOX'],
-      },
-    });
+    await callWithRetry(
+      () =>
+        gmail.users.messages.modify({
+          userId: 'me',
+          id: email.id,
+          requestBody: {
+            removeLabelIds: ['INBOX'],
+          },
+        }),
+      `archive(${email.id})`
+    );
 
     email.status = 'archived';
     await db.write();
   } catch (err) {
     console.error(`[Archive] Failed to archive email ${email.id}:`, err);
-    return;
+    throw err;
   }
 }
 
@@ -68,16 +72,20 @@ async function deleteEmail(gmail: gmail_v1.Gmail, email: Email) {
   try {
     console.log(`[Delete] ${email.subject} (${email.id})`);
 
-    await gmail.users.messages.trash({
-      userId: 'me',
-      id: email.id,
-    });
+    await callWithRetry(
+      () =>
+        gmail.users.messages.trash({
+          userId: 'me',
+          id: email.id,
+        }),
+      `trash(${email.id})`
+    );
 
     email.status = 'deleted';
     await db.write();
   } catch (err) {
     console.error(`[Delete] Failed to delete email ${email.id}:`, err);
-    return;
+    throw err;
   }
 }
 
@@ -171,14 +179,27 @@ app.get('/api/emails', (_req, res) => {
   res.json(emails);
 });
 
+function handleApiError(res: express.Response, err: unknown, fallbackMessage = 'An error occurred') {
+  const message = err instanceof Error ? err.message : String(err);
+  if (message.includes('[GmailAuth]')) {
+    res.status(401).json({ error: message, authRequired: true });
+    return;
+  }
+  res.status(500).json({ error: message || fallbackMessage });
+}
+
 app.get('/api/emails/:id', async (req, res) => {
   try {
     const gmail = await getGmailApi();
-    const response = await gmail.users.messages.get({
-      userId: 'me',
-      id: req.params.id,
-      format: 'raw',
-    });
+    const response = await callWithRetry(
+      () =>
+        gmail.users.messages.get({
+          userId: 'me',
+          id: req.params.id,
+          format: 'raw',
+        }),
+      `getEmailRaw(${req.params.id})`
+    );
 
     // Gmail uses base64url encoding, so decode it to a standard buffer
     const rawEmailBuffer = Buffer.from(response.data.raw!, 'base64url');
@@ -187,7 +208,7 @@ app.get('/api/emails/:id', async (req, res) => {
     res.json({ html: email.html || email.textAsHtml });
   } catch (err) {
     console.error(`[Get Email] Failed to fetch email ${req.params.id}:`, err);
-    res.status(503).json({ error: 'Failed to fetch email details' });
+    handleApiError(res, err, 'Failed to fetch email details');
   }
 });
 
@@ -204,7 +225,7 @@ app.post('/api/emails/:id/archive', async (req, res) => {
     }
     res.json({ success: true });
   } catch (err) {
-    res.status(500).json({ error: String(err) });
+    handleApiError(res, err);
   }
 });
 
@@ -217,7 +238,7 @@ app.delete('/api/emails/:id', async (req, res) => {
     }
     res.json({ success: true });
   } catch (err) {
-    res.status(500).json({ error: String(err) });
+    handleApiError(res, err);
   }
 });
 
@@ -225,10 +246,10 @@ app.delete('/api/emails/:id', async (req, res) => {
 app.post('/api/emails/sync', async (req, res) => {
   try {
     await syncEmails();
-    res.send(200);
+    res.json({ success: true });
   } catch (err) {
-    console.error(err);
-    res.send(500).json({ error: String(err) });
+    console.error('[Sync] Error syncing emails:', err);
+    handleApiError(res, err);
   }
 });
 
@@ -247,7 +268,7 @@ app.post('/api/emails/batch/archive', async (req, res) => {
     const results = await batchProcessEmails(ids, archiveEmail, 'Archive');
     res.json(results);
   } catch (err) {
-    res.status(500).json({ error: String(err) });
+    handleApiError(res, err);
   }
 });
 
@@ -266,7 +287,7 @@ app.post('/api/emails/batch/delete', async (req, res) => {
     const results = await batchProcessEmails(ids, deleteEmail, 'Delete');
     res.json(results);
   } catch (err) {
-    res.status(500).json({ error: String(err) });
+    handleApiError(res, err);
   }
 });
 
