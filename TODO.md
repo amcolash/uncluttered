@@ -11,6 +11,7 @@
 
 - [ ] Investigate ML perf on NAS, possibly train on laptop and deploy model to NAS if too slow
 - [ ] On startup, ensure all emails have a still valid category, otherwise reclassify them + reset validated
+- [ ] Retain ~5 DB backups in case something goes wrong. Do not remove db backups at all if there is an issue reading
 - [x] Handle oauth flow more gracefully
 
 ## UI

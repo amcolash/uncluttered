@@ -16,6 +16,9 @@
     "build": "npm --prefix react/ install && npm --prefix react/ run build",
     "start": "concurrently 'npm --prefix react/ start' 'npm --prefix server/ start' 'docker compose up --build classifier'",
     "deploy": "ssh -t nas 'export PATH=\\$PATH:/usr/local/bin && cd docker/uncluttered && git pull && docker compose up -d --build --force-recreate'",
+    "sync": "./scripts/sync.sh pull",
+    "sync:pull": "./scripts/sync.sh pull",
+    "sync:push": "./scripts/sync.sh push",
     "lint": "oxlint",
     "prettier": "prettier --write .",
     "typecheck": "npm --prefix react/ run typecheck && npm --prefix server/ run typecheck"

@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 import { SIMILARITY_THRESHOLD, levenshteinSimilarity } from 'utilities/levenshtein';
+import { API } from 'utilities/util';
 
 import type { Category, Email } from 'hooks/useEmails';
-
-const API = 'http://localhost:7001';
 
 async function postCategorize(id: string, category: string | null, validated: boolean | null) {
   await fetch(`${API}/api/emails/${id}/categorize`, {

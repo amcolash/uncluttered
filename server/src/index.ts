@@ -1,3 +1,7 @@
+import { existsSync } from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
 import cors from 'cors';
 import express from 'express';
 import { gmail_v1 } from 'googleapis';
@@ -8,6 +12,9 @@ import type { Email } from './dbTypes.ts';
 import { classifyEmail } from './emailClassifier.ts';
 import { authorizeWithCode, checkAuthStatus, resetAuth } from './gmailAuth.ts';
 import { callWithRetry, getGmailApi, startGmailSyncWorker, syncEmails } from './gmailSyncWorker.ts';
+import { createBackup, ensureDailyBackup, initScheduler } from './scheduler.ts';
+
+const IS_DOCKER = existsSync('/.dockerenv');
 
 const app = express();
 const port = 7001;
@@ -146,15 +153,16 @@ app.post('/api/auth/reset', async (_req, res) => {
 app.get('/oauth2callback', async (req, res) => {
   const code = req.query.code as string;
   const error = req.query.error as string;
+  const redirectBase = IS_DOCKER ? '' : 'http://localhost:5173';
 
   if (error) {
     console.error('[Auth] Authorization denied by user or Google:', error);
-    res.redirect(`http://localhost:5173/?auth=error&message=${encodeURIComponent(`Authorization denied: ${error}`)}`);
+    res.redirect(`${redirectBase}/?auth=error&message=${encodeURIComponent(`Authorization denied: ${error}`)}`);
     return;
   }
 
   if (!code) {
-    res.redirect(`http://localhost:5173/?auth=error&message=${encodeURIComponent('No authorization code received.')}`);
+    res.redirect(`${redirectBase}/?auth=error&message=${encodeURIComponent('No authorization code received.')}`);
     return;
   }
 
@@ -162,12 +170,10 @@ app.get('/oauth2callback', async (req, res) => {
     await authorizeWithCode(code);
     // Run sync in the background so redirect responds immediately without browser timeout
     syncEmails().catch((err) => console.error('[GmailSync] Post-auth sync failed:', err));
-    res.redirect('http://localhost:5173/?auth=success');
+    res.redirect(`${redirectBase}/?auth=success`);
   } catch (err: any) {
     console.error('[Auth] Failed to authorize with code:', err);
-    res.redirect(
-      `http://localhost:5173/?auth=error&message=${encodeURIComponent(err?.message || 'Authorization failed')}`
-    );
+    res.redirect(`${redirectBase}/?auth=error&message=${encodeURIComponent(err?.message || 'Authorization failed')}`);
   }
 });
 
@@ -371,8 +377,12 @@ app.post('/api/emails/:id/categorize', async (req, res) => {
     sessionOverrideCount++;
     if (sessionOverrideCount >= AUTO_RETRAIN_THRESHOLD) {
       sessionOverrideCount = 0;
-      console.log(`[Auto-retrain] ${AUTO_RETRAIN_THRESHOLD} overrides reached — retraining in background…`);
-      triggerRetrain();
+      if (IS_DOCKER) {
+        console.log(`[Auto-retrain] ${AUTO_RETRAIN_THRESHOLD} overrides reached (skipped in Docker to conserve CPU).`);
+      } else {
+        console.log(`[Auto-retrain] ${AUTO_RETRAIN_THRESHOLD} overrides reached — retraining in background…`);
+        triggerRetrain();
+      }
     }
   }
 
@@ -498,14 +508,53 @@ app.post('/api/retrain', async (_req, res) => {
 
 // ── Start ────────────────────────────────────────────────────────────────────
 
+// Always create a startup backup of db.json (retains latest 10)
+await createBackup('startup');
+await ensureDailyBackup();
+
+// Initialize scheduled daily backup (03:55) and retrain (04:00)
+initScheduler(triggerRetrain);
+
 startGmailSyncWorker();
 
-// Retrain model a little after startup
-setTimeout(() => {
-  console.log('Re-training model on startup with existing data…');
-  triggerRetrain();
-}, 10_000);
+// Retrain model a little after startup (skipped in Docker to conserve CPU)
+if (IS_DOCKER) {
+  console.log('[Startup] Running inside Docker; skipping automatic startup retrain to conserve CPU.');
+} else {
+  setTimeout(() => {
+    console.log('Re-training model on startup with existing data…');
+    triggerRetrain();
+  }, 10_000);
+}
+
+// Serve production static files if available
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const wwwPath = path.resolve(__dirname, '../../www');
+if (existsSync(wwwPath)) {
+  app.use(express.static(wwwPath));
+  app.use((req, res, next) => {
+    if (req.method === 'GET' && !req.path.startsWith('/api') && req.path !== '/oauth2callback') {
+      res.sendFile(path.join(wwwPath, 'index.html'));
+      return;
+    }
+    next();
+  });
+}
+
+// Graceful shutdown handling to ensure LowDB flushes to disk
+const shutdown = async (signal: string) => {
+  console.log(`[Server] ${signal} received. Flushing db and shutting down...`);
+  try {
+    await db.write();
+  } catch (err) {
+    console.error('[Server] Error writing db during shutdown:', err);
+  }
+  process.exit(0);
+};
+
+process.on('SIGTERM', () => shutdown('SIGTERM'));
+process.on('SIGINT', () => shutdown('SIGINT'));
 
 app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+  console.log(`Server listening on port ${port} (Docker: ${IS_DOCKER})`);
 });
