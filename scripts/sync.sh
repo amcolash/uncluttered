@@ -33,6 +33,9 @@ case "$ACTION" in
     echo "==> Stopping Docker containers on NAS if running..."
     ssh -t "$NAS_HOST" "export PATH=\$PATH:/usr/local/bin && cd '$NAS_DIR' && docker compose stop 2>/dev/null || true"
 
+    echo "==> Adjusting remote permissions on NAS..."
+    ssh "$NAS_HOST" "export PATH=\$PATH:/usr/local/bin && cd '$NAS_DIR' && docker compose run --rm --entrypoint chmod server -R 777 /usr/src/app/server/data/ 2>/dev/null || true"
+
     echo "==> Pushing local data ($LOCAL_DATA_DIR) to NAS ($NAS_HOST:$REMOTE_DATA_DIR)..."
     DATA_FILES=$(find "$LOCAL_DATA_DIR" -maxdepth 1 -type f)
     if [ -n "$DATA_FILES" ]; then
