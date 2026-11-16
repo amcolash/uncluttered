@@ -45,8 +45,9 @@ export async function waitForRateLimitPause(): Promise<void> {
   const now = Date.now();
   if (rateLimitPausedUntil > now) {
     const waitMs = rateLimitPausedUntil - now;
-    console.warn(`[GmailSync] Rate limit active. Pausing requests for ${(waitMs / 1000).toFixed(1)}s...`);
-    await sleep(waitMs);
+    const jitter = Math.random() * 2000;
+    console.warn(`[GmailSync] Rate limit active. Pausing requests for ${((waitMs + jitter) / 1000).toFixed(1)}s...`);
+    await sleep(waitMs + jitter);
   }
 }
 
@@ -255,53 +256,51 @@ export async function syncEmails(): Promise<void> {
         console.log(`[GmailSync] Restored ${restoredIds.length} message(s) back in INBOX.`);
       }
 
-      type MessageResult =
-        | { id: string; status: 'fulfilled'; data: gmail_v1.Schema$Message }
-        | { id: string; status: 'rejected'; error: any };
-
-      const results: MessageResult[] = await processInBatches(activeMissingIds, BATCH_CONCURRENCY, async (id) => {
-        try {
-          const response = await callWithRetry(
-            () => gmail.users.messages.get({ userId: 'me', id }),
-            `checkStatus(${id})`
+      // Efficiently check which missing messages are in TRASH using a single list query
+      // instead of hundreds of individual messages.get calls.
+      const trashIds = new Set<string>();
+      try {
+        let trashPageToken: string | undefined;
+        do {
+          const trashListRes = await callWithRetry(
+            () =>
+              gmail.users.messages.list({
+                userId: 'me',
+                q: 'label:TRASH',
+                maxResults: PAGE_SIZE,
+                pageToken: trashPageToken,
+              }),
+            'listTrashMessages'
           );
-          return { id, status: 'fulfilled' as const, data: response.data };
-        } catch (error) {
-          return { id, status: 'rejected' as const, error };
-        }
-      });
-
-      results.forEach((result) => {
-        const email = db.data.emails.find((e) => e.id === result.id);
-        if (!email) {
-          console.error(`[GmailSync] Unexpectedly could not find email with ID ${result.id} in local DB.`);
-          return;
-        }
-
-        if (result.status === 'fulfilled') {
-          const labels = result.data.labelIds ?? [];
-
-          if (labels.includes('TRASH')) {
-            email.status = 'deleted';
-            console.log(`[GmailSync] Message ${result.id} marked as deleted (in TRASH).`);
-          } else if (!labels.includes('INBOX')) {
-            email.status = 'archived';
-            console.log(`[GmailSync] Message ${result.id} marked as archived.`);
+          for (const m of trashListRes.data.messages ?? []) {
+            if (m.id) trashIds.add(m.id);
           }
+          trashPageToken = trashListRes.data.nextPageToken ?? undefined;
+          if (trashIds.size >= 1000) break;
+        } while (trashPageToken);
+      } catch (err) {
+        console.error('[GmailSync] Failed to list trash messages:', err);
+      }
+
+      let trashedCount = 0;
+      let archivedCount = 0;
+
+      for (const id of activeMissingIds) {
+        const email = db.data.emails.find((e) => e.id === id);
+        if (!email) continue;
+
+        if (trashIds.has(id)) {
+          email.status = 'deleted';
+          trashedCount++;
         } else {
-          // Handle the error case and explicitly check for a 404
-          const err: any = result.error;
-          const statusCode = err?.code || err?.status || err?.response?.status;
-
-          if (statusCode === 404) {
-            email.status = 'deleted';
-            console.log(`[GmailSync] Message ${result.id} marked as deleted (404).`);
-          } else {
-            console.error(`[GmailSync] Failed to fetch missing message ${result.id}:`, err?.message || err);
-          }
+          email.status = 'archived';
+          archivedCount++;
         }
-      });
+      }
 
+      console.log(
+        `[GmailSync] Missing messages resolved: ${trashedCount} marked as deleted (TRASH), ${archivedCount} marked as archived.`
+      );
       await db.write();
     }
 
