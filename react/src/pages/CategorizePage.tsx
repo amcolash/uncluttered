@@ -82,6 +82,7 @@ export function CategorizePage() {
         activeCategory={current?.userOverrideCategory || current?.aiCategory}
         aiCategory={current?.aiCategory}
         userOverrideCategory={current?.userOverrideCategory}
+        suggestions={suggestions}
       />
     </div>
   );

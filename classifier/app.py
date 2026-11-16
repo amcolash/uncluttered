@@ -4,7 +4,7 @@ Trains on your actual email history; inference is sub-millisecond on any CPU.
 
 Endpoints:
   GET  /health    → {"ready": bool}
-  POST /classify  → {"category": str|null, "urgency": int|null, "confidence": float, "ready": bool}
+  POST /classify  → {"category": str|null, "urgency": int|null, "confidence": float, "ready": bool, "categories": list}
   POST /train     → {"trained": bool, "examples": int, "classes": int, "distribution": {...}}
 """
 
@@ -153,7 +153,7 @@ def load_base_data(directory: str = "training/") -> list[Example]:
         return base_examples
 
     for filename in os.listdir(directory):
-        if filename.endswith(".json"):
+        if filename.endswith(".json") and filename != "UNKNOWN.json":
             filepath = os.path.join(directory, filename)
             try:
                 with open(filepath, "r", encoding="utf-8") as f:
@@ -161,7 +161,8 @@ def load_base_data(directory: str = "training/") -> list[Example]:
                     # Assumes the JSON file contains a list of objects matching the Example schema
                     if isinstance(data, list):
                         for item in data:
-                            base_examples.append(Example(**item))
+                            if item.get("category") != "UNKNOWN":
+                                base_examples.append(Example(**item))
             except Exception as e:
                 print(f"[Classifier] Error loading base data from {filepath}: {e}")
 
@@ -197,15 +198,26 @@ def health() -> dict:
 @app.post("/classify")
 def classify(req: ClassifyRequest) -> dict:
     if cat_model is None:
-        return {"category": None, "confidence": 0.0, "ready": False}
+        return {"category": None, "confidence": 0.0, "ready": False, "categories": []}
 
     text = build_text(req.subject, req.snippet, req.sender)
     proba = cat_model.predict_proba([text])[0]
     idx = int(proba.argmax())
+
+    categories = [
+        {"category": str(cat_name), "confidence": round(float(prob), 4)}
+        for cat_name, prob in sorted(
+            zip(cat_model.classes_, proba),
+            key=lambda item: item[1],
+            reverse=True,
+        )
+    ]
+
     return {
-        "category":   cat_model.classes_[idx],
+        "category":   str(cat_model.classes_[idx]),
         "confidence": round(float(proba[idx]), 4),
         "ready":      True,
+        "categories": categories,
     }
 
 
@@ -214,7 +226,7 @@ def train(req: TrainRequest) -> dict:
     start = time.time()
     print("[Classifier] Phase 1/4: Loading and combining datasets...")
 
-    custom_examples = req.examples
+    custom_examples = [e for e in req.examples if e.category != "UNKNOWN"]
     base_examples = load_base_data()
 
     # 1. Combine datasets
@@ -230,7 +242,7 @@ def train(req: TrainRequest) -> dict:
 
     # 3. Filter sparse classes
     counts = Counter(e.category for e in all_examples)
-    sparse = {cat for cat, n in counts.items() if n < MIN_PER_CLASS}
+    sparse = {cat for cat, n in counts.items() if n < MIN_PER_CLASS or cat == "UNKNOWN"}
 
     filtered_examples = []
     filtered_weights = []

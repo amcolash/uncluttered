@@ -4,6 +4,7 @@ import { twMerge } from 'tailwind-merge';
 import { API } from 'utilities/util';
 
 import type { Category } from 'hooks/useEmails';
+import type { Suggestion } from 'hooks/useSuggestions';
 
 import { BottomSheet } from './ui/BottomSheet';
 import { Button } from './ui/Button';
@@ -17,6 +18,7 @@ export interface CategorizeMenuProps {
   aiCategory?: string | null;
   userOverrideCategory?: string | null;
   enabled?: boolean;
+  suggestions?: Suggestion[];
 }
 
 const LOCAL_STORAGE_KEY = 'uncluttered_recent_categories';
@@ -56,10 +58,24 @@ export function CategorizeMenu({
   aiCategory,
   userOverrideCategory,
   enabled = true,
+  suggestions = [],
 }: CategorizeMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [syncing, setSyncing] = useState(false);
   const [recentKeys, setRecentKeys] = useState<string[]>([]);
+
+  // Derive suggested categories
+  const suggestedCategories = useMemo(() => {
+    if (!suggestions || suggestions.length === 0) return [];
+    const list: (Category & { confidence?: number })[] = [];
+    for (const s of suggestions) {
+      const found = categories.find((c) => c.key === s.key);
+      if (found) {
+        list.push({ ...found, confidence: s.confidence });
+      }
+    }
+    return list;
+  }, [categories, suggestions]);
 
   // Initialize 6 recent categories
   useEffect(() => {
@@ -127,9 +143,10 @@ export function CategorizeMenu({
     setIsOpen(false);
   };
 
-  const renderCategoryButton = (c: Category) => {
+  const renderCategoryButton = (c: Category, confidence?: number) => {
     const isOverride = userOverrideCategory === c.key;
     const isAi = aiCategory === c.key;
+    const isSuggested = confidence !== undefined;
     const isActive = isOverride || (!userOverrideCategory && isAi) || activeCategory === c.key;
 
     let borderStyles =
@@ -141,15 +158,24 @@ export function CategorizeMenu({
     } else if (isAi) {
       // AI prediction: indigo border (no double rings)
       borderStyles = 'border-2 border-indigo-400 bg-indigo-950/40 font-semibold text-indigo-100';
+    } else if (isSuggested) {
+      // Suggested category: amber border
+      borderStyles = 'border-2 border-amber-400/80 bg-amber-950/30 font-semibold text-amber-100 hover:bg-amber-900/40';
     } else if (isActive) {
       borderStyles = 'border-2 border-cyan-400 bg-cyan-950/40 font-semibold text-cyan-100';
     }
 
-    const badgeHint = isOverride ? ' (User Override)' : isAi ? ' (AI Prediction)' : '';
+    const badgeHint = isOverride
+      ? ' (User Override)'
+      : isAi
+        ? ' (AI Prediction)'
+        : isSuggested
+          ? ` (Suggested · ${Math.round(confidence * 100)}%)`
+          : '';
 
     return (
       <button
-        key={c.key}
+        key={isSuggested ? `${c.key}-suggested` : c.key}
         type="button"
         disabled={!enabled}
         onClick={() => handleSelect(c.key)}
@@ -161,13 +187,26 @@ export function CategorizeMenu({
           borderStyles
         )}
       >
-        <span className="line-clamp-2 break-words">{c.label}</span>
+        <span className="line-clamp-2 break-words">
+          {c.label}
+          {confidence !== undefined ? ` · ${Math.round(confidence * 100)}%` : ''}
+        </span>
       </button>
     );
   };
 
   const renderCategorySections = () => (
     <>
+      {/* Suggested Section */}
+      {suggestedCategories.length > 0 && (
+        <div>
+          <h3 className="mb-2 text-xs font-bold tracking-wider text-amber-400 uppercase">Suggested</h3>
+          <div className="grid grid-cols-2 gap-2">
+            {suggestedCategories.map((c) => renderCategoryButton(c, c.confidence))}
+          </div>
+        </div>
+      )}
+
       {/* 6 Recent Section */}
       <div>
         <h3 className="mb-2 text-xs font-bold tracking-wider text-slate-400 uppercase">Recent</h3>

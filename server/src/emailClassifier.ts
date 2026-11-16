@@ -363,6 +363,15 @@ const CLASSIFIER_URL = process.env.CLASSIFIER_URL ?? 'http://localhost:7002';
 // Minimum ML confidence (0-1) required to use the ML result over the rules.
 // Below this threshold the rule-based classifier wins. Tune via env var.
 const CLASSIFIER_MIN_CONFIDENCE = parseFloat(process.env.CLASSIFIER_MIN_CONFIDENCE ?? '0.60');
+// Minimum confidence (0-1) required to show as an alternative suggestion when an email is already categorized.
+const CLASSIFIER_SUGGESTION_MIN_CONFIDENCE = parseFloat(
+  process.env.CLASSIFIER_SUGGESTION_MIN_CONFIDENCE ?? '0.35'
+);
+// Minimum confidence (0-1) required to show suggestions when the email is UNKNOWN.
+// Baseline uniform random across 22 classes is ~4.5%, so 15% represents strong relative confidence.
+const CLASSIFIER_UNKNOWN_SUGGESTION_MIN_CONFIDENCE = parseFloat(
+  process.env.CLASSIFIER_UNKNOWN_SUGGESTION_MIN_CONFIDENCE ?? '0.15'
+);
 
 /**
  * Rule-based fallback classifier — no external dependencies, sub-millisecond.
@@ -537,9 +546,17 @@ function normalizeMlCandidates(data: unknown): MlCandidate[] {
   return candidates.sort((a, b) => b.confidence - a.confidence);
 }
 
-function selectSuggestions(candidates: MlCandidate[], exclude: string[]): MlCandidate[] {
+function selectSuggestions(
+  candidates: MlCandidate[],
+  exclude: string[],
+  isUnknownCategory: boolean
+): MlCandidate[] {
+  const minConfidence = isUnknownCategory
+    ? CLASSIFIER_UNKNOWN_SUGGESTION_MIN_CONFIDENCE
+    : CLASSIFIER_SUGGESTION_MIN_CONFIDENCE;
+
   return candidates
-    .filter((candidate) => !exclude.includes(candidate.category) && candidate.confidence > 0.2)
+    .filter((candidate) => !exclude.includes(candidate.category) && candidate.confidence >= minConfidence)
     .slice(0, 3);
 }
 
@@ -554,7 +571,8 @@ function selectRuleSuggestions(categories: string[], exclude: string[]): string[
 export async function classifyEmail(
   subject: string,
   snippet: string,
-  sender: string
+  sender: string,
+  currentCategory?: string
 ): Promise<{
   category: string;
   urgency: number;
@@ -600,8 +618,19 @@ export async function classifyEmail(
     // Service unavailable — fall through to rule-based fallback.
   }
 
-  const ruleSuggestions = selectRuleSuggestions(ruleCategories, [primaryCategory, 'UNKNOWN']);
-  const mlSuggestions = selectSuggestions(mlCandidates, [primaryCategory, 'UNKNOWN']);
+  // Categories to exclude from suggestions:
+  // If currentCategory is known and not UNKNOWN, exclude it.
+  // Otherwise, exclude primaryCategory unless it is UNKNOWN.
+  // UNKNOWN is always excluded as a suggested category.
+  const baseCategory = currentCategory ?? primaryCategory;
+  const isUnknown = !baseCategory || baseCategory === 'UNKNOWN';
+  const excludeList = isUnknown ? ['UNKNOWN'] : [baseCategory, 'UNKNOWN'];
+
+  const mlSuggestions = selectSuggestions(mlCandidates, excludeList, isUnknown);
+  const ruleSuggestions = selectRuleSuggestions(ruleCategories, [
+    ...excludeList,
+    ...mlSuggestions.map((s) => s.category),
+  ]);
 
   return {
     category: primaryCategory,

@@ -29,7 +29,10 @@ let sessionOverrideCount = 0;
 
 async function triggerRetrain() {
   const examples = db.data.emails
-    .filter((e) => e.userOverrideCategory ?? e.aiCategory)
+    .filter((e) => {
+      const cat = e.userOverrideCategory ?? e.aiCategory;
+      return cat && cat !== 'UNKNOWN';
+    })
     .map((e) => ({
       subject: e.subject,
       snippet: e.snippet,
@@ -332,7 +335,12 @@ app.get('/api/categories/active', (_req, res) => {
 
 /** [Debug] Classify arbitrary input data outside of db */
 app.post('/api/classify', async (req, res) => {
-  const { subject, snippet, sender } = req.body as { subject: string; snippet: string; sender: string };
+  const { subject, snippet, sender, currentCategory } = req.body as {
+    subject: string;
+    snippet: string;
+    sender: string;
+    currentCategory?: string;
+  };
 
   if (!subject || !snippet || !sender) {
     res.status(400).json({ error: '"subject", "snippet", and "sender" are required in the request body' });
@@ -340,7 +348,7 @@ app.post('/api/classify', async (req, res) => {
   }
 
   try {
-    const result = await classifyEmail(subject, snippet, sender);
+    const result = await classifyEmail(subject, snippet, sender, currentCategory);
     res.json(result);
   } catch (err) {
     res.status(503).json({ error: 'Classifier service unavailable', detail: String(err) });

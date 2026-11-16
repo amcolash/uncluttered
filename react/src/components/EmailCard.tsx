@@ -31,7 +31,10 @@ export function EmailCard({
         </Badge>
 
         {suggestions && suggestions.length > 0 ? (
-          <div className="mt-4 rounded-lg border border-slate-700 bg-slate-900/30 p-3">
+          <div
+            className="mt-4 rounded-lg border border-slate-700 bg-slate-900/30 p-3"
+            onClick={(e) => e.stopPropagation()}
+          >
             <p className="text-xs tracking-[0.25em] text-slate-500 uppercase">Suggested categories</p>
             <div className="mt-2 flex flex-wrap gap-2">
               {suggestions.map((suggestion) => (
@@ -39,7 +42,10 @@ export function EmailCard({
                   key={`${suggestion.source}-${suggestion.key}`}
                   variant="secondary"
                   className="p-2"
-                  onClick={categorize ? () => categorize(email.id, suggestion.key) : undefined}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (categorize) categorize(email.id, suggestion.key);
+                  }}
                 >
                   {formatCategory(suggestion.key)}
                   {suggestion.confidence !== undefined ? ` · ${Math.round(suggestion.confidence * 100)}%` : ''}

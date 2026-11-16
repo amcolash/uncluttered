@@ -22,6 +22,7 @@ export function useSuggestions(email: Email | null) {
       subject: email.subject,
       snippet: email.snippet,
       sender: email.sender,
+      currentCategory: email.userOverrideCategory || email.aiCategory || 'UNKNOWN',
     };
 
     fetch(`${API}/api/classify`, {
@@ -47,7 +48,16 @@ export function useSuggestions(email: Email | null) {
           ? data.ruleSuggestions.map((key: string) => ({ key, source: 'rule' as const }))
           : [];
 
-        setSuggestions([...ml, ...rule]);
+        const seen = new Set<string>();
+        const combined: Suggestion[] = [];
+        for (const item of [...ml, ...rule]) {
+          if (!seen.has(item.key)) {
+            seen.add(item.key);
+            combined.push(item);
+          }
+        }
+
+        setSuggestions(combined);
       })
       .catch(() => {
         setSuggestions([]);
