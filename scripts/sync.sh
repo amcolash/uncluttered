@@ -43,7 +43,7 @@ case "$ACTION" in
     fi
 
     echo "==> Starting Docker containers on NAS (Rebuilding if necessary)..."
-    ssh -t "$NAS_HOST" "export PATH=\$PATH:/usr/local/bin && cd '$NAS_DIR' && docker compose up -d --build"
+    ssh -t "$NAS_HOST" "export PATH=\$PATH:/usr/local/bin && cd '$NAS_DIR' && git pull && docker compose up -d --build"
 
     echo "==> Data push complete!"
     ;;

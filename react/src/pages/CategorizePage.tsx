@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { FaCheckDouble, FaTimes, FaUndo } from 'react-icons/fa';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { AnimatePresence, motion } from 'motion/react';
 import { formatCategory } from 'utilities/util';
 
 import { BatchCard } from 'components/BatchCard';
@@ -115,26 +116,51 @@ export function CategorizePage() {
           /* ── BATCH MODE ── */
           <div className="flex w-full max-w-6xl flex-col gap-6">
             {/* Header & Controls */}
-            <div className="flex flex-col gap-4 rounded-xl border border-slate-700/80 bg-slate-900/60 p-4 sm:p-6">
+            <motion.div
+              key={`header-${activeBatchCategory}`}
+              initial={{ borderColor: 'rgba(99, 102, 241, 0.8)' }}
+              animate={{ borderColor: 'rgba(51, 65, 85, 0.8)' }}
+              transition={{ duration: 0.8 }}
+              className="flex flex-col gap-4 rounded-xl border border-slate-700/80 bg-slate-900/60 p-4 sm:p-6"
+            >
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div>
                   <div className="flex items-center gap-3">
                     <h1 className="text-2xl font-bold text-white">
                       Batch Categorize {emails.length > 0 && `(${emails.length} remaining)`}
                     </h1>
-                    {activeBatchCategory && (
-                      <Badge variant="primary" className="px-3 py-1 text-sm font-semibold">
-                        {formatCategory(activeBatchCategory)}
-                      </Badge>
-                    )}
+                    <AnimatePresence mode="wait">
+                      {activeBatchCategory && (
+                        <motion.div
+                          key={activeBatchCategory}
+                          initial={{ opacity: 0, scale: 0.8, y: -4 }}
+                          animate={{ opacity: 1, scale: 1, y: 0 }}
+                          exit={{ opacity: 0, scale: 0.8, y: 4 }}
+                          transition={{ duration: 0.2 }}
+                        >
+                          <Badge variant="primary" className="px-3 py-1 text-sm font-semibold">
+                            {formatCategory(activeBatchCategory)}
+                          </Badge>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </div>
-                  <p className="mt-1 text-xs text-slate-400 sm:text-sm">
-                    Showing {activeBatchEmails.length} of {totalPendingInActiveBatch} pending emails for{' '}
-                    <span className="font-semibold text-slate-200">
-                      {activeBatchCategory ? formatCategory(activeBatchCategory) : 'None'}
-                    </span>
-                    . Review together and batch approve or skip individually.
-                  </p>
+                  <AnimatePresence mode="wait">
+                    <motion.p
+                      key={activeBatchCategory}
+                      initial={{ opacity: 0, y: -4 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 4 }}
+                      transition={{ duration: 0.2 }}
+                      className="mt-1 text-xs text-slate-400 sm:text-sm"
+                    >
+                      Showing {activeBatchEmails.length} of {totalPendingInActiveBatch} pending emails for{' '}
+                      <span className="font-semibold text-slate-200">
+                        {activeBatchCategory ? formatCategory(activeBatchCategory) : 'None'}
+                      </span>
+                      . Review together and batch approve or skip individually.
+                    </motion.p>
+                  </AnimatePresence>
                 </div>
 
                 {/* Batch Action Buttons */}
@@ -174,44 +200,59 @@ export function CategorizePage() {
                   </Button>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            {/* Batch Cards Grid (6-8 cards) */}
-            {activeBatchEmails.length > 0 ? (
-              <>
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
-                  {activeBatchEmails.map((email) => (
-                    <BatchCard
-                      key={email.id}
-                      email={email}
-                      categories={categories}
-                      onApprove={(id) => actions.confirm(id)}
-                      onSkip={(id) => actions.defer(id)}
-                      onCategorize={(id, newCat) => actions.categorize(id, newCat)}
-                    />
-                  ))}
-                </div>
-
-                {/* Bottom Approve Bar for convenience */}
-                {activeBatchEmails.length > 4 && (
-                  <div className="flex justify-center pt-4 pb-8">
-                    <Button
-                      variant="success"
-                      size="md"
-                      onClick={handleBatchApprove}
-                      className="px-6 py-2.5 font-semibold shadow-lg"
-                    >
-                      <FaCheckDouble />
-                      <span>Approve Batch ({activeBatchEmails.length})</span>
-                    </Button>
+            {/* Batch Cards Grid (6-8 cards) with Category Change Animation */}
+            <AnimatePresence mode="wait">
+              {activeBatchEmails.length > 0 ? (
+                <motion.div
+                  key={activeBatchCategory}
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -16 }}
+                  transition={{ duration: 0.24, ease: 'easeOut' }}
+                  className="flex flex-col gap-6"
+                >
+                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
+                    {activeBatchEmails.map((email) => (
+                      <BatchCard
+                        key={email.id}
+                        email={email}
+                        categories={categories}
+                        onApprove={(id) => actions.confirm(id)}
+                        onSkip={(id) => actions.defer(id)}
+                        onCategorize={(id, newCat) => actions.categorize(id, newCat)}
+                      />
+                    ))}
                   </div>
-                )}
-              </>
-            ) : (
-              <div className="rounded-xl border border-slate-800 bg-slate-900/40 p-8 text-center text-slate-400">
-                No more pending emails in this category.
-              </div>
-            )}
+
+                  {/* Bottom Approve Bar for convenience */}
+                  {activeBatchEmails.length > 4 && (
+                    <div className="flex justify-center pt-4 pb-8">
+                      <Button
+                        variant="success"
+                        size="md"
+                        onClick={handleBatchApprove}
+                        className="px-6 py-2.5 font-semibold shadow-lg"
+                      >
+                        <FaCheckDouble />
+                        <span>Approve Batch ({activeBatchEmails.length})</span>
+                      </Button>
+                    </div>
+                  )}
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="empty-category"
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="rounded-xl border border-slate-800 bg-slate-900/40 p-8 text-center text-slate-400"
+                >
+                  No more pending emails in this category.
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         ) : (
           /* ── SINGLE SWIPE MODE ── */
