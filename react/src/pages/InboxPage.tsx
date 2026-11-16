@@ -4,7 +4,6 @@ import { formatCategory } from 'utilities/util';
 
 import { CategorySidebar } from 'components/CategorySidebar';
 import { EmailBundle } from 'components/EmailBundle';
-import { Menu } from 'components/Menu';
 import { Nav } from 'components/Nav';
 import { Button } from 'components/ui/Button';
 import { useBreakpoint } from 'hooks/useBreakpoint';
@@ -46,19 +45,17 @@ export function InboxPage() {
     .slice(0, breakpoint === 'sm' ? 10 : breakpoint === 'md' || breakpoint === 'lg' ? 14 : 15);
 
   return (
-    <div className="flex justify-center gap-8">
-      <Menu>
-        <CategorySidebar
-          categories={categories}
-          active={filter}
-          importantCount={importantCount}
-          onClick={(category) => setSearchParams({ category })}
-        />
-      </Menu>
+    <div className="flex justify-center">
+      <CategorySidebar
+        categories={categories}
+        active={filter}
+        importantCount={importantCount}
+        onClick={(category) => setSearchParams({ category })}
+      />
 
       <Nav />
 
-      <div className="flex max-w-screen flex-1 flex-col items-center gap-12 p-8">
+      <div className="flex max-w-screen flex-1 flex-col items-center gap-4 p-4 sm:gap-12 sm:p-8">
         <h1 className="mt-8 text-2xl font-bold text-white">
           {filter === 'IMPORTANT'
             ? `Important (${importantCount})`

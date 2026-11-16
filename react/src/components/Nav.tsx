@@ -4,8 +4,8 @@ import { twMerge } from 'tailwind-merge';
 import { clearPwaCacheAndReload } from 'utilities/util';
 
 const links = [
-  { name: 'Categorize', url: '/categorize', icon: <FaTags /> },
-  { name: 'Inbox', url: '/', icon: <FaMailBulk /> },
+  { name: 'Categorize', url: '/', icon: <FaTags /> },
+  { name: 'Inbox', url: '/inbox', icon: <FaMailBulk /> },
 ];
 
 export function Nav() {
@@ -17,7 +17,7 @@ export function Nav() {
   };
 
   return (
-    <nav className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] left-[max(1rem,env(safe-area-inset-left))] z-20 rounded-lg bg-slate-800 shadow-lg">
+    <nav className="fixed bottom-[max(1.5rem,env(safe-area-inset-bottom))] left-[max(1rem,env(safe-area-inset-left))] z-20 rounded-lg bg-slate-800 shadow-lg">
       <ul className="flex items-center">
         {links.map((link) => {
           const active = window.location.pathname === link.url;

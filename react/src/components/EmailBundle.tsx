@@ -18,7 +18,7 @@ export function EmailBundle({
   layoutKey?: string;
 }) {
   return (
-    <div className="grid w-full max-w-4xl break-inside-avoid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid w-full max-w-4xl break-inside-avoid gap-4 pb-20 sm:grid-cols-2 sm:pb-0 lg:grid-cols-3">
       <AnimatePresence key={layoutKey}>
         {emails.map((email) => (
           <EmailCard key={email.id} email={email} actions={actions} />

@@ -20,7 +20,7 @@ export function Menu({ children }: { children: ReactNode }) {
         variant="secondary"
         size="sm"
         onClick={() => setVisible((v) => !v)}
-        className="absolute top-4 left-4 z-10"
+        className="absolute top-4 left-4 z-10 md:hidden"
       >
         {visible ? <FaTimes /> : <FaBars />}
       </Button>

@@ -5,7 +5,9 @@ import { API } from 'utilities/util';
 
 import type { Category } from 'hooks/useEmails';
 
+import { BottomSheet } from './ui/BottomSheet';
 import { Button } from './ui/Button';
+import { Fab } from './ui/Fab';
 
 export interface CategorizeMenuProps {
   categories: Category[];
@@ -67,29 +69,6 @@ export function CategorizeMenu({
       return getInitialRecent(categories, categoryCounts);
     });
   }, [categories, categoryCounts]);
-
-  // Close with Escape key (for mobile sheet)
-  useEffect(() => {
-    if (!isOpen) return;
-
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setIsOpen(false);
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen]);
-
-  // Prevent background scrolling on mobile when open
-  useEffect(() => {
-    if (isOpen) {
-      const originalOverflow = document.body.style.overflow;
-      document.body.style.overflow = 'hidden';
-      return () => {
-        document.body.style.overflow = originalOverflow;
-      };
-    }
-  }, [isOpen]);
 
   // Derive 6 recent categories
   const recentCategories = useMemo(() => {
@@ -240,74 +219,36 @@ export function CategorizeMenu({
 
       {/* MOBILE: FAB + Bottom Sheet (hidden on lg and above) */}
       <div className="lg:hidden">
-        {/* Floating Action Button (FAB) at bottom-right */}
-        <button
-          type="button"
+        <Fab
+          icon={<FaTags className="text-xl" />}
+          openIcon={<FaTimes className="text-xl" />}
+          isOpen={isOpen}
           onClick={() => setIsOpen((open) => !open)}
           disabled={!enabled}
           aria-label={isOpen ? 'Close categorize menu' : 'Open categorize menu'}
-          aria-expanded={isOpen}
           title={isOpen ? 'Close menu' : 'Categorize email'}
-          className={twMerge(
-            'fixed right-[max(1rem,env(safe-area-inset-right))] bottom-[max(1rem,env(safe-area-inset-bottom))] z-50 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full border border-indigo-400/30 bg-indigo-600 text-white shadow-xl transition-all duration-200',
-            'hover:bg-indigo-500 active:scale-95 active:bg-indigo-700',
-            'focus-visible:border-white focus-visible:outline-none',
-            'disabled:cursor-not-allowed disabled:opacity-50'
-          )}
+        />
+
+        <BottomSheet
+          isOpen={isOpen}
+          onClose={() => setIsOpen(false)}
+          title="Categorize"
+          headerActions={
+            <Button
+              variant="secondary"
+              size="sm"
+              onClick={handleSync}
+              disabled={syncing}
+              title="Sync emails from Gmail"
+              className="h-7 px-2.5 text-xs"
+            >
+              <FaSync className={twMerge('text-xs', syncing && 'animate-spin')} />
+              <span className="text-xs">Sync</span>
+            </Button>
+          }
         >
-          {isOpen ? <FaTimes className="text-xl" /> : <FaTags className="text-xl" />}
-        </button>
-
-        {/* Backdrop overlay */}
-        {isOpen && (
-          <div
-            className="fixed inset-0 z-40 bg-black/60 backdrop-blur-xs transition-opacity"
-            onClick={() => setIsOpen(false)}
-            aria-hidden="true"
-          />
-        )}
-
-        {/* Slide-up bottom sheet */}
-        {isOpen && (
-          <div
-            role="dialog"
-            aria-modal="true"
-            aria-label="Categorize email"
-            className="fixed inset-x-0 bottom-0 z-40 flex max-h-[95dvh] flex-col rounded-t-2xl border-t border-slate-700 bg-slate-900 shadow-2xl transition-all"
-          >
-            {/* Header */}
-            <div className="flex shrink-0 items-center justify-between border-b border-slate-800 px-5 py-3">
-              <div className="flex items-center gap-3">
-                <h2 className="text-base font-semibold text-white">Categorize</h2>
-                <Button
-                  variant="secondary"
-                  size="sm"
-                  onClick={handleSync}
-                  disabled={syncing}
-                  title="Sync emails from Gmail"
-                  className="h-7 px-2.5 text-xs"
-                >
-                  <FaSync className={twMerge('text-xs', syncing && 'animate-spin')} />
-                  <span className="text-xs">Sync</span>
-                </Button>
-              </div>
-
-              <button
-                type="button"
-                onClick={() => setIsOpen(false)}
-                className="cursor-pointer rounded-lg p-1.5 text-slate-400 transition-colors hover:bg-slate-800 hover:text-white"
-                aria-label="Close menu"
-              >
-                <FaTimes className="text-base" />
-              </button>
-            </div>
-
-            {/* Scrollable category list */}
-            <div className="flex-1 space-y-4 overflow-y-auto overscroll-contain p-4 pb-[max(6rem,calc(5rem+env(safe-area-inset-bottom)))]">
-              {renderCategorySections()}
-            </div>
-          </div>
-        )}
+          {renderCategorySections()}
+        </BottomSheet>
       </div>
     </>
   );

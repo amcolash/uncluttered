@@ -42,9 +42,9 @@ export function Router() {
         <Suspense fallback={<LoadingSpinner />}>
           <Routes>
             <Route path="/ui" element={<ComponentPage />} />
-            <Route path="/categorize" element={<CategorizePage />} />
+            <Route path="/inbox" element={<InboxPage />} />
 
-            <Route index element={<InboxPage />} />
+            <Route index element={<CategorizePage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Suspense>

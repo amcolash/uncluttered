@@ -24,10 +24,10 @@ export function CategorizePage() {
   }, [actions, actions.undo]);
 
   return (
-    <div className="overflow-x-hidden p-2">
+    <div className="flex justify-between p-2 sm:p-0">
       <Nav />
 
-      <div className="flex flex-1 flex-col items-center gap-6 p-4 pt-6 sm:gap-20 sm:p-8">
+      <div className="flex flex-1 flex-col items-center gap-16 p-4 pt-6 sm:gap-20 sm:p-8">
         <div className="grid w-full max-w-4xl gap-4">
           <h1 className="text-2xl font-bold text-white">Review emails {emails.length > 0 && `(${emails.length})`}</h1>
           <p className="text-sm text-slate-400">
