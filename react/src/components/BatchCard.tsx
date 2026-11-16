@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { FaCheck, FaTimes } from 'react-icons/fa';
 import { formatCategory } from 'utilities/util';
 
-import type { Email } from 'hooks/useEmails';
+import type { Category, Email } from 'hooks/useEmails';
 
 import { EmailModal } from './EmailModal';
 import { Badge } from './ui/Badge';
@@ -10,13 +10,21 @@ import { Button } from './ui/Button';
 
 export interface BatchCardProps {
   email: Email;
+  categories?: Category[];
   onApprove: (id: string) => void;
   onSkip: (id: string) => void;
+  onCategorize?: (id: string, category: string) => void;
 }
 
-export function BatchCard({ email, onApprove, onSkip }: BatchCardProps) {
+export function BatchCard({ email, categories = [], onApprove, onSkip, onCategorize }: BatchCardProps) {
   const [modalOpen, setModalOpen] = useState(false);
   const category = email.userOverrideCategory ?? email.aiCategory;
+
+  const sortedCategories = useMemo(() => {
+    return [...categories]
+      .filter((c) => c.key !== 'UNKNOWN' && c.key !== category)
+      .sort((a, b) => a.label.localeCompare(b.label));
+  }, [categories, category]);
 
   return (
     <>
@@ -48,8 +56,33 @@ export function BatchCard({ email, onApprove, onSkip }: BatchCardProps) {
           </div>
         </div>
 
-        {/* Action Buttons */}
-        <div className="mt-4 flex items-center justify-between gap-2 border-t border-slate-700/60 pt-3">
+        {/* Action Bar: Category Select dropdown + Skip + Approve */}
+        <div className="mt-4 flex items-center gap-1.5 border-t border-slate-700/60 pt-3">
+          {onCategorize && sortedCategories.length > 0 ? (
+            <select
+              value=""
+              onClick={(e) => e.stopPropagation()}
+              onChange={(e) => {
+                e.stopPropagation();
+                if (e.target.value) {
+                  onCategorize(email.id, e.target.value);
+                }
+              }}
+              title="One-off categorize: move this email to another category"
+              aria-label="Change category for this email"
+              className="h-7 flex-1 min-w-0 cursor-pointer truncate rounded-lg border border-slate-600 bg-slate-700/90 px-2 text-xs font-medium text-slate-200 transition-colors hover:border-slate-400 focus:border-indigo-400 focus:outline-none"
+            >
+              <option value="" disabled>
+                Move to...
+              </option>
+              {sortedCategories.map((c) => (
+                <option key={c.key} value={c.key} className="bg-slate-800 text-white">
+                  {c.label}
+                </option>
+              ))}
+            </select>
+          ) : null}
+
           <Button
             variant="secondary"
             size="sm"
@@ -58,10 +91,10 @@ export function BatchCard({ email, onApprove, onSkip }: BatchCardProps) {
               onSkip(email.id);
             }}
             title="Skip / defer this email to the end"
-            className="flex-1"
+            className="h-7 px-2 shrink-0"
           >
             <FaTimes className="text-xs" />
-            <span>Skip</span>
+            <span className="hidden sm:inline">Skip</span>
           </Button>
 
           <Button
@@ -72,15 +105,22 @@ export function BatchCard({ email, onApprove, onSkip }: BatchCardProps) {
               onApprove(email.id);
             }}
             title="Approve category for this email"
-            className="flex-1"
+            className="h-7 px-2 shrink-0 font-semibold"
           >
             <FaCheck className="text-xs" />
-            <span>Approve</span>
+            <span className="hidden sm:inline">Approve</span>
           </Button>
         </div>
       </div>
 
-      {modalOpen && <EmailModal email={email} onClose={() => setModalOpen(false)} />}
+      {modalOpen && (
+        <EmailModal
+          email={email}
+          categories={categories}
+          onCategorize={onCategorize}
+          onClose={() => setModalOpen(false)}
+        />
+      )}
     </>
   );
 }

@@ -56,7 +56,7 @@ export function EmailCard({
         ) : null}
       </div>
 
-      {modal && <EmailModal email={email} onClose={() => setModal(false)} />}
+      {modal && <EmailModal email={email} onCategorize={categorize} onClose={() => setModal(false)} />}
     </>
   );
 }

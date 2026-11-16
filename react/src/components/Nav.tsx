@@ -20,7 +20,9 @@ export function Nav() {
     <nav className="fixed bottom-[max(1.5rem,env(safe-area-inset-bottom))] left-[max(1rem,env(safe-area-inset-left))] z-20 rounded-lg bg-slate-800 shadow-lg">
       <ul className="flex items-center">
         {links.map((link) => {
-          const active = window.location.pathname === link.url;
+          const active =
+            window.location.pathname === link.url ||
+            (link.url === '/' && (window.location.pathname === '/batch' || window.location.pathname.startsWith('/categorize')));
           return (
             <li
               key={link.url}

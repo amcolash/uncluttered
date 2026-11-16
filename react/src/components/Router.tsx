@@ -43,6 +43,9 @@ export function Router() {
           <Routes>
             <Route path="/ui" element={<ComponentPage />} />
             <Route path="/inbox" element={<InboxPage />} />
+            <Route path="/batch" element={<CategorizePage />} />
+            <Route path="/categorize/batch" element={<CategorizePage />} />
+            <Route path="/categorize" element={<CategorizePage />} />
 
             <Route index element={<CategorizePage />} />
             <Route path="*" element={<Navigate to="/" replace />} />

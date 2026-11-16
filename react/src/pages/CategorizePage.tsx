@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { FaCheckDouble, FaTimes, FaUndo } from 'react-icons/fa';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { formatCategory } from 'utilities/util';
 
 import { BatchCard } from 'components/BatchCard';
@@ -14,7 +15,9 @@ import { useSuggestions } from 'hooks/useSuggestions';
 
 export function CategorizePage() {
   const { emails, categories, categoryCounts, canUndo, actions } = useEmails(true);
-  const [isBatchMode, setIsBatchMode] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isBatchMode = location.pathname === '/batch' || location.pathname.endsWith('/batch');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   // Single card mode stack
@@ -46,7 +49,7 @@ export function CategorizePage() {
   // Keep currently selected category locked until it has 0 emails left, then advance to next
   useEffect(() => {
     if (!isBatchMode) return;
-    const currentCount = selectedCategory ? (pendingCategoryCounts[selectedCategory] || 0) : 0;
+    const currentCount = selectedCategory ? pendingCategoryCounts[selectedCategory] || 0 : 0;
     if (currentCount === 0) {
       const nextCategory = Object.entries(pendingCategoryCounts)
         .filter(([_, count]) => count > 0)
@@ -72,7 +75,7 @@ export function CategorizePage() {
   }, [activeBatchCategory, unvalidatedByCategory]);
 
   const totalPendingInActiveBatch = activeBatchCategory
-    ? unvalidatedByCategory.get(activeBatchCategory)?.length ?? 0
+    ? (unvalidatedByCategory.get(activeBatchCategory)?.length ?? 0)
     : 0;
 
   useEffect(() => {
@@ -116,7 +119,9 @@ export function CategorizePage() {
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div>
                   <div className="flex items-center gap-3">
-                    <h1 className="text-2xl font-bold text-white">Batch Categorize</h1>
+                    <h1 className="text-2xl font-bold text-white">
+                      Batch Categorize {emails.length > 0 && `(${emails.length} remaining)`}
+                    </h1>
                     {activeBatchCategory && (
                       <Badge variant="primary" className="px-3 py-1 text-sm font-semibold">
                         {formatCategory(activeBatchCategory)}
@@ -179,15 +184,17 @@ export function CategorizePage() {
                     <BatchCard
                       key={email.id}
                       email={email}
+                      categories={categories}
                       onApprove={(id) => actions.confirm(id)}
                       onSkip={(id) => actions.defer(id)}
+                      onCategorize={(id, newCat) => actions.categorize(id, newCat)}
                     />
                   ))}
                 </div>
 
                 {/* Bottom Approve Bar for convenience */}
                 {activeBatchEmails.length > 4 && (
-                  <div className="flex justify-center pb-8 pt-4">
+                  <div className="flex justify-center pt-4 pb-8">
                     <Button
                       variant="success"
                       size="md"
@@ -210,9 +217,12 @@ export function CategorizePage() {
           /* ── SINGLE SWIPE MODE ── */
           <>
             <div className="grid w-full max-w-4xl gap-4">
-              <h1 className="text-2xl font-bold text-white">Review emails {emails.length > 0 && `(${emails.length})`}</h1>
+              <h1 className="text-2xl font-bold text-white">
+                Review emails {emails.length > 0 && `(${emails.length})`}
+              </h1>
               <p className="text-sm text-slate-400">
-                Swipe right to confirm, swipe left to defer to the end of the pile. Use a category button to re-categorize.
+                Swipe right to confirm, swipe left to defer to the end of the pile. Use a category button to
+                re-categorize.
               </p>
 
               <Button variant="secondary" size="sm" onClick={actions.undo} disabled={!canUndo} className="w-fit">
@@ -262,12 +272,12 @@ export function CategorizePage() {
             actions.categorize(current.id, category);
           }
         }}
-        activeCategory={isBatchMode ? activeBatchCategory : (current?.userOverrideCategory || current?.aiCategory)}
+        activeCategory={isBatchMode ? activeBatchCategory : current?.userOverrideCategory || current?.aiCategory}
         aiCategory={isBatchMode ? undefined : current?.aiCategory}
         userOverrideCategory={isBatchMode ? undefined : current?.userOverrideCategory}
         suggestions={isBatchMode ? [] : suggestions}
         isBatchMode={isBatchMode}
-        onToggleBatchMode={() => setIsBatchMode((prev) => !prev)}
+        onToggleBatchMode={() => navigate(isBatchMode ? '/' : '/batch')}
       />
     </div>
   );
