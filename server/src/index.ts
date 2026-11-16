@@ -35,6 +35,7 @@ async function triggerRetrain() {
       snippet: e.snippet,
       sender: e.sender,
       category: (e.userOverrideCategory ?? e.aiCategory) as string,
+      isGold: Boolean(e.userOverrideCategory || e.validated),
     }));
 
   try {

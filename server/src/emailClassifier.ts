@@ -362,7 +362,7 @@ function matchesSenderRule(sender: string, subject: string, snippet: string, rul
 const CLASSIFIER_URL = process.env.CLASSIFIER_URL ?? 'http://localhost:7002';
 // Minimum ML confidence (0-1) required to use the ML result over the rules.
 // Below this threshold the rule-based classifier wins. Tune via env var.
-const CLASSIFIER_MIN_CONFIDENCE = parseFloat(process.env.CLASSIFIER_MIN_CONFIDENCE ?? '0.40');
+const CLASSIFIER_MIN_CONFIDENCE = parseFloat(process.env.CLASSIFIER_MIN_CONFIDENCE ?? '0.60');
 
 /**
  * Rule-based fallback classifier — no external dependencies, sub-millisecond.
@@ -401,13 +401,23 @@ export function classifyEmailRules(subject: string, snippet: string, sender: str
   }
 
   // 5. ORDER_SHIPPING — e-commerce / shipping platforms or order-status language
+  // Guard: if promotional keywords are present without order keywords, classify as promo
   if (domainIs(domain, ...ORDER_DOMAINS) || RE_ORDER_SUBJ.test(subject)) {
-    categories.push('ORDER_SHIPPING');
+    if (RE_PROMO_SUBJ.test(subject) && !RE_ORDER_SUBJ.test(subject)) {
+      categories.push('PROMO_MARKETING');
+    } else {
+      categories.push('ORDER_SHIPPING');
+    }
   }
 
-  // 4. TRAVEL_BOOKING — airline / accommodation domains or travel language
+  // 6. TRAVEL_BOOKING — airline / accommodation domains or travel language
+  // Guard: if airline/hotel sends a promotion/sale instead of a booking confirmation
   if (domainIs(domain, ...TRAVEL_DOMAINS) || RE_TRAVEL_SUBJ.test(subject)) {
-    categories.push('TRAVEL_BOOKING');
+    if (RE_PROMO_SUBJ.test(subject) && !RE_TRAVEL_SUBJ.test(subject)) {
+      categories.push('PROMO_MARKETING');
+    } else {
+      categories.push('TRAVEL_BOOKING');
+    }
   }
 
   // 5. BANKING_ACCOUNT — bank / fintech domains or account-activity language

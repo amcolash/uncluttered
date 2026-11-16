@@ -11,34 +11,32 @@ case "$ACTION" in
   pull)
     echo "==> Pulling data from NAS ($NAS_HOST:$REMOTE_DATA_DIR) to local ($LOCAL_DATA_DIR)..."
     mkdir -p "$LOCAL_DATA_DIR"
-    if command -v rsync >/dev/null 2>&1; then
-      rsync -avz --progress --exclude 'backups' "$NAS_HOST:$REMOTE_DATA_DIR/" "$LOCAL_DATA_DIR/"
-    else
-      scp -r "$NAS_HOST:$REMOTE_DATA_DIR/*" "$LOCAL_DATA_DIR/"
-    fi
+    scp -O "$NAS_HOST:$REMOTE_DATA_DIR/*.json" "$NAS_HOST:$REMOTE_DATA_DIR/*.joblib" "$LOCAL_DATA_DIR/" 2>/dev/null || true
+
     # Also pull .env if it exists on NAS and not locally
     if [ ! -f .env ]; then
       echo "==> Pulling .env from NAS..."
-      scp "$NAS_HOST:$NAS_DIR/.env" ./.env 2>/dev/null || true
+      scp -O "$NAS_HOST:$NAS_DIR/.env" ./.env 2>/dev/null || true
     fi
     echo "==> Data pull complete!"
     ;;
 
   push)
-    echo "==> Stopping Docker containers on NAS before pushing data..."
-    ssh -t "$NAS_HOST" "export PATH=\$PATH:/usr/local/bin && cd '$NAS_DIR' && docker compose stop"
-
-    echo "==> Pushing local data ($LOCAL_DATA_DIR) to NAS ($NAS_HOST:$REMOTE_DATA_DIR)..."
+    echo "==> Ensuring remote directory and .env exist on NAS..."
     ssh "$NAS_HOST" "mkdir -p '$REMOTE_DATA_DIR'"
-    if command -v rsync >/dev/null 2>&1; then
-      rsync -avz --progress --exclude 'backups' "$LOCAL_DATA_DIR/" "$NAS_HOST:$REMOTE_DATA_DIR/"
-    else
-      scp -r "$LOCAL_DATA_DIR"/* "$NAS_HOST:$REMOTE_DATA_DIR/"
-    fi
 
     if [ -f .env ]; then
       echo "==> Pushing .env to NAS..."
-      scp .env "$NAS_HOST:$NAS_DIR/.env"
+      scp -O .env "$NAS_HOST:$NAS_DIR/.env"
+    fi
+
+    echo "==> Stopping Docker containers on NAS if running..."
+    ssh -t "$NAS_HOST" "export PATH=\$PATH:/usr/local/bin && cd '$NAS_DIR' && docker compose stop 2>/dev/null || true"
+
+    echo "==> Pushing local data ($LOCAL_DATA_DIR) to NAS ($NAS_HOST:$REMOTE_DATA_DIR)..."
+    DATA_FILES=$(find "$LOCAL_DATA_DIR" -maxdepth 1 -type f)
+    if [ -n "$DATA_FILES" ]; then
+      scp -O $DATA_FILES "$NAS_HOST:$REMOTE_DATA_DIR/"
     fi
 
     echo "==> Starting Docker containers on NAS..."
