@@ -35,6 +35,7 @@ type HistoryEntry = {
 
 export type EmailActions = {
   confirm: (id: string) => Promise<void>;
+  batchConfirm: (ids: string[]) => Promise<void>;
   defer: (id: string) => Promise<void>;
   categorize: (id: string, category: string) => Promise<void>;
   undo: () => Promise<void>;
@@ -262,6 +263,29 @@ export function useEmails(filterValidated: boolean): {
     }
   }
 
+  async function batchConfirm(ids: string[]) {
+    if (ids.length === 0) return;
+    const affected = emails.filter((e) => ids.includes(e.id));
+    if (affected.length === 0) return;
+
+    setHistory((prev) => [...prev, { ids: affected.map((e) => e.id), previous: affected.map((e) => ({ ...e })) }]);
+    setEmails((prev) => prev.filter((e) => !ids.includes(e.id)));
+
+    try {
+      if (!DRY_RUN) {
+        const res = await fetch(`${API}/api/emails/batch/validate`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ids, validated: true }),
+        });
+        if (!res.ok) throw new Error(`Batch validate failed with status ${res.status}`);
+      }
+    } catch (err) {
+      console.error('Batch confirm failed:', err);
+      fetchEmails();
+    }
+  }
+
   return {
     emails,
     categories,
@@ -269,6 +293,7 @@ export function useEmails(filterValidated: boolean): {
     canUndo: history.length > 0,
     actions: {
       confirm,
+      batchConfirm,
       defer,
       categorize,
       undo,

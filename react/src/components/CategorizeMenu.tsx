@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { FaMagic, FaSync, FaTags, FaTimes } from 'react-icons/fa';
+import { FaLayerGroup, FaMagic, FaSync, FaTags, FaTimes } from 'react-icons/fa';
 import { twMerge } from 'tailwind-merge';
 import { API } from 'utilities/util';
 
@@ -19,6 +19,8 @@ export interface CategorizeMenuProps {
   userOverrideCategory?: string | null;
   enabled?: boolean;
   suggestions?: Suggestion[];
+  isBatchMode?: boolean;
+  onToggleBatchMode?: () => void;
 }
 
 const LOCAL_STORAGE_KEY = 'uncluttered_recent_categories';
@@ -59,6 +61,8 @@ export function CategorizeMenu({
   userOverrideCategory,
   enabled = true,
   suggestions = [],
+  isBatchMode = false,
+  onToggleBatchMode,
 }: CategorizeMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [syncing, setSyncing] = useState(false);
@@ -161,11 +165,21 @@ export function CategorizeMenu({
     const isAi = aiCategory === c.key;
     const isSuggested = confidence !== undefined;
     const isActive = isOverride || (!userOverrideCategory && isAi) || activeCategory === c.key;
+    const count = categoryCounts[c.key] || 0;
+    const isSelectedBatch = isBatchMode && activeCategory === c.key;
 
     let borderStyles =
       'border border-slate-700 bg-slate-800 text-slate-100 hover:bg-slate-700 hover:text-white active:bg-slate-950';
 
-    if (isOverride) {
+    if (isBatchMode) {
+      if (isSelectedBatch) {
+        borderStyles = 'border-2 border-indigo-400 bg-indigo-950/80 font-bold text-white shadow-md ring-1 ring-indigo-400';
+      } else if (count === 0) {
+        borderStyles = 'border border-slate-800/80 bg-slate-900/40 text-slate-500 hover:bg-slate-800/60 hover:text-slate-400';
+      } else {
+        borderStyles = 'border border-slate-700 bg-slate-800 text-slate-100 hover:border-slate-500 hover:text-white';
+      }
+    } else if (isOverride) {
       // User override: cyan border (no double rings)
       borderStyles = 'border-2 border-cyan-400 bg-cyan-950/40 font-semibold text-cyan-100';
     } else if (isAi) {
@@ -197,51 +211,100 @@ export function CategorizeMenu({
           'group flex min-h-[48px] w-full cursor-pointer items-center justify-center rounded-lg px-3 py-2 text-center text-sm leading-snug font-medium transition-colors',
           'focus-visible:border-white focus-visible:outline-none',
           'disabled:cursor-not-allowed disabled:opacity-50',
+          isSelectedBatch && 'col-span-2 min-h-[52px] py-2.5 text-base font-bold',
           borderStyles
         )}
       >
         <span className="line-clamp-2 break-words">
           {c.label}
+          {isBatchMode ? ` (${count})` : ''}
           {confidence !== undefined ? ` · ${Math.round(confidence * 100)}%` : ''}
         </span>
       </button>
     );
   };
 
-  const renderCategorySections = () => (
-    <>
-      {/* Suggested Section */}
-      {suggestedCategories.length > 0 && (
+  // Categories with pending unvalidated emails in batch mode.
+  // The selected category is ALWAYS pinned at index 0 and spans 2 columns.
+  const pendingBatchCategories = useMemo(() => {
+    if (!isBatchMode) return [];
+    const withPending = categories
+      .filter((c) => (categoryCounts[c.key] || 0) > 0)
+      .sort((a, b) => (categoryCounts[b.key] || 0) - (categoryCounts[a.key] || 0));
+
+    if (!activeCategory) return withPending;
+
+    const activeItem = categories.find((c) => c.key === activeCategory);
+    if (!activeItem) return withPending;
+
+    const others = withPending.filter((c) => c.key !== activeCategory);
+    return [activeItem, ...others];
+  }, [isBatchMode, categories, categoryCounts, activeCategory]);
+
+  const renderCategorySections = () => {
+    if (isBatchMode) {
+      if (pendingBatchCategories.length === 0) {
+        return (
+          <div className="flex flex-col items-center justify-center py-16 text-center text-slate-400">
+            <span className="mb-3 text-4xl">🎉</span>
+            <p className="text-sm font-semibold text-slate-200">You're all caught up categorizing</p>
+          </div>
+        );
+      }
+
+      return (
         <div>
-          <h3 className="mb-2 text-xs font-bold tracking-wider text-amber-400 uppercase">Suggested</h3>
           <div className="grid grid-cols-2 gap-2">
-            {suggestedCategories.map((c) => renderCategoryButton(c, c.confidence))}
+            {pendingBatchCategories.map((c) => renderCategoryButton(c))}
           </div>
         </div>
-      )}
+      );
+    }
 
-      {/* 6 Recent Section */}
-      <div>
-        <h3 className="mb-2 text-xs font-bold tracking-wider text-slate-400 uppercase">Recent</h3>
-        <div className="grid grid-cols-2 gap-2">{recentCategories.map((c) => renderCategoryButton(c))}</div>
-      </div>
-
-      {/* Divider */}
-      <div className="relative py-1">
-        <div className="absolute inset-0 flex items-center">
-          <div className="w-full border-t border-slate-700" />
+    if (!enabled) {
+      return (
+        <div className="flex flex-col items-center justify-center py-16 text-center text-slate-400">
+          <span className="mb-3 text-4xl">🎉</span>
+          <p className="text-sm font-semibold text-slate-200">You're all caught up categorizing</p>
         </div>
-        <div className="relative flex justify-center text-xs tracking-wider uppercase">
-          <span className="bg-slate-900 px-3 font-semibold text-slate-400">All Categories</span>
-        </div>
-      </div>
+      );
+    }
 
-      {/* Entire alphabetical list */}
-      <div>
-        <div className="grid grid-cols-2 gap-2">{alphabeticalCategories.map((c) => renderCategoryButton(c))}</div>
-      </div>
-    </>
-  );
+    return (
+      <>
+        {/* Suggested Section (Single mode) */}
+        {suggestedCategories.length > 0 && (
+          <div>
+            <h3 className="mb-2 text-xs font-bold tracking-wider text-amber-400 uppercase">Suggested</h3>
+            <div className="grid grid-cols-2 gap-2">
+              {suggestedCategories.map((c) => renderCategoryButton(c, c.confidence))}
+            </div>
+          </div>
+        )}
+
+        {/* 6 Recent Section (Single mode) */}
+        <div>
+          <h3 className="mb-2 text-xs font-bold tracking-wider text-slate-400 uppercase">Recent</h3>
+          <div className="grid grid-cols-2 gap-2">{recentCategories.map((c) => renderCategoryButton(c))}</div>
+        </div>
+
+        {/* Divider */}
+        <div className="relative py-1">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t border-slate-700" />
+          </div>
+          <div className="relative flex justify-center text-xs tracking-wider uppercase">
+            <span className="bg-slate-900 px-3 font-semibold text-slate-400">All Categories</span>
+          </div>
+        </div>
+
+        {/* Entire alphabetical list */}
+        <div>
+          <div className="grid grid-cols-2 gap-2">{alphabeticalCategories.map((c) => renderCategoryButton(c))}</div>
+        </div>
+      </>
+    );
+  };
 
   return (
     <>
@@ -273,6 +336,18 @@ export function CategorizeMenu({
               <FaMagic className={twMerge('text-xs', reclassifying && 'animate-spin')} />
               <span className="text-xs">{reclassifying ? 'Reclassifying...' : 'Reclassify'}</span>
             </Button>
+            {onToggleBatchMode && (
+              <Button
+                variant={isBatchMode ? 'primary' : 'secondary'}
+                size="sm"
+                onClick={onToggleBatchMode}
+                title={isBatchMode ? 'Switch to swipe mode' : 'Switch to batch categorization mode'}
+                className="h-7 px-2.5 text-xs"
+              >
+                <FaLayerGroup className="text-xs" />
+                <span className="text-xs">Batch</span>
+              </Button>
+            )}
           </div>
         </div>
 
@@ -320,6 +395,18 @@ export function CategorizeMenu({
                 <FaMagic className={twMerge('text-xs', reclassifying && 'animate-spin')} />
                 <span className="text-xs">{reclassifying ? 'Reclassifying...' : 'Reclassify'}</span>
               </Button>
+              {onToggleBatchMode && (
+                <Button
+                  variant={isBatchMode ? 'primary' : 'secondary'}
+                  size="sm"
+                  onClick={onToggleBatchMode}
+                  title={isBatchMode ? 'Switch to swipe mode' : 'Switch to batch categorization mode'}
+                  className="h-7 px-2.5 text-xs"
+                >
+                  <FaLayerGroup className="text-xs" />
+                  <span className="text-xs">Batch</span>
+                </Button>
+              )}
             </div>
           }
         >

@@ -302,6 +302,33 @@ app.post('/api/emails/batch/delete', async (req, res) => {
   }
 });
 
+/**
+ * Batch validate multiple emails - accepts an array of email IDs and validated boolean
+ */
+app.post('/api/emails/batch/validate', async (req, res) => {
+  const { ids, validated } = req.body as { ids?: string[]; validated?: boolean };
+
+  if (!Array.isArray(ids) || ids.length === 0 || typeof validated !== 'boolean') {
+    res.status(400).json({ error: 'ids must be a non-empty array and validated must be a boolean' });
+    return;
+  }
+
+  let modified = 0;
+  for (const id of ids) {
+    const email = db.data.emails.find((e) => e.id === id);
+    if (email) {
+      email.validated = validated;
+      modified++;
+    }
+  }
+
+  if (modified > 0) {
+    await db.write();
+  }
+
+  res.json({ success: true, count: modified });
+});
+
 app.post('/api/emails/:id/important', async (req, res) => {
   const email = db.data.emails.find((e) => e.id === req.params.id);
   if (!email) {
