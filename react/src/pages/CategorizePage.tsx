@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
 
-import { CategorySidebar } from 'components/CategorySidebar';
+import { CategorizeMenu } from 'components/CategorizeMenu';
 import { EmailCard } from 'components/EmailCard';
-import { Menu } from 'components/Menu';
 import { Nav } from 'components/Nav';
 import { CardStack, SwipeCard } from 'components/SwipeCard';
 import { Button } from 'components/ui/Button';
@@ -10,7 +9,7 @@ import { useEmails } from 'hooks/useEmails';
 import { useSuggestions } from 'hooks/useSuggestions';
 
 export function CategorizePage() {
-  const { emails, categories, canUndo, actions } = useEmails(true);
+  const { emails, categories, categoryCounts, canUndo, actions } = useEmails(true);
   const emailStack = emails.slice(0, 5);
   const current = emailStack[0];
   const suggestions = useSuggestions(current);
@@ -25,23 +24,12 @@ export function CategorizePage() {
   }, [actions, actions.undo]);
 
   return (
-    <div className="flex justify-center gap-8">
-      <Menu>
-        <CategorySidebar
-          categories={categories.sort((a, b) => a.key.localeCompare(b.key))}
-          enabled={current !== undefined}
-          onClick={(category) => current && actions.categorize(current.id, category)}
-          active={current?.userOverrideCategory || current?.aiCategory}
-        />
-      </Menu>
-
+    <div className="overflow-x-hidden p-2">
       <Nav />
 
-      <div className="flex flex-1 flex-col items-center gap-20 p-8">
+      <div className="flex flex-1 flex-col items-center gap-6 p-4 pt-6 sm:gap-20 sm:p-8">
         <div className="grid w-full max-w-4xl gap-4">
-          <h1 className="mt-8 text-2xl font-bold text-white">
-            Review emails {emails.length > 0 && `(${emails.length})`}
-          </h1>
+          <h1 className="text-2xl font-bold text-white">Review emails {emails.length > 0 && `(${emails.length})`}</h1>
           <p className="text-sm text-slate-400">
             Swipe right to confirm, swipe left to defer to the end of the pile. Use a category button to re-categorize.
           </p>
@@ -85,6 +73,16 @@ export function CategorizePage() {
           </p>
         )}
       </div>
+
+      <CategorizeMenu
+        categories={categories}
+        categoryCounts={categoryCounts}
+        enabled={current !== undefined}
+        onSelectCategory={(category) => current && actions.categorize(current.id, category)}
+        activeCategory={current?.userOverrideCategory || current?.aiCategory}
+        aiCategory={current?.aiCategory}
+        userOverrideCategory={current?.userOverrideCategory}
+      />
     </div>
   );
 }

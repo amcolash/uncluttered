@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { SIMILARITY_THRESHOLD, levenshteinSimilarity } from 'utilities/levenshtein';
 import { API, formatCategory } from 'utilities/util';
 
+import { useServerStatus } from 'contexts/ServerStatusContext';
+
 const DRY_RUN = false;
 
 export interface Category {
@@ -54,18 +56,32 @@ async function postCategorize(id: string, category: string | null, validated: bo
 export function useEmails(filterValidated: boolean): {
   emails: Email[];
   categories: Category[];
+  categoryCounts: Record<string, number>;
   canUndo: boolean;
   actions: EmailActions;
 } {
   const [emails, setEmails] = useState<Email[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
+  const [categoryCounts, setCategoryCounts] = useState<Record<string, number>>({});
   const [history, setHistory] = useState<HistoryEntry[]>([]);
+  const { setServerReachable } = useServerStatus();
 
   async function fetchEmails() {
     try {
       const res = await fetch(`${API}/api/emails`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const all: Email[] = await res.json();
+      setServerReachable(true);
+
+      const counts: Record<string, number> = {};
+      for (const email of all) {
+        const cat = email.userOverrideCategory || email.aiCategory;
+        if (cat) {
+          counts[cat] = (counts[cat] || 0) + 1;
+        }
+      }
+      setCategoryCounts(counts);
+
       const filtered = all
         .filter(
           (e) => !filterValidated || e.validated !== true || (e.userOverrideCategory || e.aiCategory) === 'UNKNOWN'
@@ -74,17 +90,21 @@ export function useEmails(filterValidated: boolean): {
       setEmails(filtered);
     } catch (err) {
       console.error('Failed to fetch emails:', err);
+      setServerReachable(false);
     }
   }
 
   async function fetchCategories() {
-    fetch(`${API}/api/categories`)
-      .then((r) => r.json())
-      .then((categories) =>
-        setCategories(
-          categories.map((c: { key: string; description: string }) => ({ ...c, label: formatCategory(c.key) }))
-        )
-      );
+    try {
+      const r = await fetch(`${API}/api/categories`);
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const cats = await r.json();
+      setCategories(cats.map((c: { key: string; description: string }) => ({ ...c, label: formatCategory(c.key) })));
+      setServerReachable(true);
+    } catch (err) {
+      console.error('Failed to fetch categories:', err);
+      setServerReachable(false);
+    }
   }
 
   useEffect(() => {
@@ -245,6 +265,7 @@ export function useEmails(filterValidated: boolean): {
   return {
     emails,
     categories,
+    categoryCounts,
     canUndo: history.length > 0,
     actions: {
       confirm,

@@ -22,7 +22,7 @@ export function EmailCard({
   return (
     <>
       <div className="flex h-full flex-col gap-3 overflow-hidden rounded-lg" onClick={() => setModal(true)}>
-        <p className="truncate text-lg font-semibold text-slate-300">{email.sender}</p>
+        <p className="min-h-lh truncate text-lg font-semibold text-slate-300">{email.sender}</p>
         <p className="-mt-2 mb-2 text-xs text-slate-400">{new Date(email.date).toLocaleString()}</p>
         <p className="text-md line-clamp-2 font-bold text-white">{email.subject}</p>
         <p className="line-clamp-4 text-slate-400">{email.snippet}</p>

@@ -1,10 +1,12 @@
 import { Suspense, lazy } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
+import { ServerStatusProvider } from 'contexts/ServerStatusContext';
 import { useAuthStatus } from 'hooks/useAuthStatus';
 import { InboxPage } from 'pages/InboxPage';
 
 import { GoogleAuth } from './GoogleAuth';
+import { ServerStatusLabel } from './ServerStatusLabel';
 import { Spinner } from './ui/Spinner';
 
 const CategorizePage = lazy(async () => ({ default: (await import('pages/CategorizePage')).CategorizePage }));
@@ -22,23 +24,31 @@ export function Router() {
   const { status, loading, error, isResetting, checkStatus, resetAuth } = useAuthStatus();
 
   if (loading && !status && !error) return <LoadingSpinner />;
-  if (!status?.tokenValid) {
+
+  // Only show GoogleAuth when the server explicitly responded that the token is invalid
+  if (status && !status.tokenValid) {
     return (
       <GoogleAuth url={status?.url} error={error} isResetting={isResetting} onReset={resetAuth} onCheck={checkStatus} />
     );
   }
 
-  return (
-    <BrowserRouter>
-      <Suspense fallback={<LoadingSpinner />}>
-        <Routes>
-          <Route path="/ui" element={<ComponentPage />} />
-          <Route path="/categorize" element={<CategorizePage />} />
+  // If server could not be reached, allow the cached app to still render and show the status label
+  const initialReachable = !error || Boolean(status);
 
-          <Route index element={<InboxPage />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
+  return (
+    <ServerStatusProvider initialReachable={initialReachable}>
+      <ServerStatusLabel />
+      <BrowserRouter>
+        <Suspense fallback={<LoadingSpinner />}>
+          <Routes>
+            <Route path="/ui" element={<ComponentPage />} />
+            <Route path="/categorize" element={<CategorizePage />} />
+
+            <Route index element={<InboxPage />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
+    </ServerStatusProvider>
   );
 }

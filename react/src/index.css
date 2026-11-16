@@ -7,5 +7,6 @@
 @layer base {
   html {
     @apply scrollbar-thin scrollbar-thumb-slate-500 scrollbar-track-slate-700 overflow-x-hidden bg-slate-800;
+    -webkit-tap-highlight-color: transparent;
   }
 }

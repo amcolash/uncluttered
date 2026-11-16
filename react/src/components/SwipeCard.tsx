@@ -63,8 +63,8 @@ export function SwipeCard({ onSwipe, index, className, children }: SwipeCardProp
   return (
     <motion.div
       className={twMerge(
-        'user-select-none flex origin-bottom rounded-lg bg-slate-800 p-1 text-neutral-200 shadow-lg shadow-slate-800/50 transition-all duration-75 hover:cursor-grab active:cursor-grabbing',
-        'aspect-3/4 max-h-[60vh] w-[70vw] max-w-96',
+        'flex origin-bottom touch-pan-y flex-col rounded-lg bg-slate-800 p-1 text-neutral-200 shadow-lg shadow-slate-800/50 transition-all duration-75 select-none hover:cursor-grab active:cursor-grabbing',
+        'aspect-3/4 max-h-[65vh] w-[84vw] max-w-96 sm:w-[70vw]',
         index === 0 && 'hover:scale-102',
         className
       )}
@@ -90,6 +90,32 @@ export function SwipeCard({ onSwipe, index, className, children }: SwipeCardProp
       </motion.div>
 
       {children}
+
+      <div className="flex justify-between">
+        <button
+          onClick={async () => {
+            await animate(scope.current, { x: -TRANSFORM_THRESHOLD }, { duration: 0.2 });
+            onSwipe('left');
+          }}
+          className="hidden cursor-pointer sm:inline-block"
+        >
+          <motion.div className="rounded-full bg-red-500 p-4">
+            <FaTimes />
+          </motion.div>
+        </button>
+
+        <button
+          onClick={async () => {
+            await animate(scope.current, { x: TRANSFORM_THRESHOLD }, { duration: 0.2 });
+            onSwipe('right');
+          }}
+          className="hidden cursor-pointer sm:inline-block"
+        >
+          <motion.div className="rounded-full bg-green-600 p-4">
+            <FaCheck />
+          </motion.div>
+        </button>
+      </div>
     </motion.div>
   );
 }
