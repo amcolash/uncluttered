@@ -148,14 +148,17 @@ const NONPROFIT_DOMAINS = [
   'blackbaud.com',
   'everyaction.com',
 ];
-const COMMUNITY_DOMAINS = [
-  'kexp.org',
-  'pacsci.org',
-  'seattlemakers.org',
-  'aurelian.com',
+const COMMUNITY_DOMAINS = ['kexp.org', 'pacsci.org', 'seattlemakers.org', 'aurelian.com'];
+const HEALTHCARE_DOMAINS = [
   'wahbexchange.org',
-  'ridwell.com',
-  'beehiiv.com',
+  'mychart.com',
+  'onemedical.com',
+  'kaiserpermanente.org',
+  'kp.org',
+  'cvs.com',
+  'walgreens.com',
+  'questdiagnostics.com',
+  'labcorp.com',
 ];
 const SUBSCRIPTION_DOMAINS = [
   'att-mail.com',
@@ -167,6 +170,7 @@ const SUBSCRIPTION_DOMAINS = [
   'verizon.com',
   't-mobile.com',
   'nakedwines.com',
+  'ridwell.com',
 ];
 const RECRUITER_DOMAINS = [
   'linkedin.com',
@@ -203,7 +207,7 @@ const PERSONAL_DOMAINS = new Set([
   'aol.com',
   'hey.com',
 ]);
-const NEWSLETTER_DOMAINS = ['ghost.io', 'buttondown.email', 'convertkit.com'];
+const NEWSLETTER_DOMAINS = ['ghost.io', 'buttondown.email', 'convertkit.com', 'beehiiv.com'];
 const EVENT_TICKET_DOMAINS = [
   'seatgeek.com',
   'ticketmaster.com',
@@ -224,7 +228,7 @@ const FOOD_ORDER_DOMAINS = [
   'toasttab.com',
   'fullcircle.com',
 ];
-const FINANCE_DOMAINS = ['zillow.com', 'splitwise.com'];
+const FINANCE_DOMAINS = ['zillow.com', 'splitwise.com', 'paypal.com', 'stripe.com'];
 const DEVELOPER_DOMAINS = ['c2.synology.com'];
 const ACCOUNTS_DOMAINS = [
   'google.com',
@@ -244,8 +248,6 @@ const ACCOUNTS_DOMAINS = [
   'telegram.org',
   'uber.com',
   'airbnb.com',
-  'paypal.com',
-  'stripe.com',
   'auth0.com',
   'okta.com',
   'box.com',
@@ -287,10 +289,13 @@ const RE_DEV_SUBJ =
   /\b(google\s+cloud|cloud\s+platform.{0,10}api|vertex\s+ai|google\s+search\s+console|google\s+search\s+traffic|monitor\s+the\s+google\s+search|review\s+successful\s+for\s+https?:|synology\s+c2|cloud\s+function|cloud\s+run|firebase\s+console|developer\s+console)\b/i;
 
 const RE_SYSTEM_SUBJ =
-  /\b(security\s+alert|new\s+sign[\s-]?in|new\s+device\s+sign|suspicious\s+activit|login\s+(attempt|from\s+new)|password\s+(reset|changed|updated)|two[\s-]?factor|2fa\b|mfa\s+(code|request)|verification\s+code|build\s+(failed|passed|succeeded|error)|deployment\s+(failed|succeeded|complete)|server\s+(error|alert|down|outage)|pull\s+request|merged\s+into|release\s+v?\d|pipeline\s+(failed|passed)|usage[\s-]based\s+billing|billing\s+(update|change|alert)|account\s+(suspended|locked|disabled)|action\s+required\s*:)\b/i;
+  /\b(build\s+(failed|passed|succeeded|error)|deployment\s+(failed|succeeded|complete)|server\s+(error|alert|down|outage)|service\s+(outage|degradation|incident)|downtime\s+alert|pull\s+request|merged\s+into|release\s+v?\d|pipeline\s+(failed|passed)|synthetic\s+monitoring|cron\s+job|cpu\s+usage|disk\s+space)\b/i;
 
 const RE_ACCOUNTS_SUBJ =
-  /\b(reset\s+your\s+password|password\s+reset\s+request|verify\s+your\s+.*\s+account|complete\s+your\s+.*\s+account\s+setup|confirm\s+your\s+(email|identity)|verification\s+code|your\s+verification\s+code\s+is|new\s+login\s+(from|detected)|account\s+created|welcome\s+to|confirm\s+your\s+(new\s+)?password|two[\s-]?factor\s+authentication|mfa\s+code|security\s+code|one[\s-]?time\s+passcode|password\s+change\s+confirmation|account\s+recovery|email\s+verification|unusual\s+account\s+activit|account\s+(locked|suspended)\s+for\s+security|someone\s+tried\s+to\s+access|recovery\s+(codes?|method)|new\s+device\s+login|sign[\s-]?in\s+from\s+(new|unknown))\b/i;
+  /\b(security\s+alert|reset\s+your\s+password|password\s+reset\s+request|password\s+(has\s+been\s+)?(reset|changed|updated)|verify\s+your\s+.*\s+account|complete\s+your\s+.*\s+account\s+setup|confirm\s+your\s+(email|identity)|verification\s+code|your\s+verification\s+code\s+is|new\s+login(\s+(to|from|detected|attempt))?|login\s+(attempt|notification|alert|from\s+new)|account\s+created|welcome\s+to|confirm\s+your\s+(new\s+)?password|two[\s-]?factor(\s+authentication)?|2fa\b|mfa(\s+code|\s+request|\b)|security\s+code|one[\s-]?time\s+passcode|password\s+change\s+confirmation|account\s+recovery|email\s+verification|suspicious\s+activit|unusual\s+account\s+activit|account\s+(locked|suspended)(\s+for\s+security)?|someone\s+tried\s+to\s+access|recovery\s+(codes?|method)|new\s+device\s+(login|sign)|new\s+sign[\s-]?in|sign[\s-]?in\s+from\s+(new|unknown))\b/i;
+
+const RE_HEALTHCARE_SUBJ =
+  /\b(health(\s*care)?|medical|prescription|rx\b|pharmacy|doctor|dentist|dental|patient|clinic|lab\s+results?|test\s+results?|coverage|health\s+plan|benefit\s+exchange|immunization|vaccin(e|ation)|telehealth|chart\s+note|after-visit\s+summary)\b/i;
 
 const RE_GAMING_SUBJ =
   /\b(free\s+(items?\s+added|game\s+claim|games?\s+this\s+week)|items?\s+added\s+to\s+your\s+(library|account)|your\s+epic\s+games\s+receipt|claim\s+your\s+free\s+game|game\s+(update|patch)|weekly\s+free\s+game)\b/i;
@@ -360,13 +365,16 @@ function matchesSenderRule(sender: string, subject: string, snippet: string, rul
 // ── Classifier ────────────────────────────────────────────────────────────────
 
 const CLASSIFIER_URL = process.env.CLASSIFIER_URL ?? 'http://localhost:7002';
-// Minimum ML confidence (0-1) required to use the ML result over the rules.
-// Below this threshold the rule-based classifier wins. Tune via env var.
-const CLASSIFIER_MIN_CONFIDENCE = parseFloat(process.env.CLASSIFIER_MIN_CONFIDENCE ?? '0.60');
+// Minimum ML confidence (0-1) required to use the ML result over the rules unconditionally.
+// Lowered to 0.45 since across 22 classes, 0.45 is 10x above uniform chance (4.5%).
+const CLASSIFIER_MIN_CONFIDENCE = parseFloat(process.env.CLASSIFIER_MIN_CONFIDENCE ?? '0.45');
+// Margin-based acceptance: if ML top confidence >= 0.30 and margin over #2 >= 0.12, accept ML.
+const CLASSIFIER_MARGIN_MIN_CONFIDENCE = parseFloat(process.env.CLASSIFIER_MARGIN_MIN_CONFIDENCE ?? '0.30');
+const CLASSIFIER_MIN_MARGIN = parseFloat(process.env.CLASSIFIER_MIN_MARGIN ?? '0.12');
+// Minimum confidence when rule fallback is UNKNOWN (baseline uniform across 22 classes is ~4.5%).
+const CLASSIFIER_FALLBACK_MIN_CONFIDENCE = parseFloat(process.env.CLASSIFIER_FALLBACK_MIN_CONFIDENCE ?? '0.20');
 // Minimum confidence (0-1) required to show as an alternative suggestion when an email is already categorized.
-const CLASSIFIER_SUGGESTION_MIN_CONFIDENCE = parseFloat(
-  process.env.CLASSIFIER_SUGGESTION_MIN_CONFIDENCE ?? '0.35'
-);
+const CLASSIFIER_SUGGESTION_MIN_CONFIDENCE = parseFloat(process.env.CLASSIFIER_SUGGESTION_MIN_CONFIDENCE ?? '0.35');
 // Minimum confidence (0-1) required to show suggestions when the email is UNKNOWN.
 // Baseline uniform random across 22 classes is ~4.5%, so 15% represents strong relative confidence.
 const CLASSIFIER_UNKNOWN_SUGGESTION_MIN_CONFIDENCE = parseFloat(
@@ -437,6 +445,11 @@ export function classifyEmailRules(subject: string, snippet: string, sender: str
   // 5b. ACCOUNTS — account security / authentication domains or password/MFA language
   if (domainIs(domain, ...ACCOUNTS_DOMAINS) || RE_ACCOUNTS_SUBJ.test(subject)) {
     categories.push('ACCOUNTS');
+  }
+
+  // 5c. HEALTHCARE_MEDICAL — healthcare portals, medical appointments, test results, pharmacy
+  if (domainIs(domain, ...HEALTHCARE_DOMAINS) || RE_HEALTHCARE_SUBJ.test(subject)) {
+    categories.push('HEALTHCARE_MEDICAL');
   }
 
   // 6. FINANCE_BILL — invoices / bills due (checked after banking so bank receipts
@@ -546,11 +559,7 @@ function normalizeMlCandidates(data: unknown): MlCandidate[] {
   return candidates.sort((a, b) => b.confidence - a.confidence);
 }
 
-function selectSuggestions(
-  candidates: MlCandidate[],
-  exclude: string[],
-  isUnknownCategory: boolean
-): MlCandidate[] {
+function selectSuggestions(candidates: MlCandidate[], exclude: string[], isUnknownCategory: boolean): MlCandidate[] {
   const minConfidence = isUnknownCategory
     ? CLASSIFIER_UNKNOWN_SUGGESTION_MIN_CONFIDENCE
     : CLASSIFIER_SUGGESTION_MIN_CONFIDENCE;
@@ -609,7 +618,17 @@ export async function classifyEmail(
       }
 
       const mlUrgency = typeof data?.urgency === 'number' ? data.urgency : undefined;
-      if (bestMl && data?.ready && bestMl.confidence >= CLASSIFIER_MIN_CONFIDENCE) {
+      const secondMl = mlCandidates[1];
+      const margin = bestMl ? bestMl.confidence - (secondMl?.confidence ?? 0) : 0;
+      const isHighConfidence = Boolean(bestMl && bestMl.confidence >= CLASSIFIER_MIN_CONFIDENCE);
+      const hasDecisiveMargin = Boolean(
+        bestMl && bestMl.confidence >= CLASSIFIER_MARGIN_MIN_CONFIDENCE && margin >= CLASSIFIER_MIN_MARGIN
+      );
+      const rescuesUnknownRule = Boolean(
+        bestMl && primaryCategory === 'UNKNOWN' && bestMl.confidence >= CLASSIFIER_FALLBACK_MIN_CONFIDENCE
+      );
+
+      if (bestMl && data?.ready && (isHighConfidence || hasDecisiveMargin || rescuesUnknownRule)) {
         primaryCategory = bestMl.category;
         earliestUrgency = mlUrgency ?? defaultUrgency[primaryCategory] ?? 3;
       }

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { FaSync, FaTags, FaTimes } from 'react-icons/fa';
+import { FaMagic, FaSync, FaTags, FaTimes } from 'react-icons/fa';
 import { twMerge } from 'tailwind-merge';
 import { API } from 'utilities/util';
 
@@ -62,6 +62,7 @@ export function CategorizeMenu({
 }: CategorizeMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [syncing, setSyncing] = useState(false);
+  const [reclassifying, setReclassifying] = useState(false);
   const [recentKeys, setRecentKeys] = useState<string[]>([]);
 
   // Derive suggested categories
@@ -123,6 +124,18 @@ export function CategorizeMenu({
       console.error(err);
     } finally {
       setSyncing(false);
+    }
+  };
+
+  const handleReclassify = async () => {
+    setReclassifying(true);
+    try {
+      await fetch(`${API}/api/emails/reclassify`, { method: 'POST' });
+      window.location.reload();
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setReclassifying(false);
     }
   };
 
@@ -236,18 +249,29 @@ export function CategorizeMenu({
       <aside className="sticky top-0 right-0 z-10 hidden h-screen w-80 shrink-0 flex-col border-l border-slate-700 bg-slate-900 p-4 lg:flex lg:w-96">
         {/* Header */}
         <div className="mb-4 flex shrink-0 items-center justify-between border-b border-slate-800 pb-3">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <h2 className="text-base font-semibold text-white">Categories</h2>
             <Button
               variant="secondary"
               size="sm"
               onClick={handleSync}
-              disabled={syncing}
+              disabled={syncing || reclassifying}
               title="Sync emails from Gmail"
               className="h-7 px-2.5 text-xs"
             >
               <FaSync className={twMerge('text-xs', syncing && 'animate-spin')} />
               <span className="text-xs">Sync</span>
+            </Button>
+            <Button
+              variant="secondary"
+              size="sm"
+              onClick={handleReclassify}
+              disabled={syncing || reclassifying}
+              title="Reclassify unvalidated emails with latest rules and model"
+              className="h-7 px-2.5 text-xs"
+            >
+              <FaMagic className={twMerge('text-xs', reclassifying && 'animate-spin')} />
+              <span className="text-xs">{reclassifying ? 'Reclassifying...' : 'Reclassify'}</span>
             </Button>
           </div>
         </div>
@@ -273,17 +297,30 @@ export function CategorizeMenu({
           onClose={() => setIsOpen(false)}
           title="Categorize"
           headerActions={
-            <Button
-              variant="secondary"
-              size="sm"
-              onClick={handleSync}
-              disabled={syncing}
-              title="Sync emails from Gmail"
-              className="h-7 px-2.5 text-xs"
-            >
-              <FaSync className={twMerge('text-xs', syncing && 'animate-spin')} />
-              <span className="text-xs">Sync</span>
-            </Button>
+            <div className="flex items-center gap-2">
+              <Button
+                variant="secondary"
+                size="sm"
+                onClick={handleSync}
+                disabled={syncing || reclassifying}
+                title="Sync emails from Gmail"
+                className="h-7 px-2.5 text-xs"
+              >
+                <FaSync className={twMerge('text-xs', syncing && 'animate-spin')} />
+                <span className="text-xs">Sync</span>
+              </Button>
+              <Button
+                variant="secondary"
+                size="sm"
+                onClick={handleReclassify}
+                disabled={syncing || reclassifying}
+                title="Reclassify unvalidated emails with latest rules and model"
+                className="h-7 px-2.5 text-xs"
+              >
+                <FaMagic className={twMerge('text-xs', reclassifying && 'animate-spin')} />
+                <span className="text-xs">{reclassifying ? 'Reclassifying...' : 'Reclassify'}</span>
+              </Button>
+            </div>
           }
         >
           {renderCategorySections()}

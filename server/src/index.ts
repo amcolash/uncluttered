@@ -30,15 +30,16 @@ let sessionOverrideCount = 0;
 async function triggerRetrain() {
   const examples = db.data.emails
     .filter((e) => {
+      const isUserValidated = Boolean(e.userOverrideCategory || e.validated);
       const cat = e.userOverrideCategory ?? e.aiCategory;
-      return cat && cat !== 'UNKNOWN';
+      return isUserValidated && cat && cat !== 'UNKNOWN';
     })
     .map((e) => ({
       subject: e.subject,
       snippet: e.snippet,
       sender: e.sender,
       category: (e.userOverrideCategory ?? e.aiCategory) as string,
-      isGold: Boolean(e.userOverrideCategory || e.validated),
+      isGold: true,
     }));
 
   try {

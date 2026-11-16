@@ -226,18 +226,16 @@ def train(req: TrainRequest) -> dict:
     start = time.time()
     print("[Classifier] Phase 1/4: Loading and combining datasets...")
 
-    custom_examples = [e for e in req.examples if e.category != "UNKNOWN"]
+    # Only train on validated gold data to prevent self-reinforcing false predictions
+    custom_examples = [e for e in req.examples if e.category != "UNKNOWN" and getattr(e, "isGold", False)]
     base_examples = load_base_data()
 
     # 1. Combine datasets
     all_examples = base_examples + custom_examples
 
-    # 2. Assign weights (base data 1.0, gold user-validated 6.0, silver unvalidated AI 1.5)
+    # 2. Assign weights (base data 1.0, gold user-validated 6.0)
     print("[Classifier] Phase 2/4: Applying weights and filtering sparse classes...")
-    custom_weights = [
-        GOLD_DATA_WEIGHT if getattr(e, "isGold", False) else SILVER_DATA_WEIGHT
-        for e in custom_examples
-    ]
+    custom_weights = [GOLD_DATA_WEIGHT for _ in custom_examples]
     all_weights = ([BASE_DATA_WEIGHT] * len(base_examples)) + custom_weights
 
     # 3. Filter sparse classes
@@ -297,9 +295,8 @@ def train(req: TrainRequest) -> dict:
     urg_model = None
 
     dist = dict(Counter(cat_labels))
-    gold_count = sum(1 for e in custom_examples if getattr(e, "isGold", False))
-    silver_count = len(custom_examples) - gold_count
-    print(f"[Classifier] Trained on {len(texts)} examples across {len(dist)} classes. (Base: {len(base_examples)}, Gold: {gold_count}, Silver: {silver_count})")
+    gold_count = len(custom_examples)
+    print(f"[Classifier] Trained on {len(texts)} examples across {len(dist)} classes. (Base: {len(base_examples)}, Gold: {gold_count})")
     print(f"[Classifier] Training complete in {round(time.time() - start, 2)} seconds.")
 
     return {
@@ -308,7 +305,7 @@ def train(req: TrainRequest) -> dict:
         "base_data":    len(base_examples),
         "custom_data":  len(custom_examples),
         "gold_data":    gold_count,
-        "silver_data":  silver_count,
+        "silver_data":  0,
         "classes":      len(dist),
         "distribution": dist,
         "duration":     round(time.time() - start, 2),
