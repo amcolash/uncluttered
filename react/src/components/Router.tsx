@@ -14,8 +14,8 @@ const ComponentPage = lazy(async () => ({ default: (await import('pages/Componen
 
 function LoadingSpinner() {
   return (
-    <div className="absolute inset-0 flex items-center justify-center">
-      <Spinner size="xl" className="text-slate-300" />
+    <div className="bg-surface-canvas absolute inset-0 flex items-center justify-center">
+      <Spinner size="xl" className="text-brand-primary" />
     </div>
   );
 }
