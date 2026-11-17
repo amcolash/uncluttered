@@ -63,9 +63,9 @@ export function SwipeCard({ onSwipe, index, className, children }: SwipeCardProp
   return (
     <motion.div
       className={twMerge(
-        'flex origin-bottom touch-pan-y flex-col rounded-lg bg-slate-800 p-1 text-neutral-200 shadow-lg shadow-slate-800/50 transition-all duration-75 select-none hover:cursor-grab active:cursor-grabbing',
+        'rounded-card border-border-default bg-surface-card p-sm text-text-primary shadow-elevated flex origin-bottom touch-pan-y flex-col border transition-all duration-75 select-none hover:cursor-grab active:cursor-grabbing',
         'aspect-3/4 max-h-[65vh] w-[84vw] max-w-96 sm:w-[70vw]',
-        index === 0 && 'hover:scale-102',
+        index === 0 && 'hover:border-border-strong hover:scale-102',
         className
       )}
       ref={scope}
@@ -79,27 +79,32 @@ export function SwipeCard({ onSwipe, index, className, children }: SwipeCardProp
       }}
       animate={{ scale: index === 0 ? 1.05 : 1, y: index * -10 }}
     >
-      <motion.div className="absolute top-6 right-6 rounded-full bg-green-800 p-4" style={{ opacity: checkOpacity }}>
+      <motion.div
+        className="bg-status-success p-sm text-text-primary shadow-elevated absolute top-6 right-6 z-10 rounded-full"
+        style={{ opacity: checkOpacity }}
+      >
         <FaCheck />
       </motion.div>
-      {/* <motion.div className="absolute top-6 left-6 rounded-full bg-yellow-600 p-4" style={{ opacity: skipOpacity }}>
-        <FaQuestion />
-      </motion.div> */}
-      <motion.div className="absolute top-6 left-6 rounded-full bg-red-500 p-4" style={{ opacity: skipOpacity }}>
+      <motion.div
+        className="bg-status-danger p-sm text-text-primary shadow-elevated absolute top-6 left-6 z-10 rounded-full"
+        style={{ opacity: skipOpacity }}
+      >
         <FaTimes />
       </motion.div>
 
       {children}
 
-      <div className="flex justify-between">
+      <footer role="toolbar" aria-label="Review actions" className="pt-xs mt-auto flex justify-between">
         <button
           onClick={async () => {
             await animate(scope.current, { x: -TRANSFORM_THRESHOLD }, { duration: 0.2 });
             onSwipe('left');
           }}
           className="hidden cursor-pointer sm:inline-block"
+          aria-label="Skip email"
+          title="Skip (Left arrow)"
         >
-          <motion.div className="rounded-full bg-red-500 p-4">
+          <motion.div className="bg-status-danger p-sm text-text-primary rounded-full transition-opacity hover:opacity-90">
             <FaTimes />
           </motion.div>
         </button>
@@ -110,17 +115,19 @@ export function SwipeCard({ onSwipe, index, className, children }: SwipeCardProp
             onSwipe('right');
           }}
           className="hidden cursor-pointer sm:inline-block"
+          aria-label="Approve email"
+          title="Approve (Right arrow)"
         >
-          <motion.div className="rounded-full bg-green-600 p-4">
+          <motion.div className="bg-status-success p-sm text-text-primary rounded-full transition-opacity hover:opacity-90">
             <FaCheck />
           </motion.div>
         </button>
-      </div>
+      </footer>
     </motion.div>
   );
 }
 
 // Only show the top 5 cards and reverse the order so the first card is on top
 export function CardStack({ children }: { children: ReactNode[] }) {
-  return <div className="grid place-items-center pt-10">{children.slice(0, 5).reverse()}</div>;
+  return <div className="grid place-items-center pt-8">{children.slice(0, 5).reverse()}</div>;
 }

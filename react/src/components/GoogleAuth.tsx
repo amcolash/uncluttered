@@ -14,38 +14,38 @@ interface GoogleAuthProps {
 export function GoogleAuth({ url, error, isResetting, onReset, onCheck }: GoogleAuthProps) {
   if (!url && !error && isResetting) {
     return (
-      <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-        <Spinner size="xl" className="text-slate-300" />
-        <p className="text-slate-400">Resetting authentication...</p>
+      <div className="gap-md bg-surface-canvas absolute inset-0 flex flex-col items-center justify-center">
+        <Spinner size="xl" className="text-brand-primary" />
+        <p className="text-text-secondary text-sm">Resetting authentication...</p>
       </div>
     );
   }
 
   return (
-    <div className="absolute inset-0 flex items-center justify-center p-4">
-      <div className="flex w-full max-w-md flex-col items-center gap-6 rounded-xl border border-slate-700 bg-slate-900 p-8 shadow-2xl">
-        <div className="rounded-full bg-slate-800 p-4 text-indigo-400">
+    <div className="bg-surface-canvas p-md absolute inset-0 flex items-center justify-center">
+      <div className="gap-md rounded-modal border-border-default bg-surface-card p-xl shadow-elevated flex w-full max-w-md flex-col items-center border">
+        <div className="bg-surface-elevated p-md text-brand-primary rounded-full">
           <FaGoogle className="text-3xl" />
         </div>
 
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-white">Authentication Required</h2>
-          <p className="mt-2 text-sm text-slate-400">
+          <h2 className="text-text-primary text-2xl font-bold tracking-tight">Authentication Required</h2>
+          <p className="mt-xs text-text-secondary text-sm">
             Your Gmail token has expired or is invalid. Please sign in again to sync your emails.
           </p>
         </div>
 
         {error && (
-          <div className="flex w-full items-start gap-3 rounded-lg border border-red-500/30 bg-red-950/40 p-3 text-sm text-red-200">
-            <FaExclamationTriangle className="mt-0.5 shrink-0 text-red-400" />
+          <div className="gap-sm rounded-control border-status-danger/40 bg-status-danger-subtle p-sm text-status-danger flex w-full items-start border text-sm">
+            <FaExclamationTriangle className="text-status-danger mt-0.5 shrink-0" />
             <div className="flex-1 break-words">
-              <p className="font-medium text-red-300">Auth Error</p>
-              <p className="text-xs text-red-300/80">{error}</p>
+              <p className="text-status-danger font-semibold">Auth Error</p>
+              <p className="text-xs opacity-90">{error}</p>
             </div>
           </div>
         )}
 
-        <div className="flex w-full flex-col gap-3">
+        <div className="gap-sm flex w-full flex-col">
           {url ? (
             <a href={url} className={getButtonStyle({ variant: 'primary', size: 'lg' })}>
               <FaGoogle />
@@ -58,7 +58,7 @@ export function GoogleAuth({ url, error, isResetting, onReset, onCheck }: Google
             </Button>
           )}
 
-          <div className="flex gap-2">
+          <div className="gap-xs flex">
             {onReset && (
               <Button
                 variant="secondary"
@@ -88,7 +88,7 @@ export function GoogleAuth({ url, error, isResetting, onReset, onCheck }: Google
           </div>
         </div>
 
-        <p className="text-center text-xs text-slate-500">
+        <p className="text-text-muted text-center text-xs">
           If you are stuck in a loop, click <strong>Reset Auth</strong> to wipe expired tokens and force a new consent
           screen.
         </p>

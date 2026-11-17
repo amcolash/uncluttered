@@ -22,16 +22,16 @@ export function ServerStatusLabel() {
       aria-live="polite"
       className={twMerge(
         'fixed top-[max(0.75rem,env(safe-area-inset-top))] left-1/2 z-50 -translate-x-1/2',
-        'flex items-center gap-2 rounded-full border border-amber-500/40 bg-slate-900/95 px-3.5 py-1 text-xs font-medium text-amber-200 shadow-xl backdrop-blur-md transition-all'
+        'gap-xs border-status-warning/40 bg-surface-card/95 px-sm py-xs text-status-warning shadow-elevated flex items-center rounded-full border text-xs font-medium backdrop-blur-md transition-all'
       )}
     >
-      <span className="size-2 animate-pulse rounded-full bg-amber-400" />
+      <span className="bg-status-warning size-2 animate-pulse rounded-full" />
       <span>Cannot reach server</span>
       <button
         type="button"
         onClick={handleRetry}
         disabled={retrying}
-        className="ml-1 inline-flex cursor-pointer items-center gap-1 font-semibold text-amber-300 underline underline-offset-2 hover:text-white disabled:opacity-50"
+        className="ml-xs gap-xs text-status-warning inline-flex cursor-pointer items-center font-semibold underline underline-offset-2 hover:opacity-80 disabled:opacity-50"
       >
         {retrying ? (
           <>

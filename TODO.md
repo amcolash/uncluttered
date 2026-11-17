@@ -19,7 +19,7 @@
 - [x] Add "important" filter (category-ish) to inbox page
 - [ ] Keyboard shortcuts for various operations (in batch and modal for single email)
 - [ ] Keyboard shortcut hints (like on steamos for each button)
-- [ ] Swipe actions for mobile (archive, important, delete)
+- [x] Swipe actions for mobile (swipe right to archive, swipe left to delete)
 - [x] Consider ways to improve suggestions from the UI side
 - [ ] Checkboxes for batch
 - [ ] Provide a batch suggestion in ui (magic wand). Needs 20+ with that status, more than 60%

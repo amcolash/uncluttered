@@ -28,36 +28,52 @@ export function BatchCard({ email, categories = [], onApprove, onSkip, onCategor
 
   return (
     <>
-      <div className="flex flex-col justify-between rounded-xl border border-slate-700/80 bg-slate-800/90 p-4 shadow-md transition-all hover:border-slate-500 hover:shadow-lg">
+      <article
+        aria-label={email.subject}
+        className="email-card"
+      >
         {/* Clickable card body to inspect full email */}
-        <div className="cursor-pointer" onClick={() => setModalOpen(true)}>
-          <div className="flex items-start justify-between gap-2">
-            <p className="truncate text-sm font-semibold text-slate-300" title={email.sender}>
+        <div
+          role="button"
+          tabIndex={0}
+          onClick={() => setModalOpen(true)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              setModalOpen(true);
+            }
+          }}
+          className="cursor-pointer focus:outline-none"
+        >
+          {/* Header Row: Sender & Date */}
+          <header className="email-card-header">
+            <span className="email-card-sender" title={email.sender}>
               {email.sender}
-            </p>
-            <span className="shrink-0 text-xs text-slate-400">
+            </span>
+            <time dateTime={email.date}>
               {new Date(email.date).toLocaleDateString(undefined, {
                 month: 'short',
                 day: 'numeric',
               })}
-            </span>
-          </div>
+            </time>
+          </header>
 
-          <p className="mt-1 line-clamp-2 text-sm font-bold text-white leading-snug" title={email.subject}>
+          {/* Subject */}
+          <h2 className="mt-xs line-clamp-2" title={email.subject}>
             {email.subject}
-          </p>
+          </h2>
 
-          <p className="mt-2 line-clamp-3 text-xs text-slate-400 leading-relaxed">{email.snippet}</p>
+          {/* Snippet preview */}
+          {email.snippet && <p className="email-card-snippet">{email.snippet}</p>}
 
-          <div className="mt-3 flex items-center justify-between">
-            <Badge variant="primary" className="text-xs">
-              {formatCategory(category)}
-            </Badge>
+          {/* Badge */}
+          <div className="mt-sm flex items-center justify-between">
+            <Badge variant="primary">{formatCategory(category)}</Badge>
           </div>
         </div>
 
         {/* Action Bar: Category Select dropdown + Skip + Approve */}
-        <div className="mt-4 flex items-center gap-1.5 border-t border-slate-700/60 pt-3">
+        <footer role="toolbar" aria-label="Card Actions" className="email-card-footer">
           {onCategorize && sortedCategories.length > 0 ? (
             <select
               value=""
@@ -70,13 +86,13 @@ export function BatchCard({ email, categories = [], onApprove, onSkip, onCategor
               }}
               title="One-off categorize: move this email to another category"
               aria-label="Change category for this email"
-              className="h-7 flex-1 min-w-0 cursor-pointer truncate rounded-lg border border-slate-600 bg-slate-700/90 px-2 text-xs font-medium text-slate-200 transition-colors hover:border-slate-400 focus:border-indigo-400 focus:outline-none"
+              className="flex-1 min-w-0 truncate"
             >
               <option value="" disabled>
                 Move to...
               </option>
               {sortedCategories.map((c) => (
-                <option key={c.key} value={c.key} className="bg-slate-800 text-white">
+                <option key={c.key} value={c.key} className="bg-surface-card text-text-primary">
                   {c.label}
                 </option>
               ))}
@@ -91,7 +107,7 @@ export function BatchCard({ email, categories = [], onApprove, onSkip, onCategor
               onSkip(email.id);
             }}
             title="Skip / defer this email to the end"
-            className="h-7 px-2 shrink-0"
+            className="shrink-0"
           >
             <FaTimes className="text-xs" />
             <span className="hidden sm:inline">Skip</span>
@@ -105,13 +121,13 @@ export function BatchCard({ email, categories = [], onApprove, onSkip, onCategor
               onApprove(email.id);
             }}
             title="Approve category for this email"
-            className="h-7 px-2 shrink-0 font-semibold"
+            className="shrink-0 font-semibold"
           >
             <FaCheck className="text-xs" />
             <span className="hidden sm:inline">Approve</span>
           </Button>
-        </div>
-      </div>
+        </footer>
+      </article>
 
       {modalOpen && (
         <EmailModal

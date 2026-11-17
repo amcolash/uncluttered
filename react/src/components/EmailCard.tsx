@@ -17,31 +17,57 @@ export function EmailCard({
   suggestions?: Suggestion[];
   categorize?: (emailId: string, category: string) => void;
 }) {
-  const [modal, setModal] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
-      <div className="flex h-full flex-col gap-3 overflow-hidden rounded-lg" onClick={() => setModal(true)}>
-        <p className="min-h-lh truncate text-lg font-semibold text-slate-300">{email.sender}</p>
-        <p className="-mt-2 mb-2 text-xs text-slate-400">{new Date(email.date).toLocaleString()}</p>
-        <p className="text-md line-clamp-2 font-bold text-white">{email.subject}</p>
-        <p className="line-clamp-4 text-slate-400">{email.snippet}</p>
-        <Badge variant="primary" className="mt-2 w-fit p-2">
-          {formatCategory(email.userOverrideCategory ?? email.aiCategory)}
-        </Badge>
+      <article
+        aria-label={email.subject}
+        className="flex h-full cursor-pointer flex-col overflow-hidden"
+        onClick={() => setModalOpen(true)}
+      >
+        {/* Header Row: Sender & Date */}
+        <header className="email-card-header">
+          <span className="email-card-sender" title={email.sender}>
+            {email.sender}
+          </span>
+          <time dateTime={email.date}>
+            {new Date(email.date).toLocaleDateString(undefined, {
+              month: 'short',
+              day: 'numeric',
+            })}
+          </time>
+        </header>
 
+        {/* Subject */}
+        <h2 className="mt-xs line-clamp-2" title={email.subject}>
+          {email.subject}
+        </h2>
+
+        {/* Snippet preview */}
+        {email.snippet && <p className="email-card-snippet line-clamp-4">{email.snippet}</p>}
+
+        {/* Category Badge */}
+        <footer className="mt-sm flex items-center justify-between">
+          <Badge variant="primary">
+            {formatCategory(email.userOverrideCategory ?? email.aiCategory)}
+          </Badge>
+        </footer>
+
+        {/* AI Suggested Categories */}
         {suggestions && suggestions.length > 0 ? (
-          <div
-            className="mt-4 rounded-lg border border-slate-700 bg-slate-900/30 p-3"
+          <section
+            aria-label="Suggested categories"
+            className="mt-sm rounded-control border border-border-default bg-surface-subtle p-sm"
             onClick={(e) => e.stopPropagation()}
           >
-            <p className="text-xs tracking-[0.25em] text-slate-500 uppercase">Suggested categories</p>
-            <div className="mt-2 flex flex-wrap gap-2">
+            <h3>Suggested categories</h3>
+            <div role="group" aria-label="Suggestions" className="mt-xs flex flex-wrap gap-xs">
               {suggestions.map((suggestion) => (
                 <Button
                   key={`${suggestion.source}-${suggestion.key}`}
                   variant="secondary"
-                  className="p-2"
+                  size="sm"
                   onClick={(e) => {
                     e.stopPropagation();
                     if (categorize) categorize(email.id, suggestion.key);
@@ -52,11 +78,11 @@ export function EmailCard({
                 </Button>
               ))}
             </div>
-          </div>
+          </section>
         ) : null}
-      </div>
+      </article>
 
-      {modal && <EmailModal email={email} onCategorize={categorize} onClose={() => setModal(false)} />}
+      {modalOpen && <EmailModal email={email} onCategorize={categorize} onClose={() => setModalOpen(false)} />}
     </>
   );
 }
