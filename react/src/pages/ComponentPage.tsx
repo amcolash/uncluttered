@@ -1,5 +1,6 @@
 import type { ChangeEvent, ReactNode } from 'react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { photos } from 'utilities/photos';
 
 import { CardStack, SwipeCard } from 'components/SwipeCard';
@@ -7,7 +8,10 @@ import { Badge } from 'components/ui/Badge';
 import { Button } from 'components/ui/Button';
 import { Card, CardBody, CardDescription, CardFooter, CardHeader, CardTitle } from 'components/ui/Card';
 import { Checkbox } from 'components/ui/Checkbox';
+import { EmptyState } from 'components/ui/EmptyState';
 import { Input } from 'components/ui/Input';
+import { Modal } from 'components/ui/Modal';
+import { PageHeader } from 'components/ui/PageHeader';
 import { Progress } from 'components/ui/Progress';
 import { RadioGroup } from 'components/ui/Radio';
 import { Select, type SelectOption } from 'components/ui/Select';
@@ -16,8 +20,8 @@ import { Textarea } from 'components/ui/Textarea';
 
 function Section({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <section className="flex flex-col gap-5">
-      <h2 className="border-b border-slate-700 pb-2.5 text-lg font-semibold text-white">{title}</h2>
+    <section className="gap-md flex flex-col">
+      <h2 className="border-border-subtle pb-xs text-text-primary border-b text-lg font-bold">{title}</h2>
       {children}
     </section>
   );
@@ -25,9 +29,9 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
 
 function Row({ label, center, children }: { label?: string; center?: boolean; children: ReactNode }) {
   return (
-    <div className="flex flex-col gap-2">
-      {label && <p className="text-xs font-medium tracking-wide text-slate-500 uppercase">{label}</p>}
-      <div className={`flex flex-wrap gap-3 ${center ? 'items-center' : 'items-start'}`}>{children}</div>
+    <div className="gap-xs flex flex-col">
+      {label && <p className="text-text-muted text-xs font-bold tracking-wider uppercase">{label}</p>}
+      <div className={`gap-sm flex flex-wrap ${center ? 'items-center' : 'items-start'}`}>{children}</div>
     </div>
   );
 }
@@ -73,23 +77,55 @@ const sizeOptions = [
 ];
 
 export function ComponentPage() {
+  const navigate = useNavigate();
   const [radioPlan, setRadioPlan] = useState('starter');
   const [radioSize, setRadioSize] = useState('md');
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(true);
   const [check3, setCheck3] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const [cards, setCards] = useState(photos);
 
   return (
-    <div className="min-h-screen bg-slate-900 px-8 py-14">
-      <div className="mx-auto flex max-w-4xl flex-col gap-14">
+    <div className="bg-surface-canvas px-md py-lg sm:px-xl sm:py-2xl min-h-screen">
+      <div className="gap-xl mx-auto flex max-w-4xl flex-col">
         {/* Header */}
-        <div>
-          <h1 className="text-3xl font-bold text-white">Component Library</h1>
-          <p className="mt-1 text-slate-400">All components and their variations</p>
-        </div>
+        <PageHeader
+          title="Component Library"
+          badge={{ label: 'Design Tokens v4', variant: 'primary' }}
+          description="Demonstration of all unified design tokens, typography, surfaces, and shared UI components."
+          actions={
+            <div className="gap-xs flex items-center">
+              <Button variant="secondary" size="sm" onClick={() => navigate('/')}>
+                Back to App
+              </Button>
+              <Button variant="primary" size="sm" onClick={() => setModalOpen(true)}>
+                Open Demo Modal
+              </Button>
+            </div>
+          }
+        />
 
+        {/* ── Demo Modal ─────────────────────────────────────── */}
+        <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)} title="Demo Animated Modal" size="md">
+          <div className="gap-md text-text-secondary flex flex-col text-sm">
+            <p>
+              This modal uses <code className="text-text-primary">motion/react</code> spring physics, automatic body
+              scroll locking, escape key listeners, and backdrop blur.
+            </p>
+            <div className="gap-xs pt-md flex justify-end">
+              <Button variant="secondary" size="sm" onClick={() => setModalOpen(false)}>
+                Cancel
+              </Button>
+              <Button variant="primary" size="sm" onClick={() => setModalOpen(false)}>
+                Confirm
+              </Button>
+            </div>
+          </div>
+        </Modal>
+
+        {/* ── SwipeCard ───────────────────────────────────────── */}
         <Section title="SwipeCard">
           <Button variant="primary" className="w-fit" onClick={() => setCards(photos)}>
             Reset cards
@@ -107,7 +143,7 @@ export function ComponentPage() {
                 <img
                   src={card.url}
                   alt={`Photo ${card.id}`}
-                  className="h-full w-full rounded-lg object-cover"
+                  className="rounded-card h-full w-full object-cover"
                   draggable={false}
                 />
               </SwipeCard>
@@ -121,6 +157,8 @@ export function ComponentPage() {
             <Button variant="primary">Primary</Button>
             <Button variant="secondary">Secondary</Button>
             <Button variant="ghost">Ghost</Button>
+            <Button variant="success">Success</Button>
+            <Button variant="warning">Warning</Button>
             <Button variant="danger">Danger</Button>
           </Row>
           <Row label="Sizes" center>
@@ -155,16 +193,16 @@ export function ComponentPage() {
         {/* ── Spinner ─────────────────────────────────────────── */}
         <Section title="Spinner">
           <Row center>
-            <Spinner size="sm" className="text-slate-500" />
-            <Spinner size="md" className="text-slate-500" />
-            <Spinner size="lg" className="text-slate-500" />
+            <Spinner size="sm" className="text-text-muted" />
+            <Spinner size="md" className="text-brand-primary" />
+            <Spinner size="lg" className="text-status-success" />
           </Row>
         </Section>
 
         {/* ── Progress ────────────────────────────────────────── */}
         <Section title="Progress">
           <Row label="Variants">
-            <div className="flex w-full flex-col gap-3">
+            <div className="gap-sm flex w-full flex-col">
               <Progress value={65} label="Default" showValue />
               <Progress value={80} variant="success" label="Success" showValue />
               <Progress value={45} variant="warning" label="Warning" showValue />
@@ -172,24 +210,17 @@ export function ComponentPage() {
             </div>
           </Row>
           <Row label="Sizes">
-            <div className="flex w-full flex-col gap-3">
+            <div className="gap-sm flex w-full flex-col">
               <Progress value={60} size="sm" label="Small (h-1)" />
               <Progress value={60} size="md" label="Medium (h-2)" />
               <Progress value={60} size="lg" label="Large (h-3)" />
-            </div>
-          </Row>
-          <Row label="Edge cases">
-            <div className="flex w-full flex-col gap-3">
-              <Progress value={0} showValue />
-              <Progress value={100} variant="success" showValue />
-              <Progress value={50} animated label="Animated" showValue />
             </div>
           </Row>
         </Section>
 
         {/* ── Input ───────────────────────────────────────────── */}
         <Section title="Input">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="gap-md grid grid-cols-1 sm:grid-cols-2">
             <Input label="Default" placeholder="Enter text…" />
             <Input label="With hint" placeholder="user@example.com" hint="We'll never share your email." />
             <Input
@@ -206,7 +237,7 @@ export function ComponentPage() {
 
         {/* ── Textarea ────────────────────────────────────────── */}
         <Section title="Textarea">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="gap-md grid grid-cols-1 sm:grid-cols-2">
             <Textarea label="Default" placeholder="Write something…" rows={3} />
             <Textarea label="With hint" placeholder="Describe your project…" hint="Max 500 characters." rows={3} />
             <Textarea
@@ -222,7 +253,7 @@ export function ComponentPage() {
 
         {/* ── Select ──────────────────────────────────────────── */}
         <Section title="Select">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="gap-md grid grid-cols-1 sm:grid-cols-2">
             <Select label="Default" options={fruits} defaultValue="apple" />
             <Select label="With placeholder" options={fruits} placeholder="Choose a fruit…" />
             <Select label="With hint" options={fruits} defaultValue="banana" hint="Select your favourite fruit." />
@@ -233,7 +264,7 @@ export function ComponentPage() {
 
         {/* ── Radio ───────────────────────────────────────────── */}
         <Section title="Radio">
-          <div className="grid grid-cols-2 gap-8">
+          <div className="gap-lg grid grid-cols-1 sm:grid-cols-2">
             <RadioGroup
               name="plan"
               label="With descriptions"
@@ -249,27 +280,12 @@ export function ComponentPage() {
               orientation="horizontal"
               options={sizeOptions}
             />
-            <RadioGroup
-              name="size-v"
-              label="Vertical orientation"
-              value={radioSize}
-              onChange={setRadioSize}
-              options={sizeOptions}
-            />
-            <RadioGroup
-              name="plan-error"
-              label="With error"
-              value=""
-              onChange={() => {}}
-              options={planOptions.slice(0, 2)}
-              error="Please select a plan."
-            />
           </div>
         </Section>
 
         {/* ── Checkbox ────────────────────────────────────────── */}
         <Section title="Checkbox">
-          <div className="grid grid-cols-2 gap-1">
+          <div className="gap-xs grid grid-cols-1 sm:grid-cols-2">
             <Checkbox
               label="Unchecked"
               checked={check1}
@@ -286,31 +302,29 @@ export function ComponentPage() {
               checked={check3}
               onChange={(e: ChangeEvent<HTMLInputElement>) => setCheck3(e.target.checked)}
             />
-            <Checkbox label="With error" error="You must accept the terms." checked={false} onChange={() => {}} />
             <Checkbox label="Disabled unchecked" disabled />
-            <Checkbox label="Disabled checked" checked disabled onChange={() => {}} />
           </div>
         </Section>
 
         {/* ── Card ────────────────────────────────────────────── */}
         <Section title="Card">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="gap-md grid grid-cols-1 sm:grid-cols-2">
             <Card>
               <CardHeader>
                 <CardTitle>Simple Card</CardTitle>
                 <CardDescription>A basic card with a header and body.</CardDescription>
               </CardHeader>
               <CardBody>
-                <p className="text-sm text-slate-400">Card content goes here. You can put anything inside.</p>
+                <p className="text-text-secondary text-sm">Card content goes here using semantic tokens.</p>
               </CardBody>
             </Card>
-            <Card>
+            <Card variant="interactive">
               <CardHeader>
-                <CardTitle>Card with Footer</CardTitle>
-                <CardDescription>Action buttons live in the footer.</CardDescription>
+                <CardTitle>Interactive Card</CardTitle>
+                <CardDescription>Hover glow and border feedback.</CardDescription>
               </CardHeader>
               <CardBody>
-                <p className="text-sm text-slate-400">Make changes to your account settings and profile.</p>
+                <p className="text-text-secondary text-sm">Clickable card with smooth transition.</p>
               </CardBody>
               <CardFooter>
                 <Button size="sm">Save changes</Button>
@@ -319,20 +333,20 @@ export function ComponentPage() {
                 </Button>
               </CardFooter>
             </Card>
-            <Card padding="sm">
-              <p className="mb-3 text-xs font-medium tracking-wide text-slate-500 uppercase">padding="sm"</p>
-              <Progress value={72} showValue label="Upload progress" />
-            </Card>
-            <Card padding="lg">
-              <p className="mb-3 text-xs font-medium tracking-wide text-slate-500 uppercase">padding="lg"</p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="success">Active</Badge>
-                <Badge variant="warning">Pending</Badge>
-                <Badge variant="danger">Failed</Badge>
-                <Badge variant="outline">Unknown</Badge>
-              </div>
-            </Card>
           </div>
+        </Section>
+        {/* ── EmptyState ────────────────────────────────────── */}
+        <Section title="EmptyState">
+          <EmptyState
+            icon="🎉"
+            title="All done — zero pending items!"
+            description="All reviews and operations are fully up to date."
+            action={
+              <Button variant="primary" size="sm">
+                Refresh View
+              </Button>
+            }
+          />
         </Section>
       </div>
     </div>

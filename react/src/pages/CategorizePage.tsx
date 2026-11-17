@@ -1,16 +1,17 @@
+import { AnimatePresence, motion } from 'motion/react';
 import { useEffect, useMemo, useState } from 'react';
 import { FaCheckDouble, FaTimes, FaUndo } from 'react-icons/fa';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { AnimatePresence, motion } from 'motion/react';
 import { formatCategory } from 'utilities/util';
 
+import { AppSidebar } from 'components/AppSidebar';
 import { BatchCard } from 'components/BatchCard';
-import { CategorizeMenu } from 'components/CategorizeMenu';
 import { EmailCard } from 'components/EmailCard';
-import { Nav } from 'components/Nav';
+import { MobileNavHeader } from 'components/MobileNavHeader';
 import { CardStack, SwipeCard } from 'components/SwipeCard';
-import { Badge } from 'components/ui/Badge';
 import { Button } from 'components/ui/Button';
+import { EmptyState } from 'components/ui/EmptyState';
+import { PageHeader } from 'components/ui/PageHeader';
 import { useEmails } from 'hooks/useEmails';
 import { useSuggestions } from 'hooks/useSuggestions';
 
@@ -86,7 +87,7 @@ export function CategorizePage() {
 
     document.addEventListener('keydown', handleKey);
     return () => document.removeEventListener('keydown', handleKey);
-  }, [actions, actions.undo]);
+  }, [actions]);
 
   const handleBatchApprove = async () => {
     const ids = activeBatchEmails.map((e) => e.id);
@@ -102,69 +103,59 @@ export function CategorizePage() {
   };
 
   return (
-    <div className="flex justify-between p-2 sm:p-0">
-      <Nav />
+    <div className="bg-surface-canvas flex min-h-screen flex-col lg:flex-row">
+      {/* Mobile Top Navigation Bar (< lg) */}
+      <MobileNavHeader />
 
-      <div className="flex flex-1 flex-col items-center gap-8 p-4 pt-6 sm:p-8">
+      {/* Unified Left Sidebar (>= lg) + Mobile FAB (< lg) */}
+      <AppSidebar
+        categories={categories}
+        categoryCounts={isBatchMode ? pendingCategoryCounts : categoryCounts}
+        enabled={isBatchMode ? true : current !== undefined}
+        onSelectCategory={(category) => {
+          if (isBatchMode) {
+            setSelectedCategory(category);
+          } else if (current) {
+            actions.categorize(current.id, category);
+          }
+        }}
+        activeCategory={isBatchMode ? activeBatchCategory : current?.userOverrideCategory || current?.aiCategory}
+        suggestions={isBatchMode ? [] : suggestions}
+        isBatchMode={isBatchMode}
+        onToggleBatchMode={() => navigate(isBatchMode ? '/' : '/batch')}
+        showReclassify={true}
+      />
+
+      {/* Main Content Workspace */}
+      <main>
         {emails.length === 0 ? (
-          <div className="flex flex-1 flex-col items-center justify-center gap-4 py-24 text-center">
-            <span className="text-5xl">🎉</span>
-            <p className="text-xl font-bold text-white">All done — no more emails to review!</p>
-            <p className="text-sm text-slate-400">All incoming emails have been validated or categorized.</p>
-          </div>
+          <EmptyState
+            icon="🎉"
+            title="All done — no more emails to review!"
+            description="All incoming emails have been validated or categorized."
+            className="my-16"
+          />
         ) : isBatchMode ? (
           /* ── BATCH MODE ── */
-          <div className="flex w-full max-w-6xl flex-col gap-6">
-            {/* Header & Controls */}
-            <motion.div
-              key={`header-${activeBatchCategory}`}
-              initial={{ borderColor: 'rgba(99, 102, 241, 0.8)' }}
-              animate={{ borderColor: 'rgba(51, 65, 85, 0.8)' }}
-              transition={{ duration: 0.8 }}
-              className="flex flex-col gap-4 rounded-xl border border-slate-700/80 bg-slate-900/60 p-4 sm:p-6"
-            >
-              <div className="flex flex-wrap items-center justify-between gap-4">
-                <div>
-                  <div className="flex items-center gap-3">
-                    <h1 className="text-2xl font-bold text-white">
-                      Batch Categorize {emails.length > 0 && `(${emails.length} remaining)`}
-                    </h1>
-                    <AnimatePresence mode="wait">
-                      {activeBatchCategory && (
-                        <motion.div
-                          key={activeBatchCategory}
-                          initial={{ opacity: 0, scale: 0.8, y: -4 }}
-                          animate={{ opacity: 1, scale: 1, y: 0 }}
-                          exit={{ opacity: 0, scale: 0.8, y: 4 }}
-                          transition={{ duration: 0.2 }}
-                        >
-                          <Badge variant="primary" className="px-3 py-1 text-sm font-semibold">
-                            {formatCategory(activeBatchCategory)}
-                          </Badge>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                  <AnimatePresence mode="wait">
-                    <motion.p
-                      key={activeBatchCategory}
-                      initial={{ opacity: 0, y: -4 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 4 }}
-                      transition={{ duration: 0.2 }}
-                      className="mt-1 text-xs text-slate-400 sm:text-sm"
-                    >
-                      Showing {activeBatchEmails.length} of {totalPendingInActiveBatch} pending emails for{' '}
-                      <span className="font-semibold text-slate-200">
-                        {activeBatchCategory ? formatCategory(activeBatchCategory) : 'None'}
-                      </span>
-                      . Review together and batch approve or skip individually.
-                    </motion.p>
-                  </AnimatePresence>
-                </div>
-
-                {/* Batch Action Buttons */}
-                <div className="flex flex-wrap items-center gap-2">
+          <div className="gap-md sm:gap-lg flex w-full max-w-6xl flex-col">
+            {/* Standardized PageHeader */}
+            <PageHeader
+              title="Batch Categorize"
+              count={emails.length > 0 ? `${emails.length} remaining` : undefined}
+              badge={
+                activeBatchCategory ? { label: formatCategory(activeBatchCategory), variant: 'primary' } : undefined
+              }
+              description={
+                <span>
+                  Showing {activeBatchEmails.length} of {totalPendingInActiveBatch} pending emails for{' '}
+                  <span className="text-text-primary font-semibold">
+                    {activeBatchCategory ? formatCategory(activeBatchCategory) : 'None'}
+                  </span>
+                  . Review together and batch approve or skip individually.
+                </span>
+              }
+              actions={
+                <div className="gap-xs sm:gap-sm flex flex-wrap items-center">
                   <Button
                     variant="secondary"
                     size="sm"
@@ -193,27 +184,26 @@ export function CategorizePage() {
                     onClick={handleBatchApprove}
                     disabled={activeBatchEmails.length === 0}
                     title="Approve all displayed cards in this batch"
-                    className="font-semibold shadow-md"
                   >
                     <FaCheckDouble className="text-xs" />
                     <span>Approve Batch ({activeBatchEmails.length})</span>
                   </Button>
                 </div>
-              </div>
-            </motion.div>
+              }
+            />
 
-            {/* Batch Cards Grid (6-8 cards) with Category Change Animation */}
+            {/* Batch Cards Grid with Category Transition */}
             <AnimatePresence mode="wait">
               {activeBatchEmails.length > 0 ? (
                 <motion.div
                   key={activeBatchCategory}
-                  initial={{ opacity: 0, y: 16 }}
+                  initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -16 }}
-                  transition={{ duration: 0.24, ease: 'easeOut' }}
-                  className="flex flex-col gap-6"
+                  exit={{ opacity: 0, y: -12 }}
+                  transition={{ duration: 0.2 }}
+                  className="gap-md flex flex-col"
                 >
-                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
+                  <div className="gap-md grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
                     {activeBatchEmails.map((email) => (
                       <BatchCard
                         key={email.id}
@@ -228,12 +218,12 @@ export function CategorizePage() {
 
                   {/* Bottom Approve Bar for convenience */}
                   {activeBatchEmails.length > 4 && (
-                    <div className="flex justify-center pt-4 pb-8">
+                    <div className="pt-md pb-xl flex justify-center">
                       <Button
                         variant="success"
                         size="md"
                         onClick={handleBatchApprove}
-                        className="px-6 py-2.5 font-semibold shadow-lg"
+                        className="px-lg py-sm shadow-card font-semibold"
                       >
                         <FaCheckDouble />
                         <span>Approve Batch ({activeBatchEmails.length})</span>
@@ -242,35 +232,28 @@ export function CategorizePage() {
                   )}
                 </motion.div>
               ) : (
-                <motion.div
-                  key="empty-category"
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0 }}
-                  className="rounded-xl border border-slate-800 bg-slate-900/40 p-8 text-center text-slate-400"
-                >
-                  No more pending emails in this category.
-                </motion.div>
+                <EmptyState
+                  icon="✨"
+                  title="No pending emails in this category"
+                  description="Select another category from the sidebar or wait for new incoming emails."
+                />
               )}
             </AnimatePresence>
           </div>
         ) : (
           /* ── SINGLE SWIPE MODE ── */
-          <>
-            <div className="grid w-full max-w-4xl gap-4">
-              <h1 className="text-2xl font-bold text-white">
-                Review emails {emails.length > 0 && `(${emails.length})`}
-              </h1>
-              <p className="text-sm text-slate-400">
-                Swipe right to confirm, swipe left to defer to the end of the pile. Use a category button to
-                re-categorize.
-              </p>
-
-              <Button variant="secondary" size="sm" onClick={actions.undo} disabled={!canUndo} className="w-fit">
-                <FaUndo className="text-xs" />
-                <span>Undo</span>
-              </Button>
-            </div>
+          <div className="gap-md flex w-full max-w-4xl flex-col items-center">
+            <PageHeader
+              title="Review Emails"
+              count={emails.length}
+              description="Swipe right to confirm, swipe left to defer to the end of the pile. Use a category button to re-categorize."
+              actions={
+                <Button variant="secondary" size="sm" onClick={actions.undo} disabled={!canUndo}>
+                  <FaUndo className="text-xs" />
+                  <span>Undo</span>
+                </Button>
+              }
+            />
 
             {current && (
               <CardStack>
@@ -287,7 +270,7 @@ export function CategorizePage() {
                       }
                     }}
                     index={i}
-                    className="border border-slate-900 bg-slate-700 p-4"
+                    className="p-md"
                   >
                     <EmailCard
                       email={email}
@@ -298,28 +281,9 @@ export function CategorizePage() {
                 ))}
               </CardStack>
             )}
-          </>
+          </div>
         )}
-      </div>
-
-      <CategorizeMenu
-        categories={categories}
-        categoryCounts={isBatchMode ? pendingCategoryCounts : categoryCounts}
-        enabled={isBatchMode ? true : current !== undefined}
-        onSelectCategory={(category) => {
-          if (isBatchMode) {
-            setSelectedCategory(category);
-          } else if (current) {
-            actions.categorize(current.id, category);
-          }
-        }}
-        activeCategory={isBatchMode ? activeBatchCategory : current?.userOverrideCategory || current?.aiCategory}
-        aiCategory={isBatchMode ? undefined : current?.aiCategory}
-        userOverrideCategory={isBatchMode ? undefined : current?.userOverrideCategory}
-        suggestions={isBatchMode ? [] : suggestions}
-        isBatchMode={isBatchMode}
-        onToggleBatchMode={() => navigate(isBatchMode ? '/' : '/batch')}
-      />
+      </main>
     </div>
   );
 }

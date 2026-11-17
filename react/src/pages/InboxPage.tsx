@@ -2,10 +2,12 @@ import { FaArchive, FaTrash } from 'react-icons/fa';
 import { useSearchParams } from 'react-router-dom';
 import { formatCategory } from 'utilities/util';
 
-import { CategorySidebar } from 'components/CategorySidebar';
+import { AppSidebar } from 'components/AppSidebar';
 import { EmailBundle } from 'components/EmailBundle';
-import { Nav } from 'components/Nav';
+import { MobileNavHeader } from 'components/MobileNavHeader';
 import { Button } from 'components/ui/Button';
+import { EmptyState } from 'components/ui/EmptyState';
+import { PageHeader } from 'components/ui/PageHeader';
 import { useBreakpoint } from 'hooks/useBreakpoint';
 import { useEmails } from 'hooks/useEmails';
 
@@ -23,10 +25,8 @@ export function InboxPage() {
     },
     {} as Record<string, number>
   );
-  const categories = rawCategories
-    .filter((c) => categoryCount[c.key] > 0)
-    .map((c) => ({ ...c, label: `(${categoryCount[c.key] || 0}) ${c.label}` }))
-    .sort((a, b) => a.urgency - b.urgency);
+
+  const categories = rawCategories.filter((c) => categoryCount[c.key] > 0).sort((a, b) => a.urgency - b.urgency);
 
   const urlCategory = searchParams.get('category');
   const importantCount = emails.filter((e) => e.important).length;
@@ -44,61 +44,77 @@ export function InboxPage() {
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, breakpoint === 'sm' ? 10 : breakpoint === 'md' || breakpoint === 'lg' ? 14 : 15);
 
+  const nonImportantVisible = visibleEmails.filter((e) => !e.important);
+
+  const headerTitle = filter === 'IMPORTANT' ? 'Important' : filter ? formatCategory(filter) : 'Inbox';
+
+  const totalFilteredCount = filter === 'IMPORTANT' ? importantCount : categoryCount[filter] || 0;
+
   return (
-    <div className="flex justify-center">
-      <CategorySidebar
+    <div className="bg-surface-canvas flex min-h-screen flex-col lg:flex-row">
+      {/* Mobile Top Navigation Bar (< lg) */}
+      <MobileNavHeader />
+
+      {/* Unified Left Sidebar (>= lg) + Mobile FAB (< lg) */}
+      <AppSidebar
         categories={categories}
-        active={filter}
+        categoryCounts={categoryCount}
+        activeCategory={filter}
         importantCount={importantCount}
-        onClick={(category) => setSearchParams({ category })}
+        onSelectCategory={(category) => setSearchParams({ category })}
       />
 
-      <Nav />
+      {/* Main Content Workspace */}
+      <main>
+        <div className="gap-md flex w-full max-w-5xl flex-col">
+          {/* Standardized PageHeader */}
+          <PageHeader
+            title={headerTitle}
+            count={totalFilteredCount}
+            description={`Showing ${visibleEmails.length} of ${totalFilteredCount} emails. Tap an email to read, or manage below.`}
+            actions={
+              nonImportantVisible.length > 0 ? (
+                <div className="gap-xs flex items-center">
+                  <Button
+                    variant="success"
+                    size="sm"
+                    onClick={() => {
+                      actions.batchArchive(nonImportantVisible.map((email) => email.id));
+                    }}
+                    title={`Archive ${nonImportantVisible.length} emails`}
+                  >
+                    <FaArchive className="text-xs" />
+                    <span>Archive All ({nonImportantVisible.length})</span>
+                  </Button>
 
-      <div className="flex max-w-screen flex-1 flex-col items-center gap-4 p-4 sm:gap-12 sm:p-8">
-        <h1 className="mt-8 text-2xl font-bold text-white">
-          {filter === 'IMPORTANT'
-            ? `Important (${importantCount})`
-            : filter
-              ? `${formatCategory(filter)} (${categoryCount[filter] || 0})`
-              : 'All Emails'}
-        </h1>
+                  <Button
+                    variant="danger"
+                    size="sm"
+                    onClick={() => {
+                      actions.batchTrash(nonImportantVisible.map((email) => email.id));
+                    }}
+                    title={`Trash ${nonImportantVisible.length} emails`}
+                  >
+                    <FaTrash className="text-xs" />
+                    <span>Trash All ({nonImportantVisible.length})</span>
+                  </Button>
+                </div>
+              ) : null
+            }
+          />
 
-        <div className="sticky top-0 z-10 flex w-full max-w-4xl gap-4 bg-slate-800 py-4">
-          <Button
-            variant="success"
-            size="lg"
-            className="w-full"
-            onClick={() => {
-              actions.batchArchive(visibleEmails.filter((e) => !e.important).map((email) => email.id));
-            }}
-          >
-            <FaArchive className="text-slate-300 drop-shadow-lg drop-shadow-slate-800/50" />
-          </Button>
-
-          <Button
-            variant="danger"
-            size="lg"
-            className="w-full"
-            onClick={() => {
-              actions.batchTrash(visibleEmails.filter((e) => !e.important).map((email) => email.id));
-            }}
-          >
-            <FaTrash className="text-slate-300 drop-shadow-lg drop-shadow-slate-800/50" />
-          </Button>
+          {/* Email Feed */}
+          {visibleEmails.length > 0 ? (
+            <EmailBundle emails={visibleEmails} actions={actions} categories={categories} layoutKey={filter} />
+          ) : (
+            <EmptyState
+              icon="🎉"
+              title={`All done — no more emails in ${headerTitle}!`}
+              description="Select another category from the sidebar to review more emails."
+            />
+          )}
         </div>
-
-        {emails.length > 0 ? (
-          <EmailBundle emails={visibleEmails} actions={actions} layoutKey={filter} />
-        ) : (
-          <p className="text-center text-lg text-white">
-            <span>All done — no more emails to review.</span>
-            <br />
-            <br />
-            <span className="text-4xl">🎉</span>
-          </p>
-        )}
-      </div>
+      </main>
     </div>
   );
 }
