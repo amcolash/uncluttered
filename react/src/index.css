@@ -2,11 +2,167 @@
 
 @theme {
   --blur-px: 1px;
+
+  /* ── Spacing Tokens ── */
+  --spacing-2xs: 0.125rem; /* 2px */
+  --spacing-xs: 0.25rem;   /* 4px  */
+  --spacing-sm: 0.5rem;    /* 8px  */
+  --spacing-md: 0.75rem;   /* 12px */
+  --spacing-lg: 1rem;      /* 16px */
+  --spacing-xl: 1.5rem;    /* 24px */
+  --spacing-2xl: 2rem;     /* 32px */
+  --spacing-3xl: 3rem;     /* 48px */
+
+  /* ── Surfaces (OKLCH Hue 265: Harmonized Indigo / Slate Blue) ── */
+  --color-surface-canvas: oklch(0.14 0.025 265);     /* Deep app canvas base */
+  --color-surface-subtle: oklch(0.18 0.028 265);     /* Sidebar / secondary background */
+  --color-surface-card: oklch(0.23 0.032 265);       /* Cards, modals, panels */
+  --color-surface-card-hover: oklch(0.28 0.038 265); /* Hover state */
+  --color-surface-elevated: oklch(0.32 0.042 265);   /* Floating bars / dropdowns */
+  --color-surface-input: oklch(0.16 0.025 265);      /* Input fields */
+
+  /* ── Borders (Hue 265) ── */
+  --color-border-subtle: oklch(0.26 0.02 265 / 0.5); /* Dividers */
+  --color-border-default: oklch(0.34 0.03 265);      /* Standard card border */
+  --color-border-strong: oklch(0.44 0.04 265);       /* Emphasized border */
+  --color-border-focus: oklch(0.62 0.20 265);        /* Active / focus ring */
+
+  /* ── Typography (Hue 265) ── */
+  --color-text-primary: oklch(0.97 0.008 265);       /* High-contrast headings */
+  --color-text-secondary: oklch(0.78 0.025 265);     /* Body copy, snippets, dates */
+  --color-text-muted: oklch(0.58 0.03 265);          /* Metadata, placeholders */
+
+  /* ── Harmonized Functional Accents (Matched Lightness & Chroma) ── */
+  --color-brand-primary: oklch(0.62 0.20 265);       /* Indigo primary */
+  --color-brand-hover: oklch(0.56 0.22 265);
+  --color-brand-subtle: oklch(0.62 0.20 265 / 0.16);
+
+  --color-status-success: oklch(0.65 0.18 150);      /* Emerald (Archive / Approve) */
+  --color-status-success-subtle: oklch(0.65 0.18 150 / 0.16);
+
+  --color-status-danger: oklch(0.62 0.20 25);        /* Rose/Red (Trash / Delete) */
+  --color-status-danger-subtle: oklch(0.62 0.20 25 / 0.16);
+
+  --color-status-warning: oklch(0.75 0.16 85);       /* Amber (Skip / Defer / Star) */
+  --color-status-warning-subtle: oklch(0.75 0.16 85 / 0.18);
+
+  /* ── Radii & Shadows ── */
+  --radius-control: 0.5rem;    /* 8px */
+  --radius-card: 0.75rem;      /* 12px */
+  --radius-modal: 1rem;        /* 16px */
+
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-elevated: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
 }
 
 @layer base {
   html {
-    @apply scrollbar-thin scrollbar-thumb-slate-500 scrollbar-track-slate-700 overflow-x-hidden bg-slate-800;
+    @apply bg-surface-canvas text-text-primary overflow-x-hidden;
     -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-surface-canvas text-text-primary min-h-screen antialiased selection:bg-brand-primary/30;
+  }
+
+  /* Headings default styles */
+  h1 {
+    @apply text-xl font-bold tracking-tight text-text-primary sm:text-2xl;
+  }
+
+  h2 {
+    @apply text-sm font-semibold leading-snug text-text-primary;
+  }
+
+  h3 {
+    @apply text-[11px] font-bold tracking-wider text-text-muted uppercase;
+  }
+
+  /* Time elements */
+  time {
+    @apply text-xs text-text-muted shrink-0 tabular-nums;
+  }
+
+  /* Default HTML form select styling */
+  select {
+    @apply h-7 rounded-control border border-border-default bg-surface-subtle px-sm text-xs font-medium text-text-primary transition-colors cursor-pointer;
+    @apply hover:border-border-strong focus-visible:ring-2 focus-visible:ring-border-focus focus-visible:ring-offset-1 focus-visible:ring-offset-surface-canvas focus-visible:outline-none;
+  }
+
+  /* Interactive toolbars */
+  [role="toolbar"] {
+    @apply flex items-center gap-xs;
+  }
+
+  /* Main workspace layout */
+  main {
+    @apply flex flex-1 flex-col items-center gap-md p-md sm:gap-lg sm:p-lg;
+  }
+}
+
+@layer components {
+  /* Standard email cards across Inbox, Batch, and Swipe views */
+  .email-card {
+    @apply flex flex-col justify-between rounded-card border border-border-default bg-surface-card p-md shadow-card transition-all duration-150;
+    @apply hover:border-border-strong hover:bg-surface-card-hover hover:shadow-elevated;
+  }
+
+  .email-card-header {
+    @apply flex items-start justify-between gap-xs;
+  }
+
+  .email-card-sender {
+    @apply truncate text-sm font-semibold tracking-tight text-text-primary;
+  }
+
+  .email-card-snippet {
+    @apply mt-xs line-clamp-3 text-xs leading-relaxed text-text-secondary;
+  }
+
+  .email-card-footer {
+    @apply mt-md flex items-center justify-between gap-xs border-t border-border-subtle pt-xs;
+  }
+
+  /* Standard page header panel */
+  .page-header {
+    @apply flex w-full flex-col gap-sm rounded-card border border-border-default bg-surface-card/75 p-md shadow-card backdrop-blur-sm sm:p-lg;
+  }
+
+  /* Standard segmented tab navigation */
+  .segmented-nav {
+    @apply flex items-center rounded-control border border-border-default bg-surface-canvas p-2xs;
+  }
+
+  .segmented-tab {
+    @apply flex cursor-pointer items-center justify-center gap-xs rounded-control px-sm py-xs text-xs font-medium transition-all duration-150 text-text-secondary hover:text-text-primary select-none;
+  }
+
+  .segmented-tab[aria-current="page"] {
+    @apply bg-brand-primary text-text-primary shadow-sm;
+  }
+
+  /* Sidebar category buttons & counters */
+  .category-btn {
+    @apply flex min-h-[44px] w-full cursor-pointer items-center justify-between rounded-control border border-border-default bg-surface-card px-sm py-xs text-left text-xs font-medium text-text-primary transition-all duration-150 select-none;
+    @apply hover:border-border-strong hover:bg-surface-card-hover active:bg-surface-canvas;
+    @apply focus-visible:ring-2 focus-visible:ring-border-focus focus-visible:outline-none;
+    @apply disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .category-btn[aria-pressed="true"],
+  .category-btn.is-active {
+    @apply border-2 border-brand-primary bg-brand-subtle font-semibold shadow-sm;
+  }
+
+  .category-btn.is-suggested {
+    @apply border-brand-primary/50 bg-brand-subtle/50 text-text-primary;
+  }
+
+  .count-pill {
+    @apply ml-xs shrink-0 rounded-full bg-surface-elevated px-xs py-2xs text-[10px] font-semibold text-text-muted;
+  }
+
+  .category-btn:hover .count-pill {
+    @apply text-text-primary;
   }
 }
