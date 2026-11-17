@@ -17,9 +17,9 @@ export function Fab({ icon, openIcon, isOpen, className, ...props }: FabProps) {
       transition={{ type: 'spring', stiffness: 400, damping: 25 }}
       className={twMerge(
         'fixed right-[max(1rem,env(safe-area-inset-right))] bottom-[max(1rem,env(safe-area-inset-bottom))] z-50',
-        'flex h-14 w-14 cursor-pointer items-center justify-center rounded-full border border-indigo-400/30 bg-indigo-600 text-white shadow-xl',
-        'hover:bg-indigo-500 active:bg-indigo-700',
-        'focus-visible:border-white focus-visible:outline-none',
+        'border-brand-primary/40 bg-brand-primary text-text-primary shadow-elevated flex h-14 w-14 cursor-pointer items-center justify-center rounded-full border',
+        'hover:bg-brand-hover active:opacity-90',
+        'focus-visible:ring-border-focus focus-visible:ring-2 focus-visible:outline-none',
         'disabled:cursor-not-allowed disabled:opacity-50',
         className
       )}

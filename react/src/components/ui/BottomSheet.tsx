@@ -52,7 +52,7 @@ export function BottomSheet({ isOpen, onClose, title, headerActions, children, c
             aria-hidden="true"
           />
 
-          {/* Slide-up bottom sheet card with drag-to-dismiss */}
+          {/* Slide-up bottom sheet dialog with drag-to-dismiss */}
           <motion.div
             key="sheet-content"
             role="dialog"
@@ -76,34 +76,34 @@ export function BottomSheet({ isOpen, onClose, title, headerActions, children, c
               }
             }}
             className={twMerge(
-              'fixed inset-x-0 bottom-0 z-40 flex max-h-[90dvh] flex-col rounded-t-2xl border-t border-slate-700 bg-slate-900 shadow-2xl',
+              'rounded-t-modal border-border-default bg-surface-subtle shadow-elevated fixed inset-x-0 bottom-0 z-40 flex max-h-[90dvh] flex-col border-t',
               className
             )}
           >
             {/* Drag handle */}
-            <div className="flex w-full cursor-grab justify-center pt-2.5 pb-1 active:cursor-grabbing">
-              <div className="h-1.5 w-12 rounded-full bg-slate-700 transition-colors hover:bg-slate-600" />
+            <div className="pt-xs pb-2xs flex w-full cursor-grab justify-center active:cursor-grabbing">
+              <div className="bg-border-default hover:bg-border-strong h-1.5 w-12 rounded-full transition-colors" />
             </div>
 
             {/* Header */}
-            <div className="flex shrink-0 items-center justify-between border-b border-slate-800 px-5 py-3">
-              <div className="flex items-center gap-3">
-                <h2 className="text-base font-semibold text-white">{title}</h2>
+            <header className="border-border-subtle px-md py-sm flex shrink-0 items-center justify-between border-b">
+              <div className="gap-sm flex items-center">
+                <h2 className="text-text-primary text-base font-semibold">{title}</h2>
                 {headerActions}
               </div>
 
               <button
                 type="button"
                 onClick={onClose}
-                className="cursor-pointer rounded-lg p-1.5 text-slate-400 transition-colors hover:bg-slate-800 hover:text-white"
-                aria-label="Close"
+                className="rounded-control p-xs text-text-muted hover:bg-surface-card hover:text-text-primary cursor-pointer transition-colors"
+                aria-label="Close sheet"
               >
                 <FaTimes className="text-base" />
               </button>
-            </div>
+            </header>
 
             {/* Scrollable body */}
-            <div className="flex-1 space-y-4 overflow-y-auto overscroll-contain p-4 pb-[max(6rem,calc(5rem+env(safe-area-inset-bottom)))]">
+            <div className="space-y-md p-md flex-1 overflow-y-auto overscroll-contain pb-[max(6rem,calc(5rem+env(safe-area-inset-bottom)))]">
               {children}
             </div>
           </motion.div>

@@ -13,20 +13,21 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
-  primary: 'bg-indigo-600 text-white not-disabled:hover:bg-indigo-500 not-disabled:active:bg-indigo-700',
+  primary: 'bg-brand-primary text-text-primary not-disabled:hover:bg-brand-hover active:opacity-90 shadow-sm',
   secondary:
-    'bg-slate-700 text-slate-100 not-disabled:hover:bg-slate-600 not-disabled:active:bg-slate-800 border border-slate-600',
+    'bg-surface-card text-text-secondary not-disabled:hover:bg-surface-card-hover not-disabled:hover:text-text-primary border border-border-default active:bg-surface-subtle',
   ghost:
-    'bg-transparent text-slate-300 not-disabled:hover:bg-slate-700 not-disabled:hover:text-white not-disabled:active:bg-slate-800',
-  danger: 'bg-red-600 text-white not-disabled:hover:bg-red-500 not-disabled:active:bg-red-700',
-  warning: 'bg-amber-500 text-slate-800 not-disabled:hover:bg-amber-400 not-disabled:active:bg-amber-600',
-  success: 'bg-green-600 text-white not-disabled:hover:bg-green-500 not-disabled:active:bg-green-700',
+    'bg-transparent text-text-secondary not-disabled:hover:bg-surface-card-hover not-disabled:hover:text-text-primary active:bg-surface-card',
+  danger: 'bg-status-danger text-text-primary not-disabled:hover:opacity-90 active:opacity-80 shadow-sm',
+  warning:
+    'bg-status-warning text-surface-canvas font-semibold not-disabled:hover:opacity-90 active:opacity-80 shadow-sm',
+  success: 'bg-status-success text-text-primary not-disabled:hover:opacity-90 active:opacity-80 shadow-sm',
 };
 
 const sizeClasses: Record<ButtonSize, string> = {
-  sm: 'h-7 px-3 text-xs gap-1.5',
-  md: 'h-9 px-4 text-sm gap-2',
-  lg: 'h-11 px-5 text-base gap-2.5',
+  sm: 'h-7 px-sm text-xs gap-xs',
+  md: 'h-9 px-md text-sm gap-sm',
+  lg: 'h-11 px-lg text-base gap-sm',
 };
 
 export function getButtonStyle({
@@ -37,10 +38,10 @@ export function getButtonStyle({
   size?: ButtonSize;
 }): string {
   return twMerge(
-    'inline-flex cursor-pointer items-center justify-center rounded-lg font-medium',
+    'inline-flex cursor-pointer items-center justify-center rounded-control font-medium',
     'transition-colors duration-150',
-    'focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 focus-visible:outline-none',
-    'disabled:cursor-not-allowed disabled:opacity-50',
+    'focus-visible:ring-2 focus-visible:ring-border-focus focus-visible:ring-offset-2 focus-visible:ring-offset-surface-canvas focus-visible:outline-none',
+    'disabled:cursor-not-allowed disabled:opacity-50 select-none',
     variantClasses[variant],
     sizeClasses[size]
   );

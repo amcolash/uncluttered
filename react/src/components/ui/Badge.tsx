@@ -8,19 +8,19 @@ export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
 }
 
 const variantClasses: Record<BadgeVariant, string> = {
-  default: 'bg-slate-700 text-slate-300',
-  primary: 'bg-indigo-500/20 text-indigo-300 ring-1 ring-inset ring-indigo-500/30',
-  success: 'bg-emerald-500/20 text-emerald-300 ring-1 ring-inset ring-emerald-500/30',
-  warning: 'bg-amber-500/20 text-amber-300 ring-1 ring-inset ring-amber-500/30',
-  danger: 'bg-red-500/20 text-red-300 ring-1 ring-inset ring-red-500/30',
-  outline: 'bg-transparent text-slate-300 ring-1 ring-inset ring-slate-600',
+  default: 'bg-surface-elevated text-text-secondary border border-border-default',
+  primary: 'bg-brand-subtle text-text-primary border border-brand-primary/40',
+  success: 'bg-status-success-subtle text-status-success border border-status-success/40',
+  warning: 'bg-status-warning-subtle text-status-warning border border-status-warning/40',
+  danger: 'bg-status-danger-subtle text-status-danger border border-status-danger/40',
+  outline: 'bg-transparent text-text-secondary border border-border-default',
 };
 
 export function Badge({ variant = 'default', className, children, ...props }: BadgeProps) {
   return (
     <span
       className={twMerge(
-        'inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium',
+        'px-sm py-2xs inline-flex items-center rounded-full text-xs font-medium transition-colors select-none',
         variantClasses[variant],
         className
       )}

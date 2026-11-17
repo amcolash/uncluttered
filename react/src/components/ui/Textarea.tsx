@@ -11,29 +11,29 @@ export function Textarea({ label, error, hint, className, id, ...props }: Textar
   const textareaId = id ?? label?.toLowerCase().replace(/\s+/g, '-');
 
   return (
-    <div className="flex flex-col gap-1.5">
+    <div className="gap-xs flex flex-col">
       {label && (
-        <label htmlFor={textareaId} className="text-sm font-medium text-slate-300">
+        <label htmlFor={textareaId} className="text-text-secondary text-xs font-medium sm:text-sm">
           {label}
         </label>
       )}
       <textarea
         id={textareaId}
         className={twMerge(
-          'w-full rounded-lg border bg-slate-800 px-3 py-2 text-sm text-white',
-          'placeholder:text-slate-500',
+          'rounded-control bg-surface-input px-sm py-xs text-text-primary w-full border text-sm',
+          'placeholder:text-text-muted',
           'resize-y transition-colors duration-150',
-          'focus:ring-2 focus:ring-offset-1 focus:ring-offset-slate-900 focus:outline-none',
+          'focus:ring-offset-surface-canvas focus:ring-2 focus:ring-offset-1 focus:outline-none',
           error
-            ? 'border-red-500 focus:ring-red-500'
-            : 'border-slate-600 focus:border-transparent focus:ring-indigo-500 enabled:hover:border-slate-500',
+            ? 'border-status-danger focus:ring-status-danger'
+            : 'border-border-default focus:ring-border-focus enabled:hover:border-border-strong focus:border-transparent',
           'disabled:cursor-not-allowed disabled:opacity-50',
           className
         )}
         {...props}
       />
-      {error && <p className="text-xs text-red-400">{error}</p>}
-      {!error && hint && <p className="text-xs text-slate-500">{hint}</p>}
+      {error && <p className="text-status-danger text-xs">{error}</p>}
+      {!error && hint && <p className="text-text-muted text-xs">{hint}</p>}
     </div>
   );
 }

@@ -11,13 +11,13 @@ export function Checkbox({ label, description, error, className, id, ...props }:
   const inputId = id ?? label?.toLowerCase().replace(/\s+/g, '-');
 
   return (
-    <div className="flex flex-col gap-1">
+    <div className="gap-xs flex flex-col">
       <label
         htmlFor={inputId}
         className={twMerge(
-          'group flex cursor-pointer items-start gap-3 rounded-lg px-2 py-1.5',
+          'group gap-sm rounded-control px-xs py-2xs flex cursor-pointer items-start',
           'transition-colors duration-150',
-          !props.disabled && 'hover:bg-slate-800/60',
+          !props.disabled && 'hover:bg-surface-card',
           props.disabled && 'cursor-not-allowed opacity-50'
         )}
       >
@@ -25,19 +25,19 @@ export function Checkbox({ label, description, error, className, id, ...props }:
         {/* Custom checkbox box */}
         <span
           className={twMerge(
-            'mt-px flex size-4 shrink-0 items-center justify-center rounded border-2',
+            'mt-px flex size-4 shrink-0 items-center justify-center rounded border',
             'transition-all duration-150',
-            'border-slate-600',
-            !props.disabled && 'group-hover:border-indigo-400',
-            'group-has-[:checked]:border-indigo-500 group-has-[:checked]:bg-indigo-500',
-            'group-has-[:focus-visible]:ring-2 group-has-[:focus-visible]:ring-indigo-500 group-has-[:focus-visible]:ring-offset-2 group-has-[:focus-visible]:ring-offset-slate-900',
+            'border-border-default',
+            !props.disabled && 'group-hover:border-border-strong',
+            'group-has-[:checked]:border-brand-primary group-has-[:checked]:bg-brand-primary',
+            'group-has-[:focus-visible]:ring-border-focus group-has-[:focus-visible]:ring-offset-surface-canvas group-has-[:focus-visible]:ring-2 group-has-[:focus-visible]:ring-offset-2',
             className
           )}
         >
           {/* Checkmark */}
           <svg
             className={twMerge(
-              'size-2.5 text-white',
+              'text-text-primary size-2.5',
               'opacity-0 transition-opacity duration-150 group-has-[:checked]:opacity-100'
             )}
             viewBox="0 0 12 10"
@@ -52,13 +52,13 @@ export function Checkbox({ label, description, error, className, id, ...props }:
           </svg>
         </span>
         {(label ?? description) && (
-          <div className="flex flex-col gap-0.5">
-            {label && <span className="text-sm leading-none text-slate-200">{label}</span>}
-            {description && <span className="text-xs text-slate-500">{description}</span>}
+          <div className="gap-2xs flex flex-col">
+            {label && <span className="text-text-primary text-xs font-medium sm:text-sm">{label}</span>}
+            {description && <span className="text-text-muted text-xs">{description}</span>}
           </div>
         )}
       </label>
-      {error && <p className="ml-2 text-xs text-red-400">{error}</p>}
+      {error && <p className="text-status-danger text-xs">{error}</p>}
     </div>
   );
 }
